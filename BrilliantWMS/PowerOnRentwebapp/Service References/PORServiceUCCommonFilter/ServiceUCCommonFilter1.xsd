@@ -1,0 +1,3258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetWarehouseAddressList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="WarehouseID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetWarehouseAddressListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetWarehouseAddressListResult" type="tns:ArrayOfTAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tAddress" nillable="true" type="tns:tAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RouteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Landmark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="County" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="State" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="City" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zipcode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FaxNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsDefault" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="BillingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SubZone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactEmail" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MobileNo" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationName" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetContactPersonListVendorWise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="VendorID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTContactPersonDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tContactPersonDetail" nillable="true" type="tns:tContactPersonDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tContactPersonDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerHeadID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Department" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Designation" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OfficeNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ContactTypeID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="InterestedIn" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Hobbies" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FacebookID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FacebookPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TwitterID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TwitterPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OtherID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HighestQualification" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CollegeOrUniversity" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HighSchool" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetContactPersonListVendorWiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonListVendorWiseResult" type="tns:ArrayOfTContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListByWarehouseID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="WarehouseID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGetUserProfileByUserID">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vGetUserProfileByUserID" nillable="true" type="tns:vGetUserProfileByUserID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vGetUserProfileByUserID">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="userID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="deptname" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="desiName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProfileImg" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateOfJoining" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OtherID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HighestQualification" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="InterestedIn" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Gender" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ReportingTo" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUserListByWarehouseIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListByWarehouseIDResult" type="tns:ArrayOfVGetUserProfileByUserID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListByWarehouse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="WarehouseID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListByWarehouseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListByWarehouseResult" type="tns:ArrayOfVGetUserProfileByUserID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonListClientWise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ClntID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonListClientWiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonListClientWiseResult" type="tns:ArrayOfTContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNameByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="uid" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMTerritory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mTerritory" nillable="true" type="tns:mTerritory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mTerritory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Level" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GroupTitle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsMandatory" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StoreCode" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AutoCancel" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="cancelDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApprovalRem" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AutoCancRen" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AutoRemSchedule" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApproRemSchedul" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ECommerce" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OrderFormat" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="GwcDeliveries" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxDeliveryDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FinApproverID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AddressType" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PriceChange" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSiteNameByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSiteNameByUserIDResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSitesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllSitesResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngineOfSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfV_GetEngineDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="v_GetEngineDetails" nillable="true" type="tns:v_GetEngineDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="v_GetEngineDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SiteID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Container" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GeneratorModel" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GeneratorSerial" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EngineModel" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EngineSerial" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateRecevied" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TransformerSerial" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TransformerDateRecevied" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEngineOfSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetEngineOfSiteResult" type="tns:ArrayOfV_GetEngineDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusListByOjbect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMStatu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mStatu" nillable="true" type="tns:mStatu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mStatu">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetStatusListByOjbectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetStatusListByOjbectResult" type="tns:ArrayOfMStatu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListBySiteID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="siteID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListBySiteIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListBySiteIDResult" type="tns:ArrayOfVGetUserProfileByUserID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="EngLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PrdLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="frmdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectname" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetReportDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequisitionData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReqLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequisitionDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetRequisitionDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReceiptLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PrdLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetReceiptDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="reqid" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="filter" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductofRequestResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="issueid" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="filter" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductofIssueResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofReceipt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="receiptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="filter" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductofReceiptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductofReceiptResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPenComRequestData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPenComRequestDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetPenComRequestDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductOfSelectedEngine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EngId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="filter" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="frmdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductOfSelectedEngineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductOfSelectedEngineResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeeklyConsumption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Site" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ftd" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeeklyConsumptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetWeeklyConsumptionResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConsumableStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Category" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Site" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConsumableStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetConsumableStockResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllRequisitionDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReportData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="frmdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReportDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllReportDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllIssueData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllIssueDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllIssueDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReceiptData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReceiptDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllReceiptDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllProductOnSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfGetPrdDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetPrdDetail" nillable="true" type="tns:GetPrdDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPrdDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductCode" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductTypeID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductCategoryID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductSubCategoryID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UOMID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PrincipalPrice" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FixedDiscount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FixedDiscountPercent" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Warranty" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Guarantee" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Installable" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AMC" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="WarrantyDays" nillable="true" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="GuaranteeDays" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OpeningBalance" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CurrentBalance" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReorderLevel" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxBalanceQuantity" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MinOrderQuantity" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LeadTimeDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductCategory" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductSubCategory" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UOM" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AllProductOnSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="AllProductOnSiteResult" type="tns:ArrayOfGetPrdDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductBalanceOfSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Site" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PrdList" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="AllPrd" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="excludeZero" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductBalanceOfSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductBalanceOfSiteResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionDataAllRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReqLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionDataAllRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllRequisitionDataAllRequestResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionDataAllPrd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReqLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRequisitionDataAllPrdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllRequisitionDataAllPrdResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueDataAllIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueDataAllIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueDataAllIssueResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueDataAllPrd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueDataAllPrdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueDataAllPrdResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptDataAllReceipt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReceiptLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PrdLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptDataAllReceiptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetReceiptDataAllReceiptResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptDataAllPrd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReceiptLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PrdLst" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objectnm" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceiptDataAllPrdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetReceiptDataAllPrdResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngineCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="refId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngineCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetEngineCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngineCountAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngineCountAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetEngineCountAllResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNameByUserID_IssueID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="uid" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNameByUserID_IssueIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSiteNameByUserID_IssueIDResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetSiteIDResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNameByUserID_Transfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="uid" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNameByUserID_TransferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSiteNameByUserID_TransferResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToSiteName_Transfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="FrmSiteID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToSiteName_TransferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetToSiteName_TransferResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransferRptData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="fromSiteID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="toSiteID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransferRptDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetTransferRptDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssetRptData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="toSiteID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fromSiteID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="fdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssetRptDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAssetRptDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mCompany" nillable="true" type="tns:mCompany" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mCompany">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Website" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine3" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Landmark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="County" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="State" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="City" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zipcode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FaxNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LogoPath" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MainDataSource" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MainDataBaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MainDBPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DataSource" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DataBaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DBPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MainServerLogin" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Logo" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StampImg" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Complogo" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OrderFormat" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCompanyNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetCompanyNameResult" type="tns:ArrayOfMCompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartmentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ComapnyID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartmentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDepartmentListResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDepartmentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDepartmentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllDepartmentListResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMBOMHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mBOMHeader" nillable="true" type="tns:mBOMHeader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mBOMHeader">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Header" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGroupSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGroupSetResult" type="tns:ArrayOfMBOMHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllGroupsetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllGroupsetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllGroupsetListResult" type="tns:ArrayOfMBOMHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupSetByDept">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupSetByDeptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGroupSetByDeptResult" type="tns:ArrayOfMBOMHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupSetByCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupSetByCompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGroupSetByCompanyResult" type="tns:ArrayOfMBOMHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetStatusResult" type="tns:ArrayOfMStatu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVW_GetUserInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VW_GetUserInformation" nillable="true" type="tns:VW_GetUserInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VW_GetUserInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Company" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UserType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StoreCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProfileImg" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UserName" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserResult" type="tns:ArrayOfVW_GetUserInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="status" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FromDate" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ToDate" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetRequestDetailsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllSKUDetailsByRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="status" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVW_GetSKUAndRequestDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VW_GetSKUAndRequestDetails" nillable="true" type="tns:VW_GetSKUAndRequestDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VW_GetSKUAndRequestDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Prod_ID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RemaningQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UOMID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeptName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RequesterName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DeptID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StatusID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AllSKUDetailsByRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="AllSKUDetailsByRequestResult" type="tns:ArrayOfVW_GetSKUAndRequestDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SKUDetailsBySelectedRequestID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedRequest" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SKUDetailsBySelectedRequestIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SKUDetailsBySelectedRequestIDResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FromDate" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ToDate" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="User" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDataBySelectedOrderResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedSKU">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedKU" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedSKUResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDataBySelectedSKUResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedSKUAndOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProduct" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataBySelectedSKUAndOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDataBySelectedSKUAndOrderResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSKUData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="GroupSetID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Image" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="WithZero" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSKUDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllSKUDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSKUDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Image" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="WithZero" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSKUDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllSKUDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUserDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUserDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllUserDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUserData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Role" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUserDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllUserDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSkuResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUDetailsReprtData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="GroupSetID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUDetailsReprtDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSKUDetailsReprtDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonListDeptWise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Dept" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonListDeptWiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonListDeptWiseResult" type="tns:ArrayOfTContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Dept" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonListResult" type="tns:ArrayOfTContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPerson2List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Dept" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="Cont1" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPerson2ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPerson2ListResult" type="tns:ArrayOfTContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeptAddressList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Dept" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeptAddressListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDeptAddressListResult" type="tns:ArrayOfTAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserCompanyNameResult" type="tns:ArrayOfMCompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetUserCompanyIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartmentListUserWise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartmentListUserWiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDepartmentListUserWiseResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteIdOfUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteIdOfUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetSiteIdOfUserResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyIDFromSiteID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SiteID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyIDFromSiteIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetCompanyIDFromSiteIDResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SkuLstRpt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedGroupSet" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVW_GWC_SkuFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VW_GWC_SkuFilter" nillable="true" type="tns:VW_GWC_SkuFilter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VW_GWC_SkuFilter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Path" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StoreId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GroupSet" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OpeningStock" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalReceiveQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalDispatchQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ResurveQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AvailableBalance" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Image" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StoreCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SkuImage" type="xs:base64Binary" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PrincipalPrice" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="moq" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Logo" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SkuLstRptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SkuLstRptResult" type="tns:ArrayOfVW_GWC_SkuFilter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SkulistReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedGroupSet" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedImage" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SkulistReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SkulistReportResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUDetailsSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUDetailsSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSKUDetailsSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBOMDetailsReprtData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="GroupSetID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBOMDetailsReprtDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetBOMDetailsReprtDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBOMDetailsSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBOMDetailsSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetBOMDetailsSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsrLst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsrLstResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUsrLstResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDetailsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsrLst1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GWC_GetUserInfo_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GWC_GetUserInfo_Result" nillable="true" type="tns:SP_GWC_GetUserInfo_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GWC_GetUserInfo_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Company" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUsrLst1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUsrLst1Result" type="tns:ArrayOfSP_GWC_GetUserInfo_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderDetailsReprtData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderDetailsReprtDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetOrderDetailsReprtDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDetailsDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDetailsDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDetailsDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="RoleID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GWC_GetUserInfoRoleWise_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GWC_GetUserInfoRoleWise_Result" nillable="true" type="tns:SP_GWC_GetUserInfoRoleWise_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GWC_GetUserInfoRoleWise_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Company" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUserInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserInformationResult" type="tns:ArrayOfSP_GWC_GetUserInfoRoleWise_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderLeadReprtData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderLeadReprtDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderLeadReprtDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderSelectedOrderRpt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderSelectedOrderRptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderSelectedOrderRptResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditAllPrd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditAllPrdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditAllPrdResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditSelectedPrd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditSelectedPrdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditSelectedPrdResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditFailResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonDetailsByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ContactID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonDetailsByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonDetailsByIDResult" type="tns:tContactPersonDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressDetailsByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="AdrsID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressDetailsByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAddressDetailsByIDResult" type="tns:tAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditContactPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConPerD" type="tns:tContactPersonDetail" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditContactPersonResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="AddIntotContactpersonDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConPerD" type="tns:tContactPersonDetail" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddIntotContactpersonDetailResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="EditAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Adrs" type="tns:tAddress" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditAddressResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="AddIntotAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Adrs" type="tns:tAddress" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddIntotAddressResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="getContact1NameByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="EdtCon1" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContact1NameByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="getContact1NameByIDResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContact2NamesByIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EdtCon2" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContact2NamesByIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="getContact2NamesByIDsResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressLineByAdrsID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="EdtAddress" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressLineByAdrsIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAddressLineByAdrsIDResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetStateListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailPrdLst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailPrdLstResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditFailPrdLstResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailSelectedProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailSelectedProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditFailSelectedProductResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedProducts" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSKUTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSKUTransactionResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UserSelectedRec" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserTransactionResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SkulistReportSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedGroupSet" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedImage" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SearchedValue" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SkulistReportSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SkulistReportSearchResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditAllPrdSearched">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SearchedValue" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditAllPrdSearchedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditAllPrdSearchedResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailPrdLstSearched">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SearchedValue" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImageAuditFailPrdLstSearchedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetImageAuditFailPrdLstSearchedResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInformationSearched">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="RoleID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Searchedvalue" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInformationSearchedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserInformationSearchedResult" type="tns:ArrayOfSP_GWC_GetUserInfoRoleWise_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyNameNEW">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCompanyNameNEWResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserCompanyNameNEWResult" type="tns:ArrayOfMCompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddedDepartmentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ComapnyID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddedDepartmentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAddedDepartmentListResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddedDepartmentListDS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ComapnyID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddedDepartmentListDSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAddedDepartmentListDSResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDriverList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDriverListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllDriverListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDelivery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDriver" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedPaymentMode" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDeliveryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDeliveryResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDeliveryDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderDeliveryDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllOrderDeliveryDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSlaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDriver" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDeliveryType" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSlaDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllSlaDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSlaDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSlaDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllSlaDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToTalDeliveryVSTotalReq">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToTalDeliveryVSTotalReqResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetToTalDeliveryVSTotalReqResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToTalDeliveryVSTotalReqDataSelectedRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToTalDeliveryVSTotalReqDataSelectedRowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetToTalDeliveryVSTotalReqDataSelectedRowResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdrsType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdrsTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAdrsTypeResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeptAddressListAdrsType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeptAddressListAdrsTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDeptAddressListAdrsTypeResult" type="tns:ArrayOfTAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserLocationResult" type="tns:ArrayOfTAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllOrderReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedCompany" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedDepartment" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedUser" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllOrderReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="AllOrderReportsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationOfUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVW_GetUserLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VW_GetUserLocation" nillable="true" type="tns:VW_GetUserLocation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VW_GetUserLocation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LocationID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ContactID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLocationOfUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetLocationOfUserResult" type="tns:ArrayOfVW_GetUserLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationDetailsByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="AdrsID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationDetailsByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetLocationDetailsByIDResult" type="tns:VW_GetUserLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Con" type="tns:tContactPersonDetail" />
+        <xs:element minOccurs="1" maxOccurs="1" name="AdrsID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditLocationResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetUsersDepartmentWise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DeptID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetUsers_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetUsers_Result" nillable="true" type="tns:SP_GetUsers_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetUsers_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Company" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UserType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StoreCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProfileImg" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUsersDepartmentWiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUsersDepartmentWiseResult" type="tns:ArrayOfSP_GetUsers_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVendors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVendorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetVendorsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedvender" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedstatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetPurchaseOrderResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectedPurchaseOrderDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedPurchaseOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSelectedPurchaseOrderDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSelectedPurchaseOrderDetailsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedvender" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedstatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllPurchaseOrderDetailsResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedvender" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedstatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllPurchaseOrderReportResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderSelectedRowReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedOrder" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPurchaseOrderSelectedRowReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAllPurchaseOrderSelectedRowReportResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceivableOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="FrmDt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Todt" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="selectedvender" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceivableOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetReceivableOrderResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

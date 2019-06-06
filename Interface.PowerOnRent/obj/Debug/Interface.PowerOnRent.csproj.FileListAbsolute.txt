@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Debug\Interface.PowerOnRent.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Debug\Interface.PowerOnRent.pdb

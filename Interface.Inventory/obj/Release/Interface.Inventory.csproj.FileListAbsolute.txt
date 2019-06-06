@@ -1,0 +1,42 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Inventory\obj\Release\Interface.Inventory.pdb

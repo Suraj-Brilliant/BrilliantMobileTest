@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProductCategoryService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Product/ProductCategoryService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertmProductCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductCategory" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertmProductCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_updatemProductCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductCategory" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_updatemProductCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryListByID" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetPrdCategoryRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdCategoryRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetPrdCategoryRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdCategoryRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryListForAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryListForAsset" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetProductCategoryListForAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryListForAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetActivityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetActivityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessageList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessageList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertEmailTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmailTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertEmailTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmailTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetTemplateListForGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateListForGrid" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetTemplateListForGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateListForGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_UpdateEmailTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_UpdateEmailTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetAutoCancellationStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutoCancellationStatus" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetAutoCancellationStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutoCancellationStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateTemplateEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateTemplateEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateTemplateEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateTemplateEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateInterface_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateInterface" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateInterface_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateInterfaceEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateInterfaceEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_checkDuplicateInterfaceEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateInterfaceEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetDestination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDestination" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetDestination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDestinationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetActionType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionType" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetActionType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObject" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_FieldList_InputMessage">
+    <wsdl:part name="parameters" element="tns:FieldList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_FieldList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FieldListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageIntoTemptable_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageIntoTemptable" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageIntoTemptable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageIntoTemptableResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteMessageTemptable_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMessageTemptable" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteMessageTemptable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMessageTemptableResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageHeader" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessHeaderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessHeaderID" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessHeaderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessHeaderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsrtIntoMessageHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsrtIntoMessageHeader" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsrtIntoMessageHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsrtIntoMessageHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessageTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageTempData" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetMessageTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetFieldDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldDetails" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetFieldDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteFieldFromList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFieldFromList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteFieldFromList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFieldFromListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteFieldFromListWhenEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFieldFromListWhenEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_DeleteFieldFromListWhenEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFieldFromListWhenEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetFieldDetailsFromMessageTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldDetailsFromMessageTable" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetFieldDetailsFromMessageTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldDetailsFromMessageTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_UpdateMessageHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMessageHeader" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_UpdateMessageHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMessageHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_InsertMessageDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetTemplateListForGridAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateListForGridAdmin" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetTemplateListForGridAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateListForGridAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="iProductCategoryMaster_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iProductCategoryMaster">
+    <wsdl:operation name="GetProductCategoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryList" message="tns:iProductCategoryMaster_GetProductCategoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListResponse" message="tns:iProductCategoryMaster_GetProductCategoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertmProductCategory" message="tns:iProductCategoryMaster_InsertmProductCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertmProductCategoryResponse" message="tns:iProductCategoryMaster_InsertmProductCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/updatemProductCategory" message="tns:iProductCategoryMaster_updatemProductCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/updatemProductCategoryResponse" message="tns:iProductCategoryMaster_updatemProductCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategoryListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListByID" message="tns:iProductCategoryMaster_GetProductCategoryListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListByIDResponse" message="tns:iProductCategoryMaster_GetProductCategoryListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecord" message="tns:iProductCategoryMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecordResponse" message="tns:iProductCategoryMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecordEdit" message="tns:iProductCategoryMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecordEditResponse" message="tns:iProductCategoryMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdCategoryRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetPrdCategoryRecordToBindGrid" message="tns:iProductCategoryMaster_GetPrdCategoryRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetPrdCategoryRecordToBindGridResponse" message="tns:iProductCategoryMaster_GetPrdCategoryRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategoryListForAsset">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListForAsset" message="tns:iProductCategoryMaster_GetProductCategoryListForAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListForAssetResponse" message="tns:iProductCategoryMaster_GetProductCategoryListForAsset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetActivityList" message="tns:iProductCategoryMaster_GetActivityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetActivityListResponse" message="tns:iProductCategoryMaster_GetActivityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessageList" message="tns:iProductCategoryMaster_GetMessageList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessageListResponse" message="tns:iProductCategoryMaster_GetMessageList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmailTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertEmailTemplate" message="tns:iProductCategoryMaster_InsertEmailTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertEmailTemplateResponse" message="tns:iProductCategoryMaster_InsertEmailTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateListForGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGrid" message="tns:iProductCategoryMaster_GetTemplateListForGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGridResponse" message="tns:iProductCategoryMaster_GetTemplateListForGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmailTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/UpdateEmailTemplate" message="tns:iProductCategoryMaster_UpdateEmailTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/UpdateEmailTemplateResponse" message="tns:iProductCategoryMaster_UpdateEmailTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoCancellationStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetAutoCancellationStatus" message="tns:iProductCategoryMaster_GetAutoCancellationStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetAutoCancellationStatusResponse" message="tns:iProductCategoryMaster_GetAutoCancellationStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplate" message="tns:iProductCategoryMaster_checkDuplicateTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplateResponse" message="tns:iProductCategoryMaster_checkDuplicateTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateTemplateEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplateEdit" message="tns:iProductCategoryMaster_checkDuplicateTemplateEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplateEditResponse" message="tns:iProductCategoryMaster_checkDuplicateTemplateEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateInterface">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterface" message="tns:iProductCategoryMaster_checkDuplicateInterface_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterfaceResponse" message="tns:iProductCategoryMaster_checkDuplicateInterface_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateInterfaceEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterfaceEdit" message="tns:iProductCategoryMaster_checkDuplicateInterfaceEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterfaceEditResponse" message="tns:iProductCategoryMaster_checkDuplicateInterfaceEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDestination">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetDestination" message="tns:iProductCategoryMaster_GetDestination_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetDestinationResponse" message="tns:iProductCategoryMaster_GetDestination_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetActionType" message="tns:iProductCategoryMaster_GetActionType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetActionTypeResponse" message="tns:iProductCategoryMaster_GetActionType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetObject" message="tns:iProductCategoryMaster_GetObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetObjectResponse" message="tns:iProductCategoryMaster_GetObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FieldList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/FieldList" message="tns:iProductCategoryMaster_FieldList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/FieldListResponse" message="tns:iProductCategoryMaster_FieldList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageIntoTemptable">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageIntoTemptable" message="tns:iProductCategoryMaster_InsertMessageIntoTemptable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageIntoTemptableResponse" message="tns:iProductCategoryMaster_InsertMessageIntoTemptable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMessageTemptable">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteMessageTemptable" message="tns:iProductCategoryMaster_DeleteMessageTemptable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteMessageTemptableResponse" message="tns:iProductCategoryMaster_DeleteMessageTemptable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageHeader" message="tns:iProductCategoryMaster_InsertMessageHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageHeaderResponse" message="tns:iProductCategoryMaster_InsertMessageHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessHeaderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessHeaderID" message="tns:iProductCategoryMaster_GetMessHeaderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessHeaderIDResponse" message="tns:iProductCategoryMaster_GetMessHeaderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsrtIntoMessageHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsrtIntoMessageHeader" message="tns:iProductCategoryMaster_InsrtIntoMessageHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsrtIntoMessageHeaderResponse" message="tns:iProductCategoryMaster_InsrtIntoMessageHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessageTempData" message="tns:iProductCategoryMaster_GetMessageTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetMessageTempDataResponse" message="tns:iProductCategoryMaster_GetMessageTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetFieldDetails" message="tns:iProductCategoryMaster_GetFieldDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetFieldDetailsResponse" message="tns:iProductCategoryMaster_GetFieldDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFieldFromList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromList" message="tns:iProductCategoryMaster_DeleteFieldFromList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromListResponse" message="tns:iProductCategoryMaster_DeleteFieldFromList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFieldFromListWhenEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromListWhenEdit" message="tns:iProductCategoryMaster_DeleteFieldFromListWhenEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromListWhenEditResponse" message="tns:iProductCategoryMaster_DeleteFieldFromListWhenEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldDetailsFromMessageTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetFieldDetailsFromMessageTable" message="tns:iProductCategoryMaster_GetFieldDetailsFromMessageTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetFieldDetailsFromMessageTableResponse" message="tns:iProductCategoryMaster_GetFieldDetailsFromMessageTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMessageHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/UpdateMessageHeader" message="tns:iProductCategoryMaster_UpdateMessageHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/UpdateMessageHeaderResponse" message="tns:iProductCategoryMaster_UpdateMessageHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageDetails" message="tns:iProductCategoryMaster_InsertMessageDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/InsertMessageDetailsResponse" message="tns:iProductCategoryMaster_InsertMessageDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateListForGridAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGridAdmin" message="tns:iProductCategoryMaster_GetTemplateListForGridAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGridAdminResponse" message="tns:iProductCategoryMaster_GetTemplateListForGridAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetCustomerList" message="tns:iProductCategoryMaster_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductCategoryMaster/GetCustomerListResponse" message="tns:iProductCategoryMaster_GetCustomerList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iProductCategoryMaster" type="tns:iProductCategoryMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductCategoryList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetProductCategoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductCategory">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsertmProductCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductCategory">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/updatemProductCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategoryListByID">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdCategoryRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetPrdCategoryRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategoryListForAsset">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetProductCategoryListForAsset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetActivityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmailTemplate">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsertEmailTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateListForGrid">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmailTemplate">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/UpdateEmailTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoCancellationStatus">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetAutoCancellationStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateTemplate">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateTemplateEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateTemplateEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateInterface">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateInterfaceEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/checkDuplicateInterfaceEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDestination">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetDestination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActionType">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetActionType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObject">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FieldList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/FieldList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageIntoTemptable">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsertMessageIntoTemptable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMessageTemptable">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/DeleteMessageTemptable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageHeader">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsertMessageHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessHeaderID">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetMessHeaderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsrtIntoMessageHeader">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsrtIntoMessageHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageTempData">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetMessageTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldDetails">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetFieldDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFieldFromList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFieldFromListWhenEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/DeleteFieldFromListWhenEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldDetailsFromMessageTable">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetFieldDetailsFromMessageTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMessageHeader">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/UpdateMessageHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessageDetails">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/InsertMessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateListForGridAdmin">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetTemplateListForGridAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://tempuri.org/iProductCategoryMaster/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProductCategoryService">
+    <wsdl:port name="BasicHttpBinding_iProductCategoryMaster" binding="tns:BasicHttpBinding_iProductCategoryMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Product/ProductCategoryService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

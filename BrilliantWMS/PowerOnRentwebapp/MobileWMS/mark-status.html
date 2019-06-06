@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+    <title>Mark Status</title>
+</head>
+<body>
+    <form action="mark-status.ashx" method="POST">
+        Order Id: <br />
+        <input type="text" name="orid"  value="1002|1003|1004"/><br /><br />
+        Status: <br />
+        <select name="status">
+            <option value="dispatch">dispatch</option>
+            <option value="return">return</option>
+        </select>
+        <br />
+        <br />
+        <input type="SUBMIT" value="SUBMIT" />
+    </form>
+</body>
+</html>

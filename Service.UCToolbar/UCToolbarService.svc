@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.UCToolbar.UCToolbarService" CodeBehind="UCToolbarService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>

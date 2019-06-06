@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+          <EntitySet Name="TempData" EntityType="BISPL_CRMDBModel.Store.TempData" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TempData">
+          <Key>
+            <PropertyRef Name="TempDataID" />
+          </Key>
+          <Property Name="TempDataID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="xml" Nullable="false" />
+          <Property Name="XmlData" Type="xml" />
+          <Property Name="LastUpdated" Type="datetime" Nullable="false" />
+          <Property Name="SessionID" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="TableName" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <Function Name="SP_GetCartProductDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductIDs" Type="varchar(max)" Mode="In" />
+          <Parameter Name="MaxSeqence" Type="bigint" Mode="In" />
+          <Parameter Name="SessionID" Type="nvarchar" Mode="In" />
+          <Parameter Name="CurrentObjectName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ReferenceID" Type="bigint" Mode="In" />
+          <Parameter Name="ObjectConvertFrom" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_InsertIntoCartProductDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SessionID" Type="varchar" Mode="In" />
+          <Parameter Name="ReferenceID" Type="bigint" Mode="In" />
+          <Parameter Name="UserID" Type="varchar" Mode="In" />
+          <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TempDatas" EntityType="BISPL_CRMDBModel.TempData" />
+          <FunctionImport Name="SP_InsertIntoCartProductDetail">
+            <Parameter Name="SessionID" Mode="In" Type="String" />
+            <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="UserID" Mode="In" Type="String" />
+            <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetCartProductDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_GetCartProductDetail_Result)">
+            <Parameter Name="ProductIDs" Mode="In" Type="String" />
+            <Parameter Name="MaxSeqence" Mode="In" Type="Int64" />
+            <Parameter Name="SessionID" Mode="In" Type="String" />
+            <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+            <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="ObjectConvertFrom" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetCartProductDetail1" ReturnType="Collection(BISPL_CRMDBModel.SP_GetCartProductDetail1_Result)">
+            <Parameter Name="ProductIDs" Mode="In" Type="String" />
+            <Parameter Name="MaxSeqence" Mode="In" Type="Int64" />
+            <Parameter Name="SessionID" Mode="In" Type="String" />
+            <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+            <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="ObjectConvertFrom" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="TempData">
+          <Key>
+            <PropertyRef Name="TempDataID" />
+          </Key>
+          <Property Type="Int32" Name="TempDataID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="XmlData" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastUpdated" Nullable="false" Precision="3" />
+          <Property Type="String" Name="SessionID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TableName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="SP_GetCartProductDetail_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="1" />
+          <Property Type="Int32" Name="ReferenceID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" Nullable="true" />
+          <Property Type="Int64" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="ProductDescription" Nullable="true" />
+          <Property Type="Int64" Name="UOMID" Nullable="false" />
+          <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="ProductPrice" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="PerUnitDiscount" Nullable="false" Precision="2" Scale="2" />
+          <Property Type="String" Name="IsDiscountPercent" Nullable="false" MaxLength="5" />
+          <Property Type="Int32" Name="DiscountID" Nullable="false" />
+          <Property Type="Decimal" Name="RateAfterDiscount" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="3" Scale="2" />
+          <Property Type="Decimal" Name="AmountAfterDiscount" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="String" Name="Remark" Nullable="false" MaxLength="1" />
+        </ComplexType>
+        <ComplexType Name="SP_GetCartProductDetail1_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="1" />
+          <Property Type="Int32" Name="ReferenceID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" Nullable="true" />
+          <Property Type="Int64" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="ProductDescription" Nullable="true" />
+          <Property Type="Int64" Name="UOMID" Nullable="false" />
+          <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="ProductPrice" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="PerUnitDiscount" Nullable="false" Precision="2" Scale="2" />
+          <Property Type="String" Name="IsDiscountPercent" Nullable="false" MaxLength="5" />
+          <Property Type="Int32" Name="DiscountID" Nullable="false" />
+          <Property Type="Decimal" Name="RateAfterDiscount" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="3" Scale="2" />
+          <Property Type="Decimal" Name="AmountAfterDiscount" Nullable="true" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="String" Name="Remark" Nullable="false" MaxLength="1" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BISPL_CRMDBModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+          <EntitySetMapping Name="TempDatas">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.TempData">
+              <MappingFragment StoreEntitySet="TempData">
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="XmlData" ColumnName="XmlData" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="TempDataID" ColumnName="TempDataID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_InsertIntoCartProductDetail" FunctionName="BISPL_CRMDBModel.Store.SP_InsertIntoCartProductDetail" />
+          <FunctionImportMapping FunctionImportName="SP_GetCartProductDetail" FunctionName="BISPL_CRMDBModel.Store.SP_GetCartProductDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_GetCartProductDetail_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+                <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+                <ScalarProperty Name="UOM" ColumnName="UOM" />
+                <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+                <ScalarProperty Name="PerUnitDiscount" ColumnName="PerUnitDiscount" />
+                <ScalarProperty Name="IsDiscountPercent" ColumnName="IsDiscountPercent" />
+                <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+                <ScalarProperty Name="RateAfterDiscount" ColumnName="RateAfterDiscount" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="AmountAfterDiscount" ColumnName="AmountAfterDiscount" />
+                <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+                <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetCartProductDetail1" FunctionName="BISPL_CRMDBModel.Store.SP_GetCartProductDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_GetCartProductDetail1_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+                <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+                <ScalarProperty Name="UOM" ColumnName="UOM" />
+                <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+                <ScalarProperty Name="PerUnitDiscount" ColumnName="PerUnitDiscount" />
+                <ScalarProperty Name="IsDiscountPercent" ColumnName="IsDiscountPercent" />
+                <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+                <ScalarProperty Name="RateAfterDiscount" ColumnName="RateAfterDiscount" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="AmountAfterDiscount" ColumnName="AmountAfterDiscount" />
+                <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+                <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ElegantCRMDataModel">
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.TempData" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

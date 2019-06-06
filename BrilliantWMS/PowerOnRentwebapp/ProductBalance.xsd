@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductBalance" targetNamespace="http://tempuri.org/ProductBalance.xsd" xmlns:mstns="http://tempuri.org/ProductBalance.xsd" xmlns="http://tempuri.org/ProductBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="elegantcrm7ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="elegantcrm7ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.elegantcrm7ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_GetProductAvailableBalanceTableAdapter" GeneratorDataComponentClassName="V_GetProductAvailableBalanceTableAdapter" Name="V_GetProductAvailableBalance" UserDataComponentName="V_GetProductAvailableBalanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="elegantcrm7ConnectionString (Web.config)" DbObjectName="elegantcrm7.dbo.V_GetProductAvailableBalance" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SiteID, ProdID, ProductCode, Name, AvailableBalance, Territory, LastConsumedQty, LastConsumedDate FROM dbo.V_GetProductAvailableBalance</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SiteID" DataSetColumn="SiteID" />
+              <Mapping SourceColumn="ProdID" DataSetColumn="ProdID" />
+              <Mapping SourceColumn="ProductCode" DataSetColumn="ProductCode" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="AvailableBalance" DataSetColumn="AvailableBalance" />
+              <Mapping SourceColumn="Territory" DataSetColumn="Territory" />
+              <Mapping SourceColumn="LastConsumedQty" DataSetColumn="LastConsumedQty" />
+              <Mapping SourceColumn="LastConsumedDate" DataSetColumn="LastConsumedDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProductBalance" msprop:Generator_UserDSName="ProductBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_GetProductAvailableBalance" msprop:Generator_TableClassName="V_GetProductAvailableBalanceDataTable" msprop:Generator_TableVarName="tableV_GetProductAvailableBalance" msprop:Generator_TablePropName="V_GetProductAvailableBalance" msprop:Generator_RowDeletingName="V_GetProductAvailableBalanceRowDeleting" msprop:Generator_UserTableName="V_GetProductAvailableBalance" msprop:Generator_RowChangingName="V_GetProductAvailableBalanceRowChanging" msprop:Generator_RowEvHandlerName="V_GetProductAvailableBalanceRowChangeEventHandler" msprop:Generator_RowDeletedName="V_GetProductAvailableBalanceRowDeleted" msprop:Generator_RowEvArgName="V_GetProductAvailableBalanceRowChangeEvent" msprop:Generator_RowChangedName="V_GetProductAvailableBalanceRowChanged" msprop:Generator_RowClassName="V_GetProductAvailableBalanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:long" />
+              <xs:element name="ProdID" msprop:Generator_ColumnVarNameInTable="columnProdID" msprop:Generator_ColumnPropNameInRow="ProdID" msprop:Generator_ColumnPropNameInTable="ProdIDColumn" msprop:Generator_UserColumnName="ProdID" type="xs:long" />
+              <xs:element name="ProductCode" msprop:Generator_ColumnVarNameInTable="columnProductCode" msprop:Generator_ColumnPropNameInRow="ProductCode" msprop:Generator_ColumnPropNameInTable="ProductCodeColumn" msprop:Generator_UserColumnName="ProductCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AvailableBalance" msprop:Generator_ColumnVarNameInTable="columnAvailableBalance" msprop:Generator_ColumnPropNameInRow="AvailableBalance" msprop:Generator_ColumnPropNameInTable="AvailableBalanceColumn" msprop:Generator_UserColumnName="AvailableBalance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Territory" msprop:Generator_ColumnVarNameInTable="columnTerritory" msprop:Generator_ColumnPropNameInRow="Territory" msprop:Generator_ColumnPropNameInTable="TerritoryColumn" msprop:Generator_UserColumnName="Territory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastConsumedQty" msprop:Generator_ColumnVarNameInTable="columnLastConsumedQty" msprop:Generator_ColumnPropNameInRow="LastConsumedQty" msprop:Generator_ColumnPropNameInTable="LastConsumedQtyColumn" msprop:Generator_UserColumnName="LastConsumedQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LastConsumedDate" msprop:Generator_ColumnVarNameInTable="columnLastConsumedDate" msprop:Generator_ColumnPropNameInRow="LastConsumedDate" msprop:Generator_ColumnPropNameInTable="LastConsumedDateColumn" msprop:Generator_UserColumnName="LastConsumedDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

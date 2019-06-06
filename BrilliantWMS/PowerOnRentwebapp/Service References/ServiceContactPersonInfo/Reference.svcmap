@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4cc3afe5-5489-4401-be60-5d12663d79c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.ContactPerson/ContactPersonInfo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ContactPersonInfo.wsdl" MetadataType="Wsdl" ID="ce620a81-8075-4117-87e1-786970113d06" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.ContactPerson/ContactPersonInfo.svc?wsdl" />
+    <MetadataFile FileName="ContactPersonInfo.xsd" MetadataType="Schema" ID="b9458230-f34d-473a-90e0-d9b00f200283" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.ContactPerson/ContactPersonInfo.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContactPersonInfo.disco" MetadataType="Disco" ID="57a57b78-aaf6-4c0d-9ac5-ff7298d8205e" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.ContactPerson/ContactPersonInfo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RoleMasterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.UserManagement/RoleMasterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iRoleMaster_GetDataToBindRoleMasterDetailsByRoleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataToBindRoleMasterDetailsByRoleID" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetDataToBindRoleMasterDetailsByRoleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataToBindRoleMasterDetailsByRoleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_UpdateRoleIntoSessionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleIntoSessionList" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_UpdateRoleIntoSessionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleIntoSessionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_FinalSave_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSave" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_FinalSave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetmRoleByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetmRoleByID" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetmRoleByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetmRoleByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_BindRoleMasterSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindRoleMasterSummary" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_BindRoleMasterSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindRoleMasterSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleMasterListByDepartmentIDDesignationID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleMasterListByDepartmentIDDesignationID" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleMasterListByDepartmentIDDesignationID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleMasterListByDepartmentIDDesignationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleMasterListByDepartmentID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleMasterListByDepartmentID" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleMasterListByDepartmentID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleMasterListByDepartmentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetGWCDataToBindRoleMasterDetailsByRoleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCDataToBindRoleMasterDetailsByRoleID" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetGWCDataToBindRoleMasterDetailsByRoleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCDataToBindRoleMasterDetailsByRoleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_FinalSaveRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRole" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_FinalSaveRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_BindGWCRoleMasterSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindGWCRoleMasterSummary" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_BindGWCRoleMasterSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindGWCRoleMasterSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleList" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GetRoleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GWCUpdateRoleIntoSessionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GWCUpdateRoleIntoSessionList" />
+  </wsdl:message>
+  <wsdl:message name="iRoleMaster_GWCUpdateRoleIntoSessionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GWCUpdateRoleIntoSessionListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iRoleMaster">
+    <wsdl:operation name="GetDataToBindRoleMasterDetailsByRoleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetDataToBindRoleMasterDetailsByRoleID" message="tns:iRoleMaster_GetDataToBindRoleMasterDetailsByRoleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetDataToBindRoleMasterDetailsByRoleIDResponse" message="tns:iRoleMaster_GetDataToBindRoleMasterDetailsByRoleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleIntoSessionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/UpdateRoleIntoSessionList" message="tns:iRoleMaster_UpdateRoleIntoSessionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/UpdateRoleIntoSessionListResponse" message="tns:iRoleMaster_UpdateRoleIntoSessionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSave">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/FinalSave" message="tns:iRoleMaster_FinalSave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/FinalSaveResponse" message="tns:iRoleMaster_FinalSave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetmRoleByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetmRoleByID" message="tns:iRoleMaster_GetmRoleByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetmRoleByIDResponse" message="tns:iRoleMaster_GetmRoleByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindRoleMasterSummary">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/BindRoleMasterSummary" message="tns:iRoleMaster_BindRoleMasterSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/BindRoleMasterSummaryResponse" message="tns:iRoleMaster_BindRoleMasterSummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMasterListByDepartmentIDDesignationID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentIDDesignationID" message="tns:iRoleMaster_GetRoleMasterListByDepartmentIDDesignationID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentIDDesignationIDResponse" message="tns:iRoleMaster_GetRoleMasterListByDepartmentIDDesignationID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMasterListByDepartmentID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentID" message="tns:iRoleMaster_GetRoleMasterListByDepartmentID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentIDResponse" message="tns:iRoleMaster_GetRoleMasterListByDepartmentID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/checkDuplicateRecord" message="tns:iRoleMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/checkDuplicateRecordResponse" message="tns:iRoleMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/checkDuplicateRecordEdit" message="tns:iRoleMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/checkDuplicateRecordEditResponse" message="tns:iRoleMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCDataToBindRoleMasterDetailsByRoleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetGWCDataToBindRoleMasterDetailsByRoleID" message="tns:iRoleMaster_GetGWCDataToBindRoleMasterDetailsByRoleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetGWCDataToBindRoleMasterDetailsByRoleIDResponse" message="tns:iRoleMaster_GetGWCDataToBindRoleMasterDetailsByRoleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/FinalSaveRole" message="tns:iRoleMaster_FinalSaveRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/FinalSaveRoleResponse" message="tns:iRoleMaster_FinalSaveRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindGWCRoleMasterSummary">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/BindGWCRoleMasterSummary" message="tns:iRoleMaster_BindGWCRoleMasterSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/BindGWCRoleMasterSummaryResponse" message="tns:iRoleMaster_BindGWCRoleMasterSummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleList" message="tns:iRoleMaster_GetRoleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GetRoleListResponse" message="tns:iRoleMaster_GetRoleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GWCUpdateRoleIntoSessionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iRoleMaster/GWCUpdateRoleIntoSessionList" message="tns:iRoleMaster_GWCUpdateRoleIntoSessionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iRoleMaster/GWCUpdateRoleIntoSessionListResponse" message="tns:iRoleMaster_GWCUpdateRoleIntoSessionList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iRoleMaster" type="tns:iRoleMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataToBindRoleMasterDetailsByRoleID">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetDataToBindRoleMasterDetailsByRoleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleIntoSessionList">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/UpdateRoleIntoSessionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSave">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/FinalSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmRoleByID">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetmRoleByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRoleMasterSummary">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/BindRoleMasterSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMasterListByDepartmentIDDesignationID">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentIDDesignationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMasterListByDepartmentID">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetRoleMasterListByDepartmentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCDataToBindRoleMasterDetailsByRoleID">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetGWCDataToBindRoleMasterDetailsByRoleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRole">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/FinalSaveRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindGWCRoleMasterSummary">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/BindGWCRoleMasterSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleList">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GetRoleList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWCUpdateRoleIntoSessionList">
+      <soap:operation soapAction="http://tempuri.org/iRoleMaster/GWCUpdateRoleIntoSessionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RoleMasterService">
+    <wsdl:port name="BasicHttpBinding_iRoleMaster" binding="tns:BasicHttpBinding_iRoleMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.UserManagement/RoleMasterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

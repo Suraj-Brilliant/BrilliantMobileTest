@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+    <EntitySet Name="mStatutory" EntityType="BISPL_CRMDBModel.Store.mStatutory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mTaxSetup" EntityType="BISPL_CRMDBModel.Store.mTaxSetup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TempCartProductLevelTaxDetail" EntityType="BISPL_CRMDBModel.Store.TempCartProductLevelTaxDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tStatutoryDetail" EntityType="BISPL_CRMDBModel.Store.tStatutoryDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vTaxSetupDetail" EntityType="BISPL_CRMDBModel.Store.vTaxSetupDetail" store:Type="Views" store:Schema="dbo" store:Name="vTaxSetupDetail">
+      <DefiningQuery>SELECT 
+      [vTaxSetupDetail].[ID] AS [ID], 
+      [vTaxSetupDetail].[Name] AS [Name], 
+      [vTaxSetupDetail].[Description] AS [Description], 
+      [vTaxSetupDetail].[Type] AS [Type], 
+      [vTaxSetupDetail].[Percent] AS [Percent], 
+      [vTaxSetupDetail].[Active] AS [Active], 
+      [vTaxSetupDetail].[CreatedBy] AS [CreatedBy], 
+      [vTaxSetupDetail].[CreatedDate] AS [CreatedDate], 
+      [vTaxSetupDetail].[LastEditBy] AS [LastEditBy], 
+      [vTaxSetupDetail].[LastEditDate] AS [LastEditDate], 
+      [vTaxSetupDetail].[TaxMapping] AS [TaxMapping], 
+      [vTaxSetupDetail].[CompanyID] AS [CompanyID], 
+      [vTaxSetupDetail].[Sequence] AS [Sequence], 
+      [vTaxSetupDetail].[CustomerID] AS [CustomerID], 
+      [vTaxSetupDetail].[Customer] AS [Customer]
+      FROM [dbo].[vTaxSetupDetail] AS [vTaxSetupDetail]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="BISPL_CRMDBModel.Store.FK_tCustomerStatutoryDetails_mStatutory">
+      <End Role="mStatutory" EntitySet="mStatutory" />
+      <End Role="tStatutoryDetail" EntitySet="tStatutoryDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="mStatutory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mTaxSetup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Percent" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastEditDate" Type="datetime" />
+    <Property Name="TaxMappingID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TempCartProductLevelTaxDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SessionID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CurrentForm" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProductDetailSequence" Type="bigint" />
+    <Property Name="TaxableAmount" Type="decimal" Scale="2" />
+    <Property Name="ParentTaxID" Type="bigint" />
+    <Property Name="TaxID" Type="bigint" />
+    <Property Name="TaxName" Type="nvarchar" MaxLength="200" />
+    <Property Name="TaxPercent" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ParentTaxPercent" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="TaxAmount" Type="decimal" Scale="2" />
+    <Property Name="TaxSequence" Type="bigint" />
+    <Property Name="CheckBoxVisible" Type="bit" />
+    <Property Name="IsChecked" Type="bit" />
+  </EntityType>
+  <EntityType Name="tStatutoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="StatutoryID" Type="bigint" />
+    <Property Name="StatutoryValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastEditDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="ApproverID" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vTaxSetupDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vTaxSetupDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Percent" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Percent" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastEditDate" Type="datetime" />
+    <Property Name="TaxMapping" Type="varchar(max)" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+    <End Role="mStatutory" Type="BISPL_CRMDBModel.Store.mStatutory" Multiplicity="0..1" />
+    <End Role="tStatutoryDetail" Type="BISPL_CRMDBModel.Store.tStatutoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatutory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tStatutoryDetail">
+        <PropertyRef Name="StatutoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="SP_CartBeforeUpdateProductLevelTaxDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+    <Parameter Name="SessionID" Type="varchar" Mode="In" />
+    <Parameter Name="CartSequence" Type="bigint" Mode="In" />
+    <Parameter Name="TaxableAmount" Type="decimal" Mode="In" />
+    <Parameter Name="SelectedTaxIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_CartUpdateProductLevelTaxDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+    <Parameter Name="SessionID" Type="varchar" Mode="In" />
+    <Parameter Name="CartSequence" Type="bigint" Mode="In" />
+    <Parameter Name="TaxableAmount" Type="decimal" Mode="In" />
+    <Parameter Name="SelectedTaxIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_GetStatutoryDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paraReferenceID" Type="bigint" Mode="In" />
+    <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+    <Parameter Name="paraObjectName" Type="varchar" Mode="In" />
+    <Parameter Name="paraCompanyID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SP_InsertIntotStatutoryDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+    <Parameter Name="paraObjectName" Type="varchar" Mode="In" />
+    <Parameter Name="paraReferenceID" Type="bigint" Mode="In" />
+    <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+    <Parameter Name="paracompanyID" Type="bigint" Mode="In" />
+  </Function>
+</Schema>

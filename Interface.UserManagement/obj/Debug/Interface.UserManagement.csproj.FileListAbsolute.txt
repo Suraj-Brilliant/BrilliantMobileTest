@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\bin\Debug\Interface.UserManagement.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UserManagement\obj\Debug\Interface.UserManagement.pdb

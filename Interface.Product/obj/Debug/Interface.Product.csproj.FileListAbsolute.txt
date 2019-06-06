@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\bin\Debug\Interface.Product.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Product\obj\Debug\Interface.Product.pdb

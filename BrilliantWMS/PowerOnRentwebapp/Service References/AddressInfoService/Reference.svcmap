@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="991b96f7-200a-4c44-9d76-77c095afc189" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Address/AddressInfoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AddressInfoService2.xsd" MetadataType="Schema" ID="2355aff7-f810-4e2e-bf1e-261a9aeafb77" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Address/AddressInfoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AddressInfoService2.wsdl" MetadataType="Wsdl" ID="ee856885-bf8d-45d0-b495-c1068afa10dc" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Address/AddressInfoService.svc?wsdl" />
+    <MetadataFile FileName="AddressInfoService2.disco" MetadataType="Disco" ID="f6f21ed2-3571-4b9e-b8c6-d14e6824c674" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Address/AddressInfoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

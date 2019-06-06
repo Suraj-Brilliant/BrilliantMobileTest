@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UCApplyTaxService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Tax/UCApplyTaxService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUCApplyTax_GetTaxListBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxListBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_GetTaxListBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxListBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_UpdateCalculatedTaxList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCalculatedTaxList" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_UpdateCalculatedTaxList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCalculatedTaxListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_GetCalculatedTaxListBeforeUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalculatedTaxListBeforeUpdate" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_GetCalculatedTaxListBeforeUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalculatedTaxListBeforeUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_GetCalculatedTaxAmount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalculatedTaxAmount" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_GetCalculatedTaxAmount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalculatedTaxAmountResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_FinalSaveProductLevelTax_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveProductLevelTax" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_FinalSaveProductLevelTax_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveProductLevelTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_RemoveTaxDetailBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTaxDetailBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_RemoveTaxDetailBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTaxDetailBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_ClearTempDataByCurrentObjectSessionID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataByCurrentObjectSessionID" />
+  </wsdl:message>
+  <wsdl:message name="iUCApplyTax_ClearTempDataByCurrentObjectSessionID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataByCurrentObjectSessionIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUCApplyTax">
+    <wsdl:operation name="GetTaxListBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/GetTaxListBySequence" message="tns:iUCApplyTax_GetTaxListBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/GetTaxListBySequenceResponse" message="tns:iUCApplyTax_GetTaxListBySequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCalculatedTaxList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/UpdateCalculatedTaxList" message="tns:iUCApplyTax_UpdateCalculatedTaxList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/UpdateCalculatedTaxListResponse" message="tns:iUCApplyTax_UpdateCalculatedTaxList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculatedTaxListBeforeUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/GetCalculatedTaxListBeforeUpdate" message="tns:iUCApplyTax_GetCalculatedTaxListBeforeUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/GetCalculatedTaxListBeforeUpdateResponse" message="tns:iUCApplyTax_GetCalculatedTaxListBeforeUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculatedTaxAmount">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/GetCalculatedTaxAmount" message="tns:iUCApplyTax_GetCalculatedTaxAmount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/GetCalculatedTaxAmountResponse" message="tns:iUCApplyTax_GetCalculatedTaxAmount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveProductLevelTax">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/FinalSaveProductLevelTax" message="tns:iUCApplyTax_FinalSaveProductLevelTax_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/FinalSaveProductLevelTaxResponse" message="tns:iUCApplyTax_FinalSaveProductLevelTax_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTaxDetailBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/RemoveTaxDetailBySequence" message="tns:iUCApplyTax_RemoveTaxDetailBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/RemoveTaxDetailBySequenceResponse" message="tns:iUCApplyTax_RemoveTaxDetailBySequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataByCurrentObjectSessionID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCApplyTax/ClearTempDataByCurrentObjectSessionID" message="tns:iUCApplyTax_ClearTempDataByCurrentObjectSessionID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCApplyTax/ClearTempDataByCurrentObjectSessionIDResponse" message="tns:iUCApplyTax_ClearTempDataByCurrentObjectSessionID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUCApplyTax" type="tns:iUCApplyTax">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTaxListBySequence">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/GetTaxListBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCalculatedTaxList">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/UpdateCalculatedTaxList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculatedTaxListBeforeUpdate">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/GetCalculatedTaxListBeforeUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculatedTaxAmount">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/GetCalculatedTaxAmount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveProductLevelTax">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/FinalSaveProductLevelTax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTaxDetailBySequence">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/RemoveTaxDetailBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataByCurrentObjectSessionID">
+      <soap:operation soapAction="http://tempuri.org/iUCApplyTax/ClearTempDataByCurrentObjectSessionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UCApplyTaxService">
+    <wsdl:port name="BasicHttpBinding_iUCApplyTax" binding="tns:BasicHttpBinding_iUCApplyTax">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Tax/UCApplyTaxService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

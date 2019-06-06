@@ -1,0 +1,92 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Service.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Service.Document.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Interface.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Tempdata.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Document.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Interface.Document.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\bin\Domain.Tempdata.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Service.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Service.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Interface.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Tempdata.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Interface.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\bin\Domain.Tempdata.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Document\obj\Release\Service.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Service.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Interface.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Interface.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Service.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Document.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Interface.Document.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Interface.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.dll
+F:\BWMS\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Service.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Interface.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Interface.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Service.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Interface.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Interface.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Service.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Interface.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Interface.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Domain.Tempdata.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\obj\Release\Service.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Document\bin\Service.Document.dll.config

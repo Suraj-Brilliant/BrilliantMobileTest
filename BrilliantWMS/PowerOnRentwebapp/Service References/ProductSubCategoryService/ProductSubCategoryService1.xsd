@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetProductSubCategoryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetProductSubCategoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductSubCategoryListResult" type="tns:ArrayOfMProductSubCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMProductSubCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mProductSubCategory" nillable="true" type="tns:mProductSubCategory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mProductSubCategory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductCategoryID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Companyid" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="mProductCategoryReference" type="tns:EntityReferenceOfmProductCategory" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityReferenceOfmProductCategory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityReference" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedEnd" abstract="true" />
+  <xs:element name="InsertmProductSubCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="prdSubCategory" type="tns:mProductSubCategory" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertmProductSubCategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="InsertmProductSubCategoryResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemProductSubCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="updateprdSubCategory" type="tns:mProductSubCategory" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemProductSubCategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="updatemProductSubCategoryResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductSubCategoryListByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ProductSubCategoryId" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductSubCategoryListByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductSubCategoryListByIDResult" type="tns:mProductSubCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="productSubCategoryName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="prdCategoryID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEdit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="productSubCategoryID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="productSubCategoryName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="productCategoryID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordEditResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrdSubCategoryRecordToBind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrdSubCategoryRecordToBindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetPrdSubCategoryRecordToBindResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductSubCategoryByProductCategoryID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="productCategoryID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGetProductSubCagetoryList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vGetProductSubCagetoryList" nillable="true" type="tns:vGetProductSubCagetoryList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vGetProductSubCagetoryList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductCategoryID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ProductSubCategory" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProductSubCategoryByProductCategoryIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetProductSubCategoryByProductCategoryIDResult" type="tns:ArrayOfVGetProductSubCagetoryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryListByCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryListByCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetCategoryListByCustomerResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubcategorylist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ProductCategoryID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubcategorylistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSubcategorylistResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetChannelListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetSiteDtls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSiteDtlsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSiteDtlsResult" type="tns:ArrayOfMTerritory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMTerritory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mTerritory" nillable="true" type="tns:mTerritory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mTerritory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Level" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GroupTitle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsMandatory" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="StoreCode" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AutoCancel" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="cancelDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApprovalRem" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AutoCancRen" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AutoRemSchedule" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApproRemSchedul" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ECommerce" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OrderFormat" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="GwcDeliveries" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxDeliveryDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FinApproverID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AddressType" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PriceChange" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertSiteMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteMaster" type="tns:mTerritory" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSiteMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="InsertSiteMasterResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemTerritory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjmTerritory" type="tns:mTerritory" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemTerritoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="updatemTerritoryResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTerritoryListByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="TerritoryId" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTerritoryListByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetTerritoryListByIDResult" type="tns:v_GetSiteDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="v_GetSiteDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AddressID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Level" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GroupTitle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsMandatory" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RouteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Landmark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="County" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="State" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="City" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zipcode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FaxNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsDefault" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Address_CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Address_CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Address_LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Address_LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="BillingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SubZone" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="checkDuplicateRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="TerritoryName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEdit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="TerritorytID" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TerritoryName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordEditResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateSiteAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjAddress" type="tns:tAddress" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="tAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressLine3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RouteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Landmark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="County" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="State" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="City" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zipcode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FaxNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsDefault" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="BillingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SubZone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactEmail" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MobileNo" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationName" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="updateSiteAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="updateSiteAddressResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSiteAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteAddress" type="tns:tAddress" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSiteAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="InsertSiteAddressResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetmTerritoryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfV_GetSiteDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="v_GetSiteDetails" nillable="true" type="tns:v_GetSiteDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetmTerritoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetmTerritoryListResult" type="tns:ArrayOfV_GetSiteDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetTableListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDataTypeListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertInterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Tablename" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DataType" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FieldName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IsNull" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedBy" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertInterfaceResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="UpdateInterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Tablename" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DataType" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FieldName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IsNull" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ModifyBy" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInterfaceResponse">
+    <xs:complexType />
+  </xs:element>
+</xs:schema>

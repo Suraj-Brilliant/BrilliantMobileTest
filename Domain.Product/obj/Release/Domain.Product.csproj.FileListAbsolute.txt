@@ -1,0 +1,77 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Product.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Product.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Tempdata.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Interface.Product.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Tempdata.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\bin\Release\Interface.Product.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Product.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Interface.Product.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Product.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Domain.Tempdata.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\bin\Release\Interface.Product.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Product\obj\Release\Domain.Product.pdb

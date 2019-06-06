@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\bin\Debug\Interface.Inventory.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inventory\obj\Debug\Interface.Inventory.pdb

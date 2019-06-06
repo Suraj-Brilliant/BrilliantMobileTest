@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.PowerOnRent.ServiceUCCommonFilter" CodeBehind="ServiceUCCommonFilter.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory"%>

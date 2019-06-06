@@ -1,0 +1,1461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+          <EntitySet Name="CycleCountTemp" EntityType="BISPL_CRMDBModel.Store.CycleCountTemp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.Store.mDropdownValues" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mFloar" EntityType="BISPL_CRMDBModel.Store.mFloar" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mLocation" EntityType="BISPL_CRMDBModel.Store.mLocation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mPathway" EntityType="BISPL_CRMDBModel.Store.mPathway" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mSection" EntityType="BISPL_CRMDBModel.Store.mSection" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mShelf" EntityType="BISPL_CRMDBModel.Store.mShelf" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mWarehouseBuilding" EntityType="BISPL_CRMDBModel.Store.mWarehouseBuilding" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mWarehouseMaster" EntityType="BISPL_CRMDBModel.Store.mWarehouseMaster" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tAddress" EntityType="BISPL_CRMDBModel.Store.tAddress" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tCycleCountDetail" EntityType="BISPL_CRMDBModel.Store.tCycleCountDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tCycleCountHead" EntityType="BISPL_CRMDBModel.Store.tCycleCountHead" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tCycleCountPlan" EntityType="BISPL_CRMDBModel.Store.tCycleCountPlan" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tSKUTransaction" EntityType="BISPL_CRMDBModel.Store.tSKUTransaction" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="V_WMS_GetCycleCountMain" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetCycleCountMain" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetCycleCountMain">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetCycleCountMain].[ID] AS [ID], 
+      [V_WMS_GetCycleCountMain].[Title] AS [Title], 
+      [V_WMS_GetCycleCountMain].[Description] AS [Description], 
+      [V_WMS_GetCycleCountMain].[CycleCountDate] AS [CycleCountDate], 
+      [V_WMS_GetCycleCountMain].[Executive] AS [Executive], 
+      [V_WMS_GetCycleCountMain].[Company] AS [Company], 
+      [V_WMS_GetCycleCountMain].[Customer] AS [Customer], 
+      [V_WMS_GetCycleCountMain].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetCycleCountMain].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetCycleCountMain].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetCycleCountMain].[Status] AS [Status], 
+      [V_WMS_GetCycleCountMain].[Frequency] AS [Frequency], 
+      [V_WMS_GetCycleCountMain].[CountBasis] AS [CountBasis], 
+      [V_WMS_GetCycleCountMain].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetCycleCountMain] AS [V_WMS_GetCycleCountMain]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetHeadCycleCount" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetHeadCycleCount" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetHeadCycleCount">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetHeadCycleCount].[ID] AS [ID], 
+      [V_WMS_GetHeadCycleCount].[Title] AS [Title], 
+      [V_WMS_GetHeadCycleCount].[Description] AS [Description], 
+      [V_WMS_GetHeadCycleCount].[CycleCountDate] AS [CycleCountDate], 
+      [V_WMS_GetHeadCycleCount].[Executive] AS [Executive], 
+      [V_WMS_GetHeadCycleCount].[Company] AS [Company], 
+      [V_WMS_GetHeadCycleCount].[Customer] AS [Customer], 
+      [V_WMS_GetHeadCycleCount].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetHeadCycleCount].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetHeadCycleCount].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetHeadCycleCount].[Status] AS [Status], 
+      [V_WMS_GetHeadCycleCount].[Frequency] AS [Frequency], 
+      [V_WMS_GetHeadCycleCount].[CountBasis] AS [CountBasis], 
+      [V_WMS_GetHeadCycleCount].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetHeadCycleCount] AS [V_WMS_GetHeadCycleCount]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetWarehouseDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetWarehouseDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetWarehouseDetails">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetWarehouseDetails].[ID] AS [ID], 
+      [V_WMS_GetWarehouseDetails].[Code] AS [Code], 
+      [V_WMS_GetWarehouseDetails].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetWarehouseDetails].[Type] AS [Type], 
+      [V_WMS_GetWarehouseDetails].[Description] AS [Description], 
+      [V_WMS_GetWarehouseDetails].[Remark] AS [Remark], 
+      [V_WMS_GetWarehouseDetails].[Active] AS [Active], 
+      [V_WMS_GetWarehouseDetails].[Company] AS [Company], 
+      [V_WMS_GetWarehouseDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetWarehouseDetails].[AddressLine1] AS [AddressLine1], 
+      [V_WMS_GetWarehouseDetails].[County] AS [County], 
+      [V_WMS_GetWarehouseDetails].[State] AS [State], 
+      [V_WMS_GetWarehouseDetails].[City] AS [City], 
+      [V_WMS_GetWarehouseDetails].[ContactName] AS [ContactName], 
+      [V_WMS_GetWarehouseDetails].[EmailID] AS [EmailID], 
+      [V_WMS_GetWarehouseDetails].[MobileNo] AS [MobileNo], 
+      [V_WMS_GetWarehouseDetails].[CustomerID] AS [CustomerID]
+      FROM [dbo].[V_WMS_GetWarehouseDetails] AS [V_WMS_GetWarehouseDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetWareLocationByLocID" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetWareLocationByLocID" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetWareLocationByLocID">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetWareLocationByLocID].[ID] AS [ID], 
+      [V_WMS_GetWareLocationByLocID].[locationCode] AS [locationCode], 
+      [V_WMS_GetWareLocationByLocID].[AliasCode] AS [AliasCode], 
+      [V_WMS_GetWareLocationByLocID].[SortCode] AS [SortCode], 
+      [V_WMS_GetWareLocationByLocID].[LocationType] AS [LocationType], 
+      [V_WMS_GetWareLocationByLocID].[Capacity] AS [Capacity], 
+      [V_WMS_GetWareLocationByLocID].[Company] AS [Company], 
+      [V_WMS_GetWareLocationByLocID].[Shelf] AS [Shelf], 
+      [V_WMS_GetWareLocationByLocID].[Section] AS [Section], 
+      [V_WMS_GetWareLocationByLocID].[Passage] AS [Passage], 
+      [V_WMS_GetWareLocationByLocID].[Floar] AS [Floar], 
+      [V_WMS_GetWareLocationByLocID].[Building] AS [Building], 
+      [V_WMS_GetWareLocationByLocID].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetWareLocationByLocID].[Customer] AS [Customer], 
+      [V_WMS_GetWareLocationByLocID].[Code] AS [Code], 
+      [V_WMS_GetWareLocationByLocID].[Expr1] AS [Expr1], 
+      [V_WMS_GetWareLocationByLocID].[Expr2] AS [Expr2], 
+      [V_WMS_GetWareLocationByLocID].[shelfID] AS [shelfID], 
+      [V_WMS_GetWareLocationByLocID].[SectionID] AS [SectionID], 
+      [V_WMS_GetWareLocationByLocID].[passageID] AS [passageID], 
+      [V_WMS_GetWareLocationByLocID].[FloarID] AS [FloarID], 
+      [V_WMS_GetWareLocationByLocID].[BuildingID] AS [BuildingID], 
+      [V_WMS_GetWareLocationByLocID].[WarehouseID] AS [WarehouseID], 
+      [V_WMS_GetWareLocationByLocID].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetWareLocationByLocID].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetWareLocationByLocID].[Active] AS [Active], 
+      [V_WMS_GetWareLocationByLocID].[VelocityType] AS [VelocityType], 
+      [V_WMS_GetWareLocationByLocID].[CapacityIn] AS [CapacityIn]
+      FROM [dbo].[V_WMS_GetWareLocationByLocID] AS [V_WMS_GetWareLocationByLocID]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_WarehouseLocation" EntityType="BISPL_CRMDBModel.Store.V_WMS_WarehouseLocation" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_WarehouseLocation">
+            <DefiningQuery>SELECT 
+      [V_WMS_WarehouseLocation].[ID] AS [ID], 
+      [V_WMS_WarehouseLocation].[locationCode] AS [locationCode], 
+      [V_WMS_WarehouseLocation].[SortCode] AS [SortCode], 
+      [V_WMS_WarehouseLocation].[LocationType] AS [LocationType], 
+      [V_WMS_WarehouseLocation].[Capacity] AS [Capacity], 
+      [V_WMS_WarehouseLocation].[Company] AS [Company], 
+      [V_WMS_WarehouseLocation].[Shelf] AS [Shelf], 
+      [V_WMS_WarehouseLocation].[Section] AS [Section], 
+      [V_WMS_WarehouseLocation].[Passage] AS [Passage], 
+      [V_WMS_WarehouseLocation].[Floar] AS [Floar], 
+      [V_WMS_WarehouseLocation].[Building] AS [Building], 
+      [V_WMS_WarehouseLocation].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_WarehouseLocation].[Customer] AS [Customer], 
+      [V_WMS_WarehouseLocation].[Code] AS [Code], 
+      [V_WMS_WarehouseLocation].[Expr1] AS [Expr1], 
+      [V_WMS_WarehouseLocation].[Expr2] AS [Expr2], 
+      [V_WMS_WarehouseLocation].[shelfID] AS [shelfID], 
+      [V_WMS_WarehouseLocation].[SectionID] AS [SectionID], 
+      [V_WMS_WarehouseLocation].[passageID] AS [passageID], 
+      [V_WMS_WarehouseLocation].[FloarID] AS [FloarID], 
+      [V_WMS_WarehouseLocation].[BuildingID] AS [BuildingID], 
+      [V_WMS_WarehouseLocation].[WarehouseID] AS [WarehouseID], 
+      [V_WMS_WarehouseLocation].[CompanyID] AS [CompanyID], 
+      [V_WMS_WarehouseLocation].[CustomerID] AS [CustomerID], 
+      [V_WMS_WarehouseLocation].[Active] AS [Active], 
+      [V_WMS_WarehouseLocation].[VelocityType] AS [VelocityType], 
+      [V_WMS_WarehouseLocation].[CapacityIn] AS [CapacityIn]
+      FROM [dbo].[V_WMS_WarehouseLocation] AS [V_WMS_WarehouseLocation]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="CycleCountTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Object" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReferenceID" Type="bigint" />
+          <Property Name="SessionID" Type="nvarchar" MaxLength="100" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="mDropdownValues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="Parameter" Type="nvarchar(max)" />
+          <Property Name="StatusID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mFloar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BuildingID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="Capacity" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="mLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ShelfID" Type="bigint" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="AliasCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CapacityIn" Type="bigint" />
+          <Property Name="Capacity" Type="decimal" Scale="2" />
+          <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+          <Property Name="AvailableBalance" Type="decimal" Scale="2" />
+          <Property Name="WarehouseID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mPathway">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FloarID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mSection">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PathID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mShelf">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SectionID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mWarehouseBuilding">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="WarehouseID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Capacity" Type="decimal" Scale="2" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="mWarehouseMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="varchar" MaxLength="200" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Type" Type="varchar" MaxLength="100" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Remark" Type="varchar(max)" />
+          <Property Name="Active" Type="char" MaxLength="5" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="tAddress">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+          <Property Name="RouteID" Type="bigint" />
+          <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsDefault" Type="varchar" MaxLength="1" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="BillingID" Type="bigint" />
+          <Property Name="ShippingID" Type="bigint" />
+          <Property Name="Zone" Type="nvarchar" MaxLength="200" />
+          <Property Name="SubZone" Type="nvarchar" MaxLength="200" />
+          <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactEmail" Type="nvarchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="bigint" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tCycleCountDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CountHeadID" Type="bigint" />
+          <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="QtyBalance" Type="decimal" Scale="2" />
+          <Property Name="ActualQty" Type="decimal" Scale="2" />
+          <Property Name="AdjustmentQty" Type="decimal" Scale="2" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="AdjustLocation" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiffQty" Type="decimal" Scale="2" />
+          <Property Name="SKUID" Type="bigint" />
+          <Property Name="LocationID" Type="bigint" />
+          <Property Name="BatchCode" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tCycleCountHead">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Exicutive" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="WarehouseID" Type="bigint" />
+          <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+          <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+          <Property Name="CycleCountDate" Type="datetime" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tCycleCountPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Object" Type="nvarchar" MaxLength="50" />
+          <Property Name="CycleHeadID" Type="bigint" />
+          <Property Name="ReferenceID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="tSKUTransaction">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SKUId" Type="bigint" />
+          <Property Name="BatchCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="LocationID" Type="bigint" />
+          <Property Name="MDate" Type="datetime" />
+          <Property Name="ExpDate" Type="datetime" />
+          <Property Name="TransType" Type="nvarchar" MaxLength="50" />
+          <Property Name="InQty" Type="decimal" Scale="2" />
+          <Property Name="OutQty" Type="decimal" Scale="2" />
+          <Property Name="ClosingBalance" Type="decimal" Scale="2" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetCycleCountMain' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetCycleCountMain">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CycleCountDate" Type="datetime" />
+          <Property Name="Executive" Type="nvarchar" MaxLength="101" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+          <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetHeadCycleCount' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetHeadCycleCount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CycleCountDate" Type="datetime" />
+          <Property Name="Executive" Type="nvarchar" MaxLength="101" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+          <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetWarehouseDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetWarehouseDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="200" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Type" Type="varchar" MaxLength="100" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Remark" Type="varchar(max)" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+          <Property Name="County" Type="nvarchar" MaxLength="200" />
+          <Property Name="State" Type="nvarchar" MaxLength="200" />
+          <Property Name="City" Type="nvarchar" MaxLength="200" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetWareLocationByLocID' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetWareLocationByLocID">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="locationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="AliasCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="bigint" />
+          <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Capacity" Type="decimal" Scale="2" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Shelf" Type="nvarchar" MaxLength="50" />
+          <Property Name="Section" Type="nvarchar" MaxLength="50" />
+          <Property Name="Passage" Type="nvarchar" MaxLength="50" />
+          <Property Name="Floar" Type="nvarchar" MaxLength="50" />
+          <Property Name="Building" Type="nvarchar" MaxLength="50" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Expr1" Type="varchar" MaxLength="200" />
+          <Property Name="Expr2" Type="varchar" MaxLength="200" />
+          <Property Name="shelfID" Type="bigint" />
+          <Property Name="SectionID" Type="bigint" />
+          <Property Name="passageID" Type="bigint" />
+          <Property Name="FloarID" Type="bigint" />
+          <Property Name="BuildingID" Type="bigint" />
+          <Property Name="WarehouseID" Type="bigint" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Active" Type="char" MaxLength="5" />
+          <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CapacityIn" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_WarehouseLocation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_WarehouseLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="locationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Capacity" Type="decimal" Scale="2" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Shelf" Type="nvarchar" MaxLength="50" />
+          <Property Name="Section" Type="nvarchar" MaxLength="50" />
+          <Property Name="Passage" Type="nvarchar" MaxLength="50" />
+          <Property Name="Floar" Type="nvarchar" MaxLength="50" />
+          <Property Name="Building" Type="nvarchar" MaxLength="50" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Expr1" Type="varchar" MaxLength="200" />
+          <Property Name="Expr2" Type="varchar" MaxLength="200" />
+          <Property Name="shelfID" Type="bigint" />
+          <Property Name="SectionID" Type="bigint" />
+          <Property Name="passageID" Type="bigint" />
+          <Property Name="FloarID" Type="bigint" />
+          <Property Name="BuildingID" Type="bigint" />
+          <Property Name="WarehouseID" Type="bigint" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Active" Type="char" MaxLength="5" />
+          <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CapacityIn" Type="bigint" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <FunctionImport Name="SP_GetDataToBindRoleMaster" ReturnType="Collection(BISPL_CRMDBModel.SP_GetDataToBindRoleMaster_Result)">
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetUserRoleDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_GetUserRoleDetail_Result)">
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetMenuHTML" ReturnType="Collection(BISPL_CRMDBModel.SP_GetMenuHTML_Result)">
+          <Parameter Name="UserID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_InsertIntoUserRoleDetail">
+            <Parameter Name="xmlData" Mode="In" Type="String" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="String" />
+            <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserID" Mode="In" Type="String" />
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_InsertIntomUserProfieTerritoryDetail">
+            <Parameter Name="UserID" Mode="In" Type="Int64" />
+            <Parameter Name="Level" Mode="In" Type="Int64" />
+            <Parameter Name="TerritoryIDs" Mode="In" Type="String" />
+            <Parameter Name="CreatedBy" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_InsertIntoRoleMasterDetail">
+            <Parameter Name="xmlData" Mode="In" Type="String" />
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetMenuHTMLArabic" ReturnType="Collection(BISPL_CRMDBModel.SP_GetMenuHTMLArabic_Result)">
+          <Parameter Name="UserID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GWCGetDataToBindRoleMaster" ReturnType="Collection(BISPL_CRMDBModel.SP_GWCGetDataToBindRoleMaster_Result)">
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GWCGetUserRoleDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_GWCGetUserRoleDetail_Result)">
+            <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <EntitySet Name="V_WMS_GetWarehouseDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetWarehouseDetails" />
+          <EntitySet Name="mWarehouseBuildings" EntityType="BISPL_CRMDBModel.mWarehouseBuilding" />
+          <EntitySet Name="mWarehouseMasters" EntityType="BISPL_CRMDBModel.mWarehouseMaster" />
+          <EntitySet Name="tAddresses" EntityType="BISPL_CRMDBModel.tAddress" />
+          <EntitySet Name="mLocations" EntityType="BISPL_CRMDBModel.mLocation" />
+          <EntitySet Name="mPathways" EntityType="BISPL_CRMDBModel.mPathway" />
+          <EntitySet Name="mSections" EntityType="BISPL_CRMDBModel.mSection" />
+          <EntitySet Name="mShelves" EntityType="BISPL_CRMDBModel.mShelf" />
+          <EntitySet Name="mFloars" EntityType="BISPL_CRMDBModel.mFloar" />
+          <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.mDropdownValue" />
+          <EntitySet Name="V_WMS_WarehouseLocation" EntityType="BISPL_CRMDBModel.V_WMS_WarehouseLocation" />
+          <EntitySet Name="V_WMS_GetWareLocationByLocID" EntityType="BISPL_CRMDBModel.V_WMS_GetWareLocationByLocID" />
+          <EntitySet Name="CycleCountTemps" EntityType="BISPL_CRMDBModel.CycleCountTemp" />
+          <EntitySet Name="tCycleCountDetails" EntityType="BISPL_CRMDBModel.tCycleCountDetail" />
+          <EntitySet Name="tCycleCountPlans" EntityType="BISPL_CRMDBModel.tCycleCountPlan" />
+          <EntitySet Name="tCycleCountHeads" EntityType="BISPL_CRMDBModel.tCycleCountHead" />
+          <EntitySet Name="V_WMS_GetCycleCountMain" EntityType="BISPL_CRMDBModel.V_WMS_GetCycleCountMain" />
+          <EntitySet Name="V_WMS_GetHeadCycleCount" EntityType="BISPL_CRMDBModel.V_WMS_GetHeadCycleCount" />
+          <EntitySet Name="tSKUTransactions" EntityType="BISPL_CRMDBModel.tSKUTransaction" />
+          </EntityContainer>
+        <ComplexType Name="SP_GetDataToBindRoleMaster_Result">
+          <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="mSequence" Nullable="true" />
+          <Property Type="Int64" Name="pSequence" Nullable="true" />
+          <Property Type="Int64" Name="oSequence" Nullable="true" />
+          <Property Type="Boolean" Name="Add" Nullable="true" />
+          <Property Type="Boolean" Name="Edit" Nullable="true" />
+          <Property Type="Boolean" Name="View" Nullable="true" />
+          <Property Type="Boolean" Name="Delete" Nullable="true" />
+          <Property Type="Boolean" Name="Approval" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+          <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetUserRoleDetail_Result">
+          <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="mSequence" Nullable="true" />
+          <Property Type="Int64" Name="pSequence" Nullable="true" />
+          <Property Type="Int64" Name="oSequence" Nullable="true" />
+          <Property Type="Boolean" Name="Add" Nullable="true" />
+          <Property Type="Boolean" Name="Edit" Nullable="true" />
+          <Property Type="Boolean" Name="View" Nullable="true" />
+          <Property Type="Boolean" Name="Delete" Nullable="true" />
+          <Property Type="Boolean" Name="Approval" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+          <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetMenuHTML_Result">
+          <Property Type="String" Name="HTMLMenu" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetMenuHTMLArabic_Result">
+          <Property Type="String" Name="HTMLMenu" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GWCGetDataToBindRoleMaster_Result">
+          <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="mSequence" Nullable="true" />
+          <Property Type="Int64" Name="pSequence" Nullable="true" />
+          <Property Type="Int64" Name="oSequence" Nullable="true" />
+          <Property Type="Boolean" Name="Add" Nullable="true" />
+          <Property Type="Boolean" Name="Edit" Nullable="true" />
+          <Property Type="Boolean" Name="View" Nullable="true" />
+          <Property Type="Boolean" Name="Delete" Nullable="true" />
+          <Property Type="Boolean" Name="Approval" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+          <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GWCGetUserRoleDetail_Result">
+          <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="mSequence" Nullable="true" />
+          <Property Type="Int64" Name="pSequence" Nullable="true" />
+          <Property Type="Int64" Name="oSequence" Nullable="true" />
+          <Property Type="Boolean" Name="Add" Nullable="true" />
+          <Property Type="Boolean" Name="Edit" Nullable="true" />
+          <Property Type="Boolean" Name="View" Nullable="true" />
+          <Property Type="Boolean" Name="Delete" Nullable="true" />
+          <Property Type="Boolean" Name="Approval" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+          <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+          <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="V_WMS_GetWarehouseDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Code" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Type" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="String" Name="AddressLine1" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobileNo" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mWarehouseBuilding">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="WarehouseID" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="mWarehouseMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Code" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Type" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="ModifiedBy" />
+          <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CustomerID" />
+        </EntityType>
+        <EntityType Name="tAddress">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="AddressType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="RouteID" />
+          <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IsDefault" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="BillingID" />
+          <Property Type="Int64" Name="ShippingID" />
+          <Property Type="String" Name="Zone" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SubZone" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="MobileNo" />
+          <Property Type="String" Name="LocationName" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="ShelfID" Nullable="false" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CapacityIn" />
+          <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+          <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="WarehouseID" />
+        </EntityType>
+        <EntityType Name="mPathway">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="FloarID" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CreatedBy" />
+        </EntityType>
+        <EntityType Name="mSection">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="PathID" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CreatedBy" />
+        </EntityType>
+        <EntityType Name="mShelf">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="SectionID" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CreatedBy" />
+        </EntityType>
+        <EntityType Name="mFloar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="BuildingID" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="mDropdownValue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Value" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Parameter" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="StatusID" />
+        </EntityType>
+        <EntityType Name="V_WMS_WarehouseLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="locationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Shelf" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Section" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Passage" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Floar" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Building" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Expr1" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Expr2" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="shelfID" />
+          <Property Type="Int64" Name="SectionID" />
+          <Property Type="Int64" Name="passageID" />
+          <Property Type="Int64" Name="FloarID" />
+          <Property Type="Int64" Name="BuildingID" />
+          <Property Type="Int64" Name="WarehouseID" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CapacityIn" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetWareLocationByLocID">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="locationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="SortCode" />
+          <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Shelf" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Section" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Passage" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Floar" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Building" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Expr1" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Expr2" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="shelfID" />
+          <Property Type="Int64" Name="SectionID" />
+          <Property Type="Int64" Name="passageID" />
+          <Property Type="Int64" Name="FloarID" />
+          <Property Type="Int64" Name="BuildingID" />
+          <Property Type="Int64" Name="WarehouseID" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CapacityIn" />
+        </EntityType>
+        <EntityType Name="CycleCountTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ReferenceID" />
+          <Property Type="String" Name="SessionID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="tCycleCountDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="CountHeadID" />
+          <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="QtyBalance" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="ActualQty" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AdjustmentQty" Precision="18" Scale="2" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="String" Name="AdjustLocation" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="DiffQty" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="SKUID" />
+          <Property Type="Int64" Name="LocationID" />
+          <Property Type="String" Name="BatchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tCycleCountPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CycleHeadID" />
+          <Property Type="Int64" Name="ReferenceID" />
+        </EntityType>
+        <EntityType Name="tCycleCountHead">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Exicutive" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="WarehouseID" />
+          <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetCycleCountMain">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+          <Property Type="String" Name="Executive" MaxLength="101" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetHeadCycleCount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+          <Property Type="String" Name="Executive" MaxLength="101" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tSKUTransaction">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int64" Name="SKUId" />
+          <Property Type="String" Name="BatchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="LocationID" />
+          <Property Type="DateTime" Name="MDate" Precision="3" />
+          <Property Type="DateTime" Name="ExpDate" Precision="3" />
+          <Property Type="String" Name="TransType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="InQty" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="OutQty" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="ClosingBalance" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BISPL_CRMDBModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+          <EntitySetMapping Name="V_WMS_GetWarehouseDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetWarehouseDetails">
+              <MappingFragment StoreEntitySet="V_WMS_GetWarehouseDetails">
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mWarehouseBuildings">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mWarehouseBuilding">
+              <MappingFragment StoreEntitySet="mWarehouseBuilding">
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mWarehouseMasters">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mWarehouseMaster">
+              <MappingFragment StoreEntitySet="mWarehouseMaster">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tAddresses">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tAddress">
+              <MappingFragment StoreEntitySet="tAddress">
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="SubZone" ColumnName="SubZone" />
+                <ScalarProperty Name="Zone" ColumnName="Zone" />
+                <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
+                <ScalarProperty Name="BillingID" ColumnName="BillingID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+                <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mLocations">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mLocation">
+              <MappingFragment StoreEntitySet="mLocation">
+                <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+                <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="VelocityType" ColumnName="VelocityType" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="CapacityIn" ColumnName="CapacityIn" />
+                <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ShelfID" ColumnName="ShelfID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mPathways">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mPathway">
+              <MappingFragment StoreEntitySet="mPathway">
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FloarID" ColumnName="FloarID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mSections">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mSection">
+              <MappingFragment StoreEntitySet="mSection">
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PathID" ColumnName="PathID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mShelves">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mShelf">
+              <MappingFragment StoreEntitySet="mShelf">
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mFloars">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mFloar">
+              <MappingFragment StoreEntitySet="mFloar">
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mDropdownValues">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mDropdownValue">
+              <MappingFragment StoreEntitySet="mDropdownValues">
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_WarehouseLocation">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_WarehouseLocation">
+              <MappingFragment StoreEntitySet="V_WMS_WarehouseLocation">
+                <ScalarProperty Name="CapacityIn" ColumnName="CapacityIn" />
+                <ScalarProperty Name="VelocityType" ColumnName="VelocityType" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+                <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+                <ScalarProperty Name="FloarID" ColumnName="FloarID" />
+                <ScalarProperty Name="passageID" ColumnName="passageID" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="shelfID" ColumnName="shelfID" />
+                <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+                <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="Building" ColumnName="Building" />
+                <ScalarProperty Name="Floar" ColumnName="Floar" />
+                <ScalarProperty Name="Passage" ColumnName="Passage" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="Shelf" ColumnName="Shelf" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="locationCode" ColumnName="locationCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetWareLocationByLocID">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetWareLocationByLocID">
+              <MappingFragment StoreEntitySet="V_WMS_GetWareLocationByLocID">
+                <ScalarProperty Name="CapacityIn" ColumnName="CapacityIn" />
+                <ScalarProperty Name="VelocityType" ColumnName="VelocityType" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+                <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+                <ScalarProperty Name="FloarID" ColumnName="FloarID" />
+                <ScalarProperty Name="passageID" ColumnName="passageID" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="shelfID" ColumnName="shelfID" />
+                <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+                <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="Building" ColumnName="Building" />
+                <ScalarProperty Name="Floar" ColumnName="Floar" />
+                <ScalarProperty Name="Passage" ColumnName="Passage" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="Shelf" ColumnName="Shelf" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+                <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+                <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+                <ScalarProperty Name="locationCode" ColumnName="locationCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CycleCountTemps">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.CycleCountTemp">
+              <MappingFragment StoreEntitySet="CycleCountTemp">
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="Object" ColumnName="Object" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tCycleCountDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCycleCountDetail">
+              <MappingFragment StoreEntitySet="tCycleCountDetail">
+                <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="SKUID" ColumnName="SKUID" />
+                <ScalarProperty Name="DiffQty" ColumnName="DiffQty" />
+                <ScalarProperty Name="AdjustLocation" ColumnName="AdjustLocation" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="AdjustmentQty" ColumnName="AdjustmentQty" />
+                <ScalarProperty Name="ActualQty" ColumnName="ActualQty" />
+                <ScalarProperty Name="QtyBalance" ColumnName="QtyBalance" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="CountHeadID" ColumnName="CountHeadID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tCycleCountPlans">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCycleCountPlan">
+              <MappingFragment StoreEntitySet="tCycleCountPlan">
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="CycleHeadID" ColumnName="CycleHeadID" />
+                <ScalarProperty Name="Object" ColumnName="Object" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tCycleCountHeads">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCycleCountHead">
+              <MappingFragment StoreEntitySet="tCycleCountHead">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CycleCountDate" ColumnName="CycleCountDate" />
+                <ScalarProperty Name="CountBasis" ColumnName="CountBasis" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Exicutive" ColumnName="Exicutive" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetCycleCountMain">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetCycleCountMain">
+              <MappingFragment StoreEntitySet="V_WMS_GetCycleCountMain">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CountBasis" ColumnName="CountBasis" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Executive" ColumnName="Executive" />
+                <ScalarProperty Name="CycleCountDate" ColumnName="CycleCountDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetHeadCycleCount">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetHeadCycleCount">
+              <MappingFragment StoreEntitySet="V_WMS_GetHeadCycleCount">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CountBasis" ColumnName="CountBasis" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Executive" ColumnName="Executive" />
+                <ScalarProperty Name="CycleCountDate" ColumnName="CycleCountDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tSKUTransactions">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tSKUTransaction">
+              <MappingFragment StoreEntitySet="tSKUTransaction">
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+                <ScalarProperty Name="OutQty" ColumnName="OutQty" />
+                <ScalarProperty Name="InQty" ColumnName="InQty" />
+                <ScalarProperty Name="TransType" ColumnName="TransType" />
+                <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+                <ScalarProperty Name="MDate" ColumnName="MDate" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+                <ScalarProperty Name="SKUId" ColumnName="SKUId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="True" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="ElegantCRMDataModel" ZoomLevel="72">
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetWarehouseDetails" Width="1.5" PointX="10.435894902067211" PointY="6.4065041720897442" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mWarehouseBuilding" Width="1.5" PointX="5.4704573664211" PointY="31.952591806628085" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mWarehouseMaster" Width="1.5" PointX="6.453639141495171" PointY="23.575261052500114" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.tAddress" Width="1.5" PointX="3.7089988494799466" PointY="7.0739128175535768" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mLocation" Width="1.5" PointX="10.888364597637375" PointY="11.093514864842181" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mPathway" Width="1.5" PointX="10.952415994811997" PointY="2.6015529346659561" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mSection" Width="1.5" PointX="3.5508686413759687" PointY="10.323021819034135" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mShelf" Width="1.5" PointX="4.8597107179740959" PointY="15.021262608012773" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mFloar" Width="1.5" PointX="3.7924381139652978" PointY="19.972288915874572" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.mDropdownValue" Width="1.5" PointX="8.70766840163044" PointY="24.913055535831049" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_WarehouseLocation" Width="1.5" PointX="4.394917490144687" PointY="22.959025438390217" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetWareLocationByLocID" Width="1.5" PointX="2.4457848642234619" PointY="14.590214825510147" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.CycleCountTemp" Width="1.5" PointX="9.7490069613554553" PointY="15.468600339940098" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.tCycleCountDetail" Width="1.5" PointX="11.75" PointY="27.5" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.tCycleCountPlan" Width="1.5" PointX="7.1973380349564078" PointY="29.349634541827083" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.tCycleCountHead" Width="1.5" PointX="6.5" PointY="10.5" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetCycleCountMain" Width="1.5" PointX="0.67370734767695306" PointY="5.9576402334299123" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetHeadCycleCount" Width="1.5" PointX="1.2795230621842308" PointY="26.399937507882687" />
+        <edmx:EntityTypeShape EntityType="BISPL_CRMDBModel.tSKUTransaction" Width="1.5" PointX="7.375" PointY="14.125" />
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

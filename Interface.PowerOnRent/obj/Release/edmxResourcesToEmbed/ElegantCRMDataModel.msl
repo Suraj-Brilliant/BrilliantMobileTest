@@ -1,0 +1,1856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="elegantcrmModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+    <EntitySetMapping Name="PORtMINDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtMINDetail">
+        <MappingFragment StoreEntitySet="PORtMINDetail">
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="IssuedQty" ColumnName="IssuedQty" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="MINH_ID" ColumnName="MINH_ID" />
+          <ScalarProperty Name="MIND_ID" ColumnName="MIND_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtMINHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtMINHead">
+        <MappingFragment StoreEntitySet="PORtMINHead">
+          <ScalarProperty Name="TransH_ID" ColumnName="TransH_ID" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDt" ColumnName="CreationDt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsSubmit" ColumnName="IsSubmit" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ExpectedDelDate" ColumnName="ExpectedDelDate" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="ShippingStatus" ColumnName="ShippingStatus" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="SupplierCoNo" ColumnName="SupplierCoNo" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="IssuedByUserID" ColumnName="IssuedByUserID" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="MIN_No" ColumnName="MIN_No" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="MINH_ID" ColumnName="MINH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtPartRequestDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtPartRequestDetail">
+        <MappingFragment StoreEntitySet="PORtPartRequestDetail">
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtPartRequestHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtPartRequestHead">
+        <MappingFragment StoreEntitySet="PORtPartRequestHead">
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDt" ColumnName="CreationDt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsSubmit" ColumnName="IsSubmit" />
+          <ScalarProperty Name="ProbableShippingDate" ColumnName="ProbableShippingDate" />
+          <ScalarProperty Name="Container" ColumnName="Container" />
+          <ScalarProperty Name="TransformerSerial" ColumnName="TransformerSerial" />
+          <ScalarProperty Name="GeneratorSerial" ColumnName="GeneratorSerial" />
+          <ScalarProperty Name="GeneratorModel" ColumnName="GeneratorModel" />
+          <ScalarProperty Name="EngineModel" ColumnName="EngineModel" />
+          <ScalarProperty Name="EngineSerial" ColumnName="EngineSerial" />
+          <ScalarProperty Name="FailureNature" ColumnName="FailureNature" />
+          <ScalarProperty Name="FailureHours" ColumnName="FailureHours" />
+          <ScalarProperty Name="FailureCause" ColumnName="FailureCause" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="RequestNo" ColumnName="RequestNo" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mEngines">
+      <EntityTypeMapping TypeName="elegantcrmModel.mEngine">
+        <MappingFragment StoreEntitySet="mEngine">
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TransformerDateRecevied" ColumnName="TransformerDateRecevied" />
+          <ScalarProperty Name="TransformerSerial" ColumnName="TransformerSerial" />
+          <ScalarProperty Name="DateRecevied" ColumnName="DateRecevied" />
+          <ScalarProperty Name="EngineSerial" ColumnName="EngineSerial" />
+          <ScalarProperty Name="EngineModel" ColumnName="EngineModel" />
+          <ScalarProperty Name="GeneratorSerial" ColumnName="GeneratorSerial" />
+          <ScalarProperty Name="GeneratorModel" ColumnName="GeneratorModel" />
+          <ScalarProperty Name="Container" ColumnName="Container" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatus">
+      <EntityTypeMapping TypeName="elegantcrmModel.mStatu">
+        <MappingFragment StoreEntitySet="mStatus">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetProductDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.GetProductDetail">
+        <MappingFragment StoreEntitySet="GetProductDetails">
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="AvailVirtualQty" ColumnName="AvailVirtualQty" />
+          <ScalarProperty Name="VirtualQty" ColumnName="VirtualQty" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="ProductSubCategory" ColumnName="ProductSubCategory" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LeadTimeDays" ColumnName="LeadTimeDays" />
+          <ScalarProperty Name="MinOrderQuantity" ColumnName="MinOrderQuantity" />
+          <ScalarProperty Name="MaxBalanceQuantity" ColumnName="MaxBalanceQuantity" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="GuaranteeDays" ColumnName="GuaranteeDays" />
+          <ScalarProperty Name="WarrantyDays" ColumnName="WarrantyDays" />
+          <ScalarProperty Name="AMC" ColumnName="AMC" />
+          <ScalarProperty Name="Installable" ColumnName="Installable" />
+          <ScalarProperty Name="Guarantee" ColumnName="Guarantee" />
+          <ScalarProperty Name="Warranty" ColumnName="Warranty" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FixedDiscountPercent" ColumnName="FixedDiscountPercent" />
+          <ScalarProperty Name="FixedDiscount" ColumnName="FixedDiscount" />
+          <ScalarProperty Name="PrincipalPrice" ColumnName="PrincipalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ProductSubCategoryID" ColumnName="ProductSubCategoryID" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs" FunctionName="elegantcrmModel.Store.POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result">
+          <ScalarProperty Name="MINH_ID" ColumnName="MINH_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="RequestNo" ColumnName="RequestNo" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="IssueStatus" ColumnName="IssueStatus" />
+          <ScalarProperty Name="IssueNo" ColumnName="IssueNo" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="IssuedByUserID" ColumnName="IssuedByUserID" />
+          <ScalarProperty Name="IssuedByUserName" ColumnName="IssuedByUserName" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="ExpectedDelDate" ColumnName="ExpectedDelDate" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="IssueRemark" ColumnName="IssueRemark" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntoPORtGRNDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntoPORtGRNDetail" />
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntoPORtMINDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntoPORtMINDetail" />
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntoPORtPartRequestDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntoPORtPartRequestDetail" />
+    <EntitySetMapping Name="tAddresses">
+      <EntityTypeMapping TypeName="elegantcrmModel.tAddress">
+        <MappingFragment StoreEntitySet="tAddress">
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="SubZone" ColumnName="SubZone" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
+          <ScalarProperty Name="BillingID" ColumnName="BillingID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_GetEngineDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.v_GetEngineDetails">
+        <MappingFragment StoreEntitySet="v_GetEngineDetails">
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TransformerDateRecevied" ColumnName="TransformerDateRecevied" />
+          <ScalarProperty Name="TransformerSerial" ColumnName="TransformerSerial" />
+          <ScalarProperty Name="DateRecevied" ColumnName="DateRecevied" />
+          <ScalarProperty Name="EngineSerial" ColumnName="EngineSerial" />
+          <ScalarProperty Name="EngineModel" ColumnName="EngineModel" />
+          <ScalarProperty Name="GeneratorSerial" ColumnName="GeneratorSerial" />
+          <ScalarProperty Name="GeneratorModel" ColumnName="GeneratorModel" />
+          <ScalarProperty Name="Container" ColumnName="Container" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tApprovalDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.tApprovalDetail">
+        <MappingFragment StoreEntitySet="tApprovalDetail">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ObjectTotalAmount" ColumnName="ObjectTotalAmount" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="StatusChangedBy" ColumnName="StatusChangedBy" />
+          <ScalarProperty Name="ApproverUserID" ColumnName="ApproverUserID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MailAlert" ColumnName="MailAlert" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_GetSiteDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.v_GetSiteDetails">
+        <MappingFragment StoreEntitySet="v_GetSiteDetails">
+          <ScalarProperty Name="SubZone" ColumnName="SubZone" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
+          <ScalarProperty Name="BillingID" ColumnName="BillingID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Address_LastModifiedDate" ColumnName="Address_LastModifiedDate" />
+          <ScalarProperty Name="Address_LastModifiedBy" ColumnName="Address_LastModifiedBy" />
+          <ScalarProperty Name="Address_CreationDate" ColumnName="Address_CreationDate" />
+          <ScalarProperty Name="Address_CreatedBy" ColumnName="Address_CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="GroupTitle" ColumnName="GroupTitle" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempDatas">
+      <EntityTypeMapping TypeName="elegantcrmModel.TempData">
+        <MappingFragment StoreEntitySet="TempData">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="XmlData" ColumnName="XmlData" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="TempDataID" ColumnName="TempDataID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserProfileHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.mUserProfileHead">
+        <MappingFragment StoreEntitySet="mUserProfileHead">
+          <ScalarProperty Name="MobileInterface" ColumnName="MobileInterface" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DefaultAddress" ColumnName="DefaultAddress" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProfileImg" ColumnName="ProfileImg" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="HighSchool" ColumnName="HighSchool" />
+          <ScalarProperty Name="CollegeOrUniversity" ColumnName="CollegeOrUniversity" />
+          <ScalarProperty Name="HighestQualification" ColumnName="HighestQualification" />
+          <ScalarProperty Name="OtherID" ColumnName="OtherID" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="InterestedIn" ColumnName="InterestedIn" />
+          <ScalarProperty Name="ReportingTo" ColumnName="ReportingTo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="DateOfJoining" ColumnName="DateOfJoining" />
+          <ScalarProperty Name="DesignationID" ColumnName="DesignationID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddelName" ColumnName="MiddelName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserRolesDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.mUserRolesDetail">
+        <MappingFragment StoreEntitySet="mUserRolesDetail">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AssignTask" ColumnName="AssignTask" />
+          <ScalarProperty Name="Approval" ColumnName="Approval" />
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+          <ScalarProperty Name="View" ColumnName="View" />
+          <ScalarProperty Name="Edit" ColumnName="Edit" />
+          <ScalarProperty Name="Add" ColumnName="Add" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserTerritoryDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.mUserTerritoryDetail">
+        <MappingFragment StoreEntitySet="mUserTerritoryDetail">
+          <ScalarProperty Name="LastMofidiedDate" ColumnName="LastMofidiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mApprovalLevelDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.mApprovalLevelDetail">
+        <MappingFragment StoreEntitySet="mApprovalLevelDetail">
+          <ScalarProperty Name="ApproverLogic" ColumnName="ApproverLogic" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ApprovalLevelID" ColumnName="ApprovalLevelID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mApprovalLevels">
+      <EntityTypeMapping TypeName="elegantcrmModel.mApprovalLevel">
+        <MappingFragment StoreEntitySet="mApprovalLevel">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="OrderCancelInDays" ColumnName="OrderCancelInDays" />
+          <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="MaxAmount" ColumnName="MaxAmount" />
+          <ScalarProperty Name="IsLowerLevelApprovalReq" ColumnName="IsLowerLevelApprovalReq" />
+          <ScalarProperty Name="MinApprovalReq" ColumnName="MinApprovalReq" />
+          <ScalarProperty Name="NoOfApprovers" ColumnName="NoOfApprovers" />
+          <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtConsumptionDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtConsumptionDetail">
+        <MappingFragment StoreEntitySet="PORtConsumptionDetail">
+          <ScalarProperty Name="GRND_ID" ColumnName="GRND_ID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ConsumedQty" ColumnName="ConsumedQty" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="ConH_ID" ColumnName="ConH_ID" />
+          <ScalarProperty Name="ConD_ID" ColumnName="ConD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtGRNDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtGRNDetail">
+        <MappingFragment StoreEntitySet="PORtGRNDetail">
+          <ScalarProperty Name="NotConsumedQty" ColumnName="NotConsumedQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="MIND_ID" ColumnName="MIND_ID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="AcceptedQty" ColumnName="AcceptedQty" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="ChallanQty" ColumnName="ChallanQty" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="GRNH_ID" ColumnName="GRNH_ID" />
+          <ScalarProperty Name="GRND_ID" ColumnName="GRND_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntoPORtConsumptionDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntoPORtConsumptionDetail" />
+    <EntitySetMapping Name="PORtGRNHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtGRNHead">
+        <MappingFragment StoreEntitySet="PORtGRNHead">
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDt" ColumnName="CreationDt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsSubmit" ColumnName="IsSubmit" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="LRDate" ColumnName="LRDate" />
+          <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+          <ScalarProperty Name="GetpassDate" ColumnName="GetpassDate" />
+          <ScalarProperty Name="GetpassNo" ColumnName="GetpassNo" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="ReceivedByUserID" ColumnName="ReceivedByUserID" />
+          <ScalarProperty Name="GRN_Date" ColumnName="GRN_Date" />
+          <ScalarProperty Name="GRN_No" ColumnName="GRN_No" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="GRNH_ID" ColumnName="GRNH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs" FunctionName="elegantcrmModel.Store.POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs_Result">
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="ReceiptStatus" ColumnName="ReceiptStatus" />
+          <ScalarProperty Name="GRNNo" ColumnName="GRNNo" />
+          <ScalarProperty Name="GRN_Date" ColumnName="GRN_Date" />
+          <ScalarProperty Name="ReceivedByUserID" ColumnName="ReceivedByUserID" />
+          <ScalarProperty Name="ReceiptByUserName" ColumnName="ReceiptByUserName" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="GRNH_ID" ColumnName="GRNH_ID" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PORtConsumptionHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtConsumptionHead">
+        <MappingFragment StoreEntitySet="PORtConsumptionHead">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDt" ColumnName="CreationDt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Container" ColumnName="Container" />
+          <ScalarProperty Name="TransformerSerial" ColumnName="TransformerSerial" />
+          <ScalarProperty Name="GeneratorSerial" ColumnName="GeneratorSerial" />
+          <ScalarProperty Name="GeneratorModel" ColumnName="GeneratorModel" />
+          <ScalarProperty Name="EngineModel" ColumnName="EngineModel" />
+          <ScalarProperty Name="EngineSerial" ColumnName="EngineSerial" />
+          <ScalarProperty Name="FailureNature" ColumnName="FailureNature" />
+          <ScalarProperty Name="FailureHours" ColumnName="FailureHours" />
+          <ScalarProperty Name="FailureCause" ColumnName="FailureCause" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ConsumedByUserID" ColumnName="ConsumedByUserID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ConsumptionDate" ColumnName="ConsumptionDate" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ConH_ID" ColumnName="ConH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs" FunctionName="elegantcrmModel.Store.POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs_Result">
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ConH_ID" ColumnName="ConH_ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ConsumptionDate" ColumnName="ConsumptionDate" />
+          <ScalarProperty Name="ConsumedByUserID" ColumnName="ConsumedByUserID" />
+          <ScalarProperty Name="ConsumedByUserName" ColumnName="ConsumedByUserName" />
+          <ScalarProperty Name="EngineSerial" ColumnName="EngineSerial" />
+          <ScalarProperty Name="EngineModel" ColumnName="EngineModel" />
+          <ScalarProperty Name="Container" ColumnName="Container" />
+          <ScalarProperty Name="FailureHours" ColumnName="FailureHours" />
+          <ScalarProperty Name="FailureCause" ColumnName="FailureCause" />
+          <ScalarProperty Name="FailureNature" ColumnName="FailureNature" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID" FunctionName="elegantcrmModel.Store.POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID_Result">
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="MINH_ID" ColumnName="MINH_ID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="MIN_No" ColumnName="MIN_No" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="IssuedByUserID" ColumnName="IssuedByUserID" />
+          <ScalarProperty Name="IssuedByUserName" ColumnName="IssuedByUserName" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="ReceiptStatus" ColumnName="ReceiptStatus" />
+          <ScalarProperty Name="GRNNo" ColumnName="GRNNo" />
+          <ScalarProperty Name="GRN_Date" ColumnName="GRN_Date" />
+          <ScalarProperty Name="ReceivedByUserID" ColumnName="ReceivedByUserID" />
+          <ScalarProperty Name="ReceiptByUserName" ColumnName="ReceiptByUserName" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="GRNH_ID" ColumnName="GRNH_ID" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetails_OfConsumption" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetails_OfConsumption">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetails_OfConsumption_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ConsumedQty" ColumnName="ConsumedQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GRND_ID" ColumnName="GRND_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetails_OfGRN" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetails_OfGRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetails_OfGRN_Result">
+          <ScalarProperty Name="MIND_ID" ColumnName="MIND_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ChallanQty" ColumnName="ChallanQty" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetails_OfGRN_HQ" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetails_OfGRN_HQ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetails_OfGRN_HQ_Result">
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ChallanQty" ColumnName="ChallanQty" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PORtInboxDatas">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtInboxData">
+        <MappingFragment StoreEntitySet="PORtInboxData">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ToUserID" ColumnName="ToUserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProductStockDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.tProductStockDetail">
+        <MappingFragment StoreEntitySet="tProductStockDetails">
+          <ScalarProperty Name="AvailVirtualQty" ColumnName="AvailVirtualQty" />
+          <ScalarProperty Name="VirtualQty" ColumnName="VirtualQty" />
+          <ScalarProperty Name="ResurveQty" ColumnName="ResurveQty" />
+          <ScalarProperty Name="TotalDispatchQty" ColumnName="TotalDispatchQty" />
+          <ScalarProperty Name="TotalReceiveQty" ColumnName="TotalReceiveQty" />
+          <ScalarProperty Name="LastConsumedDate" ColumnName="LastConsumedDate" />
+          <ScalarProperty Name="LastConsumedQty" ColumnName="LastConsumedQty" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ReorderDate" ColumnName="ReorderDate" />
+          <ScalarProperty Name="ReorderQty" ColumnName="ReorderQty" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="MaxStockLimit" ColumnName="MaxStockLimit" />
+          <ScalarProperty Name="OpeningStock" ColumnName="OpeningStock" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetLeadDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.GetLeadDetail">
+        <MappingFragment StoreEntitySet="GetLeadDetails">
+          <ScalarProperty Name="ActID" ColumnName="ActID" />
+          <ScalarProperty Name="ActivityStatus" ColumnName="ActivityStatus" />
+          <ScalarProperty Name="CustomerTypeID" ColumnName="CustomerTypeID" />
+          <ScalarProperty Name="SectorID" ColumnName="SectorID" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="TaskECD" ColumnName="TaskECD" />
+          <ScalarProperty Name="TaskDate" ColumnName="TaskDate" />
+          <ScalarProperty Name="ActivitySubType" ColumnName="ActivitySubType" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Leadname" ColumnName="Leadname" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="OtherCharges" ColumnName="OtherCharges" />
+          <ScalarProperty Name="OtherChargesDescription" ColumnName="OtherChargesDescription" />
+          <ScalarProperty Name="ShippingCharges" ColumnName="ShippingCharges" />
+          <ScalarProperty Name="TotalTax" ColumnName="TotalTax" />
+          <ScalarProperty Name="TaxOnTotalAfterDiscount" ColumnName="TaxOnTotalAfterDiscount" />
+          <ScalarProperty Name="ProductLevelTotalTax" ColumnName="ProductLevelTotalTax" />
+          <ScalarProperty Name="TotalAfterDiscount" ColumnName="TotalAfterDiscount" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+          <ScalarProperty Name="DiscountOnSubTotalPercent" ColumnName="DiscountOnSubTotalPercent" />
+          <ScalarProperty Name="DiscountOnSubTotal" ColumnName="DiscountOnSubTotal" />
+          <ScalarProperty Name="ProductLevelTotalDiscount" ColumnName="ProductLevelTotalDiscount" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="ExpOrderAmount" ColumnName="ExpOrderAmount" />
+          <ScalarProperty Name="ExpOrderDate" ColumnName="ExpOrderDate" />
+          <ScalarProperty Name="ConfidenceFactor" ColumnName="ConfidenceFactor" />
+          <ScalarProperty Name="LeadStatus" ColumnName="LeadStatus" />
+          <ScalarProperty Name="CampaignID" ColumnName="CampaignID" />
+          <ScalarProperty Name="LeadSourceID" ColumnName="LeadSourceID" />
+          <ScalarProperty Name="LeadDate" ColumnName="LeadDate" />
+          <ScalarProperty Name="CustomerHeadID" ColumnName="CustomerHeadID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="LeadID" ColumnName="LeadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetPrdDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.GetPrdDetail">
+        <MappingFragment StoreEntitySet="GetPrdDetail">
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="ProductSubCategory" ColumnName="ProductSubCategory" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LeadTimeDays" ColumnName="LeadTimeDays" />
+          <ScalarProperty Name="MinOrderQuantity" ColumnName="MinOrderQuantity" />
+          <ScalarProperty Name="MaxBalanceQuantity" ColumnName="MaxBalanceQuantity" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="GuaranteeDays" ColumnName="GuaranteeDays" />
+          <ScalarProperty Name="WarrantyDays" ColumnName="WarrantyDays" />
+          <ScalarProperty Name="AMC" ColumnName="AMC" />
+          <ScalarProperty Name="Installable" ColumnName="Installable" />
+          <ScalarProperty Name="Guarantee" ColumnName="Guarantee" />
+          <ScalarProperty Name="Warranty" ColumnName="Warranty" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FixedDiscountPercent" ColumnName="FixedDiscountPercent" />
+          <ScalarProperty Name="FixedDiscount" ColumnName="FixedDiscount" />
+          <ScalarProperty Name="PrincipalPrice" ColumnName="PrincipalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ProductSubCategoryID" ColumnName="ProductSubCategoryID" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetails_OfMIN_Transfer" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetails_OfMIN_Transfer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetails_OfMIN_Transfer_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="IssuedQty" ColumnName="IssuedQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStockHQ" ColumnName="CurrentStockHQ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PORtTransDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtTransDetail">
+        <MappingFragment StoreEntitySet="PORtTransDetail">
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="IssuedQty" ColumnName="IssuedQty" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="TransH_ID" ColumnName="TransH_ID" />
+          <ScalarProperty Name="TransD_ID" ColumnName="TransD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PORtTransHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.PORtTransHead">
+        <MappingFragment StoreEntitySet="PORtTransHead">
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="FromSiteID" ColumnName="FromSiteID" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDt" ColumnName="CreationDt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsSubmit" ColumnName="IsSubmit" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ExpectedDelDate" ColumnName="ExpectedDelDate" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="ShippingStatus" ColumnName="ShippingStatus" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="SupplierCoNo" ColumnName="SupplierCoNo" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="TransferedByUserID" ColumnName="TransferedByUserID" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="MIN_No" ColumnName="MIN_No" />
+          <ScalarProperty Name="ToSiteID" ColumnName="ToSiteID" />
+          <ScalarProperty Name="TransH_ID" ColumnName="TransH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntoPORtTransDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntoPORtTransDetail" />
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetails_OfMIN" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetails_OfMIN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetails_OfMIN_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Installable" ColumnName="Installable" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="IssuedQty" ColumnName="IssuedQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStockHQ" ColumnName="CurrentStockHQ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="mBOMHeaders">
+      <EntityTypeMapping TypeName="elegantcrmModel.mBOMHeader">
+        <MappingFragment StoreEntitySet="mBOMHeader">
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCompanies">
+      <EntityTypeMapping TypeName="elegantcrmModel.mCompany">
+        <MappingFragment StoreEntitySet="mCompany">
+          <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+          <ScalarProperty Name="Complogo" ColumnName="Complogo" />
+          <ScalarProperty Name="StampImg" ColumnName="StampImg" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="MainServerLogin" ColumnName="MainServerLogin" />
+          <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+          <ScalarProperty Name="DataBaseName" ColumnName="DataBaseName" />
+          <ScalarProperty Name="DataSource" ColumnName="DataSource" />
+          <ScalarProperty Name="MainDBPassword" ColumnName="MainDBPassword" />
+          <ScalarProperty Name="MainDataBaseName" ColumnName="MainDataBaseName" />
+          <ScalarProperty Name="MainDataSource" ColumnName="MainDataSource" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mDepartments">
+      <EntityTypeMapping TypeName="elegantcrmModel.mDepartment">
+        <MappingFragment StoreEntitySet="mDepartment">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mTerritories">
+      <EntityTypeMapping TypeName="elegantcrmModel.mTerritory">
+        <MappingFragment StoreEntitySet="mTerritory">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="PriceChange" ColumnName="PriceChange" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="FinApproverID" ColumnName="FinApproverID" />
+          <ScalarProperty Name="MaxDeliveryDays" ColumnName="MaxDeliveryDays" />
+          <ScalarProperty Name="GwcDeliveries" ColumnName="GwcDeliveries" />
+          <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+          <ScalarProperty Name="ECommerce" ColumnName="ECommerce" />
+          <ScalarProperty Name="ApproRemSchedul" ColumnName="ApproRemSchedul" />
+          <ScalarProperty Name="AutoRemSchedule" ColumnName="AutoRemSchedule" />
+          <ScalarProperty Name="AutoCancRen" ColumnName="AutoCancRen" />
+          <ScalarProperty Name="ApprovalRem" ColumnName="ApprovalRem" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="cancelDays" ColumnName="cancelDays" />
+          <ScalarProperty Name="AutoCancel" ColumnName="AutoCancel" />
+          <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="GroupTitle" ColumnName="GroupTitle" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_GetRequestDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_GetRequestDetails">
+        <MappingFragment StoreEntitySet="VW_GetRequestDetails">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="RequesterName" ColumnName="RequesterName" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_GetSKUAndRequestDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_GetSKUAndRequestDetails">
+        <MappingFragment StoreEntitySet="VW_GetSKUAndRequestDetails">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="RequesterName" ColumnName="RequesterName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vGetUserProfileByUserIDs">
+      <EntityTypeMapping TypeName="elegantcrmModel.vGetUserProfileByUserID">
+        <MappingFragment StoreEntitySet="vGetUserProfileByUserID">
+          <ScalarProperty Name="ReportingTo" ColumnName="ReportingTo" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="InterestedIn" ColumnName="InterestedIn" />
+          <ScalarProperty Name="HighestQualification" ColumnName="HighestQualification" />
+          <ScalarProperty Name="OtherID" ColumnName="OtherID" />
+          <ScalarProperty Name="DateOfJoining" ColumnName="DateOfJoining" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="ProfileImg" ColumnName="ProfileImg" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="desiName" ColumnName="desiName" />
+          <ScalarProperty Name="deptname" ColumnName="deptname" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRequestTemplateDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.mRequestTemplateDetail">
+        <MappingFragment StoreEntitySet="mRequestTemplateDetail">
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="PrdID" ColumnName="PrdID" />
+          <ScalarProperty Name="TemplateHeadID" ColumnName="TemplateHeadID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.tOrderDetail">
+        <MappingFragment StoreEntitySet="tOrderDetail">
+          <ScalarProperty Name="ShippedQty" ColumnName="ShippedQty" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tApprovalTrans">
+      <EntityTypeMapping TypeName="elegantcrmModel.tApprovalTran">
+        <MappingFragment StoreEntitySet="tApprovalTrans">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ApproverID" ColumnName="ApproverID" />
+          <ScalarProperty Name="ApprovalId" ColumnName="ApprovalId" />
+          <ScalarProperty Name="DelegationId" ColumnName="DelegationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tContactPersonDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.tContactPersonDetail">
+        <MappingFragment StoreEntitySet="tContactPersonDetail">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="HighSchool" ColumnName="HighSchool" />
+          <ScalarProperty Name="CollegeOrUniversity" ColumnName="CollegeOrUniversity" />
+          <ScalarProperty Name="HighestQualification" ColumnName="HighestQualification" />
+          <ScalarProperty Name="OtherID" ColumnName="OtherID" />
+          <ScalarProperty Name="TwitterPassword" ColumnName="TwitterPassword" />
+          <ScalarProperty Name="TwitterID" ColumnName="TwitterID" />
+          <ScalarProperty Name="FacebookPassword" ColumnName="FacebookPassword" />
+          <ScalarProperty Name="FacebookID" ColumnName="FacebookID" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="InterestedIn" ColumnName="InterestedIn" />
+          <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="OfficeNo" ColumnName="OfficeNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CustomerHeadID" ColumnName="CustomerHeadID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mProducts">
+      <EntityTypeMapping TypeName="elegantcrmModel.mProduct">
+        <MappingFragment StoreEntitySet="mProduct">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+          <ScalarProperty Name="Packkey" ColumnName="Packkey" />
+          <ScalarProperty Name="BOMHeaderId" ColumnName="BOMHeaderId" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LeadTimeDays" ColumnName="LeadTimeDays" />
+          <ScalarProperty Name="MinOrderQuantity" ColumnName="MinOrderQuantity" />
+          <ScalarProperty Name="MaxBalanceQuantity" ColumnName="MaxBalanceQuantity" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="GuaranteeDays" ColumnName="GuaranteeDays" />
+          <ScalarProperty Name="WarrantyDays" ColumnName="WarrantyDays" />
+          <ScalarProperty Name="AMC" ColumnName="AMC" />
+          <ScalarProperty Name="Installable" ColumnName="Installable" />
+          <ScalarProperty Name="Guarantee" ColumnName="Guarantee" />
+          <ScalarProperty Name="Warranty" ColumnName="Warranty" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FixedDiscountPercent" ColumnName="FixedDiscountPercent" />
+          <ScalarProperty Name="FixedDiscount" ColumnName="FixedDiscount" />
+          <ScalarProperty Name="PrincipalPrice" ColumnName="PrincipalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ProductSubCategoryID" ColumnName="ProductSubCategoryID" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetRequestByRequestIDs" FunctionName="elegantcrmModel.Store.POR_SP_GetRequestByRequestIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetRequestByRequestIDs_Result">
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="RequestNo" ColumnName="RequestNo" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="ImgRequest" ColumnName="ImgRequest" />
+          <ScalarProperty Name="ImgApproval" ColumnName="ImgApproval" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tCorresponds">
+      <EntityTypeMapping TypeName="elegantcrmModel.tCorrespond">
+        <MappingFragment StoreEntitySet="tCorrespond">
+          <ScalarProperty Name="NxtAutoCancelReminderDate" ColumnName="NxtAutoCancelReminderDate" />
+          <ScalarProperty Name="NxtApprovalReminderDate" ColumnName="NxtApprovalReminderDate" />
+          <ScalarProperty Name="AutoCancelReminderSchedule" ColumnName="AutoCancelReminderSchedule" />
+          <ScalarProperty Name="ApprovalReminderSchedule" ColumnName="ApprovalReminderSchedule" />
+          <ScalarProperty Name="OrderCancelDays" ColumnName="OrderCancelDays" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+          <ScalarProperty Name="MailStatus" ColumnName="MailStatus" />
+          <ScalarProperty Name="CurrentOrderStatus" ColumnName="CurrentOrderStatus" />
+          <ScalarProperty Name="MessageTo" ColumnName="MessageTo" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+          <ScalarProperty Name="MessageSource" ColumnName="MessageSource" />
+          <ScalarProperty Name="MessageFrom" ColumnName="MessageFrom" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="MessageTitle" ColumnName="MessageTitle" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRequestTemplateHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.mRequestTemplateHead">
+        <MappingFragment StoreEntitySet="mRequestTemplateHead">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Contact2" ColumnName="Contact2" />
+          <ScalarProperty Name="Contact1" ColumnName="Contact1" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Accesstype" ColumnName="Accesstype" />
+          <ScalarProperty Name="TemplateTitle" ColumnName="TemplateTitle" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMessageTrans">
+      <EntityTypeMapping TypeName="elegantcrmModel.mMessageTran">
+        <MappingFragment StoreEntitySet="mMessageTrans">
+          <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Object" ColumnName="Object" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="MsgDescription" ColumnName="MsgDescription" />
+          <ScalarProperty Name="MessageHdrId" ColumnName="MessageHdrId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GWC_VW_MsgOrderDetail">
+      <EntityTypeMapping TypeName="elegantcrmModel.GWC_VW_MsgOrderDetail">
+        <MappingFragment StoreEntitySet="GWC_VW_MsgOrderDetail">
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderHeads">
+      <EntityTypeMapping TypeName="elegantcrmModel.tOrderHead">
+        <MappingFragment StoreEntitySet="tOrderHead">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="orderType" ColumnName="orderType" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="TotalQty" ColumnName="TotalQty" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="WMSRemark" ColumnName="WMSRemark" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderDetailHistories">
+      <EntityTypeMapping TypeName="elegantcrmModel.tOrderDetailHistory">
+        <MappingFragment StoreEntitySet="tOrderDetailHistory">
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderHeadHistories">
+      <EntityTypeMapping TypeName="elegantcrmModel.tOrderHeadHistory">
+        <MappingFragment StoreEntitySet="tOrderHeadHistory">
+          <ScalarProperty Name="WMSRemark" ColumnName="WMSRemark" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tInventries">
+      <EntityTypeMapping TypeName="elegantcrmModel.tInventry">
+        <MappingFragment StoreEntitySet="tInventry">
+          <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+          <ScalarProperty Name="OutQuantity" ColumnName="OutQuantity" />
+          <ScalarProperty Name="InQuantity" ColumnName="InQuantity" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ResurveQty" ColumnName="ResurveQty" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="Transactiondate" ColumnName="Transactiondate" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="SKUId" ColumnName="SKUId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_GWC_SkuFilter">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_GWC_SkuFilter">
+        <MappingFragment StoreEntitySet="VW_GWC_SkuFilter">
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="PrincipalPrice" ColumnName="PrincipalPrice" />
+          <ScalarProperty Name="SkuImage" ColumnName="SkuImage" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="ResurveQty" ColumnName="ResurveQty" />
+          <ScalarProperty Name="TotalDispatchQty" ColumnName="TotalDispatchQty" />
+          <ScalarProperty Name="TotalReceiveQty" ColumnName="TotalReceiveQty" />
+          <ScalarProperty Name="OpeningStock" ColumnName="OpeningStock" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GWC_GetUserInfo" FunctionName="elegantcrmModel.Store.SP_GWC_GetUserInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.SP_GWC_GetUserInfo_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="userType" ColumnName="userType" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GWC_GetUserInfoRoleWise" FunctionName="elegantcrmModel.Store.SP_GWC_GetUserInfoRoleWise">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.SP_GWC_GetUserInfoRoleWise_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="userType" ColumnName="userType" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="VW_GetUserInformation">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_GetUserInformation">
+        <MappingFragment StoreEntitySet="VW_GetUserInformation">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ProfileImg" ColumnName="ProfileImg" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntotOrderDetail" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntotOrderDetail" />
+    <FunctionImportMapping FunctionImportName="POR_SP_InsertIntotOrderDetail1" FunctionName="elegantcrmModel.Store.POR_SP_InsertIntotOrderDetail" />
+    <EntitySetMapping Name="VW_OrderDeliveryDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_OrderDeliveryDetails">
+        <MappingFragment StoreEntitySet="VW_OrderDeliveryDetails">
+          <ScalarProperty Name="DriverMobileNo" ColumnName="DriverMobileNo" />
+          <ScalarProperty Name="DriverEmailID" ColumnName="DriverEmailID" />
+          <ScalarProperty Name="AssignedBy" ColumnName="AssignedBy" />
+          <ScalarProperty Name="DriverName" ColumnName="DriverName" />
+          <ScalarProperty Name="AssignBy" ColumnName="AssignBy" />
+          <ScalarProperty Name="AssignDate" ColumnName="AssignDate" />
+          <ScalarProperty Name="TruckDetail" ColumnName="TruckDetail" />
+          <ScalarProperty Name="DriverId" ColumnName="DriverId" />
+          <ScalarProperty Name="Card_Verified" ColumnName="Card_Verified" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
+          <ScalarProperty Name="PhotoId" ColumnName="PhotoId" />
+          <ScalarProperty Name="PhotoIdtype" ColumnName="PhotoIdtype" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mPaymentMethodDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.mPaymentMethodDetail">
+        <MappingFragment StoreEntitySet="mPaymentMethodDetail">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="Mandetory" ColumnName="Mandetory" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="PMethodID" ColumnName="PMethodID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_DeptWisePaymentMethod">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_DeptWisePaymentMethod">
+        <MappingFragment StoreEntitySet="VW_DeptWisePaymentMethod">
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="PMethodID" ColumnName="PMethodID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCostCenterMains">
+      <EntityTypeMapping TypeName="elegantcrmModel.mCostCenterMain">
+        <MappingFragment StoreEntitySet="mCostCenterMain">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ApproverID" ColumnName="ApproverID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetail_ForRequest" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetail_ForRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetail_ForRequest_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetPartDetail_ForRequest1" FunctionName="elegantcrmModel.Store.POR_SP_GetPartDetail_ForRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetPartDetail_ForRequest1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="mStatutories">
+      <EntityTypeMapping TypeName="elegantcrmModel.mStatutory">
+        <MappingFragment StoreEntitySet="mStatutory">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tStatutoryDetails">
+      <EntityTypeMapping TypeName="elegantcrmModel.tStatutoryDetail">
+        <MappingFragment StoreEntitySet="tStatutoryDetail">
+          <ScalarProperty Name="ApproverID" ColumnName="ApproverID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="StatutoryValue" ColumnName="StatutoryValue" />
+          <ScalarProperty Name="StatutoryID" ColumnName="StatutoryID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderWiseAccesses">
+      <EntityTypeMapping TypeName="elegantcrmModel.tOrderWiseAccess">
+        <MappingFragment StoreEntitySet="tOrderWiseAccess">
+          <ScalarProperty Name="ApproverLogic" ColumnName="ApproverLogic" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="SkuQtyEdit" ColumnName="SkuQtyEdit" />
+          <ScalarProperty Name="PriceEdit" ColumnName="PriceEdit" />
+          <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+          <ScalarProperty Name="UserApproverID" ColumnName="UserApproverID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetRequestBySiteIDsOrUserID" FunctionName="elegantcrmModel.Store.POR_SP_GetRequestBySiteIDsOrUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetRequestBySiteIDsOrUserID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="ImgRequest" ColumnName="ImgRequest" />
+          <ScalarProperty Name="ImgApproval" ColumnName="ImgApproval" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="POR_SP_GetRequestBySiteIDsOrUserID1" FunctionName="elegantcrmModel.Store.POR_SP_GetRequestBySiteIDsOrUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.POR_SP_GetRequestBySiteIDsOrUserID1_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="ImgRequest" ColumnName="ImgRequest" />
+          <ScalarProperty Name="ImgApproval" ColumnName="ImgApproval" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_PaymentMethodFOC" FunctionName="elegantcrmModel.Store.SP_PaymentMethodFOC" />
+    <FunctionImportMapping FunctionImportName="SP_PaymentMethodFOC1" FunctionName="elegantcrmModel.Store.SP_PaymentMethodFOC" />
+    <FunctionImportMapping FunctionImportName="POR_SP_mRequestTemplateDetail" FunctionName="elegantcrmModel.Store.POR_SP_mRequestTemplateDetail" />
+    <FunctionImportMapping FunctionImportName="POR_SP_mRequestTemplateDetail1" FunctionName="elegantcrmModel.Store.POR_SP_mRequestTemplateDetail" />
+    <EntitySetMapping Name="mUserLocations">
+      <EntityTypeMapping TypeName="elegantcrmModel.mUserLocation">
+        <MappingFragment StoreEntitySet="mUserLocation">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GWC_VW_MsgOrderHead">
+      <EntityTypeMapping TypeName="elegantcrmModel.GWC_VW_MsgOrderHead">
+        <MappingFragment StoreEntitySet="GWC_VW_MsgOrderHead">
+          <ScalarProperty Name="ConsigneePhone" ColumnName="ConsigneePhone" />
+          <ScalarProperty Name="ConsigneeAddress" ColumnName="ConsigneeAddress" />
+          <ScalarProperty Name="ConsigneeName" ColumnName="ConsigneeName" />
+          <ScalarProperty Name="RequestorMobileNo" ColumnName="RequestorMobileNo" />
+          <ScalarProperty Name="RequestorName" ColumnName="RequestorName" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="ContactP2" ColumnName="ContactP2" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="Con1" ColumnName="Con1" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_GetUserLocation">
+      <EntityTypeMapping TypeName="elegantcrmModel.VW_GetUserLocation">
+        <MappingFragment StoreEntitySet="VW_GetUserLocation">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GWC_SP_GetRequestHeadByRequestIDs" FunctionName="elegantcrmModel.Store.GWC_SP_GetRequestHeadByRequestIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.GWC_SP_GetRequestHeadByRequestIDs_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Contact1Name" ColumnName="Contact1Name" />
+          <ScalarProperty Name="Con1Email" ColumnName="Con1Email" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="Contact2Name" ColumnName="Contact2Name" />
+          <ScalarProperty Name="Con2Email" ColumnName="Con2Email" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="ImgRequest" ColumnName="ImgRequest" />
+          <ScalarProperty Name="ImgApproval" ColumnName="ImgApproval" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GWC_SP_GetRequestHeadByRequestIDs2" FunctionName="elegantcrmModel.Store.GWC_SP_GetRequestHeadByRequestIDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.GWC_SP_GetRequestHeadByRequestIDs_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestByUserName" ColumnName="RequestByUserName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Contact1Name" ColumnName="Contact1Name" />
+          <ScalarProperty Name="Con1Email" ColumnName="Con1Email" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="Contact2Name" ColumnName="Contact2Name" />
+          <ScalarProperty Name="Con2Email" ColumnName="Con2Email" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="ImgRequest" ColumnName="ImgRequest" />
+          <ScalarProperty Name="ImgApproval" ColumnName="ImgApproval" />
+          <ScalarProperty Name="ImgIssue" ColumnName="ImgIssue" />
+          <ScalarProperty Name="ImgReceipt" ColumnName="ImgReceipt" />
+          <ScalarProperty Name="ImgConsumption" ColumnName="ImgConsumption" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetUsers" FunctionName="elegantcrmModel.Store.SP_GetUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.SP_GetUsers_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ProfileImg" ColumnName="ProfileImg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetUsers1" FunctionName="elegantcrmModel.Store.SP_GetUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="elegantcrmModel.SP_GetUsers1_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ProfileImg" ColumnName="ProfileImg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="mUserWarehouses">
+      <EntityTypeMapping TypeName="elegantcrmModel.mUserWarehouse">
+        <MappingFragment StoreEntitySet="mUserWarehouse">
+          <ScalarProperty Name="WarehoueID" ColumnName="WarehoueID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

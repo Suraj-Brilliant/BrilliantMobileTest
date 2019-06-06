@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ae01fec2-4327-47fa-9e48-bf70c45ce287" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartRequest.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicePartRequest.wsdl" MetadataType="Wsdl" ID="5df08d87-53fe-4097-a9e7-23987d16a539" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartRequest.svc?wsdl" />
+    <MetadataFile FileName="ServicePartRequest.xsd" MetadataType="Schema" ID="40195e78-1d51-4d02-8d15-4ab0fa97f7fc" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartRequest.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicePartRequest.disco" MetadataType="Disco" ID="7421cfc4-e614-4607-a9e5-3893b9f6d08f" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartRequest.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

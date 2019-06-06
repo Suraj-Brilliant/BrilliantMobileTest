@@ -1,0 +1,2336 @@
+﻿/* ---------------------  Begin Basic Styles  --------------------- */
+/*** HTML Compunds ***/
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-image: url('../../Grid/styles/style_9/header_placeholder.gif');
+    background-repeat: repeat-x;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordionHeader a
+{
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+}
+
+.accordionHeader a:hover
+{
+    background: none;
+    text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-image: url('../../Grid/styles/style_9/header_placeholder.gif');
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordionHeaderSelected a
+{
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+}
+
+.accordionHeaderSelected a:hover
+{
+    background: none;
+    text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px solid #c2c2c2;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: url(../images/minimalist8.png), -moz-linear-gradient(top, #68ACDF 0%, #FFFFFF 60%) fixed;
+    background: url(../images/minimalist8.png), -ms-linear-gradient(top, #68ACDF 0%, #FFFFFF 60%) fixed;
+    background: url(../images/minimalist8.png), -o-linear-gradient(top, #68ACDF 0%, #FFFFFF 60%) fixed;
+    background: url(../images/minimalist8.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68ACDF 0%), to(#FFFFFF 60%)) fixed;
+    background: url(../images/minimalist8.png), -webkit-linear-gradient(top, #68ACDF 0%, #FFFFFF 60%) fixed;
+    color: #666; /*behavior: url('../App_Themes/Blue/PIE.htc');     -pie-background: url(bg-image.png) no-repeat, linear-gradient(top, #68ACDF 0%, #FFFFFF 60%) fixed;*/
+    font-family: Calibri, "Droid Sans" , sans-serif;
+    font-size: 11px;
+    height: 100%; /*min-width: 1024px;*/
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+h1
+{
+    font-size: 24px;
+}
+h2
+{
+    font-size: 22px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+h4
+{
+    font-size: 18px;
+}
+
+h5
+{
+    font-size: 16px;
+}
+
+h6
+{
+    font-size: 14px;
+}
+
+pre, code
+{
+    background-color: #FBFBFB;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    -moz-border-radius: 4px;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+hr
+{
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+blockquote
+{
+    border-left: 4px solid #DDD;
+    color: #888;
+    line-height: 20px;
+    margin-bottom: 14px;
+    padding-left: 14px;
+}
+
+/*** Theme Styles ***/
+
+.center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
+{
+    margin-bottom: 14px;
+}
+
+.border_content h1, .border_content h2, .border_content h3, .border_content h4, .border_content h5, .border_content h6
+{
+    margin-bottom: 14px;
+}
+
+.content > p
+{
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+
+.border_content
+{
+    border: 1px dotted #CCC;
+    padding: 10px;
+}
+
+.content > ol > li, .content > .box > .content ol li
+{
+    line-height: 20px;
+    list-style: decimal;
+    margin-left: 14px;
+}
+
+.content > ol > li > ol > li, .content > .box > .content ol li ol li
+{
+    list-style: lower-alpha;
+}
+
+.content > ul > li, .content > .box > .content ul li
+{
+    line-height: 20px;
+    list-style: disc;
+    margin-left: 14px;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.columns
+{
+    border-top: 1px solid #EEE;
+    margin-top: -1px;
+    width: 100%;
+}
+
+.columns:first-child
+{
+    border-top: 0px;
+}
+
+.col_100, .col_50, .col_33, .col_66, .col_25, .col_75, .col_60, .col_40
+{
+    display: block;
+    float: left;
+    margin-right: -1px;
+    position: relative;
+}
+
+.block.columns .col_100, .block.columns .col_50, .block.columns.col_33, .block.columns .col_66, .block.columns .col_25, .block.columns .col_75, .block.columns .col_60, .block.columns .col_40
+{
+    border-left: 1px solid #EEE;
+    display: block;
+    float: left;
+    margin-right: -1px;
+    position: relative;
+}
+
+.col_100
+{
+    width: 100%;
+}
+
+.col_50
+{
+    width: 50%;
+}
+
+.col_33
+{
+    width: 33.333%;
+}
+
+.col_66
+{
+    width: 66.666%;
+}
+
+.col_25
+{
+    width: 25%;
+}
+
+.col_75
+{
+    width: 75%;
+}
+
+.col_60
+{
+    width: 60%;
+}
+
+.col_40
+{
+    width: 40%;
+}
+
+.columns .on_right
+{
+    border-left: 1px solid #eee;
+    border-right: 0;
+    margin-left: 0px;
+}
+
+.section
+{
+    margin: 0;
+    padding: 15px;
+}
+
+.block.columns
+{
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/*** Error Page Styles ***/
+
+h1.errorpage
+{
+    color: #1A527D;
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    text-align: center;
+    text-shadow: 0px 1px #FFF;
+}
+
+h1.errorpage img
+{
+    display: block;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 1px #FFF;
+}
+
+p.errorpage
+{
+    background-color: #FFF;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: 0px 1px #CCC;
+    color: #333;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: 0px 1px #CCC;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px #FFF;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: 0px 1px #CCC;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+p.errorpage img
+{
+    line-height: 16px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+ul.errorpage
+{
+    color: #333;
+    font-size: 24px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px #FFF;
+}
+
+ul.errorpage li
+{
+    color: #333;
+    font-size: 24px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px #FFF;
+}
+
+.content > .padding_5 > .button, .content > .padding_10 > .button, .content > .padding_15 > .button, .content > .padding_20 > .button, .content > .button
+{
+    margin-bottom: 7px !important;
+}
+
+.padding_5
+{
+    display: block;
+    padding: 5px !important;
+}
+
+.padding_10
+{
+    display: block;
+    padding: 10px !important;
+}
+
+.padding_15
+{
+    display: block;
+    padding: 15px;
+}
+
+.padding_20
+{
+    display: block;
+    padding: 20px;
+}
+
+.column-left
+{
+    float: left;
+    width: 49%;
+}
+
+.column-right
+{
+    float: right;
+    width: 49%;
+}
+
+
+/* ---------------------  End Basic Styles  --------------------- */
+
+
+/* ---------------------  Begin Header Styles  --------------------- */
+
+/*** Logo ***/
+
+#logo
+{
+    margin-top: -9px;
+    margin-left: -10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+#logo a
+{
+    display: block;
+    height: 48px;
+    width: 110px;
+}
+#logo a span
+{
+    display: none;
+}
+
+#logo_login
+{
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 110px;
+}
+/*** Top Bar Styles ***/
+
+#top_bar
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: #1A527D 1px solid;
+    border-radius: 6px 6px 0px 0px; /*border-top-left-radius: 6px;     border-top-right-radius: 6px;*/
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF;
+    height: 90px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+}
+
+#top_bar div.CompanyLogo
+{
+    width: 42%;
+    float: left;
+    top: 0;
+}
+
+#top_bar div.userInfo
+{
+    width: 58%;
+    float: right;
+    text-align: right;
+    top: 0;
+    margin-top: 0px;
+}
+.ImgProfileMasterPg
+{
+    border: solid 2px white;
+    background-color: White;
+    width: 57px; /*border: 2px solid #236496;*/
+    height: 53px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  /*  border-radius: 4px;*/
+    padding: 0px;
+    border-radius:25%;
+	box-shadow:0px 0px 5px #000000;   
+}
+
+
+/* ---------------------  End Header Styles  --------------------- */
+
+
+/* ---------------------  Begin Button & Menu Styles  --------------------- */
+
+/*** Top Notifications Styles ***/
+
+#top_notifications
+{
+    margin-top: -65px;
+    margin-left: 57%;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 400px;
+    z-index: 1;
+    border: 1px solid red;
+    height: 90%;
+    text-align: right;
+}
+
+#top_notifications form
+{
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px #23608F;
+    float: right;
+    margin-left: 30px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-box-shadow: 0px 1px #23608F;
+    padding: 0px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 0px 1px #23608F;
+}
+
+#top_notifications input
+{
+    background-color: #FFF;
+    border-bottom-color: #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-top-color: #1A527D;
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 0px 1px #DFDFDF;
+    color: #BABEBE;
+    float: left;
+    font-family: "Droid Sans" , Arial, sans-serif;
+    height: 32px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-box-shadow: inset 0px 1px #DFDFDF;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #DFDFDF;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications input:focus
+{
+    background-color: #FFF;
+    border-bottom-color: #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: none;
+    border-top-color: #1A527D;
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 1px 1px 10px #23608F;
+    color: #BABEBE;
+    float: left;
+    font-family: "Droid Sans" , Arial, sans-serif;
+    height: 32px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #23608F;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #23608F;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications form button
+{
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*pie*/
+    background: -moz-linear-gradient(top, #428BC2, #236496);
+    background: -ms-linear-gradient(top, #428BC2, #236496);
+    background: -o-linear-gradient(top, #428BC2, #236496);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: -webkit-linear-gradient(top, #428BC2, #236496);
+    background-color: -o-linear-gradient;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border: 1px solid #1A527D;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 0px 1px #81B2D7;
+    height: 32px;
+    list-style-type: none;
+    margin: 0px !important;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    padding: 0px;
+    position: relative;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    width: 36px;
+}
+
+#top_notifications form button:hover
+{
+    background: -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: -webkit-linear-gradient(top, #3A81B7, #3375A8);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    box-shadow: inset 0px 1px #81B2D7;
+    height: 32px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+}
+
+#top_notifications form button:active
+{
+    background: -moz-linear-gradient(top, #1A527D, #428BC2);
+    background: -ms-linear-gradient(top, #1A527D, #428BC2);
+    background: -o-linear-gradient(top, #1A527D, #428BC2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#428BC2));
+    background: -webkit-linear-gradient(top, #1A527D, #428BC2);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    height: 32px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    position: relative;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist
+{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px #23608F;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-box-shadow: 0px 1px #23608F;
+    padding: 0px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 0px 1px #23608F;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications ul.buttonlist li
+{
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background: -moz-linear-gradient(top, #428BC2, #236496);
+    background: -ms-linear-gradient(top, #428BC2, #236496);
+    background: -o-linear-gradient(top, #428BC2, #236496);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: -webkit-linear-gradient(top, #428BC2, #236496);
+    border-bottom-color: #1A527D;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 0px 1px #81B2D7;
+    float: left;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+}
+
+#top_notifications ul.buttonlist li:first-child
+{
+    border-bottom-color: #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 0px 1px #81B2D7;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications ul.buttonlist li:last-child
+{
+    background-color: #06F;
+    border: 1px solid #1A527D;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 0px 1px #81B2D7;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications ul.buttonlist li:hover
+{
+    background: -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: -webkit-linear-gradient(top, #3A81B7, #3375A8);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #3375A8;
+    border-bottom-color: #1A527D;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 0px 1px #81B2D7;
+    float: left;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+}
+
+#top_notifications ul.buttonlist li:active
+{
+    background: -moz-linear-gradient(top, #1A527D, #428BC2);
+    background: -ms-linear-gradient(top, #1A527D, #428BC2);
+    background: -o-linear-gradient(top, #1A527D, #428BC2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#428BC2));
+    background: -webkit-linear-gradient(top, #1A527D, #428BC2);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom-color: #1A527D;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    float: left;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    position: relative;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist li:first-child:hover
+{
+    border-bottom-color: #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 0px 1px #81B2D7;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications ul.buttonlist li:first-child:active
+{
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background: -moz-linear-gradient(top, #1A527D, #428BC2);
+    background: -ms-linear-gradient(top, #1A527D, #428BC2);
+    background: -o-linear-gradient(top, #1A527D, #428BC2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#428BC2));
+    background: -webkit-linear-gradient(top, #1A527D, #428BC2);
+    border-bottom-color: #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #1A527D;
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    position: relative;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist li:last-child:hover
+{
+    border: 1px solid #1A527D;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 0px 1px #81B2D7;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    position: relative;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#top_notifications ul.buttonlist li:last-child:active
+{
+    background: -moz-linear-gradient(top, #1A527D, #428BC2);
+    background: -ms-linear-gradient(top, #1A527D, #428BC2);
+    background: -o-linear-gradient(top, #1A527D, #428BC2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#428BC2));
+    background: -webkit-linear-gradient(top, #1A527D, #428BC2);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border: 1px solid #1A527D;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    position: relative;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist li span
+{
+    background: -moz-linear-gradient(top, #FC0000, #D70000);
+    background: -ms-linear-gradient(top, #FC0000, #D70000);
+    background: -o-linear-gradient(top, #FC0000, #D70000);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FC0000), to(#D70000));
+    background: -webkit-linear-gradient(top, #FC0000, #D70000);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #F00;
+    border: 1px solid #970000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 0px 1px #FF6666;
+    cursor: pointer;
+    display: block; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FC0000, endColorstr=#D70000);*/
+    height: 10px;
+    left: 3px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: inset 0px 1px #FF6666;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px -1px #970000;
+    top: -16px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px #FF6666;
+}
+
+#top_notifications ul.buttonlist li a
+{
+    color: #FFF;
+    display: list-item;
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    white-space: normal;
+}
+
+#top_notifications ul.buttonlist li a:active
+{
+    color: #FFF;
+    display: list-item;
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    text-shadow: 0px -1px #1A527D;
+    white-space: normal;
+}
+
+#top_notifications ul.buttonlist ul
+{
+    background: -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: -webkit-linear-gradient(top, #3A81B7, #3375A8);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    box-shadow: 1px 1px 5px #2370A9;
+    display: none;
+    left: -1px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-shadow: 1px 1px 5px #2370A9;
+    padding: 0px;
+    position: absolute;
+    top: 30px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-box-shadow: 1px 1px 5px #2370A9;
+    width: 220px;
+    z-index: 1;
+}
+
+#top_notifications ul.buttonlist ul li
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    list-style-type: none;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: none;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: none;
+}
+
+#top_notifications ul.buttonlist ul li:first-child
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: none;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: none;
+}
+
+#top_notifications ul.buttonlist ul li:last-child
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: none;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: none;
+}
+
+#top_notifications ul.buttonlist ul li:hover
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    list-style-type: none;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist ul li:first-child:hover
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist ul li:last-child:hover
+{
+    background: -moz-linear-gradient(top, #1A527D, #1A527D);
+    background: -ms-linear-gradient(top, #1A527D, #1A527D);
+    background: -o-linear-gradient(top, #1A527D, #1A527D);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A527D), to(#1A527D));
+    background: -webkit-linear-gradient(top, #1A527D, #1A527D);
+    background-color: #1A527D;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border: 1px solid #1A527D;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 10px #0C263A;
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: normal;
+    margin: 2px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 1px 1px 10px #0C263A;
+    padding: 0px !important;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 10px #0C263A;
+}
+
+#top_notifications ul.buttonlist ul li a
+{
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    white-space: normal;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+#top_notifications ul.buttonlist ul li a:active
+{
+    color: #FFF;
+    display: list-item;
+    float: none;
+    font-size: 11px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+    white-space: normal;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+
+/*** Nav Menu ***/
+
+nav#menu
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    border-bottom-color: #1A527D;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #1A527D;
+    border-right-style: solid;
+    border-right-width: 1px;
+    height: 40px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    z-index: 1;
+    width: 100%;
+}
+
+nav#menu ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav#menu li
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    border-right-color: #5688DC;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    display: list-item;
+    float: left;
+    font-size: 12px;
+    height: 40px;
+    list-style-type: none;
+    margin-right: 1px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    position: relative;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li.submenu
+{
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -webkit-linear-gradient(top, #428BC2, #236496);
+    border-right-color: #5688DC;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    display: list-item;
+    float: left;
+    font-size: 12px;
+    height: 40px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    padding-right: 10px;
+    position: relative;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li.submenu:hover
+{
+    background: url(../images/texture_5.png), url(../images/up_arrow.png) no-repeat right center, -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/up_arrow.png) no-repeat right center, -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/up_arrow.png) no-repeat right center, -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/up_arrow.png) no-repeat right center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), url(../images/up_arrow.png) no-repeat right center, -webkit-linear-gradient(top, #236FA7, #3375A8);
+    border-right-color: #236FA7;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    color: #FFF;
+    height: 41px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    padding-right: 10px;
+    position: relative;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li.current.submenu
+{
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: url(../images/texture_5.png), url(../images/down_arrow.png) no-repeat right center, -webkit-linear-gradient(top, #236FA7, #3375A8);
+    border-right-color: #236FA7;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    color: #FFF;
+    height: 40px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    position: relative;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li:hover
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #3A81B7, #3A81B7);
+    border-right-color: #5688DC;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    color: #FFF;
+    -moz-box-shadow: 1px 0px #1A527D;
+    position: relative;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li.current
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #236FA7, #3375A8);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-bottom-left-radius: 2px;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: #236FA7;
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    color: #FFF;
+    height: 40px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li:first-child:hover
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #3A81B7, #3375A8);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-radius: 0px 0px 0px 4px; /*border-bottom-left-radius: 2px;*/
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: #5688DC;
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A81B7, endColorstr=#3375A8);*/
+    height: 40px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li:first-child.current
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #3A81B7, #3375A8);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3A81B7), to(#3375A8));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #236FA7, #3375A8);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    border-radius: 0px 0px 4px 0px; /*border-bottom-left-radius: 2px;*/
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: #236FA7;
+    border-right-style: solid;
+    border-right-width: 1px;
+    box-shadow: 1px 0px #1A527D;
+    height: 40px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-box-shadow: 1px 0px #1A527D;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: 1px 0px #1A527D;
+}
+
+nav#menu li a
+{
+    color: #FFF;
+    display: list-item;
+    font-family: "Droid Sans" , Arial;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 13px;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+}
+
+nav#menu li:first-child a
+{
+    color: #FFF;
+    display: list-item;
+    padding: 13px;
+    text-decoration: none;
+    text-shadow: 0px 1px #1A527D;
+}
+
+nav#menu li:hover a
+{
+    color: #FFF;
+    display: list-item;
+    padding: 13px;
+    text-decoration: none;
+    text-shadow: 0px -1px #1A527D;
+}
+
+nav#menu li.current a
+{
+    color: #FFF;
+    display: list-item;
+    padding: 13px;
+    text-decoration: none;
+    text-shadow: 0px -1px #1A527D;
+}
+
+nav#menu ul li.current ul
+{
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background: url(../images/texture_5.png), #3375A8;
+    background-position: 0px -2px;
+    border-bottom-color: #1A527D;
+    border-radius: 0px 0px 4px 4px; /*border-bottom-left-radius: 4px;     border-bottom-right-radius: 4px;*/
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #1A527D;
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: none;
+    left: -1px;
+    list-style-type: none;
+    margin: 0px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    padding: 0px;
+    position: absolute;
+    top: 40px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    z-index: 3;
+}
+
+nav#menu ul ul
+{
+    background: url(../images/texture_5.png), #3375A8;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-position: 0px -2px;
+    border-bottom-color: #1A527D;
+    border-radius: 0px 0px 4px 4px; /*border-bottom-left-radius: 4px;     border-bottom-right-radius: 4px;*/
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #1A527D;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #1A527D;
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: none;
+    left: -1px;
+    list-style-type: none;
+    margin: 0px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    padding: 0px;
+    position: absolute;
+    top: 41px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    z-index: 3;
+}
+
+nav#menu ul ul li
+{
+    background: transparent !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-image: none;
+    border-bottom: 1px solid #1D4F78 !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+    box-shadow: 0px 1px #5094C7 !important;
+    display: list-item;
+    height: auto !important;
+    list-style-type: none;
+    margin: 0px;
+    -moz-box-shadow: 0px 1px #5094C7 !important;
+    padding: 0px !important;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 1px #5094C7 !important;
+}
+
+nav#menu ul ul li:first-child
+{
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background: transparent !important;
+    background-image: none;
+    border-bottom-color: #1D4F78;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    box-shadow: 0px 1px #5094C7 !important;
+    display: list-item;
+    height: auto !important;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1px;
+    -moz-border-radius-bottomleft: 0px !important;
+    -moz-box-shadow: 0px 1px #5094C7 !important;
+    padding: 0px;
+    text-decoration: none;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-box-shadow: 0px 1px #5094C7 !important;
+}
+
+nav#menu ul ul li:last-child
+{
+    background: transparent !important;
+    background-image: none;
+    border-bottom: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+    box-shadow: none !important;
+    display: list-item;
+    height: auto !important;
+    list-style-type: none;
+    margin: 0px;
+    -moz-box-shadow: none !important;
+    padding: 0px !important;
+    text-decoration: none;
+    -webkit-box-shadow: none !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+nav#menu ul ul li:hover
+{
+    background: transparent !important;
+    background-image: none;
+    border-bottom-color: #236496;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+    box-shadow: 0px 1px #5094C7 !important;
+    display: list-item;
+    height: auto !important;
+    list-style-type: none;
+    margin: 0px;
+    -moz-box-shadow: 0px 1px #5094C7 !important;
+    padding: 0px !important;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 1px #5094C7 !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+nav#menu ul ul li:first-child:hover
+{
+    border-bottom-color: #1D4F78;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-top-color: #1a527d;
+    border-top-style: solid !important;
+    border-top-width: 1px;
+    box-shadow: 0px 1px #5094C7 !important;
+    height: auto !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    -moz-box-shadow: 0px 1px #5094C7 !important;
+    padding: 0px;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-box-shadow: 0px 1px #5094C7 !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+nav#menu ul ul li:last-child:hover
+{
+    background: transparent !important;
+    background-image: none;
+    border-radius: 0px 0px 4px 4px;
+    border-bottom-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+    box-shadow: none !important;
+    display: list-item;
+    height: auto !important;
+    list-style-type: none;
+    margin: 0px;
+    -moz-border-radius-bottomleft: 4px !important;
+    -moz-border-radius-bottomright: 4px !important;
+    -moz-box-shadow: none !important;
+    padding: 0px !important;
+    text-decoration: none;
+    -webkit-border-bottom-left-radius: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important;
+    -webkit-box-shadow: none !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+nav#menu ul ul li a
+{
+    color: #FFF;
+    display: list-item;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 10px;
+    text-decoration: none;
+    width: 160px;
+}
+
+nav#menu ul ul li a:last-child
+{
+    color: #FFF;
+    display: list-item;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 10px;
+    text-decoration: none;
+    width: 160px;
+}
+
+nav#menu ul ul li a:hover
+{
+    background-color: #236496 !important;
+    color: #FFF;
+    display: list-item;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav#menu ul ul li a:last-child:hover
+{
+    background-color: #236496 !important;
+    color: #FFF;
+    display: list-item;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* ---------------------  End Button & Menu Styles  --------------------- */
+
+
+/* ---------------------  Begin Content & Section Styles  --------------------- */
+
+/*** Main Column ***/
+
+#main
+{
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    width: 99%;
+    height: 98%;
+    overflow:hidden;
+}
+
+/*** Fixed Page Styles ***/
+
+.fixed_page.head
+{
+    /*crm pgheader*/
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: #1A527D 1px solid;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#428BC2, endColorstr=#236496);*/
+    height: 28px;
+    margin-top: 4px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    padding: 0px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    display: block;
+}
+
+.fixed_page.footer
+{
+    /*crm pgheader*/
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: #1A527D 1px solid;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#428BC2, endColorstr=#236496);*/
+    height: 28px;
+    margin-top: -15px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    padding: 0px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    display: block;
+    z-index:9999;
+}
+
+.fixed_page.content
+{
+    /*crm content pg*/
+    background-color: #FFF;
+    border: #1A527D 1px solid;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin: 0px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    display: block; /*padding: 4px;*/ /*height: 450px; max-height: 76%;*/
+    padding: 5px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+/* ---------------------  End Content & Section Styles  --------------------- */
+
+
+/* ---------------------  Begin User Interfaces Styles  --------------------- */
+
+/*** Notification Styles ***/
+
+.notification
+{
+    border-radius: 4px;
+    color: #036;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    -moz-border-radius: 4px;
+    position: relative;
+    -webkit-border-radius: 4px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.notification .padding_5, .notification .padding_10, .notification .padding_15, .notification .padding_20
+{
+    margin: 0px !important;
+}
+
+.notification span
+{
+    display: block;
+    padding: 0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.notification span a
+{
+    background-image: url(../images/close_notification.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    padding: 0px;
+    width: 30px;
+}
+
+.notification span a:hover
+{
+    background-image: url(../images/close_notification.png);
+    background-position: -30px top;
+    height: 30px;
+    padding: 0px;
+    width: 30px;
+}
+
+.hard.n_success
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #98D99B, #53BA59);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #98D99B, #53BA59);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #98D99B, #53BA59);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98D99B), to(#53BA59));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #98D99B, #53BA59);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #53BA59;
+    border: #308334 1px solid;
+    box-shadow: inset 0px 1px #E6F6E6;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#98D99B, endColorstr=#53BA59);*/
+    -moz-box-shadow: inset 0px 1px #E6F6E6;
+    text-shadow: 0px 1px #308334;
+    -webkit-box-shadow: inset 0px 1px #E6F6E6;
+}
+
+.hard.n_warning
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #F8CF77, #FFAB2D);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #F8CF77, #FFAB2D);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #F8CF77, #FFAB2D);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F8CF77), to(#FFAB2D));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #F8CF77, #FFAB2D);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #FFAB2D;
+    border: #C7660E 1px solid;
+    box-shadow: inset 0px 1px #FDF3DE;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F8CF77, endColorstr=#FFAB2D);*/
+    -moz-box-shadow: inset 0px 1px #FDF3DE;
+    text-shadow: 0px 1px #C7660E;
+    -webkit-box-shadow: inset 0px 1px #FDF3DE;
+}
+
+.hard.n_error
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #EB9489, #DE5949);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #EB9489, #DE5949);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #EB9489, #DE5949);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EB9489), to(#DE5949));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #EB9489, #DE5949);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #DE5949;
+    border: #B52F20 1px solid;
+    box-shadow: inset 0px 1px #FAE4E2;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EB9489, endColorstr=#DE5949);*/
+    -moz-box-shadow: inset 0px 1px #FAE4E2;
+    text-shadow: 0px 1px #B52F20;
+    -webkit-box-shadow: inset 0px 1px #FAE4E2;
+}
+
+.hard.n_info
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #1A527D;
+    border: #1A527D 1px solid;
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#428BC2, endColorstr=#236496);*/
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    text-shadow: 0px 1px #1A527D;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+}
+
+.soft.n_success
+{
+    background-color: #AFE0B1;
+    border: 1px solid #7DCC82;
+    color: #308334;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+.soft.n_warning
+{
+    background-color: #FFDFB0;
+    border: 1px solid #FFC166;
+    color: #C7660E;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+.soft.n_error
+{
+    background-color: #F3C1BC;
+    border: #EC9D95 1px solid;
+    color: #B52F20;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+.soft.n_info
+{
+    background-color: #B4D6EF;
+    border: #76B5E2 1px solid;
+    color: #1A527D;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+/*** Loading Overlay ***/
+
+#loading_overlay
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#loading_overlay .loading_message
+{
+    border: 1px solid white;
+    border-image: initial;
+    height: 20px;
+    left: 50%;
+    margin-left: -81px;
+    margin-top: 200px;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    width: 160px;
+}
+
+#loading_overlay .loading_message img
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*** Dialog Boxes Styles ***/
+
+.ui-dialog .ui-dialog-titlebar
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #EEE, #CCC);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #EEE, #CCC);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #EEE, #CCC);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #EEE, #CCC);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #EEE;
+    box-shadow: inset 0px 1px #FFF;
+    color: #1A527D; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEE, endColorstr=#CCC);*/
+    -moz-box-shadow: inset 0px 1px #FFF;
+    -webkit-box-shadow: inset 0px 1px #FFF;
+}
+
+.dialog_content
+{
+    border: #1A527D 1px solid;
+    border-radius-bottomleft: 3px !important;
+    border-radius-bottomright: 3px !important;
+    border-radius-topleft: 0px !important;
+    border-radius-topright: 0px !important;
+    margin: 0px;
+    -moz-border-radius-bottomleft: 3px !important;
+    -moz-border-radius-bottomright: 3px !important;
+    -moz-border-radius-topleft: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    -o-border-radius: 8px;
+    padding: 0px !important;
+    -webkit-border-bottom-left-radius: 3px !important;
+    -webkit-border-bottom-right-radius: 3px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.dialog_content .content
+{
+    margin: 0px;
+    padding: 10px !important;
+}
+
+.dialog_content.attention
+{
+    background-color: #F60;
+    color: #FFF;
+    margin: 0px;
+    padding: 10px !important;
+    text-shadow: 0px -1px #F30;
+}
+
+.dialog_content.attention h1
+{
+    color: #FFF;
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-shadow: 0px -1px #F30;
+}
+
+.dialog_content.warning
+{
+    background-color: #DF0C00;
+    color: #FFF;
+    margin: 0px;
+    padding: 10px !important;
+    text-shadow: 0px -1px #9D0700;
+}
+
+.dialog_content.warning h1
+{
+    color: #FFF;
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-shadow: 0px -1px #9D0700;
+}
+
+.dialog_content h1
+{
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-shadow: 0px 1px #FFF;
+}
+
+/*** Wizard Form ***/
+
+.wizard .wizard_steps ul
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF !important;
+    margin-bottom: 0;
+    margin-top: 0px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    text-shadow: 0 1px 0 #FFFFFF;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    width: 100%;
+}
+
+/*** Contact Lists ***/
+
+.slider-nav
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496)) !important;
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496) !important;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.slider-nav li a
+{
+    border-bottom-color: #7C9FCB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #FFF !important;
+    padding-bottom: 5px !important;
+    text-shadow: 0px 1px #1A527D !important;
+}
+
+.slider-content li a.title
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #EEE, #CCC) !important;
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #EEE, #CCC) !important;
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #EEE, #CCC) !important;
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC)) !important;
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #EEE, #CCC) !important;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #EEE;
+    color: #1A527D !important;
+    opacity: 1;
+    text-shadow: 0px 1px #FFF !important;
+}
+
+.slider-content li.selected a.title
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496) !important;
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496)) !important;
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496) !important;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(#428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    background-color: #428BC2;
+    border: none !important;
+    color: #FFF !important;
+    opacity: 1;
+    text-shadow: 0px 1px #1A527D !important;
+}
+
+.slider-content li.selected
+{
+    border: none !important;
+}
+
+/*** Gallery ***/
+
+.indent
+{
+    background-color: rgba(0,0,0,0.15);
+    border: 1px solid #fff;
+    border: none;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+    -moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.indent fieldset
+{
+    text-shadow: 0px 1px 0px #f9f9f9;
+}
+
+.indent fieldset h3
+{
+    margin-bottom: 10px;
+}
+
+.gallery
+{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.gallery ul
+{
+    list-style: none;
+    margin: 0 0px 0 0;
+    padding: 20px 0px 10px 19px;
+}
+
+.gallery ul li
+{
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.1);
+    float: left;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: -1px;
+    margin-right: 20px;
+    margin-top: 0;
+    -moz-box-shadow: 0px 2px 1px rgba(0,0,0,0.1);
+    padding: 0;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 1px rgba(0,0,0,0.1);
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.gallery ul li a
+{
+    background-color: #f1f1f1;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 10px #ffffff;
+    display: block;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: inset 0px 0px 10px #ffffff;
+    overflow: auto;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0px 1px 0px #fff;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+.gallery ul li a:hover
+{
+    background-color: #fff;
+}
+
+.gallery ul li a img
+{
+    border: 1px solid #fff;
+    display: block;
+    margin: 2px auto 3px;
+    padding: 0;
+}
+
+.gallery ul li a span.name
+{
+    color: #666;
+    display: block;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0 2px 0px;
+    text-align: center;
+}
+
+.gallery ul li a span.size
+{
+    color: #999;
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.gallery_sorter
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery_sorter fieldset
+{
+    margin: 0;
+    padding: 10px 20px;
+    width: 40%;
+}
+
+.gallery_sorter label
+{
+    display: block;
+    float: left;
+    line-height: 2em;
+    margin-right: 10px;
+}
+
+.gallery .feature_tiles li a
+{
+    height: 80px;
+    width: 93px;
+}
+
+.gallery .feature_tiles li a img
+{
+    border: 0;
+}
+
+/* ---------------------  End User Interfaces Styles  --------------------- */
+
+

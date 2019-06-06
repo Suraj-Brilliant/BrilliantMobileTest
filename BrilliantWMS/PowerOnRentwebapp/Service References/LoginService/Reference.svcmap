@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="106bd8b8-d3e2-47e4-a8d5-be4aa6fc876f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Login/Login.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Login1.disco" MetadataType="Disco" ID="729ce459-704f-4713-bccf-327d4fc91b3e" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Login/Login.svc?disco" />
+    <MetadataFile FileName="Login1.wsdl" MetadataType="Wsdl" ID="02bb838e-682a-433d-8570-0ca171862aaa" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Login/Login.svc?wsdl" />
+    <MetadataFile FileName="Login1.xsd" MetadataType="Schema" ID="9b0244d3-4ffe-4a3a-af56-9bd83fabd9f1" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Login/Login.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

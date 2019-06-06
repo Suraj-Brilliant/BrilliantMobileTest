@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.Product" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Domain.Product.pdb" publishTime="02/15/2016 10:25:12" />
+    <file relUrl="DiscountMasterService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="TitleMasterService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="UCProductSearchService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="bin/Interface.Product.pdb" publishTime="02/15/2016 10:24:49" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="ProductService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ProductSubCategoryService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="Web.config" publishTime="10/17/2015 15:13:48" />
+    <file relUrl="ProductCategoryService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="bin/Interface.Product.dll" publishTime="02/15/2016 10:24:49" />
+    <file relUrl="bin/Domain.Tempdata.dll" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Service.Product.pdb" publishTime="02/15/2016 10:25:21" />
+    <file relUrl="bin/Service.Product.dll" publishTime="02/15/2016 10:25:22" />
+    <file relUrl="UOMService.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="bin/Domain.Tempdata.pdb" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Domain.Product.dll" publishTime="02/15/2016 10:25:12" />
+  </publishProfile>
+</publishData>

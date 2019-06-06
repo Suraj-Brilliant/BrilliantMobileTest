@@ -1,0 +1,15 @@
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Tax\bin\Release\Interface.Tax.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Tax\obj\Release\Interface.Tax.pdb

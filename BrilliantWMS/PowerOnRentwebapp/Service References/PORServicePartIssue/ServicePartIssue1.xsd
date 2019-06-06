@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetIssueHeadByIssueID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetIssueHeadByIssueIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueHeadByIssueIDResult" type="tns:PORtMINHead" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PORtMINHead">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="MINH_ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SiteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MIN_No" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssueDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssuedByUserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StatusID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AirwayBill" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SupplierCoNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShippingType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShippingStatus" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ExpectedDelDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TransporterName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsSubmit" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreatedBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDt" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDt" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TransH_ID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PORtPartRequestHeadReference" type="tns:EntityReferenceOfPORtPartRequestHead" />
+          <xs:element minOccurs="0" maxOccurs="1" name="mStatuReference" type="tns:EntityReferenceOfmStatu" />
+          <xs:element minOccurs="0" maxOccurs="1" name="mTerritoryReference" type="tns:EntityReferenceOfmTerritory" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityReferenceOfPORtPartRequestHead">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityReference" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedEnd" abstract="true" />
+  <xs:complexType name="EntityReferenceOfmTerritory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityReferenceOfmStatu">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetStatusOfIssueHead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusOfIssueHeadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetStatusOfIssueHeadResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIntoMINHead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="MINHead" type="tns:PORtMINHead" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIntoMINHeadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SetIntoMINHeadResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusListForIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="state" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMStatu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mStatu" nillable="true" type="tns:mStatu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mStatu">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetStatusListForIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetStatusListForIssueResult" type="tns:ArrayOfMStatu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPendingIssueListToDecideAddNewAccess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPendingIssueListToDecideAddNewAccessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CheckPendingIssueListToDecideAddNewAccessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssuePartDetailByRequestID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="userID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssuedQtySameAs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfPOR_SP_GetPartDetails_OfMIN_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POR_SP_GetPartDetails_OfMIN_Result" nillable="true" type="tns:POR_SP_GetPartDetails_OfMIN_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="POR_SP_GetPartDetails_OfMIN_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="PRD_ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Prod_ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Prod_Code" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Prod_Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Prod_Description" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UOM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UOMID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Installable" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssuedQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RemaningQty" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CurrentStockHQ" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIssuePartDetailByRequestIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssuePartDetailByRequestIDResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssuePartDetailByIssueID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="userID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObject" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssuedQtySameAs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssuePartDetailByIssueIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssuePartDetailByIssueIDResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataFromDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataFromDBResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetExistingTempDataBySessionIDObjectName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExistingTempDataBySessionIDObjectNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetExistingTempDataBySessionIDObjectNameResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPartIntoIssue_TempData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="PRD_IDs" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssuedQtySameAs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPartIntoIssue_TempDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="AddPartIntoIssue_TempDataResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePartFromIssue_TempData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="paraSequence" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePartFromIssue_TempDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="RemovePartFromIssue_TempDataResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePartIssue_TempData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Issue" type="tns:POR_SP_GetPartDetails_OfMIN_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePartIssue_TempDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UpdatePartIssue_TempDataResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveIssuePartDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="MINH_ID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveIssuePartDetailResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="UpdateHQStock_TempData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Issue" type="tns:POR_SP_GetPartDetails_OfMIN_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHQStock_TempDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UpdateHQStock_TempDataResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingIssuePartList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingIssuePartListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetPendingIssuePartListResult" type="tns:ArrayOfPOR_SP_GetPartDetails_OfMIN_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfPOR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" nillable="true" type="tns:POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="MINH_ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SiteName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SiteID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RequestNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RequestType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RequestByUserName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StatusID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IssueStatus" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IssueNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssueDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssuedByUserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IssuedByUserName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AirwayBill" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TransporterName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ExpectedDelDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShippingType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IssueRemark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ImgIssue" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ImgReceipt" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIssueSummayByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueSummayByUserIDResult" type="tns:ArrayOfPOR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayBySiteIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SiteIDs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayBySiteIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueSummayBySiteIDsResult" type="tns:ArrayOfPOR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayByRequestID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayByRequestIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueSummayByRequestIDResult" type="tns:ArrayOfPOR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayByIssueIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueIDs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssueSummayByIssueIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetIssueSummayByIssueIDsResult" type="tns:ArrayOfPOR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIntoTransHead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="TransHead" type="tns:PORtTransHead" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PORtTransHead">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="TransH_ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ToSiteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MIN_No" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TransferDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TransferedByUserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StatusID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AirwayBill" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SupplierCoNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShippingType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShippingStatus" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ShippingDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ExpectedDelDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TransporterName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsSubmit" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreatedBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDt" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDt" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FromSiteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetIntoTransHeadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SetIntoTransHeadResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveTransferPartDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TransH_ID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TransferStatus" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="FromSiteID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveTransferPartDetailResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="FinalSaveIssuePartDetail_Transfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraCurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="MINH_ID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="PRH_ID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="IssueStatus" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveIssuePartDetail_TransferResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="SetIntoMINHead_Transfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="MINHead" type="tns:PORtMINHead" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIntoMINHead_TransferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SetIntoMINHead_TransferResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusOfIssueHead_Transfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="RequestID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusOfIssueHead_TransferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetStatusOfIssueHead_TransferResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

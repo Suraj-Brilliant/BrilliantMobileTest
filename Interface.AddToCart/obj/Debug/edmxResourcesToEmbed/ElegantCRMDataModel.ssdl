@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+    <EntitySet Name="TempData" EntityType="BISPL_CRMDBModel.Store.TempData" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TempData">
+    <Key>
+      <PropertyRef Name="TempDataID" />
+    </Key>
+    <Property Name="TempDataID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Data" Type="xml" Nullable="false" />
+    <Property Name="XmlData" Type="xml" />
+    <Property Name="LastUpdated" Type="datetime" Nullable="false" />
+    <Property Name="SessionID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TableName" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <Function Name="SP_GetCartProductDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductIDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="MaxSeqence" Type="bigint" Mode="In" />
+    <Parameter Name="SessionID" Type="nvarchar" Mode="In" />
+    <Parameter Name="CurrentObjectName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ReferenceID" Type="bigint" Mode="In" />
+    <Parameter Name="ObjectConvertFrom" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_InsertIntoCartProductDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SessionID" Type="varchar" Mode="In" />
+    <Parameter Name="ReferenceID" Type="bigint" Mode="In" />
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+    <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

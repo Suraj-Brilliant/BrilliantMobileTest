@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TermsConditionMasterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Company/TermsConditionMasterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iTermConditionMaster_GetTermConditionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermConditionList" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermConditionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermConditionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_InsertmTermsCondition_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmTermsCondition" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_InsertmTermsCondition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmTermsConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_updatemTermsCondition_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTermsCondition" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_updatemTermsCondition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTermsConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermConditionListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermConditionListByID" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermConditionListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermConditionListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetGroupListToBindDDL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupListToBindDDL" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetGroupListToBindDDL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupListToBindDDLResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermRecordToBindGridUC_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermRecordToBindGridUC" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermRecordToBindGridUC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermRecordToBindGridUCResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermsnConditionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermsnConditionList" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetTermsnConditionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTermsnConditionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetGroupListToBindDDLDropdown_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupListToBindDDLDropdown" />
+  </wsdl:message>
+  <wsdl:message name="iTermConditionMaster_GetGroupListToBindDDLDropdown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupListToBindDDLDropdownResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iTermConditionMaster">
+    <wsdl:operation name="GetTermConditionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermConditionList" message="tns:iTermConditionMaster_GetTermConditionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermConditionListResponse" message="tns:iTermConditionMaster_GetTermConditionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmTermsCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/InsertmTermsCondition" message="tns:iTermConditionMaster_InsertmTermsCondition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/InsertmTermsConditionResponse" message="tns:iTermConditionMaster_InsertmTermsCondition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemTermsCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/updatemTermsCondition" message="tns:iTermConditionMaster_updatemTermsCondition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/updatemTermsConditionResponse" message="tns:iTermConditionMaster_updatemTermsCondition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTermConditionListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermConditionListByID" message="tns:iTermConditionMaster_GetTermConditionListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermConditionListByIDResponse" message="tns:iTermConditionMaster_GetTermConditionListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/checkDuplicateRecord" message="tns:iTermConditionMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/checkDuplicateRecordResponse" message="tns:iTermConditionMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/checkDuplicateRecordEdit" message="tns:iTermConditionMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/checkDuplicateRecordEditResponse" message="tns:iTermConditionMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTermRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGrid" message="tns:iTermConditionMaster_GetTermRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGridResponse" message="tns:iTermConditionMaster_GetTermRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupListToBindDDL">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDL" message="tns:iTermConditionMaster_GetGroupListToBindDDL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDLResponse" message="tns:iTermConditionMaster_GetGroupListToBindDDL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTermRecordToBindGridUC">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGridUC" message="tns:iTermConditionMaster_GetTermRecordToBindGridUC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGridUCResponse" message="tns:iTermConditionMaster_GetTermRecordToBindGridUC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTermsnConditionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermsnConditionList" message="tns:iTermConditionMaster_GetTermsnConditionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetTermsnConditionListResponse" message="tns:iTermConditionMaster_GetTermsnConditionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupListToBindDDLDropdown">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDLDropdown" message="tns:iTermConditionMaster_GetGroupListToBindDDLDropdown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDLDropdownResponse" message="tns:iTermConditionMaster_GetGroupListToBindDDLDropdown_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iTermConditionMaster" type="tns:iTermConditionMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTermConditionList">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetTermConditionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmTermsCondition">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/InsertmTermsCondition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemTermsCondition">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/updatemTermsCondition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTermConditionListByID">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetTermConditionListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTermRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupListToBindDDL">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTermRecordToBindGridUC">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetTermRecordToBindGridUC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTermsnConditionList">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetTermsnConditionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupListToBindDDLDropdown">
+      <soap:operation soapAction="http://tempuri.org/iTermConditionMaster/GetGroupListToBindDDLDropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TermsConditionMasterService">
+    <wsdl:port name="BasicHttpBinding_iTermConditionMaster" binding="tns:BasicHttpBinding_iTermConditionMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Company/TermsConditionMasterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetActivityList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetActivityListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetActivityListResult" type="tns:ArrayOfMApprovalLevel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMApprovalLevel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mApprovalLevel" nillable="true" type="tns:mApprovalLevel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mApprovalLevel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NoOfApprovers" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MinApprovalReq" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsLowerLevelApprovalReq" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OrderCancelInDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="sysmObjectReference" type="tns:EntityReferenceOfsysmObject" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityReferenceOfsysmObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityReference" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedEnd" abstract="true" />
+  <xs:element name="InsertmApprovalLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="approval" type="tns:mApprovalLevel" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertmApprovalLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="InsertmApprovalLevelResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemApprovalLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="updateApproval" type="tns:mApprovalLevel" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatemApprovalLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="updatemApprovalLevelResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="approvalId" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApprovalRecordByIDResult" type="tns:mApprovalLevel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalDetailRecordByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="approvalDetailId" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMApprovalLevelDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mApprovalLevelDetail" nillable="true" type="tns:mApprovalLevelDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mApprovalLevelDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevelID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApproverLogic" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetApprovalDetailRecordByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApprovalDetailRecordByIDResult" type="tns:ArrayOfMApprovalLevelDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSysmObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sysmObject" nillable="true" type="tns:sysmObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sysmObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="PhaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectDisplayName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalProcess" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AssignTaskProcess" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HeaderMenu" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FormUrl" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FormUrlArabic" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="sysmObjects1Reference" type="tns:EntityReferenceOfsysmObject" />
+          <xs:element minOccurs="0" maxOccurs="1" name="sysmObject1Reference" type="tns:EntityReferenceOfsysmObject" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetObjectListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetObjectListResult" type="tns:ArrayOfSysmObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalLevelMax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="objName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalLevelMaxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetApprovalLevelMaxResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordToBindGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordToBindGridResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApprovalRecordToBindGridResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListForEdit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="approvalid" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListForEditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListForEditResult" type="tns:ArrayOfMApprovalLevelDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListForEditbySP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="approvalid" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetUserForApprovalMaster_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetUserForApprovalMaster_Result" nillable="true" type="tns:SP_GetUserForApprovalMaster_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetUserForApprovalMaster_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="checked" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeptName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DesignationID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DesiName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SelectedRec" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUserListForEditbySPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListForEditbySPResult" type="tns:ArrayOfSP_GetUserForApprovalMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveApprovalLevelDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserIDs" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="paraApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraInput" type="tns:mApprovalLevelDetail" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveApprovalLevelDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SaveApprovalLevelDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListForEditbySPResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="approvalid" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListForEditbySPResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserListForEditbySPResultResult" type="tns:ArrayOfSP_GetUserForApprovalMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetApprovalLevelResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCGetUserForApprovalMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CurrentApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserIDS" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GWCGetUserForApprovalMaster_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GWCGetUserForApprovalMaster_Result" nillable="true" type="tns:SP_GWCGetUserForApprovalMaster_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GWCGetUserForApprovalMaster_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="userID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeptName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApprovelLevel" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GWCGetUserForApprovalMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GWCGetUserForApprovalMasterResult" type="tns:ArrayOfSP_GWCGetUserForApprovalMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGWCApprovalRecordToBindGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGWCGetApprovelevelDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vGWCGetApprovelevelDetail" nillable="true" type="tns:vGWCGetApprovelevelDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vGWCGetApprovelevelDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NoOFApprovers" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevelID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Territory" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="userID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApproverLogic" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OrderCancelInDays" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AutoCancel" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NoofApprovalLevel" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGWCApprovalRecordToBindGridResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGWCApprovalRecordToBindGridResult" type="tns:ArrayOfVGWCGetApprovelevelDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCancelDays">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DeptID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCancelDaysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetCancelDaysResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGWCApprovalDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ApprovalDetails" type="tns:mApprovalLevelDetail" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGWCApprovalDetailsResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GWCGetApprovalDetailsForEdit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCGetApprovalDetailsForEditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GWCGetApprovalDetailsForEditResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCGetApprovalDetailForEditWithZero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCGetApprovalDetailForEditWithZeroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GWCGetApprovalDetailForEditWithZeroResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproverList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproverListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApproverListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproverListBySp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="CurrentApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GWCGetApproverListBySp_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GWCGetApproverListBySp_Result" nillable="true" type="tns:SP_GWCGetApproverListBySp_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GWCGetApproverListBySp_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" type="xs:unsignedByte" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="userName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeptName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApproverLogic" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetApproverListBySpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApproverListBySpResult" type="tns:ArrayOfSP_GWCGetApproverListBySp_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproverFromGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproverFromGridResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="UpdateApprovallevelID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevelID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApprovallevelIDResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="UpdateMApproveHeader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ApprovalLevel" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="NoOfApprovers" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" type="xs:dateTime" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="OrderCancelInDays" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMApproveHeaderResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="DeleteZeroDetailaproval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteZeroDetailaprovalResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetApprovalgridList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalgridListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApprovalgridListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordByApvrlLevelID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ApprovalID" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalRecordByApvrlLevelIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetApprovalRecordByApvrlLevelIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalMasterGridList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApprovalMasterGridListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetApprovalMasterGridListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

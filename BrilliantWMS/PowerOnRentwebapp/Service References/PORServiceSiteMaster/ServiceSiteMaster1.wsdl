@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceSiteMaster" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceSiteMaster.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iSiteMaster_GetSiteDtls_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteDtls" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetSiteDtls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteDtlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertSiteMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSiteMaster" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertSiteMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSiteMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_updatemTerritory_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTerritory" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_updatemTerritory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTerritoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetTerritoryListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerritoryListByID" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetTerritoryListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerritoryListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_updateSiteAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateSiteAddress" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_updateSiteAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateSiteAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertSiteAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSiteAddress" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertSiteAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSiteAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetmTerritoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetmTerritoryList" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetmTerritoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetmTerritoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetTableList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableList" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetTableList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetDataTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTypeList" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_GetDataTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertInterface_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInterface" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_InsertInterface_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_UpdateInterface_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInterface" />
+  </wsdl:message>
+  <wsdl:message name="iSiteMaster_UpdateInterface_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iSiteMaster">
+    <wsdl:operation name="GetSiteDtls">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/GetSiteDtls" message="tns:iSiteMaster_GetSiteDtls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/GetSiteDtlsResponse" message="tns:iSiteMaster_GetSiteDtls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSiteMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/InsertSiteMaster" message="tns:iSiteMaster_InsertSiteMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/InsertSiteMasterResponse" message="tns:iSiteMaster_InsertSiteMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemTerritory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/updatemTerritory" message="tns:iSiteMaster_updatemTerritory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/updatemTerritoryResponse" message="tns:iSiteMaster_updatemTerritory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerritoryListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/GetTerritoryListByID" message="tns:iSiteMaster_GetTerritoryListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/GetTerritoryListByIDResponse" message="tns:iSiteMaster_GetTerritoryListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/checkDuplicateRecord" message="tns:iSiteMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/checkDuplicateRecordResponse" message="tns:iSiteMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/checkDuplicateRecordEdit" message="tns:iSiteMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/checkDuplicateRecordEditResponse" message="tns:iSiteMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSiteAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/updateSiteAddress" message="tns:iSiteMaster_updateSiteAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/updateSiteAddressResponse" message="tns:iSiteMaster_updateSiteAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSiteAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/InsertSiteAddress" message="tns:iSiteMaster_InsertSiteAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/InsertSiteAddressResponse" message="tns:iSiteMaster_InsertSiteAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetmTerritoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/GetmTerritoryList" message="tns:iSiteMaster_GetmTerritoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/GetmTerritoryListResponse" message="tns:iSiteMaster_GetmTerritoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTableList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/GetTableList" message="tns:iSiteMaster_GetTableList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/GetTableListResponse" message="tns:iSiteMaster_GetTableList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/GetDataTypeList" message="tns:iSiteMaster_GetDataTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/GetDataTypeListResponse" message="tns:iSiteMaster_GetDataTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInterface">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/InsertInterface" message="tns:iSiteMaster_InsertInterface_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/InsertInterfaceResponse" message="tns:iSiteMaster_InsertInterface_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInterface">
+      <wsdl:input wsaw:Action="http://tempuri.org/iSiteMaster/UpdateInterface" message="tns:iSiteMaster_UpdateInterface_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iSiteMaster/UpdateInterfaceResponse" message="tns:iSiteMaster_UpdateInterface_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iSiteMaster" type="tns:iSiteMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSiteDtls">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/GetSiteDtls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSiteMaster">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/InsertSiteMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemTerritory">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/updatemTerritory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerritoryListByID">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/GetTerritoryListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSiteAddress">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/updateSiteAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSiteAddress">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/InsertSiteAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetmTerritoryList">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/GetmTerritoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableList">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/GetTableList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTypeList">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/GetDataTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertInterface">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/InsertInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInterface">
+      <soap:operation soapAction="http://tempuri.org/iSiteMaster/UpdateInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceSiteMaster">
+    <wsdl:port name="BasicHttpBinding_iSiteMaster" binding="tns:BasicHttpBinding_iSiteMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceSiteMaster.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

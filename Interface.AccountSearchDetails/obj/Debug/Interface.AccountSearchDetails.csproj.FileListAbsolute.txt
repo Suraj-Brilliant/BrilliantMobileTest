@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Debug\Interface.AccountSearchDetails.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Debug\Interface.AccountSearchDetails.pdb

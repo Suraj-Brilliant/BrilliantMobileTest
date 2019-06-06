@@ -1,0 +1,2231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="elegantcrmModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PORtMINDetails" EntityType="elegantcrmModel.PORtMINDetail" />
+    <EntitySet Name="PORtMINHeads" EntityType="elegantcrmModel.PORtMINHead" />
+    <EntitySet Name="PORtPartRequestDetails" EntityType="elegantcrmModel.PORtPartRequestDetail" />
+    <EntitySet Name="PORtPartRequestHeads" EntityType="elegantcrmModel.PORtPartRequestHead" />
+    <AssociationSet Name="FK_PORtMINDetail_PORtMINHead" Association="elegantcrmModel.FK_PORtMINDetail_PORtMINHead">
+      <End Role="PORtMINHead" EntitySet="PORtMINHeads" />
+      <End Role="PORtMINDetail" EntitySet="PORtMINDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINDetail_PORtPartRequestDetail" Association="elegantcrmModel.FK_PORtMINDetail_PORtPartRequestDetail">
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetails" />
+      <End Role="PORtMINDetail" EntitySet="PORtMINDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINHead_PORtPartRequestHead" Association="elegantcrmModel.FK_PORtMINHead_PORtPartRequestHead">
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHeads" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestDetail_PORtPartRequestHead" Association="elegantcrmModel.FK_PORtPartRequestDetail_PORtPartRequestHead">
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHeads" />
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetails" />
+    </AssociationSet>
+    <EntitySet Name="mEngines" EntityType="elegantcrmModel.mEngine" />
+    <EntitySet Name="mStatus" EntityType="elegantcrmModel.mStatu" />
+    <EntitySet Name="GetProductDetails" EntityType="elegantcrmModel.GetProductDetail" />
+    <AssociationSet Name="FK_PORtMINHead_mStatus" Association="elegantcrmModel.FK_PORtMINHead_mStatus">
+      <End Role="mStatu" EntitySet="mStatus" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestHead_mStatus" Association="elegantcrmModel.FK_PORtPartRequestHead_mStatus">
+      <End Role="mStatu" EntitySet="mStatus" />
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHeads" />
+    </AssociationSet>
+    <FunctionImport Name="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs" ReturnType="Collection(elegantcrmModel.POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+      <Parameter Name="IssueIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_InsertIntoPORtGRNDetail">
+      <Parameter Name="ReceiptID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_InsertIntoPORtMINDetail">
+      <Parameter Name="IssueID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_InsertIntoPORtPartRequestDetail">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="tAddresses" EntityType="elegantcrmModel.tAddress" />
+    <EntitySet Name="v_GetEngineDetails" EntityType="elegantcrmModel.v_GetEngineDetails" />
+    <EntitySet Name="tApprovalDetails" EntityType="elegantcrmModel.tApprovalDetail" />
+    <EntitySet Name="v_GetSiteDetails" EntityType="elegantcrmModel.v_GetSiteDetails" />
+    <EntitySet Name="TempDatas" EntityType="elegantcrmModel.TempData" />
+    <EntitySet Name="mUserProfileHeads" EntityType="elegantcrmModel.mUserProfileHead" />
+    <EntitySet Name="mUserRolesDetails" EntityType="elegantcrmModel.mUserRolesDetail" />
+    <EntitySet Name="mUserTerritoryDetails" EntityType="elegantcrmModel.mUserTerritoryDetail" />
+    <EntitySet Name="mApprovalLevelDetails" EntityType="elegantcrmModel.mApprovalLevelDetail" />
+    <EntitySet Name="mApprovalLevels" EntityType="elegantcrmModel.mApprovalLevel" />
+    <EntitySet Name="PORtConsumptionDetails" EntityType="elegantcrmModel.PORtConsumptionDetail" />
+    <EntitySet Name="PORtGRNDetails" EntityType="elegantcrmModel.PORtGRNDetail" />
+    <FunctionImport Name="POR_SP_InsertIntoPORtConsumptionDetail">
+      <Parameter Name="ConsumptionID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PORtGRNHeads" EntityType="elegantcrmModel.PORtGRNHead" />
+    <AssociationSet Name="FK_PORtGRNDetail_PORtGRNHead" Association="elegantcrmModel.FK_PORtGRNDetail_PORtGRNHead">
+      <End Role="PORtGRNHead" EntitySet="PORtGRNHeads" />
+      <End Role="PORtGRNDetail" EntitySet="PORtGRNDetails" />
+    </AssociationSet>
+    <FunctionImport Name="POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs" ReturnType="Collection(elegantcrmModel.POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+      <Parameter Name="ReceiptIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PORtConsumptionHeads" EntityType="elegantcrmModel.PORtConsumptionHead" />
+    <AssociationSet Name="FK_PORtConsuptionDetail_PORtConsuptionHead" Association="elegantcrmModel.FK_PORtConsuptionDetail_PORtConsuptionHead">
+      <End Role="PORtConsumptionHead" EntitySet="PORtConsumptionHeads" />
+      <End Role="PORtConsumptionDetail" EntitySet="PORtConsumptionDetails" />
+    </AssociationSet>
+    <FunctionImport Name="POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs" ReturnType="Collection(elegantcrmModel.POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+      <Parameter Name="ReceiptIDs" Mode="In" Type="String" />
+      <Parameter Name="ConsumptionIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID" ReturnType="Collection(elegantcrmModel.POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetPartDetails_OfConsumption" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetails_OfConsumption_Result)">
+      <Parameter Name="ReceiptID" Mode="In" Type="Int64" />
+      <Parameter Name="ConsumptionID" Mode="In" Type="Int64" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+      <Parameter Name="GRND_IDs" Mode="In" Type="String" />
+      <Parameter Name="Prod_IDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetPartDetails_OfGRN" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetails_OfGRN_Result)">
+      <Parameter Name="MIND_IDs" Mode="In" Type="String" />
+      <Parameter Name="IssueID" Mode="In" Type="Int64" />
+      <Parameter Name="ReceiptID" Mode="In" Type="Int64" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetPartDetails_OfGRN_HQ" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetails_OfGRN_HQ_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="ReceiptID" Mode="In" Type="Int64" />
+      <Parameter Name="IssueID" Mode="In" Type="Int64" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="PORtInboxDatas" EntityType="elegantcrmModel.PORtInboxData" />
+    <EntitySet Name="tProductStockDetails" EntityType="elegantcrmModel.tProductStockDetail" />
+    <EntitySet Name="GetLeadDetails" EntityType="elegantcrmModel.GetLeadDetail" />
+    <EntitySet Name="GetPrdDetails" EntityType="elegantcrmModel.GetPrdDetail" />
+    <FunctionImport Name="POR_SP_GetPartDetails_OfMIN_Transfer" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetails_OfMIN_Transfer_Result)">
+      <Parameter Name="PRD_IDs" Mode="In" Type="String" />
+      <Parameter Name="IssueID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+      <Parameter Name="IssuedQtySame" Mode="In" Type="String" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="PORtTransDetails" EntityType="elegantcrmModel.PORtTransDetail" />
+    <EntitySet Name="PORtTransHeads" EntityType="elegantcrmModel.PORtTransHead" />
+    <FunctionImport Name="POR_SP_InsertIntoPORtTransDetail">
+      <Parameter Name="TransferID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetPartDetails_OfMIN" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetails_OfMIN_Result)">
+      <Parameter Name="PRD_IDs" Mode="In" Type="String" />
+      <Parameter Name="IssueID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+      <Parameter Name="IssuedQtySame" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mBOMHeaders" EntityType="elegantcrmModel.mBOMHeader" />
+    <EntitySet Name="mCompanies" EntityType="elegantcrmModel.mCompany" />
+    <EntitySet Name="mDepartments" EntityType="elegantcrmModel.mDepartment" />
+    <AssociationSet Name="FK_mUserProfileHead_mDepartment" Association="elegantcrmModel.FK_mUserProfileHead_mDepartment">
+      <End Role="mDepartment" EntitySet="mDepartments" />
+      <End Role="mUserProfileHead" EntitySet="mUserProfileHeads" />
+    </AssociationSet>
+    <EntitySet Name="mTerritories" EntityType="elegantcrmModel.mTerritory" />
+    <AssociationSet Name="FK_PORtConsuptionHead_mTerritory" Association="elegantcrmModel.FK_PORtConsuptionHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritories" />
+      <End Role="PORtConsumptionHead" EntitySet="PORtConsumptionHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtGRNHead_mTerritory" Association="elegantcrmModel.FK_PORtGRNHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritories" />
+      <End Role="PORtGRNHead" EntitySet="PORtGRNHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINHead_mTerritory" Association="elegantcrmModel.FK_PORtMINHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritories" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestHead_mTerritory" Association="elegantcrmModel.FK_PORtPartRequestHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritories" />
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHeads" />
+    </AssociationSet>
+    <EntitySet Name="VW_GetRequestDetails" EntityType="elegantcrmModel.VW_GetRequestDetails" />
+    <EntitySet Name="VW_GetSKUAndRequestDetails" EntityType="elegantcrmModel.VW_GetSKUAndRequestDetails" />
+    <EntitySet Name="vGetUserProfileByUserIDs" EntityType="elegantcrmModel.vGetUserProfileByUserID" />
+    <EntitySet Name="mRequestTemplateDetails" EntityType="elegantcrmModel.mRequestTemplateDetail" />
+    <EntitySet Name="tOrderDetails" EntityType="elegantcrmModel.tOrderDetail" />
+    <EntitySet Name="tApprovalTrans" EntityType="elegantcrmModel.tApprovalTran" />
+    <EntitySet Name="tContactPersonDetails" EntityType="elegantcrmModel.tContactPersonDetail" />
+    <EntitySet Name="mProducts" EntityType="elegantcrmModel.mProduct" />
+    <AssociationSet Name="FK_PORtConsuptionDetail_mProduct" Association="elegantcrmModel.FK_PORtConsuptionDetail_mProduct">
+      <End Role="mProduct" EntitySet="mProducts" />
+      <End Role="PORtConsumptionDetail" EntitySet="PORtConsumptionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestDetail_mProduct" Association="elegantcrmModel.FK_PORtPartRequestDetail_mProduct">
+      <End Role="mProduct" EntitySet="mProducts" />
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetails" />
+    </AssociationSet>
+    <FunctionImport Name="POR_SP_GetRequestByRequestIDs" ReturnType="Collection(elegantcrmModel.POR_SP_GetRequestByRequestIDs_Result)">
+      <Parameter Name="RequestIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="tCorresponds" EntityType="elegantcrmModel.tCorrespond" />
+    <EntitySet Name="mRequestTemplateHeads" EntityType="elegantcrmModel.mRequestTemplateHead" />
+    <EntitySet Name="mMessageTrans" EntityType="elegantcrmModel.mMessageTran" />
+    <EntitySet Name="GWC_VW_MsgOrderDetail" EntityType="elegantcrmModel.GWC_VW_MsgOrderDetail" />
+    <EntitySet Name="tOrderHeads" EntityType="elegantcrmModel.tOrderHead" />
+    <EntitySet Name="tOrderDetailHistories" EntityType="elegantcrmModel.tOrderDetailHistory" />
+    <EntitySet Name="tOrderHeadHistories" EntityType="elegantcrmModel.tOrderHeadHistory" />
+    <EntitySet Name="tInventries" EntityType="elegantcrmModel.tInventry" />
+    <EntitySet Name="VW_GWC_SkuFilter" EntityType="elegantcrmModel.VW_GWC_SkuFilter" />
+    <FunctionImport Name="SP_GWC_GetUserInfo" ReturnType="Collection(elegantcrmModel.SP_GWC_GetUserInfo_Result)">
+      <Parameter Name="CMPID" Mode="In" Type="String" />
+      <Parameter Name="DPTID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GWC_GetUserInfoRoleWise" ReturnType="Collection(elegantcrmModel.SP_GWC_GetUserInfoRoleWise_Result)">
+      <Parameter Name="CMPID" Mode="In" Type="String" />
+      <Parameter Name="DPTID" Mode="In" Type="String" />
+      <Parameter Name="RLID" Mode="In" Type="String" />
+      <Parameter Name="ACTV" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="VW_GetUserInformation" EntityType="elegantcrmModel.VW_GetUserInformation" />
+    <FunctionImport Name="POR_SP_InsertIntotOrderDetail">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_InsertIntotOrderDetail1">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="VW_OrderDeliveryDetails" EntityType="elegantcrmModel.VW_OrderDeliveryDetails" />
+    <EntitySet Name="mPaymentMethodDetails" EntityType="elegantcrmModel.mPaymentMethodDetail" />
+    <EntitySet Name="VW_DeptWisePaymentMethod" EntityType="elegantcrmModel.VW_DeptWisePaymentMethod" />
+    <EntitySet Name="mCostCenterMains" EntityType="elegantcrmModel.mCostCenterMain" />
+    <FunctionImport Name="POR_SP_GetPartDetail_ForRequest" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetail_ForRequest_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetPartDetail_ForRequest1" ReturnType="Collection(elegantcrmModel.POR_SP_GetPartDetail_ForRequest1_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="SiteID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="mStatutories" EntityType="elegantcrmModel.mStatutory" />
+    <EntitySet Name="tStatutoryDetails" EntityType="elegantcrmModel.tStatutoryDetail" />
+    <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="elegantcrmModel.FK_tCustomerStatutoryDetails_mStatutory">
+      <End Role="mStatutory" EntitySet="mStatutories" />
+      <End Role="tStatutoryDetail" EntitySet="tStatutoryDetails" />
+    </AssociationSet>
+    <EntitySet Name="tOrderWiseAccesses" EntityType="elegantcrmModel.tOrderWiseAccess" />
+    <FunctionImport Name="POR_SP_GetRequestBySiteIDsOrUserID" ReturnType="Collection(elegantcrmModel.POR_SP_GetRequestBySiteIDsOrUserID_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_GetRequestBySiteIDsOrUserID1" ReturnType="Collection(elegantcrmModel.POR_SP_GetRequestBySiteIDsOrUserID1_Result)">
+      <Parameter Name="SiteIDs" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PaymentMethodFOC">
+      <Parameter Name="OrderID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PaymentMethodFOC1">
+      <Parameter Name="OrderID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GWC_SP_GetRequestHeadByRequestIDs1">
+      <Parameter Name="RequestIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_mRequestTemplateDetail">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="POR_SP_mRequestTemplateDetail1">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mUserLocations" EntityType="elegantcrmModel.mUserLocation" />
+    <EntitySet Name="GWC_VW_MsgOrderHead" EntityType="elegantcrmModel.GWC_VW_MsgOrderHead" />
+    <EntitySet Name="VW_GetUserLocation" EntityType="elegantcrmModel.VW_GetUserLocation" />
+    <FunctionImport Name="GWC_SP_GetRequestHeadByRequestIDs" ReturnType="Collection(elegantcrmModel.GWC_SP_GetRequestHeadByRequestIDs_Result)">
+      <Parameter Name="RequestIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GWC_SP_GetRequestHeadByRequestIDs2" ReturnType="Collection(elegantcrmModel.GWC_SP_GetRequestHeadByRequestIDs_Result)">
+      <Parameter Name="RequestIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetUsers" ReturnType="Collection(elegantcrmModel.SP_GetUsers_Result)">
+      <Parameter Name="CMPID" Mode="In" Type="String" />
+      <Parameter Name="DPTID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetUsers1" ReturnType="Collection(elegantcrmModel.SP_GetUsers1_Result)">
+      <Parameter Name="CMPID" Mode="In" Type="String" />
+      <Parameter Name="DPTID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mUserWarehouses" EntityType="elegantcrmModel.mUserWarehouse" />
+  </EntityContainer>
+  <EntityType Name="PORtMINDetail">
+    <Key>
+      <PropertyRef Name="MIND_ID" />
+    </Key>
+    <Property Type="Int64" Name="MIND_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="MINH_ID" Nullable="false" />
+    <Property Type="Int64" Name="PRD_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="String" Name="Prod_Name" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="IssuedQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PORtMINHead" Relationship="elegantcrmModel.FK_PORtMINDetail_PORtMINHead" FromRole="PORtMINDetail" ToRole="PORtMINHead" />
+    <NavigationProperty Name="PORtPartRequestDetail" Relationship="elegantcrmModel.FK_PORtMINDetail_PORtPartRequestDetail" FromRole="PORtMINDetail" ToRole="PORtPartRequestDetail" />
+  </EntityType>
+  <EntityType Name="PORtMINHead">
+    <Key>
+      <PropertyRef Name="MINH_ID" />
+    </Key>
+    <Property Type="Int64" Name="MINH_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" />
+    <Property Type="Int64" Name="PRH_ID" />
+    <Property Type="String" Name="MIN_No" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="IssueDate" Precision="0" />
+    <Property Type="Int64" Name="IssuedByUserID" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AirwayBill" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SupplierCoNo" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShippingType" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShippingStatus" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="0" />
+    <Property Type="DateTime" Name="ExpectedDelDate" Precision="0" />
+    <Property Type="String" Name="TransporterName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsSubmit" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDt" Precision="0" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="0" />
+    <NavigationProperty Name="PORtMINDetails" Relationship="elegantcrmModel.FK_PORtMINDetail_PORtMINHead" FromRole="PORtMINHead" ToRole="PORtMINDetail" />
+    <NavigationProperty Name="PORtPartRequestHead" Relationship="elegantcrmModel.FK_PORtMINHead_PORtPartRequestHead" FromRole="PORtMINHead" ToRole="PORtPartRequestHead" />
+    <NavigationProperty Name="mStatu" Relationship="elegantcrmModel.FK_PORtMINHead_mStatus" FromRole="PORtMINHead" ToRole="mStatu" />
+    <Property Type="Int64" Name="TransH_ID" />
+    <NavigationProperty Name="mTerritory" Relationship="elegantcrmModel.FK_PORtMINHead_mTerritory" FromRole="PORtMINHead" ToRole="mTerritory" />
+  </EntityType>
+  <EntityType Name="PORtPartRequestDetail">
+    <Key>
+      <PropertyRef Name="PRD_ID" />
+    </Key>
+    <Property Type="Int64" Name="PRD_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="PRH_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="String" Name="Prod_Name" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RequestQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PORtMINDetails" Relationship="elegantcrmModel.FK_PORtMINDetail_PORtPartRequestDetail" FromRole="PORtPartRequestDetail" ToRole="PORtMINDetail" />
+    <NavigationProperty Name="PORtPartRequestHead" Relationship="elegantcrmModel.FK_PORtPartRequestDetail_PORtPartRequestHead" FromRole="PORtPartRequestDetail" ToRole="PORtPartRequestHead" />
+    <NavigationProperty Name="mProduct" Relationship="elegantcrmModel.FK_PORtPartRequestDetail_mProduct" FromRole="PORtPartRequestDetail" ToRole="mProduct" />
+    <!--<NavigationProperty Name="mProduct" Relationship="elegantcrmModel.FK_PORtPartRequestDetail_mProduct" FromRole="PORtPartRequestDetail" ToRole="mProduct" />-->
+  </EntityType>
+  <EntityType Name="PORtPartRequestHead">
+    <Key>
+      <PropertyRef Name="PRH_ID" />
+    </Key>
+    <Property Type="Int64" Name="PRH_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" />
+    <Property Type="String" Name="RequestNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RequestType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="RequestDate" Precision="0" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureCause" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureHours" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureNature" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineModel" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorModel" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TransformerSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Container" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ProbableShippingDate" Precision="0" />
+    <Property Type="Boolean" Name="IsSubmit" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDt" Precision="3" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <NavigationProperty Name="PORtMINHeads" Relationship="elegantcrmModel.FK_PORtMINHead_PORtPartRequestHead" FromRole="PORtPartRequestHead" ToRole="PORtMINHead" />
+    <NavigationProperty Name="PORtPartRequestDetails" Relationship="elegantcrmModel.FK_PORtPartRequestDetail_PORtPartRequestHead" FromRole="PORtPartRequestHead" ToRole="PORtPartRequestDetail" />
+    <NavigationProperty Name="mStatu" Relationship="elegantcrmModel.FK_PORtPartRequestHead_mStatus" FromRole="PORtPartRequestHead" ToRole="mStatu" />
+    <NavigationProperty Name="mTerritory" Relationship="elegantcrmModel.FK_PORtPartRequestHead_mTerritory" FromRole="PORtPartRequestHead" ToRole="mTerritory" />
+  </EntityType>
+  <Association Name="FK_PORtMINDetail_PORtMINHead">
+    <End Type="elegantcrmModel.PORtMINHead" Role="PORtMINHead" Multiplicity="1" />
+    <End Type="elegantcrmModel.PORtMINDetail" Role="PORtMINDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtMINHead">
+        <PropertyRef Name="MINH_ID" />
+      </Principal>
+      <Dependent Role="PORtMINDetail">
+        <PropertyRef Name="MINH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINDetail_PORtPartRequestDetail">
+    <End Type="elegantcrmModel.PORtPartRequestDetail" Role="PORtPartRequestDetail" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtMINDetail" Role="PORtMINDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestDetail">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="PORtMINDetail">
+        <PropertyRef Name="PRD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINHead_PORtPartRequestHead">
+    <End Type="elegantcrmModel.PORtPartRequestHead" Role="PORtPartRequestHead" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtMINHead" Role="PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestHead">
+        <PropertyRef Name="PRH_ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="PRH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestDetail_PORtPartRequestHead">
+    <End Type="elegantcrmModel.PORtPartRequestHead" Role="PORtPartRequestHead" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtPartRequestDetail" Role="PORtPartRequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestHead">
+        <PropertyRef Name="PRH_ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestDetail">
+        <PropertyRef Name="PRH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="mEngine">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="Container" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorModel" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorSerial" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineModel" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineSerial" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DateRecevied" Nullable="false" Precision="3" />
+    <Property Type="String" Name="TransformerSerial" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TransformerDateRecevied" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mStatu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <NavigationProperty Name="PORtMINHeads" Relationship="elegantcrmModel.FK_PORtMINHead_mStatus" FromRole="mStatu" ToRole="PORtMINHead" />
+    <NavigationProperty Name="PORtPartRequestHeads" Relationship="elegantcrmModel.FK_PORtPartRequestHead_mStatus" FromRole="mStatu" ToRole="PORtPartRequestHead" />
+  </EntityType>
+  <EntityType Name="GetProductDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProductTypeID" />
+    <Property Type="Int64" Name="ProductCategoryID" />
+    <Property Type="Int64" Name="ProductSubCategoryID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PrincipalPrice" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="FixedDiscount" Precision="13" Scale="2" />
+    <Property Type="Boolean" Name="FixedDiscountPercent" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Warranty" />
+    <Property Type="Boolean" Name="Guarantee" />
+    <Property Type="Boolean" Name="Installable" />
+    <Property Type="Boolean" Name="AMC" />
+    <Property Type="Int32" Name="WarrantyDays" />
+    <Property Type="Int32" Name="GuaranteeDays" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OpeningBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CurrentBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReorderLevel" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaxBalanceQuantity" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MinOrderQuantity" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LeadTimeDays" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="ProductType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductCategory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductSubCategory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UOM" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Cost" Precision="13" Scale="2" />
+    <Property Type="String" Name="OMSSKUCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GroupSet" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="moq" />
+    <Property Type="Decimal" Name="VirtualQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailVirtualQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="CustomerName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_PORtMINHead_mStatus">
+    <End Type="elegantcrmModel.mStatu" Role="mStatu" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtMINHead" Role="PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestHead_mStatus">
+    <End Type="elegantcrmModel.mStatu" Role="mStatu" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtPartRequestHead" Role="PORtPartRequestHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestHead">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result">
+    <Property Type="Int64" Name="MINH_ID" Nullable="false" />
+    <Property Type="Int64" Name="PRH_ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="RequestNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="RequestDate" Nullable="true" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="RequestType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="RequestBy" Nullable="true" />
+    <Property Type="String" Name="RequestByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="StatusID" Nullable="true" />
+    <Property Type="String" Name="IssueStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="IssueNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="IssueDate" Nullable="true" />
+    <Property Type="Int64" Name="IssuedByUserID" Nullable="true" />
+    <Property Type="String" Name="IssuedByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="AirwayBill" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TransporterName" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="ShippingDate" Nullable="true" />
+    <Property Type="DateTime" Name="ExpectedDelDate" Nullable="true" />
+    <Property Type="String" Name="ShippingType" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="IssueRemark" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ImgIssue" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+  </ComplexType>
+  <EntityType Name="tAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="AddressType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="RouteID" />
+    <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IsDefault" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="BillingID" />
+    <Property Type="Int64" Name="ShippingID" />
+    <Property Type="String" Name="Zone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SubZone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="MobileNo" />
+    <Property Type="String" Name="LocationName" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_GetEngineDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="Container" />
+      <PropertyRef Name="GeneratorModel" />
+      <PropertyRef Name="GeneratorSerial" />
+      <PropertyRef Name="EngineModel" />
+      <PropertyRef Name="EngineSerial" />
+      <PropertyRef Name="DateRecevied" />
+      <PropertyRef Name="TransformerSerial" />
+      <PropertyRef Name="TransformerDateRecevied" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="Container" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorModel" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorSerial" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineModel" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineSerial" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DateRecevied" Nullable="false" Precision="3" />
+    <Property Type="String" Name="TransformerSerial" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TransformerDateRecevied" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="tApprovalDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" />
+    <Property Type="Byte" Name="ApprovalLevel" />
+    <Property Type="Boolean" Name="IsRequired" />
+    <Property Type="Boolean" Name="MailAlert" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ApproverUserID" />
+    <Property Type="Int64" Name="StatusChangedBy" />
+    <Property Type="DateTime" Name="ApprovedDate" Precision="3" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Decimal" Name="ObjectTotalAmount" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_GetSiteDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="AddressID" />
+      <PropertyRef Name="ObjectName" />
+      <PropertyRef Name="ReferenceID" />
+      <PropertyRef Name="AddressType" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="County" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Address_CreatedBy" />
+      <PropertyRef Name="Address_CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="AddressID" Nullable="false" />
+    <Property Type="Int64" Name="ParentID" />
+    <Property Type="Int16" Name="Level" />
+    <Property Type="String" Name="GroupTitle" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Boolean" Name="IsMandatory" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="String" Name="AddressType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="RouteID" />
+    <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IsDefault" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address_CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Address_CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Address_LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Address_LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="BillingID" />
+    <Property Type="Int64" Name="ShippingID" />
+    <Property Type="String" Name="Zone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SubZone" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TempData">
+    <Key>
+      <PropertyRef Name="TempDataID" />
+    </Key>
+    <Property Type="Int32" Name="TempDataID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="XmlData" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" Precision="3" />
+    <Property Type="String" Name="SessionID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TableName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mUserProfileHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="RoleID" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddelName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmployeeID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="DepartmentID" Nullable="false" />
+    <Property Type="Int64" Name="DesignationID" Nullable="false" />
+    <Property Type="DateTime" Name="DateOfJoining" Precision="3" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReportingTo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InterestedIn" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Hobbies" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HighestQualification" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CollegeOrUniversity" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HighSchool" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="UserType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="ProfileImg" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="Title" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DefaultAddress" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Gender" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MobileInterface" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="mDepartment" Relationship="elegantcrmModel.FK_mUserProfileHead_mDepartment" FromRole="mUserProfileHead" ToRole="mDepartment" />
+  </EntityType>
+  <EntityType Name="mUserRolesDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Add" />
+    <Property Type="Boolean" Name="Edit" />
+    <Property Type="Boolean" Name="View" />
+    <Property Type="Boolean" Name="Delete" />
+    <Property Type="Boolean" Name="Approval" />
+    <Property Type="Boolean" Name="AssignTask" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mUserTerritoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="TerritoryID" />
+    <Property Type="Int64" Name="Level" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastMofidiedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mApprovalLevelDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ApprovalLevelID" Nullable="false" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="DepartmentID" />
+    <Property Type="String" Name="ApproverLogic" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mApprovalLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="ApprovalLevel" Nullable="false" />
+    <Property Type="Byte" Name="NoOfApprovers" Nullable="false" />
+    <Property Type="Byte" Name="MinApprovalReq" Nullable="false" />
+    <Property Type="Boolean" Name="IsLowerLevelApprovalReq" Nullable="false" />
+    <Property Type="Decimal" Name="MaxAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="TerritoryID" />
+    <Property Type="Int64" Name="OrderCancelInDays" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="PORtConsumptionDetail">
+    <Key>
+      <PropertyRef Name="ConD_ID" />
+    </Key>
+    <Property Type="Int64" Name="ConD_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ConH_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="Decimal" Name="ConsumedQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="GRND_ID" />
+    <NavigationProperty Name="PORtConsumptionHead" Relationship="elegantcrmModel.FK_PORtConsuptionDetail_PORtConsuptionHead" FromRole="PORtConsumptionDetail" ToRole="PORtConsumptionHead" />
+    <NavigationProperty Name="mProduct" Relationship="elegantcrmModel.FK_PORtConsuptionDetail_mProduct" FromRole="PORtConsumptionDetail" ToRole="mProduct" />
+    <!--<NavigationProperty Name="mProduct" Relationship="elegantcrmModel.FK_PORtConsuptionDetail_mProduct" FromRole="PORtConsumptionDetail" ToRole="mProduct" />-->
+  </EntityType>
+  <EntityType Name="PORtGRNDetail">
+    <Key>
+      <PropertyRef Name="GRND_ID" />
+    </Key>
+    <Property Type="Int64" Name="GRND_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="GRNH_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="Decimal" Name="ChallanQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReceivedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RejectedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AcceptedQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="MIND_ID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Decimal" Name="NotConsumedQty" Precision="18" Scale="2" />
+    <NavigationProperty Name="PORtGRNHead" Relationship="elegantcrmModel.FK_PORtGRNDetail_PORtGRNHead" FromRole="PORtGRNDetail" ToRole="PORtGRNHead" />
+  </EntityType>
+  <EntityType Name="PORtGRNHead">
+    <Key>
+      <PropertyRef Name="GRNH_ID" />
+    </Key>
+    <Property Type="Int64" Name="GRNH_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" />
+    <Property Type="String" Name="GRN_No" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="GRN_Date" Precision="0" />
+    <Property Type="Int64" Name="ReceivedByUserID" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ChallanNo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ChallanDate" Precision="0" />
+    <Property Type="String" Name="GetpassNo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="GetpassDate" Precision="0" />
+    <Property Type="String" Name="LRNo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LRDate" Precision="0" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsSubmit" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDt" Precision="3" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="String" Name="Vendor" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PORtGRNDetails" Relationship="elegantcrmModel.FK_PORtGRNDetail_PORtGRNHead" FromRole="PORtGRNHead" ToRole="PORtGRNDetail" />
+    <NavigationProperty Name="mTerritory" Relationship="elegantcrmModel.FK_PORtGRNHead_mTerritory" FromRole="PORtGRNHead" ToRole="mTerritory" />
+  </EntityType>
+  <Association Name="FK_PORtGRNDetail_PORtGRNHead">
+    <End Type="elegantcrmModel.PORtGRNHead" Role="PORtGRNHead" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtGRNDetail" Role="PORtGRNDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtGRNHead">
+        <PropertyRef Name="GRNH_ID" />
+      </Principal>
+      <Dependent Role="PORtGRNDetail">
+        <PropertyRef Name="GRNH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs_Result">
+    <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="Int64" Name="StatusID" Nullable="true" />
+    <Property Type="String" Name="ReceiptStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="GRNNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="GRN_Date" Nullable="true" />
+    <Property Type="Int64" Name="ReceivedByUserID" Nullable="true" />
+    <Property Type="String" Name="ReceiptByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="GRNH_ID" Nullable="false" />
+    <Property Type="String" Name="ChallanNo" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ChallanDate" Nullable="true" />
+    <Property Type="String" Name="Vendor" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <EntityType Name="PORtConsumptionHead">
+    <Key>
+      <PropertyRef Name="ConH_ID" />
+    </Key>
+    <Property Type="Int64" Name="ConH_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" />
+    <Property Type="DateTime" Name="ConsumptionDate" Precision="3" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" />
+    <Property Type="Int64" Name="ConsumedByUserID" />
+    <Property Type="String" Name="Title" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureCause" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureHours" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FailureNature" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EngineModel" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorModel" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GeneratorSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TransformerSerial" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Container" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDt" Precision="3" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="Int64" Name="StatusID" />
+    <NavigationProperty Name="PORtConsumptionDetails" Relationship="elegantcrmModel.FK_PORtConsuptionDetail_PORtConsuptionHead" FromRole="PORtConsumptionHead" ToRole="PORtConsumptionDetail" />
+    <NavigationProperty Name="mTerritory" Relationship="elegantcrmModel.FK_PORtConsuptionHead_mTerritory" FromRole="PORtConsumptionHead" ToRole="mTerritory" />
+  </EntityType>
+  <Association Name="FK_PORtConsuptionDetail_PORtConsuptionHead">
+    <End Type="elegantcrmModel.PORtConsumptionHead" Role="PORtConsumptionHead" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtConsumptionDetail" Role="PORtConsumptionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtConsumptionHead">
+        <PropertyRef Name="ConH_ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionDetail">
+        <PropertyRef Name="ConH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs_Result">
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+    <Property Type="Int64" Name="ConH_ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="true" />
+    <Property Type="DateTime" Name="ConsumptionDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="ConsumedByUserID" Nullable="true" />
+    <Property Type="String" Name="ConsumedByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="EngineSerial" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EngineModel" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Container" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="FailureHours" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="FailureCause" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="FailureNature" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ImgConsumption" Nullable="false" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID_Result">
+    <Property Type="Int64" Name="PRH_ID" Nullable="true" />
+    <Property Type="Int64" Name="MINH_ID" Nullable="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="MIN_No" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="IssueDate" Nullable="true" />
+    <Property Type="String" Name="ShippingType" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="IssuedByUserID" Nullable="true" />
+    <Property Type="String" Name="IssuedByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="StatusID" Nullable="true" />
+    <Property Type="String" Name="ReceiptStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="GRNNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="GRN_Date" Nullable="true" />
+    <Property Type="Int64" Name="ReceivedByUserID" Nullable="true" />
+    <Property Type="String" Name="ReceiptByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="GRNH_ID" Nullable="false" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgConsumption" Nullable="true" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetPartDetails_OfConsumption_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="ConsumedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GRND_ID" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetPartDetails_OfGRN_Result">
+    <Property Type="Int64" Name="MIND_ID" Nullable="true" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="ChallanQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReceivedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetPartDetails_OfGRN_HQ_Result">
+    <Property Type="String" Name="ProdID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="ChallanQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReceivedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <EntityType Name="PORtInboxData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ToUserID" />
+    <Property Type="Int64" Name="SiteID" />
+    <Property Type="String" Name="ObjectName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Subject" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="Boolean" Name="IsRead" />
+    <Property Type="Boolean" Name="IsArchive" />
+    <Property Type="String" Name="FolderName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="tProductStockDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="Int64" Name="ProdID" Nullable="false" />
+    <Property Type="Decimal" Name="OpeningStock" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaxStockLimit" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReorderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="ReorderDate" Precision="3" />
+    <Property Type="DateTime" Name="EffectiveDate" Precision="0" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Decimal" Name="LastConsumedQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="LastConsumedDate" Precision="0" />
+    <Property Type="Decimal" Name="TotalReceiveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="TotalDispatchQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="ResurveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="VirtualQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailVirtualQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="GetLeadDetail">
+    <Key>
+      <PropertyRef Name="LeadID" />
+      <PropertyRef Name="ObjectName" />
+      <PropertyRef Name="ReferenceID" />
+      <PropertyRef Name="CustomerHeadID" />
+      <PropertyRef Name="LeadDate" />
+      <PropertyRef Name="LeadStatus" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="LeadID" Nullable="false" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="CustomerHeadID" Nullable="false" />
+    <Property Type="DateTime" Name="LeadDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LeadSourceID" />
+    <Property Type="Int64" Name="CampaignID" />
+    <Property Type="String" Name="LeadStatus" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ConfidenceFactor" Precision="5" Scale="2" />
+    <Property Type="DateTime" Name="ExpOrderDate" Precision="3" />
+    <Property Type="Decimal" Name="ExpOrderAmount" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="SubTotal" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DiscountOnSubTotal" Precision="18" Scale="2" />
+    <Property Type="Boolean" Name="DiscountOnSubTotalPercent" />
+    <Property Type="Decimal" Name="TotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TaxOnTotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShippingCharges" Precision="18" Scale="2" />
+    <Property Type="String" Name="OtherChargesDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OtherCharges" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAmount" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Leadname" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="251" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserName" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="TaskID" />
+    <Property Type="String" Name="ActivitySubType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="TaskDate" Precision="3" />
+    <Property Type="DateTime" Name="TaskECD" Precision="3" />
+    <Property Type="String" Name="WebSite" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SectorID" />
+    <Property Type="Int64" Name="CustomerTypeID" />
+    <Property Type="String" Name="ActivityStatus" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ActID" />
+  </EntityType>
+  <EntityType Name="GetPrdDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProductTypeID" />
+    <Property Type="Int64" Name="ProductCategoryID" />
+    <Property Type="Int64" Name="ProductSubCategoryID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PrincipalPrice" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="FixedDiscount" Precision="13" Scale="2" />
+    <Property Type="Boolean" Name="FixedDiscountPercent" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Warranty" />
+    <Property Type="Boolean" Name="Guarantee" />
+    <Property Type="Boolean" Name="Installable" />
+    <Property Type="Boolean" Name="AMC" />
+    <Property Type="Int32" Name="WarrantyDays" />
+    <Property Type="Int32" Name="GuaranteeDays" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OpeningBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CurrentBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReorderLevel" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaxBalanceQuantity" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MinOrderQuantity" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LeadTimeDays" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="ProductType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductCategory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductSubCategory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UOM" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="POR_SP_GetPartDetails_OfMIN_Transfer_Result">
+    <Property Type="Int64" Name="PRD_ID" Nullable="false" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="IssuedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStockHQ" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <EntityType Name="PORtTransDetail">
+    <Key>
+      <PropertyRef Name="TransD_ID" />
+    </Key>
+    <Property Type="Int64" Name="TransD_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="TransH_ID" />
+    <Property Type="Int64" Name="PRD_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="String" Name="Prod_Name" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="IssuedQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PORtTransHead">
+    <Key>
+      <PropertyRef Name="TransH_ID" />
+    </Key>
+    <Property Type="Int64" Name="TransH_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ToSiteID" />
+    <Property Type="String" Name="MIN_No" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TransferDate" Precision="0" />
+    <Property Type="Int64" Name="TransferedByUserID" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="String" Name="AirwayBill" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SupplierCoNo" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShippingType" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShippingStatus" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="0" />
+    <Property Type="DateTime" Name="ExpectedDelDate" Precision="0" />
+    <Property Type="String" Name="TransporterName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsSubmit" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDt" Precision="0" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="0" />
+    <Property Type="Int64" Name="FromSiteID" />
+    <Property Type="Int64" Name="PRH_ID" />
+  </EntityType>
+  <ComplexType Name="POR_SP_GetPartDetails_OfMIN_Result">
+    <Property Type="Int64" Name="PRD_ID" Nullable="false" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Boolean" Name="Installable" Nullable="true" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="IssuedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStockHQ" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <EntityType Name="mBOMHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Header" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mCompany">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ParentID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="String" Name="MainDataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainDataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainDBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainServerLogin" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="StampImg" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="Complogo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <NavigationProperty Name="mUserProfileHeads" Relationship="elegantcrmModel.FK_mUserProfileHead_mDepartment" FromRole="mDepartment" ToRole="mUserProfileHead" />
+  </EntityType>
+  <Association Name="FK_mUserProfileHead_mDepartment">
+    <End Type="elegantcrmModel.mDepartment" Role="mDepartment" Multiplicity="1" />
+    <End Type="elegantcrmModel.mUserProfileHead" Role="mUserProfileHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mDepartment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="mUserProfileHead">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="mTerritory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ParentID" />
+    <Property Type="Int16" Name="Level" />
+    <Property Type="String" Name="GroupTitle" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Boolean" Name="IsMandatory" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="StoreCode" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ApprovalLevel" />
+    <Property Type="String" Name="AutoCancel" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="cancelDays" />
+    <NavigationProperty Name="PORtConsumptionHeads" Relationship="elegantcrmModel.FK_PORtConsuptionHead_mTerritory" FromRole="mTerritory" ToRole="PORtConsumptionHead" />
+    <NavigationProperty Name="PORtGRNHeads" Relationship="elegantcrmModel.FK_PORtGRNHead_mTerritory" FromRole="mTerritory" ToRole="PORtGRNHead" />
+    <NavigationProperty Name="PORtMINHeads" Relationship="elegantcrmModel.FK_PORtMINHead_mTerritory" FromRole="mTerritory" ToRole="PORtMINHead" />
+    <NavigationProperty Name="PORtPartRequestHeads" Relationship="elegantcrmModel.FK_PORtPartRequestHead_mTerritory" FromRole="mTerritory" ToRole="PORtPartRequestHead" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ApprovalRem" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AutoCancRen" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="AutoRemSchedule" />
+    <Property Type="Int64" Name="ApproRemSchedul" />
+    <Property Type="Boolean" Name="ECommerce" />
+    <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="GwcDeliveries" />
+    <Property Type="Int64" Name="MaxDeliveryDays" />
+    <Property Type="Int64" Name="FinApproverID" />
+    <Property Type="Int64" Name="AddressType" />
+    <Property Type="Boolean" Name="PriceChange" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <Association Name="FK_PORtConsuptionHead_mTerritory">
+    <End Type="elegantcrmModel.mTerritory" Role="mTerritory" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtConsumptionHead" Role="PORtConsumptionHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtGRNHead_mTerritory">
+    <End Type="elegantcrmModel.mTerritory" Role="mTerritory" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtGRNHead" Role="PORtGRNHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtGRNHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINHead_mTerritory">
+    <End Type="elegantcrmModel.mTerritory" Role="mTerritory" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtMINHead" Role="PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestHead_mTerritory">
+    <End Type="elegantcrmModel.mTerritory" Role="mTerritory" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtPartRequestHead" Role="PORtPartRequestHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="VW_GetRequestDetails">
+    <Key>
+      <PropertyRef Name="PRH_ID" />
+      <PropertyRef Name="RequesterName" />
+    </Key>
+    <Property Type="Int64" Name="PRH_ID" Nullable="false" />
+    <Property Type="Int64" Name="DepartmentID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="String" Name="DepartmentName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="RequestDate" Precision="0" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="String" Name="RequesterName" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VW_GetSKUAndRequestDetails">
+    <Key>
+      <PropertyRef Name="RequesterName" />
+    </Key>
+    <Property Type="Int64" Name="PRH_ID" />
+    <Property Type="Int64" Name="Prod_ID" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RequestQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="DeptName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RequesterName" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="DeptID" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="DateTime" Name="RequestDate" Precision="0" />
+    <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="StatusID" />
+  </EntityType>
+  <EntityType Name="vGetUserProfileByUserID">
+    <Key>
+      <PropertyRef Name="userID" />
+      <PropertyRef Name="desiName" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Type="Int64" Name="userID" Nullable="false" />
+    <Property Type="String" Name="userName" MaxLength="103" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="deptname" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="desiName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmployeeID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="ProfileImg" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="DateTime" Name="DateOfJoining" Precision="3" />
+    <Property Type="String" Name="OtherID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HighestQualification" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InterestedIn" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Gender" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ReportingTo" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mRequestTemplateDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="TemplateHeadID" />
+    <Property Type="Int64" Name="PrdID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Decimal" Name="Qty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" />
+  </EntityType>
+  <EntityType Name="tOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="OrderHeadId" Nullable="false" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="OrderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Prod_Name" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" />
+    <Property Type="Decimal" Name="ShippedQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tApprovalTran">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="OrderId" Nullable="false" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="Int64" Name="UserId" />
+    <Property Type="Int64" Name="DelegationId" />
+    <Property Type="Int64" Name="ApprovalId" />
+    <Property Type="Int64" Name="ApproverID" />
+    <Property Type="String" Name="Remark" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Date" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+  </EntityType>
+  <EntityType Name="tContactPersonDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="CustomerHeadID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Department" />
+    <Property Type="String" Name="Designation" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OfficeNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactTypeID" Nullable="false" />
+    <Property Type="String" Name="InterestedIn" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Hobbies" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FacebookID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FacebookPassword" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TwitterID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TwitterPassword" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HighestQualification" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CollegeOrUniversity" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HighSchool" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mProduct">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProductTypeID" />
+    <Property Type="Int64" Name="ProductCategoryID" />
+    <Property Type="Int64" Name="ProductSubCategoryID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PrincipalPrice" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="FixedDiscount" Precision="13" Scale="2" />
+    <Property Type="Boolean" Name="FixedDiscountPercent" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Warranty" />
+    <Property Type="Boolean" Name="Guarantee" />
+    <Property Type="Boolean" Name="Installable" />
+    <Property Type="Boolean" Name="AMC" />
+    <Property Type="Int32" Name="WarrantyDays" />
+    <Property Type="Int32" Name="GuaranteeDays" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OpeningBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CurrentBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReorderLevel" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaxBalanceQuantity" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MinOrderQuantity" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LeadTimeDays" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="Int64" Name="BOMHeaderId" />
+    <Property Type="String" Name="Packkey" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OMSSKUCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Cost" Precision="13" Scale="2" />
+    <Property Type="String" Name="GroupSet" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PORtConsumptionDetails" Relationship="elegantcrmModel.FK_PORtConsuptionDetail_mProduct" FromRole="mProduct" ToRole="PORtConsumptionDetail" />
+    <NavigationProperty Name="PORtPartRequestDetails" Relationship="elegantcrmModel.FK_PORtPartRequestDetail_mProduct" FromRole="mProduct" ToRole="PORtPartRequestDetail" />
+    <Property Type="Int64" Name="moq" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <Association Name="FK_PORtConsuptionDetail_mProduct">
+    <End Type="elegantcrmModel.mProduct" Role="mProduct" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtConsumptionDetail" Role="PORtConsumptionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mProduct">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionDetail">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestDetail_mProduct">
+    <End Type="elegantcrmModel.mProduct" Role="mProduct" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.PORtPartRequestDetail" Role="PORtPartRequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mProduct">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestDetail">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="POR_SP_GetRequestByRequestIDs_Result">
+    <Property Type="Int64" Name="PRH_ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="RequestNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="RequestDate" Nullable="true" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="RequestType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="RequestBy" Nullable="true" />
+    <Property Type="String" Name="RequestByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="StatusID" Nullable="true" />
+    <Property Type="String" Name="RequestStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ImgRequest" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="ImgApproval" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgIssue" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgConsumption" Nullable="true" MaxLength="5" />
+  </ComplexType>
+  <EntityType Name="tCorrespond">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="OrderHeadId" />
+    <Property Type="String" Name="MessageTitle" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="date" Precision="3" />
+    <Property Type="Int64" Name="MessageFrom" />
+    <Property Type="String" Name="MessageSource" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MessageType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Schedule" />
+    <Property Type="Int64" Name="DepartmentID" />
+    <Property Type="DateTime" Name="OrderDate" Precision="3" />
+    <Property Type="Int64" Name="MessageTo" />
+    <Property Type="Int64" Name="CurrentOrderStatus" />
+    <Property Type="Int32" Name="MailStatus" />
+    <Property Type="Boolean" Name="Archive" />
+    <Property Type="Int64" Name="OrderCancelDays" />
+    <Property Type="Int64" Name="ApprovalReminderSchedule" />
+    <Property Type="Int64" Name="AutoCancelReminderSchedule" />
+    <Property Type="DateTime" Name="NxtApprovalReminderDate" Precision="3" />
+    <Property Type="DateTime" Name="NxtAutoCancelReminderDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mRequestTemplateHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TemplateTitle" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Accesstype" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Department" />
+    <Property Type="Int64" Name="Customer" />
+    <Property Type="String" Name="Active" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Address" />
+    <Property Type="Int64" Name="Contact1" />
+    <Property Type="Int64" Name="Contact2" />
+    <Property Type="Int64" Name="ModifiedBy" />
+    <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mMessageTran">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="MessageHdrId" />
+    <Property Type="String" Name="MsgDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Destination" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="String" Name="Createdby" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GWC_VW_MsgOrderDetail">
+    <Key>
+      <PropertyRef Name="OrderHeadId" />
+    </Key>
+    <Property Type="Int64" Name="OrderHeadId" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOM" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OrderQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="SkuId" />
+  </EntityType>
+  <EntityType Name="tOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="DateTime" Name="Orderdate" Precision="3" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactId1" />
+    <Property Type="Int64" Name="ContactId2" />
+    <Property Type="Int64" Name="AddressId" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="Creationdate" Precision="3" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="String" Name="DispatchDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CompletedDate" Precision="3" />
+    <Property Type="String" Name="CancelDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WMSRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ApprovalDate" Precision="3" />
+    <Property Type="String" Name="Con2" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PaymentID" />
+    <Property Type="Decimal" Name="TotalQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GrandTotal" Precision="18" Scale="2" />
+    <Property Type="String" Name="OrderNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="orderType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InvoiceNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="tOrderDetailHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="OrderHeadId" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="OrderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Prod_Name" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tOrderHeadHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="DateTime" Name="Orderdate" Precision="3" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactId1" />
+    <Property Type="Int64" Name="ContactId2" />
+    <Property Type="Int64" Name="AddressId" />
+    <Property Type="String" Name="Remark" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="Creationdate" Precision="3" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="String" Name="DispatchDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CompletedDate" Precision="3" />
+    <Property Type="String" Name="CancelDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WMSRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tInventry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="SKUId" Nullable="false" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="Int64" Name="TransactionId" />
+    <Property Type="DateTime" Name="Transactiondate" Precision="3" />
+    <Property Type="String" Name="TransactionType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Quantity" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="ResurveQty" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="InQuantity" />
+    <Property Type="Int64" Name="OutQuantity" />
+    <Property Type="Int64" Name="ClosingBalance" />
+  </EntityType>
+  <EntityType Name="VW_GWC_SkuFilter">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Image" />
+    </Key>
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="String" Name="GroupSet" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="OpeningStock" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalReceiveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="TotalDispatchQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="ResurveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="String" Name="Image" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StoreCode" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="SkuImage" MaxLength="Max" FixedLength="false" />
+    <Property Type="Decimal" Name="PrincipalPrice" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" />
+    <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="AddressLine1" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="SP_GWC_GetUserInfo_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="EmployeeID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="userType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="DepartmentID" Nullable="true" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="RoleID" Nullable="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="SP_GWC_GetUserInfoRoleWise_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="EmployeeID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="userType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="DepartmentID" Nullable="true" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="RoleID" Nullable="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <EntityType Name="VW_GetUserInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="EmployeeID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="DepartmentID" />
+    <Property Type="String" Name="Department" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StoreCode" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="RoleID" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="ProfileImg" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="UserName" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VW_OrderDeliveryDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactNo" />
+    <Property Type="String" Name="Landmark" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Zipcode" />
+    <Property Type="String" Name="PhotoIdtype" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="PhotoId" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="DeliveryType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="OrderID" />
+    <Property Type="String" Name="PaymentMode" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="PaymentDate" Precision="3" />
+    <Property Type="Int64" Name="CardNo" />
+    <Property Type="String" Name="BankName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Card_Verified" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="DriverId" />
+    <Property Type="String" Name="TruckDetail" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AssignDate" Precision="3" />
+    <Property Type="Int64" Name="AssignBy" />
+    <Property Type="String" Name="DriverName" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AssignedBy" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriverEmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriverMobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mPaymentMethodDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="PMethodID" />
+    <Property Type="String" Name="FieldName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ControlType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Mandetory" />
+    <Property Type="String" Name="Query" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Sequence" />
+  </EntityType>
+  <EntityType Name="VW_DeptWisePaymentMethod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="DeptID" />
+    <Property Type="Int64" Name="PMethodID" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="String" Name="MethodName" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mCostCenterMain">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CenterName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ApproverID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+  </EntityType>
+  <ComplexType Name="POR_SP_GetPartDetail_ForRequest_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetPartDetail_ForRequest1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="mStatutory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <NavigationProperty Name="tStatutoryDetails" Relationship="elegantcrmModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="mStatutory" ToRole="tStatutoryDetail" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="tStatutoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="StatutoryID" />
+    <Property Type="String" Name="StatutoryValue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <NavigationProperty Name="mStatutory" Relationship="elegantcrmModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="tStatutoryDetail" ToRole="mStatutory" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="Int64" Name="ApproverID" />
+  </EntityType>
+  <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+    <End Type="elegantcrmModel.mStatutory" Role="mStatutory" Multiplicity="0..1" />
+    <End Type="elegantcrmModel.tStatutoryDetail" Role="tStatutoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatutory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tStatutoryDetail">
+        <PropertyRef Name="StatutoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tOrderWiseAccess">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserApproverID" />
+    <Property Type="Int32" Name="ApprovalLevel" />
+    <Property Type="Boolean" Name="PriceEdit" />
+    <Property Type="Boolean" Name="SkuQtyEdit" />
+    <Property Type="String" Name="UserType" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="OrderID" />
+    <Property Type="DateTime" Name="Date" Precision="3" />
+    <Property Type="String" Name="ApproverLogic" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="POR_SP_GetRequestBySiteIDsOrUserID_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="OrderNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Priority" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="RequestBy" Nullable="true" />
+    <Property Type="String" Name="RequestByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="Status" Nullable="true" />
+    <Property Type="String" Name="RequestStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ImgRequest" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="ImgApproval" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="ImgIssue" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgConsumption" Nullable="true" MaxLength="5" />
+    <Property Type="DateTime" Name="Deliverydate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DeliveryType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="OrderNo" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="POR_SP_GetRequestBySiteIDsOrUserID1_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="OrderNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Priority" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="RequestBy" Nullable="true" />
+    <Property Type="String" Name="RequestByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="Status" Nullable="true" />
+    <Property Type="String" Name="RequestStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ImgRequest" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="ImgApproval" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="ImgIssue" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgConsumption" Nullable="true" MaxLength="5" />
+    <Property Type="DateTime" Name="Deliverydate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DeliveryType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="OrderNo" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <EntityType Name="mUserLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="LocationID" />
+  </EntityType>
+  <EntityType Name="GWC_VW_MsgOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InvoiceNo" />
+      <PropertyRef Name="LocationCode" />
+      <PropertyRef Name="ConsigneeName" />
+      <PropertyRef Name="ConsigneeAddress" />
+      <PropertyRef Name="ConsigneePhone" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Orderdate" Precision="3" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con1" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Con2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine1" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StoreCode" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactP2" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrderNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InvoiceNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RequestorName" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RequestorMobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ConsigneeName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ConsigneeAddress" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ConsigneePhone" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VW_GetUserLocation">
+    <Key>
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="ContactID" />
+  </EntityType>
+  <ComplexType Name="GWC_SP_GetRequestHeadByRequestIDs_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="SiteName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="OrderNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="Deliverydate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Priority" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="RequestBy" Nullable="true" />
+    <Property Type="String" Name="RequestByUserName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="Status" Nullable="true" />
+    <Property Type="String" Name="RequestStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Remark" Nullable="true" />
+    <Property Type="Int64" Name="ContactId1" Nullable="true" />
+    <Property Type="String" Name="Contact1Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Con1Email" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ContactId2" Nullable="true" />
+    <Property Type="String" Name="Contact2Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Con2Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Con2" Nullable="true" />
+    <Property Type="String" Name="OrderNo" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="ImgRequest" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="ImgApproval" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgIssue" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="ImgReceipt" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="ImgConsumption" Nullable="true" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUsers_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="EmployeeID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="DepartmentID" Nullable="true" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StoreCode" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="RoleID" Nullable="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" />
+    <Property Type="Binary" Name="ProfileImg" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUsers1_Result">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="EmployeeID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="DepartmentID" Nullable="true" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StoreCode" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="RoleID" Nullable="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" />
+    <Property Type="Binary" Name="ProfileImg" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <EntityType Name="mUserWarehouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="WarehoueID" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="elegantcrm7ToolsTransfer" targetNamespace="http://tempuri.org/elegantcrm7ToolsTransfer.xsd" xmlns:mstns="http://tempuri.org/elegantcrm7ToolsTransfer.xsd" xmlns="http://tempuri.org/elegantcrm7ToolsTransfer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ApplicationServices" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApplicationServices (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ApplicationServices.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_AssetTransferDetailsTableAdapter" GeneratorDataComponentClassName="VW_AssetTransferDetailsTableAdapter" Name="VW_AssetTransferDetails" UserDataComponentName="VW_AssetTransferDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ApplicationServices (Web.config)" DbObjectName="elegantcrm7.dbo.VW_AssetTransferDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, TransferDate, TransferedBy, TransferBy, Status, TransferFromSite, FromSite, TransferToSite, ToSite, Airwaybill, ShippingType, ShippingDate, ExpDeliveryDate, TransporterName, Remark, PrdID, ProductCode, Name FROM dbo.VW_AssetTransferDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="TransferDate" DataSetColumn="TransferDate" />
+              <Mapping SourceColumn="TransferedBy" DataSetColumn="TransferedBy" />
+              <Mapping SourceColumn="TransferBy" DataSetColumn="TransferBy" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="TransferFromSite" DataSetColumn="TransferFromSite" />
+              <Mapping SourceColumn="FromSite" DataSetColumn="FromSite" />
+              <Mapping SourceColumn="TransferToSite" DataSetColumn="TransferToSite" />
+              <Mapping SourceColumn="ToSite" DataSetColumn="ToSite" />
+              <Mapping SourceColumn="Airwaybill" DataSetColumn="Airwaybill" />
+              <Mapping SourceColumn="ShippingType" DataSetColumn="ShippingType" />
+              <Mapping SourceColumn="ShippingDate" DataSetColumn="ShippingDate" />
+              <Mapping SourceColumn="ExpDeliveryDate" DataSetColumn="ExpDeliveryDate" />
+              <Mapping SourceColumn="TransporterName" DataSetColumn="TransporterName" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="PrdID" DataSetColumn="PrdID" />
+              <Mapping SourceColumn="ProductCode" DataSetColumn="ProductCode" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="elegantcrm7ToolsTransfer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="elegantcrm7ToolsTransfer" msprop:Generator_UserDSName="elegantcrm7ToolsTransfer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_AssetTransferDetails" msprop:Generator_TableClassName="VW_AssetTransferDetailsDataTable" msprop:Generator_TableVarName="tableVW_AssetTransferDetails" msprop:Generator_TablePropName="VW_AssetTransferDetails" msprop:Generator_RowDeletingName="VW_AssetTransferDetailsRowDeleting" msprop:Generator_UserTableName="VW_AssetTransferDetails" msprop:Generator_RowChangingName="VW_AssetTransferDetailsRowChanging" msprop:Generator_RowEvHandlerName="VW_AssetTransferDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_AssetTransferDetailsRowDeleted" msprop:Generator_RowEvArgName="VW_AssetTransferDetailsRowChangeEvent" msprop:Generator_RowChangedName="VW_AssetTransferDetailsRowChanged" msprop:Generator_RowClassName="VW_AssetTransferDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:long" />
+              <xs:element name="TransferDate" msprop:Generator_ColumnVarNameInTable="columnTransferDate" msprop:Generator_ColumnPropNameInRow="TransferDate" msprop:Generator_ColumnPropNameInTable="TransferDateColumn" msprop:Generator_UserColumnName="TransferDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TransferedBy" msprop:Generator_ColumnVarNameInTable="columnTransferedBy" msprop:Generator_ColumnPropNameInRow="TransferedBy" msprop:Generator_ColumnPropNameInTable="TransferedByColumn" msprop:Generator_UserColumnName="TransferedBy" type="xs:long" minOccurs="0" />
+              <xs:element name="TransferBy" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTransferBy" msprop:Generator_ColumnPropNameInRow="TransferBy" msprop:Generator_ColumnPropNameInTable="TransferByColumn" msprop:Generator_UserColumnName="TransferBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferFromSite" msprop:Generator_ColumnVarNameInTable="columnTransferFromSite" msprop:Generator_ColumnPropNameInRow="TransferFromSite" msprop:Generator_ColumnPropNameInTable="TransferFromSiteColumn" msprop:Generator_UserColumnName="TransferFromSite" type="xs:long" minOccurs="0" />
+              <xs:element name="FromSite" msprop:Generator_ColumnVarNameInTable="columnFromSite" msprop:Generator_ColumnPropNameInRow="FromSite" msprop:Generator_ColumnPropNameInTable="FromSiteColumn" msprop:Generator_UserColumnName="FromSite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferToSite" msprop:Generator_ColumnVarNameInTable="columnTransferToSite" msprop:Generator_ColumnPropNameInRow="TransferToSite" msprop:Generator_ColumnPropNameInTable="TransferToSiteColumn" msprop:Generator_UserColumnName="TransferToSite" type="xs:long" minOccurs="0" />
+              <xs:element name="ToSite" msprop:Generator_ColumnVarNameInTable="columnToSite" msprop:Generator_ColumnPropNameInRow="ToSite" msprop:Generator_ColumnPropNameInTable="ToSiteColumn" msprop:Generator_UserColumnName="ToSite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Airwaybill" msprop:Generator_ColumnVarNameInTable="columnAirwaybill" msprop:Generator_ColumnPropNameInRow="Airwaybill" msprop:Generator_ColumnPropNameInTable="AirwaybillColumn" msprop:Generator_UserColumnName="Airwaybill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShippingType" msprop:Generator_ColumnVarNameInTable="columnShippingType" msprop:Generator_ColumnPropNameInRow="ShippingType" msprop:Generator_ColumnPropNameInTable="ShippingTypeColumn" msprop:Generator_UserColumnName="ShippingType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShippingDate" msprop:Generator_ColumnVarNameInTable="columnShippingDate" msprop:Generator_ColumnPropNameInRow="ShippingDate" msprop:Generator_ColumnPropNameInTable="ShippingDateColumn" msprop:Generator_UserColumnName="ShippingDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExpDeliveryDate" msprop:Generator_ColumnVarNameInTable="columnExpDeliveryDate" msprop:Generator_ColumnPropNameInRow="ExpDeliveryDate" msprop:Generator_ColumnPropNameInTable="ExpDeliveryDateColumn" msprop:Generator_UserColumnName="ExpDeliveryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TransporterName" msprop:Generator_ColumnVarNameInTable="columnTransporterName" msprop:Generator_ColumnPropNameInRow="TransporterName" msprop:Generator_ColumnPropNameInTable="TransporterNameColumn" msprop:Generator_UserColumnName="TransporterName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrdID" msprop:Generator_ColumnVarNameInTable="columnPrdID" msprop:Generator_ColumnPropNameInRow="PrdID" msprop:Generator_ColumnPropNameInTable="PrdIDColumn" msprop:Generator_UserColumnName="PrdID" type="xs:long" minOccurs="0" />
+              <xs:element name="ProductCode" msprop:Generator_ColumnVarNameInTable="columnProductCode" msprop:Generator_ColumnPropNameInRow="ProductCode" msprop:Generator_ColumnPropNameInTable="ProductCodeColumn" msprop:Generator_UserColumnName="ProductCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_AssetTransferDetails" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

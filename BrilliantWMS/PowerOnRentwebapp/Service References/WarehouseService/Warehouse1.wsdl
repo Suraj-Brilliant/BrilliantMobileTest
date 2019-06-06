@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Warehouse" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/Warehouse.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iWarehouse_GetWarehouseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseList" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseDetailByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseDetailByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseDetailByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseDetailByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseMaster" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseAddress" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseAddress" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseMasterByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseMasterByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseMasterByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseMasterByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocation" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocationByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocationByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocationByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocationByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseBuilding" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWareBuildingByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWareBuildingByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWareBuildingByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWareBuildingByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWareBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWareBuilding" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWareBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWareBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseFloar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseFloar" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseFloar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseFloarResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseFloarbyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseFloarbyID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseFloarbyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseFloarbyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseFloar_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseFloar" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseFloar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseFloarResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousePassage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousePassage" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousePassage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousePassageResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousePassageByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousePassageByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousePassageByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousePassageByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehousePassage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehousePassage" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehousePassage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehousePassageResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseSection" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseSectionByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseSectionByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseSectionByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseSectionByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseSection" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseShelf_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseShelf" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseShelf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseShelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseShelfByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseShelfByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseShelfByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseShelfByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseShelf_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseShelf" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseShelf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseShelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetLocationType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationType" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetLocationType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetCapacityIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapacityIn" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetCapacityIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapacityInResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseLocation" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveWarehouseLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWarehouseLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateLocation" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateSortCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateSortCode" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateSortCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateSortCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocByID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehouseLocByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseLocByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousebyUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousebyUserID" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetWarehousebyUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousebyUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_AddRecordInSkuTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRecordInSkuTransaction" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_AddRecordInSkuTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRecordInSkuTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateBuilding" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateFloar_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateFloar" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateFloar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateFloarResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicatePassage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicatePassage" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicatePassage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicatePassageResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateSection" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateShelf_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateShelf" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_CheckDuplicateShelf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateShelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetTemptablevalue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemptablevalue" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetTemptablevalue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemptablevalueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetZoneLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneLocation" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_GetZoneLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveZoneLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveZoneLocation" />
+  </wsdl:message>
+  <wsdl:message name="iWarehouse_SaveZoneLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveZoneLocationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iWarehouse">
+    <wsdl:operation name="GetWarehouseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseList" message="tns:iWarehouse_GetWarehouseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseListResponse" message="tns:iWarehouse_GetWarehouseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseDetailByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseDetailByID" message="tns:iWarehouse_GetWarehouseDetailByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseDetailByIDResponse" message="tns:iWarehouse_GetWarehouseDetailByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseMaster" message="tns:iWarehouse_SaveWarehouseMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseMasterResponse" message="tns:iWarehouse_SaveWarehouseMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseAddress" message="tns:iWarehouse_SaveWarehouseAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseAddressResponse" message="tns:iWarehouse_SaveWarehouseAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseAddress" message="tns:iWarehouse_GetWarehouseAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseAddressResponse" message="tns:iWarehouse_GetWarehouseAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseMasterByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseMasterByID" message="tns:iWarehouse_GetWarehouseMasterByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseMasterByIDResponse" message="tns:iWarehouse_GetWarehouseMasterByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocation" message="tns:iWarehouse_GetWarehouseLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocationResponse" message="tns:iWarehouse_GetWarehouseLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocationByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocationByID" message="tns:iWarehouse_GetWarehouseLocationByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocationByIDResponse" message="tns:iWarehouse_GetWarehouseLocationByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseBuilding" message="tns:iWarehouse_GetWarehouseBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseBuildingResponse" message="tns:iWarehouse_GetWarehouseBuilding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWareBuildingByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWareBuildingByID" message="tns:iWarehouse_GetWareBuildingByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWareBuildingByIDResponse" message="tns:iWarehouse_GetWareBuildingByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWareBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWareBuilding" message="tns:iWarehouse_SaveWareBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWareBuildingResponse" message="tns:iWarehouse_SaveWareBuilding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseFloar">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseFloar" message="tns:iWarehouse_GetWarehouseFloar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseFloarResponse" message="tns:iWarehouse_GetWarehouseFloar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseFloarbyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseFloarbyID" message="tns:iWarehouse_GetWarehouseFloarbyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseFloarbyIDResponse" message="tns:iWarehouse_GetWarehouseFloarbyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseFloar">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseFloar" message="tns:iWarehouse_SaveWarehouseFloar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseFloarResponse" message="tns:iWarehouse_SaveWarehouseFloar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousePassage">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousePassage" message="tns:iWarehouse_GetWarehousePassage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousePassageResponse" message="tns:iWarehouse_GetWarehousePassage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousePassageByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousePassageByID" message="tns:iWarehouse_GetWarehousePassageByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousePassageByIDResponse" message="tns:iWarehouse_GetWarehousePassageByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehousePassage">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehousePassage" message="tns:iWarehouse_SaveWarehousePassage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehousePassageResponse" message="tns:iWarehouse_SaveWarehousePassage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseSection" message="tns:iWarehouse_GetWarehouseSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseSectionResponse" message="tns:iWarehouse_GetWarehouseSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseSectionByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseSectionByID" message="tns:iWarehouse_GetWarehouseSectionByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseSectionByIDResponse" message="tns:iWarehouse_GetWarehouseSectionByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseSection" message="tns:iWarehouse_SaveWarehouseSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseSectionResponse" message="tns:iWarehouse_SaveWarehouseSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseShelf">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseShelf" message="tns:iWarehouse_GetWarehouseShelf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseShelfResponse" message="tns:iWarehouse_GetWarehouseShelf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseShelfByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseShelfByID" message="tns:iWarehouse_GetWarehouseShelfByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseShelfByIDResponse" message="tns:iWarehouse_GetWarehouseShelfByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseShelf">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseShelf" message="tns:iWarehouse_SaveWarehouseShelf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseShelfResponse" message="tns:iWarehouse_SaveWarehouseShelf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetLocationType" message="tns:iWarehouse_GetLocationType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetLocationTypeResponse" message="tns:iWarehouse_GetLocationType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCapacityIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetCapacityIn" message="tns:iWarehouse_GetCapacityIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetCapacityInResponse" message="tns:iWarehouse_GetCapacityIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseLocation" message="tns:iWarehouse_SaveWarehouseLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveWarehouseLocationResponse" message="tns:iWarehouse_SaveWarehouseLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateLocation" message="tns:iWarehouse_CheckDuplicateLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateLocationResponse" message="tns:iWarehouse_CheckDuplicateLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateSortCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateSortCode" message="tns:iWarehouse_CheckDuplicateSortCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateSortCodeResponse" message="tns:iWarehouse_CheckDuplicateSortCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocByID" message="tns:iWarehouse_GetWarehouseLocByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehouseLocByIDResponse" message="tns:iWarehouse_GetWarehouseLocByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousebyUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousebyUserID" message="tns:iWarehouse_GetWarehousebyUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetWarehousebyUserIDResponse" message="tns:iWarehouse_GetWarehousebyUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRecordInSkuTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/AddRecordInSkuTransaction" message="tns:iWarehouse_AddRecordInSkuTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/AddRecordInSkuTransactionResponse" message="tns:iWarehouse_AddRecordInSkuTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateBuilding" message="tns:iWarehouse_CheckDuplicateBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateBuildingResponse" message="tns:iWarehouse_CheckDuplicateBuilding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateFloar">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateFloar" message="tns:iWarehouse_CheckDuplicateFloar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateFloarResponse" message="tns:iWarehouse_CheckDuplicateFloar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicatePassage">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicatePassage" message="tns:iWarehouse_CheckDuplicatePassage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicatePassageResponse" message="tns:iWarehouse_CheckDuplicatePassage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateSection" message="tns:iWarehouse_CheckDuplicateSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateSectionResponse" message="tns:iWarehouse_CheckDuplicateSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateShelf">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateShelf" message="tns:iWarehouse_CheckDuplicateShelf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/CheckDuplicateShelfResponse" message="tns:iWarehouse_CheckDuplicateShelf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemptablevalue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetTemptablevalue" message="tns:iWarehouse_GetTemptablevalue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetTemptablevalueResponse" message="tns:iWarehouse_GetTemptablevalue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/GetZoneLocation" message="tns:iWarehouse_GetZoneLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/GetZoneLocationResponse" message="tns:iWarehouse_GetZoneLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveZoneLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iWarehouse/SaveZoneLocation" message="tns:iWarehouse_SaveZoneLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iWarehouse/SaveZoneLocationResponse" message="tns:iWarehouse_SaveZoneLocation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iWarehouse" type="tns:iWarehouse">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetWarehouseList">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseDetailByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseDetailByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseMaster">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseAddress">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseAddress">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseMasterByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseMasterByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocation">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocationByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseLocationByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseBuilding">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseBuilding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWareBuildingByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWareBuildingByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWareBuilding">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWareBuilding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseFloar">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseFloar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseFloarbyID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseFloarbyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseFloar">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseFloar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousePassage">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehousePassage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousePassageByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehousePassageByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehousePassage">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehousePassage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseSection">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseSectionByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseSectionByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseSection">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseShelf">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseShelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseShelfByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseShelfByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseShelf">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseShelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationType">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetLocationType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCapacityIn">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetCapacityIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWarehouseLocation">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveWarehouseLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateLocation">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateSortCode">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateSortCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseLocByID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehouseLocByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehousebyUserID">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetWarehousebyUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRecordInSkuTransaction">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/AddRecordInSkuTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateBuilding">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateBuilding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateFloar">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateFloar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicatePassage">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicatePassage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateSection">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateShelf">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/CheckDuplicateShelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemptablevalue">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetTemptablevalue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneLocation">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/GetZoneLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveZoneLocation">
+      <soap:operation soapAction="http://tempuri.org/iWarehouse/SaveZoneLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Warehouse">
+    <wsdl:port name="BasicHttpBinding_iWarehouse" binding="tns:BasicHttpBinding_iWarehouse">
+      <soap:address location="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/Warehouse.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

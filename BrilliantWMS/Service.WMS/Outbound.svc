@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.WMS.Outbound" CodeBehind="Outbound.svc.cs" %>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.Document" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Service.Document.pdb" publishTime="02/15/2016 10:25:16" />
+    <file relUrl="bin/Interface.Document.pdb" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Service.Document.dll" publishTime="02/15/2016 10:25:16" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="Web.config" publishTime="10/19/2015 15:40:32" />
+    <file relUrl="bin/Domain.Tempdata.pdb" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Domain.Document.pdb" publishTime="02/15/2016 10:25:07" />
+    <file relUrl="bin/Domain.Document.dll" publishTime="02/15/2016 10:25:07" />
+    <file relUrl="bin/Interface.Document.dll" publishTime="02/15/2016 10:24:54" />
+    <file relUrl="bin/Domain.Tempdata.dll" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="DocumentService.svc" publishTime="06/05/2013 17:02:59" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetDocumentByReferenceId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="BaseObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TargetObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="LoginID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDocumentByReferenceIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDocumentByReferenceIdResult" type="tns:ArrayOfSP_GetDocumentList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetDocumentList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetDocumentList_Result" nillable="true" type="tns:SP_GetDocumentList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetDocumentList_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentDownloadPath" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentSavePath" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FileType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Keywords" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AccessTo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ViewAccess" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DowloadAccess" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeleteAccess" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ViewAccess_Value" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DowloadAccess_Value" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DeleteAccess_Value" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerHeadID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentType" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:element name="ClearTempData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="FinalSaveToDBtDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TargetObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="HttpAppPath" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveToDBtDocumentResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="InsertIntoTemp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="newDocument" type="tns:SP_GetDocumentList_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="UserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TargetObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIntoTempResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="InsertIntoTempResult" type="tns:ArrayOfSP_GetDocumentList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckDuplicateDocumentTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="DocumentTitle" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentFormID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckDuplicateDocumentTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CheckDuplicateDocumentTitleResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDocumentFormTemp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DeletedSeq" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraTargetObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDocumentFormTempResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="DeleteDocumentFormTempResult" type="tns:ArrayOfSP_GetDocumentList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExistingTempDataBySessionIDObjectNameToRebind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExistingTempDataBySessionIDObjectNameToRebindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetExistingTempDataBySessionIDObjectNameToRebindResult" type="tns:ArrayOfSP_GetDocumentList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocumentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocumentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDocumentListResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveDocumentType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="DocType" type="tns:mDocumentType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="mDocumentType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentType" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreatedBy" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveDocumentTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SaveDocumentTypeResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocumentTypebyID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DocTypeID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDocumentTypebyIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDocumentTypebyIDResult" type="tns:mDocumentType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

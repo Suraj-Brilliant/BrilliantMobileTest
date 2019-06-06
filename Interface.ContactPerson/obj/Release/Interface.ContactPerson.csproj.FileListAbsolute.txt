@@ -1,0 +1,35 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Release\Interface.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Release\Interface.ContactPerson.pdb

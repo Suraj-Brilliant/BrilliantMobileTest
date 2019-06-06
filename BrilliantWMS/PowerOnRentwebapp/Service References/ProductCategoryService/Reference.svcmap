@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="242a6dd6-9d12-40df-9733-98572c279ef6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Product/ProductCategoryService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProductCategoryService.disco" MetadataType="Disco" ID="66494d23-3803-4596-a438-f2f78f3af42b" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/ProductCategoryService.svc?disco" />
+    <MetadataFile FileName="ProductCategoryService.xsd" MetadataType="Schema" ID="d4acdc73-a795-4c66-988c-b06df32483bb" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/ProductCategoryService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProductCategoryService.wsdl" MetadataType="Wsdl" ID="3060aa1f-b15a-4d5f-be54-2fa7234692e9" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/ProductCategoryService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

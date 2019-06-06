@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\bisplservices\Service.ContactPerson" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="11/08/2014 17:38:42" />
+    <file relUrl="bin/Domain.ContactPerson.dll" publishTime="01/03/2015 11:22:02" />
+    <file relUrl="bin/Domain.Tempdata.pdb" publishTime="01/03/2015 11:21:24" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="01/03/2015 11:19:46" />
+    <file relUrl="ContactPersonInfo.svc" publishTime="07/17/2013 12:11:02" />
+    <file relUrl="bin/Domain.Tempdata.dll" publishTime="01/03/2015 11:21:24" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="01/03/2015 11:19:46" />
+    <file relUrl="bin/Service.ContactPerson.dll" publishTime="01/03/2015 11:24:12" />
+    <file relUrl="bin/Domain.ContactPerson.pdb" publishTime="01/03/2015 11:22:02" />
+    <file relUrl="ContactTypeService.svc" publishTime="07/17/2013 12:11:02" />
+    <file relUrl="bin/Interface.ContactPerson.dll" publishTime="01/03/2015 11:19:59" />
+    <file relUrl="bin/Service.ContactPerson.pdb" publishTime="01/03/2015 11:24:12" />
+    <file relUrl="ContactPerson.svc" publishTime="07/17/2013 12:11:02" />
+    <file relUrl="bin/Interface.ContactPerson.pdb" publishTime="01/03/2015 11:19:59" />
+  </publishProfile>
+</publishData>

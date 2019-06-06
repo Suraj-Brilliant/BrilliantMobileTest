@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GWCQADataSetOrderDetailsWithApproval" targetNamespace="http://tempuri.org/GWCQADataSetOrderDetailsWithApproval.xsd" xmlns:mstns="http://tempuri.org/GWCQADataSetOrderDetailsWithApproval.xsd" xmlns="http://tempuri.org/GWCQADataSetOrderDetailsWithApproval.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ApplicationServices" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApplicationServices (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ApplicationServices.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_GetOrderDetailsTableAdapter" GeneratorDataComponentClassName="VW_GetOrderDetailsTableAdapter" Name="VW_GetOrderDetails" UserDataComponentName="VW_GetOrderDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ApplicationServices (Web.config)" DbObjectName="GWCQA.dbo.VW_GetOrderDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, OrderHeadId, OrderNumber, Orderdate, Title, StatusID, Remark, AddressId, ContactId1, ContactId2, Prod_Code, Prod_Name, Prod_Description, SkuId, OrderQty, Status, AddressLine1, C1Name, C1Mobile, C2Name, C2mobile, RequestBy, UserName, StoreId, Territory, ParentID, CompanyName, StoreCode, Deliverydate, ApprovalId, ApproverName, StatusName, ApprovedDate, ApprovalRemark, DeligateTo, DispatchDate, CompletedDate, CancelDate, WMSRemark, ApprovalDate FROM dbo.VW_GetOrderDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="OrderHeadId" DataSetColumn="OrderHeadId" />
+              <Mapping SourceColumn="OrderNumber" DataSetColumn="OrderNumber" />
+              <Mapping SourceColumn="Orderdate" DataSetColumn="Orderdate" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="StatusID" DataSetColumn="StatusID" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="AddressId" DataSetColumn="AddressId" />
+              <Mapping SourceColumn="ContactId1" DataSetColumn="ContactId1" />
+              <Mapping SourceColumn="ContactId2" DataSetColumn="ContactId2" />
+              <Mapping SourceColumn="Prod_Code" DataSetColumn="Prod_Code" />
+              <Mapping SourceColumn="Prod_Name" DataSetColumn="Prod_Name" />
+              <Mapping SourceColumn="Prod_Description" DataSetColumn="Prod_Description" />
+              <Mapping SourceColumn="SkuId" DataSetColumn="SkuId" />
+              <Mapping SourceColumn="OrderQty" DataSetColumn="OrderQty" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="AddressLine1" DataSetColumn="AddressLine1" />
+              <Mapping SourceColumn="C1Name" DataSetColumn="C1Name" />
+              <Mapping SourceColumn="C1Mobile" DataSetColumn="C1Mobile" />
+              <Mapping SourceColumn="C2Name" DataSetColumn="C2Name" />
+              <Mapping SourceColumn="C2mobile" DataSetColumn="C2mobile" />
+              <Mapping SourceColumn="RequestBy" DataSetColumn="RequestBy" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="StoreId" DataSetColumn="StoreId" />
+              <Mapping SourceColumn="Territory" DataSetColumn="Territory" />
+              <Mapping SourceColumn="ParentID" DataSetColumn="ParentID" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="StoreCode" DataSetColumn="StoreCode" />
+              <Mapping SourceColumn="Deliverydate" DataSetColumn="Deliverydate" />
+              <Mapping SourceColumn="ApprovalId" DataSetColumn="ApprovalId" />
+              <Mapping SourceColumn="ApproverName" DataSetColumn="ApproverName" />
+              <Mapping SourceColumn="StatusName" DataSetColumn="StatusName" />
+              <Mapping SourceColumn="ApprovedDate" DataSetColumn="ApprovedDate" />
+              <Mapping SourceColumn="ApprovalRemark" DataSetColumn="ApprovalRemark" />
+              <Mapping SourceColumn="DeligateTo" DataSetColumn="DeligateTo" />
+              <Mapping SourceColumn="DispatchDate" DataSetColumn="DispatchDate" />
+              <Mapping SourceColumn="CompletedDate" DataSetColumn="CompletedDate" />
+              <Mapping SourceColumn="CancelDate" DataSetColumn="CancelDate" />
+              <Mapping SourceColumn="WMSRemark" DataSetColumn="WMSRemark" />
+              <Mapping SourceColumn="ApprovalDate" DataSetColumn="ApprovalDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GWCQADataSetOrderDetailsWithApproval" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GWCQADataSetOrderDetailsWithApproval" msprop:Generator_UserDSName="GWCQADataSetOrderDetailsWithApproval">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_GetOrderDetails" msprop:Generator_TableClassName="VW_GetOrderDetailsDataTable" msprop:Generator_TableVarName="tableVW_GetOrderDetails" msprop:Generator_TablePropName="VW_GetOrderDetails" msprop:Generator_RowDeletingName="VW_GetOrderDetailsRowDeleting" msprop:Generator_UserTableName="VW_GetOrderDetails" msprop:Generator_RowChangingName="VW_GetOrderDetailsRowChanging" msprop:Generator_RowEvHandlerName="VW_GetOrderDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_GetOrderDetailsRowDeleted" msprop:Generator_RowEvArgName="VW_GetOrderDetailsRowChangeEvent" msprop:Generator_RowChangedName="VW_GetOrderDetailsRowChanged" msprop:Generator_RowClassName="VW_GetOrderDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="OrderHeadId" msprop:Generator_ColumnVarNameInTable="columnOrderHeadId" msprop:Generator_ColumnPropNameInRow="OrderHeadId" msprop:Generator_ColumnPropNameInTable="OrderHeadIdColumn" msprop:Generator_UserColumnName="OrderHeadId" type="xs:long" />
+              <xs:element name="OrderNumber" msprop:Generator_ColumnVarNameInTable="columnOrderNumber" msprop:Generator_ColumnPropNameInRow="OrderNumber" msprop:Generator_ColumnPropNameInTable="OrderNumberColumn" msprop:Generator_UserColumnName="OrderNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Orderdate" msprop:Generator_ColumnVarNameInTable="columnOrderdate" msprop:Generator_ColumnPropNameInRow="Orderdate" msprop:Generator_ColumnPropNameInTable="OrderdateColumn" msprop:Generator_UserColumnName="Orderdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatusID" msprop:Generator_ColumnVarNameInTable="columnStatusID" msprop:Generator_ColumnPropNameInRow="StatusID" msprop:Generator_ColumnPropNameInTable="StatusIDColumn" msprop:Generator_UserColumnName="StatusID" type="xs:long" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AddressId" msprop:Generator_ColumnVarNameInTable="columnAddressId" msprop:Generator_ColumnPropNameInRow="AddressId" msprop:Generator_ColumnPropNameInTable="AddressIdColumn" msprop:Generator_UserColumnName="AddressId" type="xs:long" minOccurs="0" />
+              <xs:element name="ContactId1" msprop:Generator_ColumnVarNameInTable="columnContactId1" msprop:Generator_ColumnPropNameInRow="ContactId1" msprop:Generator_ColumnPropNameInTable="ContactId1Column" msprop:Generator_UserColumnName="ContactId1" type="xs:long" minOccurs="0" />
+              <xs:element name="ContactId2" msprop:Generator_ColumnVarNameInTable="columnContactId2" msprop:Generator_ColumnPropNameInRow="ContactId2" msprop:Generator_ColumnPropNameInTable="ContactId2Column" msprop:Generator_UserColumnName="ContactId2" type="xs:long" minOccurs="0" />
+              <xs:element name="Prod_Code" msprop:Generator_ColumnVarNameInTable="columnProd_Code" msprop:Generator_ColumnPropNameInRow="Prod_Code" msprop:Generator_ColumnPropNameInTable="Prod_CodeColumn" msprop:Generator_UserColumnName="Prod_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_Name" msprop:Generator_ColumnVarNameInTable="columnProd_Name" msprop:Generator_ColumnPropNameInRow="Prod_Name" msprop:Generator_ColumnPropNameInTable="Prod_NameColumn" msprop:Generator_UserColumnName="Prod_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_Description" msprop:Generator_ColumnVarNameInTable="columnProd_Description" msprop:Generator_ColumnPropNameInRow="Prod_Description" msprop:Generator_ColumnPropNameInTable="Prod_DescriptionColumn" msprop:Generator_UserColumnName="Prod_Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SkuId" msprop:Generator_ColumnVarNameInTable="columnSkuId" msprop:Generator_ColumnPropNameInRow="SkuId" msprop:Generator_ColumnPropNameInTable="SkuIdColumn" msprop:Generator_UserColumnName="SkuId" type="xs:long" minOccurs="0" />
+              <xs:element name="OrderQty" msprop:Generator_ColumnVarNameInTable="columnOrderQty" msprop:Generator_ColumnPropNameInRow="OrderQty" msprop:Generator_ColumnPropNameInTable="OrderQtyColumn" msprop:Generator_UserColumnName="OrderQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AddressLine1" msprop:Generator_ColumnVarNameInTable="columnAddressLine1" msprop:Generator_ColumnPropNameInRow="AddressLine1" msprop:Generator_ColumnPropNameInTable="AddressLine1Column" msprop:Generator_UserColumnName="AddressLine1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C1Name" msprop:Generator_ColumnVarNameInTable="columnC1Name" msprop:Generator_ColumnPropNameInRow="C1Name" msprop:Generator_ColumnPropNameInTable="C1NameColumn" msprop:Generator_UserColumnName="C1Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C1Mobile" msprop:Generator_ColumnVarNameInTable="columnC1Mobile" msprop:Generator_ColumnPropNameInRow="C1Mobile" msprop:Generator_ColumnPropNameInTable="C1MobileColumn" msprop:Generator_UserColumnName="C1Mobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C2Name" msprop:Generator_ColumnVarNameInTable="columnC2Name" msprop:Generator_ColumnPropNameInRow="C2Name" msprop:Generator_ColumnPropNameInTable="C2NameColumn" msprop:Generator_UserColumnName="C2Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C2mobile" msprop:Generator_ColumnVarNameInTable="columnC2mobile" msprop:Generator_ColumnPropNameInRow="C2mobile" msprop:Generator_ColumnPropNameInTable="C2mobileColumn" msprop:Generator_UserColumnName="C2mobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RequestBy" msprop:Generator_ColumnVarNameInTable="columnRequestBy" msprop:Generator_ColumnPropNameInRow="RequestBy" msprop:Generator_ColumnPropNameInTable="RequestByColumn" msprop:Generator_UserColumnName="RequestBy" type="xs:long" minOccurs="0" />
+              <xs:element name="UserName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StoreId" msprop:Generator_ColumnVarNameInTable="columnStoreId" msprop:Generator_ColumnPropNameInRow="StoreId" msprop:Generator_ColumnPropNameInTable="StoreIdColumn" msprop:Generator_UserColumnName="StoreId" type="xs:long" minOccurs="0" />
+              <xs:element name="Territory" msprop:Generator_ColumnVarNameInTable="columnTerritory" msprop:Generator_ColumnPropNameInRow="Territory" msprop:Generator_ColumnPropNameInTable="TerritoryColumn" msprop:Generator_UserColumnName="Territory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentID" msprop:Generator_ColumnVarNameInTable="columnParentID" msprop:Generator_ColumnPropNameInRow="ParentID" msprop:Generator_ColumnPropNameInTable="ParentIDColumn" msprop:Generator_UserColumnName="ParentID" type="xs:long" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StoreCode" msprop:Generator_ColumnVarNameInTable="columnStoreCode" msprop:Generator_ColumnPropNameInRow="StoreCode" msprop:Generator_ColumnPropNameInTable="StoreCodeColumn" msprop:Generator_UserColumnName="StoreCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deliverydate" msprop:Generator_ColumnVarNameInTable="columnDeliverydate" msprop:Generator_ColumnPropNameInRow="Deliverydate" msprop:Generator_ColumnPropNameInTable="DeliverydateColumn" msprop:Generator_UserColumnName="Deliverydate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ApprovalId" msprop:Generator_ColumnVarNameInTable="columnApprovalId" msprop:Generator_ColumnPropNameInRow="ApprovalId" msprop:Generator_ColumnPropNameInTable="ApprovalIdColumn" msprop:Generator_UserColumnName="ApprovalId" type="xs:long" minOccurs="0" />
+              <xs:element name="ApproverName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnApproverName" msprop:Generator_ColumnPropNameInRow="ApproverName" msprop:Generator_ColumnPropNameInTable="ApproverNameColumn" msprop:Generator_UserColumnName="ApproverName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatusName" msprop:Generator_ColumnVarNameInTable="columnStatusName" msprop:Generator_ColumnPropNameInRow="StatusName" msprop:Generator_ColumnPropNameInTable="StatusNameColumn" msprop:Generator_UserColumnName="StatusName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovedDate" msprop:Generator_ColumnVarNameInTable="columnApprovedDate" msprop:Generator_ColumnPropNameInRow="ApprovedDate" msprop:Generator_ColumnPropNameInTable="ApprovedDateColumn" msprop:Generator_UserColumnName="ApprovedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ApprovalRemark" msprop:Generator_ColumnVarNameInTable="columnApprovalRemark" msprop:Generator_ColumnPropNameInRow="ApprovalRemark" msprop:Generator_ColumnPropNameInTable="ApprovalRemarkColumn" msprop:Generator_UserColumnName="ApprovalRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeligateTo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDeligateTo" msprop:Generator_ColumnPropNameInRow="DeligateTo" msprop:Generator_ColumnPropNameInTable="DeligateToColumn" msprop:Generator_UserColumnName="DeligateTo" type="xs:long" minOccurs="0" />
+              <xs:element name="DispatchDate" msprop:Generator_ColumnVarNameInTable="columnDispatchDate" msprop:Generator_ColumnPropNameInRow="DispatchDate" msprop:Generator_ColumnPropNameInTable="DispatchDateColumn" msprop:Generator_UserColumnName="DispatchDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompletedDate" msprop:Generator_ColumnVarNameInTable="columnCompletedDate" msprop:Generator_ColumnPropNameInRow="CompletedDate" msprop:Generator_ColumnPropNameInTable="CompletedDateColumn" msprop:Generator_UserColumnName="CompletedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CancelDate" msprop:Generator_ColumnVarNameInTable="columnCancelDate" msprop:Generator_ColumnPropNameInRow="CancelDate" msprop:Generator_ColumnPropNameInTable="CancelDateColumn" msprop:Generator_UserColumnName="CancelDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WMSRemark" msprop:Generator_ColumnVarNameInTable="columnWMSRemark" msprop:Generator_ColumnPropNameInRow="WMSRemark" msprop:Generator_ColumnPropNameInTable="WMSRemarkColumn" msprop:Generator_UserColumnName="WMSRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovalDate" msprop:Generator_ColumnVarNameInTable="columnApprovalDate" msprop:Generator_ColumnPropNameInRow="ApprovalDate" msprop:Generator_ColumnPropNameInTable="ApprovalDateColumn" msprop:Generator_UserColumnName="ApprovalDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_GetOrderDetails" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

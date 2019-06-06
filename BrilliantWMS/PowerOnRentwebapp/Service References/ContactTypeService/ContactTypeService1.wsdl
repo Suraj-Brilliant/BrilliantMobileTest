@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ContactTypeService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.ContactPerson/ContactTypeService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeList" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_InsertmContactType_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmContactType" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_InsertmContactType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmContactTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_UpdatemContactType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatemContactType" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_UpdatemContactType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatemContactTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeListByID" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeToBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeToBind" />
+  </wsdl:message>
+  <wsdl:message name="iContactTypeMaster_GetContactTypeToBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactTypeToBindResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iContactTypeMaster">
+    <wsdl:operation name="GetContactTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeList" message="tns:iContactTypeMaster_GetContactTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeListResponse" message="tns:iContactTypeMaster_GetContactTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmContactType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/InsertmContactType" message="tns:iContactTypeMaster_InsertmContactType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/InsertmContactTypeResponse" message="tns:iContactTypeMaster_InsertmContactType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatemContactType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/UpdatemContactType" message="tns:iContactTypeMaster_UpdatemContactType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/UpdatemContactTypeResponse" message="tns:iContactTypeMaster_UpdatemContactType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactTypeListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeListByID" message="tns:iContactTypeMaster_GetContactTypeListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeListByIDResponse" message="tns:iContactTypeMaster_GetContactTypeListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/checkDuplicateRecord" message="tns:iContactTypeMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/checkDuplicateRecordResponse" message="tns:iContactTypeMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/checkDuplicateRecordEdit" message="tns:iContactTypeMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/checkDuplicateRecordEditResponse" message="tns:iContactTypeMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactTypeToBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeToBind" message="tns:iContactTypeMaster_GetContactTypeToBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iContactTypeMaster/GetContactTypeToBindResponse" message="tns:iContactTypeMaster_GetContactTypeToBind_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iContactTypeMaster" type="tns:iContactTypeMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetContactTypeList">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/GetContactTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmContactType">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/InsertmContactType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatemContactType">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/UpdatemContactType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactTypeListByID">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/GetContactTypeListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactTypeToBind">
+      <soap:operation soapAction="http://tempuri.org/iContactTypeMaster/GetContactTypeToBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContactTypeService">
+    <wsdl:port name="BasicHttpBinding_iContactTypeMaster" binding="tns:BasicHttpBinding_iContactTypeMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.ContactPerson/ContactTypeService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,63 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BWMS\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.UserManagement.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\bin\Release\Interface.UserManagement.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.UserManagement\obj\Release\Domain.UserManagement.pdb

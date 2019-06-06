@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="65f67a9f-6b70-48c8-829d-e4ac517e2a4f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartIssue.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicePartIssue.disco" MetadataType="Disco" ID="66750069-fdfb-4901-a306-373c1cdee389" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartIssue.svc?disco" />
+    <MetadataFile FileName="ServicePartIssue.xsd" MetadataType="Schema" ID="d08a43b7-5882-48ab-966c-3b7fe7f7f6a5" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartIssue.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicePartIssue.wsdl" MetadataType="Wsdl" ID="d2da409b-af5d-493b-92f7-9fdc25ebbc22" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.PowerOnRent/ServicePartIssue.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

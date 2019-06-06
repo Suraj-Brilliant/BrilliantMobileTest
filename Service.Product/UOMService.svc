@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.Product.UOMService" CodeBehind="UOMService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory"%>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DesignationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.UserManagement/DesignationService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iDesignationMaster_GetDesignationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationList" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_InsertmDesignation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmDesignation" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_InsertmDesignation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmDesignationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_updatemDesignation_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemDesignation" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_updatemDesignation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemDesignationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListByID" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationRecordToBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationRecordToBind" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationRecordToBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationRecordToBindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListByDepartmentID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListByDepartmentID" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListByDepartmentID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListByDepartmentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationIDByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationIDByName" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationIDByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationIDByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListBycompanddept_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListBycompanddept" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListBycompanddept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListBycompanddeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListTOBindgrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListTOBindgrid" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationListTOBindgrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationListTOBindgridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationByDeptID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationByDeptID" />
+  </wsdl:message>
+  <wsdl:message name="iDesignationMaster_GetDesignationByDeptID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignationByDeptIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iDesignationMaster">
+    <wsdl:operation name="GetDesignationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationList" message="tns:iDesignationMaster_GetDesignationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListResponse" message="tns:iDesignationMaster_GetDesignationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmDesignation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/InsertmDesignation" message="tns:iDesignationMaster_InsertmDesignation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/InsertmDesignationResponse" message="tns:iDesignationMaster_InsertmDesignation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemDesignation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/updatemDesignation" message="tns:iDesignationMaster_updatemDesignation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/updatemDesignationResponse" message="tns:iDesignationMaster_updatemDesignation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListByID" message="tns:iDesignationMaster_GetDesignationListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListByIDResponse" message="tns:iDesignationMaster_GetDesignationListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/checkDuplicateRecord" message="tns:iDesignationMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/checkDuplicateRecordResponse" message="tns:iDesignationMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/checkDuplicateRecordEdit" message="tns:iDesignationMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/checkDuplicateRecordEditResponse" message="tns:iDesignationMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationRecordToBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationRecordToBind" message="tns:iDesignationMaster_GetDesignationRecordToBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationRecordToBindResponse" message="tns:iDesignationMaster_GetDesignationRecordToBind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListByDepartmentID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListByDepartmentID" message="tns:iDesignationMaster_GetDesignationListByDepartmentID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListByDepartmentIDResponse" message="tns:iDesignationMaster_GetDesignationListByDepartmentID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationIDByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationIDByName" message="tns:iDesignationMaster_GetDesignationIDByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationIDByNameResponse" message="tns:iDesignationMaster_GetDesignationIDByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListBycompanddept">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListBycompanddept" message="tns:iDesignationMaster_GetDesignationListBycompanddept_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListBycompanddeptResponse" message="tns:iDesignationMaster_GetDesignationListBycompanddept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListTOBindgrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListTOBindgrid" message="tns:iDesignationMaster_GetDesignationListTOBindgrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationListTOBindgridResponse" message="tns:iDesignationMaster_GetDesignationListTOBindgrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationByDeptID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationByDeptID" message="tns:iDesignationMaster_GetDesignationByDeptID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDesignationMaster/GetDesignationByDeptIDResponse" message="tns:iDesignationMaster_GetDesignationByDeptID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iDesignationMaster" type="tns:iDesignationMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDesignationList">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmDesignation">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/InsertmDesignation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemDesignation">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/updatemDesignation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListByID">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationRecordToBind">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationRecordToBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListByDepartmentID">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationListByDepartmentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationIDByName">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationIDByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListBycompanddept">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationListBycompanddept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationListTOBindgrid">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationListTOBindgrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationByDeptID">
+      <soap:operation soapAction="http://tempuri.org/iDesignationMaster/GetDesignationByDeptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DesignationService">
+    <wsdl:port name="BasicHttpBinding_iDesignationMaster" binding="tns:BasicHttpBinding_iDesignationMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.UserManagement/DesignationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\bin\Debug\Interface.AddToCart.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.AddToCart\obj\Debug\Interface.AddToCart.pdb

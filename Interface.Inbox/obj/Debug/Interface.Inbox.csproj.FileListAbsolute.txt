@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\bin\Debug\Interface.Inbox.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Inbox\obj\Debug\Interface.Inbox.pdb

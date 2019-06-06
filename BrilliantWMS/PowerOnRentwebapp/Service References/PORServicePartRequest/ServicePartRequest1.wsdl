@@ -1,0 +1,1709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePartRequest" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartRequest.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iPartRequest_GetRequestHeadByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHeadByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestHeadByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHeadByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntoPartRequestHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoPartRequestHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntoPartRequestHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoPartRequestHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatusListForRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForRequest" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatusListForRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestPartDetailByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestPartDetailByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDBNEW_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEW" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDBNEW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddPartIntoRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddPartIntoRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemovePartFromRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemovePartFromRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData1_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1Response" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSaveRequestPartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRequestPartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSaveRequestPartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRequestPartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserIDIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserIDIssue" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserIDIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserIDIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayBySiteIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayBySiteIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayBySiteIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayBySiteIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByRequestIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByRequestIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByRequestIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByRequestIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SaveApprovalStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalStatus" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SaveApprovalStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsByReqestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsByReqestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsByReqestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsByReqestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsSuperAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsSuperAdmin" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsSuperAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsSuperAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsAdmin" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsBind" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateDetailsBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateDetailsBindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetGetInterfaceDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetInterfaceDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetGetInterfaceDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetInterfaceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetGetMessageDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetGetMessageDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsNew" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsAllApproved_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsAllApproved" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsAllApproved_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsAllApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetUOMofSelectedProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMofSelectedProduct" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetUOMofSelectedProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMofSelectedProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayOfUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayOfUser" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayOfUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayOfUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayOfUserIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayOfUserIssue" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayOfUserIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayOfUserIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntotOrderHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotOrderHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntotOrderHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotOrderHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderHeadByOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderHeadByOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_InsertIntomRequestTemplateHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntomRequestTemplateHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_InsertIntomRequestTemplateHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntomRequestTemplateHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSavemRequestTemplateDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavemRequestTemplateDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSavemRequestTemplateDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavemRequestTemplateDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSavemRequestTemplateDetailTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavemRequestTemplateDetailTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSavemRequestTemplateDetailTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavemRequestTemplateDetailTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateOrderHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateOrderHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplateOrderHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplateOrderHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplatePartLstByTemplateID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplatePartLstByTemplateID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTemplatePartLstByTemplateID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTemplatePartLstByTemplateIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatetApprovalTransAfterApproval_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatetApprovalTransAfterApproval" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatetApprovalTransAfterApproval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatetApprovalTransAfterApprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatetApprovalTransAfterReject_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatetApprovalTransAfterReject" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatetApprovalTransAfterReject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatetApprovalTransAfterRejectResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetApproverDataafterSave_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetApproverDataafterSave" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetApproverDataafterSave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetApproverDataafterSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPreviousStatusID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviousStatusID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPreviousStatusID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviousStatusIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsNewAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsNewAdmin" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsNewAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsNewAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_InsertIntotCorrespond_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntotCorrespond" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_InsertIntotCorrespond_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntotCorrespondResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCorrespondance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondance" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCorrespondance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCorrespondanceDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondanceDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCorrespondanceDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondanceDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetBomDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBomDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetBomDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBomDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedUom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUom" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedUom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUomResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedUomTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUomTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedUomTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUomTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GridRowCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GridRowCount" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GridRowCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GridRowCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GridRowsTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GridRowsTemplate" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GridRowsTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GridRowsTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ChkTemplateTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChkTemplateTitle" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ChkTemplateTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChkTemplateTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderDeliveryDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDeliveryDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderDeliveryDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDeliveryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDispatchedOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchedOrders" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDispatchedOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDriverDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriverDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDriverDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriverDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AssignSelectedDriver_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSelectedDriver" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AssignSelectedDriver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSelectedDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDeptWisePaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptWisePaymentMethod" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDeptWisePaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptWisePaymentMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPaymentMethodFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethodFields" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPaymentMethodFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethodFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPMFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPMFields" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPMFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPMFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GEtDeptPaymentmethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GEtDeptPaymentmethod" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GEtDeptPaymentmethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GEtDeptPaymentmethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData12_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData12_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12Response" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTotalFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTotalFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTotalQTYFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetTotalQTYFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetMaxDeliveryDaysofDept_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxDeliveryDaysofDept" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetMaxDeliveryDaysofDept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxDeliveryDaysofDeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetMandatoryFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMandatoryFields" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetMandatoryFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMandatoryFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatutoryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatutoryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddIntotStatutory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotStatutory" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddIntotStatutory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotStatutoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDeptPriceChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptPriceChange" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetDeptPriceChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptPriceChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetNewOrderNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewOrderNo" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetNewOrderNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewOrderNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdateStatutoryDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatutoryDetails" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdateStatutoryDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatutoryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsPriceChanged_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceChanged" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsPriceChanged_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceChangedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetSelectedCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetAddedAdditionalFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedAdditionalFields" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetAddedAdditionalFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedAdditionalFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPartAccessofUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartAccessofUser" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetPartAccessofUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartAccessofUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetProductOfOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductOfOrder" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetProductOfOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductOfOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderProductAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderProductAccess" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderProductAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderProductAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsPriceEditYN_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceEditYN" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsPriceEditYN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceEditYNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsSkuChangeYN_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsSkuChangeYN" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_IsSkuChangeYN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsSkuChangeYNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetQtyofSelectedUOM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQtyofSelectedUOM" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetQtyofSelectedUOM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQtyofSelectedUOMResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdateOrderQtyTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderQtyTotal" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdateOrderQtyTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderQtyTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderHeadByOrderIDQTYTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDQTYTotal" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetOrderHeadByOrderIDQTYTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDQTYTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_CancelSelectedOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSelectedOrder" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_CancelSelectedOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSelectedOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetUOMName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMName" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetUOMName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCostCenterApproverID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterApproverID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetCostCenterApproverID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterApproverIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetFilteredDriverList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredDriverList" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetFilteredDriverList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredDriverListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetInvoiceNoofOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceNoofOrder" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetInvoiceNoofOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceNoofOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemoveFromTStatutory_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFromTStatutory" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemoveFromTStatutory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFromTStatutoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_EmailSendWhenRequestSubmit_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmailSendWhenRequestSubmit" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_EmailSendWhenRequestSubmit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmailSendWhenRequestSubmitResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_EmailSendofApproved_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmailSendofApproved" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_EmailSendofApproved_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmailSendofApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApproverDepartmentWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverDepartmentWise" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApproverDepartmentWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverDepartmentWiseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iPartRequest">
+    <wsdl:operation name="GetRequestHeadByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestHeadByRequestID" message="tns:iPartRequest_GetRequestHeadByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestHeadByRequestIDResponse" message="tns:iPartRequest_GetRequestHeadByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoPartRequestHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SetIntoPartRequestHead" message="tns:iPartRequest_SetIntoPartRequestHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SetIntoPartRequestHeadResponse" message="tns:iPartRequest_SetIntoPartRequestHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetStatusListForRequest" message="tns:iPartRequest_GetStatusListForRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetStatusListForRequestResponse" message="tns:iPartRequest_GetStatusListForRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestID" message="tns:iPartRequest_GetRequestPartDetailByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestIDResponse" message="tns:iPartRequest_GetRequestPartDetailByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDB" message="tns:iPartRequest_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDBResponse" message="tns:iPartRequest_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEW">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDBNEW" message="tns:iPartRequest_ClearTempDataFromDBNEW_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDBNEWResponse" message="tns:iPartRequest_ClearTempDataFromDBNEW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectName" message="tns:iPartRequest_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iPartRequest_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempData" message="tns:iPartRequest_AddPartIntoRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempDataResponse" message="tns:iPartRequest_AddPartIntoRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempData" message="tns:iPartRequest_RemovePartFromRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempDataResponse" message="tns:iPartRequest_RemovePartFromRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData" message="tns:iPartRequest_UpdatePartRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempDataResponse" message="tns:iPartRequest_UpdatePartRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData1" message="tns:iPartRequest_UpdatePartRequest_TempData1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData1Response" message="tns:iPartRequest_UpdatePartRequest_TempData1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRequestPartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetail" message="tns:iPartRequest_FinalSaveRequestPartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetailResponse" message="tns:iPartRequest_FinalSaveRequestPartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserID" message="tns:iPartRequest_GetRequestSummayByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserIDResponse" message="tns:iPartRequest_GetRequestSummayByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserIDIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserIDIssue" message="tns:iPartRequest_GetRequestSummayByUserIDIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserIDIssueResponse" message="tns:iPartRequest_GetRequestSummayByUserIDIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayBySiteIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDs" message="tns:iPartRequest_GetRequestSummayBySiteIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDsResponse" message="tns:iPartRequest_GetRequestSummayBySiteIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByRequestIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDs" message="tns:iPartRequest_GetRequestSummayByRequestIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDsResponse" message="tns:iPartRequest_GetRequestSummayByRequestIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SaveApprovalStatus" message="tns:iPartRequest_SaveApprovalStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SaveApprovalStatusResponse" message="tns:iPartRequest_SaveApprovalStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsByReqestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestID" message="tns:iPartRequest_GetApprovalDetailsByReqestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestIDResponse" message="tns:iPartRequest_GetApprovalDetailsByReqestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetails" message="tns:iPartRequest_GetTemplateDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsResponse" message="tns:iPartRequest_GetTemplateDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsSuperAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsSuperAdmin" message="tns:iPartRequest_GetTemplateDetailsSuperAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsSuperAdminResponse" message="tns:iPartRequest_GetTemplateDetailsSuperAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsAdmin" message="tns:iPartRequest_GetTemplateDetailsAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsAdminResponse" message="tns:iPartRequest_GetTemplateDetailsAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsBind" message="tns:iPartRequest_GetTemplateDetailsBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateDetailsBindResponse" message="tns:iPartRequest_GetTemplateDetailsBind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGetInterfaceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetGetInterfaceDetails" message="tns:iPartRequest_GetGetInterfaceDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetGetInterfaceDetailsResponse" message="tns:iPartRequest_GetGetInterfaceDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGetMessageDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetGetMessageDetails" message="tns:iPartRequest_GetGetMessageDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetGetMessageDetailsResponse" message="tns:iPartRequest_GetGetMessageDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsNew" message="tns:iPartRequest_GetApprovalDetailsNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsNewResponse" message="tns:iPartRequest_GetApprovalDetailsNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsAllApproved">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsAllApproved" message="tns:iPartRequest_GetApprovalDetailsAllApproved_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsAllApprovedResponse" message="tns:iPartRequest_GetApprovalDetailsAllApproved_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMofSelectedProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetUOMofSelectedProduct" message="tns:iPartRequest_GetUOMofSelectedProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetUOMofSelectedProductResponse" message="tns:iPartRequest_GetUOMofSelectedProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayOfUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayOfUser" message="tns:iPartRequest_GetRequestSummayOfUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayOfUserResponse" message="tns:iPartRequest_GetRequestSummayOfUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayOfUserIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayOfUserIssue" message="tns:iPartRequest_GetRequestSummayOfUserIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayOfUserIssueResponse" message="tns:iPartRequest_GetRequestSummayOfUserIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotOrderHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SetIntotOrderHead" message="tns:iPartRequest_SetIntotOrderHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SetIntotOrderHeadResponse" message="tns:iPartRequest_SetIntotOrderHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetOrderHeadByOrderID" message="tns:iPartRequest_GetOrderHeadByOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetOrderHeadByOrderIDResponse" message="tns:iPartRequest_GetOrderHeadByOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntomRequestTemplateHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/InsertIntomRequestTemplateHead" message="tns:iPartRequest_InsertIntomRequestTemplateHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/InsertIntomRequestTemplateHeadResponse" message="tns:iPartRequest_InsertIntomRequestTemplateHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavemRequestTemplateDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetail" message="tns:iPartRequest_FinalSavemRequestTemplateDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetailResponse" message="tns:iPartRequest_FinalSavemRequestTemplateDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavemRequestTemplateDetailTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetailTemplate" message="tns:iPartRequest_FinalSavemRequestTemplateDetailTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetailTemplateResponse" message="tns:iPartRequest_FinalSavemRequestTemplateDetailTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateOrderHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateOrderHead" message="tns:iPartRequest_GetTemplateOrderHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplateOrderHeadResponse" message="tns:iPartRequest_GetTemplateOrderHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplatePartLstByTemplateID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTemplatePartLstByTemplateID" message="tns:iPartRequest_GetTemplatePartLstByTemplateID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTemplatePartLstByTemplateIDResponse" message="tns:iPartRequest_GetTemplatePartLstByTemplateID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApprovalTransAfterApproval">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterApproval" message="tns:iPartRequest_UpdatetApprovalTransAfterApproval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterApprovalResponse" message="tns:iPartRequest_UpdatetApprovalTransAfterApproval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApprovalTransAfterReject">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterReject" message="tns:iPartRequest_UpdatetApprovalTransAfterReject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterRejectResponse" message="tns:iPartRequest_UpdatetApprovalTransAfterReject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetApproverDataafterSave">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SetApproverDataafterSave" message="tns:iPartRequest_SetApproverDataafterSave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SetApproverDataafterSaveResponse" message="tns:iPartRequest_SetApproverDataafterSave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousStatusID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetPreviousStatusID" message="tns:iPartRequest_GetPreviousStatusID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetPreviousStatusIDResponse" message="tns:iPartRequest_GetPreviousStatusID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsNewAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsNewAdmin" message="tns:iPartRequest_GetApprovalDetailsNewAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsNewAdminResponse" message="tns:iPartRequest_GetApprovalDetailsNewAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntotCorrespond">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/InsertIntotCorrespond" message="tns:iPartRequest_InsertIntotCorrespond_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/InsertIntotCorrespondResponse" message="tns:iPartRequest_InsertIntotCorrespond_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondance">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetCorrespondance" message="tns:iPartRequest_GetCorrespondance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetCorrespondanceResponse" message="tns:iPartRequest_GetCorrespondance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondanceDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetCorrespondanceDetail" message="tns:iPartRequest_GetCorrespondanceDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetCorrespondanceDetailResponse" message="tns:iPartRequest_GetCorrespondanceDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBomDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetBomDetails" message="tns:iPartRequest_GetBomDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetBomDetailsResponse" message="tns:iPartRequest_GetBomDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUom">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedUom" message="tns:iPartRequest_GetSelectedUom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedUomResponse" message="tns:iPartRequest_GetSelectedUom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUomTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedUomTemplate" message="tns:iPartRequest_GetSelectedUomTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedUomTemplateResponse" message="tns:iPartRequest_GetSelectedUomTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GridRowCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GridRowCount" message="tns:iPartRequest_GridRowCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GridRowCountResponse" message="tns:iPartRequest_GridRowCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GridRowsTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GridRowsTemplate" message="tns:iPartRequest_GridRowsTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GridRowsTemplateResponse" message="tns:iPartRequest_GridRowsTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkTemplateTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/ChkTemplateTitle" message="tns:iPartRequest_ChkTemplateTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/ChkTemplateTitleResponse" message="tns:iPartRequest_ChkTemplateTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDeliveryDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetOrderDeliveryDetails" message="tns:iPartRequest_GetOrderDeliveryDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetOrderDeliveryDetailsResponse" message="tns:iPartRequest_GetOrderDeliveryDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchedOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetDispatchedOrders" message="tns:iPartRequest_GetDispatchedOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetDispatchedOrdersResponse" message="tns:iPartRequest_GetDispatchedOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDriverDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetDriverDetails" message="tns:iPartRequest_GetDriverDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetDriverDetailsResponse" message="tns:iPartRequest_GetDriverDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignSelectedDriver">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/AssignSelectedDriver" message="tns:iPartRequest_AssignSelectedDriver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/AssignSelectedDriverResponse" message="tns:iPartRequest_AssignSelectedDriver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptWisePaymentMethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetDeptWisePaymentMethod" message="tns:iPartRequest_GetDeptWisePaymentMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetDeptWisePaymentMethodResponse" message="tns:iPartRequest_GetDeptWisePaymentMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentMethodFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetPaymentMethodFields" message="tns:iPartRequest_GetPaymentMethodFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetPaymentMethodFieldsResponse" message="tns:iPartRequest_GetPaymentMethodFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPMFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetPMFields" message="tns:iPartRequest_GetPMFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetPMFieldsResponse" message="tns:iPartRequest_GetPMFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GEtDeptPaymentmethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GEtDeptPaymentmethod" message="tns:iPartRequest_GEtDeptPaymentmethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GEtDeptPaymentmethodResponse" message="tns:iPartRequest_GEtDeptPaymentmethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetCostCenter" message="tns:iPartRequest_GetCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetCostCenterResponse" message="tns:iPartRequest_GetCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData12" message="tns:iPartRequest_UpdatePartRequest_TempData12_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData12Response" message="tns:iPartRequest_UpdatePartRequest_TempData12_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTotalFromTempData" message="tns:iPartRequest_GetTotalFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTotalFromTempDataResponse" message="tns:iPartRequest_GetTotalFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetTotalQTYFromTempData" message="tns:iPartRequest_GetTotalQTYFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetTotalQTYFromTempDataResponse" message="tns:iPartRequest_GetTotalQTYFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxDeliveryDaysofDept">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetMaxDeliveryDaysofDept" message="tns:iPartRequest_GetMaxDeliveryDaysofDept_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetMaxDeliveryDaysofDeptResponse" message="tns:iPartRequest_GetMaxDeliveryDaysofDept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMandatoryFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetMandatoryFields" message="tns:iPartRequest_GetMandatoryFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetMandatoryFieldsResponse" message="tns:iPartRequest_GetMandatoryFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatutoryID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetStatutoryID" message="tns:iPartRequest_GetStatutoryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetStatutoryIDResponse" message="tns:iPartRequest_GetStatutoryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotStatutory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/AddIntotStatutory" message="tns:iPartRequest_AddIntotStatutory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/AddIntotStatutoryResponse" message="tns:iPartRequest_AddIntotStatutory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptPriceChange">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetDeptPriceChange" message="tns:iPartRequest_GetDeptPriceChange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetDeptPriceChangeResponse" message="tns:iPartRequest_GetDeptPriceChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewOrderNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetNewOrderNo" message="tns:iPartRequest_GetNewOrderNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetNewOrderNoResponse" message="tns:iPartRequest_GetNewOrderNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatutoryDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdateStatutoryDetails" message="tns:iPartRequest_UpdateStatutoryDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdateStatutoryDetailsResponse" message="tns:iPartRequest_UpdateStatutoryDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceChanged">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/IsPriceChanged" message="tns:iPartRequest_IsPriceChanged_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/IsPriceChangedResponse" message="tns:iPartRequest_IsPriceChanged_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedCostCenter" message="tns:iPartRequest_GetSelectedCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetSelectedCostCenterResponse" message="tns:iPartRequest_GetSelectedCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedAdditionalFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetAddedAdditionalFields" message="tns:iPartRequest_GetAddedAdditionalFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetAddedAdditionalFieldsResponse" message="tns:iPartRequest_GetAddedAdditionalFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartAccessofUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetPartAccessofUser" message="tns:iPartRequest_GetPartAccessofUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetPartAccessofUserResponse" message="tns:iPartRequest_GetPartAccessofUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOfOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetProductOfOrder" message="tns:iPartRequest_GetProductOfOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetProductOfOrderResponse" message="tns:iPartRequest_GetProductOfOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderProductAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetOrderProductAccess" message="tns:iPartRequest_GetOrderProductAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetOrderProductAccessResponse" message="tns:iPartRequest_GetOrderProductAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceEditYN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/IsPriceEditYN" message="tns:iPartRequest_IsPriceEditYN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/IsPriceEditYNResponse" message="tns:iPartRequest_IsPriceEditYN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsSkuChangeYN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/IsSkuChangeYN" message="tns:iPartRequest_IsSkuChangeYN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/IsSkuChangeYNResponse" message="tns:iPartRequest_IsSkuChangeYN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQtyofSelectedUOM">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetQtyofSelectedUOM" message="tns:iPartRequest_GetQtyofSelectedUOM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetQtyofSelectedUOMResponse" message="tns:iPartRequest_GetQtyofSelectedUOM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderQtyTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdateOrderQtyTotal" message="tns:iPartRequest_UpdateOrderQtyTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdateOrderQtyTotalResponse" message="tns:iPartRequest_UpdateOrderQtyTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderIDQTYTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetOrderHeadByOrderIDQTYTotal" message="tns:iPartRequest_GetOrderHeadByOrderIDQTYTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetOrderHeadByOrderIDQTYTotalResponse" message="tns:iPartRequest_GetOrderHeadByOrderIDQTYTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelSelectedOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/CancelSelectedOrder" message="tns:iPartRequest_CancelSelectedOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/CancelSelectedOrderResponse" message="tns:iPartRequest_CancelSelectedOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetUOMName" message="tns:iPartRequest_GetUOMName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetUOMNameResponse" message="tns:iPartRequest_GetUOMName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenterApproverID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetCostCenterApproverID" message="tns:iPartRequest_GetCostCenterApproverID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetCostCenterApproverIDResponse" message="tns:iPartRequest_GetCostCenterApproverID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredDriverList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetFilteredDriverList" message="tns:iPartRequest_GetFilteredDriverList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetFilteredDriverListResponse" message="tns:iPartRequest_GetFilteredDriverList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceNoofOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetInvoiceNoofOrder" message="tns:iPartRequest_GetInvoiceNoofOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetInvoiceNoofOrderResponse" message="tns:iPartRequest_GetInvoiceNoofOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromTStatutory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/RemoveFromTStatutory" message="tns:iPartRequest_RemoveFromTStatutory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/RemoveFromTStatutoryResponse" message="tns:iPartRequest_RemoveFromTStatutory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailSendWhenRequestSubmit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/EmailSendWhenRequestSubmit" message="tns:iPartRequest_EmailSendWhenRequestSubmit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/EmailSendWhenRequestSubmitResponse" message="tns:iPartRequest_EmailSendWhenRequestSubmit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailSendofApproved">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/EmailSendofApproved" message="tns:iPartRequest_EmailSendofApproved_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/EmailSendofApprovedResponse" message="tns:iPartRequest_EmailSendofApproved_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverDepartmentWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApproverDepartmentWise" message="tns:iPartRequest_GetApproverDepartmentWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApproverDepartmentWiseResponse" message="tns:iPartRequest_GetApproverDepartmentWise_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iPartRequest" type="tns:iPartRequest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRequestHeadByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestHeadByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoPartRequestHead">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SetIntoPartRequestHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForRequest">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetStatusListForRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEW">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/ClearTempDataFromDBNEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRequestPartDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserIDIssue">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayByUserIDIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayBySiteIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByRequestIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalStatus">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SaveApprovalStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsByReqestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplateDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsSuperAdmin">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplateDetailsSuperAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsAdmin">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplateDetailsAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateDetailsBind">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplateDetailsBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGetInterfaceDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetGetInterfaceDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGetMessageDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetGetMessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsNew">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApprovalDetailsNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsAllApproved">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApprovalDetailsAllApproved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMofSelectedProduct">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetUOMofSelectedProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayOfUser">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayOfUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayOfUserIssue">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayOfUserIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotOrderHead">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SetIntotOrderHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetOrderHeadByOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntomRequestTemplateHead">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/InsertIntomRequestTemplateHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavemRequestTemplateDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavemRequestTemplateDetailTemplate">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/FinalSavemRequestTemplateDetailTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplateOrderHead">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplateOrderHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTemplatePartLstByTemplateID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTemplatePartLstByTemplateID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApprovalTransAfterApproval">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterApproval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApprovalTransAfterReject">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatetApprovalTransAfterReject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApproverDataafterSave">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SetApproverDataafterSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousStatusID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetPreviousStatusID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsNewAdmin">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApprovalDetailsNewAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntotCorrespond">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/InsertIntotCorrespond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondance">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetCorrespondance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondanceDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetCorrespondanceDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBomDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetBomDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUom">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetSelectedUom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUomTemplate">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetSelectedUomTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GridRowCount">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GridRowCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GridRowsTemplate">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GridRowsTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkTemplateTitle">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/ChkTemplateTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDeliveryDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetOrderDeliveryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchedOrders">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetDispatchedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDriverDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetDriverDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignSelectedDriver">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/AssignSelectedDriver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptWisePaymentMethod">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetDeptWisePaymentMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentMethodFields">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetPaymentMethodFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPMFields">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetPMFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GEtDeptPaymentmethod">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GEtDeptPaymentmethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData12" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTotalFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetTotalQTYFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxDeliveryDaysofDept">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetMaxDeliveryDaysofDept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMandatoryFields">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetMandatoryFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatutoryID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetStatutoryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotStatutory">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/AddIntotStatutory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptPriceChange">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetDeptPriceChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewOrderNo">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetNewOrderNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatutoryDetails">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdateStatutoryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceChanged">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/IsPriceChanged" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedCostCenter">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetSelectedCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedAdditionalFields">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetAddedAdditionalFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartAccessofUser">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetPartAccessofUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOfOrder">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetProductOfOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderProductAccess">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetOrderProductAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceEditYN">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/IsPriceEditYN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsSkuChangeYN">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/IsSkuChangeYN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQtyofSelectedUOM">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetQtyofSelectedUOM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderQtyTotal">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdateOrderQtyTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderIDQTYTotal">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetOrderHeadByOrderIDQTYTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelSelectedOrder">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/CancelSelectedOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMName">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetUOMName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenterApproverID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetCostCenterApproverID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredDriverList">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetFilteredDriverList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceNoofOrder">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetInvoiceNoofOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromTStatutory">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/RemoveFromTStatutory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailSendWhenRequestSubmit">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/EmailSendWhenRequestSubmit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailSendofApproved">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/EmailSendofApproved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverDepartmentWise">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApproverDepartmentWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePartRequest">
+    <wsdl:port name="BasicHttpBinding_iPartRequest" binding="tns:BasicHttpBinding_iPartRequest">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartRequest.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

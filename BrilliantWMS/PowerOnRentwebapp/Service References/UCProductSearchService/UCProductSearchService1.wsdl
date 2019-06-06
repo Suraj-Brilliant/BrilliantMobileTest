@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UCProductSearchService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Product/UCProductSearchService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUCProductSearch_GetProductList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductList" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetProductList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetProductList1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductList1" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetProductList1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductList1Response" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUList" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_SKUListForGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:SKUListForGrid" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_SKUListForGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SKUListForGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUListDeptWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUListDeptWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUListDeptWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUListDeptWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUListWarehouseWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUListWarehouseWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCProductSearch_GetSKUListWarehouseWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUListWarehouseWiseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUCProductSearch">
+    <wsdl:operation name="GetProductList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/GetProductList" message="tns:iUCProductSearch_GetProductList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/GetProductListResponse" message="tns:iUCProductSearch_GetProductList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList1">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/GetProductList1" message="tns:iUCProductSearch_GetProductList1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/GetProductList1Response" message="tns:iUCProductSearch_GetProductList1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUList" message="tns:iUCProductSearch_GetSKUList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUListResponse" message="tns:iUCProductSearch_GetSKUList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SKUListForGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/SKUListForGrid" message="tns:iUCProductSearch_SKUListForGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/SKUListForGridResponse" message="tns:iUCProductSearch_SKUListForGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUListDeptWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUListDeptWise" message="tns:iUCProductSearch_GetSKUListDeptWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUListDeptWiseResponse" message="tns:iUCProductSearch_GetSKUListDeptWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUListWarehouseWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUListWarehouseWise" message="tns:iUCProductSearch_GetSKUListWarehouseWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCProductSearch/GetSKUListWarehouseWiseResponse" message="tns:iUCProductSearch_GetSKUListWarehouseWise_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUCProductSearch" type="tns:iUCProductSearch">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductList">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/GetProductList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList1">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/GetProductList1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUList">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/GetSKUList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SKUListForGrid">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/SKUListForGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUListDeptWise">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/GetSKUListDeptWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUListWarehouseWise">
+      <soap:operation soapAction="http://tempuri.org/iUCProductSearch/GetSKUListWarehouseWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UCProductSearchService">
+    <wsdl:port name="BasicHttpBinding_iUCProductSearch" binding="tns:BasicHttpBinding_iUCProductSearch">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Product/UCProductSearchService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetTaxListBySequence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CartSequence" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetTaxListBySequenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetTaxListBySequenceResult" type="tns:ArrayOfTempCartProductLevelTaxDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTempCartProductLevelTaxDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TempCartProductLevelTaxDetail" nillable="true" type="tns:TempCartProductLevelTaxDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TempCartProductLevelTaxDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CurrentForm" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductDetailSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxableAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentTaxID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TaxName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxPercent" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentTaxPercent" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CheckBoxVisible" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsChecked" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateCalculatedTaxList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CartSequence" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TaxableAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedTaxIDs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCalculatedTaxListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UpdateCalculatedTaxListResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalculatedTaxListBeforeUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CartSequence" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="TaxableAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedTaxIDs" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_CartBeforeUpdateProductLevelTaxDetail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_CartBeforeUpdateProductLevelTaxDetail_Result" nillable="true" type="tns:SP_CartBeforeUpdateProductLevelTaxDetail_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_CartBeforeUpdateProductLevelTaxDetail_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ParentTaxID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TaxName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxPercent" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CheckBoxVisible" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsChecked" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCalculatedTaxListBeforeUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetCalculatedTaxListBeforeUpdateResult" type="tns:ArrayOfSP_CartBeforeUpdateProductLevelTaxDetail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalculatedTaxAmount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="TaxDetailList" type="tns:ArrayOfTempCartProductLevelTaxDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalculatedTaxAmountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetCalculatedTaxAmountResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveProductLevelTax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveProductLevelTaxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="FinalSaveProductLevelTaxResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTaxDetailBySequence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CartSequence" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTaxDetailBySequenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RemoveTaxDetailBySequenceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataByCurrentObjectSessionID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CurrentObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataByCurrentObjectSessionIDResponse">
+    <xs:complexType />
+  </xs:element>
+</xs:schema>

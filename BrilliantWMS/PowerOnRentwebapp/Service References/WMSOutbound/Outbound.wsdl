@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Outbound" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.WMS/Outbound.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iInbound_BindInboundGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindInboundGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindInboundGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindInboundGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedPOStatusIsSameOrNot_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedPOStatusIsSameOrNot" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedPOStatusIsSameOrNot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedPOStatusIsSameOrNotResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetNextObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextObject" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetNextObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SaveAssignedTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAssignedTask" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SaveAssignedTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAssignedTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckJobCardofSelectedRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckJobCardofSelectedRecord" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckJobCardofSelectedRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckJobCardofSelectedRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUserWarehouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUserWarehouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendor" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBNEW_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEW" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBNEW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetStatusListForInbound_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForInbound" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetStatusListForInbound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForInboundResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetWorkflowSequenceOfPO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkflowSequenceOfPO" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetWorkflowSequenceOfPO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkflowSequenceOfPOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_AddPartIntoRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_AddPartIntoRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetRequestPartDetailByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetRequestPartDetailByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUOMofSelectedProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMofSelectedProduct" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUOMofSelectedProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMofSelectedProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetSelectedUom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUom" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetSelectedUom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedUomResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetOrderHeadByOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetOrderHeadByOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUOMName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMName" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUOMName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData1_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1Response" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalQTYFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalQTYFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_IsPriceChanged_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceChanged" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_IsPriceChanged_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPriceChangedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData12_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData12_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12Response" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalQTYofSequenceFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYofSequenceFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalQTYofSequenceFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYofSequenceFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPrdIDofSequenceFromTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdIDofSequenceFromTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPrdIDofSequenceFromTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdIDofSequenceFromTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData13_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData13" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UpdatePartRequest_TempData13_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData13Response" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SetIntotPurchaseOrderHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotPurchaseOrderHead" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SetIntotPurchaseOrderHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotPurchaseOrderHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSavePODetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePODetail" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSavePODetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePODetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPoHeadByPOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoHeadByPOID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPoHeadByPOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoHeadByPOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetWarehouseNameByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseNameByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetWarehouseNameByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseNameByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetAllWarehouseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarehouseList" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetAllWarehouseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarehouseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetCorrespondance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondance" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetCorrespondance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCorrespondanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetApprovalInWorkFlow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalInWorkFlow" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetApprovalInWorkFlow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalInWorkFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetSoHeadBySOIDForSalesReturn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoHeadBySOIDForSalesReturn" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetSoHeadBySOIDForSalesReturn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoHeadBySOIDForSalesReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindGRNGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindGRNGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindGRNGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindGRNGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindGRNGridofSelectedPO_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindGRNGridofSelectedPO" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindGRNGridofSelectedPO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindGRNGridofSelectedPOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNPartDetailsByPOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNPartDetailsByPOID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNPartDetailsByPOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNPartDetailsByPOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNPartDetailsBySOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNPartDetailsBySOID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNPartDetailsBySOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNPartDetailsBySOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNameGRN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameGRN" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNameGRN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UPdateGRNTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPdateGRNTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UPdateGRNTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPdateGRNTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUserNameByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetUserNameByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetGRNHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavetGRNHead" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetGRNHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavetGRNHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSaveGRNDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveGRNDetail" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSaveGRNDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveGRNDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalGRNPOWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalGRNPOWise" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTotalGRNPOWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalGRNPOWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNDetailsByGRNID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNDetailsByGRNID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNDetailsByGRNID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNDetailsByGRNIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGrnSkuDetailsbyGRNID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGrnSkuDetailsbyGRNID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGrnSkuDetailsbyGRNID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGrnSkuDetailsbyGRNIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPOIDFromGRNID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOIDFromGRNID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPOIDFromGRNID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOIDFromGRNIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromGRN_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromGRN_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromGRN_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromGRN_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNDetailsByGRNIDGRNMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNDetailsByGRNIDGRNMenu" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNDetailsByGRNIDGRNMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNDetailsByGRNIDGRNMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedPOJobCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedPOJobCardNo" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedPOJobCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedPOJobCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckJobCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckJobCard" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckJobCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckJobCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBGRN_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBGRN" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBGRN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedGRNStatusIsSameOrNot_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedGRNStatusIsSameOrNot" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedGRNStatusIsSameOrNot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedGRNStatusIsSameOrNotResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGridofSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGridofSO" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGridofSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGridofSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGridofSelectedGRN_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGridofSelectedGRN" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindQCGridofSelectedGRN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindQCGridofSelectedGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByPOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByPOID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByPOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByPOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByGRNID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByGRNID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByGRNID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByGRNIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByQCID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByQCID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByQCID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByQCIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByPickUPID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByPickUPID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByPickUPID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByPickUPIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBQC_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBQC" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBQC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBQCResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNameQC_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameQC" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNameQC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameQCResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UPdateQCTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPdateQCTempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_UPdateQCTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPdateQCTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetQualityControlHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavetQualityControlHead" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetQualityControlHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavetQualityControlHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSaveQCDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveQCDetail" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSaveQCDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveQCDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromQC_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromQC_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_RemovePartFromQC_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromQC_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCDetailsByGRNID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCDetailsByGRNID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCDetailsByGRNID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCDetailsByGRNIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCDetailsByQCID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCDetailsByQCID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCDetailsByQCID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCDetailsByQCIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedQCStatusIsSameOrNot_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedQCStatusIsSameOrNot" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_CheckSelectedQCStatusIsSameOrNot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedQCStatusIsSameOrNotResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindLPGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindLPGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindLPGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindLPGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetProductDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductDetails" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetProductDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SetSelectedRecordToLabelPrintingStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetSelectedRecordToLabelPrintingStatus" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SetSelectedRecordToLabelPrintingStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetSelectedRecordToLabelPrintingStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindPIGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindPIGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindPIGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindPIGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPutInList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPutInList" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPutInList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPutInListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBPutIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBPutIn" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_ClearTempDataFromDBPutIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBPutInResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNamePI_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNamePI" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetExistingTempDataBySessionIDObjectNamePI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNamePIResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetLocationForPutIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationForPutIn" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetLocationForPutIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationForPutInResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetPutInHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavetPutInHead" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_SavetPutInHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavetPutInHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSavePutInDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePutInDetail" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_FinalSavePutInDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePutInDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindTransferGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindTransferGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindTransferGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindTransferGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTransferHeadByTRID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferHeadByTRID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetTransferHeadByTRID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferHeadByTRIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByTransferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByTransferID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetQCPartDetailsByTransferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQCPartDetailsByTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPutInListByTRID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPutInListByTRID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetPutInListByTRID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPutInListByTRIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNIDByTransferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNIDByTransferID" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_GetGRNIDByTransferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGRNIDByTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindReturnGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindReturnGrid" />
+  </wsdl:message>
+  <wsdl:message name="iInbound_BindReturnGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindReturnGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindOutboundGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindOutboundGrid" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindOutboundGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindOutboundGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_CheckSelectedSOStatusIsSameOrNot_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedSOStatusIsSameOrNot" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_CheckSelectedSOStatusIsSameOrNot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedSOStatusIsSameOrNotResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetNextSOObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextSOObject" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetNextSOObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextSOObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetUserWarehouseSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserWarehouseSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetUserWarehouseSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserWarehouseSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetWarehouseNameByUserIDSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseNameByUserIDSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetWarehouseNameByUserIDSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseNameByUserIDSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetAllWarehouseListSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarehouseListSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetAllWarehouseListSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWarehouseListSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetCompanyWiseClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyWiseClient" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetCompanyWiseClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyWiseClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBNEWSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEWSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBNEWSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBNEWSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetStatusListForOutbound_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForOutbound" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetStatusListForOutbound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForOutboundResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetWorkflowSequenceOfSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkflowSequenceOfSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetWorkflowSequenceOfSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkflowSequenceOfSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_AddPartIntoRequest_TempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_AddPartIntoRequest_TempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetRequestPartDetailByRequestIDSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestIDSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetRequestPartDetailByRequestIDSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestIDSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetOrderHeadByOrderIDSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetOrderHeadByOrderIDSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderHeadByOrderIDSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_RemovePartFromRequest_TempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_RemovePartFromRequest_TempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData1SO_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1SO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData1SO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData1SOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempDataRtrn_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempDataRtrn" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempDataRtrn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempDataRtrnResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalFromTempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalFromTempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalFromTempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalQTYFromTempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalQTYFromTempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYFromTempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData12SO_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12SO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData12SO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData12SOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalQTYofSequenceFromTempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYofSequenceFromTempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTotalQTYofSequenceFromTempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalQTYofSequenceFromTempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetPrdIDofSequenceFromTempDataSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdIDofSequenceFromTempDataSO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetPrdIDofSequenceFromTempDataSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdIDofSequenceFromTempDataSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData13SO_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData13SO" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdatePartRequest_TempData13SO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData13SOResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SetIntotSalesOrderHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotSalesOrderHead" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SetIntotSalesOrderHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntotSalesOrderHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSavSODetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavSODetail" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSavSODetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavSODetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSoHeadBySOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoHeadBySOID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSoHeadBySOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoHeadBySOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_CheckSelectedSOJobCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedSOJobCardNo" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_CheckSelectedSOJobCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckSelectedSOJobCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindPickUpGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindPickUpGrid" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindPickUpGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindPickUpGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetPickUpList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickUpList" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetPickUpList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickUpListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBPickUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBPickUp" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBPickUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBPickUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNamePickUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNamePickUp" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNamePickUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNamePickUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SavetPickUpHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavetPickUpHead" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SavetPickUpHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavetPickUpHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSavePickUpDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePickUpDetail" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSavePickUpDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSavePickUpDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSOIDfromPkUpID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOIDfromPkUpID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSOIDfromPkUpID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOIDfromPkUpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindDispatchGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindDispatchGrid" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindDispatchGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindDispatchGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSoDetailByQCID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoDetailByQCID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetSoDetailByQCID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSoDetailByQCIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchPartByQCID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchPartByQCID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchPartByQCID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchPartByQCIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBDispatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBDispatch" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBDispatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameDispatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameDispatch" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameDispatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdateDispatchData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDispatchData" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdateDispatchData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDispatchDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SavetDispatchHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavetDispatchHead" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SavetDispatchHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavetDispatchHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSaveDispatchDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveDispatchDetail" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSaveDispatchDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveDispatchDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchDetailsByQCID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchDetailsByQCID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchDetailsByQCID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchDetailsByQCIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchDetailsByDispatchID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchDetailsByDispatchID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchDetailsByDispatchID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchDetailsByDispatchIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchSkuDetailByDispatchID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchSkuDetailByDispatchID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetDispatchSkuDetailByDispatchID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDispatchSkuDetailByDispatchIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindOutboundGridForReturn_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindOutboundGridForReturn" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_BindOutboundGridForReturn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindOutboundGridForReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ChangeStatusToMarkForReturn_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeStatusToMarkForReturn" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ChangeStatusToMarkForReturn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeStatusToMarkForReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SaveReturnHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveReturnHead" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SaveReturnHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveReturnHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameTR_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameTR" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetExistingTempDataBySessionIDObjectNameTR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameTRResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_AddPartIntoTransfer_TempDataTR_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoTransfer_TempDataTR" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_AddPartIntoTransfer_TempDataTR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoTransfer_TempDataTRResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBTR_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBTR" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_ClearTempDataFromDBTR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBTRResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_RemovePartFromTransfer_TempDataTR_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromTransfer_TempDataTR" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_RemovePartFromTransfer_TempDataTR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromTransfer_TempDataTRResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTransferPartDetailByTransferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferPartDetailByTransferID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTransferPartDetailByTransferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferPartDetailByTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdateTransfer_TempDataTR_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTransfer_TempDataTR" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_UpdateTransfer_TempDataTR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTransfer_TempDataTRResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SaveIntotTransferHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIntotTransferHead" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_SaveIntotTransferHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIntotTransferHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSaveTRDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveTRDetail" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_FinalSaveTRDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveTRDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTransferHeadDetailByTransferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferHeadDetailByTransferID" />
+  </wsdl:message>
+  <wsdl:message name="iOutbound_GetTransferHeadDetailByTransferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferHeadDetailByTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iInbound">
+    <wsdl:operation name="BindInboundGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindInboundGrid" message="tns:iInbound_BindInboundGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindInboundGridResponse" message="tns:iInbound_BindInboundGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedPOStatusIsSameOrNot">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckSelectedPOStatusIsSameOrNot" message="tns:iInbound_CheckSelectedPOStatusIsSameOrNot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckSelectedPOStatusIsSameOrNotResponse" message="tns:iInbound_CheckSelectedPOStatusIsSameOrNot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetNextObject" message="tns:iInbound_GetNextObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetNextObjectResponse" message="tns:iInbound_GetNextObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAssignedTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SaveAssignedTask" message="tns:iInbound_SaveAssignedTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SaveAssignedTaskResponse" message="tns:iInbound_SaveAssignedTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckJobCardofSelectedRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckJobCardofSelectedRecord" message="tns:iInbound_CheckJobCardofSelectedRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckJobCardofSelectedRecordResponse" message="tns:iInbound_CheckJobCardofSelectedRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserWarehouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetUserWarehouse" message="tns:iInbound_GetUserWarehouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetUserWarehouseResponse" message="tns:iInbound_GetUserWarehouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendor">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetVendor" message="tns:iInbound_GetVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetVendorResponse" message="tns:iInbound_GetVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEW">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBNEW" message="tns:iInbound_ClearTempDataFromDBNEW_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBNEWResponse" message="tns:iInbound_ClearTempDataFromDBNEW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForInbound">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetStatusListForInbound" message="tns:iInbound_GetStatusListForInbound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetStatusListForInboundResponse" message="tns:iInbound_GetStatusListForInbound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkflowSequenceOfPO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetWorkflowSequenceOfPO" message="tns:iInbound_GetWorkflowSequenceOfPO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetWorkflowSequenceOfPOResponse" message="tns:iInbound_GetWorkflowSequenceOfPO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectName" message="tns:iInbound_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iInbound_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/AddPartIntoRequest_TempData" message="tns:iInbound_AddPartIntoRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/AddPartIntoRequest_TempDataResponse" message="tns:iInbound_AddPartIntoRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetRequestPartDetailByRequestID" message="tns:iInbound_GetRequestPartDetailByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetRequestPartDetailByRequestIDResponse" message="tns:iInbound_GetRequestPartDetailByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMofSelectedProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetUOMofSelectedProduct" message="tns:iInbound_GetUOMofSelectedProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetUOMofSelectedProductResponse" message="tns:iInbound_GetUOMofSelectedProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUom">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetSelectedUom" message="tns:iInbound_GetSelectedUom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetSelectedUomResponse" message="tns:iInbound_GetSelectedUom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetOrderHeadByOrderID" message="tns:iInbound_GetOrderHeadByOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetOrderHeadByOrderIDResponse" message="tns:iInbound_GetOrderHeadByOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/RemovePartFromRequest_TempData" message="tns:iInbound_RemovePartFromRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/RemovePartFromRequest_TempDataResponse" message="tns:iInbound_RemovePartFromRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetUOMName" message="tns:iInbound_GetUOMName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetUOMNameResponse" message="tns:iInbound_GetUOMName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData1" message="tns:iInbound_UpdatePartRequest_TempData1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData1Response" message="tns:iInbound_UpdatePartRequest_TempData1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetTotalFromTempData" message="tns:iInbound_GetTotalFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetTotalFromTempDataResponse" message="tns:iInbound_GetTotalFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetTotalQTYFromTempData" message="tns:iInbound_GetTotalQTYFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetTotalQTYFromTempDataResponse" message="tns:iInbound_GetTotalQTYFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceChanged">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/IsPriceChanged" message="tns:iInbound_IsPriceChanged_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/IsPriceChangedResponse" message="tns:iInbound_IsPriceChanged_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData12" message="tns:iInbound_UpdatePartRequest_TempData12_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData12Response" message="tns:iInbound_UpdatePartRequest_TempData12_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYofSequenceFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetTotalQTYofSequenceFromTempData" message="tns:iInbound_GetTotalQTYofSequenceFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetTotalQTYofSequenceFromTempDataResponse" message="tns:iInbound_GetTotalQTYofSequenceFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdIDofSequenceFromTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetPrdIDofSequenceFromTempData" message="tns:iInbound_GetPrdIDofSequenceFromTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetPrdIDofSequenceFromTempDataResponse" message="tns:iInbound_GetPrdIDofSequenceFromTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData13">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData13" message="tns:iInbound_UpdatePartRequest_TempData13_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/UpdatePartRequest_TempData13Response" message="tns:iInbound_UpdatePartRequest_TempData13_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotPurchaseOrderHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SetIntotPurchaseOrderHead" message="tns:iInbound_SetIntotPurchaseOrderHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SetIntotPurchaseOrderHeadResponse" message="tns:iInbound_SetIntotPurchaseOrderHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePODetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/FinalSavePODetail" message="tns:iInbound_FinalSavePODetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/FinalSavePODetailResponse" message="tns:iInbound_FinalSavePODetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoHeadByPOID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetPoHeadByPOID" message="tns:iInbound_GetPoHeadByPOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetPoHeadByPOIDResponse" message="tns:iInbound_GetPoHeadByPOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseNameByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetWarehouseNameByUserID" message="tns:iInbound_GetWarehouseNameByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetWarehouseNameByUserIDResponse" message="tns:iInbound_GetWarehouseNameByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarehouseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetAllWarehouseList" message="tns:iInbound_GetAllWarehouseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetAllWarehouseListResponse" message="tns:iInbound_GetAllWarehouseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondance">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetCorrespondance" message="tns:iInbound_GetCorrespondance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetCorrespondanceResponse" message="tns:iInbound_GetCorrespondance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalInWorkFlow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetApprovalInWorkFlow" message="tns:iInbound_GetApprovalInWorkFlow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetApprovalInWorkFlowResponse" message="tns:iInbound_GetApprovalInWorkFlow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoHeadBySOIDForSalesReturn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetSoHeadBySOIDForSalesReturn" message="tns:iInbound_GetSoHeadBySOIDForSalesReturn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetSoHeadBySOIDForSalesReturnResponse" message="tns:iInbound_GetSoHeadBySOIDForSalesReturn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindGRNGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindGRNGrid" message="tns:iInbound_BindGRNGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindGRNGridResponse" message="tns:iInbound_BindGRNGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindGRNGridofSelectedPO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindGRNGridofSelectedPO" message="tns:iInbound_BindGRNGridofSelectedPO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindGRNGridofSelectedPOResponse" message="tns:iInbound_BindGRNGridofSelectedPO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNPartDetailsByPOID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGRNPartDetailsByPOID" message="tns:iInbound_GetGRNPartDetailsByPOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGRNPartDetailsByPOIDResponse" message="tns:iInbound_GetGRNPartDetailsByPOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNPartDetailsBySOID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGRNPartDetailsBySOID" message="tns:iInbound_GetGRNPartDetailsBySOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGRNPartDetailsBySOIDResponse" message="tns:iInbound_GetGRNPartDetailsBySOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameGRN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameGRN" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNameGRN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameGRNResponse" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNameGRN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPdateGRNTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/UPdateGRNTempData" message="tns:iInbound_UPdateGRNTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/UPdateGRNTempDataResponse" message="tns:iInbound_UPdateGRNTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetUserNameByID" message="tns:iInbound_GetUserNameByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetUserNameByIDResponse" message="tns:iInbound_GetUserNameByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavetGRNHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SavetGRNHead" message="tns:iInbound_SavetGRNHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SavetGRNHeadResponse" message="tns:iInbound_SavetGRNHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveGRNDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/FinalSaveGRNDetail" message="tns:iInbound_FinalSaveGRNDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/FinalSaveGRNDetailResponse" message="tns:iInbound_FinalSaveGRNDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalGRNPOWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetTotalGRNPOWise" message="tns:iInbound_GetTotalGRNPOWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetTotalGRNPOWiseResponse" message="tns:iInbound_GetTotalGRNPOWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNDetailsByGRNID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGRNDetailsByGRNID" message="tns:iInbound_GetGRNDetailsByGRNID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGRNDetailsByGRNIDResponse" message="tns:iInbound_GetGRNDetailsByGRNID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnSkuDetailsbyGRNID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGrnSkuDetailsbyGRNID" message="tns:iInbound_GetGrnSkuDetailsbyGRNID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGrnSkuDetailsbyGRNIDResponse" message="tns:iInbound_GetGrnSkuDetailsbyGRNID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOIDFromGRNID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetPOIDFromGRNID" message="tns:iInbound_GetPOIDFromGRNID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetPOIDFromGRNIDResponse" message="tns:iInbound_GetPOIDFromGRNID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromGRN_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/RemovePartFromGRN_TempData" message="tns:iInbound_RemovePartFromGRN_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/RemovePartFromGRN_TempDataResponse" message="tns:iInbound_RemovePartFromGRN_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNDetailsByGRNIDGRNMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGRNDetailsByGRNIDGRNMenu" message="tns:iInbound_GetGRNDetailsByGRNIDGRNMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGRNDetailsByGRNIDGRNMenuResponse" message="tns:iInbound_GetGRNDetailsByGRNIDGRNMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedPOJobCardNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckSelectedPOJobCardNo" message="tns:iInbound_CheckSelectedPOJobCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckSelectedPOJobCardNoResponse" message="tns:iInbound_CheckSelectedPOJobCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckJobCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckJobCard" message="tns:iInbound_CheckJobCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckJobCardResponse" message="tns:iInbound_CheckJobCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBGRN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBGRN" message="tns:iInbound_ClearTempDataFromDBGRN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBGRNResponse" message="tns:iInbound_ClearTempDataFromDBGRN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedGRNStatusIsSameOrNot">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckSelectedGRNStatusIsSameOrNot" message="tns:iInbound_CheckSelectedGRNStatusIsSameOrNot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckSelectedGRNStatusIsSameOrNotResponse" message="tns:iInbound_CheckSelectedGRNStatusIsSameOrNot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindQCGrid" message="tns:iInbound_BindQCGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindQCGridResponse" message="tns:iInbound_BindQCGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGridofSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindQCGridofSO" message="tns:iInbound_BindQCGridofSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindQCGridofSOResponse" message="tns:iInbound_BindQCGridofSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGridofSelectedGRN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindQCGridofSelectedGRN" message="tns:iInbound_BindQCGridofSelectedGRN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindQCGridofSelectedGRNResponse" message="tns:iInbound_BindQCGridofSelectedGRN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByPOID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByPOID" message="tns:iInbound_GetQCPartDetailsByPOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByPOIDResponse" message="tns:iInbound_GetQCPartDetailsByPOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByGRNID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByGRNID" message="tns:iInbound_GetQCPartDetailsByGRNID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByGRNIDResponse" message="tns:iInbound_GetQCPartDetailsByGRNID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByQCID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByQCID" message="tns:iInbound_GetQCPartDetailsByQCID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByQCIDResponse" message="tns:iInbound_GetQCPartDetailsByQCID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByPickUPID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByPickUPID" message="tns:iInbound_GetQCPartDetailsByPickUPID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByPickUPIDResponse" message="tns:iInbound_GetQCPartDetailsByPickUPID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBQC">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBQC" message="tns:iInbound_ClearTempDataFromDBQC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBQCResponse" message="tns:iInbound_ClearTempDataFromDBQC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameQC">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameQC" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNameQC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameQCResponse" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNameQC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPdateQCTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/UPdateQCTempData" message="tns:iInbound_UPdateQCTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/UPdateQCTempDataResponse" message="tns:iInbound_UPdateQCTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavetQualityControlHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SavetQualityControlHead" message="tns:iInbound_SavetQualityControlHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SavetQualityControlHeadResponse" message="tns:iInbound_SavetQualityControlHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveQCDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/FinalSaveQCDetail" message="tns:iInbound_FinalSaveQCDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/FinalSaveQCDetailResponse" message="tns:iInbound_FinalSaveQCDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromQC_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/RemovePartFromQC_TempData" message="tns:iInbound_RemovePartFromQC_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/RemovePartFromQC_TempDataResponse" message="tns:iInbound_RemovePartFromQC_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCDetailsByGRNID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCDetailsByGRNID" message="tns:iInbound_GetQCDetailsByGRNID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCDetailsByGRNIDResponse" message="tns:iInbound_GetQCDetailsByGRNID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCDetailsByQCID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCDetailsByQCID" message="tns:iInbound_GetQCDetailsByQCID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCDetailsByQCIDResponse" message="tns:iInbound_GetQCDetailsByQCID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedQCStatusIsSameOrNot">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/CheckSelectedQCStatusIsSameOrNot" message="tns:iInbound_CheckSelectedQCStatusIsSameOrNot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/CheckSelectedQCStatusIsSameOrNotResponse" message="tns:iInbound_CheckSelectedQCStatusIsSameOrNot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindLPGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindLPGrid" message="tns:iInbound_BindLPGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindLPGridResponse" message="tns:iInbound_BindLPGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetProductDetails" message="tns:iInbound_GetProductDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetProductDetailsResponse" message="tns:iInbound_GetProductDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSelectedRecordToLabelPrintingStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SetSelectedRecordToLabelPrintingStatus" message="tns:iInbound_SetSelectedRecordToLabelPrintingStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SetSelectedRecordToLabelPrintingStatusResponse" message="tns:iInbound_SetSelectedRecordToLabelPrintingStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindPIGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindPIGrid" message="tns:iInbound_BindPIGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindPIGridResponse" message="tns:iInbound_BindPIGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPutInList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetPutInList" message="tns:iInbound_GetPutInList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetPutInListResponse" message="tns:iInbound_GetPutInList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBPutIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBPutIn" message="tns:iInbound_ClearTempDataFromDBPutIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/ClearTempDataFromDBPutInResponse" message="tns:iInbound_ClearTempDataFromDBPutIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNamePI">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNamePI" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNamePI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNamePIResponse" message="tns:iInbound_GetExistingTempDataBySessionIDObjectNamePI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationForPutIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetLocationForPutIn" message="tns:iInbound_GetLocationForPutIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetLocationForPutInResponse" message="tns:iInbound_GetLocationForPutIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavetPutInHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/SavetPutInHead" message="tns:iInbound_SavetPutInHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/SavetPutInHeadResponse" message="tns:iInbound_SavetPutInHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePutInDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/FinalSavePutInDetail" message="tns:iInbound_FinalSavePutInDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/FinalSavePutInDetailResponse" message="tns:iInbound_FinalSavePutInDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindTransferGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindTransferGrid" message="tns:iInbound_BindTransferGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindTransferGridResponse" message="tns:iInbound_BindTransferGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferHeadByTRID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetTransferHeadByTRID" message="tns:iInbound_GetTransferHeadByTRID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetTransferHeadByTRIDResponse" message="tns:iInbound_GetTransferHeadByTRID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByTransferID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByTransferID" message="tns:iInbound_GetQCPartDetailsByTransferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetQCPartDetailsByTransferIDResponse" message="tns:iInbound_GetQCPartDetailsByTransferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPutInListByTRID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetPutInListByTRID" message="tns:iInbound_GetPutInListByTRID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetPutInListByTRIDResponse" message="tns:iInbound_GetPutInListByTRID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNIDByTransferID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/GetGRNIDByTransferID" message="tns:iInbound_GetGRNIDByTransferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/GetGRNIDByTransferIDResponse" message="tns:iInbound_GetGRNIDByTransferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindReturnGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbound/BindReturnGrid" message="tns:iInbound_BindReturnGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbound/BindReturnGridResponse" message="tns:iInbound_BindReturnGrid_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="iOutbound">
+    <wsdl:operation name="BindOutboundGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/BindOutboundGrid" message="tns:iOutbound_BindOutboundGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/BindOutboundGridResponse" message="tns:iOutbound_BindOutboundGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedSOStatusIsSameOrNot">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/CheckSelectedSOStatusIsSameOrNot" message="tns:iOutbound_CheckSelectedSOStatusIsSameOrNot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/CheckSelectedSOStatusIsSameOrNotResponse" message="tns:iOutbound_CheckSelectedSOStatusIsSameOrNot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextSOObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetNextSOObject" message="tns:iOutbound_GetNextSOObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetNextSOObjectResponse" message="tns:iOutbound_GetNextSOObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserWarehouseSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetUserWarehouseSO" message="tns:iOutbound_GetUserWarehouseSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetUserWarehouseSOResponse" message="tns:iOutbound_GetUserWarehouseSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseNameByUserIDSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetWarehouseNameByUserIDSO" message="tns:iOutbound_GetWarehouseNameByUserIDSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetWarehouseNameByUserIDSOResponse" message="tns:iOutbound_GetWarehouseNameByUserIDSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarehouseListSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetAllWarehouseListSO" message="tns:iOutbound_GetAllWarehouseListSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetAllWarehouseListSOResponse" message="tns:iOutbound_GetAllWarehouseListSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyWiseClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetCompanyWiseClient" message="tns:iOutbound_GetCompanyWiseClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetCompanyWiseClientResponse" message="tns:iOutbound_GetCompanyWiseClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEWSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBNEWSO" message="tns:iOutbound_ClearTempDataFromDBNEWSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBNEWSOResponse" message="tns:iOutbound_ClearTempDataFromDBNEWSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForOutbound">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetStatusListForOutbound" message="tns:iOutbound_GetStatusListForOutbound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetStatusListForOutboundResponse" message="tns:iOutbound_GetStatusListForOutbound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkflowSequenceOfSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetWorkflowSequenceOfSO" message="tns:iOutbound_GetWorkflowSequenceOfSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetWorkflowSequenceOfSOResponse" message="tns:iOutbound_GetWorkflowSequenceOfSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameSO" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameSOResponse" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/AddPartIntoRequest_TempDataSO" message="tns:iOutbound_AddPartIntoRequest_TempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/AddPartIntoRequest_TempDataSOResponse" message="tns:iOutbound_AddPartIntoRequest_TempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBSO" message="tns:iOutbound_ClearTempDataFromDBSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBSOResponse" message="tns:iOutbound_ClearTempDataFromDBSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestIDSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetRequestPartDetailByRequestIDSO" message="tns:iOutbound_GetRequestPartDetailByRequestIDSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetRequestPartDetailByRequestIDSOResponse" message="tns:iOutbound_GetRequestPartDetailByRequestIDSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderIDSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetOrderHeadByOrderIDSO" message="tns:iOutbound_GetOrderHeadByOrderIDSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetOrderHeadByOrderIDSOResponse" message="tns:iOutbound_GetOrderHeadByOrderIDSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/RemovePartFromRequest_TempDataSO" message="tns:iOutbound_RemovePartFromRequest_TempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/RemovePartFromRequest_TempDataSOResponse" message="tns:iOutbound_RemovePartFromRequest_TempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1SO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData1SO" message="tns:iOutbound_UpdatePartRequest_TempData1SO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData1SOResponse" message="tns:iOutbound_UpdatePartRequest_TempData1SO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempDataRtrn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempDataRtrn" message="tns:iOutbound_UpdatePartRequest_TempDataRtrn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempDataRtrnResponse" message="tns:iOutbound_UpdatePartRequest_TempDataRtrn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetTotalFromTempDataSO" message="tns:iOutbound_GetTotalFromTempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetTotalFromTempDataSOResponse" message="tns:iOutbound_GetTotalFromTempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetTotalQTYFromTempDataSO" message="tns:iOutbound_GetTotalQTYFromTempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetTotalQTYFromTempDataSOResponse" message="tns:iOutbound_GetTotalQTYFromTempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12SO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData12SO" message="tns:iOutbound_UpdatePartRequest_TempData12SO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData12SOResponse" message="tns:iOutbound_UpdatePartRequest_TempData12SO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYofSequenceFromTempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetTotalQTYofSequenceFromTempDataSO" message="tns:iOutbound_GetTotalQTYofSequenceFromTempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetTotalQTYofSequenceFromTempDataSOResponse" message="tns:iOutbound_GetTotalQTYofSequenceFromTempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdIDofSequenceFromTempDataSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetPrdIDofSequenceFromTempDataSO" message="tns:iOutbound_GetPrdIDofSequenceFromTempDataSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetPrdIDofSequenceFromTempDataSOResponse" message="tns:iOutbound_GetPrdIDofSequenceFromTempDataSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData13SO">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData13SO" message="tns:iOutbound_UpdatePartRequest_TempData13SO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdatePartRequest_TempData13SOResponse" message="tns:iOutbound_UpdatePartRequest_TempData13SO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotSalesOrderHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/SetIntotSalesOrderHead" message="tns:iOutbound_SetIntotSalesOrderHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/SetIntotSalesOrderHeadResponse" message="tns:iOutbound_SetIntotSalesOrderHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavSODetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/FinalSavSODetail" message="tns:iOutbound_FinalSavSODetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/FinalSavSODetailResponse" message="tns:iOutbound_FinalSavSODetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoHeadBySOID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetSoHeadBySOID" message="tns:iOutbound_GetSoHeadBySOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetSoHeadBySOIDResponse" message="tns:iOutbound_GetSoHeadBySOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedSOJobCardNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/CheckSelectedSOJobCardNo" message="tns:iOutbound_CheckSelectedSOJobCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/CheckSelectedSOJobCardNoResponse" message="tns:iOutbound_CheckSelectedSOJobCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindPickUpGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/BindPickUpGrid" message="tns:iOutbound_BindPickUpGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/BindPickUpGridResponse" message="tns:iOutbound_BindPickUpGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPickUpList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetPickUpList" message="tns:iOutbound_GetPickUpList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetPickUpListResponse" message="tns:iOutbound_GetPickUpList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBPickUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBPickUp" message="tns:iOutbound_ClearTempDataFromDBPickUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBPickUpResponse" message="tns:iOutbound_ClearTempDataFromDBPickUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNamePickUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNamePickUp" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNamePickUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNamePickUpResponse" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNamePickUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavetPickUpHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/SavetPickUpHead" message="tns:iOutbound_SavetPickUpHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/SavetPickUpHeadResponse" message="tns:iOutbound_SavetPickUpHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePickUpDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/FinalSavePickUpDetail" message="tns:iOutbound_FinalSavePickUpDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/FinalSavePickUpDetailResponse" message="tns:iOutbound_FinalSavePickUpDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSOIDfromPkUpID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetSOIDfromPkUpID" message="tns:iOutbound_GetSOIDfromPkUpID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetSOIDfromPkUpIDResponse" message="tns:iOutbound_GetSOIDfromPkUpID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindDispatchGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/BindDispatchGrid" message="tns:iOutbound_BindDispatchGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/BindDispatchGridResponse" message="tns:iOutbound_BindDispatchGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoDetailByQCID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetSoDetailByQCID" message="tns:iOutbound_GetSoDetailByQCID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetSoDetailByQCIDResponse" message="tns:iOutbound_GetSoDetailByQCID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchPartByQCID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetDispatchPartByQCID" message="tns:iOutbound_GetDispatchPartByQCID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetDispatchPartByQCIDResponse" message="tns:iOutbound_GetDispatchPartByQCID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBDispatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBDispatch" message="tns:iOutbound_ClearTempDataFromDBDispatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBDispatchResponse" message="tns:iOutbound_ClearTempDataFromDBDispatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameDispatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameDispatch" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameDispatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameDispatchResponse" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameDispatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDispatchData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdateDispatchData" message="tns:iOutbound_UpdateDispatchData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdateDispatchDataResponse" message="tns:iOutbound_UpdateDispatchData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavetDispatchHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/SavetDispatchHead" message="tns:iOutbound_SavetDispatchHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/SavetDispatchHeadResponse" message="tns:iOutbound_SavetDispatchHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveDispatchDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/FinalSaveDispatchDetail" message="tns:iOutbound_FinalSaveDispatchDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/FinalSaveDispatchDetailResponse" message="tns:iOutbound_FinalSaveDispatchDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchDetailsByQCID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetDispatchDetailsByQCID" message="tns:iOutbound_GetDispatchDetailsByQCID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetDispatchDetailsByQCIDResponse" message="tns:iOutbound_GetDispatchDetailsByQCID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchDetailsByDispatchID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetDispatchDetailsByDispatchID" message="tns:iOutbound_GetDispatchDetailsByDispatchID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetDispatchDetailsByDispatchIDResponse" message="tns:iOutbound_GetDispatchDetailsByDispatchID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchSkuDetailByDispatchID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetDispatchSkuDetailByDispatchID" message="tns:iOutbound_GetDispatchSkuDetailByDispatchID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetDispatchSkuDetailByDispatchIDResponse" message="tns:iOutbound_GetDispatchSkuDetailByDispatchID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindOutboundGridForReturn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/BindOutboundGridForReturn" message="tns:iOutbound_BindOutboundGridForReturn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/BindOutboundGridForReturnResponse" message="tns:iOutbound_BindOutboundGridForReturn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeStatusToMarkForReturn">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ChangeStatusToMarkForReturn" message="tns:iOutbound_ChangeStatusToMarkForReturn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ChangeStatusToMarkForReturnResponse" message="tns:iOutbound_ChangeStatusToMarkForReturn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReturnHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/SaveReturnHead" message="tns:iOutbound_SaveReturnHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/SaveReturnHeadResponse" message="tns:iOutbound_SaveReturnHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameTR">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameTR" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameTR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameTRResponse" message="tns:iOutbound_GetExistingTempDataBySessionIDObjectNameTR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoTransfer_TempDataTR">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/AddPartIntoTransfer_TempDataTR" message="tns:iOutbound_AddPartIntoTransfer_TempDataTR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/AddPartIntoTransfer_TempDataTRResponse" message="tns:iOutbound_AddPartIntoTransfer_TempDataTR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBTR">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBTR" message="tns:iOutbound_ClearTempDataFromDBTR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/ClearTempDataFromDBTRResponse" message="tns:iOutbound_ClearTempDataFromDBTR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromTransfer_TempDataTR">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/RemovePartFromTransfer_TempDataTR" message="tns:iOutbound_RemovePartFromTransfer_TempDataTR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/RemovePartFromTransfer_TempDataTRResponse" message="tns:iOutbound_RemovePartFromTransfer_TempDataTR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferPartDetailByTransferID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetTransferPartDetailByTransferID" message="tns:iOutbound_GetTransferPartDetailByTransferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetTransferPartDetailByTransferIDResponse" message="tns:iOutbound_GetTransferPartDetailByTransferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransfer_TempDataTR">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/UpdateTransfer_TempDataTR" message="tns:iOutbound_UpdateTransfer_TempDataTR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/UpdateTransfer_TempDataTRResponse" message="tns:iOutbound_UpdateTransfer_TempDataTR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveIntotTransferHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/SaveIntotTransferHead" message="tns:iOutbound_SaveIntotTransferHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/SaveIntotTransferHeadResponse" message="tns:iOutbound_SaveIntotTransferHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveTRDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/FinalSaveTRDetail" message="tns:iOutbound_FinalSaveTRDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/FinalSaveTRDetailResponse" message="tns:iOutbound_FinalSaveTRDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferHeadDetailByTransferID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iOutbound/GetTransferHeadDetailByTransferID" message="tns:iOutbound_GetTransferHeadDetailByTransferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iOutbound/GetTransferHeadDetailByTransferIDResponse" message="tns:iOutbound_GetTransferHeadDetailByTransferID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iInbound" type="tns:iInbound">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BindInboundGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindInboundGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedPOStatusIsSameOrNot">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckSelectedPOStatusIsSameOrNot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextObject">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetNextObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAssignedTask">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SaveAssignedTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckJobCardofSelectedRecord">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckJobCardofSelectedRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserWarehouse">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetUserWarehouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendor">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEW">
+      <soap:operation soapAction="http://tempuri.org/iInbound/ClearTempDataFromDBNEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForInbound">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetStatusListForInbound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkflowSequenceOfPO">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetWorkflowSequenceOfPO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/AddPartIntoRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetRequestPartDetailByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMofSelectedProduct">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetUOMofSelectedProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedUom">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetSelectedUom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetOrderHeadByOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/RemovePartFromRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMName">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetUOMName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1">
+      <soap:operation soapAction="http://tempuri.org/iInbound/UpdatePartRequest_TempData1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetTotalFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetTotalQTYFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPriceChanged">
+      <soap:operation soapAction="http://tempuri.org/iInbound/IsPriceChanged" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12">
+      <soap:operation soapAction="http://tempuri.org/iInbound/UpdatePartRequest_TempData12" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYofSequenceFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetTotalQTYofSequenceFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdIDofSequenceFromTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetPrdIDofSequenceFromTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData13">
+      <soap:operation soapAction="http://tempuri.org/iInbound/UpdatePartRequest_TempData13" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotPurchaseOrderHead">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SetIntotPurchaseOrderHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePODetail">
+      <soap:operation soapAction="http://tempuri.org/iInbound/FinalSavePODetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoHeadByPOID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetPoHeadByPOID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseNameByUserID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetWarehouseNameByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarehouseList">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetAllWarehouseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorrespondance">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetCorrespondance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalInWorkFlow">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetApprovalInWorkFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoHeadBySOIDForSalesReturn">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetSoHeadBySOIDForSalesReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindGRNGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindGRNGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindGRNGridofSelectedPO">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindGRNGridofSelectedPO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNPartDetailsByPOID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGRNPartDetailsByPOID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNPartDetailsBySOID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGRNPartDetailsBySOID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameGRN">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPdateGRNTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/UPdateGRNTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetUserNameByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavetGRNHead">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SavetGRNHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveGRNDetail">
+      <soap:operation soapAction="http://tempuri.org/iInbound/FinalSaveGRNDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalGRNPOWise">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetTotalGRNPOWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNDetailsByGRNID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGRNDetailsByGRNID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnSkuDetailsbyGRNID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGrnSkuDetailsbyGRNID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOIDFromGRNID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetPOIDFromGRNID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromGRN_TempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/RemovePartFromGRN_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNDetailsByGRNIDGRNMenu">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGRNDetailsByGRNIDGRNMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedPOJobCardNo">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckSelectedPOJobCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckJobCard">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckJobCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBGRN">
+      <soap:operation soapAction="http://tempuri.org/iInbound/ClearTempDataFromDBGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedGRNStatusIsSameOrNot">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckSelectedGRNStatusIsSameOrNot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindQCGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGridofSO">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindQCGridofSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindQCGridofSelectedGRN">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindQCGridofSelectedGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByPOID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCPartDetailsByPOID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByGRNID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCPartDetailsByGRNID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByQCID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCPartDetailsByQCID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByPickUPID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCPartDetailsByPickUPID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBQC">
+      <soap:operation soapAction="http://tempuri.org/iInbound/ClearTempDataFromDBQC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameQC">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNameQC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPdateQCTempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/UPdateQCTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavetQualityControlHead">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SavetQualityControlHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveQCDetail">
+      <soap:operation soapAction="http://tempuri.org/iInbound/FinalSaveQCDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromQC_TempData">
+      <soap:operation soapAction="http://tempuri.org/iInbound/RemovePartFromQC_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCDetailsByGRNID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCDetailsByGRNID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCDetailsByQCID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCDetailsByQCID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedQCStatusIsSameOrNot">
+      <soap:operation soapAction="http://tempuri.org/iInbound/CheckSelectedQCStatusIsSameOrNot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindLPGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindLPGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductDetails">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetProductDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSelectedRecordToLabelPrintingStatus">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SetSelectedRecordToLabelPrintingStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindPIGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindPIGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPutInList">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetPutInList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBPutIn">
+      <soap:operation soapAction="http://tempuri.org/iInbound/ClearTempDataFromDBPutIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNamePI">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetExistingTempDataBySessionIDObjectNamePI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationForPutIn">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetLocationForPutIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavetPutInHead">
+      <soap:operation soapAction="http://tempuri.org/iInbound/SavetPutInHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePutInDetail">
+      <soap:operation soapAction="http://tempuri.org/iInbound/FinalSavePutInDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindTransferGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindTransferGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferHeadByTRID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetTransferHeadByTRID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCPartDetailsByTransferID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetQCPartDetailsByTransferID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPutInListByTRID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetPutInListByTRID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGRNIDByTransferID">
+      <soap:operation soapAction="http://tempuri.org/iInbound/GetGRNIDByTransferID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindReturnGrid">
+      <soap:operation soapAction="http://tempuri.org/iInbound/BindReturnGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_iOutbound" type="tns:iOutbound">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BindOutboundGrid">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/BindOutboundGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedSOStatusIsSameOrNot">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/CheckSelectedSOStatusIsSameOrNot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextSOObject">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetNextSOObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserWarehouseSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetUserWarehouseSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouseNameByUserIDSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetWarehouseNameByUserIDSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWarehouseListSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetAllWarehouseListSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyWiseClient">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetCompanyWiseClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBNEWSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ClearTempDataFromDBNEWSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForOutbound">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetStatusListForOutbound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkflowSequenceOfSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetWorkflowSequenceOfSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/AddPartIntoRequest_TempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ClearTempDataFromDBSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestIDSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetRequestPartDetailByRequestIDSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderHeadByOrderIDSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetOrderHeadByOrderIDSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/RemovePartFromRequest_TempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData1SO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdatePartRequest_TempData1SO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempDataRtrn">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdatePartRequest_TempDataRtrn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalFromTempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetTotalFromTempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYFromTempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetTotalQTYFromTempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData12SO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdatePartRequest_TempData12SO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalQTYofSequenceFromTempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetTotalQTYofSequenceFromTempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdIDofSequenceFromTempDataSO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetPrdIDofSequenceFromTempDataSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData13SO">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdatePartRequest_TempData13SO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntotSalesOrderHead">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/SetIntotSalesOrderHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavSODetail">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/FinalSavSODetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoHeadBySOID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetSoHeadBySOID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSelectedSOJobCardNo">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/CheckSelectedSOJobCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindPickUpGrid">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/BindPickUpGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickUpList">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetPickUpList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBPickUp">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ClearTempDataFromDBPickUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNamePickUp">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNamePickUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavetPickUpHead">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/SavetPickUpHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSavePickUpDetail">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/FinalSavePickUpDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSOIDfromPkUpID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetSOIDfromPkUpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindDispatchGrid">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/BindDispatchGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoDetailByQCID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetSoDetailByQCID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchPartByQCID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetDispatchPartByQCID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBDispatch">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ClearTempDataFromDBDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameDispatch">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDispatchData">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdateDispatchData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavetDispatchHead">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/SavetDispatchHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveDispatchDetail">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/FinalSaveDispatchDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchDetailsByQCID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetDispatchDetailsByQCID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchDetailsByDispatchID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetDispatchDetailsByDispatchID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDispatchSkuDetailByDispatchID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetDispatchSkuDetailByDispatchID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindOutboundGridForReturn">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/BindOutboundGridForReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeStatusToMarkForReturn">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ChangeStatusToMarkForReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReturnHead">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/SaveReturnHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameTR">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetExistingTempDataBySessionIDObjectNameTR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoTransfer_TempDataTR">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/AddPartIntoTransfer_TempDataTR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDBTR">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/ClearTempDataFromDBTR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromTransfer_TempDataTR">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/RemovePartFromTransfer_TempDataTR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferPartDetailByTransferID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetTransferPartDetailByTransferID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransfer_TempDataTR">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/UpdateTransfer_TempDataTR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveIntotTransferHead">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/SaveIntotTransferHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveTRDetail">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/FinalSaveTRDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferHeadDetailByTransferID">
+      <soap:operation soapAction="http://tempuri.org/iOutbound/GetTransferHeadDetailByTransferID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Outbound">
+    <wsdl:port name="BasicHttpBinding_iInbound" binding="tns:BasicHttpBinding_iInbound">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.WMS/Outbound.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_iOutbound" binding="tns:BasicHttpBinding_iOutbound">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.WMS/Outbound.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

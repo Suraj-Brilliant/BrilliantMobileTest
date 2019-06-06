@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TaxMasterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServicesTest/Service.Tax/TaxMasterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iTaxMaster_GetTaxList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxList" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_InsertmTaxSetup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmTaxSetup" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_InsertmTaxSetup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmTaxSetupResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_updatemTaxSetup_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTaxSetup" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_updatemTaxSetup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemTaxSetupResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxListByID" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxRecordToBindTaxMappingGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRecordToBindTaxMappingGrid" />
+  </wsdl:message>
+  <wsdl:message name="iTaxMaster_GetTaxRecordToBindTaxMappingGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRecordToBindTaxMappingGridResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iTaxMaster">
+    <wsdl:operation name="GetTaxList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxList" message="tns:iTaxMaster_GetTaxList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxListResponse" message="tns:iTaxMaster_GetTaxList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmTaxSetup">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/InsertmTaxSetup" message="tns:iTaxMaster_InsertmTaxSetup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/InsertmTaxSetupResponse" message="tns:iTaxMaster_InsertmTaxSetup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemTaxSetup">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/updatemTaxSetup" message="tns:iTaxMaster_updatemTaxSetup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/updatemTaxSetupResponse" message="tns:iTaxMaster_updatemTaxSetup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxListByID" message="tns:iTaxMaster_GetTaxListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxListByIDResponse" message="tns:iTaxMaster_GetTaxListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/checkDuplicateRecord" message="tns:iTaxMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/checkDuplicateRecordResponse" message="tns:iTaxMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/checkDuplicateRecordEdit" message="tns:iTaxMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/checkDuplicateRecordEditResponse" message="tns:iTaxMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxRecordToBindGrid" message="tns:iTaxMaster_GetTaxRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxRecordToBindGridResponse" message="tns:iTaxMaster_GetTaxRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRecordToBindTaxMappingGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxRecordToBindTaxMappingGrid" message="tns:iTaxMaster_GetTaxRecordToBindTaxMappingGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iTaxMaster/GetTaxRecordToBindTaxMappingGridResponse" message="tns:iTaxMaster_GetTaxRecordToBindTaxMappingGrid_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iTaxMaster" type="tns:iTaxMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTaxList">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/GetTaxList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmTaxSetup">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/InsertmTaxSetup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemTaxSetup">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/updatemTaxSetup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxListByID">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/GetTaxListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/GetTaxRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRecordToBindTaxMappingGrid">
+      <soap:operation soapAction="http://tempuri.org/iTaxMaster/GetTaxRecordToBindTaxMappingGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TaxMasterService">
+    <wsdl:port name="BasicHttpBinding_iTaxMaster" binding="tns:BasicHttpBinding_iTaxMaster">
+      <soap:address location="http://localhost/BrilliantWMSServicesTest/Service.Tax/TaxMasterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.Address.RouteService" CodeBehind="RouteService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UserCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="objParaProBindMenu" type="tns:ProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ProBindMenu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="_constP" type="tns:ArrayOfString" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UserCode" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MenuCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ObjectCode" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CompanyCode" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DivName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnAdd" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnEdit" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnView" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnDelete" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnSave" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnClear" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnExport" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnImport" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnMail" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnPrint" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnApproval" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnConvertTo" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BtnAssignTask" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ActiveButton" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfProBindMenu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProBindMenu" nillable="true" type="tns:ProBindMenu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UserCodeResult" type="tns:ArrayOfProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOperaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="objParaProBindMenu" type="tns:ProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOperactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CheckOperactionResult" type="tns:ArrayOfProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BindUserMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="objParaProBindMenu" type="tns:ProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BindUserMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="BindUserMenuResult" type="tns:ArrayOfProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveButtonClickEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="objProBindMenu" type="tns:ProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveButtonClickEventResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ActiveButtonClickEventResult" type="tns:ProBindMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

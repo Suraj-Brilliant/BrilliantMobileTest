@@ -1,0 +1,2369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+          <EntitySet Name="mAgreegator" EntityType="BISPL_CRMDBModel.Store.mAgreegator" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mAgreegatorAPI" EntityType="BISPL_CRMDBModel.Store.mAgreegatorAPI" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mChannel" EntityType="BISPL_CRMDBModel.Store.mChannel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mCompany" EntityType="BISPL_CRMDBModel.Store.mCompany" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mConfiguration" EntityType="BISPL_CRMDBModel.Store.mConfiguration" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mCustomer" EntityType="BISPL_CRMDBModel.Store.mCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.Store.mDropdownValues" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mMessageEMailTemplates" EntityType="BISPL_CRMDBModel.Store.mMessageEMailTemplates" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mPrefixMaster" EntityType="BISPL_CRMDBModel.Store.mPrefixMaster" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mProductChannel" EntityType="BISPL_CRMDBModel.Store.mProductChannel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mProductLocation" EntityType="BISPL_CRMDBModel.Store.mProductLocation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mRateCard" EntityType="BISPL_CRMDBModel.Store.mRateCard" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mTermsConditions" EntityType="BISPL_CRMDBModel.Store.mTermsConditions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mTermsConditionsGroup" EntityType="BISPL_CRMDBModel.Store.mTermsConditionsGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mTerritory" EntityType="BISPL_CRMDBModel.Store.mTerritory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mUserTerritoryDetail" EntityType="BISPL_CRMDBModel.Store.mUserTerritoryDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tCompanyRegistrationDetails" EntityType="BISPL_CRMDBModel.Store.tCompanyRegistrationDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tContactPersonDetail" EntityType="BISPL_CRMDBModel.Store.tContactPersonDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TempData" EntityType="BISPL_CRMDBModel.Store.TempData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tTargetPlan" EntityType="BISPL_CRMDBModel.Store.tTargetPlan" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tTargetPlanDetail" EntityType="BISPL_CRMDBModel.Store.tTargetPlanDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="V_GetCustomerDetails" EntityType="BISPL_CRMDBModel.Store.V_GetCustomerDetails" store:Type="Views" store:Schema="dbo" store:Name="V_GetCustomerDetails">
+            <DefiningQuery>SELECT 
+      [V_GetCustomerDetails].[ID] AS [ID], 
+      [V_GetCustomerDetails].[CompanyName] AS [CompanyName], 
+      [V_GetCustomerDetails].[ParentID] AS [ParentID], 
+      [V_GetCustomerDetails].[Name] AS [Name], 
+      [V_GetCustomerDetails].[Website] AS [Website], 
+      [V_GetCustomerDetails].[AddressLine1] AS [AddressLine1], 
+      [V_GetCustomerDetails].[AddressLine2] AS [AddressLine2], 
+      [V_GetCustomerDetails].[AddressLine3] AS [AddressLine3], 
+      [V_GetCustomerDetails].[Landmark] AS [Landmark], 
+      [V_GetCustomerDetails].[County] AS [County], 
+      [V_GetCustomerDetails].[State] AS [State], 
+      [V_GetCustomerDetails].[City] AS [City], 
+      [V_GetCustomerDetails].[Zipcode] AS [Zipcode], 
+      [V_GetCustomerDetails].[PhoneNo] AS [PhoneNo], 
+      [V_GetCustomerDetails].[FaxNo] AS [FaxNo], 
+      [V_GetCustomerDetails].[EmailID] AS [EmailID], 
+      [V_GetCustomerDetails].[LogoPath] AS [LogoPath], 
+      [V_GetCustomerDetails].[Active] AS [Active]
+      FROM [dbo].[V_GetCustomerDetails] AS [V_GetCustomerDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetChannelDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetChannelDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetChannelDetails">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetChannelDetails].[ID] AS [ID], 
+      [V_WMS_GetChannelDetails].[ChannelName] AS [ChannelName], 
+      [V_WMS_GetChannelDetails].[ChannelURL] AS [ChannelURL], 
+      [V_WMS_GetChannelDetails].[UserName] AS [UserName], 
+      [V_WMS_GetChannelDetails].[Company] AS [Company], 
+      [V_WMS_GetChannelDetails].[Customer] AS [Customer], 
+      [V_WMS_GetChannelDetails].[Type] AS [Type], 
+      [V_WMS_GetChannelDetails].[Active] AS [Active], 
+      [V_WMS_GetChannelDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetChannelDetails].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetChannelDetails].[typeID] AS [typeID]
+      FROM [dbo].[V_WMS_GetChannelDetails] AS [V_WMS_GetChannelDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetClientDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetClientDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetClientDetails">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetClientDetails].[ID] AS [ID], 
+      [V_WMS_GetClientDetails].[Name] AS [Name], 
+      [V_WMS_GetClientDetails].[Code] AS [Code], 
+      [V_WMS_GetClientDetails].[Company] AS [Company], 
+      [V_WMS_GetClientDetails].[Customer] AS [Customer], 
+      [V_WMS_GetClientDetails].[Value] AS [Value], 
+      [V_WMS_GetClientDetails].[AccountType] AS [AccountType], 
+      [V_WMS_GetClientDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetClientDetails].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetClientDetails].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetClientDetails] AS [V_WMS_GetClientDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetRateCardDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetRateCardDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetRateCardDetails">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetRateCardDetails].[ID] AS [ID], 
+      [V_WMS_GetRateCardDetails].[AccountType] AS [AccountType], 
+      [V_WMS_GetRateCardDetails].[RateDetails] AS [RateDetails], 
+      [V_WMS_GetRateCardDetails].[Rate] AS [Rate], 
+      [V_WMS_GetRateCardDetails].[FromDate] AS [FromDate], 
+      [V_WMS_GetRateCardDetails].[ToDate] AS [ToDate], 
+      [V_WMS_GetRateCardDetails].[EffDate] AS [EffDate], 
+      [V_WMS_GetRateCardDetails].[Active] AS [Active], 
+      [V_WMS_GetRateCardDetails].[Company] AS [Company], 
+      [V_WMS_GetRateCardDetails].[Customer] AS [Customer], 
+      [V_WMS_GetRateCardDetails].[RateType] AS [RateType], 
+      [V_WMS_GetRateCardDetails].[Vendor] AS [Vendor], 
+      [V_WMS_GetRateCardDetails].[Client] AS [Client], 
+      [V_WMS_GetRateCardDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetRateCardDetails].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetRateCardDetails].[AccountID] AS [AccountID], 
+      [V_WMS_GetRateCardDetails].[AccountName] AS [AccountName]
+      FROM [dbo].[V_WMS_GetRateCardDetails] AS [V_WMS_GetRateCardDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_WMS_GetVendorDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetVendorDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetVendorDetails">
+            <DefiningQuery>SELECT 
+      [V_WMS_GetVendorDetails].[ID] AS [ID], 
+      [V_WMS_GetVendorDetails].[Name] AS [Name], 
+      [V_WMS_GetVendorDetails].[Code] AS [Code], 
+      [V_WMS_GetVendorDetails].[Company] AS [Company], 
+      [V_WMS_GetVendorDetails].[Customer] AS [Customer], 
+      [V_WMS_GetVendorDetails].[Value] AS [Value], 
+      [V_WMS_GetVendorDetails].[AccountType] AS [AccountType], 
+      [V_WMS_GetVendorDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetVendorDetails].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetVendorDetails].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetVendorDetails] AS [V_WMS_GetVendorDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vGetCompanyDetails" EntityType="BISPL_CRMDBModel.Store.vGetCompanyDetails" store:Type="Views" store:Schema="dbo" store:Name="vGetCompanyDetails">
+            <DefiningQuery>SELECT 
+      [vGetCompanyDetails].[ID] AS [ID], 
+      [vGetCompanyDetails].[ParentID] AS [ParentID], 
+      [vGetCompanyDetails].[Name] AS [Name], 
+      [vGetCompanyDetails].[Website] AS [Website], 
+      [vGetCompanyDetails].[AddressLine1] AS [AddressLine1], 
+      [vGetCompanyDetails].[AddressLine2] AS [AddressLine2], 
+      [vGetCompanyDetails].[AddressLine3] AS [AddressLine3], 
+      [vGetCompanyDetails].[Landmark] AS [Landmark], 
+      [vGetCompanyDetails].[County] AS [County], 
+      [vGetCompanyDetails].[State] AS [State], 
+      [vGetCompanyDetails].[City] AS [City], 
+      [vGetCompanyDetails].[Zipcode] AS [Zipcode], 
+      [vGetCompanyDetails].[PhoneNo] AS [PhoneNo], 
+      [vGetCompanyDetails].[FaxNo] AS [FaxNo], 
+      [vGetCompanyDetails].[EmailID] AS [EmailID], 
+      [vGetCompanyDetails].[LogoPath] AS [LogoPath], 
+      [vGetCompanyDetails].[Active] AS [Active], 
+      [vGetCompanyDetails].[NoOfUsers] AS [NoOfUsers], 
+      [vGetCompanyDetails].[CRMExpiryDate] AS [CRMExpiryDate]
+      FROM [dbo].[vGetCompanyDetails] AS [vGetCompanyDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vGetUserProfileList" EntityType="BISPL_CRMDBModel.Store.vGetUserProfileList" store:Type="Views" store:Schema="dbo" store:Name="vGetUserProfileList">
+            <DefiningQuery>SELECT 
+      [vGetUserProfileList].[userID] AS [userID], 
+      [vGetUserProfileList].[userName] AS [userName], 
+      [vGetUserProfileList].[deptname] AS [deptname], 
+      [vGetUserProfileList].[desiName] AS [desiName], 
+      [vGetUserProfileList].[EmailID] AS [EmailID], 
+      [vGetUserProfileList].[MobileNo] AS [MobileNo], 
+      [vGetUserProfileList].[Active] AS [Active], 
+      [vGetUserProfileList].[EmployeeID] AS [EmployeeID]
+      FROM [dbo].[vGetUserProfileList] AS [vGetUserProfileList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vTargetPlan" EntityType="BISPL_CRMDBModel.Store.vTargetPlan" store:Type="Views" store:Schema="dbo" store:Name="vTargetPlan">
+            <DefiningQuery>SELECT 
+      [vTargetPlan].[ID] AS [ID], 
+      [vTargetPlan].[Name] AS [Name], 
+      [vTargetPlan].[Month] AS [Month], 
+      [vTargetPlan].[Year] AS [Year], 
+      [vTargetPlan].[FromDate] AS [FromDate], 
+      [vTargetPlan].[ToDate] AS [ToDate], 
+      [vTargetPlan].[AlertDate] AS [AlertDate], 
+      [vTargetPlan].[Remark] AS [Remark], 
+      [vTargetPlan].[Executive] AS [Executive], 
+      [vTargetPlan].[ExecutiveID] AS [ExecutiveID], 
+      [vTargetPlan].[Active] AS [Active], 
+      [vTargetPlan].[Sequence] AS [Sequence], 
+      [vTargetPlan].[CreatedBy] AS [CreatedBy], 
+      [vTargetPlan].[CreationDate] AS [CreationDate], 
+      [vTargetPlan].[LastModifiedBy] AS [LastModifiedBy], 
+      [vTargetPlan].[LastModifiedDate] AS [LastModifiedDate], 
+      [vTargetPlan].[CompanyID] AS [CompanyID]
+      FROM [dbo].[vTargetPlan] AS [vTargetPlan]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vTermCondition" EntityType="BISPL_CRMDBModel.Store.vTermCondition" store:Type="Views" store:Schema="dbo" store:Name="vTermCondition">
+            <DefiningQuery>SELECT 
+      [vTermCondition].[ID] AS [ID], 
+      [vTermCondition].[TCGroupID] AS [TCGroupID], 
+      [vTermCondition].[GroupName] AS [GroupName], 
+      [vTermCondition].[Term] AS [Term], 
+      [vTermCondition].[Condition] AS [Condition], 
+      [vTermCondition].[Active] AS [Active], 
+      [vTermCondition].[Sequence] AS [Sequence]
+      FROM [dbo].[vTermCondition] AS [vTermCondition]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_mAgreegatorAPI_mAgreegator" Association="BISPL_CRMDBModel.Store.FK_mAgreegatorAPI_mAgreegator">
+            <End Role="mAgreegator" EntitySet="mAgreegator" />
+            <End Role="mAgreegatorAPI" EntitySet="mAgreegatorAPI" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mProductChannel_mChannel" Association="BISPL_CRMDBModel.Store.FK_mProductChannel_mChannel">
+            <End Role="mChannel" EntitySet="mChannel" />
+            <End Role="mProductChannel" EntitySet="mProductChannel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tCompanyRegistrationDetails_mCompany" Association="BISPL_CRMDBModel.Store.FK_tCompanyRegistrationDetails_mCompany">
+            <End Role="mCompany" EntitySet="mCompany" />
+            <End Role="tCompanyRegistrationDetails" EntitySet="tCompanyRegistrationDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mAgreegator">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AgreegatorName" Type="varchar" MaxLength="255" />
+          <Property Name="ContactPersonName" Type="varchar" MaxLength="255" />
+          <Property Name="EmailID" Type="varchar" MaxLength="255" />
+          <Property Name="MobileNo" Type="bigint" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="mAgreegatorAPI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AgreegatorID" Type="bigint" />
+          <Property Name="APIName" Type="varchar(max)" />
+          <Property Name="Purpose" Type="varchar(max)" />
+          <Property Name="InputParameter" Type="varchar(max)" />
+          <Property Name="OutputParameter" Type="varchar(max)" />
+          <Property Name="APIURL" Type="varchar(max)" />
+          <Property Name="Remark" Type="varchar(max)" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mChannel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="ChannelName" Type="varchar" MaxLength="255" />
+          <Property Name="ChannelURL" Type="varchar(max)" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="Password" Type="varchar" MaxLength="255" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="TypeID" Type="bigint" />
+          <Property Name="StandardChannelID" Type="bigint" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="mCompany">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="MainDataSource" Type="nvarchar" MaxLength="500" />
+          <Property Name="MainDataBaseName" Type="nvarchar" MaxLength="100" />
+          <Property Name="MainDBPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataSource" Type="nvarchar" MaxLength="500" />
+          <Property Name="DataBaseName" Type="nvarchar" MaxLength="100" />
+          <Property Name="DBPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="MainServerLogin" Type="nvarchar" MaxLength="50" />
+          <Property Name="Logo" Type="image" />
+          <Property Name="StampImg" Type="image" />
+          <Property Name="Complogo" Type="varbinary(max)" />
+          <Property Name="OrderFormat" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="mConfiguration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Object" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReferenceID" Type="bigint" />
+          <Property Name="SubscriType" Type="bigint" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="NoOfWarehouse" Type="bigint" />
+          <Property Name="WMS" Type="char" MaxLength="3" />
+          <Property Name="OMS" Type="char" MaxLength="3" />
+          <Property Name="Delivery" Type="char" MaxLength="3" />
+          <Property Name="pl3" Type="char" MaxLength="3" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="Createdby" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="MainDataSource" Type="nvarchar" MaxLength="500" />
+          <Property Name="MainDataBaseName" Type="nvarchar" MaxLength="100" />
+          <Property Name="MainDBPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataSource" Type="nvarchar" MaxLength="500" />
+          <Property Name="DataBaseName" Type="nvarchar" MaxLength="100" />
+          <Property Name="DBPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="MainServerLogin" Type="nvarchar" MaxLength="50" />
+          <Property Name="Logo" Type="image" />
+          <Property Name="StampImg" Type="image" />
+          <Property Name="Complogo" Type="varbinary(max)" />
+          <Property Name="OrderFormat" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="mDropdownValues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="Parameter" Type="nvarchar(max)" />
+          <Property Name="StatusID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mMessageEMailTemplates">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObjectName" Type="varchar" MaxLength="100" />
+          <Property Name="mStatusID" Type="bigint" />
+          <Property Name="MailType" Type="varchar" MaxLength="100" />
+          <Property Name="MailSubject" Type="nvarchar(max)" />
+          <Property Name="MailBody" Type="nvarchar(max)" />
+          <Property Name="Active" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="DepartmentID" Type="bigint" />
+          <Property Name="ActivityID" Type="bigint" />
+          <Property Name="MessageID" Type="bigint" />
+          <Property Name="TemplateTitle" Type="nvarchar(max)" />
+          <Property Name="MobileText" Type="nvarchar" MaxLength="100" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mPrefixMaster">
+          <Key>
+            <PropertyRef Name="PreID" />
+          </Key>
+          <Property Name="PreID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PreObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Prefix" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Seperator" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="StartingNo" Type="bigint" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Creationdate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mProductChannel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProdID" Type="bigint" />
+          <Property Name="ChannelID" Type="bigint" />
+          <Property Name="ChannelProductcode" Type="varchar" MaxLength="200" />
+          <Property Name="ChannelProductDescription" Type="varchar" MaxLength="255" />
+          <Property Name="ChannelPrice" Type="decimal" Scale="2" />
+          <Property Name="EffectiveFrom" Type="datetime" />
+          <Property Name="EffectiveTo" Type="datetime" />
+          <Property Name="undefined1" Type="nvarchar" MaxLength="100" />
+          <Property Name="undefined2" Type="nvarchar" MaxLength="100" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="AliasProductCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Active" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="mProductLocation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProdId" Type="bigint" />
+          <Property Name="LocationId" Type="bigint" />
+          <Property Name="MaxOrderQty" Type="decimal" Precision="12" Scale="2" />
+          <Property Name="MinOrderQty" Type="decimal" Precision="12" Scale="2" />
+          <Property Name="LocType" Type="nvarchar" MaxLength="20" />
+          <Property Name="Object" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="mRateCard">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="RateDetails" Type="nvarchar" MaxLength="300" />
+          <Property Name="Rate" Type="decimal" Scale="2" />
+          <Property Name="FromDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+          <Property Name="EffDate" Type="datetime" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="RateType" Type="bigint" />
+          <Property Name="AccountID" Type="bigint" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+          <Property Name="AccountName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="mTermsConditions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TCGroupID" Type="bigint" Nullable="false" />
+          <Property Name="Term" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Condition" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mTermsConditionsGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mTerritory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Level" Type="smallint" />
+          <Property Name="GroupTitle" Type="varchar" MaxLength="50" />
+          <Property Name="Territory" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="IsMandatory" Type="bit" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="StoreCode" Type="nvarchar" MaxLength="60" />
+          <Property Name="ApprovalLevel" Type="bigint" />
+          <Property Name="AutoCancel" Type="varchar" MaxLength="10" />
+          <Property Name="cancelDays" Type="bigint" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+          <Property Name="ApprovalRem" Type="varchar" MaxLength="5" />
+          <Property Name="AutoCancRen" Type="varchar" MaxLength="5" />
+          <Property Name="AutoRemSchedule" Type="bigint" />
+          <Property Name="ApproRemSchedul" Type="bigint" />
+          <Property Name="ECommerce" Type="bit" />
+          <Property Name="OrderFormat" Type="nvarchar" MaxLength="50" />
+          <Property Name="GwcDeliveries" Type="bit" />
+          <Property Name="MaxDeliveryDays" Type="bigint" />
+          <Property Name="FinApproverID" Type="bigint" />
+          <Property Name="AddressType" Type="bigint" />
+          <Property Name="PriceChange" Type="bit" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mUserTerritoryDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TerritoryID" Type="bigint" />
+          <Property Name="Level" Type="bigint" />
+          <Property Name="UserID" Type="bigint" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+          <Property Name="LastMofidiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tCompanyRegistrationDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="NoOfUsers" Type="bigint" Nullable="false" />
+          <Property Name="CRMRegistrationDate" Type="datetime" Nullable="false" />
+          <Property Name="CRMExpiryDate" Type="date" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tContactPersonDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+          <Property Name="CustomerHeadID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Department" Type="bigint" />
+          <Property Name="Designation" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="OfficeNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="ContactTypeID" Type="bigint" Nullable="false" />
+          <Property Name="InterestedIn" Type="nvarchar" MaxLength="200" />
+          <Property Name="Hobbies" Type="nvarchar" MaxLength="200" />
+          <Property Name="FacebookID" Type="nvarchar" MaxLength="100" />
+          <Property Name="FacebookPassword" Type="nvarchar" MaxLength="100" />
+          <Property Name="TwitterID" Type="nvarchar" MaxLength="100" />
+          <Property Name="TwitterPassword" Type="nvarchar" MaxLength="100" />
+          <Property Name="OtherID" Type="nvarchar" MaxLength="100" />
+          <Property Name="HighestQualification" Type="nvarchar" MaxLength="100" />
+          <Property Name="CollegeOrUniversity" Type="nvarchar" MaxLength="100" />
+          <Property Name="HighSchool" Type="nvarchar" MaxLength="100" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TempData">
+          <Key>
+            <PropertyRef Name="TempDataID" />
+          </Key>
+          <Property Name="TempDataID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="xml" Nullable="false" />
+          <Property Name="XmlData" Type="xml" />
+          <Property Name="LastUpdated" Type="datetime" Nullable="false" />
+          <Property Name="SessionID" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="TableName" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tTargetPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Month" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Year" Type="bigint" Nullable="false" />
+          <Property Name="FromDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+          <Property Name="AlertDate" Type="datetime" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="ExecutiveID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tTargetPlanDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TargetID" Type="bigint" Nullable="false" />
+          <Property Name="ProductID" Type="bigint" Nullable="false" />
+          <Property Name="Quantity" Type="bigint" Nullable="false" />
+          <Property Name="TargetAmount" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="Sequence" Type="bigint" Nullable="false" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_GetCustomerDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_GetCustomerDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="County" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetChannelDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetChannelDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ChannelName" Type="varchar" MaxLength="255" />
+          <Property Name="ChannelURL" Type="varchar(max)" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar(max)" />
+          <Property Name="Active" Type="char" MaxLength="5" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="typeID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetClientDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetClientDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetRateCardDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetRateCardDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="50" />
+          <Property Name="RateDetails" Type="nvarchar" MaxLength="300" />
+          <Property Name="Rate" Type="decimal" Scale="2" />
+          <Property Name="FromDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+          <Property Name="EffDate" Type="datetime" />
+          <Property Name="Active" Type="varchar" MaxLength="5" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="RateType" Type="nvarchar(max)" />
+          <Property Name="Vendor" Type="nvarchar" MaxLength="50" />
+          <Property Name="Client" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="AccountID" Type="bigint" />
+          <Property Name="AccountName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetVendorDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_WMS_GetVendorDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vGetCompanyDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vGetCompanyDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="County" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="NoOfUsers" Type="bigint" />
+          <Property Name="CRMExpiryDate" Type="varchar" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vGetUserProfileList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vGetUserProfileList">
+          <Key>
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="deptname" />
+            <PropertyRef Name="desiName" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="userID" Type="bigint" Nullable="false" />
+          <Property Name="userName" Type="nvarchar" MaxLength="158" />
+          <Property Name="deptname" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="desiName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vTargetPlan' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vTargetPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="ExecutiveID" />
+            <PropertyRef Name="Active" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreationDate" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Month" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Year" Type="bigint" Nullable="false" />
+          <Property Name="FromDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+          <Property Name="AlertDate" Type="datetime" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="Executive" Type="varchar(max)" />
+          <Property Name="ExecutiveID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vTermCondition' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vTermCondition">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="TCGroupID" />
+            <PropertyRef Name="Term" />
+            <PropertyRef Name="Condition" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="TCGroupID" Type="bigint" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Term" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Condition" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="Sequence" Type="bigint" />
+        </EntityType>
+        <Association Name="FK_mAgreegatorAPI_mAgreegator">
+          <End Role="mAgreegator" Type="BISPL_CRMDBModel.Store.mAgreegator" Multiplicity="0..1" />
+          <End Role="mAgreegatorAPI" Type="BISPL_CRMDBModel.Store.mAgreegatorAPI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mAgreegator">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="mAgreegatorAPI">
+              <PropertyRef Name="AgreegatorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mProductChannel_mChannel">
+          <End Role="mChannel" Type="BISPL_CRMDBModel.Store.mChannel" Multiplicity="0..1" />
+          <End Role="mProductChannel" Type="BISPL_CRMDBModel.Store.mProductChannel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mChannel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="mProductChannel">
+              <PropertyRef Name="ChannelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tCompanyRegistrationDetails_mCompany">
+          <End Role="mCompany" Type="BISPL_CRMDBModel.Store.mCompany" Multiplicity="1" />
+          <End Role="tCompanyRegistrationDetails" Type="BISPL_CRMDBModel.Store.tCompanyRegistrationDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mCompany">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tCompanyRegistrationDetails">
+              <PropertyRef Name="CompanyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SP_GetProductListForTargetPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paraTargetID" Type="bigint" Mode="In" />
+          <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_GetTermConditionListForUCTermCondition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paraReferenceID" Type="bigint" Mode="In" />
+          <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+          <Parameter Name="paraObjectName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_WMS_GetAggregatorList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="mTermsConditions" EntityType="BISPL_CRMDBModel.mTermsCondition" />
+          <EntitySet Name="mTerritories" EntityType="BISPL_CRMDBModel.mTerritory" />
+          <EntitySet Name="tCompanyRegistrationDetails" EntityType="BISPL_CRMDBModel.tCompanyRegistrationDetail" />
+          <EntitySet Name="vGetCompanyDetails" EntityType="BISPL_CRMDBModel.vGetCompanyDetail" />
+          <EntitySet Name="vGetUserProfileLists" EntityType="BISPL_CRMDBModel.vGetUserProfileList" />
+          <FunctionImport Name="SP_GetProductListForTargetPlan" ReturnType="Collection(BISPL_CRMDBModel.SP_GetProductListForTargetPlan_Result)">
+            <Parameter Name="paraTargetID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetTermConditionListForUCTermCondition" ReturnType="Collection(BISPL_CRMDBModel.SP_GetTermConditionListForUCTermCondition_Result)">
+            <Parameter Name="paraReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserID" Mode="In" Type="String" />
+            <Parameter Name="paraObjectName" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="mTermsConditionsGroups" EntityType="BISPL_CRMDBModel.mTermsConditionsGroup" />
+          <EntitySet Name="TempDatas" EntityType="BISPL_CRMDBModel.TempData" />
+          <EntitySet Name="mUserTerritoryDetails" EntityType="BISPL_CRMDBModel.mUserTerritoryDetail" />
+          <EntitySet Name="vTermConditions" EntityType="BISPL_CRMDBModel.vTermCondition" />
+          <EntitySet Name="mMessageEMailTemplates" EntityType="BISPL_CRMDBModel.mMessageEMailTemplate" />
+          <EntitySet Name="mPrefixMasters" EntityType="BISPL_CRMDBModel.mPrefixMaster" />
+          <EntitySet Name="tTargetPlans" EntityType="BISPL_CRMDBModel.tTargetPlan" />
+          <EntitySet Name="tTargetPlanDetails" EntityType="BISPL_CRMDBModel.tTargetPlanDetail" />
+          <EntitySet Name="vTargetPlans" EntityType="BISPL_CRMDBModel.vTargetPlan" />
+          <EntitySet Name="mCompanies" EntityType="BISPL_CRMDBModel.mCompany" />
+          <AssociationSet Name="FK_tCompanyRegistrationDetails_mCompany" Association="BISPL_CRMDBModel.FK_tCompanyRegistrationDetails_mCompany">
+            <End Role="mCompany" EntitySet="mCompanies" />
+            <End Role="tCompanyRegistrationDetail" EntitySet="tCompanyRegistrationDetails" />
+          </AssociationSet>
+          <EntitySet Name="tContactPersonDetails" EntityType="BISPL_CRMDBModel.tContactPersonDetail" />
+          <EntitySet Name="V_GetCustomerDetails" EntityType="BISPL_CRMDBModel.V_GetCustomerDetails" />
+          <EntitySet Name="V_WMS_GetChannelDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetChannelDetails" />
+          <EntitySet Name="V_WMS_GetRateCardDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetRateCardDetails" />
+          <FunctionImport Name="SP_WMS_GetAggregatorList" />
+          <FunctionImport Name="SP_WMS_GetAggregatorList1" ReturnType="Collection(BISPL_CRMDBModel.SP_WMS_GetAggregatorList1_Result)" />
+          <EntitySet Name="mConfigurations" EntityType="BISPL_CRMDBModel.mConfiguration" />
+          <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.mDropdownValue" />
+          <EntitySet Name="mCustomers" EntityType="BISPL_CRMDBModel.mCustomer" />
+          <EntitySet Name="mProductChannels" EntityType="BISPL_CRMDBModel.mProductChannel" />
+          <EntitySet Name="mProductLocations" EntityType="BISPL_CRMDBModel.mProductLocation" />
+          <EntitySet Name="mChannels" EntityType="BISPL_CRMDBModel.mChannel" />
+          <AssociationSet Name="FK_mProductChannel_mChannel" Association="BISPL_CRMDBModel.FK_mProductChannel_mChannel">
+            <End Role="mChannel" EntitySet="mChannels" />
+            <End Role="mProductChannel" EntitySet="mProductChannels" />
+          </AssociationSet>
+          <EntitySet Name="mAgreegators" EntityType="BISPL_CRMDBModel.mAgreegator" />
+          <EntitySet Name="mAgreegatorAPIs" EntityType="BISPL_CRMDBModel.mAgreegatorAPI" />
+          <AssociationSet Name="FK_mAgreegatorAPI_mAgreegator" Association="BISPL_CRMDBModel.FK_mAgreegatorAPI_mAgreegator">
+            <End Role="mAgreegator" EntitySet="mAgreegators" />
+            <End Role="mAgreegatorAPI" EntitySet="mAgreegatorAPIs" />
+          </AssociationSet>
+          <EntitySet Name="V_WMS_GetClientDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetClientDetails" />
+          <EntitySet Name="V_WMS_GetVendorDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetVendorDetails" />
+          <EntitySet Name="mRateCards" EntityType="BISPL_CRMDBModel.mRateCard" />
+        </EntityContainer>
+        <EntityType Name="mTermsCondition">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="TCGroupID" Nullable="false" />
+          <Property Type="String" Name="Term" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Condition" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="CustomerID" />
+        </EntityType>
+        <EntityType Name="mTerritory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="Int16" Name="Level" />
+          <Property Type="String" Name="GroupTitle" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Territory" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Boolean" Name="IsMandatory" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="StoreCode" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ApprovalLevel" />
+          <Property Type="String" Name="AutoCancel" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="cancelDays" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ApprovalRem" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="AutoCancRen" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="AutoRemSchedule" />
+          <Property Type="Int64" Name="ApproRemSchedul" />
+          <Property Type="Boolean" Name="ECommerce" />
+          <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="GwcDeliveries" />
+          <Property Type="Int64" Name="MaxDeliveryDays" />
+          <Property Type="Int64" Name="FinApproverID" />
+          <Property Type="Int64" Name="AddressType" />
+          <Property Type="Boolean" Name="PriceChange" />
+          <Property Type="Int64" Name="CustomerID" />
+        </EntityType>
+        <EntityType Name="tCompanyRegistrationDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="NoOfUsers" Nullable="false" />
+          <Property Type="DateTime" Name="CRMRegistrationDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="CRMExpiryDate" Nullable="false" Precision="0" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <NavigationProperty Name="mCompany" Relationship="BISPL_CRMDBModel.FK_tCompanyRegistrationDetails_mCompany" FromRole="tCompanyRegistrationDetail" ToRole="mCompany" />
+        </EntityType>
+        <EntityType Name="vGetCompanyDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="County" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="NoOfUsers" />
+          <Property Type="String" Name="CRMExpiryDate" MaxLength="8000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vGetUserProfileList">
+          <Key>
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="deptname" />
+            <PropertyRef Name="desiName" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="userID" Nullable="false" />
+          <Property Type="String" Name="userName" MaxLength="158" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="deptname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="desiName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmployeeID" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="SP_GetProductListForTargetPlan_Result">
+          <Property Type="Int32" Name="ID" Nullable="true" />
+          <Property Type="Int64" Name="Sequence" Nullable="true" />
+          <Property Type="Int64" Name="ProductID" Nullable="true" />
+          <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ProductName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="PrincipalPrice" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="Quantity" Nullable="true" />
+          <Property Type="Decimal" Name="TargetAmount" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="String" Name="Active" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="LastModifiedBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="LastModifiedDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_GetTermConditionListForUCTermCondition_Result">
+          <Property Type="Int32" Name="ID" Nullable="true" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+          <Property Type="Int64" Name="TermID" Nullable="true" />
+          <Property Type="String" Name="Term" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Condition" Nullable="true" />
+          <Property Type="Int64" Name="Sequence" Nullable="true" />
+          <Property Type="String" Name="Active" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="LastModifyBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="LastModifyDate" Nullable="true" Precision="23" />
+          <Property Type="Int64" Name="CompanyID" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="mTermsConditionsGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TempData">
+          <Key>
+            <PropertyRef Name="TempDataID" />
+          </Key>
+          <Property Type="Int32" Name="TempDataID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="XmlData" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastUpdated" Nullable="false" Precision="3" />
+          <Property Type="String" Name="SessionID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TableName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mUserTerritoryDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="TerritoryID" />
+          <Property Type="Int64" Name="Level" />
+          <Property Type="Int64" Name="UserID" />
+          <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastMofidiedDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="vTermCondition">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="TCGroupID" />
+            <PropertyRef Name="Term" />
+            <PropertyRef Name="Condition" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="TCGroupID" Nullable="false" />
+          <Property Type="String" Name="GroupName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Term" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Condition" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Sequence" />
+        </EntityType>
+        <EntityType Name="mMessageEMailTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="mStatusID" />
+          <Property Type="String" Name="MailType" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MailSubject" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MailBody" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="DateTime" Name="ModifiedDate" Precision="0" />
+          <Property Type="Int64" Name="ModifiedBy" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="DepartmentID" />
+          <Property Type="Int64" Name="ActivityID" />
+          <Property Type="Int64" Name="MessageID" />
+          <Property Type="String" Name="TemplateTitle" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobileText" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CustomerID" />
+        </EntityType>
+        <EntityType Name="mPrefixMaster">
+          <Key>
+            <PropertyRef Name="PreID" />
+          </Key>
+          <Property Type="Int64" Name="PreID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="PreObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Prefix" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Seperator" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="Int64" Name="StartingNo" Nullable="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Creationdate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" />
+        </EntityType>
+        <EntityType Name="tTargetPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Month" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Year" Nullable="false" />
+          <Property Type="DateTime" Name="FromDate" Precision="3" />
+          <Property Type="DateTime" Name="ToDate" Precision="3" />
+          <Property Type="DateTime" Name="AlertDate" Precision="3" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ExecutiveID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tTargetPlanDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="TargetID" Nullable="false" />
+          <Property Type="Int64" Name="ProductID" Nullable="false" />
+          <Property Type="Int64" Name="Quantity" Nullable="false" />
+          <Property Type="Decimal" Name="TargetAmount" Nullable="false" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="Sequence" Nullable="false" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="vTargetPlan">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="ExecutiveID" />
+            <PropertyRef Name="Active" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreationDate" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Month" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Year" Nullable="false" />
+          <Property Type="DateTime" Name="FromDate" Precision="3" />
+          <Property Type="DateTime" Name="ToDate" Precision="3" />
+          <Property Type="DateTime" Name="AlertDate" Precision="3" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Executive" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ExecutiveID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mCompany">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="String" Name="MainDataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainDataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainDBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainServerLogin" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="StampImg" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Complogo" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tCompanyRegistrationDetails" Relationship="BISPL_CRMDBModel.FK_tCompanyRegistrationDetails_mCompany" FromRole="mCompany" ToRole="tCompanyRegistrationDetail" />
+        </EntityType>
+        <Association Name="FK_tCompanyRegistrationDetails_mCompany">
+          <End Type="BISPL_CRMDBModel.mCompany" Role="mCompany" Multiplicity="1" />
+          <End Type="BISPL_CRMDBModel.tCompanyRegistrationDetail" Role="tCompanyRegistrationDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mCompany">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tCompanyRegistrationDetail">
+              <PropertyRef Name="CompanyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tContactPersonDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+          <Property Type="Int64" Name="CustomerHeadID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Department" />
+          <Property Type="String" Name="Designation" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OfficeNo" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobileNo" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ContactTypeID" Nullable="false" />
+          <Property Type="String" Name="InterestedIn" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Hobbies" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FacebookID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FacebookPassword" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TwitterID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TwitterPassword" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OtherID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HighestQualification" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CollegeOrUniversity" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HighSchool" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="V_GetCustomerDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="County" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetChannelDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="ChannelName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChannelURL" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int32" Name="typeID" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetRateCardDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RateDetails" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Rate" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="FromDate" Precision="3" />
+          <Property Type="DateTime" Name="ToDate" Precision="3" />
+          <Property Type="DateTime" Name="EffDate" Precision="3" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RateType" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vendor" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Client" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int64" Name="AccountID" />
+          <Property Type="String" Name="AccountName" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="SP_WMS_GetAggregatorList1_Result">
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="AgreegatorName" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="ContactPersonName" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="EmailID" Nullable="true" MaxLength="255" />
+          <Property Type="Int64" Name="MobileNo" Nullable="true" />
+          <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Active" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="Customer" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <EntityType Name="mConfiguration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ReferenceID" />
+          <Property Type="Int64" Name="SubscriType" />
+          <Property Type="DateTime" Name="StartDate" Precision="3" />
+          <Property Type="DateTime" Name="EndDate" Precision="3" />
+          <Property Type="Int64" Name="NoOfWarehouse" />
+          <Property Type="String" Name="WMS" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="OMS" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Delivery" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="pl3" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="Createdby" />
+        </EntityType>
+        <EntityType Name="mDropdownValue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Value" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Parameter" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="StatusID" />
+        </EntityType>
+        <EntityType Name="mCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="String" Name="MainDataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainDataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainDBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MainServerLogin" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="StampImg" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Complogo" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mProductChannel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProdID" />
+          <Property Type="Int64" Name="ChannelID" />
+          <Property Type="String" Name="ChannelProductcode" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChannelProductDescription" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ChannelPrice" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="EffectiveFrom" Precision="3" />
+          <Property Type="DateTime" Name="EffectiveTo" Precision="3" />
+          <Property Type="String" Name="undefined1" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="undefined2" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="AliasProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="mChannel" Relationship="BISPL_CRMDBModel.FK_mProductChannel_mChannel" FromRole="mProductChannel" ToRole="mChannel" />
+        </EntityType>
+        <EntityType Name="mProductLocation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProdId" />
+          <Property Type="Int64" Name="LocationId" />
+          <Property Type="Decimal" Name="MaxOrderQty" Precision="12" Scale="2" />
+          <Property Type="Decimal" Name="MinOrderQty" Precision="12" Scale="2" />
+          <Property Type="String" Name="LocType" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Object" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mChannel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="String" Name="ChannelName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChannelURL" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Password" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="ModifiedBy" />
+          <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int64" Name="TypeID" />
+          <Property Type="Int64" Name="StandardChannelID" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mProductChannels" Relationship="BISPL_CRMDBModel.FK_mProductChannel_mChannel" FromRole="mChannel" ToRole="mProductChannel" />
+        </EntityType>
+        <Association Name="FK_mProductChannel_mChannel">
+          <End Type="BISPL_CRMDBModel.mChannel" Role="mChannel" Multiplicity="0..1" />
+          <End Type="BISPL_CRMDBModel.mProductChannel" Role="mProductChannel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mChannel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="mProductChannel">
+              <PropertyRef Name="ChannelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="mAgreegator">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="AgreegatorName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ContactPersonName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmailID" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="MobileNo" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="ModifiedBy" />
+          <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mAgreegatorAPIs" Relationship="BISPL_CRMDBModel.FK_mAgreegatorAPI_mAgreegator" FromRole="mAgreegator" ToRole="mAgreegatorAPI" />
+        </EntityType>
+        <EntityType Name="mAgreegatorAPI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="AgreegatorID" />
+          <Property Type="String" Name="APIName" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Purpose" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="InputParameter" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OutputParameter" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="APIURL" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <NavigationProperty Name="mAgreegator" Relationship="BISPL_CRMDBModel.FK_mAgreegatorAPI_mAgreegator" FromRole="mAgreegatorAPI" ToRole="mAgreegator" />
+        </EntityType>
+        <Association Name="FK_mAgreegatorAPI_mAgreegator">
+          <End Type="BISPL_CRMDBModel.mAgreegator" Role="mAgreegator" Multiplicity="0..1" />
+          <End Type="BISPL_CRMDBModel.mAgreegatorAPI" Role="mAgreegatorAPI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mAgreegator">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="mAgreegatorAPI">
+              <PropertyRef Name="AgreegatorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="V_WMS_GetClientDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Value" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="V_WMS_GetVendorDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Active" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Value" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mRateCard">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RateDetails" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Rate" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="FromDate" Precision="3" />
+          <Property Type="DateTime" Name="ToDate" Precision="3" />
+          <Property Type="DateTime" Name="EffDate" Precision="3" />
+          <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="Int64" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Int64" Name="RateType" />
+          <Property Type="Int64" Name="AccountID" />
+          <Property Type="Int64" Name="ModifiedBy" />
+          <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+          <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AccountName" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BISPL_CRMDBModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+          <EntitySetMapping Name="mTermsConditions">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mTermsCondition">
+              <MappingFragment StoreEntitySet="mTermsConditions">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Term" ColumnName="Term" />
+                <ScalarProperty Name="TCGroupID" ColumnName="TCGroupID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mTerritories">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mTerritory">
+              <MappingFragment StoreEntitySet="mTerritory">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="PriceChange" ColumnName="PriceChange" />
+                <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+                <ScalarProperty Name="FinApproverID" ColumnName="FinApproverID" />
+                <ScalarProperty Name="MaxDeliveryDays" ColumnName="MaxDeliveryDays" />
+                <ScalarProperty Name="GwcDeliveries" ColumnName="GwcDeliveries" />
+                <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+                <ScalarProperty Name="ECommerce" ColumnName="ECommerce" />
+                <ScalarProperty Name="ApproRemSchedul" ColumnName="ApproRemSchedul" />
+                <ScalarProperty Name="AutoRemSchedule" ColumnName="AutoRemSchedule" />
+                <ScalarProperty Name="AutoCancRen" ColumnName="AutoCancRen" />
+                <ScalarProperty Name="ApprovalRem" ColumnName="ApprovalRem" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="cancelDays" ColumnName="cancelDays" />
+                <ScalarProperty Name="AutoCancel" ColumnName="AutoCancel" />
+                <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+                <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Territory" ColumnName="Territory" />
+                <ScalarProperty Name="GroupTitle" ColumnName="GroupTitle" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tCompanyRegistrationDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCompanyRegistrationDetail">
+              <MappingFragment StoreEntitySet="tCompanyRegistrationDetails">
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CRMExpiryDate" ColumnName="CRMExpiryDate" />
+                <ScalarProperty Name="CRMRegistrationDate" ColumnName="CRMRegistrationDate" />
+                <ScalarProperty Name="NoOfUsers" ColumnName="NoOfUsers" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vGetCompanyDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.vGetCompanyDetail">
+              <MappingFragment StoreEntitySet="vGetCompanyDetails">
+                <ScalarProperty Name="CRMExpiryDate" ColumnName="CRMExpiryDate" />
+                <ScalarProperty Name="NoOfUsers" ColumnName="NoOfUsers" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vGetUserProfileLists">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.vGetUserProfileList">
+              <MappingFragment StoreEntitySet="vGetUserProfileList">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="desiName" ColumnName="desiName" />
+                <ScalarProperty Name="deptname" ColumnName="deptname" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetProductListForTargetPlan" FunctionName="BISPL_CRMDBModel.Store.SP_GetProductListForTargetPlan">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_GetProductListForTargetPlan_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="PrincipalPrice" ColumnName="PrincipalPrice" />
+                <ScalarProperty Name="UOM" ColumnName="UOM" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="TargetAmount" ColumnName="TargetAmount" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetTermConditionListForUCTermCondition" FunctionName="BISPL_CRMDBModel.Store.SP_GetTermConditionListForUCTermCondition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_GetTermConditionListForUCTermCondition_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="TermID" ColumnName="TermID" />
+                <ScalarProperty Name="Term" ColumnName="Term" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="LastModifyBy" ColumnName="LastModifyBy" />
+                <ScalarProperty Name="LastModifyDate" ColumnName="LastModifyDate" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="mTermsConditionsGroups">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mTermsConditionsGroup">
+              <MappingFragment StoreEntitySet="mTermsConditionsGroup">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TempDatas">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.TempData">
+              <MappingFragment StoreEntitySet="TempData">
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="XmlData" ColumnName="XmlData" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="TempDataID" ColumnName="TempDataID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mUserTerritoryDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mUserTerritoryDetail">
+              <MappingFragment StoreEntitySet="mUserTerritoryDetail">
+                <ScalarProperty Name="LastMofidiedDate" ColumnName="LastMofidiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vTermConditions">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.vTermCondition">
+              <MappingFragment StoreEntitySet="vTermCondition">
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Term" ColumnName="Term" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="TCGroupID" ColumnName="TCGroupID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mMessageEMailTemplates">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mMessageEMailTemplate">
+              <MappingFragment StoreEntitySet="mMessageEMailTemplates">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="MobileText" ColumnName="MobileText" />
+                <ScalarProperty Name="TemplateTitle" ColumnName="TemplateTitle" />
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="MailBody" ColumnName="MailBody" />
+                <ScalarProperty Name="MailSubject" ColumnName="MailSubject" />
+                <ScalarProperty Name="MailType" ColumnName="MailType" />
+                <ScalarProperty Name="mStatusID" ColumnName="mStatusID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mPrefixMasters">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mPrefixMaster">
+              <MappingFragment StoreEntitySet="mPrefixMaster">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="StartingNo" ColumnName="StartingNo" />
+                <ScalarProperty Name="Seperator" ColumnName="Seperator" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+                <ScalarProperty Name="PreObjectName" ColumnName="PreObjectName" />
+                <ScalarProperty Name="PreID" ColumnName="PreID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tTargetPlans">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tTargetPlan">
+              <MappingFragment StoreEntitySet="tTargetPlan">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="ExecutiveID" ColumnName="ExecutiveID" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="AlertDate" ColumnName="AlertDate" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tTargetPlanDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tTargetPlanDetail">
+              <MappingFragment StoreEntitySet="tTargetPlanDetail">
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="TargetAmount" ColumnName="TargetAmount" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="TargetID" ColumnName="TargetID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vTargetPlans">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.vTargetPlan">
+              <MappingFragment StoreEntitySet="vTargetPlan">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ExecutiveID" ColumnName="ExecutiveID" />
+                <ScalarProperty Name="Executive" ColumnName="Executive" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="AlertDate" ColumnName="AlertDate" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mCompanies">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mCompany">
+              <MappingFragment StoreEntitySet="mCompany">
+                <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+                <ScalarProperty Name="Complogo" ColumnName="Complogo" />
+                <ScalarProperty Name="StampImg" ColumnName="StampImg" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="MainServerLogin" ColumnName="MainServerLogin" />
+                <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+                <ScalarProperty Name="DataBaseName" ColumnName="DataBaseName" />
+                <ScalarProperty Name="DataSource" ColumnName="DataSource" />
+                <ScalarProperty Name="MainDBPassword" ColumnName="MainDBPassword" />
+                <ScalarProperty Name="MainDataBaseName" ColumnName="MainDataBaseName" />
+                <ScalarProperty Name="MainDataSource" ColumnName="MainDataSource" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tContactPersonDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tContactPersonDetail">
+              <MappingFragment StoreEntitySet="tContactPersonDetail">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="HighSchool" ColumnName="HighSchool" />
+                <ScalarProperty Name="CollegeOrUniversity" ColumnName="CollegeOrUniversity" />
+                <ScalarProperty Name="HighestQualification" ColumnName="HighestQualification" />
+                <ScalarProperty Name="OtherID" ColumnName="OtherID" />
+                <ScalarProperty Name="TwitterPassword" ColumnName="TwitterPassword" />
+                <ScalarProperty Name="TwitterID" ColumnName="TwitterID" />
+                <ScalarProperty Name="FacebookPassword" ColumnName="FacebookPassword" />
+                <ScalarProperty Name="FacebookID" ColumnName="FacebookID" />
+                <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+                <ScalarProperty Name="InterestedIn" ColumnName="InterestedIn" />
+                <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="OfficeNo" ColumnName="OfficeNo" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CustomerHeadID" ColumnName="CustomerHeadID" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_GetCustomerDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_GetCustomerDetails">
+              <MappingFragment StoreEntitySet="V_GetCustomerDetails">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetChannelDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetChannelDetails">
+              <MappingFragment StoreEntitySet="V_WMS_GetChannelDetails">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="typeID" ColumnName="typeID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ChannelURL" ColumnName="ChannelURL" />
+                <ScalarProperty Name="ChannelName" ColumnName="ChannelName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetRateCardDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetRateCardDetails">
+              <MappingFragment StoreEntitySet="V_WMS_GetRateCardDetails">
+                <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="RateType" ColumnName="RateType" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="EffDate" ColumnName="EffDate" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="RateDetails" ColumnName="RateDetails" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_WMS_GetAggregatorList1" FunctionName="BISPL_CRMDBModel.Store.SP_WMS_GetAggregatorList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_WMS_GetAggregatorList1_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AgreegatorName" ColumnName="AgreegatorName" />
+                <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="mConfigurations">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mConfiguration">
+              <MappingFragment StoreEntitySet="mConfiguration">
+                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="pl3" ColumnName="pl3" />
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="OMS" ColumnName="OMS" />
+                <ScalarProperty Name="WMS" ColumnName="WMS" />
+                <ScalarProperty Name="NoOfWarehouse" ColumnName="NoOfWarehouse" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="SubscriType" ColumnName="SubscriType" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="Object" ColumnName="Object" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mDropdownValues">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mDropdownValue">
+              <MappingFragment StoreEntitySet="mDropdownValues">
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mCustomers">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mCustomer">
+              <MappingFragment StoreEntitySet="mCustomer">
+                <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+                <ScalarProperty Name="Complogo" ColumnName="Complogo" />
+                <ScalarProperty Name="StampImg" ColumnName="StampImg" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="MainServerLogin" ColumnName="MainServerLogin" />
+                <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+                <ScalarProperty Name="DataBaseName" ColumnName="DataBaseName" />
+                <ScalarProperty Name="DataSource" ColumnName="DataSource" />
+                <ScalarProperty Name="MainDBPassword" ColumnName="MainDBPassword" />
+                <ScalarProperty Name="MainDataBaseName" ColumnName="MainDataBaseName" />
+                <ScalarProperty Name="MainDataSource" ColumnName="MainDataSource" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mProductChannels">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mProductChannel">
+              <MappingFragment StoreEntitySet="mProductChannel">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="AliasProductCode" ColumnName="AliasProductCode" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="undefined2" ColumnName="undefined2" />
+                <ScalarProperty Name="undefined1" ColumnName="undefined1" />
+                <ScalarProperty Name="EffectiveTo" ColumnName="EffectiveTo" />
+                <ScalarProperty Name="EffectiveFrom" ColumnName="EffectiveFrom" />
+                <ScalarProperty Name="ChannelPrice" ColumnName="ChannelPrice" />
+                <ScalarProperty Name="ChannelProductDescription" ColumnName="ChannelProductDescription" />
+                <ScalarProperty Name="ChannelProductcode" ColumnName="ChannelProductcode" />
+                <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+                <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mProductLocations">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mProductLocation">
+              <MappingFragment StoreEntitySet="mProductLocation">
+                <ScalarProperty Name="Object" ColumnName="Object" />
+                <ScalarProperty Name="LocType" ColumnName="LocType" />
+                <ScalarProperty Name="MinOrderQty" ColumnName="MinOrderQty" />
+                <ScalarProperty Name="MaxOrderQty" ColumnName="MaxOrderQty" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="ProdId" ColumnName="ProdId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mChannels">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mChannel">
+              <MappingFragment StoreEntitySet="mChannel">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="StandardChannelID" ColumnName="StandardChannelID" />
+                <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ChannelURL" ColumnName="ChannelURL" />
+                <ScalarProperty Name="ChannelName" ColumnName="ChannelName" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mAgreegators">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mAgreegator">
+              <MappingFragment StoreEntitySet="mAgreegator">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+                <ScalarProperty Name="AgreegatorName" ColumnName="AgreegatorName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mAgreegatorAPIs">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mAgreegatorAPI">
+              <MappingFragment StoreEntitySet="mAgreegatorAPI">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="APIURL" ColumnName="APIURL" />
+                <ScalarProperty Name="OutputParameter" ColumnName="OutputParameter" />
+                <ScalarProperty Name="InputParameter" ColumnName="InputParameter" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="APIName" ColumnName="APIName" />
+                <ScalarProperty Name="AgreegatorID" ColumnName="AgreegatorID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetClientDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetClientDetails">
+              <MappingFragment StoreEntitySet="V_WMS_GetClientDetails">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_WMS_GetVendorDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.V_WMS_GetVendorDetails">
+              <MappingFragment StoreEntitySet="V_WMS_GetVendorDetails">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mRateCards">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mRateCard">
+              <MappingFragment StoreEntitySet="mRateCard">
+                <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="RateType" ColumnName="RateType" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="EffDate" ColumnName="EffDate" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="RateDetails" ColumnName="RateDetails" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ElegantCRMDataModel" ZoomLevel="70">
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mTermsCondition" Width="1.5" PointX="4.75" PointY="0.75" Height="3.1340950520833335" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mTerritory" Width="1.5" PointX="0.75" PointY="2.5" Height="2.9417936197916656" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.tCompanyRegistrationDetail" Width="1.5" PointX="3" PointY="8.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.vGetCompanyDetail" Width="1.5" PointX="7.375" PointY="4.75" Height="4.6725065104166674" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.vGetUserProfileList" Width="1.5" PointX="9.375" PointY="0.75" Height="2.5571907552083317" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mTermsConditionsGroup" Width="1.5" PointX="9.375" PointY="4.75" Height="2.7494921875000031" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.TempData" Width="1.5" PointX="9.375" PointY="8.75" Height="2.5571907552083317" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mUserTerritoryDetail" Width="1.5" PointX="5.375" PointY="10.75" Height="2.5571907552083317" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.vTermCondition" Width="1.5" PointX="11.375" PointY="6.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mMessageEMailTemplate" Width="1.5" PointX="3.375" PointY="4.75" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mPrefixMaster" Width="1.5" PointX="14.625" PointY="5.25" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.tTargetPlan" Width="1.5" PointX="0.29174013076896788" PointY="9.897503306110158" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.tTargetPlanDetail" Width="1.5" PointX="7.4003280659207737" PointY="23.56158908808678" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.vTargetPlan" Width="1.5" PointX="1.1196826943753673" PointY="25.121888947264239" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mCompany" Width="1.5" PointX="10.875" PointY="19.5" />
+        <AssociationConnector Association="BISPL_CRMDBModel.FK_tCompanyRegistrationDetails_mCompany" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.tContactPersonDetail" Width="1.5" PointX="1.1259256420312103" PointY="10.807205950285869" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.V_GetCustomerDetails" Width="1.5" PointX="6.069434945503918" PointY="16.61278297780677" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetChannelDetails" Width="1.5" PointX="4.7558427996727834" PointY="18.441815817003054" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetRateCardDetails" Width="1.5" PointX="8.8689547315561" PointY="17.457127355717649" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mConfiguration" Width="1.5" PointX="6.60585292736341" PointY="19.149909803247969" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mDropdownValue" Width="1.5" PointX="4.599889382999339" PointY="20.845238233378733" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mCustomer" Width="1.5" PointX="9" PointY="27.375" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mProductChannel" Width="1.5" PointX="5.4175442948087795" PointY="22.293502639184474" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mProductLocation" Width="1.5" PointX="0.2145014350370045" PointY="19.21935696304746" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mChannel" Width="1.5" PointX="7.4395625812185759" PointY="27.410025758394053" />
+        <AssociationConnector Association="BISPL_CRMDBModel.FK_mProductChannel_mChannel" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mAgreegator" Width="1.5" PointX="5.625" PointY="8.5" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mAgreegatorAPI" Width="1.5" PointX="10.40263477824751" PointY="22.894290770820476" />
+        <AssociationConnector Association="BISPL_CRMDBModel.FK_mAgreegatorAPI_mAgreegator" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetClientDetails" Width="1.5" PointX="11.927215604077659" PointY="14.188629216602365" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.V_WMS_GetVendorDetails" Width="1.5" PointX="4.3943442741382608" PointY="9.311193649336321" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mRateCard" Width="1.5" PointX="4.5355099628379145" PointY="6.9264995040961077" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

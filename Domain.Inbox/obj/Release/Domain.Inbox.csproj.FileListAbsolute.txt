@@ -1,0 +1,63 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Inbox.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Interface.Inbox.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Inbox.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\bin\Release\Interface.Inbox.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inbox\obj\Release\Domain.Inbox.pdb

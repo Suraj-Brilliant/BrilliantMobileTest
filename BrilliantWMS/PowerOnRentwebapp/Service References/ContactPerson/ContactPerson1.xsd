@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetContactPersonByReferenceId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="saveobjectName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="SenderObject" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="SenderID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentformid" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetContactPersonByReferenceIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonByReferenceIdResult" type="tns:ArrayOfSP_GetContactPersonsByReferenceID_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetContactPersonsByReferenceID_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetContactPersonsByReferenceID_Result" nillable="true" type="tns:SP_GetContactPersonsByReferenceID_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetContactPersonsByReferenceID_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerHeadID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Designation" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OfficeNo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MobileNo" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ContactTypeID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="InterestedIn" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Hobbies" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FacebookID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FacebookPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TwitterID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TwitterPassword" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="OtherID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HighestQualification" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CollegeOrUniversity" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HighSchool" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="selected" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:element name="InsertIntoTemp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ContactPerson" type="tns:SP_GetContactPersonsByReferenceID_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentformid" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIntoTempResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="InsertIntoTempResult" type="tns:ArrayOfSP_GetContactPersonsByReferenceID_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataFromDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentformid" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTempDataFromDBResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="SetValuesToTempData_onChange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentformid" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="paraSequence" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraInput" type="tns:SP_GetContactPersonsByReferenceID_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetValuesToTempData_onChangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SetValuesToTempData_onChangeResult" type="tns:ArrayOfSP_GetContactPersonsByReferenceID_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveToDBtAddToContactPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentformid" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="paraReferenceID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSaveObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveToDBtAddToContactPersonResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetContactDetailFromTempTableBySequence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentFormID" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="paraSequence" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactDetailFromTempTableBySequenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactDetailFromTempTableBySequenceResult" type="tns:SP_GetContactPersonsByReferenceID_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paraSessionID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ContactType" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paraUserID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="currentFormID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactPersonByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetContactPersonByNameResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Domain.Server.dll">
+      <publishTime>08/10/2017 19:45:55</publishTime>
+    </File>
+    <File Include="bin/Domain.UserManagement.dll">
+      <publishTime>08/22/2017 10:38:21</publishTime>
+    </File>
+    <File Include="bin/Interface.UserManagement.dll">
+      <publishTime>08/22/2017 10:38:20</publishTime>
+    </File>
+    <File Include="bin/Service.UserManagement.dll">
+      <publishTime>08/22/2017 12:08:16</publishTime>
+    </File>
+    <File Include="BindMenuService.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="DepartmentService.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="DesignationService.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="RoleMasterService.svc">
+      <publishTime>05/06/2017 13:00:26</publishTime>
+    </File>
+    <File Include="UserCreationService.svc">
+      <publishTime>05/06/2017 13:00:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/22/2017 12:08:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

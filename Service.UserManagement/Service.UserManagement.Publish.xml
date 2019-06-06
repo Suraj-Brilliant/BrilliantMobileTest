@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.UserManagement" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="10/19/2015 15:42:09" />
+    <file relUrl="bin/Interface.UserManagement.dll" publishTime="02/15/2016 10:24:52" />
+    <file relUrl="DepartmentService.svc" publishTime="06/05/2013 17:03:01" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="BindMenuService.svc" publishTime="06/05/2013 17:03:01" />
+    <file relUrl="bin/Interface.UserManagement.pdb" publishTime="02/15/2016 10:24:52" />
+    <file relUrl="RoleMasterService.svc" publishTime="06/05/2013 17:03:01" />
+    <file relUrl="bin/Service.UserManagement.pdb" publishTime="02/15/2016 10:25:26" />
+    <file relUrl="UserCreationService.svc" publishTime="06/05/2013 17:03:01" />
+    <file relUrl="bin/Domain.UserManagement.dll" publishTime="02/15/2016 10:24:57" />
+    <file relUrl="DesignationService.svc" publishTime="06/05/2013 17:03:01" />
+    <file relUrl="bin/Domain.UserManagement.pdb" publishTime="02/15/2016 10:24:57" />
+    <file relUrl="bin/Service.UserManagement.dll" publishTime="02/15/2016 10:25:26" />
+  </publishProfile>
+</publishData>

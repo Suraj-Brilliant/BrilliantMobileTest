@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AddToCartService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.AddToCart/AddToCartService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iAddToCart_CreateAddToCartTempDataList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAddToCartTempDataList" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_CreateAddToCartTempDataList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAddToCartTempDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetAddToCartListByReferenceIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddToCartListByReferenceIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetAddToCartListByReferenceIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddToCartListByReferenceIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_RemoveProductFromTempDataList_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProductFromTempDataList" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_RemoveProductFromTempDataList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProductFromTempDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_FinalSaveToDBtAddToCartProductDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtAddToCartProductDetail" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_FinalSaveToDBtAddToCartProductDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtAddToCartProductDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_UpdateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_UpdateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetCartProductDetailBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartProductDetailBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetCartProductDetailBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartProductDetailBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetFooterTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFooterTotal" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetFooterTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFooterTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetAddToCartListBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddToCartListBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iAddToCart_GetAddToCartListBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddToCartListBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iAddToCart">
+    <wsdl:operation name="CreateAddToCartTempDataList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/CreateAddToCartTempDataList" message="tns:iAddToCart_CreateAddToCartTempDataList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/CreateAddToCartTempDataListResponse" message="tns:iAddToCart_CreateAddToCartTempDataList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/GetExistingTempDataBySessionIDObjectName" message="tns:iAddToCart_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iAddToCart_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddToCartListByReferenceIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/GetAddToCartListByReferenceIDObjectName" message="tns:iAddToCart_GetAddToCartListByReferenceIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/GetAddToCartListByReferenceIDObjectNameResponse" message="tns:iAddToCart_GetAddToCartListByReferenceIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/ClearTempDataFromDB" message="tns:iAddToCart_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/ClearTempDataFromDBResponse" message="tns:iAddToCart_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProductFromTempDataList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/RemoveProductFromTempDataList" message="tns:iAddToCart_RemoveProductFromTempDataList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/RemoveProductFromTempDataListResponse" message="tns:iAddToCart_RemoveProductFromTempDataList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtAddToCartProductDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/FinalSaveToDBtAddToCartProductDetail" message="tns:iAddToCart_FinalSaveToDBtAddToCartProductDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/FinalSaveToDBtAddToCartProductDetailResponse" message="tns:iAddToCart_FinalSaveToDBtAddToCartProductDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/UpdateRecord" message="tns:iAddToCart_UpdateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/UpdateRecordResponse" message="tns:iAddToCart_UpdateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCartProductDetailBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/GetCartProductDetailBySequence" message="tns:iAddToCart_GetCartProductDetailBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/GetCartProductDetailBySequenceResponse" message="tns:iAddToCart_GetCartProductDetailBySequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFooterTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/GetFooterTotal" message="tns:iAddToCart_GetFooterTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/GetFooterTotalResponse" message="tns:iAddToCart_GetFooterTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddToCartListBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddToCart/GetAddToCartListBySequence" message="tns:iAddToCart_GetAddToCartListBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddToCart/GetAddToCartListBySequenceResponse" message="tns:iAddToCart_GetAddToCartListBySequence_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iAddToCart" type="tns:iAddToCart">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateAddToCartTempDataList">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/CreateAddToCartTempDataList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddToCartListByReferenceIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/GetAddToCartListByReferenceIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProductFromTempDataList">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/RemoveProductFromTempDataList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtAddToCartProductDetail">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/FinalSaveToDBtAddToCartProductDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecord">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/UpdateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCartProductDetailBySequence">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/GetCartProductDetailBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFooterTotal">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/GetFooterTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddToCartListBySequence">
+      <soap:operation soapAction="http://tempuri.org/iAddToCart/GetAddToCartListBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AddToCartService">
+    <wsdl:port name="BasicHttpBinding_iAddToCart" binding="tns:BasicHttpBinding_iAddToCart">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.AddToCart/AddToCartService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

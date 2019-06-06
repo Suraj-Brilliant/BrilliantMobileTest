@@ -1,0 +1,35 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Approval\obj\Release\Interface.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Approval\bin\Release\Interface.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Approval\obj\Release\Interface.Approval.pdb

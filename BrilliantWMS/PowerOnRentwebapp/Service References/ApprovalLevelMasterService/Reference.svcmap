@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="797b0141-b808-4141-9912-0aad7ff722fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Approval/ApprovalLevelMasterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ApprovalLevelMasterService.xsd" MetadataType="Schema" ID="0527c64c-25dc-409d-ab8b-f423db6f0f94" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/ApprovalLevelMasterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ApprovalLevelMasterService.disco" MetadataType="Disco" ID="2f886c08-d4ed-4fc2-b5d8-a4259810daa1" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/ApprovalLevelMasterService.svc?disco" />
+    <MetadataFile FileName="ApprovalLevelMasterService.wsdl" MetadataType="Wsdl" ID="c3bfcc5c-3895-47de-a182-073173cbe93c" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/ApprovalLevelMasterService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

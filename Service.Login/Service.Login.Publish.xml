@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.Login" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Domain.Login.pdb" publishTime="02/15/2016 10:25:00" />
+    <file relUrl="bin/Domain.Login.dll" publishTime="02/15/2016 10:25:00" />
+    <file relUrl="bin/Interface.Login.pdb" publishTime="02/15/2016 10:24:39" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="Web.config" publishTime="10/19/2015 15:41:19" />
+    <file relUrl="bin/Interface.Login.dll" publishTime="02/15/2016 10:24:40" />
+    <file relUrl="bin/Service.Login.dll" publishTime="02/15/2016 10:25:19" />
+    <file relUrl="bin/Service.Login.pdb" publishTime="02/15/2016 10:25:19" />
+    <file relUrl="Login.svc" publishTime="06/05/2013 17:03:00" />
+  </publishProfile>
+</publishData>

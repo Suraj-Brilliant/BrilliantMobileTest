@@ -1,0 +1,1749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="SP_AcountHistory" ReturnType="Collection(BISPL_CRMDBModel.SP_AcountHistory_Result)">
+      <Parameter Name="paraInvoiceId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CourseStudentWise" ReturnType="Collection(BISPL_CRMDBModel.SP_CourseStudentWise_Result)">
+      <Parameter Name="CustomerID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertInto_tCustomerCourse">
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mCustomers" EntityType="BISPL_CRMDBModel.mCustomer" />
+    <EntitySet Name="mUserCustomers" EntityType="BISPL_CRMDBModel.mUserCustomer" />
+    <EntitySet Name="mUserLocations" EntityType="BISPL_CRMDBModel.mUserLocation" />
+    <EntitySet Name="mUserWarehouses" EntityType="BISPL_CRMDBModel.mUserWarehouse" />
+    <EntitySet Name="tOrderDetails" EntityType="BISPL_CRMDBModel.tOrderDetail" />
+    <EntitySet Name="tOrderHeads" EntityType="BISPL_CRMDBModel.tOrderHead" />
+    <EntitySet Name="tPurchaseOrderDetails" EntityType="BISPL_CRMDBModel.tPurchaseOrderDetail" />
+    <EntitySet Name="tPurchaseOrderHeads" EntityType="BISPL_CRMDBModel.tPurchaseOrderHead" />
+    <EntitySet Name="TempDatas" EntityType="BISPL_CRMDBModel.TempData" />
+    <EntitySet Name="mStatus" EntityType="BISPL_CRMDBModel.mStatu" />
+    <EntitySet Name="mObjects" EntityType="BISPL_CRMDBModel.mObject" />
+    <EntitySet Name="mWorkFlowDetails" EntityType="BISPL_CRMDBModel.mWorkFlowDetail" />
+    <EntitySet Name="mWorkFlowHeads" EntityType="BISPL_CRMDBModel.mWorkFlowHead" />
+    <EntitySet Name="tAddToCartProductTaxDetails" EntityType="BISPL_CRMDBModel.tAddToCartProductTaxDetail" />
+    <EntitySet Name="TempCartProductLevelTaxDetails" EntityType="BISPL_CRMDBModel.TempCartProductLevelTaxDetail" />
+    <FunctionImport Name="WMS_SP_CartInsertIntoProductLevelTaxDetail">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_CartInsertIntoProductLevelTaxDetail1">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal1">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="ReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForPO" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForPO_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForPO1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForPO1_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="tGRNDetails" EntityType="BISPL_CRMDBModel.tGRNDetail" />
+    <EntitySet Name="WMS_VW_GetGRNDetails" EntityType="BISPL_CRMDBModel.WMS_VW_GetGRNDetails" />
+    <EntitySet Name="tJobCardDetails" EntityType="BISPL_CRMDBModel.tJobCardDetail" />
+    <EntitySet Name="tTaskDetails" EntityType="BISPL_CRMDBModel.tTaskDetail" />
+    <AssociationSet Name="FK_tTaskDetail_mStatus1" Association="BISPL_CRMDBModel.FK_tTaskDetail_mStatus1">
+      <End Role="mStatu" EntitySet="mStatus" />
+      <End Role="tTaskDetail" EntitySet="tTaskDetails" />
+    </AssociationSet>
+    <FunctionImport Name="WMS_SP_InsertIntotGRNDetail">
+      <Parameter Name="GRN_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotGRNDetail1">
+      <Parameter Name="GRN_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="tQualityControlDetails" EntityType="BISPL_CRMDBModel.tQualityControlDetail" />
+    <EntitySet Name="tQualityControlHeads" EntityType="BISPL_CRMDBModel.tQualityControlHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotQualityControlDetail">
+      <Parameter Name="QCID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotQualityControlDetail1">
+      <Parameter Name="QCID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mWarehouseMasters" EntityType="BISPL_CRMDBModel.mWarehouseMaster" />
+    <FunctionImport Name="WMS_FN_GetPutInList" IsComposable="true" ReturnType="Collection(BISPL_CRMDBModel.WMS_FN_GetPutInList_Result1)">
+      <Parameter Name="QCID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="WMS_VW_GetLocationDetails" EntityType="BISPL_CRMDBModel.WMS_VW_GetLocationDetails" />
+    <EntitySet Name="tPutInDetails" EntityType="BISPL_CRMDBModel.tPutInDetail" />
+    <EntitySet Name="tPutInHeads" EntityType="BISPL_CRMDBModel.tPutInHead" />
+    <EntitySet Name="mLocations" EntityType="BISPL_CRMDBModel.mLocation" />
+    <EntitySet Name="tProductStockDetails" EntityType="BISPL_CRMDBModel.tProductStockDetail" />
+    <EntitySet Name="tSKUTransactions" EntityType="BISPL_CRMDBModel.tSKUTransaction" />
+    <EntitySet Name="mVendors" EntityType="BISPL_CRMDBModel.mVendor" />
+    <FunctionImport Name="WMS_SP_InsertIntotPurchaseOrderDetail">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotPurchaseOrderDetail1">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="mClients" EntityType="BISPL_CRMDBModel.mClient" />
+    <EntitySet Name="tPickUpDetails" EntityType="BISPL_CRMDBModel.tPickUpDetail" />
+    <EntitySet Name="tPickUpHeads" EntityType="BISPL_CRMDBModel.tPickUpHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotPickUpDetail">
+      <Parameter Name="PickUpID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotPickUpDetail1">
+      <Parameter Name="PickUpID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="WMS_VW_GetQCDetails" EntityType="BISPL_CRMDBModel.WMS_VW_GetQCDetails" />
+    <EntitySet Name="tDispatchDetails" EntityType="BISPL_CRMDBModel.tDispatchDetail" />
+    <EntitySet Name="tDispatchHeads" EntityType="BISPL_CRMDBModel.tDispatchHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotDispatchDetail">
+      <Parameter Name="DispHeadId" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="WMS_VW_GetDispatchDetails" EntityType="BISPL_CRMDBModel.WMS_VW_GetDispatchDetails" />
+    <EntitySet Name="tReturnHeads" EntityType="BISPL_CRMDBModel.tReturnHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotOrderDetail">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotOrderDetail1">
+      <Parameter Name="PRH_ID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForTransfer" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForTransfer_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForTransfer1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForTransfer1_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="tTransferDetails" EntityType="BISPL_CRMDBModel.tTransferDetail" />
+    <EntitySet Name="tTransferHeads" EntityType="BISPL_CRMDBModel.tTransferHead" />
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForDispatch" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForDispatch_Result)">
+      <Parameter Name="QCID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+      <Parameter Name="PrdID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForDispatch1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForDispatch1_Result)">
+      <Parameter Name="QCID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+      <Parameter Name="PrdID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetails_ForQC" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForQC_Result)">
+      <Parameter Name="GRNID" Mode="In" Type="String" />
+      <Parameter Name="POID" Mode="In" Type="String" />
+      <Parameter Name="QCID" Mode="In" Type="String" />
+      <Parameter Name="PKUPID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetails_ForQC1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForQC1_Result)">
+      <Parameter Name="GRNID" Mode="In" Type="String" />
+      <Parameter Name="POID" Mode="In" Type="String" />
+      <Parameter Name="QCID" Mode="In" Type="String" />
+      <Parameter Name="PKUPID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotTransferDetail">
+      <Parameter Name="TransferID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotTransferDetail1">
+      <Parameter Name="TransferID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="tAsnDetails" EntityType="BISPL_CRMDBModel.tAsnDetail" />
+    <EntitySet Name="tASNHeads" EntityType="BISPL_CRMDBModel.tASNHead" />
+    <FunctionImport Name="WMS_SP_GetPartDetails_ForGRN" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForGRN_Result)">
+      <Parameter Name="POID" Mode="In" Type="String" />
+      <Parameter Name="SOID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+      <Parameter Name="PrdID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetails_ForGRN1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForGRN1_Result)">
+      <Parameter Name="POID" Mode="In" Type="String" />
+      <Parameter Name="SOID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+      <Parameter Name="PrdID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_GetCreditNoteDetailByPOID" ReturnType="Collection(BISPL_CRMDBModel.WMS_GetCreditNoteDetailByPOID_Result)">
+      <Parameter Name="POID" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_GetCreditNoteDetailByPOID1" ReturnType="Collection(BISPL_CRMDBModel.WMS_GetCreditNoteDetailByPOID1_Result)">
+      <Parameter Name="POID" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="tCreditNoteDetails" EntityType="BISPL_CRMDBModel.tCreditNoteDetail" />
+    <EntitySet Name="tCreditNoteHeads" EntityType="BISPL_CRMDBModel.tCreditNoteHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotCreditNoteDetail">
+      <Parameter Name="CreditNoteID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotCreditNoteDetail1">
+      <Parameter Name="CreditNoteID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_GetDebitNoteDetailByPOID" ReturnType="Collection(BISPL_CRMDBModel.WMS_GetDebitNoteDetailByPOID_Result)">
+      <Parameter Name="POID" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_GetDebitNoteDetailByPOID1" ReturnType="Collection(BISPL_CRMDBModel.WMS_GetDebitNoteDetailByPOID1_Result)">
+      <Parameter Name="POID" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="tDebitNoteDetails" EntityType="BISPL_CRMDBModel.tDebitNoteDetail" />
+    <EntitySet Name="tDebitNoteHeads" EntityType="BISPL_CRMDBModel.tDebitNoteHead" />
+    <FunctionImport Name="WMS_SP_InsertIntotDebitNoteDetail">
+      <Parameter Name="DebitNoteID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotDebitNoteDetail1">
+      <Parameter Name="DebitNoteID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotPutInDetail">
+      <Parameter Name="PutInID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_InsertIntotPutInDetail1">
+      <Parameter Name="PutInID" Mode="In" Type="Int64" />
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForSO" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForSO_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_GetPartDetail_ForSO1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForSO1_Result)">
+      <Parameter Name="PartIDs" Mode="In" Type="String" />
+      <Parameter Name="MaxSequence" Mode="In" Type="Int64" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int64" />
+      <Parameter Name="RequestID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_PutInList" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_PutInList_Result)">
+      <Parameter Name="QCID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_PutInList1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_PutInList1_Result)">
+      <Parameter Name="QCID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_PickUpList" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_PickUpList_Result)">
+      <Parameter Name="ODID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WMS_SP_PickUpList1" ReturnType="Collection(BISPL_CRMDBModel.WMS_SP_PickUpList1_Result)">
+      <Parameter Name="ODID" Mode="In" Type="String" />
+      <Parameter Name="TRID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="tLoaderDetails" EntityType="BISPL_CRMDBModel.tLoaderDetail" />
+    <EntitySet Name="tGRNHeads" EntityType="BISPL_CRMDBModel.tGRNHead" />
+  </EntityContainer>
+  <ComplexType Name="SP_AcountHistory_Result">
+    <Property Type="String" Name="InvoiceNo" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="InvoiceDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="InvHeadId" Nullable="false" />
+    <Property Type="Int64" Name="CustomerHeadID" Nullable="false" />
+    <Property Type="String" Name="Customer" Nullable="true" MaxLength="200" />
+    <Property Type="Decimal" Name="PaymentRecAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="due" Nullable="true" Precision="38" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="SP_CourseStudentWise_Result">
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="StudentID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="CourseID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="mCustomer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ParentID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="String" Name="MainDataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainDataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainDBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DataSource" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DataBaseName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DBPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MainServerLogin" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="StampImg" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="Complogo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="OrderFormat" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BatchNoFormat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseOrderFormat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseOrderTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SalesOrderTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TransferTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mUserCustomer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="mUserLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="LocationID" />
+  </EntityType>
+  <EntityType Name="mUserWarehouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="Int64" Name="WarehoueID" />
+    <Property Name="CreatedBy" Type="Int64" />
+  </EntityType>
+  <EntityType Name="tOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="OrderHeadId" Nullable="false" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="OrderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Prod_Name" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" />
+    <Property Type="Decimal" Name="ShippedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Type="DateTime" Name="Orderdate" Precision="3" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactId1" />
+    <Property Type="Int64" Name="ContactId2" />
+    <Property Type="Int64" Name="AddressId" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="Creationdate" Precision="3" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="String" Name="DispatchDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CompletedDate" Precision="3" />
+    <Property Type="String" Name="CancelDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WMSRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ApprovalDate" Precision="3" />
+    <Property Type="String" Name="Con2" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PaymentID" />
+    <Property Type="Decimal" Name="TotalQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GrandTotal" Precision="18" Scale="2" />
+    <Property Type="String" Name="OrderNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="orderType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InvoiceNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="ClientID" />
+    <Property Type="Decimal" Name="SubTotal" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DiscountOnSubTotal" Precision="18" Scale="2" />
+    <Property Type="Boolean" Name="DiscountOnSubTotalPercent" />
+    <Property Type="Decimal" Name="TotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TaxOnTotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShippingCharges" Precision="18" Scale="2" />
+    <Property Type="String" Name="OtherChargesDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OtherCharges" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAmount" Precision="18" Scale="2" />
+    <Property Type="String" Name="Object" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ChannelID" Type="Int64" />
+    <Property Name="AcknowFlag" Type="Int32" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="LottableOrder" Type="Boolean" />
+    <Property Name="AliasCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tPurchaseOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="POOrderHeadId" Nullable="false" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="OrderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="receivedate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Prod_Name" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" />
+    <Property Type="Decimal" Name="ReceivedQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tPurchaseOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Warehouse" />
+    <Property Type="DateTime" Name="POdate" Precision="3" />
+    <Property Type="DateTime" Name="Deliverydate" Precision="3" />
+    <Property Type="String" Name="Priority" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ContactId1" />
+    <Property Type="Int64" Name="ContactId2" />
+    <Property Type="Int64" Name="AddressId" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="Creationdate" Precision="3" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="RequestBy" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDt" Precision="3" />
+    <Property Type="String" Name="DispatchDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CompletedDate" Precision="3" />
+    <Property Type="String" Name="CancelDate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WMSRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ApprovalDate" Precision="3" />
+    <Property Type="String" Name="Con2" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PaymentID" />
+    <Property Type="Decimal" Name="TotalQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GrandTotal" Precision="18" Scale="2" />
+    <Property Type="String" Name="POOrderNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="orderType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InvoiceNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="Int64" Name="VendorID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Decimal" Name="SubTotal" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DiscountOnSubTotal" Precision="18" Scale="2" />
+    <Property Type="Boolean" Name="DiscountOnSubTotalPercent" />
+    <Property Type="Decimal" Name="TotalDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ProductLevelTotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TaxOnTotalAfterDiscount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalTax" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShippingCharges" Precision="18" Scale="2" />
+    <Property Type="String" Name="OtherChargesDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="OtherCharges" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalAmount" Precision="18" Scale="2" />
+    <Property Type="String" Name="Object" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TransFlag" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TransMobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TempData">
+    <Key>
+      <PropertyRef Name="TempDataID" />
+    </Key>
+    <Property Type="Int32" Name="TempDataID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="XmlData" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" Precision="3" />
+    <Property Type="String" Name="SessionID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TableName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mStatu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <NavigationProperty Name="tTaskDetails" Relationship="BISPL_CRMDBModel.FK_tTaskDetail_mStatus1" FromRole="mStatu" ToRole="tTaskDetail" />
+  </EntityType>
+  <EntityType Name="mObject">
+    <Key>
+      <PropertyRef Name="OBJECTID" />
+    </Key>
+    <Property Type="Int64" Name="OBJECTID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mWorkFlowDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="WorkflowID" />
+    <Property Type="Int64" Name="ObjectID" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="String" Name="Active" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="LogicalCriteria" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mWorkFlowHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="WorkflowName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="tAddToCartProductTaxDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="ProductDetail_Sequence" Nullable="false" />
+    <Property Type="Int64" Name="TaxID" Nullable="false" />
+    <Property Type="Decimal" Name="TaxRate" Nullable="false" Precision="10" Scale="3" />
+    <Property Type="Decimal" Name="TaxAmount" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TaxableAmount" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="TempCartProductLevelTaxDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="SessionID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CurrentForm" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProductDetailSequence" />
+    <Property Type="Decimal" Name="TaxableAmount" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="ParentTaxID" />
+    <Property Type="Int64" Name="TaxID" />
+    <Property Type="String" Name="TaxName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TaxPercent" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="ParentTaxPercent" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="TaxAmount" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="TaxSequence" />
+    <Property Type="Boolean" Name="CheckBoxVisible" />
+    <Property Type="Boolean" Name="IsChecked" />
+  </EntityType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForPO_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForPO1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <EntityType Name="tGRNDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="GRNID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="GRNQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="POQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShipQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" />
+  </EntityType>
+  <EntityType Name="WMS_VW_GetGRNDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="POdate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="String" Name="POCreatedBy" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShipID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GRNDate" Precision="3" />
+    <Property Type="Int64" Name="ReceivedBy" />
+    <Property Type="String" Name="GRNBy" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BatchNo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AirwayBill" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="3" />
+    <Property Type="String" Name="TransporterName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransporterRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ExpDeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="TransporterID" Type="Int64" />
+    <Property Name="DockNo" Type="Int64" />
+    <Property Name="TruckNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LRNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="InTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OutTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Other" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SealNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StartUnloading" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EndUnloading" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VehicleTypeID" Type="Int64" />
+    <Property Name="NoOfLabour" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBox" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tJobCardDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="TaskID" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="String" Name="OrderObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tTaskDetail">
+    <Key>
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Type="Int64" Name="TaskID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ParentTaskID" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="ActivityID" />
+    <Property Type="Int64" Name="ActivitySubID" />
+    <Property Type="String" Name="AssignTo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="TaskDate" Precision="3" />
+    <Property Type="DateTime" Name="TaskECD" Precision="3" />
+    <Property Type="String" Name="TaskRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AlertType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AlertDateTime" Precision="3" />
+    <Property Type="Int64" Name="ActionTakenBy" />
+    <Property Type="DateTime" Name="ActionTakenDate" Precision="3" />
+    <Property Type="Int64" Name="StatusID" />
+    <Property Type="Int64" Name="ReasonID" />
+    <Property Type="String" Name="ActionTakenRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Priority" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="JobCardName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="mStatu" Relationship="BISPL_CRMDBModel.FK_tTaskDetail_mStatus1" FromRole="tTaskDetail" ToRole="mStatu" />
+  </EntityType>
+  <Association Name="FK_tTaskDetail_mStatus1">
+    <End Type="BISPL_CRMDBModel.mStatu" Role="mStatu" Multiplicity="0..1" />
+    <End Type="BISPL_CRMDBModel.tTaskDetail" Role="tTaskDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tTaskDetail">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tQualityControlDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="QCID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="OQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QCQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RejectedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="String" Name="Reason" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Name="PackingStyle" Type="Int64" />
+    <Property Name="ReasonID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="tQualityControlHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="QCDate" Precision="3" />
+    <Property Type="Int64" Name="QCBy" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="Creationdate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OrderFrom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mWarehouseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Code" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Type" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="ModifiedBy" />
+    <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CapacityTypeID" />
+    <Property Name="AliseCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="WMS_FN_GetPutInList_Result">
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+    <Property Type="Int64" Name="ProdID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Pack" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="WMS_FN_GetPutInList_Result1">
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+    <Property Type="Int64" Name="ProdID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Pack" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="WMS_VW_GetLocationDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ShelfID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ShelfID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CapacityIn" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="WarehouseID" />
+  </EntityType>
+  <EntityType Name="tPutInDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PutInID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="PutInQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="Packing" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BatchNo" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tPutInHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="PutInDate" Precision="3" />
+    <Property Type="Int64" Name="PutInBy" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Name="PutInStatus" Type="Boolean" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OrderFrom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ShelfID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CapacityIn" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Name="skuconfigurable" Type="Int64" />
+    <Property Name="Length" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Width" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Height" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tProductStockDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="SiteID" Nullable="false" />
+    <Property Type="Int64" Name="ProdID" Nullable="false" />
+    <Property Type="Decimal" Name="OpeningStock" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaxStockLimit" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReorderQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="ReorderDate" Precision="3" />
+    <Property Type="DateTime" Name="EffectiveDate" Precision="0" />
+    <Property Type="Int64" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Decimal" Name="LastConsumedQty" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="LastConsumedDate" Precision="0" />
+    <Property Type="Decimal" Name="TotalReceiveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="TotalDispatchQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="ResurveQty" Precision="13" Scale="2" />
+    <Property Type="Decimal" Name="VirtualQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailVirtualQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tSKUTransaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="SKUId" />
+    <Property Type="String" Name="BatchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="DateTime" Name="MDate" Precision="3" />
+    <Property Type="DateTime" Name="ExpDate" Precision="3" />
+    <Property Type="String" Name="TransType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="InQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="OutQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ClosingBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Name="Lottable1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable7" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable8" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable9" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lottable10" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mVendor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Sector" />
+    <Property Type="Int64" Name="VCType" />
+    <Property Type="Int64" Name="Creditdays" />
+    <Property Type="Decimal" Name="TurnOver" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Finacialyear" />
+    <Property Type="String" Name="CrDr" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompType" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mClient">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Sector" />
+    <Property Type="Int64" Name="VCType" />
+    <Property Type="Int64" Name="Creditdays" />
+    <Property Type="Decimal" Name="TurnOver" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="Finacialyear" />
+    <Property Type="String" Name="CrDr" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompType" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tPickUpDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PickUpID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="PickUpQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="String" Name="BatchCode" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tPickUpHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="PickUpDate" Precision="3" />
+    <Property Type="Int64" Name="PickUpBy" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Name="PickUpStatus" Type="Boolean" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsRead" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WMS_VW_GetQCDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="QCDate" Precision="3" />
+    <Property Type="Int64" Name="QCBy" />
+    <Property Type="String" Name="QCCreatedBy" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tDispatchDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="DispHeadId" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="DispatchQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Decimal" Name="ShortQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Precision="18" Scale="2" />
+    <Property Name="PackingStyleID" Type="Int64" />
+    <Property Name="PackingTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tDispatchHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="DispatchDate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="String" Name="Remark" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="DispatchBy" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="String" Name="AirwayBill" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="3" />
+    <Property Type="DateTime" Name="ExpDeliveryDate" Precision="3" />
+    <Property Type="String" Name="TransporterName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransporterRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TransporterID" Type="Int64" />
+    <Property Name="dockNo" Type="Int64" />
+    <Property Name="TruckNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LRNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OutTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="driverID" Type="Int64" />
+    <Property Name="ShipToParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SoldToParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsRead" Type="Boolean" />
+    <Property Name="VehicleArrivalDate" Type="DateTime" Precision="0" />
+    <Property Name="VehicleArrivalTime" Type="Time" Precision="7" />
+    <Property Name="VehicleLoadingDate" Type="DateTime" Precision="0" />
+    <Property Name="VehicleLoadingTime" Type="Time" Precision="7" />
+    <Property Name="WayBillNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LoadingStart" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoadingEnd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DockNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VehicleTypeID" Type="Int64" />
+    <Property Name="NoOfLabour" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBox" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsEPOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="POD" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PODRemark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Driver" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WMS_VW_GetDispatchDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="OID" />
+    <Property Type="DateTime" Name="DispatchDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="DispatchBy" />
+    <Property Type="String" Name="AirwayBill" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="3" />
+    <Property Type="DateTime" Name="ExpDeliveryDate" Precision="3" />
+    <Property Type="String" Name="TransporterName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransporterRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StoreId" />
+    <Property Name="LoadingStart" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoadingEnd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TransporterID" Type="Int64" />
+    <Property Name="dockNo" Type="Int64" />
+    <Property Name="TruckNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LRNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OutTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="driverID" Type="Int64" />
+    <Property Name="ShipToParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SoldToParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="VehicleTypeID" Type="Int64" />
+    <Property Name="NoOfLabour" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBox" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsEPOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DockNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Driver" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tReturnHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SONo" />
+    <Property Type="Int64" Name="ReturnBy" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="DateTime" Name="ReturnDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="ModifiedBy" />
+    <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+  </EntityType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForTransfer_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="Qty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForTransfer1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="Qty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <EntityType Name="tTransferDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="TransferID" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="Qty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShippedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemainingGRNQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReceivedQty" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tTransferHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Type" />
+    <Property Type="DateTime" Name="TransferDate" Precision="3" />
+    <Property Type="Int64" Name="FromPosition" />
+    <Property Type="Int64" Name="ToPosition" />
+    <Property Type="Int64" Name="TransferBy" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="Modifiedby" />
+    <Property Type="DateTime" Name="ModiedDate" Precision="3" />
+    <Property Type="String" Name="AirwayBill" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransporterName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ShippingDate" Precision="3" />
+    <Property Type="DateTime" Name="ExpDeliveryDate" Precision="3" />
+    <Property Type="String" Name="ObjectName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ShipmentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TruckNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReferenceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Isread" Type="Boolean" />
+    <Property Name="AliasCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForDispatch_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DispatchQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForDispatch1_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DispatchQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetails_ForQC_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="POQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SelectedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RejectedQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="String" Name="Reason" Nullable="false" MaxLength="1" />
+    <Property Type="Int64" Name="POID" Nullable="true" />
+    <Property Type="Int64" Name="GRNID" Nullable="true" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetails_ForQC1_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="POQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SelectedQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RejectedQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="String" Name="Reason" Nullable="false" MaxLength="1" />
+    <Property Type="Int64" Name="POID" Nullable="true" />
+    <Property Type="Int64" Name="GRNID" Nullable="true" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="tAsnDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="asnHeadId" />
+    <Property Type="Int64" Name="SkuId" />
+    <Property Type="Decimal" Name="AsnQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Prod_Name" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Prod_Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="RemaningQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShippedQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Precision="18" Scale="2" />
+    <Property Type="String" Name="SerialNo" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tASNHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ASNNumber" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ASNDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="POId" />
+    <Property Type="Int64" Name="ASNEnteredBy" />
+    <Property Type="String" Name="Object" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="Status" />
+  </EntityType>
+  <ComplexType Name="WMS_SP_GetPartDetails_ForGRN_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="POQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="POID" Nullable="false" />
+    <Property Type="Decimal" Name="ASNQty" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetails_ForGRN1_Result">
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="POQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ShortQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ExcessQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="POID" Nullable="false" />
+    <Property Type="Decimal" Name="ASNQty" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_GetCreditNoteDetailByPOID_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="800" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="NewPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="true" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="20" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="WMS_GetCreditNoteDetailByPOID1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="800" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="NewPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="true" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="20" Scale="3" />
+  </ComplexType>
+  <EntityType Name="tCreditNoteDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="CreditNoteID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="POQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CreditQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="String" Name="Reason" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="Status" />
+  </EntityType>
+  <EntityType Name="tCreditNoteHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ONO" />
+    <Property Type="DateTime" Name="CreditNoteDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <ComplexType Name="WMS_GetDebitNoteDetailByPOID_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="800" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="NewPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="true" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="20" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="WMS_GetDebitNoteDetailByPOID1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="true" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="true" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="800" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GRNQty" Nullable="true" Precision="19" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="NewPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="true" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="true" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="true" Precision="20" Scale="3" />
+  </ComplexType>
+  <EntityType Name="tDebitNoteDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="DebitNoteID" />
+    <Property Type="Int64" Name="ProdID" />
+    <Property Type="Decimal" Name="OQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DebitQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="String" Name="Reason" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="tDebitNoteHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ONO" />
+    <Property Type="DateTime" Name="DebitNoteDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Total" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="Status" />
+    <Property Type="Int64" Name="Company" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForSO_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_GetPartDetail_ForSO1_Result">
+    <Property Type="String" Name="PRD_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PRH_ID" Nullable="false" MaxLength="10" />
+    <Property Type="Int64" Name="Prod_ID" Nullable="false" />
+    <Property Type="String" Name="Prod_Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Prod_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Prod_Description" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UOMID" Nullable="false" />
+    <Property Type="Decimal" Name="RequestQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="RemaningQty" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Decimal" Name="CurrentStock" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="GroupSet" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="ReserveQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="13" Scale="2" />
+    <Property Type="Int64" Name="moq" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Int32" Name="IsPriceChange" Nullable="false" />
+    <Property Type="Decimal" Name="TotalTaxAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="AmountAfterTax" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ReturnQty" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_PutInList_Result">
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+    <Property Type="Int64" Name="ProdID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LocationBarCode" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Pack" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="OMSSKUCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_PutInList1_Result">
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="QCID" Nullable="true" />
+    <Property Type="Int64" Name="ProdID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="QCQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LocationBarCode" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Pack" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="OMSSKUCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_PickUpList_Result">
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="OrderHeadId" Nullable="true" />
+    <Property Type="Int64" Name="SkuId" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="OrderQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LocationBarCode" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="OMSSKUCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="WMS_SP_PickUpList1_Result">
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="Int64" Name="ID" Nullable="true" />
+    <Property Type="Int64" Name="OrderHeadId" Nullable="true" />
+    <Property Type="Int64" Name="SkuId" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="OrderQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="UOMID" Nullable="true" />
+    <Property Type="String" Name="UOM" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LocQty" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="LocationID" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LocationBarCode" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="SortCode" Nullable="true" />
+    <Property Type="Decimal" Name="Capacity" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AvailableBalance" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="BatchNo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="OMSSKUCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="tLoaderDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="ObjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReferenceID" Type="Int64" />
+    <Property Name="LoaderID" Type="Int64" />
+    <Property Name="BoxHandels" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RatePerBox" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CratedBy" Type="Int64" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="InTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OutTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tGRNHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="ObjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OID" Type="Int64" />
+    <Property Name="ShipID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GRNDate" Type="DateTime" Precision="3" />
+    <Property Name="ReceivedBy" Type="Int64" />
+    <Property Name="BatchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="Creationdate" Type="DateTime" Precision="3" />
+    <Property Name="AirwayBill" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ShippingType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="CustomerID" Type="Int64" />
+    <Property Name="Status" Type="Int64" />
+    <Property Name="ShippingDate" Type="DateTime" Precision="3" />
+    <Property Name="TransporterName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TransporterRemark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ExpDeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="TransporterID" Type="Int64" />
+    <Property Name="TruckNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LRNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="InTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OutTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsRead" Type="Boolean" />
+    <Property Name="BarCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BarCode1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="VehicleArrivalDate" Type="DateTime" Precision="0" />
+    <Property Name="VehicleArrivalTime" Type="Time" Precision="7" />
+    <Property Name="VehicleUnLoadingDate" Type="DateTime" Precision="0" />
+    <Property Name="VehicleUnLoadingTime" Type="Time" Precision="7" />
+    <Property Name="Other" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SealNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StartUnloading" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EndUnloading" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OrderFrom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VehicleTypeID" Type="Int64" />
+    <Property Name="NoOfLabour" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBox" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DockNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

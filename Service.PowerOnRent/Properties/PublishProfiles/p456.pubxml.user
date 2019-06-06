@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Domain.PowerOnRent.dll">
+      <publishTime>06/14/2017 11:56:54</publishTime>
+    </File>
+    <File Include="bin/Domain.Server.dll">
+      <publishTime>06/06/2017 10:41:27</publishTime>
+    </File>
+    <File Include="bin/Domain.Tempdata.dll">
+      <publishTime>06/06/2017 10:41:27</publishTime>
+    </File>
+    <File Include="bin/Interface.PowerOnRent.dll">
+      <publishTime>06/14/2017 11:56:53</publishTime>
+    </File>
+    <File Include="bin/Service.PowerOnRent.dll">
+      <publishTime>06/14/2017 11:56:55</publishTime>
+    </File>
+    <File Include="ServiceEngineMaster.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServiceHQGoodsReceipt.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServicePartConsumption.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServicePartIssue.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServicePartReceipts.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServicePartRequest.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServiceSiteMaster.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="ServiceUCCommonFilter.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/14/2017 11:56:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

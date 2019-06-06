@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BISPL_CRMDBModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+    <EntitySetMapping Name="mCustomers">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mCustomer">
+        <MappingFragment StoreEntitySet="mCustomer">
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="TransferTitle" ColumnName="TransferTitle" />
+          <ScalarProperty Name="SalesOrderTitle" ColumnName="SalesOrderTitle" />
+          <ScalarProperty Name="PurchaseOrderTitle" ColumnName="PurchaseOrderTitle" />
+          <ScalarProperty Name="PurchaseOrderFormat" ColumnName="PurchaseOrderFormat" />
+          <ScalarProperty Name="BatchNoFormat" ColumnName="BatchNoFormat" />
+          <ScalarProperty Name="OrderFormat" ColumnName="OrderFormat" />
+          <ScalarProperty Name="Complogo" ColumnName="Complogo" />
+          <ScalarProperty Name="StampImg" ColumnName="StampImg" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="MainServerLogin" ColumnName="MainServerLogin" />
+          <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+          <ScalarProperty Name="DataBaseName" ColumnName="DataBaseName" />
+          <ScalarProperty Name="DataSource" ColumnName="DataSource" />
+          <ScalarProperty Name="MainDBPassword" ColumnName="MainDBPassword" />
+          <ScalarProperty Name="MainDataBaseName" ColumnName="MainDataBaseName" />
+          <ScalarProperty Name="MainDataSource" ColumnName="MainDataSource" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Landmark" ColumnName="Landmark" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserCustomers">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mUserCustomer">
+        <MappingFragment StoreEntitySet="mUserCustomer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserLocations">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mUserLocation">
+        <MappingFragment StoreEntitySet="mUserLocation">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserWarehouses">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mUserWarehouse">
+        <MappingFragment StoreEntitySet="mUserWarehouse">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WarehoueID" ColumnName="WarehoueID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tOrderDetail">
+        <MappingFragment StoreEntitySet="tOrderDetail">
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+          <ScalarProperty Name="ShippedQty" ColumnName="ShippedQty" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tOrderHead">
+        <MappingFragment StoreEntitySet="tOrderHead">
+          <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+          <ScalarProperty Name="LottableOrder" ColumnName="LottableOrder" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="AcknowFlag" ColumnName="AcknowFlag" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="Object" ColumnName="Object" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="OtherCharges" ColumnName="OtherCharges" />
+          <ScalarProperty Name="OtherChargesDescription" ColumnName="OtherChargesDescription" />
+          <ScalarProperty Name="ShippingCharges" ColumnName="ShippingCharges" />
+          <ScalarProperty Name="TotalTax" ColumnName="TotalTax" />
+          <ScalarProperty Name="TaxOnTotalAfterDiscount" ColumnName="TaxOnTotalAfterDiscount" />
+          <ScalarProperty Name="ProductLevelTotalTax" ColumnName="ProductLevelTotalTax" />
+          <ScalarProperty Name="TotalAfterDiscount" ColumnName="TotalAfterDiscount" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+          <ScalarProperty Name="DiscountOnSubTotalPercent" ColumnName="DiscountOnSubTotalPercent" />
+          <ScalarProperty Name="DiscountOnSubTotal" ColumnName="DiscountOnSubTotal" />
+          <ScalarProperty Name="ProductLevelTotalDiscount" ColumnName="ProductLevelTotalDiscount" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="orderType" ColumnName="orderType" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="TotalQty" ColumnName="TotalQty" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="WMSRemark" ColumnName="WMSRemark" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPurchaseOrderDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPurchaseOrderDetail">
+        <MappingFragment StoreEntitySet="tPurchaseOrderDetail">
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="receivedate" ColumnName="receivedate" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="POOrderHeadId" ColumnName="POOrderHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPurchaseOrderHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPurchaseOrderHead">
+        <MappingFragment StoreEntitySet="tPurchaseOrderHead">
+          <ScalarProperty Name="TransMobile" ColumnName="TransMobile" />
+          <ScalarProperty Name="TransFlag" ColumnName="TransFlag" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="Object" ColumnName="Object" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="OtherCharges" ColumnName="OtherCharges" />
+          <ScalarProperty Name="OtherChargesDescription" ColumnName="OtherChargesDescription" />
+          <ScalarProperty Name="ShippingCharges" ColumnName="ShippingCharges" />
+          <ScalarProperty Name="TotalTax" ColumnName="TotalTax" />
+          <ScalarProperty Name="TaxOnTotalAfterDiscount" ColumnName="TaxOnTotalAfterDiscount" />
+          <ScalarProperty Name="ProductLevelTotalTax" ColumnName="ProductLevelTotalTax" />
+          <ScalarProperty Name="TotalAfterDiscount" ColumnName="TotalAfterDiscount" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+          <ScalarProperty Name="DiscountOnSubTotalPercent" ColumnName="DiscountOnSubTotalPercent" />
+          <ScalarProperty Name="DiscountOnSubTotal" ColumnName="DiscountOnSubTotal" />
+          <ScalarProperty Name="ProductLevelTotalDiscount" ColumnName="ProductLevelTotalDiscount" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="orderType" ColumnName="orderType" />
+          <ScalarProperty Name="POOrderNo" ColumnName="POOrderNo" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="TotalQty" ColumnName="TotalQty" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="Con2" ColumnName="Con2" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="WMSRemark" ColumnName="WMSRemark" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="LastModifiedDt" ColumnName="LastModifiedDt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="ContactId2" ColumnName="ContactId2" />
+          <ScalarProperty Name="ContactId1" ColumnName="ContactId1" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deliverydate" ColumnName="Deliverydate" />
+          <ScalarProperty Name="POdate" ColumnName="POdate" />
+          <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempDatas">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.TempData">
+        <MappingFragment StoreEntitySet="TempData">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="XmlData" ColumnName="XmlData" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="TempDataID" ColumnName="TempDataID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatus">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mStatu">
+        <MappingFragment StoreEntitySet="mStatus">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mObjects">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mObject">
+        <MappingFragment StoreEntitySet="mObject">
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mWorkFlowDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mWorkFlowDetail">
+        <MappingFragment StoreEntitySet="mWorkFlowDetail">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LogicalCriteria" ColumnName="LogicalCriteria" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mWorkFlowHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mWorkFlowHead">
+        <MappingFragment StoreEntitySet="mWorkFlowHead">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="WorkflowName" ColumnName="WorkflowName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tAddToCartProductTaxDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tAddToCartProductTaxDetail">
+        <MappingFragment StoreEntitySet="tAddToCartProductTaxDetail">
+          <ScalarProperty Name="TaxableAmount" ColumnName="TaxableAmount" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+          <ScalarProperty Name="ProductDetail_Sequence" ColumnName="ProductDetail_Sequence" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempCartProductLevelTaxDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.TempCartProductLevelTaxDetail">
+        <MappingFragment StoreEntitySet="TempCartProductLevelTaxDetail">
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+          <ScalarProperty Name="CheckBoxVisible" ColumnName="CheckBoxVisible" />
+          <ScalarProperty Name="TaxSequence" ColumnName="TaxSequence" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="ParentTaxPercent" ColumnName="ParentTaxPercent" />
+          <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+          <ScalarProperty Name="ParentTaxID" ColumnName="ParentTaxID" />
+          <ScalarProperty Name="TaxableAmount" ColumnName="TaxableAmount" />
+          <ScalarProperty Name="ProductDetailSequence" ColumnName="ProductDetailSequence" />
+          <ScalarProperty Name="CurrentForm" ColumnName="CurrentForm" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_CartInsertIntoProductLevelTaxDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_CartInsertIntoProductLevelTaxDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_CartInsertIntoProductLevelTaxDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_CartInsertIntoProductLevelTaxDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_CartInsertIntoProductLevelTaxDetailTaxOnTotal" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForPO" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForPO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForPO_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForPO1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForPO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForPO1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tGRNDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tGRNDetail">
+        <MappingFragment StoreEntitySet="tGRNDetail">
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ShipQty" ColumnName="ShipQty" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="GRNID" ColumnName="GRNID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WMS_VW_GetGRNDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.WMS_VW_GetGRNDetails">
+        <MappingFragment StoreEntitySet="WMS_VW_GetGRNDetails">
+          <ScalarProperty Name="NoOfBox" ColumnName="NoOfBox" />
+          <ScalarProperty Name="NoOfLabour" ColumnName="NoOfLabour" />
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+          <ScalarProperty Name="EndUnloading" ColumnName="EndUnloading" />
+          <ScalarProperty Name="StartUnloading" ColumnName="StartUnloading" />
+          <ScalarProperty Name="SealNumber" ColumnName="SealNumber" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
+          <ScalarProperty Name="DockNo" ColumnName="DockNo" />
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="ExpDeliveryDate" ColumnName="ExpDeliveryDate" />
+          <ScalarProperty Name="TransporterRemark" ColumnName="TransporterRemark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="GRNBy" ColumnName="GRNBy" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="GRNDate" ColumnName="GRNDate" />
+          <ScalarProperty Name="ShipID" ColumnName="ShipID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="POCreatedBy" ColumnName="POCreatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="POdate" ColumnName="POdate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tJobCardDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tJobCardDetail">
+        <MappingFragment StoreEntitySet="tJobCardDetail">
+          <ScalarProperty Name="OrderObjectName" ColumnName="OrderObjectName" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tTaskDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tTaskDetail">
+        <MappingFragment StoreEntitySet="tTaskDetail">
+          <ScalarProperty Name="JobCardName" ColumnName="JobCardName" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ActionTakenRemark" ColumnName="ActionTakenRemark" />
+          <ScalarProperty Name="ReasonID" ColumnName="ReasonID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="ActionTakenDate" ColumnName="ActionTakenDate" />
+          <ScalarProperty Name="ActionTakenBy" ColumnName="ActionTakenBy" />
+          <ScalarProperty Name="AlertDateTime" ColumnName="AlertDateTime" />
+          <ScalarProperty Name="AlertType" ColumnName="AlertType" />
+          <ScalarProperty Name="TaskRemark" ColumnName="TaskRemark" />
+          <ScalarProperty Name="TaskECD" ColumnName="TaskECD" />
+          <ScalarProperty Name="TaskDate" ColumnName="TaskDate" />
+          <ScalarProperty Name="AssignTo" ColumnName="AssignTo" />
+          <ScalarProperty Name="ActivitySubID" ColumnName="ActivitySubID" />
+          <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ParentTaskID" ColumnName="ParentTaskID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotGRNDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotGRNDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotGRNDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotGRNDetail" />
+    <EntitySetMapping Name="tQualityControlDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tQualityControlDetail">
+        <MappingFragment StoreEntitySet="tQualityControlDetail">
+          <ScalarProperty Name="ReasonID" ColumnName="ReasonID" />
+          <ScalarProperty Name="PackingStyle" ColumnName="PackingStyle" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="OQty" ColumnName="OQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tQualityControlHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tQualityControlHead">
+        <MappingFragment StoreEntitySet="tQualityControlHead">
+          <ScalarProperty Name="OrderFrom" ColumnName="OrderFrom" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="QCBy" ColumnName="QCBy" />
+          <ScalarProperty Name="QCDate" ColumnName="QCDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotQualityControlDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotQualityControlDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotQualityControlDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotQualityControlDetail" />
+    <EntitySetMapping Name="mWarehouseMasters">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mWarehouseMaster">
+        <MappingFragment StoreEntitySet="mWarehouseMaster">
+          <ScalarProperty Name="AliseCode" ColumnName="AliseCode" />
+          <ScalarProperty Name="CapacityTypeID" ColumnName="CapacityTypeID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_FN_GetPutInList" FunctionName="BISPL_CRMDBModel.Store.WMS_FN_GetPutInList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_FN_GetPutInList_Result1">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="LocQty" ColumnName="LocQty" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="Pack" ColumnName="Pack" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="WMS_VW_GetLocationDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.WMS_VW_GetLocationDetails">
+        <MappingFragment StoreEntitySet="WMS_VW_GetLocationDetails">
+          <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="VelocityType" ColumnName="VelocityType" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="CapacityIn" ColumnName="CapacityIn" />
+          <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ShelfID" ColumnName="ShelfID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPutInDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPutInDetail">
+        <MappingFragment StoreEntitySet="tPutInDetail">
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="Packing" ColumnName="Packing" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="PutInQty" ColumnName="PutInQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="PutInID" ColumnName="PutInID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPutInHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPutInHead">
+        <MappingFragment StoreEntitySet="tPutInHead">
+          <ScalarProperty Name="OrderFrom" ColumnName="OrderFrom" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="PutInStatus" ColumnName="PutInStatus" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PutInBy" ColumnName="PutInBy" />
+          <ScalarProperty Name="PutInDate" ColumnName="PutInDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mLocations">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mLocation">
+        <MappingFragment StoreEntitySet="mLocation">
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="skuconfigurable" ColumnName="skuconfigurable" />
+          <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="VelocityType" ColumnName="VelocityType" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="CapacityIn" ColumnName="CapacityIn" />
+          <ScalarProperty Name="LocationType" ColumnName="LocationType" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ShelfID" ColumnName="ShelfID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProductStockDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tProductStockDetail">
+        <MappingFragment StoreEntitySet="tProductStockDetails">
+          <ScalarProperty Name="AvailVirtualQty" ColumnName="AvailVirtualQty" />
+          <ScalarProperty Name="VirtualQty" ColumnName="VirtualQty" />
+          <ScalarProperty Name="ResurveQty" ColumnName="ResurveQty" />
+          <ScalarProperty Name="TotalDispatchQty" ColumnName="TotalDispatchQty" />
+          <ScalarProperty Name="TotalReceiveQty" ColumnName="TotalReceiveQty" />
+          <ScalarProperty Name="LastConsumedDate" ColumnName="LastConsumedDate" />
+          <ScalarProperty Name="LastConsumedQty" ColumnName="LastConsumedQty" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ReorderDate" ColumnName="ReorderDate" />
+          <ScalarProperty Name="ReorderQty" ColumnName="ReorderQty" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="MaxStockLimit" ColumnName="MaxStockLimit" />
+          <ScalarProperty Name="OpeningStock" ColumnName="OpeningStock" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tSKUTransactions">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tSKUTransaction">
+        <MappingFragment StoreEntitySet="tSKUTransaction">
+          <ScalarProperty Name="Lottable10" ColumnName="Lottable10" />
+          <ScalarProperty Name="Lottable9" ColumnName="Lottable9" />
+          <ScalarProperty Name="Lottable8" ColumnName="Lottable8" />
+          <ScalarProperty Name="Lottable7" ColumnName="Lottable7" />
+          <ScalarProperty Name="Lottable6" ColumnName="Lottable6" />
+          <ScalarProperty Name="Lottable5" ColumnName="Lottable5" />
+          <ScalarProperty Name="Lottable4" ColumnName="Lottable4" />
+          <ScalarProperty Name="Lottable3" ColumnName="Lottable3" />
+          <ScalarProperty Name="Lottable2" ColumnName="Lottable2" />
+          <ScalarProperty Name="Lottable1" ColumnName="Lottable1" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+          <ScalarProperty Name="OutQty" ColumnName="OutQty" />
+          <ScalarProperty Name="InQty" ColumnName="InQty" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+          <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+          <ScalarProperty Name="MDate" ColumnName="MDate" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+          <ScalarProperty Name="SKUId" ColumnName="SKUId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mVendors">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mVendor">
+        <MappingFragment StoreEntitySet="mVendor">
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompType" ColumnName="CompType" />
+          <ScalarProperty Name="CrDr" ColumnName="CrDr" />
+          <ScalarProperty Name="Finacialyear" ColumnName="Finacialyear" />
+          <ScalarProperty Name="TurnOver" ColumnName="TurnOver" />
+          <ScalarProperty Name="Creditdays" ColumnName="Creditdays" />
+          <ScalarProperty Name="VCType" ColumnName="VCType" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPurchaseOrderDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPurchaseOrderDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPurchaseOrderDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPurchaseOrderDetail" />
+    <EntitySetMapping Name="mClients">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.mClient">
+        <MappingFragment StoreEntitySet="mClient">
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompType" ColumnName="CompType" />
+          <ScalarProperty Name="CrDr" ColumnName="CrDr" />
+          <ScalarProperty Name="Finacialyear" ColumnName="Finacialyear" />
+          <ScalarProperty Name="TurnOver" ColumnName="TurnOver" />
+          <ScalarProperty Name="Creditdays" ColumnName="Creditdays" />
+          <ScalarProperty Name="VCType" ColumnName="VCType" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPickUpDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPickUpDetail">
+        <MappingFragment StoreEntitySet="tPickUpDetail">
+          <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="PickUpQty" ColumnName="PickUpQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="PickUpID" ColumnName="PickUpID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPickUpHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tPickUpHead">
+        <MappingFragment StoreEntitySet="tPickUpHead">
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="PickUpStatus" ColumnName="PickUpStatus" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PickUpBy" ColumnName="PickUpBy" />
+          <ScalarProperty Name="PickUpDate" ColumnName="PickUpDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPickUpDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPickUpDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPickUpDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPickUpDetail" />
+    <EntitySetMapping Name="WMS_VW_GetQCDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.WMS_VW_GetQCDetails">
+        <MappingFragment StoreEntitySet="WMS_VW_GetQCDetails">
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="QCCreatedBy" ColumnName="QCCreatedBy" />
+          <ScalarProperty Name="QCBy" ColumnName="QCBy" />
+          <ScalarProperty Name="QCDate" ColumnName="QCDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tDispatchDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tDispatchDetail">
+        <MappingFragment StoreEntitySet="tDispatchDetails">
+          <ScalarProperty Name="PackingTitle" ColumnName="PackingTitle" />
+          <ScalarProperty Name="PackingStyleID" ColumnName="PackingStyleID" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="DispatchQty" ColumnName="DispatchQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="DispHeadId" ColumnName="DispHeadId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tDispatchHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tDispatchHead">
+        <MappingFragment StoreEntitySet="tDispatchHead">
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="PODRemark" ColumnName="PODRemark" />
+          <ScalarProperty Name="POD" ColumnName="POD" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="IsEPOD" ColumnName="IsEPOD" />
+          <ScalarProperty Name="NoOfBox" ColumnName="NoOfBox" />
+          <ScalarProperty Name="NoOfLabour" ColumnName="NoOfLabour" />
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+          <ScalarProperty Name="DockNo" ColumnName="DockNo" />
+          <ScalarProperty Name="LoadingEnd" ColumnName="LoadingEnd" />
+          <ScalarProperty Name="LoadingStart" ColumnName="LoadingStart" />
+          <ScalarProperty Name="WayBillNo" ColumnName="WayBillNo" />
+          <ScalarProperty Name="VehicleLoadingTime" ColumnName="VehicleLoadingTime" />
+          <ScalarProperty Name="VehicleLoadingDate" ColumnName="VehicleLoadingDate" />
+          <ScalarProperty Name="VehicleArrivalTime" ColumnName="VehicleArrivalTime" />
+          <ScalarProperty Name="VehicleArrivalDate" ColumnName="VehicleArrivalDate" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="SoldToParty" ColumnName="SoldToParty" />
+          <ScalarProperty Name="ShipToParty" ColumnName="ShipToParty" />
+          <ScalarProperty Name="driverID" ColumnName="driverID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="TransporterRemark" ColumnName="TransporterRemark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ExpDeliveryDate" ColumnName="ExpDeliveryDate" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DispatchBy" ColumnName="DispatchBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotDispatchDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotDispatchDetail" />
+    <EntitySetMapping Name="WMS_VW_GetDispatchDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.WMS_VW_GetDispatchDetails">
+        <MappingFragment StoreEntitySet="WMS_VW_GetDispatchDetails">
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="DockNo" ColumnName="DockNo" />
+          <ScalarProperty Name="IsEPOD" ColumnName="IsEPOD" />
+          <ScalarProperty Name="NoOfBox" ColumnName="NoOfBox" />
+          <ScalarProperty Name="NoOfLabour" ColumnName="NoOfLabour" />
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+          <ScalarProperty Name="SoldToParty" ColumnName="SoldToParty" />
+          <ScalarProperty Name="ShipToParty" ColumnName="ShipToParty" />
+          <ScalarProperty Name="driverID" ColumnName="driverID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="LoadingEnd" ColumnName="LoadingEnd" />
+          <ScalarProperty Name="LoadingStart" ColumnName="LoadingStart" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="TransporterRemark" ColumnName="TransporterRemark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ExpDeliveryDate" ColumnName="ExpDeliveryDate" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="DispatchBy" ColumnName="DispatchBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DispatchDate" ColumnName="DispatchDate" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tReturnHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tReturnHead">
+        <MappingFragment StoreEntitySet="tReturnHead">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ReturnBy" ColumnName="ReturnBy" />
+          <ScalarProperty Name="SONo" ColumnName="SONo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotOrderDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotOrderDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotOrderDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotOrderDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForTransfer" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForTransfer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForTransfer_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForTransfer1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForTransfer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForTransfer1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tTransferDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tTransferDetail">
+        <MappingFragment StoreEntitySet="tTransferDetail">
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="RemainingGRNQty" ColumnName="RemainingGRNQty" />
+          <ScalarProperty Name="ShippedQty" ColumnName="ShippedQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="TransferID" ColumnName="TransferID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tTransferHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tTransferHead">
+        <MappingFragment StoreEntitySet="tTransferHead">
+          <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+          <ScalarProperty Name="Isread" ColumnName="Isread" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ExpDeliveryDate" ColumnName="ExpDeliveryDate" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="ModiedDate" ColumnName="ModiedDate" />
+          <ScalarProperty Name="Modifiedby" ColumnName="Modifiedby" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TransferBy" ColumnName="TransferBy" />
+          <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+          <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForDispatch" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForDispatch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForDispatch_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="DispatchQty" ColumnName="DispatchQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForDispatch1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForDispatch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForDispatch1_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="DispatchQty" ColumnName="DispatchQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetails_ForQC" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetails_ForQC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForQC_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="SelectedQty" ColumnName="SelectedQty" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="POID" ColumnName="POID" />
+          <ScalarProperty Name="GRNID" ColumnName="GRNID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetails_ForQC1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetails_ForQC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForQC1_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="SelectedQty" ColumnName="SelectedQty" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="POID" ColumnName="POID" />
+          <ScalarProperty Name="GRNID" ColumnName="GRNID" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotTransferDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotTransferDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotTransferDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotTransferDetail" />
+    <EntitySetMapping Name="tAsnDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tAsnDetail">
+        <MappingFragment StoreEntitySet="tAsnDetail">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+          <ScalarProperty Name="ShippedQty" ColumnName="ShippedQty" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="AsnQty" ColumnName="AsnQty" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="asnHeadId" ColumnName="asnHeadId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tASNHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tASNHead">
+        <MappingFragment StoreEntitySet="tASNHead">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Object" ColumnName="Object" />
+          <ScalarProperty Name="ASNEnteredBy" ColumnName="ASNEnteredBy" />
+          <ScalarProperty Name="POId" ColumnName="POId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ASNDate" ColumnName="ASNDate" />
+          <ScalarProperty Name="ASNNumber" ColumnName="ASNNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetails_ForGRN" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetails_ForGRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForGRN_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="POID" ColumnName="POID" />
+          <ScalarProperty Name="ASNQty" ColumnName="ASNQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetails_ForGRN1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetails_ForGRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetails_ForGRN1_Result">
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="ShortQty" ColumnName="ShortQty" />
+          <ScalarProperty Name="ExcessQty" ColumnName="ExcessQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="POID" ColumnName="POID" />
+          <ScalarProperty Name="ASNQty" ColumnName="ASNQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_GetCreditNoteDetailByPOID" FunctionName="BISPL_CRMDBModel.Store.WMS_GetCreditNoteDetailByPOID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_GetCreditNoteDetailByPOID_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_GetCreditNoteDetailByPOID1" FunctionName="BISPL_CRMDBModel.Store.WMS_GetCreditNoteDetailByPOID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_GetCreditNoteDetailByPOID1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tCreditNoteDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCreditNoteDetail">
+        <MappingFragment StoreEntitySet="tCreditNoteDetail">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CreditQty" ColumnName="CreditQty" />
+          <ScalarProperty Name="POQty" ColumnName="POQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="CreditNoteID" ColumnName="CreditNoteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tCreditNoteHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tCreditNoteHead">
+        <MappingFragment StoreEntitySet="tCreditNoteHead">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreditNoteDate" ColumnName="CreditNoteDate" />
+          <ScalarProperty Name="ONO" ColumnName="ONO" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotCreditNoteDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotCreditNoteDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotCreditNoteDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotCreditNoteDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_GetDebitNoteDetailByPOID" FunctionName="BISPL_CRMDBModel.Store.WMS_GetDebitNoteDetailByPOID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_GetDebitNoteDetailByPOID_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_GetDebitNoteDetailByPOID1" FunctionName="BISPL_CRMDBModel.Store.WMS_GetDebitNoteDetailByPOID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_GetDebitNoteDetailByPOID1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="GRNQty" ColumnName="GRNQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tDebitNoteDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tDebitNoteDetail">
+        <MappingFragment StoreEntitySet="tDebitNoteDetail">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DebitQty" ColumnName="DebitQty" />
+          <ScalarProperty Name="OQty" ColumnName="OQty" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="DebitNoteID" ColumnName="DebitNoteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tDebitNoteHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tDebitNoteHead">
+        <MappingFragment StoreEntitySet="tDebitNoteHead">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DebitNoteDate" ColumnName="DebitNoteDate" />
+          <ScalarProperty Name="ONO" ColumnName="ONO" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotDebitNoteDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotDebitNoteDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotDebitNoteDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotDebitNoteDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPutInDetail" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPutInDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_InsertIntotPutInDetail1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_InsertIntotPutInDetail" />
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForSO" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForSO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForSO_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_GetPartDetail_ForSO1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_GetPartDetail_ForSO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_GetPartDetail_ForSO1_Result">
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRH_ID" ColumnName="PRH_ID" />
+          <ScalarProperty Name="Prod_ID" ColumnName="Prod_ID" />
+          <ScalarProperty Name="Prod_Code" ColumnName="Prod_Code" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="RemaningQty" ColumnName="RemaningQty" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="GroupSet" ColumnName="GroupSet" />
+          <ScalarProperty Name="ReserveQty" ColumnName="ReserveQty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="moq" ColumnName="moq" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IsPriceChange" ColumnName="IsPriceChange" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="AmountAfterTax" ColumnName="AmountAfterTax" />
+          <ScalarProperty Name="ReturnQty" ColumnName="ReturnQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_PutInList" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_PutInList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_PutInList_Result">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="LocQty" ColumnName="LocQty" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LocationBarCode" ColumnName="LocationBarCode" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="Pack" ColumnName="Pack" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_PutInList1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_PutInList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_PutInList1_Result">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QCID" ColumnName="QCID" />
+          <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="LocQty" ColumnName="LocQty" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LocationBarCode" ColumnName="LocationBarCode" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="Pack" ColumnName="Pack" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_PickUpList" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_PickUpList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_PickUpList_Result">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="LocQty" ColumnName="LocQty" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LocationBarCode" ColumnName="LocationBarCode" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WMS_SP_PickUpList1" FunctionName="BISPL_CRMDBModel.Store.WMS_SP_PickUpList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BISPL_CRMDBModel.WMS_SP_PickUpList1_Result">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderHeadId" ColumnName="OrderHeadId" />
+          <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="UOMID" ColumnName="UOMID" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="LocQty" ColumnName="LocQty" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LocationBarCode" ColumnName="LocationBarCode" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="AvailableBalance" ColumnName="AvailableBalance" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="OMSSKUCode" ColumnName="OMSSKUCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tLoaderDetails">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tLoaderDetail">
+        <MappingFragment StoreEntitySet="tLoaderDetail">
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CratedBy" ColumnName="CratedBy" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="RatePerBox" ColumnName="RatePerBox" />
+          <ScalarProperty Name="BoxHandels" ColumnName="BoxHandels" />
+          <ScalarProperty Name="LoaderID" ColumnName="LoaderID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tGRNHeads">
+      <EntityTypeMapping TypeName="BISPL_CRMDBModel.tGRNHead">
+        <MappingFragment StoreEntitySet="tGRNHead">
+          <ScalarProperty Name="DockNo" ColumnName="DockNo" />
+          <ScalarProperty Name="NoOfBox" ColumnName="NoOfBox" />
+          <ScalarProperty Name="NoOfLabour" ColumnName="NoOfLabour" />
+          <ScalarProperty Name="VehicleTypeID" ColumnName="VehicleTypeID" />
+          <ScalarProperty Name="OrderFrom" ColumnName="OrderFrom" />
+          <ScalarProperty Name="EndUnloading" ColumnName="EndUnloading" />
+          <ScalarProperty Name="StartUnloading" ColumnName="StartUnloading" />
+          <ScalarProperty Name="SealNumber" ColumnName="SealNumber" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="VehicleUnLoadingTime" ColumnName="VehicleUnLoadingTime" />
+          <ScalarProperty Name="VehicleUnLoadingDate" ColumnName="VehicleUnLoadingDate" />
+          <ScalarProperty Name="VehicleArrivalTime" ColumnName="VehicleArrivalTime" />
+          <ScalarProperty Name="VehicleArrivalDate" ColumnName="VehicleArrivalDate" />
+          <ScalarProperty Name="BarCode1" ColumnName="BarCode1" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="ExpDeliveryDate" ColumnName="ExpDeliveryDate" />
+          <ScalarProperty Name="TransporterRemark" ColumnName="TransporterRemark" />
+          <ScalarProperty Name="TransporterName" ColumnName="TransporterName" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="AirwayBill" ColumnName="AirwayBill" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="GRNDate" ColumnName="GRNDate" />
+          <ScalarProperty Name="ShipID" ColumnName="ShipID" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

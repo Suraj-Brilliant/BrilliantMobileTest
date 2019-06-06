@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePartReceipts" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartReceipts.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iPartReceipt_GetReceiptHeadByReceiptID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByReceiptID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptHeadByReceiptID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByReceiptIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptHeadByIssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByIssueID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptHeadByIssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByIssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_SetIntoGRNHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoGRNHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_SetIntoGRNHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoGRNHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetStatusListForGRN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForGRN" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetStatusListForGRN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptPartDetailByIssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByIssueID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptPartDetailByIssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByIssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptPartDetailByReceiptID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByReceiptID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptPartDetailByReceiptID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByReceiptIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_AddPartIntoReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_AddPartIntoReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_RemovePartFromReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_RemovePartFromReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_UpdatePartReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_UpdatePartReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_FinalSaveReceiptPartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveReceiptPartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_FinalSaveReceiptPartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveReceiptPartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryBySiteIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryBySiteIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryBySiteIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryBySiteIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartReceipt_GetReceiptSummaryByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iPartReceipt">
+    <wsdl:operation name="GetReceiptHeadByReceiptID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptHeadByReceiptID" message="tns:iPartReceipt_GetReceiptHeadByReceiptID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptHeadByReceiptIDResponse" message="tns:iPartReceipt_GetReceiptHeadByReceiptID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptHeadByIssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptHeadByIssueID" message="tns:iPartReceipt_GetReceiptHeadByIssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptHeadByIssueIDResponse" message="tns:iPartReceipt_GetReceiptHeadByIssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoGRNHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/SetIntoGRNHead" message="tns:iPartReceipt_SetIntoGRNHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/SetIntoGRNHeadResponse" message="tns:iPartReceipt_SetIntoGRNHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForGRN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetStatusListForGRN" message="tns:iPartReceipt_GetStatusListForGRN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetStatusListForGRNResponse" message="tns:iPartReceipt_GetStatusListForGRN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByIssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByIssueID" message="tns:iPartReceipt_GetReceiptPartDetailByIssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByIssueIDResponse" message="tns:iPartReceipt_GetReceiptPartDetailByIssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByReceiptID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByReceiptID" message="tns:iPartReceipt_GetReceiptPartDetailByReceiptID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByReceiptIDResponse" message="tns:iPartReceipt_GetReceiptPartDetailByReceiptID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/ClearTempDataFromDB" message="tns:iPartReceipt_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/ClearTempDataFromDBResponse" message="tns:iPartReceipt_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetExistingTempDataBySessionIDObjectName" message="tns:iPartReceipt_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iPartReceipt_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/AddPartIntoReceipt_TempData" message="tns:iPartReceipt_AddPartIntoReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/AddPartIntoReceipt_TempDataResponse" message="tns:iPartReceipt_AddPartIntoReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/RemovePartFromReceipt_TempData" message="tns:iPartReceipt_RemovePartFromReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/RemovePartFromReceipt_TempDataResponse" message="tns:iPartReceipt_RemovePartFromReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/UpdatePartReceipt_TempData" message="tns:iPartReceipt_UpdatePartReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/UpdatePartReceipt_TempDataResponse" message="tns:iPartReceipt_UpdatePartReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveReceiptPartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/FinalSaveReceiptPartDetail" message="tns:iPartReceipt_FinalSaveReceiptPartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/FinalSaveReceiptPartDetailResponse" message="tns:iPartReceipt_FinalSaveReceiptPartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryByUserID" message="tns:iPartReceipt_GetReceiptSummaryByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryByUserIDResponse" message="tns:iPartReceipt_GetReceiptSummaryByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryBySiteIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryBySiteIDs" message="tns:iPartReceipt_GetReceiptSummaryBySiteIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryBySiteIDsResponse" message="tns:iPartReceipt_GetReceiptSummaryBySiteIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryByRequestID" message="tns:iPartReceipt_GetReceiptSummaryByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartReceipt/GetReceiptSummaryByRequestIDResponse" message="tns:iPartReceipt_GetReceiptSummaryByRequestID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iPartReceipt" type="tns:iPartReceipt">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetReceiptHeadByReceiptID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptHeadByReceiptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptHeadByIssueID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptHeadByIssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoGRNHead">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/SetIntoGRNHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForGRN">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetStatusListForGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByIssueID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByIssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByReceiptID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptPartDetailByReceiptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/AddPartIntoReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/RemovePartFromReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/UpdatePartReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveReceiptPartDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/FinalSaveReceiptPartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByUserID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptSummaryByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryBySiteIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptSummaryBySiteIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartReceipt/GetReceiptSummaryByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePartReceipts">
+    <wsdl:port name="BasicHttpBinding_iPartReceipt" binding="tns:BasicHttpBinding_iPartReceipt">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartReceipts.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

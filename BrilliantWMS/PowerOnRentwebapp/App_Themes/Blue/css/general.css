@@ -1,0 +1,494 @@
+﻿/* ---------------------  Begin Basic Styles  --------------------- */
+/*** HTML Compunds ***/
+/*Notification box IE style*/
+.alertBox1
+{
+    padding: 1px;
+    border: solid 1px black;
+    background-color: White;
+    bottom: 10px;
+    left: 20%;
+    position: absolute;
+    z-index: 999;
+    width: 800px;
+}
+
+.alertBox1 div
+{
+    padding: 10px; /*border-top: solid 6px #FFA500;*/
+    border-top: solid 6px red;
+    background-color: White;
+    text-align: left;
+}
+.alertBox1 div span
+{
+    font-size: 16px;
+    font-weight: normal;
+    color: Black;
+}
+/*End Notification box IE style*/
+.loadingText
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: Yellow;
+}
+
+.modal
+{
+    border: solid 1px black;
+    background-color: transparent;  /*black; /*filter: alpha(opacity=60);*/
+    opacity: 0.8;
+    z-index: 999;
+    position: absolute;
+    height: 90%;
+    width: 97%;
+}
+
+#imgProcessing
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: Yellow;
+    bottom: 0;
+    left: 2%;
+    z-index: 9999;
+    position: absolute;
+    background-color: black;
+    border: silver 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: inset 0px 1px silver;
+    list-style-type: none;
+    margin: 0px !important;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 0px 1px silver;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px silver;
+    padding: 5px 10px 5px 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+
+#flyoutDiv
+{
+    border: 2px solid black;
+    background-color: #fff;
+    text-align: center;
+    padding: 4px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+.ParentGroup
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: Navy;
+}
+.ParentGroup:hover
+{
+    color: Navy;
+    cursor: default;
+}
+a
+{
+    text-decoration: none;
+    color: Gray;
+}
+a:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: Black;
+}
+.aselected
+{
+    text-decoration: none;
+    color: Black;
+}
+
+#headerText
+{
+    color: #fff; /*  font-family: Arial;     font-size: 12px;*/
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.headerText
+{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.gridFrame, .Tab .ajax__tab_active .ajax__tab_tab, .Tab .ajax__tab_active .ajax__tab_outer, .Tab .ajax__tab_hover .ajax__tab_outer
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-linear-gradient(top, #428BC2, #236496);
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(top, #428BC2, #236496); /*IE*/
+}
+.gridFrame
+{
+    background: url(../images/texture_5.png), -moz-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -ms-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -o-linear-gradient(top, #428BC2, #236496);
+    background: url(../images/texture_5.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(top, #428BC2, #236496); /*IE*/
+    background-color: #1A527D;
+    box-shadow: inset 0px 1px #81B2D7;
+    color: #FFF;
+    height: 28px;
+    margin-top: 10px;
+    border: #1A527D 1px solid;
+    position: relative;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    -webkit-border-radius: 6px;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+/*End*/
+/*Toolbar Button*/
+/*Calendar Button*/
+#ImgDate
+{
+    background: url("../img/Calendar20.png") no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -20px;
+}
+/*End Calendar Buttom*/
+input[type="submit"], input[type="button"], input[name="button"]
+{
+    background: -moz-linear-gradient(top, #428BC2, #236496);
+    background: -ms-linear-gradient(top, #428BC2, #236496);
+    background: -o-linear-gradient(top, #428BC2, #236496);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: -webkit-linear-gradient(top, #428BC2, #236496);
+    background-color: -o-linear-gradient;   
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428BC2', endColorstr='#236496',GradientType=0 ); 
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(top, #428BC2, #236496); /*IE*/
+    -behavior: url('../App_Themes/Blue/PIE.htc');
+    -box-shadow: inset 0px 1px #81B2D7;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    -border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    list-style-type: none;
+    margin: 0px !important;
+    border: 1px solid #1A527D;
+    color: #DDD;
+    padding: 2px 3px 2px 3px;
+}
+.tableForm input[type="submit"]:hover, input[type="button"]:hover, input[name="button"]:hover
+{
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"].Off, input[type="button"].Off, input[name="button"].Off
+{
+    background: -moz-linear-gradient(top, #428BC2, #236496);
+    background: -ms-linear-gradient(top, #428BC2, #236496);
+    background: -o-linear-gradient(top, #428BC2, #236496);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#428BC2), to(#236496));
+    background: -webkit-linear-gradient(top, #428BC2, #236496);
+    background-color: -o-linear-gradient;
+    -pie-background: url(bg-image.png) no-repeat, linear-gradient(top, #428BC2, #236496); /*IE*/
+    behavior: url('../App_Themes/Blue/PIE.htc');
+    box-shadow: inset 0px 1px #81B2D7;
+    -webkit-box-shadow: inset 0px 1px #81B2D7;
+    -moz-box-shadow: inset 0px 1px #81B2D7;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    list-style-type: none;
+    margin: 0px !important;
+    border: 1px solid #1A527D;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    color: #ffffff;
+    padding: 2px 3px 2px 3px;
+    cursor: not-allowed;
+}
+
+/*Checkbox css*/
+.checkbox label
+{
+    margin-left: 3px;
+    vertical-align: top;
+}
+
+/*End*/
+/*Table */
+.tableForm
+{
+    font-size: 12px;
+    font-family: Arial;
+    vertical-align: top;
+    color: Black;
+    -box-shadow: inset 0px 1px #81B2D7;
+    border: silver 1px solid;
+    -border-radius: 4px 4px 4px 4px;
+    -box-shadow: inset 0px 1px silver;
+    list-style-type: none;
+    margin: 0px !important;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 0px 1px silver;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px silver;
+    padding: 10px 10px 10px 10px;
+    -behavior: url('../App_Themes/Blue/PIE.htc');
+}
+.tableForm td
+{
+    padding: 2px 2px 2px 2px;
+    text-align: right;
+    vertical-align: top;
+}
+.tableForm req
+{
+    color: Maroon;
+    text-align: right;
+}
+.req
+{
+    color: Maroon;
+    text-align: right;
+}
+/*End Table*/
+/*Text Box*/
+/*input[type="text"], textarea, select*/
+.inputElement
+{
+    -khtml-border-radius: 4px;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
+    background-image: none background: #ffffff;
+    font-size: 13px;
+    font-family: Calibri;
+    vertical-align: top;
+    color: #1A527D;
+    border: 1px solid #B6B6B6;
+    -border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 0px 1px silver;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px silver;
+    -box-shadow: inset 0 0 1px silver;       
+    -behavior: url('../App_Themes/Blue/PIE.htc');
+}
+.inputElement:focus
+{
+    border: 1px solid;
+}
+option
+{
+    padding-left: 3px;
+}
+.watermark
+{
+    font-size: 12px;
+    font-family: Calibri;
+    color: Gray;
+}
+/*End TextBox*/
+/*Tab Panel*/
+.Tab .ajax__tab_header
+{
+    color: #4682b4;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    margin-left: 0px;
+    cursor: pointer;
+}
+/*Body*/
+.Tab .ajax__tab_body
+{
+    border: 2px solid #236496;
+    padding: 5px; /*border-top-right-radius: 6px;*/
+    border-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -khtml-border-top-right-radius: 6px; /*border-bottom-right-radius: 6px;*/
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-bottom-right-radius: 6px; /*border-bottom-left-radius: 6px;*/
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-bottom-left-radius: 6px;
+    z-index: 0;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+/*Tab Active*/
+.Tab .ajax__tab_active .ajax__tab_tab
+{
+    color: #fff;
+    margin-right: 4px;
+}
+.Tab .ajax__tab_active .ajax__tab_inner
+{
+    border: none;
+}
+.Tab .ajax__tab_active .ajax__tab_outer
+{
+    border-radius: 4px;
+    border-top: solid 2px #236496;
+    border-left: solid 2px #236496;
+    border-right: solid 2px #236496; /*border-top-left-radius: 6px;*/
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -khtml-border-top-left-radius: 6px;
+    padding-left: 10px; /*border-top-right-radius: 6px;*/
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -khtml-border-top-right-radius: 6px;
+    padding-right: 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+/*Tab Hover*/
+.Tab .ajax__tab_hover .ajax__tab_tab
+{
+    color: #fff;
+}
+.Tab .ajax__tab_hover .ajax__tab_inner
+{
+    border: none;
+}
+.Tab .ajax__tab_hover .ajax__tab_outer
+{
+    border-radius: 4px;
+    margin-right: 2px;
+    border-top: solid 2px #236496;
+    border-right: solid 2px #236496;
+    border-left: solid 2px #236496; /* border-top-left-radius: 6px;*/
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -khtml-border-top-left-radius: 6px;
+    padding-left: 10px; /*border-top-right-radius: 6px;*/
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -khtml-border-top-right-radius: 6px;
+    padding-right: 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+/*Tab Inactive*/
+.Tab .ajax__tab_tab
+{
+    color: gray;
+    background-color: Transparent;
+    margin-right: 4px;
+    padding: 2px;
+}
+.Tab .ajax__tab_inner
+{
+    border: none;
+}
+.Tab .ajax__tab_outer
+{
+    border-radius: 4px;
+    margin-right: 2px;
+    border-left: solid 2px silver;
+    border-top: solid 2px silver;
+    border-right: solid 2px silver; /*border-top-left-radius: 6px;*/
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -khtml-border-top-left-radius: 6px;
+    padding-left: 10px; /* border-top-right-radius: 6px;*/
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -khtml-border-top-right-radius: 6px;
+    padding-right: 10px;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+.searchtxtbox
+{
+    /*border: 1px solid #B6B6B6;*/
+    border: solid 1px red;
+    background-color: Transparent;
+    color: White;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
+    background-image: none;
+    font-size: 13px;
+    font-family: Calibri;
+    width: 50%;
+    behavior: url('../App_Themes/Blue/PIE.htc');
+}
+.searchtxtbox:focus
+{
+    border: 1px solid;
+}
+/*end not working*/
+
+.gridA
+{
+    color: Black;
+}
+.gridA:hover
+{
+    text-decoration: underline;
+    cursor: hand;
+}
+/**/
+.PORorange
+{
+    width: 17px;
+    height: 17px;
+    border: solid 1px black;
+    background-color: #FFD732;
+    cursor: pointer;
+}
+
+.PORred
+{
+    width: 17px;
+    height: 17px;
+    border: solid 1px black;
+    background-color: Red;
+    cursor: pointer;
+}
+
+.PORgreen
+{
+    width: 17px;
+    height: 17px;
+    border: solid 1px black;
+    background-color: green;
+    cursor: pointer;
+}
+.PORgray
+{
+    width: 17px;
+    height: 17px;
+    border: solid 1px black;
+    background-color: Gray;
+    cursor: not-allowed;
+}
+.PORgreenRed
+{
+    width: 17px;
+    height: 17px;
+    border: solid 1px black;   
+    cursor: pointer;
+    background-image: -ms-linear-gradient(right, #FF2605 0%, #17BD32 100%); /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(right, #FF2605 0%, #17BD32 100%); /* Opera */
+    background-image: -o-linear-gradient(right, #FF2605 0%, #17BD32 100%); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #FF2605), color-stop(1, #17BD32)); /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(right, #FF2605 0%, #17BD32 100%); /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to left, #FF2605 0%, #17BD32 100%);    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FF2605,EndColorStr=#17BD32)"
+}

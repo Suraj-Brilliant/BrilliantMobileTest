@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetInboxDetailByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="isAll" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="WhereValue" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="condetails" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetInboxDetailByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetInboxDetailByUserIDResult" type="tns:ArrayOfSP_GetInboxData_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetInboxData_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetInboxData_Result" nillable="true" type="tns:SP_GetInboxData_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetInboxData_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="InboxID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AccountName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Subject" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Details" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TaskRemark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TaskCreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaskCreationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Priority" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ECD" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AssignedToUserID" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AssignedToName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TaskStatus" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UpdateTaskRemark" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsRead" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsArchive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Label" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LabelColor" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsStar" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsImportant" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:element name="bindInboxDetailData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ReferenceID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bindInboxDetailDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="bindInboxDetailDataResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxDetailBySiteUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Site" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="condetails" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxDetailBySiteUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetInboxDetailBySiteUserIDResult" type="tns:ArrayOfSP_GetInboxDataOfApproval_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetInboxDataOfApproval_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetInboxDataOfApproval_Result" nillable="true" type="tns:SP_GetInboxDataOfApproval_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetInboxDataOfApproval_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="RequestedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Particulars" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RequestedBy" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Site" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TransID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TransName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ReferenceID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsRead" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsArchive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsImportant" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsStar" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ApprovalStatus" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInboxDataByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxDataByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetInboxDataByUserIDResult" type="tns:ArrayOfPOR_vGetInboxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfPOR_vGetInboxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POR_vGetInboxData" nillable="true" type="tns:POR_vGetInboxData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="POR_vGetInboxData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="inboxID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Date" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SiteID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SiteName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Subject" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Details" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsRead" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsArchive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ToUserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FolderName" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetUserInbox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInboxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserInboxResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInbox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetInboxResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetArchive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SelectedRec" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetArchiveResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetUserInboxWhere">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="WhereCondition" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInboxWhereResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetUserInboxWhereResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxWhere">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="WhereCondition" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInboxWhereResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetInboxWhereResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastPasswordChangeDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastPasswordChangeDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="GetLastPasswordChangeDateResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

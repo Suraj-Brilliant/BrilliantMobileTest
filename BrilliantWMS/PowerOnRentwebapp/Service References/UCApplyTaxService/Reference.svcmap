@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4a3bc47f-95a6-4b0c-8a41-19b85b92607c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Tax/UCApplyTaxService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UCApplyTaxService1.xsd" MetadataType="Schema" ID="a78f788d-b2aa-46f6-8391-944505334e0c" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Tax/UCApplyTaxService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UCApplyTaxService1.disco" MetadataType="Disco" ID="63ee4ad7-f0e1-4c8a-adb5-1987bf9f62e5" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Tax/UCApplyTaxService.svc?disco" />
+    <MetadataFile FileName="UCApplyTaxService1.wsdl" MetadataType="Wsdl" ID="59b6f6c7-d3dc-4b01-b14c-db559d772ddb" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Tax/UCApplyTaxService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

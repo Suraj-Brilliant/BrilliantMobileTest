@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.PowerOnRent" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="10/17/2015 17:56:12" />
+    <file relUrl="bin/Domain.PowerOnRent.pdb" publishTime="05/24/2016 16:27:36" />
+    <file relUrl="bin/Service.PowerOnRent.pdb" publishTime="05/24/2016 16:27:57" />
+    <file relUrl="bin/Interface.PowerOnRent.dll" publishTime="05/24/2016 12:24:54" />
+    <file relUrl="ServicePartConsumption.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ServicePartReceipts.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="05/24/2016 12:24:33" />
+    <file relUrl="bin/Domain.Tempdata.dll" publishTime="05/24/2016 12:24:59" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="05/24/2016 12:24:34" />
+    <file relUrl="bin/Service.PowerOnRent.dll" publishTime="05/24/2016 16:27:57" />
+    <file relUrl="ServiceEngineMaster.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ServiceHQGoodsReceipt.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ServiceSiteMaster.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ServicePartRequest.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="bin/Interface.PowerOnRent.pdb" publishTime="05/24/2016 12:24:54" />
+    <file relUrl="bin/Domain.PowerOnRent.dll" publishTime="05/24/2016 16:27:36" />
+    <file relUrl="bin/Domain.Tempdata.pdb" publishTime="05/24/2016 12:24:59" />
+    <file relUrl="ServiceUCCommonFilter.svc" publishTime="06/05/2013 17:03:00" />
+    <file relUrl="ServicePartIssue.svc" publishTime="06/05/2013 17:03:00" />
+  </publishProfile>
+</publishData>

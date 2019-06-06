@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="StatutoryService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Tax/StatutoryService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iStatutoryMaster_GetStatutoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryList" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetStatutoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_InsertmStatutory_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmStatutory" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_InsertmStatutory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmStatutoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_updatemStatutory_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemStatutory" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_updatemStatutory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemStatutoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetGetStatutoryListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetStatutoryListByID" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetGetStatutoryListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetStatutoryListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetStatutoryRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetStatutoryRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatutoryRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="iStatutoryMaster_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iStatutoryMaster">
+    <wsdl:operation name="GetStatutoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/GetStatutoryList" message="tns:iStatutoryMaster_GetStatutoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/GetStatutoryListResponse" message="tns:iStatutoryMaster_GetStatutoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmStatutory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/InsertmStatutory" message="tns:iStatutoryMaster_InsertmStatutory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/InsertmStatutoryResponse" message="tns:iStatutoryMaster_InsertmStatutory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemStatutory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/updatemStatutory" message="tns:iStatutoryMaster_updatemStatutory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/updatemStatutoryResponse" message="tns:iStatutoryMaster_updatemStatutory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGetStatutoryListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/GetGetStatutoryListByID" message="tns:iStatutoryMaster_GetGetStatutoryListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/GetGetStatutoryListByIDResponse" message="tns:iStatutoryMaster_GetGetStatutoryListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/checkDuplicateRecord" message="tns:iStatutoryMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/checkDuplicateRecordResponse" message="tns:iStatutoryMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/checkDuplicateRecordEdit" message="tns:iStatutoryMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/checkDuplicateRecordEditResponse" message="tns:iStatutoryMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatutoryRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/GetStatutoryRecordToBindGrid" message="tns:iStatutoryMaster_GetStatutoryRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/GetStatutoryRecordToBindGridResponse" message="tns:iStatutoryMaster_GetStatutoryRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iStatutoryMaster/GetCustomerList" message="tns:iStatutoryMaster_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iStatutoryMaster/GetCustomerListResponse" message="tns:iStatutoryMaster_GetCustomerList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iStatutoryMaster" type="tns:iStatutoryMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStatutoryList">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/GetStatutoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmStatutory">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/InsertmStatutory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemStatutory">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/updatemStatutory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGetStatutoryListByID">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/GetGetStatutoryListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatutoryRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/GetStatutoryRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://tempuri.org/iStatutoryMaster/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StatutoryService">
+    <wsdl:port name="BasicHttpBinding_iStatutoryMaster" binding="tns:BasicHttpBinding_iStatutoryMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Tax/StatutoryService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

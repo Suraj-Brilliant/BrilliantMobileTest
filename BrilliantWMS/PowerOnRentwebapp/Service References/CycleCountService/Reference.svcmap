@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a1cf125-8bdd-49b9-abdb-3e33526f4980" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/CycleCount.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CycleCount1.wsdl" MetadataType="Wsdl" ID="cdb89f93-bd14-49a7-9dbc-1c79e114b2e1" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/CycleCount.svc?wsdl" />
+    <MetadataFile FileName="CycleCount1.disco" MetadataType="Disco" ID="97d8e039-0c50-4598-b90a-e02a249867a1" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/CycleCount.svc?disco" />
+    <MetadataFile FileName="CycleCount1.xsd" MetadataType="Schema" ID="24f10b71-f970-45f0-9b88-89e9f4c5c210" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Warehouse/CycleCount.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

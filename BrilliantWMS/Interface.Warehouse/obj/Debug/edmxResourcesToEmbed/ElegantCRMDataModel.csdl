@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="SP_GetDataToBindRoleMaster" ReturnType="Collection(BISPL_CRMDBModel.SP_GetDataToBindRoleMaster_Result)">
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetUserRoleDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_GetUserRoleDetail_Result)">
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+      <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetMenuHTML" ReturnType="Collection(BISPL_CRMDBModel.SP_GetMenuHTML_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertIntoUserRoleDetail">
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="String" />
+      <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+      <Parameter Name="paraUserID" Mode="In" Type="String" />
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertIntomUserProfieTerritoryDetail">
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+      <Parameter Name="Level" Mode="In" Type="Int64" />
+      <Parameter Name="TerritoryIDs" Mode="In" Type="String" />
+      <Parameter Name="CreatedBy" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertIntoRoleMasterDetail">
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetMenuHTMLArabic" ReturnType="Collection(BISPL_CRMDBModel.SP_GetMenuHTMLArabic_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GWCGetDataToBindRoleMaster" ReturnType="Collection(BISPL_CRMDBModel.SP_GWCGetDataToBindRoleMaster_Result)">
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GWCGetUserRoleDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_GWCGetUserRoleDetail_Result)">
+      <Parameter Name="paraRoleID" Mode="In" Type="Int64" />
+      <Parameter Name="paraUserIDForRole" Mode="In" Type="Int64" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="V_WMS_GetWarehouseDetails" EntityType="BISPL_CRMDBModel.V_WMS_GetWarehouseDetails" />
+    <EntitySet Name="mWarehouseBuildings" EntityType="BISPL_CRMDBModel.mWarehouseBuilding" />
+    <EntitySet Name="mWarehouseMasters" EntityType="BISPL_CRMDBModel.mWarehouseMaster" />
+    <EntitySet Name="tAddresses" EntityType="BISPL_CRMDBModel.tAddress" />
+    <EntitySet Name="mLocations" EntityType="BISPL_CRMDBModel.mLocation" />
+    <EntitySet Name="mPathways" EntityType="BISPL_CRMDBModel.mPathway" />
+    <EntitySet Name="mSections" EntityType="BISPL_CRMDBModel.mSection" />
+    <EntitySet Name="mShelves" EntityType="BISPL_CRMDBModel.mShelf" />
+    <EntitySet Name="mFloars" EntityType="BISPL_CRMDBModel.mFloar" />
+    <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.mDropdownValue" />
+    <EntitySet Name="V_WMS_WarehouseLocation" EntityType="BISPL_CRMDBModel.V_WMS_WarehouseLocation" />
+    <EntitySet Name="V_WMS_GetWareLocationByLocID" EntityType="BISPL_CRMDBModel.V_WMS_GetWareLocationByLocID" />
+    <EntitySet Name="CycleCountTemps" EntityType="BISPL_CRMDBModel.CycleCountTemp" />
+    <EntitySet Name="tCycleCountDetails" EntityType="BISPL_CRMDBModel.tCycleCountDetail" />
+    <EntitySet Name="tCycleCountPlans" EntityType="BISPL_CRMDBModel.tCycleCountPlan" />
+    <EntitySet Name="tCycleCountHeads" EntityType="BISPL_CRMDBModel.tCycleCountHead" />
+    <EntitySet Name="V_WMS_GetCycleCountMain" EntityType="BISPL_CRMDBModel.V_WMS_GetCycleCountMain" />
+    <EntitySet Name="V_WMS_GetHeadCycleCount" EntityType="BISPL_CRMDBModel.V_WMS_GetHeadCycleCount" />
+    <EntitySet Name="tSKUTransactions" EntityType="BISPL_CRMDBModel.tSKUTransaction" />
+  </EntityContainer>
+  <ComplexType Name="SP_GetDataToBindRoleMaster_Result">
+    <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="mSequence" Nullable="true" />
+    <Property Type="Int64" Name="pSequence" Nullable="true" />
+    <Property Type="Int64" Name="oSequence" Nullable="true" />
+    <Property Type="Boolean" Name="Add" Nullable="true" />
+    <Property Type="Boolean" Name="Edit" Nullable="true" />
+    <Property Type="Boolean" Name="View" Nullable="true" />
+    <Property Type="Boolean" Name="Delete" Nullable="true" />
+    <Property Type="Boolean" Name="Approval" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+    <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUserRoleDetail_Result">
+    <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="mSequence" Nullable="true" />
+    <Property Type="Int64" Name="pSequence" Nullable="true" />
+    <Property Type="Int64" Name="oSequence" Nullable="true" />
+    <Property Type="Boolean" Name="Add" Nullable="true" />
+    <Property Type="Boolean" Name="Edit" Nullable="true" />
+    <Property Type="Boolean" Name="View" Nullable="true" />
+    <Property Type="Boolean" Name="Delete" Nullable="true" />
+    <Property Type="Boolean" Name="Approval" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+    <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetMenuHTML_Result">
+    <Property Type="String" Name="HTMLMenu" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetMenuHTMLArabic_Result">
+    <Property Type="String" Name="HTMLMenu" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GWCGetDataToBindRoleMaster_Result">
+    <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="mSequence" Nullable="true" />
+    <Property Type="Int64" Name="pSequence" Nullable="true" />
+    <Property Type="Int64" Name="oSequence" Nullable="true" />
+    <Property Type="Boolean" Name="Add" Nullable="true" />
+    <Property Type="Boolean" Name="Edit" Nullable="true" />
+    <Property Type="Boolean" Name="View" Nullable="true" />
+    <Property Type="Boolean" Name="Delete" Nullable="true" />
+    <Property Type="Boolean" Name="Approval" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+    <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GWCGetUserRoleDetail_Result">
+    <Property Type="String" Name="DisplayModuleName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ModuleName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DisplayPhaseName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="PhaseName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ObjectDisplayName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="mSequence" Nullable="true" />
+    <Property Type="Int64" Name="pSequence" Nullable="true" />
+    <Property Type="Int64" Name="oSequence" Nullable="true" />
+    <Property Type="Boolean" Name="Add" Nullable="true" />
+    <Property Type="Boolean" Name="Edit" Nullable="true" />
+    <Property Type="Boolean" Name="View" Nullable="true" />
+    <Property Type="Boolean" Name="Delete" Nullable="true" />
+    <Property Type="Boolean" Name="Approval" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTask" Nullable="true" />
+    <Property Type="Boolean" Name="ApprovalVisible" Nullable="true" />
+    <Property Type="Boolean" Name="AssignTaskVisible" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="V_WMS_GetWarehouseDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Type" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="String" Name="AddressLine1" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mWarehouseBuilding">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="mWarehouseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Code" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Type" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="ModifiedBy" />
+    <Property Type="DateTime" Name="ModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="tAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="AddressType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine3" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="RouteID" />
+    <Property Type="String" Name="Landmark" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zipcode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PhoneNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IsDefault" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="BillingID" />
+    <Property Type="Int64" Name="ShippingID" />
+    <Property Type="String" Name="Zone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SubZone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="MobileNo" />
+    <Property Type="String" Name="LocationName" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ShelfID" Nullable="false" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CapacityIn" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AvailableBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="WarehouseID" />
+  </EntityType>
+  <EntityType Name="mPathway">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="FloarID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+  </EntityType>
+  <EntityType Name="mSection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PathID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+  </EntityType>
+  <EntityType Name="mShelf">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="SectionID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+  </EntityType>
+  <EntityType Name="mFloar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="BuildingID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="mDropdownValue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Value" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Parameter" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StatusID" />
+  </EntityType>
+  <EntityType Name="V_WMS_WarehouseLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="locationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Shelf" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Section" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Passage" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Floar" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Building" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr1" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Expr2" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="shelfID" />
+    <Property Type="Int64" Name="SectionID" />
+    <Property Type="Int64" Name="passageID" />
+    <Property Type="Int64" Name="FloarID" />
+    <Property Type="Int64" Name="BuildingID" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CapacityIn" />
+  </EntityType>
+  <EntityType Name="V_WMS_GetWareLocationByLocID">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="locationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AliasCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SortCode" />
+    <Property Type="String" Name="LocationType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Capacity" Precision="18" Scale="2" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Shelf" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Section" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Passage" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Floar" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Building" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr1" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Expr2" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="shelfID" />
+    <Property Type="Int64" Name="SectionID" />
+    <Property Type="Int64" Name="passageID" />
+    <Property Type="Int64" Name="FloarID" />
+    <Property Type="Int64" Name="BuildingID" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="VelocityType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CapacityIn" />
+  </EntityType>
+  <EntityType Name="CycleCountTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" />
+    <Property Type="String" Name="SessionID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="tCycleCountDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="CountHeadID" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocationCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="QtyBalance" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ActualQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AdjustmentQty" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="String" Name="AdjustLocation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DiffQty" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="SKUID" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="String" Name="BatchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tCycleCountPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Object" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CycleHeadID" />
+    <Property Type="Int64" Name="ReferenceID" />
+  </EntityType>
+  <EntityType Name="tCycleCountHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exicutive" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="WarehouseID" />
+    <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="V_WMS_GetCycleCountMain">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+    <Property Type="String" Name="Executive" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="V_WMS_GetHeadCycleCount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CycleCountDate" Precision="3" />
+    <Property Type="String" Name="Executive" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="WarehouseName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Frequency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountBasis" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tSKUTransaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="SKUId" />
+    <Property Type="String" Name="BatchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LocationID" />
+    <Property Type="DateTime" Name="MDate" Precision="3" />
+    <Property Type="DateTime" Name="ExpDate" Precision="3" />
+    <Property Type="String" Name="TransType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="InQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="OutQty" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ClosingBalance" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CompanyID" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+  </EntityType>
+</Schema>

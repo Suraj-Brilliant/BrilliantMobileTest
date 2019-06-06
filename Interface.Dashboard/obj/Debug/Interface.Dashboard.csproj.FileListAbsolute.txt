@@ -1,0 +1,11 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\obj\Debug\Interface.Dashboard.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\obj\Debug\Interface.Dashboard.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\bin\Debug\Interface.Dashboard.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\obj\Debug\Interface.Dashboard.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\obj\Debug\Interface.Dashboard.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Dashboard\obj\Debug\Interface.Dashboard.pdb

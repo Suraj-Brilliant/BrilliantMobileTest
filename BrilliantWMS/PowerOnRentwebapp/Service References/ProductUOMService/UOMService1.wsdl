@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UOMService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Product/UOMService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iProductUOM_GetProductUOMList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductUOMList" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_GetProductUOMList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductUOMListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_InsertmProductUOM_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductUOM" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_InsertmProductUOM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductUOMResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_updatemProductUOM_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductUOM" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_updatemProductUOM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductUOMResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_GetProductUOMListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductUOMListByID" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_GetProductUOMListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductUOMListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_GetPrdUOMRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdUOMRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iProductUOM_GetPrdUOMRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdUOMRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iProductUOM">
+    <wsdl:operation name="GetProductUOMList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/GetProductUOMList" message="tns:iProductUOM_GetProductUOMList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/GetProductUOMListResponse" message="tns:iProductUOM_GetProductUOMList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductUOM">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/InsertmProductUOM" message="tns:iProductUOM_InsertmProductUOM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/InsertmProductUOMResponse" message="tns:iProductUOM_InsertmProductUOM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductUOM">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/updatemProductUOM" message="tns:iProductUOM_updatemProductUOM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/updatemProductUOMResponse" message="tns:iProductUOM_updatemProductUOM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductUOMListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/GetProductUOMListByID" message="tns:iProductUOM_GetProductUOMListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/GetProductUOMListByIDResponse" message="tns:iProductUOM_GetProductUOMListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/checkDuplicateRecord" message="tns:iProductUOM_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/checkDuplicateRecordResponse" message="tns:iProductUOM_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/checkDuplicateRecordEdit" message="tns:iProductUOM_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/checkDuplicateRecordEditResponse" message="tns:iProductUOM_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdUOMRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductUOM/GetPrdUOMRecordToBindGrid" message="tns:iProductUOM_GetPrdUOMRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductUOM/GetPrdUOMRecordToBindGridResponse" message="tns:iProductUOM_GetPrdUOMRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iProductUOM" type="tns:iProductUOM">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductUOMList">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/GetProductUOMList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductUOM">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/InsertmProductUOM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductUOM">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/updatemProductUOM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductUOMListByID">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/GetProductUOMListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdUOMRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iProductUOM/GetPrdUOMRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UOMService">
+    <wsdl:port name="BasicHttpBinding_iProductUOM" binding="tns:BasicHttpBinding_iProductUOM">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Product/UOMService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

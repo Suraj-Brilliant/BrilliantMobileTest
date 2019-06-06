@@ -1,0 +1,92 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Service.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Service.ContactPerson.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Interface.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Tempdata.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Tempdata.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BWMS\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Interface.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Domain.Tempdata.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\obj\Release\Service.ContactPerson.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.ContactPerson\bin\Service.ContactPerson.dll.config

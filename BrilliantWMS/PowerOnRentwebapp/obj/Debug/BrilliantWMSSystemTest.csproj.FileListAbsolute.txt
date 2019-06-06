@@ -1,0 +1,176 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.Cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.compiled
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojResolveAssemblyReference.cache
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojResolveAssemblyReference.cache
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.Cache
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.cache
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.compiled
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+D:\BWMSDEVP\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojResolveAssemblyReference.cache
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.Cache
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.cache
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\RdlCompile.compiled
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojAssemblyReference.cache
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.cache
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CoreCompileInputs.cache
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CopyComplete
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+D:\Suraj G\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\de\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\es\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\fr\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\it\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ja\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ko\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\pt\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ru\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojAssemblyReference.cache
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.cache
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CoreCompileInputs.cache
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CopyComplete
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+E:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\de\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\es\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\fr\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\it\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ja\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ko\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\pt\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ru\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojAssemblyReference.cache
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.cache
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CoreCompileInputs.cache
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CopyComplete
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+E:\EDrive\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\BrilliantWMS.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\en-US\BrilliantWMS.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ar-QA\BrilliantWMS.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\Microsoft.SqlServer.Types.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.resources
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.Properties.Resources.resources
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.en-US.resources
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.App_GlobalResources.Lang.ar-QA.resources
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.GenerateResource.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\en-US\BrilliantWMS.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\ar-QA\BrilliantWMS.resources.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMSSystemTest.csproj.CopyComplete
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\BrilliantWMS\PowerOnRentwebapp\obj\Debug\BrilliantWMS.pdb

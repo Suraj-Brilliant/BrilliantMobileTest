@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProductSubCategoryService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Product/ProductSubCategoryService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_InsertmProductSubCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductSubCategory" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_InsertmProductSubCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmProductSubCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_updatemProductSubCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductSubCategory" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_updatemProductSubCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemProductSubCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryListByID" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetPrdSubCategoryRecordToBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdSubCategoryRecordToBind" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetPrdSubCategoryRecordToBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrdSubCategoryRecordToBindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryByProductCategoryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryByProductCategoryID" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetProductSubCategoryByProductCategoryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSubCategoryByProductCategoryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetCategoryListByCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryListByCustomer" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetCategoryListByCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryListByCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetSubcategorylist_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubcategorylist" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetSubcategorylist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubcategorylistResponse" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetChannelList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelList" />
+  </wsdl:message>
+  <wsdl:message name="iProductSubCategoryMaster_GetChannelList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iProductSubCategoryMaster">
+    <wsdl:operation name="GetProductSubCategoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryList" message="tns:iProductSubCategoryMaster_GetProductSubCategoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryListResponse" message="tns:iProductSubCategoryMaster_GetProductSubCategoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductSubCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/InsertmProductSubCategory" message="tns:iProductSubCategoryMaster_InsertmProductSubCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/InsertmProductSubCategoryResponse" message="tns:iProductSubCategoryMaster_InsertmProductSubCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductSubCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/updatemProductSubCategory" message="tns:iProductSubCategoryMaster_updatemProductSubCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/updatemProductSubCategoryResponse" message="tns:iProductSubCategoryMaster_updatemProductSubCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductSubCategoryListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryListByID" message="tns:iProductSubCategoryMaster_GetProductSubCategoryListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryListByIDResponse" message="tns:iProductSubCategoryMaster_GetProductSubCategoryListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecord" message="tns:iProductSubCategoryMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecordResponse" message="tns:iProductSubCategoryMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecordEdit" message="tns:iProductSubCategoryMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecordEditResponse" message="tns:iProductSubCategoryMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdSubCategoryRecordToBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetPrdSubCategoryRecordToBind" message="tns:iProductSubCategoryMaster_GetPrdSubCategoryRecordToBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetPrdSubCategoryRecordToBindResponse" message="tns:iProductSubCategoryMaster_GetPrdSubCategoryRecordToBind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductSubCategoryByProductCategoryID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryByProductCategoryID" message="tns:iProductSubCategoryMaster_GetProductSubCategoryByProductCategoryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryByProductCategoryIDResponse" message="tns:iProductSubCategoryMaster_GetProductSubCategoryByProductCategoryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListByCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetCategoryListByCustomer" message="tns:iProductSubCategoryMaster_GetCategoryListByCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetCategoryListByCustomerResponse" message="tns:iProductSubCategoryMaster_GetCategoryListByCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcategorylist">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetSubcategorylist" message="tns:iProductSubCategoryMaster_GetSubcategorylist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetSubcategorylistResponse" message="tns:iProductSubCategoryMaster_GetSubcategorylist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetChannelList" message="tns:iProductSubCategoryMaster_GetChannelList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iProductSubCategoryMaster/GetChannelListResponse" message="tns:iProductSubCategoryMaster_GetChannelList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iProductSubCategoryMaster" type="tns:iProductSubCategoryMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductSubCategoryList">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmProductSubCategory">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/InsertmProductSubCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemProductSubCategory">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/updatemProductSubCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductSubCategoryListByID">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrdSubCategoryRecordToBind">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetPrdSubCategoryRecordToBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductSubCategoryByProductCategoryID">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetProductSubCategoryByProductCategoryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListByCustomer">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetCategoryListByCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcategorylist">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetSubcategorylist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelList">
+      <soap:operation soapAction="http://tempuri.org/iProductSubCategoryMaster/GetChannelList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProductSubCategoryService">
+    <wsdl:port name="BasicHttpBinding_iProductSubCategoryMaster" binding="tns:BasicHttpBinding_iProductSubCategoryMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Product/ProductSubCategoryService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

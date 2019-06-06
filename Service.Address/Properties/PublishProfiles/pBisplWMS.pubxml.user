@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\BrilliantWMSServices\Service.Address</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AddressInfoService.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="AddressServices.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="bin/Domain.Address.dll">
+      <publishTime>01/12/2018 12:11:04</publishTime>
+    </File>
+    <File Include="bin/Domain.Server.dll">
+      <publishTime>01/12/2018 12:10:07</publishTime>
+    </File>
+    <File Include="bin/Domain.Tempdata.dll">
+      <publishTime>01/12/2018 12:10:07</publishTime>
+    </File>
+    <File Include="bin/Interface.Address.dll">
+      <publishTime>01/12/2018 12:11:03</publishTime>
+    </File>
+    <File Include="bin/Service.Address.dll">
+      <publishTime>01/12/2018 12:11:04</publishTime>
+    </File>
+    <File Include="RouteService.svc">
+      <publishTime>05/06/2017 13:00:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/12/2018 12:11:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

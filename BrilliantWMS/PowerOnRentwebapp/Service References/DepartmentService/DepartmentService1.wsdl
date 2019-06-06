@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DepartmentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.UserManagement/DepartmentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iDepartmentMaster_GetDeparmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeparmentList" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDeparmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeparmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_InsertmDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmDepartment" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_InsertmDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_updatemDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemDepartment" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_updatemDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentListByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListByID" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentListByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentRecordToBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentRecordToBind" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentRecordToBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentRecordToBindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentListtoBind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListtoBind" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentListtoBind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListtoBindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDepartmentToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDocumentTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTypeList" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDocumentTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDeptByCustomerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptByCustomerID" />
+  </wsdl:message>
+  <wsdl:message name="iDepartmentMaster_GetDeptByCustomerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptByCustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iDepartmentMaster">
+    <wsdl:operation name="GetDeparmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDeparmentList" message="tns:iDepartmentMaster_GetDeparmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDeparmentListResponse" message="tns:iDepartmentMaster_GetDeparmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/InsertmDepartment" message="tns:iDepartmentMaster_InsertmDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/InsertmDepartmentResponse" message="tns:iDepartmentMaster_InsertmDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/updatemDepartment" message="tns:iDepartmentMaster_updatemDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/updatemDepartmentResponse" message="tns:iDepartmentMaster_updatemDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentListByID" message="tns:iDepartmentMaster_GetDepartmentListByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentListByIDResponse" message="tns:iDepartmentMaster_GetDepartmentListByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/checkDuplicateRecord" message="tns:iDepartmentMaster_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/checkDuplicateRecordResponse" message="tns:iDepartmentMaster_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/checkDuplicateRecordEdit" message="tns:iDepartmentMaster_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/checkDuplicateRecordEditResponse" message="tns:iDepartmentMaster_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentRecordToBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentRecordToBind" message="tns:iDepartmentMaster_GetDepartmentRecordToBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentRecordToBindResponse" message="tns:iDepartmentMaster_GetDepartmentRecordToBind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListtoBind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentListtoBind" message="tns:iDepartmentMaster_GetDepartmentListtoBind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentListtoBindResponse" message="tns:iDepartmentMaster_GetDepartmentListtoBind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentToBindGrid" message="tns:iDepartmentMaster_GetDepartmentToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDepartmentToBindGridResponse" message="tns:iDepartmentMaster_GetDepartmentToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDocumentTypeList" message="tns:iDepartmentMaster_GetDocumentTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDocumentTypeListResponse" message="tns:iDepartmentMaster_GetDocumentTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptByCustomerID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDeptByCustomerID" message="tns:iDepartmentMaster_GetDeptByCustomerID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iDepartmentMaster/GetDeptByCustomerIDResponse" message="tns:iDepartmentMaster_GetDeptByCustomerID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iDepartmentMaster" type="tns:iDepartmentMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDeparmentList">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDeparmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmDepartment">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/InsertmDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemDepartment">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/updatemDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListByID">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDepartmentListByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentRecordToBind">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDepartmentRecordToBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListtoBind">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDepartmentListtoBind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDepartmentToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTypeList">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDocumentTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptByCustomerID">
+      <soap:operation soapAction="http://tempuri.org/iDepartmentMaster/GetDeptByCustomerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DepartmentService">
+    <wsdl:port name="BasicHttpBinding_iDepartmentMaster" binding="tns:BasicHttpBinding_iDepartmentMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.UserManagement/DepartmentService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

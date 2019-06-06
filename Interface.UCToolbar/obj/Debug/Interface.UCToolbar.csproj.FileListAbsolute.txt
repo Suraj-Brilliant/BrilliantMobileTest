@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\bin\Debug\Interface.UCToolbar.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.UCToolbar\obj\Debug\Interface.UCToolbar.pdb

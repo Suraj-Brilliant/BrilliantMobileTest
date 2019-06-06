@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+          <EntitySet Name="mStatutory" EntityType="BISPL_CRMDBModel.Store.mStatutory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mTaxSetup" EntityType="BISPL_CRMDBModel.Store.mTaxSetup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TempCartProductLevelTaxDetail" EntityType="BISPL_CRMDBModel.Store.TempCartProductLevelTaxDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tStatutoryDetail" EntityType="BISPL_CRMDBModel.Store.tStatutoryDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vTaxSetupDetail" EntityType="BISPL_CRMDBModel.Store.vTaxSetupDetail" store:Type="Views" store:Schema="dbo" store:Name="vTaxSetupDetail">
+            <DefiningQuery>SELECT 
+      [vTaxSetupDetail].[ID] AS [ID], 
+      [vTaxSetupDetail].[Name] AS [Name], 
+      [vTaxSetupDetail].[Description] AS [Description], 
+      [vTaxSetupDetail].[Type] AS [Type], 
+      [vTaxSetupDetail].[Percent] AS [Percent], 
+      [vTaxSetupDetail].[Active] AS [Active], 
+      [vTaxSetupDetail].[CreatedBy] AS [CreatedBy], 
+      [vTaxSetupDetail].[CreatedDate] AS [CreatedDate], 
+      [vTaxSetupDetail].[LastEditBy] AS [LastEditBy], 
+      [vTaxSetupDetail].[LastEditDate] AS [LastEditDate], 
+      [vTaxSetupDetail].[TaxMapping] AS [TaxMapping], 
+      [vTaxSetupDetail].[CompanyID] AS [CompanyID], 
+      [vTaxSetupDetail].[Sequence] AS [Sequence], 
+      [vTaxSetupDetail].[CustomerID] AS [CustomerID], 
+      [vTaxSetupDetail].[Customer] AS [Customer]
+      FROM [dbo].[vTaxSetupDetail] AS [vTaxSetupDetail]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="BISPL_CRMDBModel.Store.FK_tCustomerStatutoryDetails_mStatutory">
+            <End Role="mStatutory" EntitySet="mStatutory" />
+            <End Role="tStatutoryDetail" EntitySet="tStatutoryDetail" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mStatutory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="mTaxSetup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Percent" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="TaxMappingID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="TempCartProductLevelTaxDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SessionID" Type="nvarchar" MaxLength="100" />
+          <Property Name="CurrentForm" Type="nvarchar" MaxLength="100" />
+          <Property Name="ProductDetailSequence" Type="bigint" />
+          <Property Name="TaxableAmount" Type="decimal" Scale="2" />
+          <Property Name="ParentTaxID" Type="bigint" />
+          <Property Name="TaxID" Type="bigint" />
+          <Property Name="TaxName" Type="nvarchar" MaxLength="200" />
+          <Property Name="TaxPercent" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="ParentTaxPercent" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="TaxAmount" Type="decimal" Scale="2" />
+          <Property Name="TaxSequence" Type="bigint" />
+          <Property Name="CheckBoxVisible" Type="bit" />
+          <Property Name="IsChecked" Type="bit" />
+        </EntityType>
+        <EntityType Name="tStatutoryDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+          <Property Name="StatutoryID" Type="bigint" />
+          <Property Name="StatutoryValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="ApproverID" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vTaxSetupDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vTaxSetupDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Percent" />
+            <PropertyRef Name="Active" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Percent" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+          <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="TaxMapping" Type="varchar(max)" />
+          <Property Name="CompanyID" Type="bigint" Nullable="false" />
+          <Property Name="Sequence" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+          <End Role="mStatutory" Type="BISPL_CRMDBModel.Store.mStatutory" Multiplicity="0..1" />
+          <End Role="tStatutoryDetail" Type="BISPL_CRMDBModel.Store.tStatutoryDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mStatutory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tStatutoryDetail">
+              <PropertyRef Name="StatutoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SP_CartBeforeUpdateProductLevelTaxDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="SessionID" Type="varchar" Mode="In" />
+          <Parameter Name="CartSequence" Type="bigint" Mode="In" />
+          <Parameter Name="TaxableAmount" Type="decimal" Mode="In" />
+          <Parameter Name="SelectedTaxIDs" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_CartUpdateProductLevelTaxDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CurrentObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="SessionID" Type="varchar" Mode="In" />
+          <Parameter Name="CartSequence" Type="bigint" Mode="In" />
+          <Parameter Name="TaxableAmount" Type="decimal" Mode="In" />
+          <Parameter Name="SelectedTaxIDs" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_GetStatutoryDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paraReferenceID" Type="bigint" Mode="In" />
+          <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+          <Parameter Name="paraObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="paraCompanyID" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="SP_InsertIntotStatutoryDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="xmlData" Type="xml" Mode="In" />
+          <Parameter Name="paraObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="paraReferenceID" Type="bigint" Mode="In" />
+          <Parameter Name="paraUserID" Type="varchar" Mode="In" />
+          <Parameter Name="paracompanyID" Type="bigint" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="mStatutories" EntityType="BISPL_CRMDBModel.mStatutory" />
+          <EntitySet Name="mTaxSetups" EntityType="BISPL_CRMDBModel.mTaxSetup" />
+          <EntitySet Name="TempCartProductLevelTaxDetails" EntityType="BISPL_CRMDBModel.TempCartProductLevelTaxDetail" />
+          <EntitySet Name="tStatutoryDetails" EntityType="BISPL_CRMDBModel.tStatutoryDetail" />
+          <FunctionImport Name="SP_CartBeforeUpdateProductLevelTaxDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_CartBeforeUpdateProductLevelTaxDetail_Result)">
+            <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+            <Parameter Name="SessionID" Mode="In" Type="String" />
+            <Parameter Name="CartSequence" Mode="In" Type="Int64" />
+            <Parameter Name="TaxableAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="SelectedTaxIDs" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetStatutoryDetails" ReturnType="Collection(BISPL_CRMDBModel.SP_GetStatutoryDetails_Result)">
+            <Parameter Name="paraReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserID" Mode="In" Type="String" />
+            <Parameter Name="paraObjectName" Mode="In" Type="String" />
+            <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <EntitySet Name="vTaxSetupDetails" EntityType="BISPL_CRMDBModel.vTaxSetupDetail" />
+          <FunctionImport Name="SP_CartUpdateProductLevelTaxDetail">
+            <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+            <Parameter Name="SessionID" Mode="In" Type="String" />
+            <Parameter Name="CartSequence" Mode="In" Type="Int64" />
+            <Parameter Name="TaxableAmount" Mode="In" Type="Decimal" />
+            <Parameter Name="SelectedTaxIDs" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_InsertIntotStatutoryDetails">
+            <Parameter Name="xmlData" Mode="In" Type="String" />
+            <Parameter Name="paraObjectName" Mode="In" Type="String" />
+            <Parameter Name="paraReferenceID" Mode="In" Type="Int64" />
+            <Parameter Name="paraUserID" Mode="In" Type="String" />
+            <Parameter Name="paracompanyID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory">
+            <End Role="mStatutory" EntitySet="mStatutories" />
+            <End Role="tStatutoryDetail" EntitySet="tStatutoryDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mStatutory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="Int64" Name="CustomerID" />
+          <NavigationProperty Name="tStatutoryDetails" Relationship="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="mStatutory" ToRole="tStatutoryDetail" />
+        </EntityType>
+        <EntityType Name="mTaxSetup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Percent" Nullable="false" Precision="10" Scale="3" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+          <Property Type="String" Name="TaxMappingID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CustomerID" />
+        </EntityType>
+        <EntityType Name="TempCartProductLevelTaxDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SessionID" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CurrentForm" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ProductDetailSequence" />
+          <Property Type="Decimal" Name="TaxableAmount" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="ParentTaxID" />
+          <Property Type="Int64" Name="TaxID" />
+          <Property Type="String" Name="TaxName" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TaxPercent" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="ParentTaxPercent" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="TaxAmount" Precision="18" Scale="2" />
+          <Property Type="Int64" Name="TaxSequence" />
+          <Property Type="Boolean" Name="CheckBoxVisible" />
+          <Property Type="Boolean" Name="IsChecked" />
+        </EntityType>
+        <EntityType Name="tStatutoryDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+          <Property Type="Int64" Name="StatutoryID" />
+          <Property Type="String" Name="StatutoryValue" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int32" Name="Sequence" />
+          <Property Type="Int64" Name="ApproverID" />
+          <NavigationProperty Name="mStatutory" Relationship="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="tStatutoryDetail" ToRole="mStatutory" />
+        </EntityType>
+        <ComplexType Name="SP_CartBeforeUpdateProductLevelTaxDetail_Result">
+          <Property Type="Int64" Name="ParentTaxID" Nullable="true" />
+          <Property Type="Int64" Name="TaxID" Nullable="true" />
+          <Property Type="String" Name="TaxName" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="TaxPercent" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="TaxAmount" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="Boolean" Name="CheckBoxVisible" Nullable="true" />
+          <Property Type="String" Name="IsChecked" Nullable="false" MaxLength="5" />
+        </ComplexType>
+        <ComplexType Name="SP_GetStatutoryDetails_Result">
+          <Property Type="Int32" Name="ID" Nullable="true" />
+          <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+          <Property Type="Int64" Name="StatutoryID" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="StatutoryValue" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Active" Nullable="true" MaxLength="1" />
+          <Property Type="Int64" Name="Sequence" Nullable="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="LastEditBy" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="LastEditDate" Nullable="true" Precision="23" />
+          <Property Type="Int64" Name="CompanyID" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="vTaxSetupDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Percent" />
+            <PropertyRef Name="Active" />
+            <PropertyRef Name="CreatedBy" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Percent" Nullable="false" Precision="10" Scale="3" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+          <Property Type="String" Name="TaxMapping" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CompanyID" Nullable="false" />
+          <Property Type="Int64" Name="Sequence" />
+          <Property Type="Int64" Name="CustomerID" />
+          <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+          <End Type="BISPL_CRMDBModel.mStatutory" Role="mStatutory" Multiplicity="0..1" />
+          <End Type="BISPL_CRMDBModel.tStatutoryDetail" Role="tStatutoryDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mStatutory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tStatutoryDetail">
+              <PropertyRef Name="StatutoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BISPL_CRMDBModelStoreContainer" CdmEntityContainer="BISPL_CRMDBEntities">
+          <EntitySetMapping Name="mStatutories">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mStatutory">
+              <MappingFragment StoreEntitySet="mStatutory">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mTaxSetups">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.mTaxSetup">
+              <MappingFragment StoreEntitySet="mTaxSetup">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="TaxMappingID" ColumnName="TaxMappingID" />
+                <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+                <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Percent" ColumnName="Percent" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TempCartProductLevelTaxDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.TempCartProductLevelTaxDetail">
+              <MappingFragment StoreEntitySet="TempCartProductLevelTaxDetail">
+                <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+                <ScalarProperty Name="CheckBoxVisible" ColumnName="CheckBoxVisible" />
+                <ScalarProperty Name="TaxSequence" ColumnName="TaxSequence" />
+                <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+                <ScalarProperty Name="ParentTaxPercent" ColumnName="ParentTaxPercent" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+                <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+                <ScalarProperty Name="ParentTaxID" ColumnName="ParentTaxID" />
+                <ScalarProperty Name="TaxableAmount" ColumnName="TaxableAmount" />
+                <ScalarProperty Name="ProductDetailSequence" ColumnName="ProductDetailSequence" />
+                <ScalarProperty Name="CurrentForm" ColumnName="CurrentForm" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tStatutoryDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.tStatutoryDetail">
+              <MappingFragment StoreEntitySet="tStatutoryDetail">
+                <ScalarProperty Name="ApproverID" ColumnName="ApproverID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+                <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="StatutoryValue" ColumnName="StatutoryValue" />
+                <ScalarProperty Name="StatutoryID" ColumnName="StatutoryID" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_CartBeforeUpdateProductLevelTaxDetail" FunctionName="BISPL_CRMDBModel.Store.SP_CartBeforeUpdateProductLevelTaxDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_CartBeforeUpdateProductLevelTaxDetail_Result">
+                <ScalarProperty Name="ParentTaxID" ColumnName="ParentTaxID" />
+                <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+                <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+                <ScalarProperty Name="CheckBoxVisible" ColumnName="CheckBoxVisible" />
+                <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetStatutoryDetails" FunctionName="BISPL_CRMDBModel.Store.SP_GetStatutoryDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BISPL_CRMDBModel.SP_GetStatutoryDetails_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+                <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+                <ScalarProperty Name="StatutoryID" ColumnName="StatutoryID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="StatutoryValue" ColumnName="StatutoryValue" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+                <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="vTaxSetupDetails">
+            <EntityTypeMapping TypeName="BISPL_CRMDBModel.vTaxSetupDetail">
+              <MappingFragment StoreEntitySet="vTaxSetupDetail">
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="TaxMapping" ColumnName="TaxMapping" />
+                <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+                <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Percent" ColumnName="Percent" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_CartUpdateProductLevelTaxDetail" FunctionName="BISPL_CRMDBModel.Store.SP_CartUpdateProductLevelTaxDetail" />
+          <FunctionImportMapping FunctionImportName="SP_InsertIntotStatutoryDetails" FunctionName="BISPL_CRMDBModel.Store.SP_InsertIntotStatutoryDetails" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ElegantCRMDataModel">
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mStatutory" Width="1.5" PointX="0.75" PointY="0.75" Height="3.1340950520833326" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.mTaxSetup" Width="1.5" PointX="2.75" PointY="0.75" Height="3.5186979166666656" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.TempCartProductLevelTaxDetail" Width="1.5" PointX="4.75" PointY="0.75" Height="3.7109993489583335" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.tStatutoryDetail" Width="1.5" PointX="0.75" PointY="5.75" Height="3.1340950520833335" />
+        <EntityTypeShape EntityType="BISPL_CRMDBModel.vTaxSetupDetail" Width="1.5" PointX="3.375" PointY="5.75" Height="3.5186979166666674" />
+        <AssociationConnector Association="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

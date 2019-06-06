@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CRM.master.cs" Inherits="PowerOnRentwebapp.MasterPage.CRM"  %>
+
+<%@ Register Assembly="obout_Flyout2_NET" Namespace="OboutInc.Flyout2" TagPrefix="obout" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<script src="../MasterPage/JavaScripts/crm.js" type="text/javascript"></script>
+<%--<script src="../App_Themes/PIE.js" type="text/javascript"></script>--%>
+<%--<script src="../App_Themes/PIE_uncompressed.js" type="text/javascript"></script>--%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Elegant CRM</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">  
+    
+   <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true"
+        EnablePartialRendering="true">
+    </asp:ToolkitScriptManager>
+
+    <div id="main">
+        <!-- BEGIN HEADER BAR -->
+        <div id="top_bar" style="margin-top: -10px;">
+            <!-- BEGIN LOGO -->
+            <div class="CompanyLogo">
+                <asp:Image ID="ClientLogo" runat="server" ImageUrl="#" ImageAlign="Middle" Style="border: solid 2px black;
+                    background-color: White; max-height: 57px" />
+            </div>
+            <div class="userInfo">
+                <table style="float: right;">
+                    <tr>
+                        <td>
+                            <h4>
+                                Welcome :
+                                <asp:Label runat="server" ID="userName"></asp:Label>
+                            </h4>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td rowspan="2">
+                            <img runat="server" id="ImgProfileMasterPg" class="ImgProfileMasterPg" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <%-- <input type="button" id="settings" title="Settings" onclick="opensettings();" />--%>
+                            <%--&nbsp; <a target="_self" runat="server" id="btnLogout" onclick="clearSession()">
+                                          <input type="button" id="logout" title="Logout"/></a>--%>
+
+                               <a id="settings"  onclick="opensettings();" >
+                               <img src="../App_Themes/Blue/img/Setting16.png" style="margin-right:3px;" /></a>
+
+                                &nbsp; <a href="../Login/Login.aspx" target="_self" >
+                                <img src="../App_Themes/Blue/img/logout16.png" style="margin-right:3px;" /> </a>                              
+                                
+                                
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- #info -->
+            <!-- end div #logo -->
+            <!-- END LOGO -->
+            <!-- BEGIN TOP NOTIFICATIONS -->
+            <!-- end div #top_notifications -->
+            <!-- END TOP NOTIFICATIONS -->
+        </div>
+        <!-- end div #top_bar -->
+        <!-- END HEADER BAR -->
+        <!-- BEGIN NAVIGATION MENU -->
+        <!-- Start css3menu.com BODY section -->
+        <div id="menudiv">
+            <div style="width: 995px; padding: 3px 0 0 0;" runat="server" id="dvMenu">
+            </div>
+        </div>
+        <!-- End css3menu.com BODY section -->
+        <div class="fixed_page head">
+            <asp:ContentPlaceHolder ID="CPHolder_FormHeader" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="divCPHolder_Form" class="fixed_page content" style="font-size: small; text-align: left;
+            vertical-align: bottom">
+            <asp:ContentPlaceHolder ID="CPHolder_Form" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="fixed_page footer" style="height: 32px;">
+            <table style="float: right;">
+                <tr>
+                    <td>
+                        <span style="font-size: 12px; color: White;">Powered by</span>
+                    </td>
+                    <td>
+                        <a href="http://brilliantinfosys.com/" target="_blank">
+                            <img src="../MasterPage/Logo/Elegantcrm_104x31.png" style="margin-right: 3px;" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end section .footer -->
+        <!-- END FOOTER -->
+    </div>
+    <obout:Flyout runat="server" ID="FlyoutProfileSettings" AttachTo="settings" OpenEvent="ONCLICK"
+        CloseEvent="ONMOUSEOUT" Position="BOTTOM_CENTER">
+        <div id="flyoutDiv">
+            <table cellspacing="5" cellpadding="5" style="text-align: left; margin: 10px;">
+                <tr>
+                    <td>
+                        <a class="linksettings" target="_self" href="../UserManagement/ProfileSetting.aspx">
+                            Profile Settings</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="linksettings" onclick="openChangePassword();">Change Password</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="linksettings">Change Theme</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </obout:Flyout>
+    <script type="text/javascript">
+        function opensettings() {
+            <%=FlyoutProfileSettings.getClientID()%>.Open();
+        }
+
+        function openChangePassword() {
+            window.open("../Login/ChangePassword.aspx", null, 'height=185, width=396,status= 0, resizable= 0, scrollbars=0, toolbar=0,location=0,menubar=0, screenX=0; screenY=0');
+        }
+
+        function WaterMark(txt, evt, defaultText) {
+            if (txt.value.length == 0 && evt.type == "blur") {
+                txt.style.color = "white";
+                txt.value = defaultText;
+            }
+            if (txt.value == defaultText && evt.type == "focus") {
+                txt.style.color = "white";
+                txt.value = "";
+            }
+        }
+        function clearSession() {        
+          PageMethods.WMClearSession(null, null);
+         }
+    </script>
+    </form>
+</body>
+</html>

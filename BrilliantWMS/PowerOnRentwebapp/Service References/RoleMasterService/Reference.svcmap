@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="467f2744-46ed-4757-b9d1-b59270e5cde4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.UserManagement/RoleMasterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RoleMasterService.wsdl" MetadataType="Wsdl" ID="b6cca779-85ed-4d5f-9b09-96aa6e586daa" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UserManagement/RoleMasterService.svc?wsdl" />
+    <MetadataFile FileName="RoleMasterService.xsd" MetadataType="Schema" ID="474420d2-d136-4b3b-b9b3-d68613397d59" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UserManagement/RoleMasterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RoleMasterService.disco" MetadataType="Disco" ID="1649a006-8a1d-4dcf-908d-fcce75db7f0d" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UserManagement/RoleMasterService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.Company" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="10/19/2015 15:40:00" />
+    <file relUrl="CompanySetupService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="TerritoryServices.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="bin/Domain.Company.pdb" publishTime="02/15/2016 10:25:08" />
+    <file relUrl="UCTermConditionService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="TermsConditionMasterService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="bin/Service.Company.dll" publishTime="02/15/2016 10:25:15" />
+    <file relUrl="TargetService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="PrefixService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="bin/Domain.Tempdata.dll" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Interface.Company.pdb" publishTime="02/15/2016 10:24:41" />
+    <file relUrl="bin/Service.Company.pdb" publishTime="02/15/2016 10:25:15" />
+    <file relUrl="bin/Domain.Company.dll" publishTime="02/15/2016 10:25:08" />
+    <file relUrl="bin/Domain.Tempdata.pdb" publishTime="02/15/2016 10:24:53" />
+    <file relUrl="bin/Interface.Company.dll" publishTime="02/15/2016 10:24:42" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,11 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\bin\Debug\Domain.Server.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\bin\Debug\Domain.Server.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.csprojResolveAssemblyReference.cache
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\bin\Debug\Domain.Server.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\bin\Debug\Domain.Server.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Domain.Server\obj\Debug\Domain.Server.pdb

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7b832982-fa57-4eff-82fc-708e0b04aafd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Product/UOMService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UOMService.wsdl" MetadataType="Wsdl" ID="b9057807-fbf2-4c7e-8ef6-90cc4cff821c" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/UOMService.svc?wsdl" />
+    <MetadataFile FileName="UOMService.disco" MetadataType="Disco" ID="aeac6217-17f9-40ff-a67f-0b59637cfb64" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/UOMService.svc?disco" />
+    <MetadataFile FileName="UOMService.xsd" MetadataType="Schema" ID="dd169b54-5c21-475b-9aab-f0ac76f0329b" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Product/UOMService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

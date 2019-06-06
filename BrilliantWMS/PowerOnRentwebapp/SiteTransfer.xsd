@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SiteTransfer" targetNamespace="http://tempuri.org/SiteTransfer.xsd" xmlns:mstns="http://tempuri.org/SiteTransfer.xsd" xmlns="http://tempuri.org/SiteTransfer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="elegantcrm7ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="elegantcrm7ConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.elegantcrm7ConnectionString1.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="POR_VGetTransferReportTableAdapter" GeneratorDataComponentClassName="POR_VGetTransferReportTableAdapter" Name="POR_VGetTransferReport" UserDataComponentName="POR_VGetTransferReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="elegantcrm7ConnectionString1 (Web.config)" DbObjectName="elegantcrm7.dbo.POR_VGetTransferReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TransH_ID, ToSiteID, ToSite, TransferDate, TransferedByUserID, FromSiteID, FromSite, Prod_ID, Prod_Code, Prod_Name, TransferQty, PRH_ID, TransferBy FROM dbo.POR_VGetTransferReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TransH_ID" DataSetColumn="TransH_ID" />
+              <Mapping SourceColumn="ToSiteID" DataSetColumn="ToSiteID" />
+              <Mapping SourceColumn="ToSite" DataSetColumn="ToSite" />
+              <Mapping SourceColumn="TransferDate" DataSetColumn="TransferDate" />
+              <Mapping SourceColumn="TransferedByUserID" DataSetColumn="TransferedByUserID" />
+              <Mapping SourceColumn="FromSiteID" DataSetColumn="FromSiteID" />
+              <Mapping SourceColumn="FromSite" DataSetColumn="FromSite" />
+              <Mapping SourceColumn="Prod_ID" DataSetColumn="Prod_ID" />
+              <Mapping SourceColumn="Prod_Code" DataSetColumn="Prod_Code" />
+              <Mapping SourceColumn="Prod_Name" DataSetColumn="Prod_Name" />
+              <Mapping SourceColumn="TransferQty" DataSetColumn="TransferQty" />
+              <Mapping SourceColumn="PRH_ID" DataSetColumn="PRH_ID" />
+              <Mapping SourceColumn="TransferBy" DataSetColumn="TransferBy" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SiteTransfer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SiteTransfer" msprop:Generator_UserDSName="SiteTransfer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="POR_VGetTransferReport" msprop:Generator_TableClassName="POR_VGetTransferReportDataTable" msprop:Generator_TableVarName="tablePOR_VGetTransferReport" msprop:Generator_TablePropName="POR_VGetTransferReport" msprop:Generator_RowDeletingName="POR_VGetTransferReportRowDeleting" msprop:Generator_UserTableName="POR_VGetTransferReport" msprop:Generator_RowChangingName="POR_VGetTransferReportRowChanging" msprop:Generator_RowEvHandlerName="POR_VGetTransferReportRowChangeEventHandler" msprop:Generator_RowDeletedName="POR_VGetTransferReportRowDeleted" msprop:Generator_RowEvArgName="POR_VGetTransferReportRowChangeEvent" msprop:Generator_RowChangedName="POR_VGetTransferReportRowChanged" msprop:Generator_RowClassName="POR_VGetTransferReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransH_ID" msprop:Generator_ColumnVarNameInTable="columnTransH_ID" msprop:Generator_ColumnPropNameInRow="TransH_ID" msprop:Generator_ColumnPropNameInTable="TransH_IDColumn" msprop:Generator_UserColumnName="TransH_ID" type="xs:long" />
+              <xs:element name="ToSiteID" msprop:Generator_ColumnVarNameInTable="columnToSiteID" msprop:Generator_ColumnPropNameInRow="ToSiteID" msprop:Generator_ColumnPropNameInTable="ToSiteIDColumn" msprop:Generator_UserColumnName="ToSiteID" type="xs:long" minOccurs="0" />
+              <xs:element name="ToSite" msprop:Generator_ColumnVarNameInTable="columnToSite" msprop:Generator_ColumnPropNameInRow="ToSite" msprop:Generator_ColumnPropNameInTable="ToSiteColumn" msprop:Generator_UserColumnName="ToSite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferDate" msprop:Generator_ColumnVarNameInTable="columnTransferDate" msprop:Generator_ColumnPropNameInRow="TransferDate" msprop:Generator_ColumnPropNameInTable="TransferDateColumn" msprop:Generator_UserColumnName="TransferDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TransferedByUserID" msprop:Generator_ColumnVarNameInTable="columnTransferedByUserID" msprop:Generator_ColumnPropNameInRow="TransferedByUserID" msprop:Generator_ColumnPropNameInTable="TransferedByUserIDColumn" msprop:Generator_UserColumnName="TransferedByUserID" type="xs:long" minOccurs="0" />
+              <xs:element name="FromSiteID" msprop:Generator_ColumnVarNameInTable="columnFromSiteID" msprop:Generator_ColumnPropNameInRow="FromSiteID" msprop:Generator_ColumnPropNameInTable="FromSiteIDColumn" msprop:Generator_UserColumnName="FromSiteID" type="xs:long" minOccurs="0" />
+              <xs:element name="FromSite" msprop:Generator_ColumnVarNameInTable="columnFromSite" msprop:Generator_ColumnPropNameInRow="FromSite" msprop:Generator_ColumnPropNameInTable="FromSiteColumn" msprop:Generator_UserColumnName="FromSite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_ID" msprop:Generator_ColumnVarNameInTable="columnProd_ID" msprop:Generator_ColumnPropNameInRow="Prod_ID" msprop:Generator_ColumnPropNameInTable="Prod_IDColumn" msprop:Generator_UserColumnName="Prod_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="Prod_Code" msprop:Generator_ColumnVarNameInTable="columnProd_Code" msprop:Generator_ColumnPropNameInRow="Prod_Code" msprop:Generator_ColumnPropNameInTable="Prod_CodeColumn" msprop:Generator_UserColumnName="Prod_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_Name" msprop:Generator_ColumnVarNameInTable="columnProd_Name" msprop:Generator_ColumnPropNameInRow="Prod_Name" msprop:Generator_ColumnPropNameInTable="Prod_NameColumn" msprop:Generator_UserColumnName="Prod_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferQty" msprop:Generator_ColumnVarNameInTable="columnTransferQty" msprop:Generator_ColumnPropNameInRow="TransferQty" msprop:Generator_ColumnPropNameInTable="TransferQtyColumn" msprop:Generator_UserColumnName="TransferQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRH_ID" msprop:Generator_ColumnVarNameInTable="columnPRH_ID" msprop:Generator_ColumnPropNameInRow="PRH_ID" msprop:Generator_ColumnPropNameInTable="PRH_IDColumn" msprop:Generator_UserColumnName="PRH_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="TransferBy" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTransferBy" msprop:Generator_ColumnPropNameInRow="TransferBy" msprop:Generator_ColumnPropNameInTable="TransferByColumn" msprop:Generator_UserColumnName="TransferBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:POR_VGetTransferReport" />
+      <xs:field xpath="mstns:TransH_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

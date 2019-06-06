@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CycleCount" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Warehouse/CycleCount.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iCycleCount_GetCycleCountMain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountMain" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCountMain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountMainResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCounttemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCounttemp" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCounttemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCounttempResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCounttempdata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCounttempdata" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCounttempdata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCounttempdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCountTempDataByLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountTempDataByLoc" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCountTempDataByLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountTempDataByLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCountHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCountHead" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCountHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCountHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleTempDataToInsert_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleTempDataToInsert" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleTempDataToInsert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleTempDataToInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCyclePlanData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCyclePlanData" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCyclePlanData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCyclePlanDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_DeleteCycletempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCycletempData" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_DeleteCycletempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCycletempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_DeleteCycleTempWithoutObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCycleTempWithoutObj" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_DeleteCycleTempWithoutObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCycleTempWithoutObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCyleCountHeadByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCyleCountHeadByID" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCyleCountHeadByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCyleCountHeadByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetLocationID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationID" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetLocationID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_CheckLocInPlann_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLocInPlann" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_CheckLocInPlann_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLocInPlannResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCount" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_SaveCycleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCycleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSKUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUID" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSKUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCountDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountDetail" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetCycleCountDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetRepeatedCycleCountData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepeatedCycleCountData" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetRepeatedCycleCountData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepeatedCycleCountDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSKUIDBySKUCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUIDBySKUCode" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSKUIDBySKUCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUIDBySKUCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetBatchCodeBySKU_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatchCodeBySKU" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetBatchCodeBySKU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatchCodeBySKUResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSystemQtyByBatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemQtyByBatch" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_GetSystemQtyByBatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemQtyByBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_UpdateStockSkuTransForFromLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockSkuTransForFromLoc" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_UpdateStockSkuTransForFromLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockSkuTransForFromLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_UpdateStocktransToLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStocktransToLoc" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_UpdateStocktransToLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStocktransToLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_getLocationRemainingQty_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationRemainingQty" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_getLocationRemainingQty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationRemainingQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_getCompanyCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyCustomer" />
+  </wsdl:message>
+  <wsdl:message name="iCycleCount_getCompanyCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyCustomerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iCycleCount">
+    <wsdl:operation name="GetCycleCountMain">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountMain" message="tns:iCycleCount_GetCycleCountMain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountMainResponse" message="tns:iCycleCount_GetCycleCountMain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCounttemp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCounttemp" message="tns:iCycleCount_SaveCycleCounttemp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCounttempResponse" message="tns:iCycleCount_SaveCycleCounttemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCounttempdata">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCounttempdata" message="tns:iCycleCount_GetCycleCounttempdata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCounttempdataResponse" message="tns:iCycleCount_GetCycleCounttempdata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountTempDataByLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountTempDataByLoc" message="tns:iCycleCount_GetCycleCountTempDataByLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountTempDataByLocResponse" message="tns:iCycleCount_GetCycleCountTempDataByLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCountHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCountHead" message="tns:iCycleCount_SaveCycleCountHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCountHeadResponse" message="tns:iCycleCount_SaveCycleCountHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleTempDataToInsert">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCycleTempDataToInsert" message="tns:iCycleCount_GetCycleTempDataToInsert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCycleTempDataToInsertResponse" message="tns:iCycleCount_GetCycleTempDataToInsert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCyclePlanData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/SaveCyclePlanData" message="tns:iCycleCount_SaveCyclePlanData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/SaveCyclePlanDataResponse" message="tns:iCycleCount_SaveCyclePlanData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCycletempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/DeleteCycletempData" message="tns:iCycleCount_DeleteCycletempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/DeleteCycletempDataResponse" message="tns:iCycleCount_DeleteCycletempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCycleTempWithoutObj">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/DeleteCycleTempWithoutObj" message="tns:iCycleCount_DeleteCycleTempWithoutObj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/DeleteCycleTempWithoutObjResponse" message="tns:iCycleCount_DeleteCycleTempWithoutObj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCyleCountHeadByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCyleCountHeadByID" message="tns:iCycleCount_GetCyleCountHeadByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCyleCountHeadByIDResponse" message="tns:iCycleCount_GetCyleCountHeadByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetLocationID" message="tns:iCycleCount_GetLocationID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetLocationIDResponse" message="tns:iCycleCount_GetLocationID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLocInPlann">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/CheckLocInPlann" message="tns:iCycleCount_CheckLocInPlann_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/CheckLocInPlannResponse" message="tns:iCycleCount_CheckLocInPlann_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCount" message="tns:iCycleCount_SaveCycleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/SaveCycleCountResponse" message="tns:iCycleCount_SaveCycleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetSKUID" message="tns:iCycleCount_GetSKUID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetSKUIDResponse" message="tns:iCycleCount_GetSKUID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountDetail" message="tns:iCycleCount_GetCycleCountDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetCycleCountDetailResponse" message="tns:iCycleCount_GetCycleCountDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepeatedCycleCountData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetRepeatedCycleCountData" message="tns:iCycleCount_GetRepeatedCycleCountData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetRepeatedCycleCountDataResponse" message="tns:iCycleCount_GetRepeatedCycleCountData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUIDBySKUCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetSKUIDBySKUCode" message="tns:iCycleCount_GetSKUIDBySKUCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetSKUIDBySKUCodeResponse" message="tns:iCycleCount_GetSKUIDBySKUCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchCodeBySKU">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetBatchCodeBySKU" message="tns:iCycleCount_GetBatchCodeBySKU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetBatchCodeBySKUResponse" message="tns:iCycleCount_GetBatchCodeBySKU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemQtyByBatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/GetSystemQtyByBatch" message="tns:iCycleCount_GetSystemQtyByBatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/GetSystemQtyByBatchResponse" message="tns:iCycleCount_GetSystemQtyByBatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStockSkuTransForFromLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/UpdateStockSkuTransForFromLoc" message="tns:iCycleCount_UpdateStockSkuTransForFromLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/UpdateStockSkuTransForFromLocResponse" message="tns:iCycleCount_UpdateStockSkuTransForFromLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStocktransToLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/UpdateStocktransToLoc" message="tns:iCycleCount_UpdateStocktransToLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/UpdateStocktransToLocResponse" message="tns:iCycleCount_UpdateStocktransToLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocationRemainingQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/getLocationRemainingQty" message="tns:iCycleCount_getLocationRemainingQty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/getLocationRemainingQtyResponse" message="tns:iCycleCount_getLocationRemainingQty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iCycleCount/getCompanyCustomer" message="tns:iCycleCount_getCompanyCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iCycleCount/getCompanyCustomerResponse" message="tns:iCycleCount_getCompanyCustomer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iCycleCount" type="tns:iCycleCount">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCycleCountMain">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCycleCountMain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCounttemp">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/SaveCycleCounttemp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCounttempdata">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCycleCounttempdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountTempDataByLoc">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCycleCountTempDataByLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCountHead">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/SaveCycleCountHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleTempDataToInsert">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCycleTempDataToInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCyclePlanData">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/SaveCyclePlanData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCycletempData">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/DeleteCycletempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCycleTempWithoutObj">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/DeleteCycleTempWithoutObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCyleCountHeadByID">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCyleCountHeadByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationID">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetLocationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLocInPlann">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/CheckLocInPlann" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCycleCount">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/SaveCycleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUID">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetSKUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountDetail">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetCycleCountDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepeatedCycleCountData">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetRepeatedCycleCountData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUIDBySKUCode">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetSKUIDBySKUCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchCodeBySKU">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetBatchCodeBySKU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemQtyByBatch">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/GetSystemQtyByBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStockSkuTransForFromLoc">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/UpdateStockSkuTransForFromLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStocktransToLoc">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/UpdateStocktransToLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocationRemainingQty">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/getLocationRemainingQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyCustomer">
+      <soap:operation soapAction="http://tempuri.org/iCycleCount/getCompanyCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CycleCount">
+    <wsdl:port name="BasicHttpBinding_iCycleCount" binding="tns:BasicHttpBinding_iCycleCount">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Warehouse/CycleCount.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BISPL_CRMDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mStatutories" EntityType="BISPL_CRMDBModel.mStatutory" />
+    <EntitySet Name="mTaxSetups" EntityType="BISPL_CRMDBModel.mTaxSetup" />
+    <EntitySet Name="TempCartProductLevelTaxDetails" EntityType="BISPL_CRMDBModel.TempCartProductLevelTaxDetail" />
+    <EntitySet Name="tStatutoryDetails" EntityType="BISPL_CRMDBModel.tStatutoryDetail" />
+    <FunctionImport Name="SP_CartBeforeUpdateProductLevelTaxDetail" ReturnType="Collection(BISPL_CRMDBModel.SP_CartBeforeUpdateProductLevelTaxDetail_Result)">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+      <Parameter Name="CartSequence" Mode="In" Type="Int64" />
+      <Parameter Name="TaxableAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="SelectedTaxIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetStatutoryDetails" ReturnType="Collection(BISPL_CRMDBModel.SP_GetStatutoryDetails_Result)">
+      <Parameter Name="paraReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="paraUserID" Mode="In" Type="String" />
+      <Parameter Name="paraObjectName" Mode="In" Type="String" />
+      <Parameter Name="paraCompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="vTaxSetupDetails" EntityType="BISPL_CRMDBModel.vTaxSetupDetail" />
+    <FunctionImport Name="SP_CartUpdateProductLevelTaxDetail">
+      <Parameter Name="CurrentObjectName" Mode="In" Type="String" />
+      <Parameter Name="SessionID" Mode="In" Type="String" />
+      <Parameter Name="CartSequence" Mode="In" Type="Int64" />
+      <Parameter Name="TaxableAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="SelectedTaxIDs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertIntotStatutoryDetails">
+      <Parameter Name="xmlData" Mode="In" Type="String" />
+      <Parameter Name="paraObjectName" Mode="In" Type="String" />
+      <Parameter Name="paraReferenceID" Mode="In" Type="Int64" />
+      <Parameter Name="paraUserID" Mode="In" Type="String" />
+      <Parameter Name="paracompanyID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory">
+      <End Role="mStatutory" EntitySet="mStatutories" />
+      <End Role="tStatutoryDetail" EntitySet="tStatutoryDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="mStatutory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedDate" Precision="3" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="CustomerID" />
+    <NavigationProperty Name="tStatutoryDetails" Relationship="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="mStatutory" ToRole="tStatutoryDetail" />
+  </EntityType>
+  <EntityType Name="mTaxSetup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Type" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Percent" Nullable="false" Precision="10" Scale="3" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+    <Property Type="String" Name="TaxMappingID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CustomerID" />
+  </EntityType>
+  <EntityType Name="TempCartProductLevelTaxDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SessionID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CurrentForm" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProductDetailSequence" />
+    <Property Type="Decimal" Name="TaxableAmount" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="ParentTaxID" />
+    <Property Type="Int64" Name="TaxID" />
+    <Property Type="String" Name="TaxName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TaxPercent" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="ParentTaxPercent" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="TaxAmount" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="TaxSequence" />
+    <Property Type="Boolean" Name="CheckBoxVisible" />
+    <Property Type="Boolean" Name="IsChecked" />
+  </EntityType>
+  <EntityType Name="tStatutoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ObjectName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="false" />
+    <Property Type="Int64" Name="StatutoryID" />
+    <Property Type="String" Name="StatutoryValue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="Int64" Name="ApproverID" />
+    <NavigationProperty Name="mStatutory" Relationship="BISPL_CRMDBModel.FK_tCustomerStatutoryDetails_mStatutory" FromRole="tStatutoryDetail" ToRole="mStatutory" />
+  </EntityType>
+  <ComplexType Name="SP_CartBeforeUpdateProductLevelTaxDetail_Result">
+    <Property Type="Int64" Name="ParentTaxID" Nullable="true" />
+    <Property Type="Int64" Name="TaxID" Nullable="true" />
+    <Property Type="String" Name="TaxName" Nullable="true" MaxLength="200" />
+    <Property Type="Decimal" Name="TaxPercent" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="TaxAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Boolean" Name="CheckBoxVisible" Nullable="true" />
+    <Property Type="String" Name="IsChecked" Nullable="false" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="SP_GetStatutoryDetails_Result">
+    <Property Type="Int32" Name="ID" Nullable="true" />
+    <Property Type="String" Name="ObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="ReferenceID" Nullable="true" />
+    <Property Type="Int64" Name="StatutoryID" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StatutoryValue" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Active" Nullable="true" MaxLength="1" />
+    <Property Type="Int64" Name="Sequence" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="LastEditBy" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="LastEditDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="vTaxSetupDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Percent" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Type" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Percent" Nullable="false" Precision="10" Scale="3" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastEditBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastEditDate" Precision="3" />
+    <Property Type="String" Name="TaxMapping" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int64" Name="Sequence" />
+    <Property Type="Int64" Name="CustomerID" />
+    <Property Type="String" Name="Customer" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+    <End Type="BISPL_CRMDBModel.mStatutory" Role="mStatutory" Multiplicity="0..1" />
+    <End Type="BISPL_CRMDBModel.tStatutoryDetail" Role="tStatutoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatutory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tStatutoryDetail">
+        <PropertyRef Name="StatutoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

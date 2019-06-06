@@ -1,0 +1,35 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Document\obj\Release\Interface.Document.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Document\obj\Release\Interface.Document.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.dll
+F:\BWMS\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Document\bin\Release\Interface.Document.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.Document\obj\Release\Interface.Document.pdb

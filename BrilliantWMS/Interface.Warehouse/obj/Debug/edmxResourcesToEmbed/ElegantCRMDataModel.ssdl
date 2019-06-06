@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BISPL_CRMDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BISPL_CRMDBModelStoreContainer">
+    <EntitySet Name="CycleCountTemp" EntityType="BISPL_CRMDBModel.Store.CycleCountTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mDropdownValues" EntityType="BISPL_CRMDBModel.Store.mDropdownValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mFloar" EntityType="BISPL_CRMDBModel.Store.mFloar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mLocation" EntityType="BISPL_CRMDBModel.Store.mLocation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mPathway" EntityType="BISPL_CRMDBModel.Store.mPathway" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mSection" EntityType="BISPL_CRMDBModel.Store.mSection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mShelf" EntityType="BISPL_CRMDBModel.Store.mShelf" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mWarehouseBuilding" EntityType="BISPL_CRMDBModel.Store.mWarehouseBuilding" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mWarehouseMaster" EntityType="BISPL_CRMDBModel.Store.mWarehouseMaster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tAddress" EntityType="BISPL_CRMDBModel.Store.tAddress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tCycleCountDetail" EntityType="BISPL_CRMDBModel.Store.tCycleCountDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tCycleCountHead" EntityType="BISPL_CRMDBModel.Store.tCycleCountHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tCycleCountPlan" EntityType="BISPL_CRMDBModel.Store.tCycleCountPlan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tSKUTransaction" EntityType="BISPL_CRMDBModel.Store.tSKUTransaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="V_WMS_GetCycleCountMain" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetCycleCountMain" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetCycleCountMain">
+      <DefiningQuery>SELECT 
+      [V_WMS_GetCycleCountMain].[ID] AS [ID], 
+      [V_WMS_GetCycleCountMain].[Title] AS [Title], 
+      [V_WMS_GetCycleCountMain].[Description] AS [Description], 
+      [V_WMS_GetCycleCountMain].[CycleCountDate] AS [CycleCountDate], 
+      [V_WMS_GetCycleCountMain].[Executive] AS [Executive], 
+      [V_WMS_GetCycleCountMain].[Company] AS [Company], 
+      [V_WMS_GetCycleCountMain].[Customer] AS [Customer], 
+      [V_WMS_GetCycleCountMain].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetCycleCountMain].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetCycleCountMain].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetCycleCountMain].[Status] AS [Status], 
+      [V_WMS_GetCycleCountMain].[Frequency] AS [Frequency], 
+      [V_WMS_GetCycleCountMain].[CountBasis] AS [CountBasis], 
+      [V_WMS_GetCycleCountMain].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetCycleCountMain] AS [V_WMS_GetCycleCountMain]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_WMS_GetHeadCycleCount" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetHeadCycleCount" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetHeadCycleCount">
+      <DefiningQuery>SELECT 
+      [V_WMS_GetHeadCycleCount].[ID] AS [ID], 
+      [V_WMS_GetHeadCycleCount].[Title] AS [Title], 
+      [V_WMS_GetHeadCycleCount].[Description] AS [Description], 
+      [V_WMS_GetHeadCycleCount].[CycleCountDate] AS [CycleCountDate], 
+      [V_WMS_GetHeadCycleCount].[Executive] AS [Executive], 
+      [V_WMS_GetHeadCycleCount].[Company] AS [Company], 
+      [V_WMS_GetHeadCycleCount].[Customer] AS [Customer], 
+      [V_WMS_GetHeadCycleCount].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetHeadCycleCount].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetHeadCycleCount].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetHeadCycleCount].[Status] AS [Status], 
+      [V_WMS_GetHeadCycleCount].[Frequency] AS [Frequency], 
+      [V_WMS_GetHeadCycleCount].[CountBasis] AS [CountBasis], 
+      [V_WMS_GetHeadCycleCount].[Active] AS [Active]
+      FROM [dbo].[V_WMS_GetHeadCycleCount] AS [V_WMS_GetHeadCycleCount]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_WMS_GetWarehouseDetails" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetWarehouseDetails" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetWarehouseDetails">
+      <DefiningQuery>SELECT 
+      [V_WMS_GetWarehouseDetails].[ID] AS [ID], 
+      [V_WMS_GetWarehouseDetails].[Code] AS [Code], 
+      [V_WMS_GetWarehouseDetails].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetWarehouseDetails].[Type] AS [Type], 
+      [V_WMS_GetWarehouseDetails].[Description] AS [Description], 
+      [V_WMS_GetWarehouseDetails].[Remark] AS [Remark], 
+      [V_WMS_GetWarehouseDetails].[Active] AS [Active], 
+      [V_WMS_GetWarehouseDetails].[Company] AS [Company], 
+      [V_WMS_GetWarehouseDetails].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetWarehouseDetails].[AddressLine1] AS [AddressLine1], 
+      [V_WMS_GetWarehouseDetails].[County] AS [County], 
+      [V_WMS_GetWarehouseDetails].[State] AS [State], 
+      [V_WMS_GetWarehouseDetails].[City] AS [City], 
+      [V_WMS_GetWarehouseDetails].[ContactName] AS [ContactName], 
+      [V_WMS_GetWarehouseDetails].[EmailID] AS [EmailID], 
+      [V_WMS_GetWarehouseDetails].[MobileNo] AS [MobileNo], 
+      [V_WMS_GetWarehouseDetails].[CustomerID] AS [CustomerID]
+      FROM [dbo].[V_WMS_GetWarehouseDetails] AS [V_WMS_GetWarehouseDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_WMS_GetWareLocationByLocID" EntityType="BISPL_CRMDBModel.Store.V_WMS_GetWareLocationByLocID" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_GetWareLocationByLocID">
+      <DefiningQuery>SELECT 
+      [V_WMS_GetWareLocationByLocID].[ID] AS [ID], 
+      [V_WMS_GetWareLocationByLocID].[locationCode] AS [locationCode], 
+      [V_WMS_GetWareLocationByLocID].[AliasCode] AS [AliasCode], 
+      [V_WMS_GetWareLocationByLocID].[SortCode] AS [SortCode], 
+      [V_WMS_GetWareLocationByLocID].[LocationType] AS [LocationType], 
+      [V_WMS_GetWareLocationByLocID].[Capacity] AS [Capacity], 
+      [V_WMS_GetWareLocationByLocID].[Company] AS [Company], 
+      [V_WMS_GetWareLocationByLocID].[Shelf] AS [Shelf], 
+      [V_WMS_GetWareLocationByLocID].[Section] AS [Section], 
+      [V_WMS_GetWareLocationByLocID].[Passage] AS [Passage], 
+      [V_WMS_GetWareLocationByLocID].[Floar] AS [Floar], 
+      [V_WMS_GetWareLocationByLocID].[Building] AS [Building], 
+      [V_WMS_GetWareLocationByLocID].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_GetWareLocationByLocID].[Customer] AS [Customer], 
+      [V_WMS_GetWareLocationByLocID].[Code] AS [Code], 
+      [V_WMS_GetWareLocationByLocID].[Expr1] AS [Expr1], 
+      [V_WMS_GetWareLocationByLocID].[Expr2] AS [Expr2], 
+      [V_WMS_GetWareLocationByLocID].[shelfID] AS [shelfID], 
+      [V_WMS_GetWareLocationByLocID].[SectionID] AS [SectionID], 
+      [V_WMS_GetWareLocationByLocID].[passageID] AS [passageID], 
+      [V_WMS_GetWareLocationByLocID].[FloarID] AS [FloarID], 
+      [V_WMS_GetWareLocationByLocID].[BuildingID] AS [BuildingID], 
+      [V_WMS_GetWareLocationByLocID].[WarehouseID] AS [WarehouseID], 
+      [V_WMS_GetWareLocationByLocID].[CompanyID] AS [CompanyID], 
+      [V_WMS_GetWareLocationByLocID].[CustomerID] AS [CustomerID], 
+      [V_WMS_GetWareLocationByLocID].[Active] AS [Active], 
+      [V_WMS_GetWareLocationByLocID].[VelocityType] AS [VelocityType], 
+      [V_WMS_GetWareLocationByLocID].[CapacityIn] AS [CapacityIn]
+      FROM [dbo].[V_WMS_GetWareLocationByLocID] AS [V_WMS_GetWareLocationByLocID]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_WMS_WarehouseLocation" EntityType="BISPL_CRMDBModel.Store.V_WMS_WarehouseLocation" store:Type="Views" store:Schema="dbo" store:Name="V_WMS_WarehouseLocation">
+      <DefiningQuery>SELECT 
+      [V_WMS_WarehouseLocation].[ID] AS [ID], 
+      [V_WMS_WarehouseLocation].[locationCode] AS [locationCode], 
+      [V_WMS_WarehouseLocation].[SortCode] AS [SortCode], 
+      [V_WMS_WarehouseLocation].[LocationType] AS [LocationType], 
+      [V_WMS_WarehouseLocation].[Capacity] AS [Capacity], 
+      [V_WMS_WarehouseLocation].[Company] AS [Company], 
+      [V_WMS_WarehouseLocation].[Shelf] AS [Shelf], 
+      [V_WMS_WarehouseLocation].[Section] AS [Section], 
+      [V_WMS_WarehouseLocation].[Passage] AS [Passage], 
+      [V_WMS_WarehouseLocation].[Floar] AS [Floar], 
+      [V_WMS_WarehouseLocation].[Building] AS [Building], 
+      [V_WMS_WarehouseLocation].[WarehouseName] AS [WarehouseName], 
+      [V_WMS_WarehouseLocation].[Customer] AS [Customer], 
+      [V_WMS_WarehouseLocation].[Code] AS [Code], 
+      [V_WMS_WarehouseLocation].[Expr1] AS [Expr1], 
+      [V_WMS_WarehouseLocation].[Expr2] AS [Expr2], 
+      [V_WMS_WarehouseLocation].[shelfID] AS [shelfID], 
+      [V_WMS_WarehouseLocation].[SectionID] AS [SectionID], 
+      [V_WMS_WarehouseLocation].[passageID] AS [passageID], 
+      [V_WMS_WarehouseLocation].[FloarID] AS [FloarID], 
+      [V_WMS_WarehouseLocation].[BuildingID] AS [BuildingID], 
+      [V_WMS_WarehouseLocation].[WarehouseID] AS [WarehouseID], 
+      [V_WMS_WarehouseLocation].[CompanyID] AS [CompanyID], 
+      [V_WMS_WarehouseLocation].[CustomerID] AS [CustomerID], 
+      [V_WMS_WarehouseLocation].[Active] AS [Active], 
+      [V_WMS_WarehouseLocation].[VelocityType] AS [VelocityType], 
+      [V_WMS_WarehouseLocation].[CapacityIn] AS [CapacityIn]
+      FROM [dbo].[V_WMS_WarehouseLocation] AS [V_WMS_WarehouseLocation]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="CycleCountTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Object" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" />
+    <Property Name="SessionID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mDropdownValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="nvarchar(max)" />
+    <Property Name="Parameter" Type="nvarchar(max)" />
+    <Property Name="StatusID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mFloar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BuildingID" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="Capacity" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="mLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ShelfID" Type="bigint" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="AliasCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CapacityIn" Type="bigint" />
+    <Property Name="Capacity" Type="decimal" Scale="2" />
+    <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="Active" Type="varchar" MaxLength="5" />
+    <Property Name="AvailableBalance" Type="decimal" Scale="2" />
+    <Property Name="WarehouseID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mPathway">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FloarID" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mSection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PathID" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mShelf">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SectionID" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mWarehouseBuilding">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WarehouseID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Capacity" Type="decimal" Scale="2" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mWarehouseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" MaxLength="200" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Type" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Remark" Type="varchar(max)" />
+    <Property Name="Active" Type="char" MaxLength="5" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="RouteID" Type="bigint" />
+    <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+    <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsDefault" Type="varchar" MaxLength="1" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="BillingID" Type="bigint" />
+    <Property Name="ShippingID" Type="bigint" />
+    <Property Name="Zone" Type="nvarchar" MaxLength="200" />
+    <Property Name="SubZone" Type="nvarchar" MaxLength="200" />
+    <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="bigint" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tCycleCountDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountHeadID" Type="bigint" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="QtyBalance" Type="decimal" Scale="2" />
+    <Property Name="ActualQty" Type="decimal" Scale="2" />
+    <Property Name="AdjustmentQty" Type="decimal" Scale="2" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="AdjustLocation" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiffQty" Type="decimal" Scale="2" />
+    <Property Name="SKUID" Type="bigint" />
+    <Property Name="LocationID" Type="bigint" />
+    <Property Name="BatchCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tCycleCountHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Exicutive" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="WarehouseID" Type="bigint" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+    <Property Name="CycleCountDate" Type="datetime" />
+    <Property Name="Active" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tCycleCountPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Object" Type="nvarchar" MaxLength="50" />
+    <Property Name="CycleHeadID" Type="bigint" />
+    <Property Name="ReferenceID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tSKUTransaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SKUId" Type="bigint" />
+    <Property Name="BatchCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocationID" Type="bigint" />
+    <Property Name="MDate" Type="datetime" />
+    <Property Name="ExpDate" Type="datetime" />
+    <Property Name="TransType" Type="nvarchar" MaxLength="50" />
+    <Property Name="InQty" Type="decimal" Scale="2" />
+    <Property Name="OutQty" Type="decimal" Scale="2" />
+    <Property Name="ClosingBalance" Type="decimal" Scale="2" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetCycleCountMain' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="V_WMS_GetCycleCountMain">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CycleCountDate" Type="datetime" />
+    <Property Name="Executive" Type="nvarchar" MaxLength="101" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetHeadCycleCount' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="V_WMS_GetHeadCycleCount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CycleCountDate" Type="datetime" />
+    <Property Name="Executive" Type="nvarchar" MaxLength="101" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountBasis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetWarehouseDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="V_WMS_GetWarehouseDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="200" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Type" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Remark" Type="varchar(max)" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="County" Type="nvarchar" MaxLength="200" />
+    <Property Name="State" Type="nvarchar" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" MaxLength="200" />
+    <Property Name="ContactName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_GetWareLocationByLocID' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="V_WMS_GetWareLocationByLocID">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="locationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="AliasCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="bigint" />
+    <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Capacity" Type="decimal" Scale="2" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="Shelf" Type="nvarchar" MaxLength="50" />
+    <Property Name="Section" Type="nvarchar" MaxLength="50" />
+    <Property Name="Passage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Floar" Type="nvarchar" MaxLength="50" />
+    <Property Name="Building" Type="nvarchar" MaxLength="50" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr1" Type="varchar" MaxLength="200" />
+    <Property Name="Expr2" Type="varchar" MaxLength="200" />
+    <Property Name="shelfID" Type="bigint" />
+    <Property Name="SectionID" Type="bigint" />
+    <Property Name="passageID" Type="bigint" />
+    <Property Name="FloarID" Type="bigint" />
+    <Property Name="BuildingID" Type="bigint" />
+    <Property Name="WarehouseID" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="Active" Type="char" MaxLength="5" />
+    <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CapacityIn" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.V_WMS_WarehouseLocation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="V_WMS_WarehouseLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="locationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocationType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Capacity" Type="decimal" Scale="2" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="Shelf" Type="nvarchar" MaxLength="50" />
+    <Property Name="Section" Type="nvarchar" MaxLength="50" />
+    <Property Name="Passage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Floar" Type="nvarchar" MaxLength="50" />
+    <Property Name="Building" Type="nvarchar" MaxLength="50" />
+    <Property Name="WarehouseName" Type="varchar" MaxLength="200" />
+    <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr1" Type="varchar" MaxLength="200" />
+    <Property Name="Expr2" Type="varchar" MaxLength="200" />
+    <Property Name="shelfID" Type="bigint" />
+    <Property Name="SectionID" Type="bigint" />
+    <Property Name="passageID" Type="bigint" />
+    <Property Name="FloarID" Type="bigint" />
+    <Property Name="BuildingID" Type="bigint" />
+    <Property Name="WarehouseID" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="Active" Type="char" MaxLength="5" />
+    <Property Name="VelocityType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CapacityIn" Type="bigint" />
+  </EntityType>
+</Schema>

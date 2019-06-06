@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\poweronrentservices\Service.Dashboard" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="DashboardService.svc" publishTime="06/05/2013 17:02:59" />
+    <file relUrl="bin/Interface.Dashboard.dll" publishTime="02/15/2016 10:24:36" />
+    <file relUrl="bin/Domain.Server.dll" publishTime="02/15/2016 10:24:30" />
+    <file relUrl="bin/Domain.Server.pdb" publishTime="02/15/2016 10:24:29" />
+    <file relUrl="Web.config" publishTime="10/19/2015 15:40:15" />
+    <file relUrl="bin/Domain.Dashboard.dll" publishTime="02/15/2016 10:25:09" />
+    <file relUrl="bin/Domain.Dashboard.pdb" publishTime="02/15/2016 10:25:09" />
+    <file relUrl="bin/Service.Dashboard.pdb" publishTime="02/15/2016 10:25:44" />
+    <file relUrl="bin/Interface.Dashboard.pdb" publishTime="02/15/2016 10:24:36" />
+    <file relUrl="bin/Service.Dashboard.dll" publishTime="02/15/2016 10:25:44" />
+  </publishProfile>
+</publishData>

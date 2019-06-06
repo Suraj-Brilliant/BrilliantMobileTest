@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8c8d2173-34e0-497e-b905-5ade86827c29" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.UCToolbar/UCToolbarService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UCToolbarService.xsd" MetadataType="Schema" ID="d0fd13eb-04ee-423f-b019-b2384e329d7b" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UCToolbar/UCToolbarService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UCToolbarService1.xsd" MetadataType="Schema" ID="833b0043-946c-4c24-a1e5-b9c280e94fc5" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UCToolbar/UCToolbarService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UCToolbarService.wsdl" MetadataType="Wsdl" ID="ce232820-c61f-4719-b3b6-59b32494be7c" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UCToolbar/UCToolbarService.svc?wsdl" />
+    <MetadataFile FileName="UCToolbarService.disco" MetadataType="Disco" ID="1479820a-b4f4-4249-81e5-4723109f7bd5" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.UCToolbar/UCToolbarService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

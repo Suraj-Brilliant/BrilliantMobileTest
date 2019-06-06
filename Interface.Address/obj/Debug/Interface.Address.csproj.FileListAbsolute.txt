@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\bin\Debug\Interface.Address.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Address\obj\Debug\Interface.Address.pdb

@@ -1,0 +1,13 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\bin\Debug\Interface.Approval.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Approval\obj\Debug\Interface.Approval.pdb

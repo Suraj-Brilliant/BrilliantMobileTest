@@ -1,0 +1,37 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BWMS\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\bin\Release\Interface.AccountSearchDetails.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.AccountSearchDetails\obj\Release\Interface.AccountSearchDetails.pdb

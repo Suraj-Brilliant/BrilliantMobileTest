@@ -1,0 +1,12 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\bin\Debug\Interface.Tax.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.csprojAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.Tax\obj\Debug\Interface.Tax.pdb

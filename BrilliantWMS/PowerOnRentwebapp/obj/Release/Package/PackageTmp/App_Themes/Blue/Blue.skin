@@ -1,0 +1,32 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+   <asp:CheckBox runat="server" CssClass="checkbox"/>
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+<%@ Register Assembly="TransliterateTextboxControl" Namespace="TransliterateTextboxControl" TagPrefix="cc1" %>
+--%>
+<%@ Register Assembly="obout_Grid_NET" Namespace="Obout.Grid" TagPrefix="obout" %>
+<%@ Register Assembly="obout_Interface" Namespace="Obout.Interface" TagPrefix="obout" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+
+<obout:Grid runat="server" FolderStyle="../App_Themes/Grid/styles/style_9" />
+
+
+<asp:Accordion runat="server" SelectedIndex="0" HeaderCssClass="accordionHeader" HeaderSelectedCssClass="accordionHeaderSelected" ContentCssClass="accordionContent"
+FadeTransitions="false" FramesPerSecond="40" TransitionDuration="250"  RequireOpenedPane="false" SuppressHeaderPostbacks="true">
+</asp:Accordion>
+<asp:TextBox runat="server" CssClass="inputElement" onblur="validateCtl(this);"></asp:TextBox>
+<asp:DropDownList runat="server" CssClass="inputElement" onblur="validateCtl(this);"></asp:DropDownList>
+<asp:TabContainer runat="server" CssClass="Tab" Style="text-align: left;">
+</asp:TabContainer>

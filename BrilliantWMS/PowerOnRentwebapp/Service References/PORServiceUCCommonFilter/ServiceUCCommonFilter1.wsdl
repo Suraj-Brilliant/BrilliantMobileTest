@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceUCCommonFilter" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceUCCommonFilter.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUCCommonFilter_GetWarehouseAddressList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseAddressList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetWarehouseAddressList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseAddressListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListVendorWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListVendorWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListVendorWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListVendorWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListByWarehouseID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListByWarehouseID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListByWarehouseID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListByWarehouseIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListByWarehouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListByWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListByWarehouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListByWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListClientWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListClientWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListClientWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListClientWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSites_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSites" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSitesResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineOfSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineOfSite" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineOfSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineOfSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStatusListByOjbect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListByOjbect" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStatusListByOjbect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListByOjbectResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListBySiteID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySiteID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserListBySiteID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySiteIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReportData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReportData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetRequisitionData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequisitionData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetRequisitionData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequisitionDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofRequest" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofIssue" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofReceipt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofReceipt" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductofReceipt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductofReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetPenComRequestData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPenComRequestData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetPenComRequestData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPenComRequestDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductOfSelectedEngine_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductOfSelectedEngine" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductOfSelectedEngine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductOfSelectedEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetWeeklyConsumption_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeeklyConsumption" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetWeeklyConsumption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeeklyConsumptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetConsumableStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumableStock" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetConsumableStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumableStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllReportData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReportData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllReportData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllIssueData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssueData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllIssueData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssueDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllReceiptData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReceiptData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllReceiptData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReceiptDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllProductOnSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:AllProductOnSite" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllProductOnSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllProductOnSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductBalanceOfSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductBalanceOfSite" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetProductBalanceOfSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductBalanceOfSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionDataAllRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionDataAllRequest" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionDataAllRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionDataAllRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionDataAllPrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionDataAllPrd" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllRequisitionDataAllPrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRequisitionDataAllPrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueDataAllIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDataAllIssue" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueDataAllIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDataAllIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueDataAllPrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDataAllPrd" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetIssueDataAllPrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDataAllPrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptDataAllReceipt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptDataAllReceipt" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptDataAllReceipt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptDataAllReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptDataAllPrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptDataAllPrd" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceiptDataAllPrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptDataAllPrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineCount" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineCountAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineCountAll" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetEngineCountAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngineCountAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_IssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserID_IssueID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_IssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserID_IssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserID_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteNameByUserID_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameByUserID_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToSiteName_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetToSiteName_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToSiteName_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetToSiteName_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetTransferRptData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferRptData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetTransferRptData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferRptDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAssetRptData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetRptData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAssetRptData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetRptDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetCompanyName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyName" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetCompanyName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDepartmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDepartmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllDepartmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDepartmentList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllDepartmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDepartmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSet" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllGroupsetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGroupsetList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllGroupsetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGroupsetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSetByDept_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSetByDept" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSetByDept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSetByDeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSetByCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSetByCompany" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetGroupSetByCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupSetByCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetRequestDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetRequestDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllSKUDetailsByRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AllSKUDetailsByRequest" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllSKUDetailsByRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllSKUDetailsByRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SKUDetailsBySelectedRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SKUDetailsBySelectedRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SKUDetailsBySelectedRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SKUDetailsBySelectedRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedOrder" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedSKU_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedSKU" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedSKU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedSKUResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedSKUAndOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedSKUAndOrder" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataBySelectedSKUAndOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataBySelectedSKUAndOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSKUData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSKUData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSKUData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSKUDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSKUDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSKUDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSKUDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSKUDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllUserDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllUserDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllUserData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllUserData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSku" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrder" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUDetailsReprtData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUDetailsReprtData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUDetailsReprtData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUDetailsReprtDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListDeptWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListDeptWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonListDeptWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListDeptWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPerson2List_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPerson2List" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPerson2List_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPerson2ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDeptAddressList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptAddressList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDeptAddressList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptAddressListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyName" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDepartmentListUserWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListUserWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDepartmentListUserWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentListUserWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteIdOfUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteIdOfUser" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSiteIdOfUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteIdOfUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetCompanyIDFromSiteID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyIDFromSiteID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetCompanyIDFromSiteID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyIDFromSiteIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkuLstRpt_InputMessage">
+    <wsdl:part name="parameters" element="tns:SkuLstRpt" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkuLstRpt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SkuLstRptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkulistReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:SkulistReport" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkulistReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SkulistReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUDetailsSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUDetailsSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUDetailsSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUDetailsSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetBOMDetailsReprtData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBOMDetailsReprtData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetBOMDetailsReprtData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBOMDetailsReprtDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetBOMDetailsSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBOMDetailsSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetBOMDetailsSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBOMDetailsSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsrLst_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrLst" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsrLst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrLstResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsrLst1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrLst1" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsrLst1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrLst1Response" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetOrderDetailsReprtData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsReprtData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetOrderDetailsReprtData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsReprtDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDetailsDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDetailsDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDetailsDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDetailsDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInformation" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderLeadReprtData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderLeadReprtData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderLeadReprtData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderLeadReprtDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderSelectedOrderRpt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderSelectedOrderRpt" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderSelectedOrderRpt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderSelectedOrderRptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditAllPrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditAllPrd" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditAllPrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditAllPrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditSelectedPrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditSelectedPrd" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditSelectedPrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditSelectedPrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFail" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonDetailsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetContactPersonDetailsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddressDetailsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddressDetailsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditContactPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditContactPerson" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditContactPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditContactPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AddIntotContactpersonDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotContactpersonDetail" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AddIntotContactpersonDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotContactpersonDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddress" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AddIntotAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotAddress" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AddIntotAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddIntotAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_getContact1NameByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getContact1NameByID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_getContact1NameByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getContact1NameByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_getContact2NamesByIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:getContact2NamesByIDs" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_getContact2NamesByIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getContact2NamesByIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddressLineByAdrsID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressLineByAdrsID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddressLineByAdrsID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressLineByAdrsIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStateList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetStateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailPrdLst_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailPrdLst" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailPrdLst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailPrdLstResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailSelectedProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailSelectedProduct" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailSelectedProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailSelectedProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUTransaction" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSKUTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSKUTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTransaction" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkulistReportSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:SkulistReportSearch" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_SkulistReportSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SkulistReportSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditAllPrdSearched_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditAllPrdSearched" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditAllPrdSearched_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditAllPrdSearchedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailPrdLstSearched_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailPrdLstSearched" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetImageAuditFailPrdLstSearched_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageAuditFailPrdLstSearchedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserInformationSearched_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInformationSearched" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserInformationSearched_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInformationSearchedResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyNameNEW_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyNameNEW" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserCompanyNameNEW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCompanyNameNEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddedDepartmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedDepartmentList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddedDepartmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedDepartmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddedDepartmentListDS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedDepartmentListDS" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAddedDepartmentListDS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddedDepartmentListDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllDriverList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDriverList" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllDriverList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDriverListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDelivery" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDeliveryDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDeliveryDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllOrderDeliveryDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDeliveryDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSlaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSlaData" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSlaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSlaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSlaDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSlaDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllSlaDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSlaDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToTalDeliveryVSTotalReq_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetToTalDeliveryVSTotalReq" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToTalDeliveryVSTotalReq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetToTalDeliveryVSTotalReqResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToTalDeliveryVSTotalReqDataSelectedRow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetToTalDeliveryVSTotalReqDataSelectedRow" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetToTalDeliveryVSTotalReqDataSelectedRow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetToTalDeliveryVSTotalReqDataSelectedRowResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAdrsType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdrsType" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAdrsType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdrsTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDeptAddressListAdrsType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptAddressListAdrsType" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetDeptAddressListAdrsType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptAddressListAdrsTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLocation" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUserLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllOrderReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:AllOrderReports" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_AllOrderReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllOrderReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetLocationOfUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationOfUser" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetLocationOfUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationOfUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetLocationDetailsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetLocationDetailsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditLocation" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_EditLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsersDepartmentWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDepartmentWise" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetUsersDepartmentWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDepartmentWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetVendors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendors" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetVendors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetPurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetPurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSelectedPurchaseOrderDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedPurchaseOrderDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetSelectedPurchaseOrderDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedPurchaseOrderDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderReport" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderSelectedRowReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderSelectedRowReport" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetAllPurchaseOrderSelectedRowReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPurchaseOrderSelectedRowReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceivableOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceivableOrder" />
+  </wsdl:message>
+  <wsdl:message name="iUCCommonFilter_GetReceivableOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceivableOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUCCommonFilter">
+    <wsdl:operation name="GetWarehouseAddressList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetWarehouseAddressList" message="tns:iUCCommonFilter_GetWarehouseAddressList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetWarehouseAddressListResponse" message="tns:iUCCommonFilter_GetWarehouseAddressList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListVendorWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListVendorWise" message="tns:iUCCommonFilter_GetContactPersonListVendorWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListVendorWiseResponse" message="tns:iUCCommonFilter_GetContactPersonListVendorWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListByWarehouseID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouseID" message="tns:iUCCommonFilter_GetUserListByWarehouseID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouseIDResponse" message="tns:iUCCommonFilter_GetUserListByWarehouseID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListByWarehouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouse" message="tns:iUCCommonFilter_GetUserListByWarehouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouseResponse" message="tns:iUCCommonFilter_GetUserListByWarehouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListClientWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListClientWise" message="tns:iUCCommonFilter_GetContactPersonListClientWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListClientWiseResponse" message="tns:iUCCommonFilter_GetContactPersonListClientWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID" message="tns:iUCCommonFilter_GetSiteNameByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserIDResponse" message="tns:iUCCommonFilter_GetSiteNameByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSites">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSites" message="tns:iUCCommonFilter_GetAllSites_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSitesResponse" message="tns:iUCCommonFilter_GetAllSites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineOfSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineOfSite" message="tns:iUCCommonFilter_GetEngineOfSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineOfSiteResponse" message="tns:iUCCommonFilter_GetEngineOfSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListByOjbect">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStatusListByOjbect" message="tns:iUCCommonFilter_GetStatusListByOjbect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStatusListByOjbectResponse" message="tns:iUCCommonFilter_GetStatusListByOjbect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySiteID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListBySiteID" message="tns:iUCCommonFilter_GetUserListBySiteID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserListBySiteIDResponse" message="tns:iUCCommonFilter_GetUserListBySiteID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReportData" message="tns:iUCCommonFilter_GetReportData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReportDataResponse" message="tns:iUCCommonFilter_GetReportData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequisitionData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetRequisitionData" message="tns:iUCCommonFilter_GetRequisitionData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetRequisitionDataResponse" message="tns:iUCCommonFilter_GetRequisitionData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueData" message="tns:iUCCommonFilter_GetIssueData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueDataResponse" message="tns:iUCCommonFilter_GetIssueData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptData" message="tns:iUCCommonFilter_GetReceiptData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptDataResponse" message="tns:iUCCommonFilter_GetReceiptData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofRequest" message="tns:iUCCommonFilter_GetProductofRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofRequestResponse" message="tns:iUCCommonFilter_GetProductofRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofIssue" message="tns:iUCCommonFilter_GetProductofIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofIssueResponse" message="tns:iUCCommonFilter_GetProductofIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofReceipt">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofReceipt" message="tns:iUCCommonFilter_GetProductofReceipt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductofReceiptResponse" message="tns:iUCCommonFilter_GetProductofReceipt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPenComRequestData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetPenComRequestData" message="tns:iUCCommonFilter_GetPenComRequestData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetPenComRequestDataResponse" message="tns:iUCCommonFilter_GetPenComRequestData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOfSelectedEngine">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductOfSelectedEngine" message="tns:iUCCommonFilter_GetProductOfSelectedEngine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductOfSelectedEngineResponse" message="tns:iUCCommonFilter_GetProductOfSelectedEngine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeeklyConsumption">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetWeeklyConsumption" message="tns:iUCCommonFilter_GetWeeklyConsumption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetWeeklyConsumptionResponse" message="tns:iUCCommonFilter_GetWeeklyConsumption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumableStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetConsumableStock" message="tns:iUCCommonFilter_GetConsumableStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetConsumableStockResponse" message="tns:iUCCommonFilter_GetConsumableStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionData" message="tns:iUCCommonFilter_GetAllRequisitionData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataResponse" message="tns:iUCCommonFilter_GetAllRequisitionData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReportData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllReportData" message="tns:iUCCommonFilter_GetAllReportData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllReportDataResponse" message="tns:iUCCommonFilter_GetAllReportData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssueData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllIssueData" message="tns:iUCCommonFilter_GetAllIssueData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllIssueDataResponse" message="tns:iUCCommonFilter_GetAllIssueData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReceiptData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllReceiptData" message="tns:iUCCommonFilter_GetAllReceiptData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllReceiptDataResponse" message="tns:iUCCommonFilter_GetAllReceiptData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AllProductOnSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/AllProductOnSite" message="tns:iUCCommonFilter_AllProductOnSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/AllProductOnSiteResponse" message="tns:iUCCommonFilter_AllProductOnSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductBalanceOfSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductBalanceOfSite" message="tns:iUCCommonFilter_GetProductBalanceOfSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetProductBalanceOfSiteResponse" message="tns:iUCCommonFilter_GetProductBalanceOfSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionDataAllRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllRequest" message="tns:iUCCommonFilter_GetAllRequisitionDataAllRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllRequestResponse" message="tns:iUCCommonFilter_GetAllRequisitionDataAllRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionDataAllPrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllPrd" message="tns:iUCCommonFilter_GetAllRequisitionDataAllPrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllPrdResponse" message="tns:iUCCommonFilter_GetAllRequisitionDataAllPrd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDataAllIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueDataAllIssue" message="tns:iUCCommonFilter_GetIssueDataAllIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueDataAllIssueResponse" message="tns:iUCCommonFilter_GetIssueDataAllIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDataAllPrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueDataAllPrd" message="tns:iUCCommonFilter_GetIssueDataAllPrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetIssueDataAllPrdResponse" message="tns:iUCCommonFilter_GetIssueDataAllPrd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptDataAllReceipt">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllReceipt" message="tns:iUCCommonFilter_GetReceiptDataAllReceipt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllReceiptResponse" message="tns:iUCCommonFilter_GetReceiptDataAllReceipt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptDataAllPrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllPrd" message="tns:iUCCommonFilter_GetReceiptDataAllPrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllPrdResponse" message="tns:iUCCommonFilter_GetReceiptDataAllPrd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineCount" message="tns:iUCCommonFilter_GetEngineCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineCountResponse" message="tns:iUCCommonFilter_GetEngineCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineCountAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineCountAll" message="tns:iUCCommonFilter_GetEngineCountAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetEngineCountAllResponse" message="tns:iUCCommonFilter_GetEngineCountAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID_IssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_IssueID" message="tns:iUCCommonFilter_GetSiteNameByUserID_IssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_IssueIDResponse" message="tns:iUCCommonFilter_GetSiteNameByUserID_IssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteID" message="tns:iUCCommonFilter_GetSiteID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteIDResponse" message="tns:iUCCommonFilter_GetSiteID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_Transfer" message="tns:iUCCommonFilter_GetSiteNameByUserID_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_TransferResponse" message="tns:iUCCommonFilter_GetSiteNameByUserID_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetToSiteName_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToSiteName_Transfer" message="tns:iUCCommonFilter_GetToSiteName_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToSiteName_TransferResponse" message="tns:iUCCommonFilter_GetToSiteName_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferRptData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetTransferRptData" message="tns:iUCCommonFilter_GetTransferRptData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetTransferRptDataResponse" message="tns:iUCCommonFilter_GetTransferRptData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetRptData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAssetRptData" message="tns:iUCCommonFilter_GetAssetRptData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAssetRptDataResponse" message="tns:iUCCommonFilter_GetAssetRptData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetCompanyName" message="tns:iUCCommonFilter_GetCompanyName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetCompanyNameResponse" message="tns:iUCCommonFilter_GetCompanyName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDepartmentList" message="tns:iUCCommonFilter_GetDepartmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDepartmentListResponse" message="tns:iUCCommonFilter_GetDepartmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDepartmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllDepartmentList" message="tns:iUCCommonFilter_GetAllDepartmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllDepartmentListResponse" message="tns:iUCCommonFilter_GetAllDepartmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSet" message="tns:iUCCommonFilter_GetGroupSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSetResponse" message="tns:iUCCommonFilter_GetGroupSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroupsetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllGroupsetList" message="tns:iUCCommonFilter_GetAllGroupsetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllGroupsetListResponse" message="tns:iUCCommonFilter_GetAllGroupsetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSetByDept">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSetByDept" message="tns:iUCCommonFilter_GetGroupSetByDept_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSetByDeptResponse" message="tns:iUCCommonFilter_GetGroupSetByDept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSetByCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSetByCompany" message="tns:iUCCommonFilter_GetGroupSetByCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetGroupSetByCompanyResponse" message="tns:iUCCommonFilter_GetGroupSetByCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStatus" message="tns:iUCCommonFilter_GetStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStatusResponse" message="tns:iUCCommonFilter_GetStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUser" message="tns:iUCCommonFilter_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserResponse" message="tns:iUCCommonFilter_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetRequestDetails" message="tns:iUCCommonFilter_GetRequestDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetRequestDetailsResponse" message="tns:iUCCommonFilter_GetRequestDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AllSKUDetailsByRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/AllSKUDetailsByRequest" message="tns:iUCCommonFilter_AllSKUDetailsByRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/AllSKUDetailsByRequestResponse" message="tns:iUCCommonFilter_AllSKUDetailsByRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SKUDetailsBySelectedRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/SKUDetailsBySelectedRequestID" message="tns:iUCCommonFilter_SKUDetailsBySelectedRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/SKUDetailsBySelectedRequestIDResponse" message="tns:iUCCommonFilter_SKUDetailsBySelectedRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderData" message="tns:iUCCommonFilter_GetAllOrderData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataResponse" message="tns:iUCCommonFilter_GetAllOrderData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedOrder" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedOrderResponse" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedSKU">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKU" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedSKU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKUResponse" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedSKU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedSKUAndOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKUAndOrder" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedSKUAndOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKUAndOrderResponse" message="tns:iUCCommonFilter_GetAllOrderDataBySelectedSKUAndOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSKUData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSKUData" message="tns:iUCCommonFilter_GetAllSKUData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSKUDataResponse" message="tns:iUCCommonFilter_GetAllSKUData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSKUDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSKUDataSelectedRow" message="tns:iUCCommonFilter_GetAllSKUDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSKUDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllSKUDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllUserDataSelectedRow" message="tns:iUCCommonFilter_GetAllUserDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllUserDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllUserDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllUserData" message="tns:iUCCommonFilter_GetAllUserData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllUserDataResponse" message="tns:iUCCommonFilter_GetAllUserData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSku">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSku" message="tns:iUCCommonFilter_GetSku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSkuResponse" message="tns:iUCCommonFilter_GetSku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrder" message="tns:iUCCommonFilter_GetAllOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderResponse" message="tns:iUCCommonFilter_GetAllOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUDetailsReprtData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUDetailsReprtData" message="tns:iUCCommonFilter_GetSKUDetailsReprtData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUDetailsReprtDataResponse" message="tns:iUCCommonFilter_GetSKUDetailsReprtData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListDeptWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListDeptWise" message="tns:iUCCommonFilter_GetContactPersonListDeptWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListDeptWiseResponse" message="tns:iUCCommonFilter_GetContactPersonListDeptWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonList" message="tns:iUCCommonFilter_GetContactPersonList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonListResponse" message="tns:iUCCommonFilter_GetContactPersonList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPerson2List">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPerson2List" message="tns:iUCCommonFilter_GetContactPerson2List_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPerson2ListResponse" message="tns:iUCCommonFilter_GetContactPerson2List_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptAddressList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDeptAddressList" message="tns:iUCCommonFilter_GetDeptAddressList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDeptAddressListResponse" message="tns:iUCCommonFilter_GetDeptAddressList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyName" message="tns:iUCCommonFilter_GetUserCompanyName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyNameResponse" message="tns:iUCCommonFilter_GetUserCompanyName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyID" message="tns:iUCCommonFilter_GetUserCompanyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyIDResponse" message="tns:iUCCommonFilter_GetUserCompanyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListUserWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDepartmentListUserWise" message="tns:iUCCommonFilter_GetDepartmentListUserWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDepartmentListUserWiseResponse" message="tns:iUCCommonFilter_GetDepartmentListUserWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteIdOfUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteIdOfUser" message="tns:iUCCommonFilter_GetSiteIdOfUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSiteIdOfUserResponse" message="tns:iUCCommonFilter_GetSiteIdOfUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyIDFromSiteID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetCompanyIDFromSiteID" message="tns:iUCCommonFilter_GetCompanyIDFromSiteID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetCompanyIDFromSiteIDResponse" message="tns:iUCCommonFilter_GetCompanyIDFromSiteID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SkuLstRpt">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/SkuLstRpt" message="tns:iUCCommonFilter_SkuLstRpt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/SkuLstRptResponse" message="tns:iUCCommonFilter_SkuLstRpt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SkulistReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/SkulistReport" message="tns:iUCCommonFilter_SkulistReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/SkulistReportResponse" message="tns:iUCCommonFilter_SkulistReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUDetailsSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUDetailsSelectedRow" message="tns:iUCCommonFilter_GetSKUDetailsSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUDetailsSelectedRowResponse" message="tns:iUCCommonFilter_GetSKUDetailsSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBOMDetailsReprtData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetBOMDetailsReprtData" message="tns:iUCCommonFilter_GetBOMDetailsReprtData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetBOMDetailsReprtDataResponse" message="tns:iUCCommonFilter_GetBOMDetailsReprtData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBOMDetailsSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetBOMDetailsSelectedRow" message="tns:iUCCommonFilter_GetBOMDetailsSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetBOMDetailsSelectedRowResponse" message="tns:iUCCommonFilter_GetBOMDetailsSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrLst">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsrLst" message="tns:iUCCommonFilter_GetUsrLst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsrLstResponse" message="tns:iUCCommonFilter_GetUsrLst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDetails" message="tns:iUCCommonFilter_GetAllOrderDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDetailsResponse" message="tns:iUCCommonFilter_GetAllOrderDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataSelectedRow" message="tns:iUCCommonFilter_GetAllOrderDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllOrderDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrLst1">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsrLst1" message="tns:iUCCommonFilter_GetUsrLst1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsrLst1Response" message="tns:iUCCommonFilter_GetUsrLst1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsReprtData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetOrderDetailsReprtData" message="tns:iUCCommonFilter_GetOrderDetailsReprtData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetOrderDetailsReprtDataResponse" message="tns:iUCCommonFilter_GetOrderDetailsReprtData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDetailsDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDetailsDataSelectedRow" message="tns:iUCCommonFilter_GetAllOrderDetailsDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDetailsDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllOrderDetailsDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserInformation" message="tns:iUCCommonFilter_GetUserInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserInformationResponse" message="tns:iUCCommonFilter_GetUserInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderLeadReprtData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderLeadReprtData" message="tns:iUCCommonFilter_GetAllOrderLeadReprtData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderLeadReprtDataResponse" message="tns:iUCCommonFilter_GetAllOrderLeadReprtData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderSelectedOrderRpt">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderSelectedOrderRpt" message="tns:iUCCommonFilter_GetAllOrderSelectedOrderRpt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderSelectedOrderRptResponse" message="tns:iUCCommonFilter_GetAllOrderSelectedOrderRpt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditAllPrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrd" message="tns:iUCCommonFilter_GetImageAuditAllPrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrdResponse" message="tns:iUCCommonFilter_GetImageAuditAllPrd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditSelectedPrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditSelectedPrd" message="tns:iUCCommonFilter_GetImageAuditSelectedPrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditSelectedPrdResponse" message="tns:iUCCommonFilter_GetImageAuditSelectedPrd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFail" message="tns:iUCCommonFilter_GetImageAuditFail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailResponse" message="tns:iUCCommonFilter_GetImageAuditFail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonDetailsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonDetailsByID" message="tns:iUCCommonFilter_GetContactPersonDetailsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetContactPersonDetailsByIDResponse" message="tns:iUCCommonFilter_GetContactPersonDetailsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressDetailsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddressDetailsByID" message="tns:iUCCommonFilter_GetAddressDetailsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddressDetailsByIDResponse" message="tns:iUCCommonFilter_GetAddressDetailsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditContactPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/EditContactPerson" message="tns:iUCCommonFilter_EditContactPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/EditContactPersonResponse" message="tns:iUCCommonFilter_EditContactPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotContactpersonDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/AddIntotContactpersonDetail" message="tns:iUCCommonFilter_AddIntotContactpersonDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/AddIntotContactpersonDetailResponse" message="tns:iUCCommonFilter_AddIntotContactpersonDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/EditAddress" message="tns:iUCCommonFilter_EditAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/EditAddressResponse" message="tns:iUCCommonFilter_EditAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/AddIntotAddress" message="tns:iUCCommonFilter_AddIntotAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/AddIntotAddressResponse" message="tns:iUCCommonFilter_AddIntotAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getContact1NameByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/getContact1NameByID" message="tns:iUCCommonFilter_getContact1NameByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/getContact1NameByIDResponse" message="tns:iUCCommonFilter_getContact1NameByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getContact2NamesByIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/getContact2NamesByIDs" message="tns:iUCCommonFilter_getContact2NamesByIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/getContact2NamesByIDsResponse" message="tns:iUCCommonFilter_getContact2NamesByIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressLineByAdrsID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddressLineByAdrsID" message="tns:iUCCommonFilter_GetAddressLineByAdrsID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddressLineByAdrsIDResponse" message="tns:iUCCommonFilter_GetAddressLineByAdrsID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStateList" message="tns:iUCCommonFilter_GetStateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetStateListResponse" message="tns:iUCCommonFilter_GetStateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailPrdLst">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLst" message="tns:iUCCommonFilter_GetImageAuditFailPrdLst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLstResponse" message="tns:iUCCommonFilter_GetImageAuditFailPrdLst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailSelectedProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailSelectedProduct" message="tns:iUCCommonFilter_GetImageAuditFailSelectedProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailSelectedProductResponse" message="tns:iUCCommonFilter_GetImageAuditFailSelectedProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUTransaction" message="tns:iUCCommonFilter_GetSKUTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSKUTransactionResponse" message="tns:iUCCommonFilter_GetSKUTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserTransaction" message="tns:iUCCommonFilter_GetUserTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserTransactionResponse" message="tns:iUCCommonFilter_GetUserTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SkulistReportSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/SkulistReportSearch" message="tns:iUCCommonFilter_SkulistReportSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/SkulistReportSearchResponse" message="tns:iUCCommonFilter_SkulistReportSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditAllPrdSearched">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrdSearched" message="tns:iUCCommonFilter_GetImageAuditAllPrdSearched_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrdSearchedResponse" message="tns:iUCCommonFilter_GetImageAuditAllPrdSearched_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailPrdLstSearched">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLstSearched" message="tns:iUCCommonFilter_GetImageAuditFailPrdLstSearched_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLstSearchedResponse" message="tns:iUCCommonFilter_GetImageAuditFailPrdLstSearched_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInformationSearched">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserInformationSearched" message="tns:iUCCommonFilter_GetUserInformationSearched_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserInformationSearchedResponse" message="tns:iUCCommonFilter_GetUserInformationSearched_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyNameNEW">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyNameNEW" message="tns:iUCCommonFilter_GetUserCompanyNameNEW_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserCompanyNameNEWResponse" message="tns:iUCCommonFilter_GetUserCompanyNameNEW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedDepartmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentList" message="tns:iUCCommonFilter_GetAddedDepartmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentListResponse" message="tns:iUCCommonFilter_GetAddedDepartmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedDepartmentListDS">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentListDS" message="tns:iUCCommonFilter_GetAddedDepartmentListDS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentListDSResponse" message="tns:iUCCommonFilter_GetAddedDepartmentListDS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDriverList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllDriverList" message="tns:iUCCommonFilter_GetAllDriverList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllDriverListResponse" message="tns:iUCCommonFilter_GetAllDriverList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDelivery">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDelivery" message="tns:iUCCommonFilter_GetAllOrderDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDeliveryResponse" message="tns:iUCCommonFilter_GetAllOrderDelivery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDeliveryDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDeliveryDataSelectedRow" message="tns:iUCCommonFilter_GetAllOrderDeliveryDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllOrderDeliveryDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllOrderDeliveryDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSlaData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSlaData" message="tns:iUCCommonFilter_GetAllSlaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSlaDataResponse" message="tns:iUCCommonFilter_GetAllSlaData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSlaDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSlaDataSelectedRow" message="tns:iUCCommonFilter_GetAllSlaDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllSlaDataSelectedRowResponse" message="tns:iUCCommonFilter_GetAllSlaDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetToTalDeliveryVSTotalReq">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReq" message="tns:iUCCommonFilter_GetToTalDeliveryVSTotalReq_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReqResponse" message="tns:iUCCommonFilter_GetToTalDeliveryVSTotalReq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetToTalDeliveryVSTotalReqDataSelectedRow">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReqDataSelectedRow" message="tns:iUCCommonFilter_GetToTalDeliveryVSTotalReqDataSelectedRow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReqDataSelectedRowResponse" message="tns:iUCCommonFilter_GetToTalDeliveryVSTotalReqDataSelectedRow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdrsType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAdrsType" message="tns:iUCCommonFilter_GetAdrsType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAdrsTypeResponse" message="tns:iUCCommonFilter_GetAdrsType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptAddressListAdrsType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDeptAddressListAdrsType" message="tns:iUCCommonFilter_GetDeptAddressListAdrsType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetDeptAddressListAdrsTypeResponse" message="tns:iUCCommonFilter_GetDeptAddressListAdrsType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserLocation" message="tns:iUCCommonFilter_GetUserLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUserLocationResponse" message="tns:iUCCommonFilter_GetUserLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AllOrderReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/AllOrderReports" message="tns:iUCCommonFilter_AllOrderReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/AllOrderReportsResponse" message="tns:iUCCommonFilter_AllOrderReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationOfUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetLocationOfUser" message="tns:iUCCommonFilter_GetLocationOfUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetLocationOfUserResponse" message="tns:iUCCommonFilter_GetLocationOfUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationDetailsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetLocationDetailsByID" message="tns:iUCCommonFilter_GetLocationDetailsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetLocationDetailsByIDResponse" message="tns:iUCCommonFilter_GetLocationDetailsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/EditLocation" message="tns:iUCCommonFilter_EditLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/EditLocationResponse" message="tns:iUCCommonFilter_EditLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDepartmentWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsersDepartmentWise" message="tns:iUCCommonFilter_GetUsersDepartmentWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetUsersDepartmentWiseResponse" message="tns:iUCCommonFilter_GetUsersDepartmentWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendors">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetVendors" message="tns:iUCCommonFilter_GetVendors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetVendorsResponse" message="tns:iUCCommonFilter_GetVendors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetPurchaseOrder" message="tns:iUCCommonFilter_GetPurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetPurchaseOrderResponse" message="tns:iUCCommonFilter_GetPurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedPurchaseOrderDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSelectedPurchaseOrderDetails" message="tns:iUCCommonFilter_GetSelectedPurchaseOrderDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetSelectedPurchaseOrderDetailsResponse" message="tns:iUCCommonFilter_GetSelectedPurchaseOrderDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderDetails" message="tns:iUCCommonFilter_GetAllPurchaseOrderDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderDetailsResponse" message="tns:iUCCommonFilter_GetAllPurchaseOrderDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderReport" message="tns:iUCCommonFilter_GetAllPurchaseOrderReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderReportResponse" message="tns:iUCCommonFilter_GetAllPurchaseOrderReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderSelectedRowReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderSelectedRowReport" message="tns:iUCCommonFilter_GetAllPurchaseOrderSelectedRowReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderSelectedRowReportResponse" message="tns:iUCCommonFilter_GetAllPurchaseOrderSelectedRowReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceivableOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceivableOrder" message="tns:iUCCommonFilter_GetReceivableOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUCCommonFilter/GetReceivableOrderResponse" message="tns:iUCCommonFilter_GetReceivableOrder_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUCCommonFilter" type="tns:iUCCommonFilter">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetWarehouseAddressList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetWarehouseAddressList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListVendorWise">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPersonListVendorWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListByWarehouseID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouseID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListByWarehouse">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserListByWarehouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListClientWise">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPersonListClientWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSites">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllSites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineOfSite">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetEngineOfSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListByOjbect">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetStatusListByOjbect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySiteID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserListBySiteID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetReportData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequisitionData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetRequisitionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetIssueData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetReceiptData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofRequest">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetProductofRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofIssue">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetProductofIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductofReceipt">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetProductofReceipt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPenComRequestData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetPenComRequestData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOfSelectedEngine">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetProductOfSelectedEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeeklyConsumption">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetWeeklyConsumption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumableStock">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetConsumableStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllRequisitionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReportData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllReportData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssueData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllIssueData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReceiptData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllReceiptData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllProductOnSite">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/AllProductOnSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductBalanceOfSite">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetProductBalanceOfSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionDataAllRequest">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRequisitionDataAllPrd">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllRequisitionDataAllPrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDataAllIssue">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetIssueDataAllIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDataAllPrd">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetIssueDataAllPrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptDataAllReceipt">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllReceipt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptDataAllPrd">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetReceiptDataAllPrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineCount">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetEngineCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineCountAll">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetEngineCountAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID_IssueID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_IssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSiteID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameByUserID_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSiteNameByUserID_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetToSiteName_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetToSiteName_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferRptData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetTransferRptData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetRptData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAssetRptData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetCompanyName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetDepartmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDepartmentList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllDepartmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSet">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetGroupSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroupsetList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllGroupsetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSetByDept">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetGroupSetByDept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupSetByCompany">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetGroupSetByCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestDetails">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetRequestDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllSKUDetailsByRequest">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/AllSKUDetailsByRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SKUDetailsBySelectedRequestID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/SKUDetailsBySelectedRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedOrder">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedSKU">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataBySelectedSKUAndOrder">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDataBySelectedSKUAndOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSKUData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllSKUData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSKUDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllSKUDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllUserDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSku">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrder">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUDetailsReprtData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSKUDetailsReprtData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonListDeptWise">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPersonListDeptWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPersonList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPerson2List">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPerson2List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptAddressList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetDeptAddressList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyName">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserCompanyName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserCompanyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentListUserWise">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetDepartmentListUserWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteIdOfUser">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSiteIdOfUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyIDFromSiteID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetCompanyIDFromSiteID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SkuLstRpt">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/SkuLstRpt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SkulistReport">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/SkulistReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUDetailsSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSKUDetailsSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBOMDetailsReprtData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetBOMDetailsReprtData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBOMDetailsSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetBOMDetailsSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrLst">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUsrLst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDetails">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrLst1">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUsrLst1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsReprtData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetOrderDetailsReprtData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDetailsDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDetailsDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInformation">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderLeadReprtData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderLeadReprtData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderSelectedOrderRpt">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderSelectedOrderRpt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditAllPrd">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditSelectedPrd">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditSelectedPrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFail">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditFail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetContactPersonDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAddressDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditContactPerson">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/EditContactPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotContactpersonDetail">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/AddIntotContactpersonDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/EditAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIntotAddress">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/AddIntotAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContact1NameByID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/getContact1NameByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContact2NamesByIDs">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/getContact2NamesByIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressLineByAdrsID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAddressLineByAdrsID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailPrdLst">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailSelectedProduct">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditFailSelectedProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSKUTransaction">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSKUTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTransaction">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SkulistReportSearch">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/SkulistReportSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditAllPrdSearched">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditAllPrdSearched" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageAuditFailPrdLstSearched">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetImageAuditFailPrdLstSearched" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInformationSearched">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserInformationSearched" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompanyNameNEW">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserCompanyNameNEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedDepartmentList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddedDepartmentListDS">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAddedDepartmentListDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDriverList">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllDriverList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDelivery">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDeliveryDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllOrderDeliveryDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSlaData">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllSlaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSlaDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllSlaDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetToTalDeliveryVSTotalReq">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReq" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetToTalDeliveryVSTotalReqDataSelectedRow">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetToTalDeliveryVSTotalReqDataSelectedRow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdrsType">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAdrsType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptAddressListAdrsType">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetDeptAddressListAdrsType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLocation">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUserLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllOrderReports">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/AllOrderReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationOfUser">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetLocationOfUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetLocationDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditLocation">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/EditLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDepartmentWise">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetUsersDepartmentWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendors">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetVendors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedPurchaseOrderDetails">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetSelectedPurchaseOrderDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderDetails">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderReport">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPurchaseOrderSelectedRowReport">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetAllPurchaseOrderSelectedRowReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceivableOrder">
+      <soap:operation soapAction="http://tempuri.org/iUCCommonFilter/GetReceivableOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceUCCommonFilter">
+    <wsdl:port name="BasicHttpBinding_iUCCommonFilter" binding="tns:BasicHttpBinding_iUCCommonFilter">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceUCCommonFilter.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

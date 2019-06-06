@@ -1,0 +1,12 @@
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.dll.config
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.pdb
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.dll
+D:\TFS\GWCVer3Test\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.pdb
+D:\GWC\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.csprojResolveAssemblyReference.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.dll.config
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\bin\Debug\Interface.ContactPerson.pdb
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.csproj.CoreCompileInputs.cache
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.dll
+D:\BrilliantWMSMobile\BrilliantWMSSystems\Interface.ContactPerson\obj\Debug\Interface.ContactPerson.pdb

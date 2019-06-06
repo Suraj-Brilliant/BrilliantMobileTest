@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GWCQADataSetLeadTimeWithApprovers" targetNamespace="http://tempuri.org/GWCQADataSetLeadTimeWithApprovers.xsd" xmlns:mstns="http://tempuri.org/GWCQADataSetLeadTimeWithApprovers.xsd" xmlns="http://tempuri.org/GWCQADataSetLeadTimeWithApprovers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ApplicationServices" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApplicationServices (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ApplicationServices.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_GWC_LeadTimeTableAdapter" GeneratorDataComponentClassName="VW_GWC_LeadTimeTableAdapter" Name="VW_GWC_LeadTime" UserDataComponentName="VW_GWC_LeadTimeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ApplicationServices (Web.config)" DbObjectName="GWCQA.dbo.VW_GWC_LeadTime" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, OrderNumber, Title, Orderdate, Deliverydate, Status, StatusName, Remark, ApprovalDate, LeadTime, StoreId, StoreCode, Territory, ParentID, CompanyName, RequestBy, UserName, ApprovalId, ApproverName, Expr1, ApprovedDate, ApprovalRemark, DeligateTo FROM dbo.VW_GWC_LeadTime</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="OrderNumber" DataSetColumn="OrderNumber" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Orderdate" DataSetColumn="Orderdate" />
+              <Mapping SourceColumn="Deliverydate" DataSetColumn="Deliverydate" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="StatusName" DataSetColumn="StatusName" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="ApprovalDate" DataSetColumn="ApprovalDate" />
+              <Mapping SourceColumn="LeadTime" DataSetColumn="LeadTime" />
+              <Mapping SourceColumn="StoreId" DataSetColumn="StoreId" />
+              <Mapping SourceColumn="StoreCode" DataSetColumn="StoreCode" />
+              <Mapping SourceColumn="Territory" DataSetColumn="Territory" />
+              <Mapping SourceColumn="ParentID" DataSetColumn="ParentID" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="RequestBy" DataSetColumn="RequestBy" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="ApprovalId" DataSetColumn="ApprovalId" />
+              <Mapping SourceColumn="ApproverName" DataSetColumn="ApproverName" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="ApprovedDate" DataSetColumn="ApprovedDate" />
+              <Mapping SourceColumn="ApprovalRemark" DataSetColumn="ApprovalRemark" />
+              <Mapping SourceColumn="DeligateTo" DataSetColumn="DeligateTo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GWCQADataSetLeadTimeWithApprovers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GWCQADataSetLeadTimeWithApprovers" msprop:Generator_UserDSName="GWCQADataSetLeadTimeWithApprovers">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_GWC_LeadTime" msprop:Generator_TableClassName="VW_GWC_LeadTimeDataTable" msprop:Generator_TableVarName="tableVW_GWC_LeadTime" msprop:Generator_TablePropName="VW_GWC_LeadTime" msprop:Generator_RowDeletingName="VW_GWC_LeadTimeRowDeleting" msprop:Generator_UserTableName="VW_GWC_LeadTime" msprop:Generator_RowChangingName="VW_GWC_LeadTimeRowChanging" msprop:Generator_RowEvHandlerName="VW_GWC_LeadTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_GWC_LeadTimeRowDeleted" msprop:Generator_RowEvArgName="VW_GWC_LeadTimeRowChangeEvent" msprop:Generator_RowChangedName="VW_GWC_LeadTimeRowChanged" msprop:Generator_RowClassName="VW_GWC_LeadTimeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="OrderNumber" msprop:Generator_ColumnVarNameInTable="columnOrderNumber" msprop:Generator_ColumnPropNameInRow="OrderNumber" msprop:Generator_ColumnPropNameInTable="OrderNumberColumn" msprop:Generator_UserColumnName="OrderNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Orderdate" msprop:Generator_ColumnVarNameInTable="columnOrderdate" msprop:Generator_ColumnPropNameInRow="Orderdate" msprop:Generator_ColumnPropNameInTable="OrderdateColumn" msprop:Generator_UserColumnName="Orderdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Deliverydate" msprop:Generator_ColumnVarNameInTable="columnDeliverydate" msprop:Generator_ColumnPropNameInRow="Deliverydate" msprop:Generator_ColumnPropNameInTable="DeliverydateColumn" msprop:Generator_UserColumnName="Deliverydate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:long" minOccurs="0" />
+              <xs:element name="StatusName" msprop:Generator_ColumnVarNameInTable="columnStatusName" msprop:Generator_ColumnPropNameInRow="StatusName" msprop:Generator_ColumnPropNameInTable="StatusNameColumn" msprop:Generator_UserColumnName="StatusName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovalDate" msprop:Generator_ColumnVarNameInTable="columnApprovalDate" msprop:Generator_ColumnPropNameInRow="ApprovalDate" msprop:Generator_ColumnPropNameInTable="ApprovalDateColumn" msprop:Generator_UserColumnName="ApprovalDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LeadTime" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLeadTime" msprop:Generator_ColumnPropNameInRow="LeadTime" msprop:Generator_ColumnPropNameInTable="LeadTimeColumn" msprop:Generator_UserColumnName="LeadTime" type="xs:int" minOccurs="0" />
+              <xs:element name="StoreId" msprop:Generator_ColumnVarNameInTable="columnStoreId" msprop:Generator_ColumnPropNameInRow="StoreId" msprop:Generator_ColumnPropNameInTable="StoreIdColumn" msprop:Generator_UserColumnName="StoreId" type="xs:long" minOccurs="0" />
+              <xs:element name="StoreCode" msprop:Generator_ColumnVarNameInTable="columnStoreCode" msprop:Generator_ColumnPropNameInRow="StoreCode" msprop:Generator_ColumnPropNameInTable="StoreCodeColumn" msprop:Generator_UserColumnName="StoreCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Territory" msprop:Generator_ColumnVarNameInTable="columnTerritory" msprop:Generator_ColumnPropNameInRow="Territory" msprop:Generator_ColumnPropNameInTable="TerritoryColumn" msprop:Generator_UserColumnName="Territory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentID" msprop:Generator_ColumnVarNameInTable="columnParentID" msprop:Generator_ColumnPropNameInRow="ParentID" msprop:Generator_ColumnPropNameInTable="ParentIDColumn" msprop:Generator_UserColumnName="ParentID" type="xs:long" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RequestBy" msprop:Generator_ColumnVarNameInTable="columnRequestBy" msprop:Generator_ColumnPropNameInRow="RequestBy" msprop:Generator_ColumnPropNameInTable="RequestByColumn" msprop:Generator_UserColumnName="RequestBy" type="xs:long" minOccurs="0" />
+              <xs:element name="UserName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovalId" msprop:Generator_ColumnVarNameInTable="columnApprovalId" msprop:Generator_ColumnPropNameInRow="ApprovalId" msprop:Generator_ColumnPropNameInTable="ApprovalIdColumn" msprop:Generator_UserColumnName="ApprovalId" type="xs:long" minOccurs="0" />
+              <xs:element name="ApproverName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnApproverName" msprop:Generator_ColumnPropNameInRow="ApproverName" msprop:Generator_ColumnPropNameInTable="ApproverNameColumn" msprop:Generator_UserColumnName="ApproverName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovedDate" msprop:Generator_ColumnVarNameInTable="columnApprovedDate" msprop:Generator_ColumnPropNameInRow="ApprovedDate" msprop:Generator_ColumnPropNameInTable="ApprovedDateColumn" msprop:Generator_UserColumnName="ApprovedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ApprovalRemark" msprop:Generator_ColumnVarNameInTable="columnApprovalRemark" msprop:Generator_ColumnPropNameInRow="ApprovalRemark" msprop:Generator_ColumnPropNameInTable="ApprovalRemarkColumn" msprop:Generator_UserColumnName="ApprovalRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeligateTo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDeligateTo" msprop:Generator_ColumnPropNameInRow="DeligateTo" msprop:Generator_ColumnPropNameInTable="DeligateToColumn" msprop:Generator_UserColumnName="DeligateTo" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_GWC_LeadTime" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.Company.UCTermConditionService" CodeBehind="UCTermConditionService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>

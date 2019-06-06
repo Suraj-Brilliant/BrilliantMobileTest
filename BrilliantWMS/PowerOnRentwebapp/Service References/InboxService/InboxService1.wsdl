@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InboxService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Inbox/InboxService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iInbox_GetInboxDetailByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDetailByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxDetailByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDetailByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_bindInboxDetailData_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindInboxDetailData" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_bindInboxDetailData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindInboxDetailDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxDetailBySiteUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDetailBySiteUserID" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxDetailBySiteUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDetailBySiteUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxDataByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDataByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxDataByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxDataByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetUserInbox_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInbox" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetUserInbox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInboxResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInbox_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInbox" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInbox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_SetArchive_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetArchive" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_SetArchive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetArchiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetUserInboxWhere_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInboxWhere" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetUserInboxWhere_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInboxWhereResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxWhere_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxWhere" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetInboxWhere_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxWhereResponse" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetLastPasswordChangeDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPasswordChangeDate" />
+  </wsdl:message>
+  <wsdl:message name="iInbox_GetLastPasswordChangeDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPasswordChangeDateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iInbox">
+    <wsdl:operation name="GetInboxDetailByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetInboxDetailByUserID" message="tns:iInbox_GetInboxDetailByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetInboxDetailByUserIDResponse" message="tns:iInbox_GetInboxDetailByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bindInboxDetailData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/bindInboxDetailData" message="tns:iInbox_bindInboxDetailData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/bindInboxDetailDataResponse" message="tns:iInbox_bindInboxDetailData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxDetailBySiteUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetInboxDetailBySiteUserID" message="tns:iInbox_GetInboxDetailBySiteUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetInboxDetailBySiteUserIDResponse" message="tns:iInbox_GetInboxDetailBySiteUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxDataByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetInboxDataByUserID" message="tns:iInbox_GetInboxDataByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetInboxDataByUserIDResponse" message="tns:iInbox_GetInboxDataByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInbox">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetUserInbox" message="tns:iInbox_GetUserInbox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetUserInboxResponse" message="tns:iInbox_GetUserInbox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInbox">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetInbox" message="tns:iInbox_GetInbox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetInboxResponse" message="tns:iInbox_GetInbox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetArchive">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/SetArchive" message="tns:iInbox_SetArchive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/SetArchiveResponse" message="tns:iInbox_SetArchive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInboxWhere">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetUserInboxWhere" message="tns:iInbox_GetUserInboxWhere_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetUserInboxWhereResponse" message="tns:iInbox_GetUserInboxWhere_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxWhere">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetInboxWhere" message="tns:iInbox_GetInboxWhere_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetInboxWhereResponse" message="tns:iInbox_GetInboxWhere_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPasswordChangeDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iInbox/GetLastPasswordChangeDate" message="tns:iInbox_GetLastPasswordChangeDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iInbox/GetLastPasswordChangeDateResponse" message="tns:iInbox_GetLastPasswordChangeDate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iInbox" type="tns:iInbox">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInboxDetailByUserID">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetInboxDetailByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindInboxDetailData">
+      <soap:operation soapAction="http://tempuri.org/iInbox/bindInboxDetailData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxDetailBySiteUserID">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetInboxDetailBySiteUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxDataByUserID">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetInboxDataByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInbox">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetUserInbox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInbox">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetInbox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArchive">
+      <soap:operation soapAction="http://tempuri.org/iInbox/SetArchive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInboxWhere">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetUserInboxWhere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxWhere">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetInboxWhere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPasswordChangeDate">
+      <soap:operation soapAction="http://tempuri.org/iInbox/GetLastPasswordChangeDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InboxService">
+    <wsdl:port name="BasicHttpBinding_iInbox" binding="tns:BasicHttpBinding_iInbox">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Inbox/InboxService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

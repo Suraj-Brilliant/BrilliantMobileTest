@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a115b11c-3ae8-47dc-91a7-32f187c9b6e5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.AccountSearch/AccountSearchService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AccountSearchService2.disco" MetadataType="Disco" ID="d1754440-8fbf-4580-8854-8c9f7ed05495" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.AccountSearch/AccountSearchService.svc?disco" />
+    <MetadataFile FileName="AccountSearchService2.xsd" MetadataType="Schema" ID="31685608-01ab-415b-a10e-881951cbea44" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.AccountSearch/AccountSearchService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AccountSearchService2.wsdl" MetadataType="Wsdl" ID="b99da3a9-6e9a-45a8-84b8-e4fc9fc6b955" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.AccountSearch/AccountSearchService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

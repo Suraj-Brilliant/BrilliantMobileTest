@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ApprovalLevelMasterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Approval/ApprovalLevelMasterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iApprovalLevelMaster_GetActivityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityList" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetActivityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_InsertmApprovalLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmApprovalLevel" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_InsertmApprovalLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertmApprovalLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_updatemApprovalLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatemApprovalLevel" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_updatemApprovalLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatemApprovalLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordByID" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalDetailRecordByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailRecordByID" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalDetailRecordByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailRecordByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetObjectList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectList" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetObjectList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalLevelMax_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalLevelMax" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalLevelMax_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalLevelMaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEdit" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEditbySP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEditbySP" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEditbySP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEditbySPResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_SaveApprovalLevelDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalLevelDetail" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_SaveApprovalLevelDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalLevelDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEditbySPResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEditbySPResult" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetUserListForEditbySPResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListForEditbySPResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalLevel" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetUserForApprovalMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetUserForApprovalMaster" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetUserForApprovalMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetUserForApprovalMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetGWCApprovalRecordToBindGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCApprovalRecordToBindGrid" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetGWCApprovalRecordToBindGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCApprovalRecordToBindGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetCancelDays_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancelDays" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetCancelDays_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancelDaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_InsertGWCApprovalDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertGWCApprovalDetails" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_InsertGWCApprovalDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertGWCApprovalDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetApprovalDetailsForEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetApprovalDetailsForEdit" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetApprovalDetailsForEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetApprovalDetailsForEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetApprovalDetailForEditWithZero_InputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetApprovalDetailForEditWithZero" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GWCGetApprovalDetailForEditWithZero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GWCGetApprovalDetailForEditWithZeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApproverList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverList" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApproverList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApproverListBySp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverListBySp" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApproverListBySp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproverListBySpResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_DeleteApproverFromGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteApproverFromGrid" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_DeleteApproverFromGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteApproverFromGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_UpdateApprovallevelID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApprovallevelID" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_UpdateApprovallevelID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApprovallevelIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_UpdateMApproveHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMApproveHeader" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_UpdateMApproveHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMApproveHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_DeleteZeroDetailaproval_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteZeroDetailaproval" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_DeleteZeroDetailaproval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteZeroDetailaprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalgridList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalgridList" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalgridList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalgridListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordByApvrlLevelID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordByApvrlLevelID" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalRecordByApvrlLevelID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalRecordByApvrlLevelIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalMasterGridList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalMasterGridList" />
+  </wsdl:message>
+  <wsdl:message name="iApprovalLevelMaster_GetApprovalMasterGridList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalMasterGridListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iApprovalLevelMaster">
+    <wsdl:operation name="GetActivityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetActivityList" message="tns:iApprovalLevelMaster_GetActivityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetActivityListResponse" message="tns:iApprovalLevelMaster_GetActivityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertmApprovalLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/InsertmApprovalLevel" message="tns:iApprovalLevelMaster_InsertmApprovalLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/InsertmApprovalLevelResponse" message="tns:iApprovalLevelMaster_InsertmApprovalLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatemApprovalLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/updatemApprovalLevel" message="tns:iApprovalLevelMaster_updatemApprovalLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/updatemApprovalLevelResponse" message="tns:iApprovalLevelMaster_updatemApprovalLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByID" message="tns:iApprovalLevelMaster_GetApprovalRecordByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByIDResponse" message="tns:iApprovalLevelMaster_GetApprovalRecordByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailRecordByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalDetailRecordByID" message="tns:iApprovalLevelMaster_GetApprovalDetailRecordByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalDetailRecordByIDResponse" message="tns:iApprovalLevelMaster_GetApprovalDetailRecordByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetObjectList" message="tns:iApprovalLevelMaster_GetObjectList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetObjectListResponse" message="tns:iApprovalLevelMaster_GetObjectList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalLevelMax">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevelMax" message="tns:iApprovalLevelMaster_GetApprovalLevelMax_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevelMaxResponse" message="tns:iApprovalLevelMaster_GetApprovalLevelMax_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordToBindGrid" message="tns:iApprovalLevelMaster_GetApprovalRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordToBindGridResponse" message="tns:iApprovalLevelMaster_GetApprovalRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEdit" message="tns:iApprovalLevelMaster_GetUserListForEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditResponse" message="tns:iApprovalLevelMaster_GetUserListForEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEditbySP">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySP" message="tns:iApprovalLevelMaster_GetUserListForEditbySP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySPResponse" message="tns:iApprovalLevelMaster_GetUserListForEditbySP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalLevelDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/SaveApprovalLevelDetail" message="tns:iApprovalLevelMaster_SaveApprovalLevelDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/SaveApprovalLevelDetailResponse" message="tns:iApprovalLevelMaster_SaveApprovalLevelDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEditbySPResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySPResult" message="tns:iApprovalLevelMaster_GetUserListForEditbySPResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySPResultResponse" message="tns:iApprovalLevelMaster_GetUserListForEditbySPResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevel" message="tns:iApprovalLevelMaster_GetApprovalLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevelResponse" message="tns:iApprovalLevelMaster_GetApprovalLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetUserForApprovalMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetUserForApprovalMaster" message="tns:iApprovalLevelMaster_GWCGetUserForApprovalMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetUserForApprovalMasterResponse" message="tns:iApprovalLevelMaster_GWCGetUserForApprovalMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCApprovalRecordToBindGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetGWCApprovalRecordToBindGrid" message="tns:iApprovalLevelMaster_GetGWCApprovalRecordToBindGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetGWCApprovalRecordToBindGridResponse" message="tns:iApprovalLevelMaster_GetGWCApprovalRecordToBindGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCancelDays">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetCancelDays" message="tns:iApprovalLevelMaster_GetCancelDays_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetCancelDaysResponse" message="tns:iApprovalLevelMaster_GetCancelDays_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertGWCApprovalDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/InsertGWCApprovalDetails" message="tns:iApprovalLevelMaster_InsertGWCApprovalDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/InsertGWCApprovalDetailsResponse" message="tns:iApprovalLevelMaster_InsertGWCApprovalDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetApprovalDetailsForEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailsForEdit" message="tns:iApprovalLevelMaster_GWCGetApprovalDetailsForEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailsForEditResponse" message="tns:iApprovalLevelMaster_GWCGetApprovalDetailsForEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetApprovalDetailForEditWithZero">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailForEditWithZero" message="tns:iApprovalLevelMaster_GWCGetApprovalDetailForEditWithZero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailForEditWithZeroResponse" message="tns:iApprovalLevelMaster_GWCGetApprovalDetailForEditWithZero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApproverList" message="tns:iApprovalLevelMaster_GetApproverList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApproverListResponse" message="tns:iApprovalLevelMaster_GetApproverList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverListBySp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApproverListBySp" message="tns:iApprovalLevelMaster_GetApproverListBySp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApproverListBySpResponse" message="tns:iApprovalLevelMaster_GetApproverListBySp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApproverFromGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/DeleteApproverFromGrid" message="tns:iApprovalLevelMaster_DeleteApproverFromGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/DeleteApproverFromGridResponse" message="tns:iApprovalLevelMaster_DeleteApproverFromGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApprovallevelID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/UpdateApprovallevelID" message="tns:iApprovalLevelMaster_UpdateApprovallevelID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/UpdateApprovallevelIDResponse" message="tns:iApprovalLevelMaster_UpdateApprovallevelID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMApproveHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/UpdateMApproveHeader" message="tns:iApprovalLevelMaster_UpdateMApproveHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/UpdateMApproveHeaderResponse" message="tns:iApprovalLevelMaster_UpdateMApproveHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteZeroDetailaproval">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/DeleteZeroDetailaproval" message="tns:iApprovalLevelMaster_DeleteZeroDetailaproval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/DeleteZeroDetailaprovalResponse" message="tns:iApprovalLevelMaster_DeleteZeroDetailaproval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalgridList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalgridList" message="tns:iApprovalLevelMaster_GetApprovalgridList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalgridListResponse" message="tns:iApprovalLevelMaster_GetApprovalgridList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordByApvrlLevelID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByApvrlLevelID" message="tns:iApprovalLevelMaster_GetApprovalRecordByApvrlLevelID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByApvrlLevelIDResponse" message="tns:iApprovalLevelMaster_GetApprovalRecordByApvrlLevelID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalMasterGridList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalMasterGridList" message="tns:iApprovalLevelMaster_GetApprovalMasterGridList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iApprovalLevelMaster/GetApprovalMasterGridListResponse" message="tns:iApprovalLevelMaster_GetApprovalMasterGridList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iApprovalLevelMaster" type="tns:iApprovalLevelMaster">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActivityList">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetActivityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertmApprovalLevel">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/InsertmApprovalLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatemApprovalLevel">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/updatemApprovalLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordByID">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailRecordByID">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalDetailRecordByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectList">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetObjectList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalLevelMax">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevelMax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEdit">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetUserListForEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEditbySP">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalLevelDetail">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/SaveApprovalLevelDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListForEditbySPResult">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetUserListForEditbySPResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalLevel">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetUserForApprovalMaster">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GWCGetUserForApprovalMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCApprovalRecordToBindGrid">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetGWCApprovalRecordToBindGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancelDays">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetCancelDays" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGWCApprovalDetails">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/InsertGWCApprovalDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetApprovalDetailsForEdit">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailsForEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWCGetApprovalDetailForEditWithZero">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GWCGetApprovalDetailForEditWithZero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverList">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApproverList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverListBySp">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApproverListBySp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApproverFromGrid">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/DeleteApproverFromGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApprovallevelID">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/UpdateApprovallevelID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMApproveHeader">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/UpdateMApproveHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteZeroDetailaproval">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/DeleteZeroDetailaproval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalgridList">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalgridList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalRecordByApvrlLevelID">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalRecordByApvrlLevelID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalMasterGridList">
+      <soap:operation soapAction="http://tempuri.org/iApprovalLevelMaster/GetApprovalMasterGridList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApprovalLevelMasterService">
+    <wsdl:port name="BasicHttpBinding_iApprovalLevelMaster" binding="tns:BasicHttpBinding_iApprovalLevelMaster">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Approval/ApprovalLevelMasterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

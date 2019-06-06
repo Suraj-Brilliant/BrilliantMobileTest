@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetDashboardsByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDashboardsByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDashboardsByUserIDResult" type="tns:ArrayOfPOR_Dashboard_UserWise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfPOR_Dashboard_UserWise">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POR_Dashboard_UserWise" nillable="true" type="tns:POR_Dashboard_UserWise" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="POR_Dashboard_UserWise">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DisplaySequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ChartType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Text" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Value" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LegentValue" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Series" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Height" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Width" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Is3D" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IsLegend" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LegentPosition" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ChartBackgroundColor" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ChartArea3DRotation" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ChartSyle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Type" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AllowEdit" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="XLable" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="YLable" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AllowPrint" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ChartBorderSkin" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DataQuery" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShowGridLineX" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ShowGridLineY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsActive" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDashboardsByDashboardID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DashboardID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDashboardsByDashboardIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDashboardsByDashboardIDResult" type="tns:POR_Dashboard_UserWise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDashboardDataByQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="DashbaordQuery" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDashboardDataByQueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDashboardDataByQueryResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DocumentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Document/DocumentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentByReferenceId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentByReferenceId" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentByReferenceId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentByReferenceIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_ClearTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempData" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_ClearTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_FinalSaveToDBtDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtDocument" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_FinalSaveToDBtDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_InsertIntoTemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTemp" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_InsertIntoTemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTempResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_CheckDuplicateDocumentTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateDocumentTitle" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_CheckDuplicateDocumentTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateDocumentTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_DeleteDocumentFormTemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDocumentFormTemp" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_DeleteDocumentFormTemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDocumentFormTempResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetExistingTempDataBySessionIDObjectNameToRebind_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameToRebind" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetExistingTempDataBySessionIDObjectNameToRebind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameToRebindResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentList" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_SaveDocumentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDocumentType" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_SaveDocumentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDocumentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentTypebyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTypebyID" />
+  </wsdl:message>
+  <wsdl:message name="iUC_AttachDocument_GetDocumentTypebyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTypebyIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUC_AttachDocument">
+    <wsdl:operation name="GetDocumentByReferenceId">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentByReferenceId" message="tns:iUC_AttachDocument_GetDocumentByReferenceId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentByReferenceIdResponse" message="tns:iUC_AttachDocument_GetDocumentByReferenceId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/ClearTempData" message="tns:iUC_AttachDocument_ClearTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/ClearTempDataResponse" message="tns:iUC_AttachDocument_ClearTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/FinalSaveToDBtDocument" message="tns:iUC_AttachDocument_FinalSaveToDBtDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/FinalSaveToDBtDocumentResponse" message="tns:iUC_AttachDocument_FinalSaveToDBtDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/InsertIntoTemp" message="tns:iUC_AttachDocument_InsertIntoTemp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/InsertIntoTempResponse" message="tns:iUC_AttachDocument_InsertIntoTemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateDocumentTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/CheckDuplicateDocumentTitle" message="tns:iUC_AttachDocument_CheckDuplicateDocumentTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/CheckDuplicateDocumentTitleResponse" message="tns:iUC_AttachDocument_CheckDuplicateDocumentTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentFormTemp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/DeleteDocumentFormTemp" message="tns:iUC_AttachDocument_DeleteDocumentFormTemp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/DeleteDocumentFormTempResponse" message="tns:iUC_AttachDocument_DeleteDocumentFormTemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameToRebind">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetExistingTempDataBySessionIDObjectNameToRebind" message="tns:iUC_AttachDocument_GetExistingTempDataBySessionIDObjectNameToRebind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetExistingTempDataBySessionIDObjectNameToRebindResponse" message="tns:iUC_AttachDocument_GetExistingTempDataBySessionIDObjectNameToRebind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentList" message="tns:iUC_AttachDocument_GetDocumentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentListResponse" message="tns:iUC_AttachDocument_GetDocumentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDocumentType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/SaveDocumentType" message="tns:iUC_AttachDocument_SaveDocumentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/SaveDocumentTypeResponse" message="tns:iUC_AttachDocument_SaveDocumentType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTypebyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentTypebyID" message="tns:iUC_AttachDocument_GetDocumentTypebyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_AttachDocument/GetDocumentTypebyIDResponse" message="tns:iUC_AttachDocument_GetDocumentTypebyID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUC_AttachDocument" type="tns:iUC_AttachDocument">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDocumentByReferenceId">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/GetDocumentByReferenceId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempData">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/ClearTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtDocument">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/FinalSaveToDBtDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/InsertIntoTemp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateDocumentTitle">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/CheckDuplicateDocumentTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentFormTemp">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/DeleteDocumentFormTemp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectNameToRebind">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/GetExistingTempDataBySessionIDObjectNameToRebind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentList">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/GetDocumentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDocumentType">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/SaveDocumentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTypebyID">
+      <soap:operation soapAction="http://tempuri.org/iUC_AttachDocument/GetDocumentTypebyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DocumentService">
+    <wsdl:port name="BasicHttpBinding_iUC_AttachDocument" binding="tns:BasicHttpBinding_iUC_AttachDocument">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Document/DocumentService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AddressInfoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.Address/AddressInfoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iAddressInfo_GetRouteList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRouteList" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetRouteList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRouteListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressTempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressTempData" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressTempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressTempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_FinalSaveAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveAddress" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_FinalSaveAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_InsertIntoTemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTemp" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_InsertIntoTemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTempResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_SetValuesToTempData_onChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetValuesToTempData_onChange" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_SetValuesToTempData_onChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetValuesToTempData_onChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_CheckDuplicateAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateAddress" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_CheckDuplicateAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDuplicateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressTempDataBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressTempDataBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressTempDataBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressTempDataBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressByObjectNameReferenceID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressByObjectNameReferenceID" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetAddressByObjectNameReferenceID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressByObjectNameReferenceIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetCityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityList" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetCityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetZoneList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneList" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetZoneList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetSubZoneList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubZoneList" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetSubZoneList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubZoneListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_SetAddressArchive_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddressArchive" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_SetAddressArchive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAddressArchiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetDeptIDstoUpdateconatct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptIDstoUpdateconatct" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GetDeptIDstoUpdateconatct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptIDstoUpdateconatctResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_Updatecontactref_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatecontactref" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_Updatecontactref_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatecontactrefResponse" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GridFillAddressByObjectNameReferenceID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GridFillAddressByObjectNameReferenceID" />
+  </wsdl:message>
+  <wsdl:message name="iAddressInfo_GridFillAddressByObjectNameReferenceID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GridFillAddressByObjectNameReferenceIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iAddressInfo">
+    <wsdl:operation name="GetRouteList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetRouteList" message="tns:iAddressInfo_GetRouteList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetRouteListResponse" message="tns:iAddressInfo_GetRouteList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/ClearTempDataFromDB" message="tns:iAddressInfo_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/ClearTempDataFromDBResponse" message="tns:iAddressInfo_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressTempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressTempData" message="tns:iAddressInfo_GetAddressTempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressTempDataResponse" message="tns:iAddressInfo_GetAddressTempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/FinalSaveAddress" message="tns:iAddressInfo_FinalSaveAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/FinalSaveAddressResponse" message="tns:iAddressInfo_FinalSaveAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/InsertIntoTemp" message="tns:iAddressInfo_InsertIntoTemp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/InsertIntoTempResponse" message="tns:iAddressInfo_InsertIntoTemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetValuesToTempData_onChange">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/SetValuesToTempData_onChange" message="tns:iAddressInfo_SetValuesToTempData_onChange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/SetValuesToTempData_onChangeResponse" message="tns:iAddressInfo_SetValuesToTempData_onChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/CheckDuplicateAddress" message="tns:iAddressInfo_CheckDuplicateAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/CheckDuplicateAddressResponse" message="tns:iAddressInfo_CheckDuplicateAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressTempDataBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressTempDataBySequence" message="tns:iAddressInfo_GetAddressTempDataBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressTempDataBySequenceResponse" message="tns:iAddressInfo_GetAddressTempDataBySequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressByObjectNameReferenceID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressByObjectNameReferenceID" message="tns:iAddressInfo_GetAddressByObjectNameReferenceID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetAddressByObjectNameReferenceIDResponse" message="tns:iAddressInfo_GetAddressByObjectNameReferenceID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetCityList" message="tns:iAddressInfo_GetCityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetCityListResponse" message="tns:iAddressInfo_GetCityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetZoneList" message="tns:iAddressInfo_GetZoneList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetZoneListResponse" message="tns:iAddressInfo_GetZoneList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubZoneList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetSubZoneList" message="tns:iAddressInfo_GetSubZoneList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetSubZoneListResponse" message="tns:iAddressInfo_GetSubZoneList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAddressArchive">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/SetAddressArchive" message="tns:iAddressInfo_SetAddressArchive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/SetAddressArchiveResponse" message="tns:iAddressInfo_SetAddressArchive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptIDstoUpdateconatct">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GetDeptIDstoUpdateconatct" message="tns:iAddressInfo_GetDeptIDstoUpdateconatct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GetDeptIDstoUpdateconatctResponse" message="tns:iAddressInfo_GetDeptIDstoUpdateconatct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatecontactref">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/Updatecontactref" message="tns:iAddressInfo_Updatecontactref_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/UpdatecontactrefResponse" message="tns:iAddressInfo_Updatecontactref_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GridFillAddressByObjectNameReferenceID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iAddressInfo/GridFillAddressByObjectNameReferenceID" message="tns:iAddressInfo_GridFillAddressByObjectNameReferenceID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iAddressInfo/GridFillAddressByObjectNameReferenceIDResponse" message="tns:iAddressInfo_GridFillAddressByObjectNameReferenceID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iAddressInfo" type="tns:iAddressInfo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRouteList">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetRouteList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressTempData">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetAddressTempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveAddress">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/FinalSaveAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/InsertIntoTemp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetValuesToTempData_onChange">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/SetValuesToTempData_onChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDuplicateAddress">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/CheckDuplicateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressTempDataBySequence">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetAddressTempDataBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressByObjectNameReferenceID">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetAddressByObjectNameReferenceID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityList">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetCityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneList">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetZoneList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubZoneList">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetSubZoneList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAddressArchive">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/SetAddressArchive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptIDstoUpdateconatct">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GetDeptIDstoUpdateconatct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatecontactref">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/Updatecontactref" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GridFillAddressByObjectNameReferenceID">
+      <soap:operation soapAction="http://tempuri.org/iAddressInfo/GridFillAddressByObjectNameReferenceID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AddressInfoService">
+    <wsdl:port name="BasicHttpBinding_iAddressInfo" binding="tns:BasicHttpBinding_iAddressInfo">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.Address/AddressInfoService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

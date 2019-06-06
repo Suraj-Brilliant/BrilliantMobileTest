@@ -1,0 +1,78 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Service.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Service.Approval.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Domain.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Interface.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Domain.Approval.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Interface.Approval.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\bin\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Service.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Service.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Domain.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Interface.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Domain.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Interface.Approval.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\bin\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.dll
+F:\BWMS\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Domain.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Interface.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\obj\Release\Service.Approval.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.Approval\bin\Service.Approval.dll.config

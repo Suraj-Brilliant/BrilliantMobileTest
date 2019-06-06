@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetDataToBindRoleMasterDetailsByRoleID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RoleID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDataToBindRoleMasterDetailsByRoleIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDataToBindRoleMasterDetailsByRoleIDResult" type="tns:ArrayOfSP_GetDataToBindRoleMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GetDataToBindRoleMaster_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GetDataToBindRoleMaster_Result" nillable="true" type="tns:SP_GetDataToBindRoleMaster_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GetDataToBindRoleMaster_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DisplayModuleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ModuleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DisplayPhaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectDisplayName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="mSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="pSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="oSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Add" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Edit" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="View" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Delete" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Approval" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AssignTask" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalVisible" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AssignTaskVisible" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ComplexObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuralObject" abstract="true" />
+  <xs:element name="UpdateRoleIntoSessionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionList" type="tns:ArrayOfSP_GetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="updateRole" type="tns:SP_GetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="1" maxOccurs="1" name="rowindex" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRoleIntoSessionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="UpdateRoleIntoSessionListResult" type="tns:ArrayOfSP_GetDataToBindRoleMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionList" type="tns:ArrayOfSP_GetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objmRole" type="tns:mRole" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="mRole">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DesignationID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastModifiedBy" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CommonValueID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="mDepartmentReference" type="tns:EntityReferenceOfmDepartment" />
+          <xs:element minOccurs="0" maxOccurs="1" name="mDesignationReference" type="tns:EntityReferenceOfmDesignation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityObject" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StructuralObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityKeyMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Value" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityReferenceOfmDepartment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityReference" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedEnd" abstract="true" />
+  <xs:complexType name="EntityReferenceOfmDesignation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityReference" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FinalSaveResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetmRoleByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="roleId" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetmRoleByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetmRoleByIDResult" type="tns:mRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BindRoleMasterSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGetRoleMasterData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vGetRoleMasterData" nillable="true" type="tns:vGetRoleMasterData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vGetRoleMasterData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DepartmentName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DesignationName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DesignationID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="mrID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="mrSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DeptSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DesigSequence" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BindRoleMasterSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="BindRoleMasterSummaryResult" type="tns:ArrayOfVGetRoleMasterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleMasterListByDepartmentIDDesignationID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DesignationID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleMasterListByDepartmentIDDesignationIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetRoleMasterListByDepartmentIDDesignationIDResult" type="tns:ArrayOfVGetRoleMasterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleMasterListByDepartmentID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DesignationID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGetRollNameByDeptID">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VGetRollNameByDeptID" nillable="true" type="tns:VGetRollNameByDeptID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VGetRollNameByDeptID">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TerritoryID" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetRoleMasterListByDepartmentIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetRoleMasterListByDepartmentIDResult" type="tns:ArrayOfVGetRollNameByDeptID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEdit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RoleId" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkDuplicateRecordEditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="checkDuplicateRecordEditResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGWCDataToBindRoleMasterDetailsByRoleID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="RoleID" type="xs:long" />
+        <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSP_GWCGetDataToBindRoleMaster_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_GWCGetDataToBindRoleMaster_Result" nillable="true" type="tns:SP_GWCGetDataToBindRoleMaster_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SP_GWCGetDataToBindRoleMaster_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DisplayModuleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ModuleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DisplayPhaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhaseName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectDisplayName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ObjectName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="mSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="pSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="oSequence" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Add" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Edit" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="View" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Delete" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Approval" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AssignTask" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ApprovalVisible" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AssignTaskVisible" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGWCDataToBindRoleMasterDetailsByRoleIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGWCDataToBindRoleMasterDetailsByRoleIDResult" type="tns:ArrayOfSP_GWCGetDataToBindRoleMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionList" type="tns:ArrayOfSP_GWCGetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="objmRole" type="tns:mRole" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalSaveRoleResponse">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="BindGWCRoleMasterSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVGetGWCRoleMasterData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vGetGWCRoleMasterData" nillable="true" type="tns:vGetGWCRoleMasterData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vGetGWCRoleMasterData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DepartmentName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DepartmentID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UserType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RoleName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Active" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:long" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BindGWCRoleMasterSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="BindGWCRoleMasterSummaryResult" type="tns:ArrayOfVGetGWCRoleMasterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfMRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mRole" nillable="true" type="tns:mRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetRoleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetRoleListResult" type="tns:ArrayOfMRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCUpdateRoleIntoSessionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sessionList" type="tns:ArrayOfSP_GWCGetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="0" maxOccurs="1" name="updateRole" type="tns:SP_GWCGetDataToBindRoleMaster_Result" />
+        <xs:element minOccurs="1" maxOccurs="1" name="rowindex" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="conn" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GWCUpdateRoleIntoSessionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GWCUpdateRoleIntoSessionListResult" type="tns:ArrayOfSP_GWCGetDataToBindRoleMaster_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceHQGoodsReceipt" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptHeadByReceiptID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByReceiptID" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptHeadByReceiptID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptHeadByReceiptIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_SetIntoGRNHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoGRNHead" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_SetIntoGRNHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoGRNHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetStatusListForGRN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForGRN" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetStatusListForGRN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptPartDetailByReceiptID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByReceiptID" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptPartDetailByReceiptID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByReceiptIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptPartDetailByIssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByIssueID" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptPartDetailByIssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptPartDetailByIssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_AddPartIntoReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_AddPartIntoReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_RemovePartFromReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_RemovePartFromReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_UpdatePartReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_UpdatePartReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_RemovePartFromHQReceipt_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromHQReceipt_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_RemovePartFromHQReceipt_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromHQReceipt_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_FinalSaveReceiptPartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveReceiptPartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_FinalSaveReceiptPartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveReceiptPartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryBySiteIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryBySiteIDs" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryBySiteIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryBySiteIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryByReceiptIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByReceiptIDs" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetReceiptSummaryByReceiptIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceiptSummaryByReceiptIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetIssuePartDetailByIssueID_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByIssueID_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetIssuePartDetailByIssueID_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByIssueID_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName_TransferResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iHQGoodsReceipt">
+    <wsdl:operation name="GetReceiptHeadByReceiptID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptHeadByReceiptID" message="tns:iHQGoodsReceipt_GetReceiptHeadByReceiptID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptHeadByReceiptIDResponse" message="tns:iHQGoodsReceipt_GetReceiptHeadByReceiptID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoGRNHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/SetIntoGRNHead" message="tns:iHQGoodsReceipt_SetIntoGRNHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/SetIntoGRNHeadResponse" message="tns:iHQGoodsReceipt_SetIntoGRNHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForGRN">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetStatusListForGRN" message="tns:iHQGoodsReceipt_GetStatusListForGRN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetStatusListForGRNResponse" message="tns:iHQGoodsReceipt_GetStatusListForGRN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByReceiptID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByReceiptID" message="tns:iHQGoodsReceipt_GetReceiptPartDetailByReceiptID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByReceiptIDResponse" message="tns:iHQGoodsReceipt_GetReceiptPartDetailByReceiptID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByIssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByIssueID" message="tns:iHQGoodsReceipt_GetReceiptPartDetailByIssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByIssueIDResponse" message="tns:iHQGoodsReceipt_GetReceiptPartDetailByIssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/ClearTempDataFromDB" message="tns:iHQGoodsReceipt_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/ClearTempDataFromDBResponse" message="tns:iHQGoodsReceipt_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectName" message="tns:iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/AddPartIntoReceipt_TempData" message="tns:iHQGoodsReceipt_AddPartIntoReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/AddPartIntoReceipt_TempDataResponse" message="tns:iHQGoodsReceipt_AddPartIntoReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/RemovePartFromReceipt_TempData" message="tns:iHQGoodsReceipt_RemovePartFromReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/RemovePartFromReceipt_TempDataResponse" message="tns:iHQGoodsReceipt_RemovePartFromReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/UpdatePartReceipt_TempData" message="tns:iHQGoodsReceipt_UpdatePartReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/UpdatePartReceipt_TempDataResponse" message="tns:iHQGoodsReceipt_UpdatePartReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromHQReceipt_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/RemovePartFromHQReceipt_TempData" message="tns:iHQGoodsReceipt_RemovePartFromHQReceipt_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/RemovePartFromHQReceipt_TempDataResponse" message="tns:iHQGoodsReceipt_RemovePartFromHQReceipt_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveReceiptPartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/FinalSaveReceiptPartDetail" message="tns:iHQGoodsReceipt_FinalSaveReceiptPartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/FinalSaveReceiptPartDetailResponse" message="tns:iHQGoodsReceipt_FinalSaveReceiptPartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByUserID" message="tns:iHQGoodsReceipt_GetReceiptSummaryByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByUserIDResponse" message="tns:iHQGoodsReceipt_GetReceiptSummaryByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryBySiteIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryBySiteIDs" message="tns:iHQGoodsReceipt_GetReceiptSummaryBySiteIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryBySiteIDsResponse" message="tns:iHQGoodsReceipt_GetReceiptSummaryBySiteIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByReceiptIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByReceiptIDs" message="tns:iHQGoodsReceipt_GetReceiptSummaryByReceiptIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByReceiptIDsResponse" message="tns:iHQGoodsReceipt_GetReceiptSummaryByReceiptIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByIssueID_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetIssuePartDetailByIssueID_Transfer" message="tns:iHQGoodsReceipt_GetIssuePartDetailByIssueID_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetIssuePartDetailByIssueID_TransferResponse" message="tns:iHQGoodsReceipt_GetIssuePartDetailByIssueID_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectName_Transfer" message="tns:iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectName_TransferResponse" message="tns:iHQGoodsReceipt_GetExistingTempDataBySessionIDObjectName_Transfer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iHQGoodsReceipt" type="tns:iHQGoodsReceipt">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetReceiptHeadByReceiptID">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptHeadByReceiptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoGRNHead">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/SetIntoGRNHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForGRN">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetStatusListForGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByReceiptID">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByReceiptID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptPartDetailByIssueID">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptPartDetailByIssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/AddPartIntoReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/RemovePartFromReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/UpdatePartReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromHQReceipt_TempData">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/RemovePartFromHQReceipt_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveReceiptPartDetail">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/FinalSaveReceiptPartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByUserID">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryBySiteIDs">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryBySiteIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptSummaryByReceiptIDs">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetReceiptSummaryByReceiptIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByIssueID_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetIssuePartDetailByIssueID_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iHQGoodsReceipt/GetExistingTempDataBySessionIDObjectName_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceHQGoodsReceipt">
+    <wsdl:port name="BasicHttpBinding_iHQGoodsReceipt" binding="tns:BasicHttpBinding_iHQGoodsReceipt">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

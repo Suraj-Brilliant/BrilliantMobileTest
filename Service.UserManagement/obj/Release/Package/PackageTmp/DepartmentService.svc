@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.UserManagement.DepartmentService" CodeBehind="DepartmentService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePartIssue" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartIssue.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iPartIssue_GetIssueHeadByIssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueHeadByIssueID" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueHeadByIssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueHeadByIssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusOfIssueHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusOfIssueHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusOfIssueHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusOfIssueHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoMINHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoMINHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoMINHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoMINHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusListForIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForIssue" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusListForIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_CheckPendingIssueListToDecideAddNewAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPendingIssueListToDecideAddNewAccess" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_CheckPendingIssueListToDecideAddNewAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPendingIssueListToDecideAddNewAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssuePartDetailByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssuePartDetailByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssuePartDetailByIssueID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByIssueID" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssuePartDetailByIssueID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuePartDetailByIssueIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_AddPartIntoIssue_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoIssue_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_AddPartIntoIssue_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoIssue_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_RemovePartFromIssue_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromIssue_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_RemovePartFromIssue_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromIssue_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_UpdatePartIssue_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartIssue_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_UpdatePartIssue_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartIssue_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveIssuePartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveIssuePartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveIssuePartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveIssuePartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_UpdateHQStock_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHQStock_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_UpdateHQStock_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHQStock_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetPendingIssuePartList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingIssuePartList" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetPendingIssuePartList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingIssuePartListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayBySiteIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayBySiteIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayBySiteIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayBySiteIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByIssueIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByIssueIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetIssueSummayByIssueIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueSummayByIssueIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoTransHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoTransHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoTransHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoTransHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveTransferPartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveTransferPartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveTransferPartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveTransferPartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveIssuePartDetail_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveIssuePartDetail_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_FinalSaveIssuePartDetail_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveIssuePartDetail_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoMINHead_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoMINHead_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_SetIntoMINHead_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoMINHead_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusOfIssueHead_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusOfIssueHead_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="iPartIssue_GetStatusOfIssueHead_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusOfIssueHead_TransferResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iPartIssue">
+    <wsdl:operation name="GetIssueHeadByIssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssueHeadByIssueID" message="tns:iPartIssue_GetIssueHeadByIssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssueHeadByIssueIDResponse" message="tns:iPartIssue_GetIssueHeadByIssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusOfIssueHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetStatusOfIssueHead" message="tns:iPartIssue_GetStatusOfIssueHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetStatusOfIssueHeadResponse" message="tns:iPartIssue_GetStatusOfIssueHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoMINHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/SetIntoMINHead" message="tns:iPartIssue_SetIntoMINHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/SetIntoMINHeadResponse" message="tns:iPartIssue_SetIntoMINHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetStatusListForIssue" message="tns:iPartIssue_GetStatusListForIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetStatusListForIssueResponse" message="tns:iPartIssue_GetStatusListForIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPendingIssueListToDecideAddNewAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/CheckPendingIssueListToDecideAddNewAccess" message="tns:iPartIssue_CheckPendingIssueListToDecideAddNewAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/CheckPendingIssueListToDecideAddNewAccessResponse" message="tns:iPartIssue_CheckPendingIssueListToDecideAddNewAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssuePartDetailByRequestID" message="tns:iPartIssue_GetIssuePartDetailByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssuePartDetailByRequestIDResponse" message="tns:iPartIssue_GetIssuePartDetailByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByIssueID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssuePartDetailByIssueID" message="tns:iPartIssue_GetIssuePartDetailByIssueID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssuePartDetailByIssueIDResponse" message="tns:iPartIssue_GetIssuePartDetailByIssueID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/ClearTempDataFromDB" message="tns:iPartIssue_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/ClearTempDataFromDBResponse" message="tns:iPartIssue_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetExistingTempDataBySessionIDObjectName" message="tns:iPartIssue_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iPartIssue_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoIssue_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/AddPartIntoIssue_TempData" message="tns:iPartIssue_AddPartIntoIssue_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/AddPartIntoIssue_TempDataResponse" message="tns:iPartIssue_AddPartIntoIssue_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromIssue_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/RemovePartFromIssue_TempData" message="tns:iPartIssue_RemovePartFromIssue_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/RemovePartFromIssue_TempDataResponse" message="tns:iPartIssue_RemovePartFromIssue_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartIssue_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/UpdatePartIssue_TempData" message="tns:iPartIssue_UpdatePartIssue_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/UpdatePartIssue_TempDataResponse" message="tns:iPartIssue_UpdatePartIssue_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveIssuePartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetail" message="tns:iPartIssue_FinalSaveIssuePartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetailResponse" message="tns:iPartIssue_FinalSaveIssuePartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHQStock_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/UpdateHQStock_TempData" message="tns:iPartIssue_UpdateHQStock_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/UpdateHQStock_TempDataResponse" message="tns:iPartIssue_UpdateHQStock_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingIssuePartList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetPendingIssuePartList" message="tns:iPartIssue_GetPendingIssuePartList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetPendingIssuePartListResponse" message="tns:iPartIssue_GetPendingIssuePartList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByUserID" message="tns:iPartIssue_GetIssueSummayByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByUserIDResponse" message="tns:iPartIssue_GetIssueSummayByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayBySiteIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayBySiteIDs" message="tns:iPartIssue_GetIssueSummayBySiteIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayBySiteIDsResponse" message="tns:iPartIssue_GetIssueSummayBySiteIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByRequestID" message="tns:iPartIssue_GetIssueSummayByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByRequestIDResponse" message="tns:iPartIssue_GetIssueSummayByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByIssueIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByIssueIDs" message="tns:iPartIssue_GetIssueSummayByIssueIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetIssueSummayByIssueIDsResponse" message="tns:iPartIssue_GetIssueSummayByIssueIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoTransHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/SetIntoTransHead" message="tns:iPartIssue_SetIntoTransHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/SetIntoTransHeadResponse" message="tns:iPartIssue_SetIntoTransHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveTransferPartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveTransferPartDetail" message="tns:iPartIssue_FinalSaveTransferPartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveTransferPartDetailResponse" message="tns:iPartIssue_FinalSaveTransferPartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveIssuePartDetail_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetail_Transfer" message="tns:iPartIssue_FinalSaveIssuePartDetail_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetail_TransferResponse" message="tns:iPartIssue_FinalSaveIssuePartDetail_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoMINHead_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/SetIntoMINHead_Transfer" message="tns:iPartIssue_SetIntoMINHead_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/SetIntoMINHead_TransferResponse" message="tns:iPartIssue_SetIntoMINHead_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusOfIssueHead_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartIssue/GetStatusOfIssueHead_Transfer" message="tns:iPartIssue_GetStatusOfIssueHead_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartIssue/GetStatusOfIssueHead_TransferResponse" message="tns:iPartIssue_GetStatusOfIssueHead_Transfer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iPartIssue" type="tns:iPartIssue">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetIssueHeadByIssueID">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssueHeadByIssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusOfIssueHead">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetStatusOfIssueHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoMINHead">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/SetIntoMINHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForIssue">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetStatusListForIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPendingIssueListToDecideAddNewAccess">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/CheckPendingIssueListToDecideAddNewAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssuePartDetailByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuePartDetailByIssueID">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssuePartDetailByIssueID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoIssue_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/AddPartIntoIssue_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromIssue_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/RemovePartFromIssue_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartIssue_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/UpdatePartIssue_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveIssuePartDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHQStock_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/UpdateHQStock_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingIssuePartList">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetPendingIssuePartList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByUserID">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssueSummayByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayBySiteIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssueSummayBySiteIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssueSummayByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueSummayByIssueIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetIssueSummayByIssueIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoTransHead">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/SetIntoTransHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveTransferPartDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/FinalSaveTransferPartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveIssuePartDetail_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/FinalSaveIssuePartDetail_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoMINHead_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/SetIntoMINHead_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusOfIssueHead_Transfer">
+      <soap:operation soapAction="http://tempuri.org/iPartIssue/GetStatusOfIssueHead_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePartIssue">
+    <wsdl:port name="BasicHttpBinding_iPartIssue" binding="tns:BasicHttpBinding_iPartIssue">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServicePartIssue.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

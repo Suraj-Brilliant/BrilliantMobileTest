@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+     <form name="form1" method="post" action="update-delivery-status.ashx">
+	Order Id :<br />
+	<input type="text" name="txtOrderId" value="1005"/>
+	<br /><br />
+    Deliver Mode :<br />
+	<select name="txtDeliveryMode">
+		<option value="">--Select Mode--</option>
+		<option value="Delivered">Delivered</option>
+		<option value="Return">Return</option>
+	</select>
+	<br /><br />
+	 Return Remark :<br />
+	<textarea name="txtReturnRemark" style="width:200px;height:100px;"></textarea><br /><br />
+    Photo Id Type :<br />
+    <select name="txtPhotoIdType">
+		<option value="">--Select--</option>
+		<option value="Quatari Id">Quatari Id</option>
+		<option value="Passport Id">Passport Id</option>
+		<option value="Driving License">Driving License</option>
+	</select>
+	<br /><br />
+     Attachment 1:<br />
+    <input type="text" name="txtAttachment1" value="Attachment/1101/IMG_20170411_110258.jpg"/><br /><br />
+	Attachment 2:<br />
+	<input type="text" name="txtAttachment2" value="Attachment/1101/IMG_20170411_110313.jpg"/><br /><br />
+	Attachment 3:<br />
+	<input type="text" name="txtAttachment3" value="Attachment/1101/IMG_20170411_111301.jpg"/><br /><br />
+	Attachment 4:<br />
+	<input type="text" name="txtAttachment4" value=""/><br /><br />
+	Signature:<br />
+	<input type="text" name="txtSignature" value="Attachment/1101/signature.png"/><br /><br />
+	
+    <input type="submit" name="submit"/>
+    </form>
+</body>
+</html>

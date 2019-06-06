@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>UPDATE TRANSFER LIST</title>
+</head>
+<body>
+    <form action="update-transfer-list.ashx" method="POST">
+        Order Id: <br />
+        <input type="text" name="oid" value="3" /><br /><br />
+        User Id: <br />
+        <input type="text" name="uid" value="10542" /><br /><br />
+        Warehouse Id: <br />
+        <input type="text" name="wid" value="10053" /><br /><br />
+        Transfer Details: <br />
+        <textarea name="transferDetails">
+            20410 : 10.0 : BIN 51 : BIN 24 : SWH000001977 : 20427 : 10.0 : BIN 181 : BIN 25 : SWH000001076 : 20423 : 10.0 : BIN 429 : BIN 23 : SWH000001491
+        </textarea>
+        <!-- id : qty : fromlocationCode : tolocationCode : batchCode -->
+        <input type="SUBMIT" value="SUBMIT" />
+    </form>
+</body>
+</html>

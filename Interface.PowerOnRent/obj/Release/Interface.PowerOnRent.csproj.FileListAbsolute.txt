@@ -1,0 +1,42 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BWMS\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll.config
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\bin\Release\Interface.PowerOnRent.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Interface.PowerOnRent\obj\Release\Interface.PowerOnRent.pdb

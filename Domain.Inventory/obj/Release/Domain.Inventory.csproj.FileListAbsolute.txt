@@ -1,0 +1,77 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Inventory.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Interface.Inventory.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BWMS\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Inventory.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Domain.Tempdata.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\bin\Release\Interface.Inventory.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Domain.Inventory\obj\Release\Domain.Inventory.pdb

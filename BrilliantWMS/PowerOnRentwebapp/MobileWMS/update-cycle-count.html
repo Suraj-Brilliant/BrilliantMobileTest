@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>UPDATE CYCLE COUNT</title>
+</head>
+<body>
+    <form action="update-cycle-count.ashx" method="POST">
+        Cycle Count Id: <br />
+        <input type="text" name="cid" value="48" /><br /><br />
+        User Id: <br />
+        <input type="text" name="uid" value="10542" /><br /><br />
+        Warehouse Id: <br />
+        <input type="text" name="wid" value="10053" /><br /><br />
+        Sku Details: <br />
+        <textarea name="cycleCountDetails">BIN 551 : SIN020062 : 13 : BIN 552 : SIN0000658 : 10 : BIN 552 : SIN0001456 : 7</textarea><br /><br />
+        <!--BIN 01|SIN0004814|125|SIN0004767|620@BIN 02|SIN0004810|72@BIN 03|SIN0004814|20|SIN0004816|15|SIN0004900|89|SIN0004912|112
+        </textarea><br /><br />-->
+        <!-- location:skucode:qty:location:skucode:qty:location:skucode:qty -->
+        <input type="SUBMIT" value="SUBMIT" />
+    </form>
+</body>
+</html>

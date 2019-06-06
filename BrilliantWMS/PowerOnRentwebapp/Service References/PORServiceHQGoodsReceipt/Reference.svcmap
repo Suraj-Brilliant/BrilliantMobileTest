@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ed005d9b-d90d-4c8f-aaf6-e8b1e15f9779" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceHQGoodsReceipt1.wsdl" MetadataType="Wsdl" ID="c802b793-0bff-4dd0-8ba3-25f142a39eee" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc?wsdl" />
+    <MetadataFile FileName="ServiceHQGoodsReceipt1.disco" MetadataType="Disco" ID="1989db38-5261-4407-b36b-b4847ac40a88" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc?disco" />
+    <MetadataFile FileName="ServiceHQGoodsReceipt1.xsd" MetadataType="Schema" ID="e65d6c32-a2d5-4091-b893-ec76a2f4e3da" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServices/Service.PowerOnRent/ServiceHQGoodsReceipt.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

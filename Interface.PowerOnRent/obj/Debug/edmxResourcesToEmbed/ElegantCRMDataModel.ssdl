@@ -1,0 +1,2219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="elegantcrmModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="elegantcrmModelStoreContainer">
+    <EntitySet Name="mApprovalLevel" EntityType="elegantcrmModel.Store.mApprovalLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mApprovalLevelDetail" EntityType="elegantcrmModel.Store.mApprovalLevelDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mBOMHeader" EntityType="elegantcrmModel.Store.mBOMHeader" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mCompany" EntityType="elegantcrmModel.Store.mCompany" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mCostCenterMain" EntityType="elegantcrmModel.Store.mCostCenterMain" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mDepartment" EntityType="elegantcrmModel.Store.mDepartment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mEngine" EntityType="elegantcrmModel.Store.mEngine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mMessageTrans" EntityType="elegantcrmModel.Store.mMessageTrans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mPaymentMethodDetail" EntityType="elegantcrmModel.Store.mPaymentMethodDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mProduct" EntityType="elegantcrmModel.Store.mProduct" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mRequestTemplateDetail" EntityType="elegantcrmModel.Store.mRequestTemplateDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mRequestTemplateHead" EntityType="elegantcrmModel.Store.mRequestTemplateHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mStatus" EntityType="elegantcrmModel.Store.mStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mStatutory" EntityType="elegantcrmModel.Store.mStatutory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mTerritory" EntityType="elegantcrmModel.Store.mTerritory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mUserLocation" EntityType="elegantcrmModel.Store.mUserLocation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mUserProfileHead" EntityType="elegantcrmModel.Store.mUserProfileHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mUserRolesDetail" EntityType="elegantcrmModel.Store.mUserRolesDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mUserTerritoryDetail" EntityType="elegantcrmModel.Store.mUserTerritoryDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mUserWarehouse" EntityType="elegantcrmModel.Store.mUserWarehouse" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtConsumptionDetail" EntityType="elegantcrmModel.Store.PORtConsumptionDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtConsumptionHead" EntityType="elegantcrmModel.Store.PORtConsumptionHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtGRNDetail" EntityType="elegantcrmModel.Store.PORtGRNDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtGRNHead" EntityType="elegantcrmModel.Store.PORtGRNHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtInboxData" EntityType="elegantcrmModel.Store.PORtInboxData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtMINDetail" EntityType="elegantcrmModel.Store.PORtMINDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtMINHead" EntityType="elegantcrmModel.Store.PORtMINHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtPartRequestDetail" EntityType="elegantcrmModel.Store.PORtPartRequestDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtPartRequestHead" EntityType="elegantcrmModel.Store.PORtPartRequestHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtTransDetail" EntityType="elegantcrmModel.Store.PORtTransDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PORtTransHead" EntityType="elegantcrmModel.Store.PORtTransHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tAddress" EntityType="elegantcrmModel.Store.tAddress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tApprovalDetail" EntityType="elegantcrmModel.Store.tApprovalDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tApprovalTrans" EntityType="elegantcrmModel.Store.tApprovalTrans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tContactPersonDetail" EntityType="elegantcrmModel.Store.tContactPersonDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tCorrespond" EntityType="elegantcrmModel.Store.tCorrespond" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TempData" EntityType="elegantcrmModel.Store.TempData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tInventry" EntityType="elegantcrmModel.Store.tInventry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tOrderDetail" EntityType="elegantcrmModel.Store.tOrderDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tOrderDetailHistory" EntityType="elegantcrmModel.Store.tOrderDetailHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tOrderHead" EntityType="elegantcrmModel.Store.tOrderHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tOrderHeadHistory" EntityType="elegantcrmModel.Store.tOrderHeadHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tOrderWiseAccess" EntityType="elegantcrmModel.Store.tOrderWiseAccess" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tProductStockDetails" EntityType="elegantcrmModel.Store.tProductStockDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tStatutoryDetail" EntityType="elegantcrmModel.Store.tStatutoryDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GetLeadDetails" EntityType="elegantcrmModel.Store.GetLeadDetails" store:Type="Views" store:Schema="dbo" store:Name="GetLeadDetails">
+      <DefiningQuery>SELECT 
+      [GetLeadDetails].[LeadID] AS [LeadID], 
+      [GetLeadDetails].[ObjectName] AS [ObjectName], 
+      [GetLeadDetails].[ReferenceID] AS [ReferenceID], 
+      [GetLeadDetails].[CustomerHeadID] AS [CustomerHeadID], 
+      [GetLeadDetails].[LeadDate] AS [LeadDate], 
+      [GetLeadDetails].[LeadSourceID] AS [LeadSourceID], 
+      [GetLeadDetails].[CampaignID] AS [CampaignID], 
+      [GetLeadDetails].[LeadStatus] AS [LeadStatus], 
+      [GetLeadDetails].[ConfidenceFactor] AS [ConfidenceFactor], 
+      [GetLeadDetails].[ExpOrderDate] AS [ExpOrderDate], 
+      [GetLeadDetails].[ExpOrderAmount] AS [ExpOrderAmount], 
+      [GetLeadDetails].[SubTotal] AS [SubTotal], 
+      [GetLeadDetails].[ProductLevelTotalDiscount] AS [ProductLevelTotalDiscount], 
+      [GetLeadDetails].[DiscountOnSubTotal] AS [DiscountOnSubTotal], 
+      [GetLeadDetails].[DiscountOnSubTotalPercent] AS [DiscountOnSubTotalPercent], 
+      [GetLeadDetails].[TotalDiscount] AS [TotalDiscount], 
+      [GetLeadDetails].[TotalAfterDiscount] AS [TotalAfterDiscount], 
+      [GetLeadDetails].[ProductLevelTotalTax] AS [ProductLevelTotalTax], 
+      [GetLeadDetails].[TaxOnTotalAfterDiscount] AS [TaxOnTotalAfterDiscount], 
+      [GetLeadDetails].[TotalTax] AS [TotalTax], 
+      [GetLeadDetails].[ShippingCharges] AS [ShippingCharges], 
+      [GetLeadDetails].[OtherChargesDescription] AS [OtherChargesDescription], 
+      [GetLeadDetails].[OtherCharges] AS [OtherCharges], 
+      [GetLeadDetails].[TotalAmount] AS [TotalAmount], 
+      [GetLeadDetails].[Remark] AS [Remark], 
+      [GetLeadDetails].[Active] AS [Active], 
+      [GetLeadDetails].[CreatedBy] AS [CreatedBy], 
+      [GetLeadDetails].[CreationDate] AS [CreationDate], 
+      [GetLeadDetails].[LastModifiedBy] AS [LastModifiedBy], 
+      [GetLeadDetails].[LastModifiedDate] AS [LastModifiedDate], 
+      [GetLeadDetails].[CompanyID] AS [CompanyID], 
+      [GetLeadDetails].[Leadname] AS [Leadname], 
+      [GetLeadDetails].[Address] AS [Address], 
+      [GetLeadDetails].[UserName] AS [UserName], 
+      [GetLeadDetails].[TaskID] AS [TaskID], 
+      [GetLeadDetails].[ActivitySubType] AS [ActivitySubType], 
+      [GetLeadDetails].[TaskDate] AS [TaskDate], 
+      [GetLeadDetails].[TaskECD] AS [TaskECD], 
+      [GetLeadDetails].[WebSite] AS [WebSite], 
+      [GetLeadDetails].[SectorID] AS [SectorID], 
+      [GetLeadDetails].[CustomerTypeID] AS [CustomerTypeID], 
+      [GetLeadDetails].[ActivityStatus] AS [ActivityStatus], 
+      [GetLeadDetails].[ActID] AS [ActID]
+      FROM [dbo].[GetLeadDetails] AS [GetLeadDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GetPrdDetail" EntityType="elegantcrmModel.Store.GetPrdDetail" store:Type="Views" store:Schema="dbo" store:Name="GetPrdDetail">
+      <DefiningQuery>SELECT 
+      [GetPrdDetail].[ID] AS [ID], 
+      [GetPrdDetail].[ProductCode] AS [ProductCode], 
+      [GetPrdDetail].[ProductTypeID] AS [ProductTypeID], 
+      [GetPrdDetail].[ProductCategoryID] AS [ProductCategoryID], 
+      [GetPrdDetail].[ProductSubCategoryID] AS [ProductSubCategoryID], 
+      [GetPrdDetail].[UOMID] AS [UOMID], 
+      [GetPrdDetail].[Name] AS [Name], 
+      [GetPrdDetail].[Description] AS [Description], 
+      [GetPrdDetail].[PrincipalPrice] AS [PrincipalPrice], 
+      [GetPrdDetail].[FixedDiscount] AS [FixedDiscount], 
+      [GetPrdDetail].[FixedDiscountPercent] AS [FixedDiscountPercent], 
+      [GetPrdDetail].[Active] AS [Active], 
+      [GetPrdDetail].[Warranty] AS [Warranty], 
+      [GetPrdDetail].[Guarantee] AS [Guarantee], 
+      [GetPrdDetail].[Installable] AS [Installable], 
+      [GetPrdDetail].[AMC] AS [AMC], 
+      [GetPrdDetail].[WarrantyDays] AS [WarrantyDays], 
+      [GetPrdDetail].[GuaranteeDays] AS [GuaranteeDays], 
+      [GetPrdDetail].[CreatedBy] AS [CreatedBy], 
+      [GetPrdDetail].[OpeningBalance] AS [OpeningBalance], 
+      [GetPrdDetail].[CurrentBalance] AS [CurrentBalance], 
+      [GetPrdDetail].[ReorderLevel] AS [ReorderLevel], 
+      [GetPrdDetail].[MaxBalanceQuantity] AS [MaxBalanceQuantity], 
+      [GetPrdDetail].[MinOrderQuantity] AS [MinOrderQuantity], 
+      [GetPrdDetail].[LeadTimeDays] AS [LeadTimeDays], 
+      [GetPrdDetail].[CreationDate] AS [CreationDate], 
+      [GetPrdDetail].[LastModifiedBy] AS [LastModifiedBy], 
+      [GetPrdDetail].[LastModifiedDate] AS [LastModifiedDate], 
+      [GetPrdDetail].[CompanyID] AS [CompanyID], 
+      [GetPrdDetail].[ProductType] AS [ProductType], 
+      [GetPrdDetail].[ProductCategory] AS [ProductCategory], 
+      [GetPrdDetail].[ProductSubCategory] AS [ProductSubCategory], 
+      [GetPrdDetail].[UOM] AS [UOM]
+      FROM [dbo].[GetPrdDetail] AS [GetPrdDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GetProductDetails" EntityType="elegantcrmModel.Store.GetProductDetails" store:Type="Views" store:Schema="dbo" store:Name="GetProductDetails">
+      <DefiningQuery>SELECT 
+      [GetProductDetails].[ID] AS [ID], 
+      [GetProductDetails].[ProductCode] AS [ProductCode], 
+      [GetProductDetails].[ProductTypeID] AS [ProductTypeID], 
+      [GetProductDetails].[ProductCategoryID] AS [ProductCategoryID], 
+      [GetProductDetails].[ProductSubCategoryID] AS [ProductSubCategoryID], 
+      [GetProductDetails].[UOMID] AS [UOMID], 
+      [GetProductDetails].[Name] AS [Name], 
+      [GetProductDetails].[Description] AS [Description], 
+      [GetProductDetails].[PrincipalPrice] AS [PrincipalPrice], 
+      [GetProductDetails].[FixedDiscount] AS [FixedDiscount], 
+      [GetProductDetails].[FixedDiscountPercent] AS [FixedDiscountPercent], 
+      [GetProductDetails].[Active] AS [Active], 
+      [GetProductDetails].[Warranty] AS [Warranty], 
+      [GetProductDetails].[Guarantee] AS [Guarantee], 
+      [GetProductDetails].[Installable] AS [Installable], 
+      [GetProductDetails].[AMC] AS [AMC], 
+      [GetProductDetails].[WarrantyDays] AS [WarrantyDays], 
+      [GetProductDetails].[GuaranteeDays] AS [GuaranteeDays], 
+      [GetProductDetails].[CreatedBy] AS [CreatedBy], 
+      [GetProductDetails].[OpeningBalance] AS [OpeningBalance], 
+      [GetProductDetails].[CurrentBalance] AS [CurrentBalance], 
+      [GetProductDetails].[ReorderLevel] AS [ReorderLevel], 
+      [GetProductDetails].[MaxBalanceQuantity] AS [MaxBalanceQuantity], 
+      [GetProductDetails].[MinOrderQuantity] AS [MinOrderQuantity], 
+      [GetProductDetails].[LeadTimeDays] AS [LeadTimeDays], 
+      [GetProductDetails].[CreationDate] AS [CreationDate], 
+      [GetProductDetails].[LastModifiedBy] AS [LastModifiedBy], 
+      [GetProductDetails].[LastModifiedDate] AS [LastModifiedDate], 
+      [GetProductDetails].[CompanyID] AS [CompanyID], 
+      [GetProductDetails].[ProductType] AS [ProductType], 
+      [GetProductDetails].[ProductCategory] AS [ProductCategory], 
+      [GetProductDetails].[ProductSubCategory] AS [ProductSubCategory], 
+      [GetProductDetails].[UOM] AS [UOM], 
+      [GetProductDetails].[Cost] AS [Cost], 
+      [GetProductDetails].[OMSSKUCode] AS [OMSSKUCode], 
+      [GetProductDetails].[GroupSet] AS [GroupSet], 
+      [GetProductDetails].[StoreId] AS [StoreId], 
+      [GetProductDetails].[CompanyName] AS [CompanyName], 
+      [GetProductDetails].[Territory] AS [Territory], 
+      [GetProductDetails].[AvailableBalance] AS [AvailableBalance], 
+      [GetProductDetails].[moq] AS [moq], 
+      [GetProductDetails].[VirtualQty] AS [VirtualQty], 
+      [GetProductDetails].[AvailVirtualQty] AS [AvailVirtualQty], 
+      [GetProductDetails].[CustomerID] AS [CustomerID], 
+      [GetProductDetails].[CustomerName] AS [CustomerName]
+      FROM [dbo].[GetProductDetails] AS [GetProductDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GWC_VW_MsgOrderDetail" EntityType="elegantcrmModel.Store.GWC_VW_MsgOrderDetail" store:Type="Views" store:Schema="dbo" store:Name="GWC_VW_MsgOrderDetail">
+      <DefiningQuery>SELECT 
+      [GWC_VW_MsgOrderDetail].[OrderHeadId] AS [OrderHeadId], 
+      [GWC_VW_MsgOrderDetail].[Prod_Code] AS [Prod_Code], 
+      [GWC_VW_MsgOrderDetail].[UOM] AS [UOM], 
+      [GWC_VW_MsgOrderDetail].[OrderQty] AS [OrderQty], 
+      [GWC_VW_MsgOrderDetail].[SkuId] AS [SkuId]
+      FROM [dbo].[GWC_VW_MsgOrderDetail] AS [GWC_VW_MsgOrderDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GWC_VW_MsgOrderHead" EntityType="elegantcrmModel.Store.GWC_VW_MsgOrderHead" store:Type="Views" store:Schema="dbo" store:Name="GWC_VW_MsgOrderHead">
+      <DefiningQuery>SELECT 
+      [GWC_VW_MsgOrderHead].[Id] AS [Id], 
+      [GWC_VW_MsgOrderHead].[OrderNumber] AS [OrderNumber], 
+      [GWC_VW_MsgOrderHead].[Orderdate] AS [Orderdate], 
+      [GWC_VW_MsgOrderHead].[Deliverydate] AS [Deliverydate], 
+      [GWC_VW_MsgOrderHead].[Territory] AS [Territory], 
+      [GWC_VW_MsgOrderHead].[Con1] AS [Con1], 
+      [GWC_VW_MsgOrderHead].[Con2] AS [Con2], 
+      [GWC_VW_MsgOrderHead].[AddressLine1] AS [AddressLine1], 
+      [GWC_VW_MsgOrderHead].[Remark] AS [Remark], 
+      [GWC_VW_MsgOrderHead].[StoreCode] AS [StoreCode], 
+      [GWC_VW_MsgOrderHead].[ContactP2] AS [ContactP2], 
+      [GWC_VW_MsgOrderHead].[OrderNo] AS [OrderNo], 
+      [GWC_VW_MsgOrderHead].[InvoiceNo] AS [InvoiceNo], 
+      [GWC_VW_MsgOrderHead].[LocationCode] AS [LocationCode], 
+      [GWC_VW_MsgOrderHead].[RequestorName] AS [RequestorName], 
+      [GWC_VW_MsgOrderHead].[RequestorMobileNo] AS [RequestorMobileNo], 
+      [GWC_VW_MsgOrderHead].[ConsigneeName] AS [ConsigneeName], 
+      [GWC_VW_MsgOrderHead].[ConsigneeAddress] AS [ConsigneeAddress], 
+      [GWC_VW_MsgOrderHead].[ConsigneePhone] AS [ConsigneePhone]
+      FROM [dbo].[GWC_VW_MsgOrderHead] AS [GWC_VW_MsgOrderHead]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_GetEngineDetails" EntityType="elegantcrmModel.Store.v_GetEngineDetails" store:Type="Views" store:Schema="dbo" store:Name="v_GetEngineDetails">
+      <DefiningQuery>SELECT 
+      [v_GetEngineDetails].[ID] AS [ID], 
+      [v_GetEngineDetails].[Territory] AS [Territory], 
+      [v_GetEngineDetails].[SiteID] AS [SiteID], 
+      [v_GetEngineDetails].[Container] AS [Container], 
+      [v_GetEngineDetails].[GeneratorModel] AS [GeneratorModel], 
+      [v_GetEngineDetails].[GeneratorSerial] AS [GeneratorSerial], 
+      [v_GetEngineDetails].[EngineModel] AS [EngineModel], 
+      [v_GetEngineDetails].[EngineSerial] AS [EngineSerial], 
+      [v_GetEngineDetails].[DateRecevied] AS [DateRecevied], 
+      [v_GetEngineDetails].[TransformerSerial] AS [TransformerSerial], 
+      [v_GetEngineDetails].[TransformerDateRecevied] AS [TransformerDateRecevied], 
+      [v_GetEngineDetails].[Remark] AS [Remark], 
+      [v_GetEngineDetails].[CreatedBy] AS [CreatedBy], 
+      [v_GetEngineDetails].[CreationDate] AS [CreationDate], 
+      [v_GetEngineDetails].[LastModifiedBy] AS [LastModifiedBy], 
+      [v_GetEngineDetails].[LastModifiedDate] AS [LastModifiedDate]
+      FROM [dbo].[v_GetEngineDetails] AS [v_GetEngineDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_GetSiteDetails" EntityType="elegantcrmModel.Store.v_GetSiteDetails" store:Type="Views" store:Schema="dbo" store:Name="v_GetSiteDetails">
+      <DefiningQuery>SELECT 
+      [v_GetSiteDetails].[ID] AS [ID], 
+      [v_GetSiteDetails].[AddressID] AS [AddressID], 
+      [v_GetSiteDetails].[ParentID] AS [ParentID], 
+      [v_GetSiteDetails].[Level] AS [Level], 
+      [v_GetSiteDetails].[GroupTitle] AS [GroupTitle], 
+      [v_GetSiteDetails].[Territory] AS [Territory], 
+      [v_GetSiteDetails].[CreationDate] AS [CreationDate], 
+      [v_GetSiteDetails].[LastModifiedBy] AS [LastModifiedBy], 
+      [v_GetSiteDetails].[LastModifiedDate] AS [LastModifiedDate], 
+      [v_GetSiteDetails].[IsMandatory] AS [IsMandatory], 
+      [v_GetSiteDetails].[CreatedBy] AS [CreatedBy], 
+      [v_GetSiteDetails].[ObjectName] AS [ObjectName], 
+      [v_GetSiteDetails].[ReferenceID] AS [ReferenceID], 
+      [v_GetSiteDetails].[AddressType] AS [AddressType], 
+      [v_GetSiteDetails].[Sequence] AS [Sequence], 
+      [v_GetSiteDetails].[AddressLine1] AS [AddressLine1], 
+      [v_GetSiteDetails].[AddressLine2] AS [AddressLine2], 
+      [v_GetSiteDetails].[AddressLine3] AS [AddressLine3], 
+      [v_GetSiteDetails].[RouteID] AS [RouteID], 
+      [v_GetSiteDetails].[Landmark] AS [Landmark], 
+      [v_GetSiteDetails].[County] AS [County], 
+      [v_GetSiteDetails].[State] AS [State], 
+      [v_GetSiteDetails].[City] AS [City], 
+      [v_GetSiteDetails].[Zipcode] AS [Zipcode], 
+      [v_GetSiteDetails].[PhoneNo] AS [PhoneNo], 
+      [v_GetSiteDetails].[FaxNo] AS [FaxNo], 
+      [v_GetSiteDetails].[EmailID] AS [EmailID], 
+      [v_GetSiteDetails].[IsDefault] AS [IsDefault], 
+      [v_GetSiteDetails].[Active] AS [Active], 
+      [v_GetSiteDetails].[Address_CreatedBy] AS [Address_CreatedBy], 
+      [v_GetSiteDetails].[Address_CreationDate] AS [Address_CreationDate], 
+      [v_GetSiteDetails].[Address_LastModifiedBy] AS [Address_LastModifiedBy], 
+      [v_GetSiteDetails].[Address_LastModifiedDate] AS [Address_LastModifiedDate], 
+      [v_GetSiteDetails].[CompanyID] AS [CompanyID], 
+      [v_GetSiteDetails].[BillingID] AS [BillingID], 
+      [v_GetSiteDetails].[ShippingID] AS [ShippingID], 
+      [v_GetSiteDetails].[Zone] AS [Zone], 
+      [v_GetSiteDetails].[SubZone] AS [SubZone]
+      FROM [dbo].[v_GetSiteDetails] AS [v_GetSiteDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vGetUserProfileByUserID" EntityType="elegantcrmModel.Store.vGetUserProfileByUserID" store:Type="Views" store:Schema="dbo" store:Name="vGetUserProfileByUserID">
+      <DefiningQuery>SELECT 
+      [vGetUserProfileByUserID].[userID] AS [userID], 
+      [vGetUserProfileByUserID].[userName] AS [userName], 
+      [vGetUserProfileByUserID].[deptname] AS [deptname], 
+      [vGetUserProfileByUserID].[desiName] AS [desiName], 
+      [vGetUserProfileByUserID].[EmailID] AS [EmailID], 
+      [vGetUserProfileByUserID].[MobileNo] AS [MobileNo], 
+      [vGetUserProfileByUserID].[Active] AS [Active], 
+      [vGetUserProfileByUserID].[EmployeeID] AS [EmployeeID], 
+      [vGetUserProfileByUserID].[Title] AS [Title], 
+      [vGetUserProfileByUserID].[ProfileImg] AS [ProfileImg], 
+      [vGetUserProfileByUserID].[PhoneNo] AS [PhoneNo], 
+      [vGetUserProfileByUserID].[DateOfBirth] AS [DateOfBirth], 
+      [vGetUserProfileByUserID].[DateOfJoining] AS [DateOfJoining], 
+      [vGetUserProfileByUserID].[OtherID] AS [OtherID], 
+      [vGetUserProfileByUserID].[HighestQualification] AS [HighestQualification], 
+      [vGetUserProfileByUserID].[InterestedIn] AS [InterestedIn], 
+      [vGetUserProfileByUserID].[Gender] AS [Gender], 
+      [vGetUserProfileByUserID].[ReportingTo] AS [ReportingTo]
+      FROM [dbo].[vGetUserProfileByUserID] AS [vGetUserProfileByUserID]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_DeptWisePaymentMethod" EntityType="elegantcrmModel.Store.VW_DeptWisePaymentMethod" store:Type="Views" store:Schema="dbo" store:Name="VW_DeptWisePaymentMethod">
+      <DefiningQuery>SELECT 
+      [VW_DeptWisePaymentMethod].[ID] AS [ID], 
+      [VW_DeptWisePaymentMethod].[DeptID] AS [DeptID], 
+      [VW_DeptWisePaymentMethod].[PMethodID] AS [PMethodID], 
+      [VW_DeptWisePaymentMethod].[Sequence] AS [Sequence], 
+      [VW_DeptWisePaymentMethod].[MethodName] AS [MethodName]
+      FROM [dbo].[VW_DeptWisePaymentMethod] AS [VW_DeptWisePaymentMethod]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GetRequestDetails" EntityType="elegantcrmModel.Store.VW_GetRequestDetails" store:Type="Views" store:Schema="dbo" store:Name="VW_GetRequestDetails">
+      <DefiningQuery>SELECT 
+      [VW_GetRequestDetails].[PRH_ID] AS [PRH_ID], 
+      [VW_GetRequestDetails].[DepartmentID] AS [DepartmentID], 
+      [VW_GetRequestDetails].[CompanyID] AS [CompanyID], 
+      [VW_GetRequestDetails].[DepartmentName] AS [DepartmentName], 
+      [VW_GetRequestDetails].[StatusID] AS [StatusID], 
+      [VW_GetRequestDetails].[Status] AS [Status], 
+      [VW_GetRequestDetails].[Title] AS [Title], 
+      [VW_GetRequestDetails].[RequestDate] AS [RequestDate], 
+      [VW_GetRequestDetails].[RequestBy] AS [RequestBy], 
+      [VW_GetRequestDetails].[RequesterName] AS [RequesterName], 
+      [VW_GetRequestDetails].[CompanyName] AS [CompanyName]
+      FROM [dbo].[VW_GetRequestDetails] AS [VW_GetRequestDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GetSKUAndRequestDetails" EntityType="elegantcrmModel.Store.VW_GetSKUAndRequestDetails" store:Type="Views" store:Schema="dbo" store:Name="VW_GetSKUAndRequestDetails">
+      <DefiningQuery>SELECT 
+      [VW_GetSKUAndRequestDetails].[PRH_ID] AS [PRH_ID], 
+      [VW_GetSKUAndRequestDetails].[Prod_ID] AS [Prod_ID], 
+      [VW_GetSKUAndRequestDetails].[ProductCode] AS [ProductCode], 
+      [VW_GetSKUAndRequestDetails].[Name] AS [Name], 
+      [VW_GetSKUAndRequestDetails].[Description] AS [Description], 
+      [VW_GetSKUAndRequestDetails].[RequestDate] AS [RequestDate], 
+      [VW_GetSKUAndRequestDetails].[RequestQty] AS [RequestQty], 
+      [VW_GetSKUAndRequestDetails].[RemaningQty] AS [RemaningQty], 
+      [VW_GetSKUAndRequestDetails].[UOMID] AS [UOMID], 
+      [VW_GetSKUAndRequestDetails].[DeptName] AS [DeptName], 
+      [VW_GetSKUAndRequestDetails].[Status] AS [Status], 
+      [VW_GetSKUAndRequestDetails].[RequesterName] AS [RequesterName], 
+      [VW_GetSKUAndRequestDetails].[CompanyID] AS [CompanyID], 
+      [VW_GetSKUAndRequestDetails].[CompanyName] AS [CompanyName], 
+      [VW_GetSKUAndRequestDetails].[DeptID] AS [DeptID], 
+      [VW_GetSKUAndRequestDetails].[Department] AS [Department], 
+      [VW_GetSKUAndRequestDetails].[RequestBy] AS [RequestBy], 
+      [VW_GetSKUAndRequestDetails].[StatusID] AS [StatusID]
+      FROM [dbo].[VW_GetSKUAndRequestDetails] AS [VW_GetSKUAndRequestDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GetUserInformation" EntityType="elegantcrmModel.Store.VW_GetUserInformation" store:Type="Views" store:Schema="dbo" store:Name="VW_GetUserInformation">
+      <DefiningQuery>SELECT 
+      [VW_GetUserInformation].[ID] AS [ID], 
+      [VW_GetUserInformation].[EmployeeID] AS [EmployeeID], 
+      [VW_GetUserInformation].[Name] AS [Name], 
+      [VW_GetUserInformation].[MobileNo] AS [MobileNo], 
+      [VW_GetUserInformation].[EmailID] AS [EmailID], 
+      [VW_GetUserInformation].[CompanyID] AS [CompanyID], 
+      [VW_GetUserInformation].[Company] AS [Company], 
+      [VW_GetUserInformation].[UserType] AS [UserType], 
+      [VW_GetUserInformation].[DepartmentID] AS [DepartmentID], 
+      [VW_GetUserInformation].[Department] AS [Department], 
+      [VW_GetUserInformation].[StoreCode] AS [StoreCode], 
+      [VW_GetUserInformation].[RoleName] AS [RoleName], 
+      [VW_GetUserInformation].[RoleID] AS [RoleID], 
+      [VW_GetUserInformation].[Active] AS [Active], 
+      [VW_GetUserInformation].[ProfileImg] AS [ProfileImg], 
+      [VW_GetUserInformation].[UserName] AS [UserName]
+      FROM [dbo].[VW_GetUserInformation] AS [VW_GetUserInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GetUserLocation" EntityType="elegantcrmModel.Store.VW_GetUserLocation" store:Type="Views" store:Schema="dbo" store:Name="VW_GetUserLocation">
+      <DefiningQuery>SELECT 
+      [VW_GetUserLocation].[ID] AS [ID], 
+      [VW_GetUserLocation].[AddressLine1] AS [AddressLine1], 
+      [VW_GetUserLocation].[LocationCode] AS [LocationCode], 
+      [VW_GetUserLocation].[LocationName] AS [LocationName], 
+      [VW_GetUserLocation].[UserID] AS [UserID], 
+      [VW_GetUserLocation].[LocationID] AS [LocationID], 
+      [VW_GetUserLocation].[ContactID] AS [ContactID], 
+      [VW_GetUserLocation].[Name] AS [Name], 
+      [VW_GetUserLocation].[MobileNo] AS [MobileNo], 
+      [VW_GetUserLocation].[EmailID] AS [EmailID], 
+      [VW_GetUserLocation].[Active] AS [Active]
+      FROM [dbo].[VW_GetUserLocation] AS [VW_GetUserLocation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GWC_SkuFilter" EntityType="elegantcrmModel.Store.VW_GWC_SkuFilter" store:Type="Views" store:Schema="dbo" store:Name="VW_GWC_SkuFilter">
+      <DefiningQuery>SELECT 
+      [VW_GWC_SkuFilter].[ID] AS [ID], 
+      [VW_GWC_SkuFilter].[ProductCode] AS [ProductCode], 
+      [VW_GWC_SkuFilter].[Name] AS [Name], 
+      [VW_GWC_SkuFilter].[Description] AS [Description], 
+      [VW_GWC_SkuFilter].[PrincipalPrice] AS [PrincipalPrice], 
+      [VW_GWC_SkuFilter].[moq] AS [moq], 
+      [VW_GWC_SkuFilter].[Path] AS [Path], 
+      [VW_GWC_SkuFilter].[CompanyID] AS [CompanyID], 
+      [VW_GWC_SkuFilter].[CompanyName] AS [CompanyName], 
+      [VW_GWC_SkuFilter].[StoreId] AS [StoreId], 
+      [VW_GWC_SkuFilter].[Territory] AS [Territory], 
+      [VW_GWC_SkuFilter].[GroupSet] AS [GroupSet], 
+      [VW_GWC_SkuFilter].[OpeningStock] AS [OpeningStock], 
+      [VW_GWC_SkuFilter].[TotalReceiveQty] AS [TotalReceiveQty], 
+      [VW_GWC_SkuFilter].[TotalDispatchQty] AS [TotalDispatchQty], 
+      [VW_GWC_SkuFilter].[ResurveQty] AS [ResurveQty], 
+      [VW_GWC_SkuFilter].[AvailableBalance] AS [AvailableBalance], 
+      [VW_GWC_SkuFilter].[Image] AS [Image], 
+      [VW_GWC_SkuFilter].[StoreCode] AS [StoreCode], 
+      [VW_GWC_SkuFilter].[SkuImage] AS [SkuImage], 
+      [VW_GWC_SkuFilter].[Logo] AS [Logo], 
+      [VW_GWC_SkuFilter].[AddressLine1] AS [AddressLine1]
+      FROM [dbo].[VW_GWC_SkuFilter] AS [VW_GWC_SkuFilter]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_OrderDeliveryDetails" EntityType="elegantcrmModel.Store.VW_OrderDeliveryDetails" store:Type="Views" store:Schema="dbo" store:Name="VW_OrderDeliveryDetails">
+      <DefiningQuery>SELECT 
+      [VW_OrderDeliveryDetails].[Id] AS [Id], 
+      [VW_OrderDeliveryDetails].[Name] AS [Name], 
+      [VW_OrderDeliveryDetails].[Address] AS [Address], 
+      [VW_OrderDeliveryDetails].[EmailId] AS [EmailId], 
+      [VW_OrderDeliveryDetails].[ContactNo] AS [ContactNo], 
+      [VW_OrderDeliveryDetails].[Landmark] AS [Landmark], 
+      [VW_OrderDeliveryDetails].[Zipcode] AS [Zipcode], 
+      [VW_OrderDeliveryDetails].[PhotoIdtype] AS [PhotoIdtype], 
+      [VW_OrderDeliveryDetails].[PhotoId] AS [PhotoId], 
+      [VW_OrderDeliveryDetails].[DeliveryType] AS [DeliveryType], 
+      [VW_OrderDeliveryDetails].[OrderID] AS [OrderID], 
+      [VW_OrderDeliveryDetails].[PaymentMode] AS [PaymentMode], 
+      [VW_OrderDeliveryDetails].[PaymentDate] AS [PaymentDate], 
+      [VW_OrderDeliveryDetails].[CardNo] AS [CardNo], 
+      [VW_OrderDeliveryDetails].[BankName] AS [BankName], 
+      [VW_OrderDeliveryDetails].[Remark] AS [Remark], 
+      [VW_OrderDeliveryDetails].[Card_Verified] AS [Card_Verified], 
+      [VW_OrderDeliveryDetails].[DriverId] AS [DriverId], 
+      [VW_OrderDeliveryDetails].[TruckDetail] AS [TruckDetail], 
+      [VW_OrderDeliveryDetails].[AssignDate] AS [AssignDate], 
+      [VW_OrderDeliveryDetails].[AssignBy] AS [AssignBy], 
+      [VW_OrderDeliveryDetails].[DriverName] AS [DriverName], 
+      [VW_OrderDeliveryDetails].[DriverEmailID] AS [DriverEmailID], 
+      [VW_OrderDeliveryDetails].[DriverMobileNo] AS [DriverMobileNo], 
+      [VW_OrderDeliveryDetails].[AssignedBy] AS [AssignedBy]
+      FROM [dbo].[VW_OrderDeliveryDetails] AS [VW_OrderDeliveryDetails]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_PORtConsuptionDetail_mProduct" Association="elegantcrmModel.Store.FK_PORtConsuptionDetail_mProduct">
+      <End Role="mProduct" EntitySet="mProduct" />
+      <End Role="PORtConsumptionDetail" EntitySet="PORtConsumptionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtConsuptionDetail_PORtConsuptionHead" Association="elegantcrmModel.Store.FK_PORtConsuptionDetail_PORtConsuptionHead">
+      <End Role="PORtConsumptionHead" EntitySet="PORtConsumptionHead" />
+      <End Role="PORtConsumptionDetail" EntitySet="PORtConsumptionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtConsuptionHead_mTerritory" Association="elegantcrmModel.Store.FK_PORtConsuptionHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritory" />
+      <End Role="PORtConsumptionHead" EntitySet="PORtConsumptionHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtGRNDetail_PORtGRNHead" Association="elegantcrmModel.Store.FK_PORtGRNDetail_PORtGRNHead">
+      <End Role="PORtGRNHead" EntitySet="PORtGRNHead" />
+      <End Role="PORtGRNDetail" EntitySet="PORtGRNDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtGRNHead_mTerritory" Association="elegantcrmModel.Store.FK_PORtGRNHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritory" />
+      <End Role="PORtGRNHead" EntitySet="PORtGRNHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINDetail_PORtMINHead" Association="elegantcrmModel.Store.FK_PORtMINDetail_PORtMINHead">
+      <End Role="PORtMINHead" EntitySet="PORtMINHead" />
+      <End Role="PORtMINDetail" EntitySet="PORtMINDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINDetail_PORtPartRequestDetail" Association="elegantcrmModel.Store.FK_PORtMINDetail_PORtPartRequestDetail">
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetail" />
+      <End Role="PORtMINDetail" EntitySet="PORtMINDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINHead_mStatus" Association="elegantcrmModel.Store.FK_PORtMINHead_mStatus">
+      <End Role="mStatus" EntitySet="mStatus" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINHead_mTerritory" Association="elegantcrmModel.Store.FK_PORtMINHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritory" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtMINHead_PORtPartRequestHead" Association="elegantcrmModel.Store.FK_PORtMINHead_PORtPartRequestHead">
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHead" />
+      <End Role="PORtMINHead" EntitySet="PORtMINHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestDetail_mProduct" Association="elegantcrmModel.Store.FK_PORtPartRequestDetail_mProduct">
+      <End Role="mProduct" EntitySet="mProduct" />
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestDetail_PORtPartRequestHead" Association="elegantcrmModel.Store.FK_PORtPartRequestDetail_PORtPartRequestHead">
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHead" />
+      <End Role="PORtPartRequestDetail" EntitySet="PORtPartRequestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestHead_mStatus" Association="elegantcrmModel.Store.FK_PORtPartRequestHead_mStatus">
+      <End Role="mStatus" EntitySet="mStatus" />
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PORtPartRequestHead_mTerritory" Association="elegantcrmModel.Store.FK_PORtPartRequestHead_mTerritory">
+      <End Role="mTerritory" EntitySet="mTerritory" />
+      <End Role="PORtPartRequestHead" EntitySet="PORtPartRequestHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tCustomerStatutoryDetails_mStatutory" Association="elegantcrmModel.Store.FK_tCustomerStatutoryDetails_mStatutory">
+      <End Role="mStatutory" EntitySet="mStatutory" />
+      <End Role="tStatutoryDetail" EntitySet="tStatutoryDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="mApprovalLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ApprovalLevel" Type="tinyint" Nullable="false" />
+    <Property Name="NoOfApprovers" Type="tinyint" Nullable="false" />
+    <Property Name="MinApprovalReq" Type="tinyint" Nullable="false" />
+    <Property Name="IsLowerLevelApprovalReq" Type="bit" Nullable="false" />
+    <Property Name="MaxAmount" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="TerritoryID" Type="bigint" />
+    <Property Name="OrderCancelInDays" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mApprovalLevelDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ApprovalLevelID" Type="bigint" Nullable="false" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="DepartmentID" Type="bigint" />
+    <Property Name="ApproverLogic" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mBOMHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="Header" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mCompany">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Website" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+    <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="LogoPath" Type="nvarchar(max)" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="MainDataSource" Type="nvarchar" MaxLength="500" />
+    <Property Name="MainDataBaseName" Type="nvarchar" MaxLength="100" />
+    <Property Name="MainDBPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="DataSource" Type="nvarchar" MaxLength="500" />
+    <Property Name="DataBaseName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DBPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="MainServerLogin" Type="nvarchar" MaxLength="50" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="StampImg" Type="image" />
+    <Property Name="Complogo" Type="varbinary(max)" />
+    <Property Name="OrderFormat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mCostCenterMain">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CenterName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApproverID" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mEngine">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" Nullable="false" />
+    <Property Name="Container" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="GeneratorModel" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="GeneratorSerial" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="EngineModel" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="EngineSerial" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="DateRecevied" Type="datetime" Nullable="false" />
+    <Property Name="TransformerSerial" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TransformerDateRecevied" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mMessageTrans">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MessageHdrId" Type="bigint" />
+    <Property Name="MsgDescription" Type="nvarchar(max)" />
+    <Property Name="Destination" Type="varchar" MaxLength="50" />
+    <Property Name="Object" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="Createdby" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mPaymentMethodDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PMethodID" Type="bigint" />
+    <Property Name="FieldName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ControlType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mandetory" Type="bit" />
+    <Property Name="Query" Type="nvarchar(max)" />
+    <Property Name="Sequence" Type="int" />
+  </EntityType>
+  <EntityType Name="mProduct">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductTypeID" Type="bigint" />
+    <Property Name="ProductCategoryID" Type="bigint" />
+    <Property Name="ProductSubCategoryID" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PrincipalPrice" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FixedDiscount" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FixedDiscountPercent" Type="bit" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="Warranty" Type="bit" />
+    <Property Name="Guarantee" Type="bit" />
+    <Property Name="Installable" Type="bit" />
+    <Property Name="AMC" Type="bit" />
+    <Property Name="WarrantyDays" Type="int" />
+    <Property Name="GuaranteeDays" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OpeningBalance" Type="decimal" Scale="2" />
+    <Property Name="CurrentBalance" Type="decimal" Scale="2" />
+    <Property Name="ReorderLevel" Type="decimal" Scale="2" />
+    <Property Name="MaxBalanceQuantity" Type="decimal" Scale="2" />
+    <Property Name="MinOrderQuantity" Type="decimal" Scale="2" />
+    <Property Name="LeadTimeDays" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="BOMHeaderId" Type="bigint" />
+    <Property Name="Packkey" Type="nvarchar" MaxLength="50" />
+    <Property Name="OMSSKUCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cost" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="GroupSet" Type="nvarchar" MaxLength="10" />
+    <Property Name="moq" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mRequestTemplateDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TemplateHeadID" Type="bigint" />
+    <Property Name="PrdID" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Qty" Type="decimal" Scale="2" />
+    <Property Name="Price" Type="decimal" Scale="2" />
+    <Property Name="Total" Type="decimal" Scale="2" />
+    <Property Name="IsPriceChange" Type="int" />
+  </EntityType>
+  <EntityType Name="mRequestTemplateHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TemplateTitle" Type="varchar" MaxLength="300" />
+    <Property Name="Accesstype" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="bigint" />
+    <Property Name="Customer" Type="bigint" />
+    <Property Name="Active" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Remark" Type="varchar" MaxLength="300" />
+    <Property Name="Address" Type="bigint" />
+    <Property Name="Contact1" Type="bigint" />
+    <Property Name="Contact2" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" MaxLength="50" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mStatutory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mTerritory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="bigint" />
+    <Property Name="Level" Type="smallint" />
+    <Property Name="GroupTitle" Type="varchar" MaxLength="50" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="IsMandatory" Type="bit" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="StoreCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="ApprovalLevel" Type="bigint" />
+    <Property Name="AutoCancel" Type="varchar" MaxLength="10" />
+    <Property Name="cancelDays" Type="bigint" />
+    <Property Name="Active" Type="varchar" MaxLength="5" />
+    <Property Name="ApprovalRem" Type="varchar" MaxLength="5" />
+    <Property Name="AutoCancRen" Type="varchar" MaxLength="5" />
+    <Property Name="AutoRemSchedule" Type="bigint" />
+    <Property Name="ApproRemSchedul" Type="bigint" />
+    <Property Name="ECommerce" Type="bit" />
+    <Property Name="OrderFormat" Type="nvarchar" MaxLength="50" />
+    <Property Name="GwcDeliveries" Type="bit" />
+    <Property Name="MaxDeliveryDays" Type="bigint" />
+    <Property Name="FinApproverID" Type="bigint" />
+    <Property Name="AddressType" Type="bigint" />
+    <Property Name="PriceChange" Type="bit" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mUserLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="LocationID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="mUserProfileHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="bigint" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MiddelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="DepartmentID" Type="bigint" Nullable="false" />
+    <Property Name="DesignationID" Type="bigint" Nullable="false" />
+    <Property Name="DateOfJoining" Type="datetime" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReportingTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="InterestedIn" Type="nvarchar(max)" />
+    <Property Name="Hobbies" Type="nvarchar(max)" />
+    <Property Name="OtherID" Type="nvarchar" MaxLength="50" />
+    <Property Name="HighestQualification" Type="nvarchar" MaxLength="50" />
+    <Property Name="CollegeOrUniversity" Type="nvarchar(max)" />
+    <Property Name="HighSchool" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProfileImg" Type="image" />
+    <Property Name="Title" Type="varchar" MaxLength="20" />
+    <Property Name="Gender" Type="varchar" MaxLength="1" />
+    <Property Name="DefaultAddress" Type="varchar" MaxLength="50" />
+    <Property Name="MobileInterface" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="mUserRolesDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Add" Type="bit" />
+    <Property Name="Edit" Type="bit" />
+    <Property Name="View" Type="bit" />
+    <Property Name="Delete" Type="bit" />
+    <Property Name="Approval" Type="bit" />
+    <Property Name="AssignTask" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mUserTerritoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TerritoryID" Type="bigint" />
+    <Property Name="Level" Type="bigint" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastMofidiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mUserWarehouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="WarehoueID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PORtConsumptionDetail">
+    <Key>
+      <PropertyRef Name="ConD_ID" />
+    </Key>
+    <Property Name="ConD_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ConH_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="ConsumedQty" Type="decimal" Scale="2" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="GRND_ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PORtConsumptionHead">
+    <Key>
+      <PropertyRef Name="ConH_ID" />
+    </Key>
+    <Property Name="ConH_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" />
+    <Property Name="ConsumptionDate" Type="datetime" />
+    <Property Name="ObjectName" Type="varchar" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" />
+    <Property Name="ConsumedByUserID" Type="bigint" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="FailureCause" Type="varchar" MaxLength="200" />
+    <Property Name="FailureHours" Type="varchar" MaxLength="100" />
+    <Property Name="FailureNature" Type="varchar" MaxLength="200" />
+    <Property Name="EngineSerial" Type="varchar" MaxLength="100" />
+    <Property Name="EngineModel" Type="varchar" MaxLength="100" />
+    <Property Name="GeneratorModel" Type="varchar" MaxLength="100" />
+    <Property Name="GeneratorSerial" Type="varchar" MaxLength="100" />
+    <Property Name="TransformerSerial" Type="varchar" MaxLength="100" />
+    <Property Name="Container" Type="varchar" MaxLength="100" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDt" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="datetime" />
+    <Property Name="StatusID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PORtGRNDetail">
+    <Key>
+      <PropertyRef Name="GRND_ID" />
+    </Key>
+    <Property Name="GRND_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GRNH_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="ChallanQty" Type="decimal" Scale="2" />
+    <Property Name="ReceivedQty" Type="decimal" Scale="2" />
+    <Property Name="ShortQty" Type="decimal" Scale="2" />
+    <Property Name="ExcessQty" Type="decimal" Scale="2" />
+    <Property Name="RejectedQty" Type="decimal" Scale="2" />
+    <Property Name="AcceptedQty" Type="decimal" Scale="2" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="MIND_ID" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="NotConsumedQty" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="PORtGRNHead">
+    <Key>
+      <PropertyRef Name="GRNH_ID" />
+    </Key>
+    <Property Name="GRNH_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" />
+    <Property Name="ObjectName" Type="varchar" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" />
+    <Property Name="GRN_No" Type="varchar" MaxLength="50" />
+    <Property Name="GRN_Date" Type="date" />
+    <Property Name="ReceivedByUserID" Type="bigint" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="ChallanNo" Type="varchar" MaxLength="100" />
+    <Property Name="ChallanDate" Type="date" />
+    <Property Name="GetpassNo" Type="varchar" MaxLength="100" />
+    <Property Name="GetpassDate" Type="date" />
+    <Property Name="LRNo" Type="varchar" MaxLength="100" />
+    <Property Name="LRDate" Type="date" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="IsSubmit" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDt" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="datetime" />
+    <Property Name="Vendor" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="PORtInboxData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ToUserID" Type="bigint" />
+    <Property Name="SiteID" Type="bigint" />
+    <Property Name="ObjectName" Type="varchar" MaxLength="200" />
+    <Property Name="Subject" Type="varchar" MaxLength="500" />
+    <Property Name="Details" Type="varchar(max)" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="IsRead" Type="bit" />
+    <Property Name="IsArchive" Type="bit" />
+    <Property Name="FolderName" Type="varchar" MaxLength="200" />
+    <Property Name="CreationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PORtMINDetail">
+    <Key>
+      <PropertyRef Name="MIND_ID" />
+    </Key>
+    <Property Name="MIND_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MINH_ID" Type="bigint" Nullable="false" />
+    <Property Name="PRD_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="Prod_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Prod_Description" Type="varchar" MaxLength="500" />
+    <Property Name="IssuedQty" Type="decimal" Scale="2" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Prod_Code" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PORtMINHead">
+    <Key>
+      <PropertyRef Name="MINH_ID" />
+    </Key>
+    <Property Name="MINH_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" />
+    <Property Name="PRH_ID" Type="bigint" />
+    <Property Name="MIN_No" Type="varchar" MaxLength="50" />
+    <Property Name="IssueDate" Type="date" />
+    <Property Name="IssuedByUserID" Type="bigint" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="AirwayBill" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCoNo" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingType" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingStatus" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingDate" Type="date" />
+    <Property Name="ExpectedDelDate" Type="date" />
+    <Property Name="TransporterName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="IsSubmit" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDt" Type="date" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="date" />
+    <Property Name="TransH_ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PORtPartRequestDetail">
+    <Key>
+      <PropertyRef Name="PRD_ID" />
+    </Key>
+    <Property Name="PRD_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PRH_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="Prod_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Prod_Description" Type="varchar" MaxLength="500" />
+    <Property Name="RequestQty" Type="decimal" Scale="2" />
+    <Property Name="RemaningQty" Type="decimal" Scale="2" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Prod_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PORtPartRequestHead">
+    <Key>
+      <PropertyRef Name="PRH_ID" />
+    </Key>
+    <Property Name="PRH_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" />
+    <Property Name="RequestNo" Type="varchar" MaxLength="50" />
+    <Property Name="RequestType" Type="varchar" MaxLength="50" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="RequestDate" Type="date" />
+    <Property Name="RequestBy" Type="bigint" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="FailureCause" Type="varchar" MaxLength="500" />
+    <Property Name="FailureHours" Type="varchar" MaxLength="50" />
+    <Property Name="FailureNature" Type="varchar" MaxLength="500" />
+    <Property Name="EngineSerial" Type="varchar" MaxLength="100" />
+    <Property Name="EngineModel" Type="varchar" MaxLength="100" />
+    <Property Name="GeneratorModel" Type="varchar" MaxLength="100" />
+    <Property Name="GeneratorSerial" Type="varchar" MaxLength="100" />
+    <Property Name="TransformerSerial" Type="varchar" MaxLength="100" />
+    <Property Name="Container" Type="varchar" MaxLength="100" />
+    <Property Name="ProbableShippingDate" Type="date" />
+    <Property Name="IsSubmit" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDt" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PORtTransDetail">
+    <Key>
+      <PropertyRef Name="TransD_ID" />
+    </Key>
+    <Property Name="TransD_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TransH_ID" Type="bigint" />
+    <Property Name="PRD_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="Prod_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Prod_Description" Type="varchar" MaxLength="500" />
+    <Property Name="IssuedQty" Type="decimal" Scale="2" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Prod_Code" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PORtTransHead">
+    <Key>
+      <PropertyRef Name="TransH_ID" />
+    </Key>
+    <Property Name="TransH_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ToSiteID" Type="bigint" />
+    <Property Name="MIN_No" Type="varchar" MaxLength="50" />
+    <Property Name="TransferDate" Type="date" />
+    <Property Name="TransferedByUserID" Type="bigint" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="AirwayBill" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCoNo" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingType" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingStatus" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingDate" Type="date" />
+    <Property Name="ExpectedDelDate" Type="date" />
+    <Property Name="TransporterName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="IsSubmit" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="CreationDt" Type="date" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="date" />
+    <Property Name="FromSiteID" Type="bigint" />
+    <Property Name="PRH_ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="RouteID" Type="bigint" />
+    <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+    <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsDefault" Type="varchar" MaxLength="1" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="BillingID" Type="bigint" />
+    <Property Name="ShippingID" Type="bigint" />
+    <Property Name="Zone" Type="nvarchar" MaxLength="200" />
+    <Property Name="SubZone" Type="nvarchar" MaxLength="200" />
+    <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="bigint" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tApprovalDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" />
+    <Property Name="ApprovalLevel" Type="tinyint" />
+    <Property Name="IsRequired" Type="bit" />
+    <Property Name="MailAlert" Type="bit" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApproverUserID" Type="bigint" />
+    <Property Name="StatusChangedBy" Type="bigint" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="ObjectTotalAmount" Type="decimal" Scale="2" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tApprovalTrans">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="bigint" Nullable="false" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="DelegationId" Type="bigint" />
+    <Property Name="ApprovalId" Type="bigint" />
+    <Property Name="ApproverID" Type="bigint" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Status" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tContactPersonDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="CustomerHeadID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Department" Type="bigint" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="OfficeNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactTypeID" Type="bigint" Nullable="false" />
+    <Property Name="InterestedIn" Type="nvarchar" MaxLength="200" />
+    <Property Name="Hobbies" Type="nvarchar" MaxLength="200" />
+    <Property Name="FacebookID" Type="nvarchar" MaxLength="100" />
+    <Property Name="FacebookPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="TwitterID" Type="nvarchar" MaxLength="100" />
+    <Property Name="TwitterPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="OtherID" Type="nvarchar" MaxLength="100" />
+    <Property Name="HighestQualification" Type="nvarchar" MaxLength="100" />
+    <Property Name="CollegeOrUniversity" Type="nvarchar" MaxLength="100" />
+    <Property Name="HighSchool" Type="nvarchar" MaxLength="100" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tCorrespond">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderHeadId" Type="bigint" />
+    <Property Name="MessageTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="MessageFrom" Type="bigint" />
+    <Property Name="MessageSource" Type="varchar" MaxLength="50" />
+    <Property Name="MessageType" Type="varchar" MaxLength="50" />
+    <Property Name="Schedule" Type="bigint" />
+    <Property Name="DepartmentID" Type="bigint" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="MessageTo" Type="bigint" />
+    <Property Name="CurrentOrderStatus" Type="bigint" />
+    <Property Name="MailStatus" Type="int" />
+    <Property Name="Archive" Type="bit" />
+    <Property Name="OrderCancelDays" Type="bigint" />
+    <Property Name="ApprovalReminderSchedule" Type="bigint" />
+    <Property Name="AutoCancelReminderSchedule" Type="bigint" />
+    <Property Name="NxtApprovalReminderDate" Type="datetime" />
+    <Property Name="NxtAutoCancelReminderDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TempData">
+    <Key>
+      <PropertyRef Name="TempDataID" />
+    </Key>
+    <Property Name="TempDataID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Data" Type="xml" Nullable="false" />
+    <Property Name="XmlData" Type="xml" />
+    <Property Name="LastUpdated" Type="datetime" Nullable="false" />
+    <Property Name="SessionID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TableName" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tInventry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SKUId" Type="bigint" Nullable="false" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="TransactionId" Type="bigint" />
+    <Property Name="Transactiondate" Type="datetime" />
+    <Property Name="TransactionType" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Scale="2" />
+    <Property Name="ResurveQty" Type="bigint" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="InQuantity" Type="bigint" />
+    <Property Name="OutQuantity" Type="bigint" />
+    <Property Name="ClosingBalance" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderHeadId" Type="bigint" Nullable="false" />
+    <Property Name="SkuId" Type="bigint" />
+    <Property Name="OrderQty" Type="decimal" Scale="2" />
+    <Property Name="Deliverydate" Type="datetime" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="1" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="Prod_Name" Type="nvarchar" MaxLength="800" />
+    <Property Name="Prod_Description" Type="nvarchar(max)" />
+    <Property Name="Prod_Code" Type="varchar" MaxLength="50" />
+    <Property Name="RemaningQty" Type="decimal" Scale="2" />
+    <Property Name="Price" Type="decimal" Scale="2" />
+    <Property Name="Total" Type="decimal" Scale="2" />
+    <Property Name="IsPriceChange" Type="int" />
+    <Property Name="ShippedQty" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="tOrderDetailHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderHeadId" Type="bigint" />
+    <Property Name="SkuId" Type="bigint" />
+    <Property Name="OrderQty" Type="decimal" Scale="2" />
+    <Property Name="Deliverydate" Type="datetime" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="1" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="Prod_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Prod_Description" Type="varchar" MaxLength="500" />
+    <Property Name="Prod_Code" Type="varchar" MaxLength="50" />
+    <Property Name="RemaningQty" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="tOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="Orderdate" Type="datetime" />
+    <Property Name="Deliverydate" Type="datetime" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="10" />
+    <Property Name="ContactId1" Type="bigint" />
+    <Property Name="ContactId2" Type="bigint" />
+    <Property Name="AddressId" Type="bigint" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="Status" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="Creationdate" Type="datetime" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="RequestBy" Type="bigint" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="datetime" />
+    <Property Name="DispatchDate" Type="varchar" MaxLength="50" />
+    <Property Name="CompletedDate" Type="datetime" />
+    <Property Name="CancelDate" Type="varchar" MaxLength="50" />
+    <Property Name="WMSRemark" Type="nvarchar(max)" />
+    <Property Name="ApprovalDate" Type="datetime" />
+    <Property Name="Con2" Type="nvarchar(max)" />
+    <Property Name="PaymentID" Type="bigint" />
+    <Property Name="TotalQty" Type="decimal" Scale="2" />
+    <Property Name="GrandTotal" Type="decimal" Scale="2" />
+    <Property Name="OrderNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="orderType" Type="nvarchar" MaxLength="50" />
+    <Property Name="InvoiceNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="LocationID" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CustomerID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tOrderHeadHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="Orderdate" Type="datetime" />
+    <Property Name="Deliverydate" Type="datetime" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="10" />
+    <Property Name="ContactId1" Type="bigint" />
+    <Property Name="ContactId2" Type="bigint" />
+    <Property Name="AddressId" Type="bigint" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="Creationdate" Type="datetime" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="RequestBy" Type="bigint" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDt" Type="datetime" />
+    <Property Name="DispatchDate" Type="varchar" MaxLength="50" />
+    <Property Name="CompletedDate" Type="datetime" />
+    <Property Name="CancelDate" Type="varchar" MaxLength="50" />
+    <Property Name="WMSRemark" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tOrderWiseAccess">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserApproverID" Type="bigint" />
+    <Property Name="ApprovalLevel" Type="int" />
+    <Property Name="PriceEdit" Type="bit" />
+    <Property Name="SkuQtyEdit" Type="bit" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="250" />
+    <Property Name="OrderID" Type="bigint" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="ApproverLogic" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tProductStockDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="bigint" Nullable="false" />
+    <Property Name="ProdID" Type="bigint" Nullable="false" />
+    <Property Name="OpeningStock" Type="decimal" Scale="2" />
+    <Property Name="MaxStockLimit" Type="decimal" Scale="2" />
+    <Property Name="AvailableBalance" Type="decimal" Scale="2" />
+    <Property Name="ReorderQty" Type="decimal" Scale="2" />
+    <Property Name="ReorderDate" Type="datetime" />
+    <Property Name="EffectiveDate" Type="date" />
+    <Property Name="LastModifiedBy" Type="bigint" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="LastConsumedQty" Type="decimal" Scale="2" />
+    <Property Name="LastConsumedDate" Type="date" />
+    <Property Name="TotalReceiveQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="TotalDispatchQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ResurveQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="VirtualQty" Type="decimal" Scale="2" />
+    <Property Name="AvailVirtualQty" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="tStatutoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="StatutoryID" Type="bigint" />
+    <Property Name="StatutoryValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastEditBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastEditDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="ApproverID" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.GetLeadDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GetLeadDetails">
+    <Key>
+      <PropertyRef Name="LeadID" />
+      <PropertyRef Name="ObjectName" />
+      <PropertyRef Name="ReferenceID" />
+      <PropertyRef Name="CustomerHeadID" />
+      <PropertyRef Name="LeadDate" />
+      <PropertyRef Name="LeadStatus" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="LeadID" Type="bigint" Nullable="false" />
+    <Property Name="ObjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="CustomerHeadID" Type="bigint" Nullable="false" />
+    <Property Name="LeadDate" Type="datetime" Nullable="false" />
+    <Property Name="LeadSourceID" Type="bigint" />
+    <Property Name="CampaignID" Type="bigint" />
+    <Property Name="LeadStatus" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ConfidenceFactor" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="ExpOrderDate" Type="datetime" />
+    <Property Name="ExpOrderAmount" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="SubTotal" Type="decimal" Scale="2" />
+    <Property Name="ProductLevelTotalDiscount" Type="decimal" Scale="2" />
+    <Property Name="DiscountOnSubTotal" Type="decimal" Scale="2" />
+    <Property Name="DiscountOnSubTotalPercent" Type="bit" />
+    <Property Name="TotalDiscount" Type="decimal" Scale="2" />
+    <Property Name="TotalAfterDiscount" Type="decimal" Scale="2" />
+    <Property Name="ProductLevelTotalTax" Type="decimal" Scale="2" />
+    <Property Name="TaxOnTotalAfterDiscount" Type="decimal" Scale="2" />
+    <Property Name="TotalTax" Type="decimal" Scale="2" />
+    <Property Name="ShippingCharges" Type="decimal" Scale="2" />
+    <Property Name="OtherChargesDescription" Type="nvarchar(max)" />
+    <Property Name="OtherCharges" Type="decimal" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Scale="2" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Leadname" Type="nvarchar" MaxLength="200" />
+    <Property Name="Address" Type="nvarchar" MaxLength="251" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="101" />
+    <Property Name="TaskID" Type="bigint" />
+    <Property Name="ActivitySubType" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaskDate" Type="datetime" />
+    <Property Name="TaskECD" Type="datetime" />
+    <Property Name="WebSite" Type="nvarchar" MaxLength="50" />
+    <Property Name="SectorID" Type="bigint" />
+    <Property Name="CustomerTypeID" Type="bigint" />
+    <Property Name="ActivityStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActID" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.GetPrdDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GetPrdDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductTypeID" Type="bigint" />
+    <Property Name="ProductCategoryID" Type="bigint" />
+    <Property Name="ProductSubCategoryID" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PrincipalPrice" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FixedDiscount" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FixedDiscountPercent" Type="bit" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="Warranty" Type="bit" />
+    <Property Name="Guarantee" Type="bit" />
+    <Property Name="Installable" Type="bit" />
+    <Property Name="AMC" Type="bit" />
+    <Property Name="WarrantyDays" Type="int" />
+    <Property Name="GuaranteeDays" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OpeningBalance" Type="decimal" Scale="2" />
+    <Property Name="CurrentBalance" Type="decimal" Scale="2" />
+    <Property Name="ReorderLevel" Type="decimal" Scale="2" />
+    <Property Name="MaxBalanceQuantity" Type="decimal" Scale="2" />
+    <Property Name="MinOrderQuantity" Type="decimal" Scale="2" />
+    <Property Name="LeadTimeDays" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="ProductType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductSubCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="UOM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.GetProductDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GetProductDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductTypeID" Type="bigint" />
+    <Property Name="ProductCategoryID" Type="bigint" />
+    <Property Name="ProductSubCategoryID" Type="bigint" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PrincipalPrice" Type="numeric" Precision="13" Scale="2" />
+    <Property Name="FixedDiscount" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FixedDiscountPercent" Type="bit" />
+    <Property Name="Active" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="Warranty" Type="bit" />
+    <Property Name="Guarantee" Type="bit" />
+    <Property Name="Installable" Type="bit" />
+    <Property Name="AMC" Type="bit" />
+    <Property Name="WarrantyDays" Type="int" />
+    <Property Name="GuaranteeDays" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OpeningBalance" Type="decimal" Scale="2" />
+    <Property Name="CurrentBalance" Type="decimal" Scale="2" />
+    <Property Name="ReorderLevel" Type="decimal" Scale="2" />
+    <Property Name="MaxBalanceQuantity" Type="decimal" Scale="2" />
+    <Property Name="MinOrderQuantity" Type="decimal" Scale="2" />
+    <Property Name="LeadTimeDays" Type="bigint" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="ProductType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductSubCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="UOM" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cost" Type="numeric" Precision="13" Scale="2" />
+    <Property Name="OMSSKUCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="GroupSet" Type="nvarchar" MaxLength="10" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="AvailableBalance" Type="decimal" Scale="2" />
+    <Property Name="moq" Type="bigint" />
+    <Property Name="VirtualQty" Type="decimal" Scale="2" />
+    <Property Name="AvailVirtualQty" Type="decimal" Scale="2" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.GWC_VW_MsgOrderDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GWC_VW_MsgOrderDetail">
+    <Key>
+      <PropertyRef Name="OrderHeadId" />
+    </Key>
+    <Property Name="OrderHeadId" Type="bigint" Nullable="false" />
+    <Property Name="Prod_Code" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderQty" Type="decimal" Scale="2" />
+    <Property Name="SkuId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.GWC_VW_MsgOrderHead' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GWC_VW_MsgOrderHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InvoiceNo" />
+      <PropertyRef Name="LocationCode" />
+      <PropertyRef Name="ConsigneeName" />
+      <PropertyRef Name="ConsigneeAddress" />
+      <PropertyRef Name="ConsigneePhone" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Orderdate" Type="datetime" />
+    <Property Name="Deliverydate" Type="datetime" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="Con1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Con2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="StoreCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="ContactP2" Type="nvarchar(max)" />
+    <Property Name="OrderNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="InvoiceNo" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="LocationCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RequestorName" Type="nvarchar" MaxLength="101" />
+    <Property Name="RequestorMobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="ConsigneeName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ConsigneeAddress" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ConsigneePhone" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.v_GetEngineDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetEngineDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="Container" />
+      <PropertyRef Name="GeneratorModel" />
+      <PropertyRef Name="GeneratorSerial" />
+      <PropertyRef Name="EngineModel" />
+      <PropertyRef Name="EngineSerial" />
+      <PropertyRef Name="DateRecevied" />
+      <PropertyRef Name="TransformerSerial" />
+      <PropertyRef Name="TransformerDateRecevied" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreationDate" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="SiteID" Type="bigint" Nullable="false" />
+    <Property Name="Container" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="GeneratorModel" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="GeneratorSerial" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="EngineModel" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="EngineSerial" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="DateRecevied" Type="datetime" Nullable="false" />
+    <Property Name="TransformerSerial" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TransformerDateRecevied" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.v_GetSiteDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetSiteDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="AddressID" />
+      <PropertyRef Name="ObjectName" />
+      <PropertyRef Name="ReferenceID" />
+      <PropertyRef Name="AddressType" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="County" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Address_CreatedBy" />
+      <PropertyRef Name="Address_CreationDate" />
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="AddressID" Type="bigint" Nullable="false" />
+    <Property Name="ParentID" Type="bigint" />
+    <Property Name="Level" Type="smallint" />
+    <Property Name="GroupTitle" Type="varchar" MaxLength="50" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="IsMandatory" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="ObjectName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReferenceID" Type="bigint" Nullable="false" />
+    <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sequence" Type="bigint" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="RouteID" Type="bigint" />
+    <Property Name="Landmark" Type="nvarchar" MaxLength="50" />
+    <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsDefault" Type="varchar" MaxLength="1" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="Address_CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address_CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Address_LastModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address_LastModifiedDate" Type="datetime" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="BillingID" Type="bigint" />
+    <Property Name="ShippingID" Type="bigint" />
+    <Property Name="Zone" Type="nvarchar" MaxLength="200" />
+    <Property Name="SubZone" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.vGetUserProfileByUserID' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vGetUserProfileByUserID">
+    <Key>
+      <PropertyRef Name="userID" />
+      <PropertyRef Name="desiName" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="userID" Type="bigint" Nullable="false" />
+    <Property Name="userName" Type="nvarchar" MaxLength="103" />
+    <Property Name="deptname" Type="varchar" MaxLength="50" />
+    <Property Name="desiName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="20" />
+    <Property Name="ProfileImg" Type="image" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="DateOfJoining" Type="datetime" />
+    <Property Name="OtherID" Type="nvarchar" MaxLength="50" />
+    <Property Name="HighestQualification" Type="nvarchar" MaxLength="50" />
+    <Property Name="InterestedIn" Type="nvarchar(max)" />
+    <Property Name="Gender" Type="varchar" MaxLength="1" />
+    <Property Name="ReportingTo" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_DeptWisePaymentMethod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_DeptWisePaymentMethod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="DeptID" Type="bigint" />
+    <Property Name="PMethodID" Type="bigint" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="MethodName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_GetRequestDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_GetRequestDetails">
+    <Key>
+      <PropertyRef Name="PRH_ID" />
+      <PropertyRef Name="RequesterName" />
+    </Key>
+    <Property Name="PRH_ID" Type="bigint" Nullable="false" />
+    <Property Name="DepartmentID" Type="bigint" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="50" />
+    <Property Name="StatusID" Type="bigint" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="RequestDate" Type="date" />
+    <Property Name="RequestBy" Type="bigint" />
+    <Property Name="RequesterName" Type="nvarchar" Nullable="false" MaxLength="101" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_GetSKUAndRequestDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_GetSKUAndRequestDetails">
+    <Key>
+      <PropertyRef Name="RequesterName" />
+    </Key>
+    <Property Name="PRH_ID" Type="bigint" />
+    <Property Name="Prod_ID" Type="bigint" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="RequestDate" Type="date" />
+    <Property Name="RequestQty" Type="decimal" Scale="2" />
+    <Property Name="RemaningQty" Type="decimal" Scale="2" />
+    <Property Name="UOMID" Type="bigint" />
+    <Property Name="DeptName" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="RequesterName" Type="nvarchar" Nullable="false" MaxLength="101" />
+    <Property Name="CompanyID" Type="bigint" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptID" Type="bigint" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="RequestBy" Type="bigint" />
+    <Property Name="StatusID" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_GetUserInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_GetUserInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="101" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="50" />
+    <Property Name="DepartmentID" Type="bigint" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="StoreCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RoleID" Type="bigint" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ProfileImg" Type="image" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_GetUserLocation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_GetUserLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="LocationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="LocationID" Type="bigint" />
+    <Property Name="ContactID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Active" Type="varchar" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_GWC_SkuFilter' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_GWC_SkuFilter">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="Image" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PrincipalPrice" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="moq" Type="bigint" />
+    <Property Name="Path" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreId" Type="bigint" />
+    <Property Name="Territory" Type="varchar" MaxLength="50" />
+    <Property Name="GroupSet" Type="nvarchar" MaxLength="10" />
+    <Property Name="OpeningStock" Type="decimal" Scale="2" />
+    <Property Name="TotalReceiveQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="TotalDispatchQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ResurveQty" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="AvailableBalance" Type="decimal" Scale="2" />
+    <Property Name="Image" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="StoreCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="SkuImage" Type="image" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BWMS.dbo.VW_OrderDeliveryDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_OrderDeliveryDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactNo" Type="bigint" />
+    <Property Name="Landmark" Type="nvarchar" MaxLength="255" />
+    <Property Name="Zipcode" Type="bigint" />
+    <Property Name="PhotoIdtype" Type="varchar" MaxLength="200" />
+    <Property Name="PhotoId" Type="image" />
+    <Property Name="DeliveryType" Type="varchar" MaxLength="50" />
+    <Property Name="OrderID" Type="bigint" />
+    <Property Name="PaymentMode" Type="varchar" MaxLength="100" />
+    <Property Name="PaymentDate" Type="datetime" />
+    <Property Name="CardNo" Type="bigint" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="Card_Verified" Type="varchar" MaxLength="20" />
+    <Property Name="DriverId" Type="bigint" />
+    <Property Name="TruckDetail" Type="nvarchar" MaxLength="200" />
+    <Property Name="AssignDate" Type="datetime" />
+    <Property Name="AssignBy" Type="bigint" />
+    <Property Name="DriverName" Type="nvarchar" MaxLength="101" />
+    <Property Name="DriverEmailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="DriverMobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="AssignedBy" Type="nvarchar" MaxLength="101" />
+  </EntityType>
+  <Association Name="FK_PORtConsuptionDetail_mProduct">
+    <End Role="mProduct" Type="elegantcrmModel.Store.mProduct" Multiplicity="0..1" />
+    <End Role="PORtConsumptionDetail" Type="elegantcrmModel.Store.PORtConsumptionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mProduct">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionDetail">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtConsuptionDetail_PORtConsuptionHead">
+    <End Role="PORtConsumptionHead" Type="elegantcrmModel.Store.PORtConsumptionHead" Multiplicity="0..1" />
+    <End Role="PORtConsumptionDetail" Type="elegantcrmModel.Store.PORtConsumptionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtConsumptionHead">
+        <PropertyRef Name="ConH_ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionDetail">
+        <PropertyRef Name="ConH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtConsuptionHead_mTerritory">
+    <End Role="mTerritory" Type="elegantcrmModel.Store.mTerritory" Multiplicity="0..1" />
+    <End Role="PORtConsumptionHead" Type="elegantcrmModel.Store.PORtConsumptionHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtConsumptionHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtGRNDetail_PORtGRNHead">
+    <End Role="PORtGRNHead" Type="elegantcrmModel.Store.PORtGRNHead" Multiplicity="0..1" />
+    <End Role="PORtGRNDetail" Type="elegantcrmModel.Store.PORtGRNDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtGRNHead">
+        <PropertyRef Name="GRNH_ID" />
+      </Principal>
+      <Dependent Role="PORtGRNDetail">
+        <PropertyRef Name="GRNH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtGRNHead_mTerritory">
+    <End Role="mTerritory" Type="elegantcrmModel.Store.mTerritory" Multiplicity="0..1" />
+    <End Role="PORtGRNHead" Type="elegantcrmModel.Store.PORtGRNHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtGRNHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINDetail_PORtMINHead">
+    <End Role="PORtMINHead" Type="elegantcrmModel.Store.PORtMINHead" Multiplicity="1" />
+    <End Role="PORtMINDetail" Type="elegantcrmModel.Store.PORtMINDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtMINHead">
+        <PropertyRef Name="MINH_ID" />
+      </Principal>
+      <Dependent Role="PORtMINDetail">
+        <PropertyRef Name="MINH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINDetail_PORtPartRequestDetail">
+    <End Role="PORtPartRequestDetail" Type="elegantcrmModel.Store.PORtPartRequestDetail" Multiplicity="0..1" />
+    <End Role="PORtMINDetail" Type="elegantcrmModel.Store.PORtMINDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestDetail">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="PORtMINDetail">
+        <PropertyRef Name="PRD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINHead_mStatus">
+    <End Role="mStatus" Type="elegantcrmModel.Store.mStatus" Multiplicity="0..1" />
+    <End Role="PORtMINHead" Type="elegantcrmModel.Store.PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINHead_mTerritory">
+    <End Role="mTerritory" Type="elegantcrmModel.Store.mTerritory" Multiplicity="0..1" />
+    <End Role="PORtMINHead" Type="elegantcrmModel.Store.PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtMINHead_PORtPartRequestHead">
+    <End Role="PORtPartRequestHead" Type="elegantcrmModel.Store.PORtPartRequestHead" Multiplicity="0..1" />
+    <End Role="PORtMINHead" Type="elegantcrmModel.Store.PORtMINHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestHead">
+        <PropertyRef Name="PRH_ID" />
+      </Principal>
+      <Dependent Role="PORtMINHead">
+        <PropertyRef Name="PRH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestDetail_mProduct">
+    <End Role="mProduct" Type="elegantcrmModel.Store.mProduct" Multiplicity="0..1" />
+    <End Role="PORtPartRequestDetail" Type="elegantcrmModel.Store.PORtPartRequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mProduct">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestDetail">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestDetail_PORtPartRequestHead">
+    <End Role="PORtPartRequestHead" Type="elegantcrmModel.Store.PORtPartRequestHead" Multiplicity="0..1" />
+    <End Role="PORtPartRequestDetail" Type="elegantcrmModel.Store.PORtPartRequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PORtPartRequestHead">
+        <PropertyRef Name="PRH_ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestDetail">
+        <PropertyRef Name="PRH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestHead_mStatus">
+    <End Role="mStatus" Type="elegantcrmModel.Store.mStatus" Multiplicity="0..1" />
+    <End Role="PORtPartRequestHead" Type="elegantcrmModel.Store.PORtPartRequestHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestHead">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PORtPartRequestHead_mTerritory">
+    <End Role="mTerritory" Type="elegantcrmModel.Store.mTerritory" Multiplicity="0..1" />
+    <End Role="PORtPartRequestHead" Type="elegantcrmModel.Store.PORtPartRequestHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mTerritory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PORtPartRequestHead">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tCustomerStatutoryDetails_mStatutory">
+    <End Role="mStatutory" Type="elegantcrmModel.Store.mStatutory" Multiplicity="0..1" />
+    <End Role="tStatutoryDetail" Type="elegantcrmModel.Store.tStatutoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatutory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tStatutoryDetail">
+        <PropertyRef Name="StatutoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GWC_SP_GetRequestHeadByRequestIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RequestIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteIDs" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="bigint" Mode="In" />
+    <Parameter Name="ReceiptIDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ConsumptionIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteIDs" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="bigint" Mode="In" />
+    <Parameter Name="ReceiptIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteIDs" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="bigint" Mode="In" />
+    <Parameter Name="RequestID" Type="bigint" Mode="In" />
+    <Parameter Name="IssueIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetail_ForRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PartIDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="MaxSequence" Type="bigint" Mode="In" />
+    <Parameter Name="SiteID" Type="bigint" Mode="In" />
+    <Parameter Name="RequestID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetails_OfConsumption" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptID" Type="bigint" Mode="In" />
+    <Parameter Name="ConsumptionID" Type="bigint" Mode="In" />
+    <Parameter Name="SiteID" Type="bigint" Mode="In" />
+    <Parameter Name="GRND_IDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Prod_IDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="MaxSequence" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetails_OfGRN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MIND_IDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="IssueID" Type="bigint" Mode="In" />
+    <Parameter Name="ReceiptID" Type="bigint" Mode="In" />
+    <Parameter Name="SiteID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetails_OfGRN_HQ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PartIDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ReceiptID" Type="bigint" Mode="In" />
+    <Parameter Name="IssueID" Type="bigint" Mode="In" />
+    <Parameter Name="SiteID" Type="bigint" Mode="In" />
+    <Parameter Name="MaxSequence" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetails_OfMIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRD_IDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="IssueID" Type="bigint" Mode="In" />
+    <Parameter Name="RequestID" Type="bigint" Mode="In" />
+    <Parameter Name="IssuedQtySame" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetPartDetails_OfMIN_Transfer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRD_IDs" Type="varchar(max)" Mode="In" />
+    <Parameter Name="IssueID" Type="bigint" Mode="In" />
+    <Parameter Name="RequestID" Type="bigint" Mode="In" />
+    <Parameter Name="IssuedQtySame" Type="varchar" Mode="In" />
+    <Parameter Name="SiteID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteIDs" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="bigint" Mode="In" />
+    <Parameter Name="RequestID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetRequestByRequestIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RequestIDs" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_GetRequestBySiteIDsOrUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteIDs" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntoPORtConsumptionDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConsumptionID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntoPORtGRNDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntoPORtMINDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IssueID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntoPORtPartRequestDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRH_ID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntoPORtTransDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransferID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_InsertIntotOrderDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRH_ID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="POR_SP_mRequestTemplateDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRH_ID" Type="bigint" Mode="In" />
+    <Parameter Name="xmlData" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="SP_GetUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMPID" Type="varchar" Mode="In" />
+    <Parameter Name="DPTID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GWC_GetUserInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMPID" Type="varchar" Mode="In" />
+    <Parameter Name="DPTID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GWC_GetUserInfoRoleWise" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMPID" Type="varchar" Mode="In" />
+    <Parameter Name="DPTID" Type="varchar" Mode="In" />
+    <Parameter Name="RLID" Type="varchar" Mode="In" />
+    <Parameter Name="ACTV" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_PaymentMethodFOC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderID" Type="bigint" Mode="In" />
+  </Function>
+</Schema>

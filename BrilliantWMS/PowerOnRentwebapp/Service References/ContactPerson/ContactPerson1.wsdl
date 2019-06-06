@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ContactPerson" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.ContactPerson/ContactPerson.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUC_ContactPerson_GetContactPersonByReferenceId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonByReferenceId" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_GetContactPersonByReferenceId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonByReferenceIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_InsertIntoTemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTemp" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_InsertIntoTemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoTempResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_SetValuesToTempData_onChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetValuesToTempData_onChange" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_SetValuesToTempData_onChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetValuesToTempData_onChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_FinalSaveToDBtAddToContactPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtAddToContactPerson" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_FinalSaveToDBtAddToContactPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveToDBtAddToContactPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_GetContactDetailFromTempTableBySequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactDetailFromTempTableBySequence" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_GetContactDetailFromTempTableBySequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactDetailFromTempTableBySequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_GetContactPersonByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonByName" />
+  </wsdl:message>
+  <wsdl:message name="iUC_ContactPerson_GetContactPersonByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactPersonByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUC_ContactPerson">
+    <wsdl:operation name="GetContactPersonByReferenceId">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactPersonByReferenceId" message="tns:iUC_ContactPerson_GetContactPersonByReferenceId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactPersonByReferenceIdResponse" message="tns:iUC_ContactPerson_GetContactPersonByReferenceId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/InsertIntoTemp" message="tns:iUC_ContactPerson_InsertIntoTemp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/InsertIntoTempResponse" message="tns:iUC_ContactPerson_InsertIntoTemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/ClearTempDataFromDB" message="tns:iUC_ContactPerson_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/ClearTempDataFromDBResponse" message="tns:iUC_ContactPerson_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetValuesToTempData_onChange">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/SetValuesToTempData_onChange" message="tns:iUC_ContactPerson_SetValuesToTempData_onChange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/SetValuesToTempData_onChangeResponse" message="tns:iUC_ContactPerson_SetValuesToTempData_onChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtAddToContactPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/FinalSaveToDBtAddToContactPerson" message="tns:iUC_ContactPerson_FinalSaveToDBtAddToContactPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/FinalSaveToDBtAddToContactPersonResponse" message="tns:iUC_ContactPerson_FinalSaveToDBtAddToContactPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailFromTempTableBySequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactDetailFromTempTableBySequence" message="tns:iUC_ContactPerson_GetContactDetailFromTempTableBySequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactDetailFromTempTableBySequenceResponse" message="tns:iUC_ContactPerson_GetContactDetailFromTempTableBySequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactPersonByName" message="tns:iUC_ContactPerson_GetContactPersonByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUC_ContactPerson/GetContactPersonByNameResponse" message="tns:iUC_ContactPerson_GetContactPersonByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUC_ContactPerson" type="tns:iUC_ContactPerson">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetContactPersonByReferenceId">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/GetContactPersonByReferenceId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoTemp">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/InsertIntoTemp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetValuesToTempData_onChange">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/SetValuesToTempData_onChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveToDBtAddToContactPerson">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/FinalSaveToDBtAddToContactPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailFromTempTableBySequence">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/GetContactDetailFromTempTableBySequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactPersonByName">
+      <soap:operation soapAction="http://tempuri.org/iUC_ContactPerson/GetContactPersonByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContactPerson">
+    <wsdl:port name="BasicHttpBinding_iUC_ContactPerson" binding="tns:BasicHttpBinding_iUC_ContactPerson">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.ContactPerson/ContactPerson.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

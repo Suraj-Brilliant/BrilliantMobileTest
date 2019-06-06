@@ -1,0 +1,78 @@
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Service.UCToolbar.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Service.UCToolbar.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.UCToolbar.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Interface.UCToolbar.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.Server.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.Server.pdb
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+E:\New GWC Ver2Server\GWCPartRequestSystevVer2\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.Server.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BrilliantWMS\GWCPartRequestSystem\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BrilliantWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.dll
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BWMS\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BrilliantWMSSystem\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BrilliantWMSSystemTest\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.UCToolbar.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Interface.UCToolbar.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Domain.Server.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.csprojResolveAssemblyReference.cache
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.dll
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\obj\Release\Service.UCToolbar.pdb
+F:\BWMSTestMobile\BrilliantWMSSystems\Service.UCToolbar\bin\Service.UCToolbar.dll.config

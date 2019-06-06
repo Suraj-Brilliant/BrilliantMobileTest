@@ -1,0 +1,2681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/AccountMaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/AccountSearch.aspx">
+      <publishTime>05/06/2017 12:55:47</publishTime>
+    </File>
+    <File Include="Account/AggregatorMaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/ApproverList.aspx">
+      <publishTime>06/27/2017 11:32:57</publishTime>
+    </File>
+    <File Include="Account/CApprovalSearch.aspx">
+      <publishTime>06/27/2017 11:32:58</publishTime>
+    </File>
+    <File Include="Account/ChannelMaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/ClientMaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/Customer.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/location.aspx">
+      <publishTime>06/27/2017 11:32:58</publishTime>
+    </File>
+    <File Include="Account/Logo/02400385-10095-10110.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="Account/Logo/25.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="Account/Logo/supremelogo.png">
+      <publishTime>08/24/2017 15:31:35</publishTime>
+    </File>
+    <File Include="Account/PaymentMethod.aspx">
+      <publishTime>06/27/2017 11:32:59</publishTime>
+    </File>
+    <File Include="Account/PMethodList.aspx">
+      <publishTime>06/27/2017 11:32:59</publishTime>
+    </File>
+    <File Include="Account/RateCardmaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Account/SearchAddContact.aspx">
+      <publishTime>07/17/2017 17:19:46</publishTime>
+    </File>
+    <File Include="Account/SearchCustomer.aspx">
+      <publishTime>08/22/2017 10:59:55</publishTime>
+    </File>
+    <File Include="Account/SearchRateCardAcc.aspx">
+      <publishTime>08/22/2017 10:59:55</publishTime>
+    </File>
+    <File Include="Account/SLA.aspx">
+      <publishTime>06/27/2017 11:32:59</publishTime>
+    </File>
+    <File Include="Account/VendorMaster.aspx">
+      <publishTime>08/22/2017 10:58:39</publishTime>
+    </File>
+    <File Include="Address/AddressInfo.aspx">
+      <publishTime>08/22/2017 11:00:28</publishTime>
+    </File>
+    <File Include="Address/country_state.xml">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="Address/LabelAlice.xml">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="Address/UCAddress.ascx">
+      <publishTime>08/22/2017 11:00:28</publishTime>
+    </File>
+    <File Include="Approval/ApprovalLevelMaster.aspx">
+      <publishTime>07/03/2017 13:02:29</publishTime>
+    </File>
+    <File Include="Approval/ApprovalMaster.aspx">
+      <publishTime>07/19/2017 11:11:05</publishTime>
+    </File>
+    <File Include="Approval/UC_Approval.ascx">
+      <publishTime>06/27/2017 11:33:01</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/Blue.skin">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css/dashboard.css">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css/general.css">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css/style.css">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css/userinfo.css">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Invoice16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Lead16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Lead24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Opportunity16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Quotation16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Reports16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Reports16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/SalesOrder16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/SalesOrder16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/SalesOrder24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Setup16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/menuimg/Support16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/css3menu1/style.css">
+      <publishTime>07/13/2017 17:49:38</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/add.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Addressbooksearch24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/ajax-loader.gif">
+      <publishTime>07/17/2017 16:06:00</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/ajax-loader1.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/ajax-loader2.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Background.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/BackgroundRpt.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/balloon.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Bg_Gradient.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/blueDownArrow16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Calendar16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Calendar16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Calendar20.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Calendar24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Calendar24x24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/check-off.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/check-on.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/CheckboxChecked.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/CheckboxUnchecked.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Delete16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Edit16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/email.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Female.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/help.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/help24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/icon_close.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Info.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/logout16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/mail.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Male.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Man64.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Partitionimg.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Processing.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/radio-off.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/radio-on.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Search.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Search16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/search16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Search24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/SelectAccount16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/Setting16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/sliderClose.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/sliderOpen.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/StandardError.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/StandardHelp.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/StandardInformation.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/StandardWarning.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/TaskAlert16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/TaskAlert24.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/TaxCalculation16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/user.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/User1.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/User2.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/user_female.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/img/user_male.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Blue/PIE.htc">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/img/Remove16x16.png">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/img/search.jpg">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/asc.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/desc.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/details_btn_close.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/details_btn_open.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/filter_criterias.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_disabled.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_disabled_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_normal.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_normal_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_over.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_over_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_pressed.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/first_pressed_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/group_arrow_bottom.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/group_arrow_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/group_btn_close.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/group_btn_open.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/header.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/header_placeholder.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/drop-down-horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/drop-down-horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/drop-down-vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/drop-down-vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/lighted.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/lighted.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/images/vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutDropDownList/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textarea-horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textarea-horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textarea-vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textarea-vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textbox.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/images/textbox.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/interface/OboutTextBox/style_multiline.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_disabled.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_disabled_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_normal.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_normal_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_over.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_over_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_pressed.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/last_pressed_top.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/minus.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_disabled.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_disabled_top.gif">
+      <publishTime>05/06/2017 12:55:49</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_normal.gif">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_normal_top.gif">
+      <publishTime>05/06/2017 12:55:49</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_over.gif">
+      <publishTime>05/06/2017 12:55:49</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_over_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_pressed.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/next_pressed_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/placeholder.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/placeholder_empty.gif">
+      <publishTime>05/06/2017 12:55:49</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/plus.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_disabled.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_disabled_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_normal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_normal_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_over.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_over_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_pressed.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/previous_pressed_top.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/record_group_header.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/record_group_header2.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Grid/styles/style_9/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Account.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Account16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/blue-alarme1.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/consumption.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Dashboard.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Dashboard_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/hqgrn.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Inbox.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Inbox_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Invoice.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Invoice16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Issue.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Opportunity.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Opportunity_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Quotation.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Quotation_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Receipt.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Report.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Report_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Request.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/SalesOrder.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/SalesOrder_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Setup.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Setup_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Support.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/HeaderMenuIcon/Support_16x16.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutButton/images/button.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutButton/images/button.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutButton/images/overlay.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutButton/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutCheckBox/images/CheckBox.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutCheckBox/images/CheckBox.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutCheckBox/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/drop-down-horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/drop-down-horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/drop-down-vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/drop-down-vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/lighted.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/lighted.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/images/vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutDropDownList/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutRadioButton/images/Radio.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutRadioButton/images/Radio.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutRadioButton/style.css">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textarea-horizontal.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textarea-horizontal.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textarea-vertical.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textarea-vertical.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textbox.gif">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Interface/styles/premiere_blue/OboutTextBox/images/textbox.png">
+      <publishTime>05/06/2017 12:55:50</publishTime>
+    </File>
+    <File Include="App_Themes/Login.css">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/PIE.js">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="App_Themes/PIE_uncompressed.js">
+      <publishTime>05/06/2017 12:55:48</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>02/17/2017 12:37:32</publishTime>
+    </File>
+    <File Include="bin/ar-QA/BrilliantWMS.resources.dll">
+      <publishTime>09/03/2017 14:09:53</publishTime>
+    </File>
+    <File Include="bin/BrilliantWMS.dll">
+      <publishTime>09/03/2017 14:09:53</publishTime>
+    </File>
+    <File Include="bin/en-US/BrilliantWMS.resources.dll">
+      <publishTime>09/03/2017 14:09:53</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>02/17/2017 12:37:32</publishTime>
+    </File>
+    <File Include="bin/Obout.Ajax.UI.dll">
+      <publishTime>02/17/2017 12:37:31</publishTime>
+    </File>
+    <File Include="bin/obout_AJAXPage.dll">
+      <publishTime>02/17/2017 12:37:30</publishTime>
+    </File>
+    <File Include="bin/obout_ASPTreeView_2_NET.dll">
+      <publishTime>02/17/2017 12:37:31</publishTime>
+    </File>
+    <File Include="bin/obout_Calendar2_Net.dll">
+      <publishTime>02/17/2017 12:37:31</publishTime>
+    </File>
+    <File Include="bin/obout_ComboBox.dll">
+      <publishTime>02/17/2017 12:37:31</publishTime>
+    </File>
+    <File Include="bin/obout_Flyout2_NET.dll">
+      <publishTime>02/17/2017 12:37:31</publishTime>
+    </File>
+    <File Include="bin/obout_Grid_NET.dll">
+      <publishTime>02/17/2017 12:37:32</publishTime>
+    </File>
+    <File Include="bin/obout_Interface.dll">
+      <publishTime>02/17/2017 12:37:32</publishTime>
+    </File>
+    <File Include="BWMSDataSetLabelPrnt.xsc">
+      <publishTime>07/17/2017 14:48:32</publishTime>
+    </File>
+    <File Include="BWMSDataSetLabelPrnt.xss">
+      <publishTime>07/17/2017 14:48:32</publishTime>
+    </File>
+    <File Include="BWMSTestDataSet.xsc">
+      <publishTime>09/03/2017 13:43:11</publishTime>
+    </File>
+    <File Include="BWMSTestDataSet.xss">
+      <publishTime>09/03/2017 13:43:07</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetdispatchdetail.xsc">
+      <publishTime>09/03/2017 13:58:50</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetdispatchdetail.xss">
+      <publishTime>09/03/2017 13:58:49</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetdispatchlist.xsc">
+      <publishTime>09/02/2017 19:42:01</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetdispatchlist.xss">
+      <publishTime>09/02/2017 19:42:00</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetgrndetails.xsc">
+      <publishTime>09/03/2017 11:58:43</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetgrndetails.xss">
+      <publishTime>09/03/2017 11:58:42</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetgrnlist.xsc">
+      <publishTime>09/02/2017 15:15:12</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetgrnlist.xss">
+      <publishTime>09/02/2017 15:15:11</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpickupdetail.xsc">
+      <publishTime>09/03/2017 12:26:36</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpickupdetail.xss">
+      <publishTime>09/03/2017 12:26:35</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpickuplist.xsc">
+      <publishTime>09/02/2017 18:31:50</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpickuplist.xss">
+      <publishTime>09/02/2017 18:31:49</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpolist.xsc">
+      <publishTime>09/02/2017 12:27:10</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetpolist.xss">
+      <publishTime>09/02/2017 12:27:04</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetputinlist.xsc">
+      <publishTime>09/02/2017 16:27:40</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetputinlist.xss">
+      <publishTime>09/02/2017 16:27:38</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetqcdetail.xsc">
+      <publishTime>09/03/2017 12:17:10</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetqcdetail.xss">
+      <publishTime>09/03/2017 12:17:09</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetqclist.xsc">
+      <publishTime>09/02/2017 15:48:42</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetqclist.xss">
+      <publishTime>09/02/2017 15:48:33</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetrptdispatchdetail.xsc">
+      <publishTime>09/03/2017 14:02:37</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetrptdispatchdetail.xss">
+      <publishTime>09/03/2017 14:02:36</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetrptgrndetails.xsc">
+      <publishTime>09/03/2017 11:59:31</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetrptgrndetails.xss">
+      <publishTime>09/03/2017 11:59:29</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetsodetail.xsc">
+      <publishTime>09/03/2017 13:01:56</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetsodetail.xss">
+      <publishTime>09/03/2017 13:01:55</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetsolist.xsc">
+      <publishTime>09/02/2017 17:33:37</publishTime>
+    </File>
+    <File Include="BWMSTestDataSetsolist.xss">
+      <publishTime>09/02/2017 17:33:36</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetup.aspx">
+      <publishTime>06/27/2017 11:33:01</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/accessdDenied.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/account.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/ActivityManagement.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/ComminsLogo.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/companymgm.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/customfields.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/dasbaord2.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/Dasboard_Eng.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/Dashboad1.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/Dashboard.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/download.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/help_64.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/inventory.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/leadManagement.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/my_reports.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/productmanagement.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/purchase.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/report.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/report123.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/reports.jpg">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/taxmagmt.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupImg/user_Management.png">
+      <publishTime>02/17/2017 12:37:33</publishTime>
+    </File>
+    <File Include="CommonControls/HomeSetupPOR.aspx">
+      <publishTime>06/27/2017 11:33:01</publishTime>
+    </File>
+    <File Include="CommonControls/SKUSearch.aspx">
+      <publishTime>08/31/2017 14:52:52</publishTime>
+    </File>
+    <File Include="CommonControls/Toolbar.ascx">
+      <publishTime>07/18/2017 15:11:43</publishTime>
+    </File>
+    <File Include="CommonControls/UCFormHeader.ascx">
+      <publishTime>06/27/2017 11:33:02</publishTime>
+    </File>
+    <File Include="CommonControls/UCToolbar.ascx">
+      <publishTime>06/27/2017 11:33:02</publishTime>
+    </File>
+    <File Include="CommonControls/UCToolbarHTML.ascx">
+      <publishTime>06/27/2017 11:33:02</publishTime>
+    </File>
+    <File Include="CommonControls/UC_Date.ascx">
+      <publishTime>06/27/2017 11:33:02</publishTime>
+    </File>
+    <File Include="CommonControls/User Manual/GWC OMS User Guide 1.1.pdf">
+      <publishTime>06/09/2017 16:56:31</publishTime>
+    </File>
+    <File Include="CommonControls/User Manual/GWC OMS User Guide 1.1.pdf11">
+      <publishTime>06/09/2017 16:59:43</publishTime>
+    </File>
+    <File Include="CommonControls/User Manual/GWC OMS User Manual 1.1.pdf">
+      <publishTime>06/06/2017 10:30:19</publishTime>
+    </File>
+    <File Include="CommonControls/User Manual/GWC OMS User Manual 1.1.pdf11">
+      <publishTime>06/09/2017 16:59:43</publishTime>
+    </File>
+    <File Include="Company/Background/login-bg.jpg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Background/login-box-bg.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/1.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/10095.png">
+      <publishTime>07/18/2017 12:21:39</publishTime>
+    </File>
+    <File Include="Company/Logo/13.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/131.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/14.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/2.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/29.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/3.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/4 - Copy.jpg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/4.jpg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/4.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/gwc-logo-blue.jpg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/gwc-logo-white.jpg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/original-logo-13.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/Logo/TBL101.JPG">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/TempLogo/q0aifd4cydrchjgy2yjb4avd.jpeg">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/TempLogo/q0aifd4cydrchjgy2yjb4avd.png">
+      <publishTime>05/06/2017 12:55:51</publishTime>
+    </File>
+    <File Include="Company/TermsAndConditionMaster.aspx">
+      <publishTime>08/22/2017 11:01:30</publishTime>
+    </File>
+    <File Include="Company/TermsConditionSearch.aspx">
+      <publishTime>07/05/2017 11:43:37</publishTime>
+    </File>
+    <File Include="Company/UC_TermsAndCondition.ascx">
+      <publishTime>07/05/2017 11:29:32</publishTime>
+    </File>
+    <File Include="Company/UserSearch.aspx">
+      <publishTime>06/27/2017 11:33:02</publishTime>
+    </File>
+    <File Include="ContactPerson/ContactPersonInfo.aspx">
+      <publishTime>08/22/2017 11:01:45</publishTime>
+    </File>
+    <File Include="ContactPerson/ContactTypeMaster.aspx">
+      <publishTime>06/27/2017 11:33:03</publishTime>
+    </File>
+    <File Include="ContactPerson/UCContactPerson.ascx">
+      <publishTime>08/22/2017 11:01:45</publishTime>
+    </File>
+    <File Include="DashBoard/BindDashboard.aspx">
+      <publishTime>06/27/2017 11:33:03</publishTime>
+    </File>
+    <File Include="DashBoard/DashBoard.ascx">
+      <publishTime>06/27/2017 11:33:04</publishTime>
+    </File>
+    <File Include="DashBoard/Dashboard.aspx">
+      <publishTime>06/27/2017 11:33:04</publishTime>
+    </File>
+    <File Include="DashBoard/Dashboard1.ascx">
+      <publishTime>06/27/2017 11:33:04</publishTime>
+    </File>
+    <File Include="DashBoard/DashboardInvoice.aspx">
+      <publishTime>06/27/2017 11:33:04</publishTime>
+    </File>
+    <File Include="DashBoard/data_icon.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="DashBoard/excel_icon.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="DashBoard/pdf_icon.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="DashBoard/product.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="DashBoard/R.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/10095/52.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/10095/53.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/10095/54.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/10170/62.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/1746/test.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/1746/This Is Test 001.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/1746/This Is Test 002.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/1810/This Is Test 002.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Attach_Document/1833/This Is Test 001.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/Document.aspx">
+      <publishTime>08/22/2017 11:02:02</publishTime>
+    </File>
+    <File Include="Document/Document1.aspx">
+      <publishTime>06/27/2017 11:33:05</publishTime>
+    </File>
+    <File Include="Document/DocumentMaster.aspx">
+      <publishTime>07/17/2017 17:49:01</publishTime>
+    </File>
+    <File Include="Document/DocumentSearch.aspx">
+      <publishTime>08/22/2017 11:02:46</publishTime>
+    </File>
+    <File Include="Document/DocumentTypeMaster.aspx">
+      <publishTime>08/22/2017 11:02:02</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10095/dku1b5x215qodvvdqks4lkys_636283826549580333.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10095/f00vkvreaxdvhw22t4lxcozt_636268983413435904.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10095/f00vkvreaxdvhw22t4lxcozt_636268984121577755.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10095/pp5sfvh43udbllurd14utg5t_636258001716941770.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10095/pp5sfvh43udbllurd14utg5t_636258004550533842.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10170/pfzys05twkbotlnr0vsmvsao_636253589682626162.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10170/pfzys05twkbotlnr0vsmvsao_636253590029676012.docx">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/TempAttach_Document/10170/r5b4bh1ffha2czizif414pld_636270708630315684.pdf">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Document/UC_AttachDocument.ascx">
+      <publishTime>08/22/2017 11:02:02</publishTime>
+    </File>
+    <File Include="elegantcrm7DataSetPartConsumption.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="elegantcrm7DataSetPartConsumption.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="elegantcrm7ToolsTransfer.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="elegantcrm7ToolsTransfer.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/28/2017 11:10:04</publishTime>
+    </File>
+    <File Include="GWCDEDataSet.xsc">
+      <publishTime>06/06/2017 10:30:32</publishTime>
+    </File>
+    <File Include="GWCDEDataSet.xss">
+      <publishTime>06/06/2017 10:30:32</publishTime>
+    </File>
+    <File Include="GWCDEDataSetorderdetail.xsc">
+      <publishTime>04/27/2017 15:48:47</publishTime>
+    </File>
+    <File Include="GWCDEDataSetorderdetail.xss">
+      <publishTime>04/27/2017 15:48:47</publishTime>
+    </File>
+    <File Include="GWCDEDataSetskudetails1.xsc">
+      <publishTime>04/27/2017 15:48:47</publishTime>
+    </File>
+    <File Include="GWCDEDataSetskudetails1.xss">
+      <publishTime>04/27/2017 15:48:47</publishTime>
+    </File>
+    <File Include="GWCQADataSet.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSet.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetBOMDetailsQty.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetBOMDetailsQty.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetBOMDetailssss.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetBOMDetailssss.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetImageAudit.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetImageAudit.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetImageAuditFail.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetImageAuditFail.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetLeadTimeWithApprovers.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetLeadTimeWithApprovers.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetNewBOMDetails.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetNewBOMDetails.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetNewBomDetailss.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetNewBomDetailss.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetOrderDetailsWithApproval.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetOrderDetailsWithApproval.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuDetailsNew.xsc">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuDetailsNew.xss">
+      <publishTime>02/17/2017 12:37:25</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuDetailsNewAdded.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuDetailsNewAdded.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuReportWithImage.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSkuReportWithImage.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSKUTransaction.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSKUTransaction.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSKUTransactionArabic.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetSKUTransactionArabic.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserInformationWithImg.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserInformationWithImg.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserTransactionArabicRpt.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserTransactionArabicRpt.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserTransactionReport.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="GWCQADataSetUserTransactionReport.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="Image.aspx">
+      <publishTime>06/27/2017 11:32:54</publishTime>
+    </File>
+    <File Include="Image1.aspx">
+      <publishTime>06/27/2017 11:32:55</publishTime>
+    </File>
+    <File Include="Image2.aspx">
+      <publishTime>06/27/2017 11:32:56</publishTime>
+    </File>
+    <File Include="images/browse.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/btn-common-bg.jpg">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/opt-bg-normal.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/opt-bg-normal1.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/opt-bg-selected1.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/opt-bg-selected2.png">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="images/upload-animation.gif">
+      <publishTime>05/06/2017 12:55:52</publishTime>
+    </File>
+    <File Include="Inbox/Inbox.aspx">
+      <publishTime>06/27/2017 11:33:05</publishTime>
+    </File>
+    <File Include="Inbox/InboxPOR.aspx">
+      <publishTime>06/27/2017 11:33:05</publishTime>
+    </File>
+    <File Include="Inbox/PORInbox.aspx">
+      <publishTime>06/27/2017 11:33:06</publishTime>
+    </File>
+    <File Include="Invoice/InvoiceAddEdit.aspx">
+      <publishTime>07/05/2017 12:27:04</publishTime>
+    </File>
+    <File Include="Invoice/UCPaymentDetail.ascx">
+      <publishTime>07/05/2017 12:51:59</publishTime>
+    </File>
+    <File Include="Login/ChangeLockedPassword.aspx">
+      <publishTime>06/27/2017 11:33:06</publishTime>
+    </File>
+    <File Include="Login/ChangePassword.aspx">
+      <publishTime>06/27/2017 11:33:06</publishTime>
+    </File>
+    <File Include="Login/ForgotPassword.aspx">
+      <publishTime>06/27/2017 11:33:06</publishTime>
+    </File>
+    <File Include="Login/Index.aspx">
+      <publishTime>06/28/2017 11:12:59</publishTime>
+    </File>
+    <File Include="Login/Login.aspx">
+      <publishTime>08/23/2017 12:46:12</publishTime>
+    </File>
+    <File Include="Login/Logout.aspx">
+      <publishTime>06/27/2017 11:33:07</publishTime>
+    </File>
+    <File Include="Login/MyTest.aspx">
+      <publishTime>07/03/2017 14:09:35</publishTime>
+    </File>
+    <File Include="MasterPage/Background/header_bg.jpg">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/CRM.Master">
+      <publishTime>08/22/2017 11:03:45</publishTime>
+    </File>
+    <File Include="MasterPage/CRM2.Master">
+      <publishTime>06/27/2017 11:33:08</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/countries.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/crm.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/GetTrans.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/jquery-3.1.1.min.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/Script.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/Test.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/JavaScripts/Transaction.js">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/1.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/15.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/2.jpg">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Brill-logo.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/BrilliantWMSLogoOrange.png">
+      <publishTime>07/18/2017 12:21:39</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/brillwmslogo.png">
+      <publishTime>07/15/2017 17:21:38</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/brillwmslogoNEW.ico">
+      <publishTime>07/15/2017 17:35:43</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Cummins.ico">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Cumminslogo.gif">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/ElegantCRM.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Elegantcrm_104x31.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/ElegantCRM_footerlogo.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/ElegentCrmLogoCRMS.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/ElegentCrmLogoLoginPg.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/FullElegentCrmLogo.png">
+      <publishTime>05/06/2017 12:55:54</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/gharana_products.jpg">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/GWCBrandNewLogo.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/GWCIcon.ico">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Logo_Bg.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Partitionimg.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/Pic1.png">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/YourCompanyLogo.jpg">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="MasterPage/Logo/YourCompanyLogo1.jpg">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="Mobile/get-address.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-contact.ashx">
+      <publishTime>05/06/2017 12:55:55</publishTime>
+    </File>
+    <File Include="Mobile/get-image.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-item-details-by-template.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-product-billofmaterial.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-products-by-orderid.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-products-by-templateid.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/get-templates.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/images/no-preview.jpg">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/images/thumbnails/sfp/sfp.jpg">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/login-process.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/Login.htm">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/my-approval-item-details.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/my-approval-list.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/my-request-item-details.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/my-request-list.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/new-request-process.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/new-request.htm">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/product-item-list.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/search-product-item.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/set-approval.ashx">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="Mobile/set-approval.htm">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/Scripts/message.js">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/themes/message_default.css">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/themes/message_growl_dark.css">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/themes/message_growl_shiny.css">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/themes/message_skyblue.css">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="PopupMessages/themes/message_solid.css">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/AssetMaster.aspx">
+      <publishTime>06/27/2017 11:33:08</publishTime>
+    </File>
+    <File Include="POR/DashboardPOR.aspx">
+      <publishTime>07/24/2017 12:56:22</publishTime>
+    </File>
+    <File Include="POR/Dashboard_Enginewise.aspx">
+      <publishTime>06/27/2017 11:33:08</publishTime>
+    </File>
+    <File Include="POR/EngineMaster.aspx">
+      <publishTime>06/27/2017 11:33:09</publishTime>
+    </File>
+    <File Include="POR/Img/CUMMINS MRS User Guide 1.0.0.pdf">
+      <publishTime>05/06/2017 12:56:00</publishTime>
+    </File>
+    <File Include="POR/Img/PrdRpt.jpg">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/Img/report1.png">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/Img/Report2.png">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/Img/report3.png">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/Img/Report4.png">
+      <publishTime>05/06/2017 12:55:56</publishTime>
+    </File>
+    <File Include="POR/PORHome.aspx">
+      <publishTime>06/27/2017 11:33:09</publishTime>
+    </File>
+    <File Include="POR/Reports/ReportViewer.aspx">
+      <publishTime>06/27/2017 11:33:10</publishTime>
+    </File>
+    <File Include="POR/SiteMaster.aspx">
+      <publishTime>06/27/2017 11:33:09</publishTime>
+    </File>
+    <File Include="POR/ToolTransfer.aspx">
+      <publishTime>06/27/2017 11:33:10</publishTime>
+    </File>
+    <File Include="PowerOnRent/AddEditSearchAddress.aspx">
+      <publishTime>06/27/2017 11:33:10</publishTime>
+    </File>
+    <File Include="PowerOnRent/AddEditSearchContact.aspx">
+      <publishTime>06/27/2017 11:33:14</publishTime>
+    </File>
+    <File Include="PowerOnRent/AllocateDriver.aspx">
+      <publishTime>06/27/2017 11:33:15</publishTime>
+    </File>
+    <File Include="PowerOnRent/Approval.aspx">
+      <publishTime>06/27/2017 11:33:15</publishTime>
+    </File>
+    <File Include="PowerOnRent/bomDetails.aspx">
+      <publishTime>06/27/2017 11:33:15</publishTime>
+    </File>
+    <File Include="PowerOnRent/ChangeOrderProduct.aspx">
+      <publishTime>06/27/2017 11:33:15</publishTime>
+    </File>
+    <File Include="PowerOnRent/CommonReport.aspx">
+      <publishTime>09/02/2017 19:22:44</publishTime>
+    </File>
+    <File Include="PowerOnRent/Correspondance.aspx">
+      <publishTime>06/27/2017 11:33:16</publishTime>
+    </File>
+    <File Include="PowerOnRent/Default.aspx">
+      <publishTime>07/06/2017 18:35:26</publishTime>
+    </File>
+    <File Include="PowerOnRent/DirectImportD.aspx">
+      <publishTime>07/18/2017 16:37:27</publishTime>
+    </File>
+    <File Include="PowerOnRent/DirectImportV.aspx">
+      <publishTime>07/18/2017 16:38:39</publishTime>
+    </File>
+    <File Include="PowerOnRent/DirectOrderImport.xlsx">
+      <publishTime>05/15/2017 17:04:05</publishTime>
+    </File>
+    <File Include="PowerOnRent/GetLocation.aspx">
+      <publishTime>06/27/2017 11:33:17</publishTime>
+    </File>
+    <File Include="PowerOnRent/GridHQReceiptSummary.aspx">
+      <publishTime>06/27/2017 11:33:18</publishTime>
+    </File>
+    <File Include="PowerOnRent/GridIssueSummary.aspx">
+      <publishTime>06/27/2017 11:33:18</publishTime>
+    </File>
+    <File Include="PowerOnRent/GridReceiptSummary.aspx">
+      <publishTime>06/27/2017 11:33:18</publishTime>
+    </File>
+    <File Include="PowerOnRent/GridRequestSummary.aspx">
+      <publishTime>07/06/2017 18:35:17</publishTime>
+    </File>
+    <File Include="PowerOnRent/HQGoodsReceiptEntry.aspx">
+      <publishTime>06/27/2017 11:33:19</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/bom.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/delete_16.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/Pending.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/report1.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/Report2.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/report3.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/Report4.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/tick_16.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/Img/tool5.png">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/ImportOrderF.aspx">
+      <publishTime>07/18/2017 16:38:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/InterfaceDefination.aspx">
+      <publishTime>06/27/2017 11:33:19</publishTime>
+    </File>
+    <File Include="PowerOnRent/MessageDefination.aspx">
+      <publishTime>06/27/2017 11:33:19</publishTime>
+    </File>
+    <File Include="PowerOnRent/OrderImport/DirectOrderImport.xlsx">
+      <publishTime>05/06/2017 12:55:58</publishTime>
+    </File>
+    <File Include="PowerOnRent/PartIssueEntry.aspx">
+      <publishTime>06/27/2017 11:33:20</publishTime>
+    </File>
+    <File Include="PowerOnRent/PartReceiptEntry.aspx">
+      <publishTime>06/27/2017 11:33:21</publishTime>
+    </File>
+    <File Include="PowerOnRent/PartRequestEntry.aspx">
+      <publishTime>06/27/2017 11:33:24</publishTime>
+    </File>
+    <File Include="PowerOnRent/PORPartSearch.aspx">
+      <publishTime>06/27/2017 11:33:25</publishTime>
+    </File>
+    <File Include="PowerOnRent/RequestTemplate.aspx">
+      <publishTime>06/27/2017 11:33:26</publishTime>
+    </File>
+    <File Include="PowerOnRent/TemplateList.aspx">
+      <publishTime>06/27/2017 11:33:26</publishTime>
+    </File>
+    <File Include="PowerOnRent/TestFilter.aspx">
+      <publishTime>07/03/2017 13:02:29</publishTime>
+    </File>
+    <File Include="PowerOnRent/TransferFrmSite.aspx">
+      <publishTime>06/27/2017 11:33:27</publishTime>
+    </File>
+    <File Include="PowerOnRent/TransferFromSiteOLD.aspx">
+      <publishTime>06/27/2017 11:33:27</publishTime>
+    </File>
+    <File Include="PowerOnRent/UCCommonFilter.ascx">
+      <publishTime>09/02/2017 19:49:09</publishTime>
+    </File>
+    <File Include="Product/AddPacks.aspx">
+      <publishTime>08/22/2017 11:04:03</publishTime>
+    </File>
+    <File Include="Product/BINSearch.aspx">
+      <publishTime>08/22/2017 11:04:07</publishTime>
+    </File>
+    <File Include="Product/BOM.aspx">
+      <publishTime>06/27/2017 11:33:29</publishTime>
+    </File>
+    <File Include="Product/DiscountMaster.aspx">
+      <publishTime>07/18/2017 18:56:33</publishTime>
+    </File>
+    <File Include="Product/DisplaySkuImage.ashx">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/Distribution.aspx">
+      <publishTime>06/27/2017 11:33:30</publishTime>
+    </File>
+    <File Include="Product/EmailTemplate.aspx">
+      <publishTime>07/18/2017 18:56:33</publishTime>
+    </File>
+    <File Include="Product/ImportDSo.aspx">
+      <publishTime>07/18/2017 12:05:59</publishTime>
+    </File>
+    <File Include="Product/ImportFSo.aspx">
+      <publishTime>06/27/2017 11:33:31</publishTime>
+    </File>
+    <File Include="Product/ImportPrice/100skus.xlsx">
+      <publishTime>05/08/2017 17:50:21</publishTime>
+    </File>
+    <File Include="Product/ImportPrice/ImportPriceTemplate.xlsx">
+      <publishTime>04/17/2017 11:29:48</publishTime>
+    </File>
+    <File Include="Product/ImportPriceD.aspx">
+      <publishTime>06/27/2017 11:33:32</publishTime>
+    </File>
+    <File Include="Product/ImportPriceF.aspx">
+      <publishTime>06/27/2017 11:33:32</publishTime>
+    </File>
+    <File Include="Product/ImportPriceTemplate.xlsx">
+      <publishTime>03/31/2017 16:59:40</publishTime>
+    </File>
+    <File Include="Product/ImportPriceV.aspx">
+      <publishTime>06/27/2017 11:33:33</publishTime>
+    </File>
+    <File Include="Product/ImportVSo.aspx">
+      <publishTime>06/27/2017 11:33:33</publishTime>
+    </File>
+    <File Include="Product/InventryLocation.aspx">
+      <publishTime>08/31/2017 14:17:36</publishTime>
+    </File>
+    <File Include="Product/Pack.aspx">
+      <publishTime>06/27/2017 11:33:34</publishTime>
+    </File>
+    <File Include="Product/ProductCategoryMaster.aspx">
+      <publishTime>08/22/2017 11:04:07</publishTime>
+    </File>
+    <File Include="Product/ProductImage/Table1.png">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/ProductMaster.aspx">
+      <publishTime>08/31/2017 12:52:10</publishTime>
+    </File>
+    <File Include="Product/ProductSearch.aspx">
+      <publishTime>08/05/2017 14:21:23</publishTime>
+    </File>
+    <File Include="Product/ProductSubCategoryMaster.aspx">
+      <publishTime>08/22/2017 11:04:07</publishTime>
+    </File>
+    <File Include="Product/ProductVendor.aspx">
+      <publishTime>08/22/2017 11:04:07</publishTime>
+    </File>
+    <File Include="Product/SearchProduct.aspx">
+      <publishTime>06/27/2017 11:33:36</publishTime>
+    </File>
+    <File Include="Product/ShowImage.ashx">
+      <publishTime>08/22/2017 11:05:19</publishTime>
+    </File>
+    <File Include="Product/SKUSearch.aspx">
+      <publishTime>07/18/2017 12:06:26</publishTime>
+    </File>
+    <File Include="Product/TempImg/20520.png">
+      <publishTime>04/26/2017 18:52:49</publishTime>
+    </File>
+    <File Include="Product/TempImg/20521.png">
+      <publishTime>04/26/2017 18:49:16</publishTime>
+    </File>
+    <File Include="Product/TempImg/COMP101-18-18.png">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/MIS103-18-19.jpeg">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/MIS103-18-19.png">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/Prod018-10095-10148..png.png">
+      <publishTime>04/27/2017 18:03:00</publishTime>
+    </File>
+    <File Include="Product/TempImg/Prod018.png">
+      <publishTime>04/27/2017 18:02:49</publishTime>
+    </File>
+    <File Include="Product/TempImg/Prod019.png">
+      <publishTime>04/27/2017 12:01:36</publishTime>
+    </File>
+    <File Include="Product/TempImg/RAH1012-18-18.png">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/veoiq4gcihih3jdlkamrvhwf636084225971673317.jpeg">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/veoiq4gcihih3jdlkamrvhwf636084227274477833.jpeg">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/veoiq4gcihih3jdlkamrvhwf636084233317513475.jpeg">
+      <publishTime>02/17/2017 12:37:42</publishTime>
+    </File>
+    <File Include="Product/TempImg/veoiq4gcihih3jdlkamrvhwf636084235623755384.jpeg">
+      <publishTime>02/17/2017 12:37:43</publishTime>
+    </File>
+    <File Include="Product/TempImg/z1hswiejspzftbexwzzt2ixa634805676463013982.octet-stream">
+      <publishTime>02/17/2017 12:37:43</publishTime>
+    </File>
+    <File Include="Product/UCProductSearch.ascx">
+      <publishTime>06/27/2017 11:33:36</publishTime>
+    </File>
+    <File Include="Product/UDF.aspx">
+      <publishTime>08/22/2017 11:04:07</publishTime>
+    </File>
+    <File Include="Product/UOM.aspx">
+      <publishTime>06/27/2017 11:33:37</publishTime>
+    </File>
+    <File Include="Product/VirtualQty.aspx">
+      <publishTime>06/27/2017 11:33:38</publishTime>
+    </File>
+    <File Include="Product/WLocationSearch.aspx">
+      <publishTime>08/22/2017 11:05:19</publishTime>
+    </File>
+    <File Include="ProductBalance.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="ProductBalance.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="ReceiptDetails.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="ReceiptDetails.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.GetCustomerDetail.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.mClient.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.mCustomerType.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.mSector.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.mSLA.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.mVendor.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.SP_AcountHistory_Result.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.SP_CourseStudentWise_Result.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.tCustomerHead.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AccountSearchService/BrilliantWMS.AccountSearchService.tOpeningBalance.datasource">
+      <publishTime>09/01/2017 12:56:24</publishTime>
+    </File>
+    <File Include="Service References/AddressInfoService/BrilliantWMS.AddressInfoService.mRoute.datasource">
+      <publishTime>09/01/2017 12:56:32</publishTime>
+    </File>
+    <File Include="Service References/AddressInfoService/BrilliantWMS.AddressInfoService.mSubZone.datasource">
+      <publishTime>09/01/2017 12:56:32</publishTime>
+    </File>
+    <File Include="Service References/AddressInfoService/BrilliantWMS.AddressInfoService.mZone.datasource">
+      <publishTime>09/01/2017 12:56:32</publishTime>
+    </File>
+    <File Include="Service References/AddressInfoService/BrilliantWMS.AddressInfoService.SP_GetAddressListToBindGrid_Result.datasource">
+      <publishTime>09/01/2017 12:56:32</publishTime>
+    </File>
+    <File Include="Service References/AddressInfoService/BrilliantWMS.AddressInfoService.tAddress.datasource">
+      <publishTime>09/01/2017 12:56:32</publishTime>
+    </File>
+    <File Include="Service References/AddToCartService/BrilliantWMS.AddToCartService.SP_GetCartProductDetail_Result.datasource">
+      <publishTime>09/01/2017 12:56:37</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.mApprovalLevel.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.mApprovalLevelDetail.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.SP_GetUserForApprovalMaster_Result.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.SP_GWCGetApproverListBySp_Result.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.SP_GWCGetUserForApprovalMaster_Result.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.sysmObject.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/ApprovalLevelMasterService/BrilliantWMS.ApprovalLevelMasterService.vGWCGetApprovelevelDetail.datasource">
+      <publishTime>09/01/2017 12:56:42</publishTime>
+    </File>
+    <File Include="Service References/BindMenuService/BrilliantWMS.BindMenuService.ProBindMenu.datasource">
+      <publishTime>09/01/2017 12:56:47</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mAgreegator.datasource">
+      <publishTime>09/01/2017 12:56:54</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mAgreegatorAPI.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mChannel.datasource">
+      <publishTime>09/01/2017 12:56:54</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mCompany.datasource">
+      <publishTime>09/01/2017 12:56:54</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mConfiguration.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mCustomer.datasource">
+      <publishTime>09/01/2017 12:56:54</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mDropdownValue.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.mRateCard.datasource">
+      <publishTime>09/01/2017 12:56:54</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.tCompanyRegistrationDetail.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.tContactPersonDetail.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.vGetCompanyDetail.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.V_GetCustomerDetails1.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.V_WMS_GetChannelDetails1.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.V_WMS_GetClientDetails1.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.V_WMS_GetRateCardDetails1.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/CompanySetupService/BrilliantWMS.CompanySetupService.V_WMS_GetVendorDetails1.datasource">
+      <publishTime>09/01/2017 12:56:55</publishTime>
+    </File>
+    <File Include="Service References/ContactPerson/BrilliantWMS.ContactPerson.SP_GetContactPersonsByReferenceID_Result.datasource">
+      <publishTime>09/01/2017 12:57:00</publishTime>
+    </File>
+    <File Include="Service References/ContactTypeService/BrilliantWMS.ContactTypeService.mContactType.datasource">
+      <publishTime>09/01/2017 12:57:04</publishTime>
+    </File>
+    <File Include="Service References/CycleCountService/BrilliantWMS.CycleCountService.tCycleCountDetail.datasource">
+      <publishTime>09/01/2017 12:57:12</publishTime>
+    </File>
+    <File Include="Service References/CycleCountService/BrilliantWMS.CycleCountService.tCycleCountHead.datasource">
+      <publishTime>09/01/2017 12:57:12</publishTime>
+    </File>
+    <File Include="Service References/CycleCountService/BrilliantWMS.CycleCountService.V_WMS_GetHeadCycleCount.datasource">
+      <publishTime>09/01/2017 12:57:12</publishTime>
+    </File>
+    <File Include="Service References/DepartmentService/BrilliantWMS.DepartmentService.mDepartment.datasource">
+      <publishTime>09/01/2017 12:57:17</publishTime>
+    </File>
+    <File Include="Service References/DepartmentService/BrilliantWMS.DepartmentService.V_WMS_GetDepartmentGrid.datasource">
+      <publishTime>09/01/2017 12:57:17</publishTime>
+    </File>
+    <File Include="Service References/DepartmentService/BrilliantWMS.DepartmentService.V_WMS_GetDepartmentList.datasource">
+      <publishTime>09/01/2017 12:57:17</publishTime>
+    </File>
+    <File Include="Service References/DesignationService/BrilliantWMS.DesignationService.mDesignation.datasource">
+      <publishTime>09/01/2017 12:57:21</publishTime>
+    </File>
+    <File Include="Service References/DesignationService/BrilliantWMS.DesignationService.V_WMS_GetDesignationList.datasource">
+      <publishTime>09/01/2017 12:57:21</publishTime>
+    </File>
+    <File Include="Service References/DocumentService/BrilliantWMS.DocumentService.mDocumentType.datasource">
+      <publishTime>09/01/2017 12:57:26</publishTime>
+    </File>
+    <File Include="Service References/DocumentService/BrilliantWMS.DocumentService.SP_GetDocumentList_Result.datasource">
+      <publishTime>09/01/2017 12:57:26</publishTime>
+    </File>
+    <File Include="Service References/InboxService/BrilliantWMS.InboxService.POR_vGetInboxData.datasource">
+      <publishTime>09/01/2017 12:57:31</publishTime>
+    </File>
+    <File Include="Service References/InboxService/BrilliantWMS.InboxService.SP_GetInboxDataOfApproval_Result.datasource">
+      <publishTime>09/01/2017 12:57:31</publishTime>
+    </File>
+    <File Include="Service References/InboxService/BrilliantWMS.InboxService.SP_GetInboxData_Result.datasource">
+      <publishTime>09/01/2017 12:57:31</publishTime>
+    </File>
+    <File Include="Service References/PORDashboardService/BrilliantWMS.PORDashboardService.POR_Dashboard_UserWise.datasource">
+      <publishTime>09/01/2017 12:57:41</publishTime>
+    </File>
+    <File Include="Service References/PORServiceEngineMaster/BrilliantWMS.PORServiceEngineMaster.v_GetEngineDetails.datasource">
+      <publishTime>09/01/2017 12:57:46</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartIssue/BrilliantWMS.PORServicePartIssue.mStatu.datasource">
+      <publishTime>09/01/2017 12:57:50</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartIssue/BrilliantWMS.PORServicePartIssue.PORtMINHead.datasource">
+      <publishTime>09/01/2017 12:57:50</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartIssue/BrilliantWMS.PORServicePartIssue.POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result.datasource">
+      <publishTime>09/01/2017 12:57:50</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartIssue/BrilliantWMS.PORServicePartIssue.POR_SP_GetPartDetails_OfMIN_Result.datasource">
+      <publishTime>09/01/2017 12:57:50</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartReceipts/BrilliantWMS.PORServicePartReceipts.mStatu.datasource">
+      <publishTime>09/01/2017 12:57:55</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartReceipts/BrilliantWMS.PORServicePartReceipts.PORtGRNHead.datasource">
+      <publishTime>09/01/2017 12:57:55</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartReceipts/BrilliantWMS.PORServicePartReceipts.POR_SP_GetPartDetails_OfGRN_Result.datasource">
+      <publishTime>09/01/2017 12:57:55</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartReceipts/BrilliantWMS.PORServicePartReceipts.POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID_Result.datasource">
+      <publishTime>09/01/2017 12:57:55</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.mCostCenterMain.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.mPaymentMethodDetail.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.mRequestTemplateHead.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.mStatu.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.PORtPartRequestHead.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.POR_SP_GetPartDetail_ForRequest_Result.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.POR_SP_GetRequestByRequestIDs_Result.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.POR_SP_GetRequestBySiteIDsOrUserID_Result.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.tApprovalDetail.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.tCorrespond.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.tOrderHead.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.VW_DeptWisePaymentMethod.datasource">
+      <publishTime>09/01/2017 12:58:03</publishTime>
+    </File>
+    <File Include="Service References/PORServicePartRequest/BrilliantWMS.PORServicePartRequest.VW_OrderDeliveryDetails.datasource">
+      <publishTime>09/01/2017 12:58:02</publishTime>
+    </File>
+    <File Include="Service References/PORServiceSiteMaster/BrilliantWMS.PORServiceSiteMaster.mTerritory.datasource">
+      <publishTime>09/01/2017 12:58:07</publishTime>
+    </File>
+    <File Include="Service References/PORServiceSiteMaster/BrilliantWMS.PORServiceSiteMaster.v_GetSiteDetails.datasource">
+      <publishTime>09/01/2017 12:58:07</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.GetPrdDetail.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.mBOMHeader.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.mCompany.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.mStatu.datasource">
+      <publishTime>09/03/2017 14:09:06</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.mTerritory.datasource">
+      <publishTime>09/03/2017 14:09:06</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.SP_GetUsers_Result.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.SP_GWC_GetUserInfoRoleWise_Result.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.SP_GWC_GetUserInfo_Result.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.tAddress.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.tContactPersonDetail.datasource">
+      <publishTime>09/03/2017 14:09:06</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.vGetUserProfileByUserID.datasource">
+      <publishTime>09/03/2017 14:09:06</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.VW_GetSKUAndRequestDetails.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.VW_GetUserInformation.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.VW_GetUserLocation.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.VW_GWC_SkuFilter.datasource">
+      <publishTime>09/03/2017 14:09:05</publishTime>
+    </File>
+    <File Include="Service References/PORServiceUCCommonFilter/BrilliantWMS.PORServiceUCCommonFilter.v_GetEngineDetails.datasource">
+      <publishTime>09/03/2017 14:09:06</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.mDropdownValue.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.mInterfaceMap.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.mProductCategory.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.vGetProductCagetoryList.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.vGetTemplateList1.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductCategoryService/BrilliantWMS.ProductCategoryService.V_WMS_ProductCategory.datasource">
+      <publishTime>09/01/2017 12:58:24</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.GetProductDetail.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.mProduct.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.mProductRateDetail.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.mProductSpecificationDetail.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.mProductType.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.mUOM.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.POR_SP_SiteWiseTools_Result.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.POR_VW_ToolTransferDetails.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.SP_GetProductMasterTaxSetupByProductID_Result.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.SP_GetSiteWiseInventoryByProductIDs_Result.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.tImage.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.tToolTransferHead.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.VW_ToolSiteHistoryDetail.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.V_WMS_GetProductChannel.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductMasterService/BrilliantWMS.ProductMasterService.V_WMS_GetProductInventryLocation.datasource">
+      <publishTime>09/01/2017 12:58:34</publishTime>
+    </File>
+    <File Include="Service References/ProductSubCategoryService/BrilliantWMS.ProductSubCategoryService.mProductSubCategory.datasource">
+      <publishTime>09/01/2017 12:58:38</publishTime>
+    </File>
+    <File Include="Service References/ProductSubCategoryService/BrilliantWMS.ProductSubCategoryService.vGetProductSubCagetoryList.datasource">
+      <publishTime>09/01/2017 12:58:38</publishTime>
+    </File>
+    <File Include="Service References/ProductUOMService/BrilliantWMS.ProductUOMService.mUOM.datasource">
+      <publishTime>09/01/2017 12:58:42</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.mRole.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.SP_GetDataToBindRoleMaster_Result.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.SP_GWCGetDataToBindRoleMaster_Result.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.vGetGWCRoleMasterData.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.vGetRoleMasterData.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/RoleMasterService/BrilliantWMS.RoleMasterService.VGetRollNameByDeptID.datasource">
+      <publishTime>09/01/2017 12:58:47</publishTime>
+    </File>
+    <File Include="Service References/ServiceContactPersonInfo/BrilliantWMS.ServiceContactPersonInfo.mContactType.datasource">
+      <publishTime>09/01/2017 12:58:51</publishTime>
+    </File>
+    <File Include="Service References/ServiceContactPersonInfo/BrilliantWMS.ServiceContactPersonInfo.SP_GetContactPersonListToBindGridLead_Result.datasource">
+      <publishTime>09/01/2017 12:58:51</publishTime>
+    </File>
+    <File Include="Service References/ServiceContactPersonInfo/BrilliantWMS.ServiceContactPersonInfo.SP_GetContactPersonListToBindGrid_Result.datasource">
+      <publishTime>09/01/2017 12:58:51</publishTime>
+    </File>
+    <File Include="Service References/ServiceTerritory/BrilliantWMS.ServiceTerritory.mTerritory.datasource">
+      <publishTime>09/01/2017 12:58:55</publishTime>
+    </File>
+    <File Include="Service References/ServiceTerritory/BrilliantWMS.ServiceTerritory.vGetUserProfileList.datasource">
+      <publishTime>09/01/2017 12:58:55</publishTime>
+    </File>
+    <File Include="Service References/StatutoryService/BrilliantWMS.StatutoryService.mStatutory.datasource">
+      <publishTime>09/01/2017 12:59:00</publishTime>
+    </File>
+    <File Include="Service References/TaxMasterService/BrilliantWMS.TaxMasterService.mTaxSetup.datasource">
+      <publishTime>09/01/2017 12:59:04</publishTime>
+    </File>
+    <File Include="Service References/TermsConditionMasterService/BrilliantWMS.TermsConditionMasterService.mDropdownValue.datasource">
+      <publishTime>09/01/2017 12:59:09</publishTime>
+    </File>
+    <File Include="Service References/TermsConditionMasterService/BrilliantWMS.TermsConditionMasterService.mTermsCondition.datasource">
+      <publishTime>09/01/2017 12:59:09</publishTime>
+    </File>
+    <File Include="Service References/TermsConditionMasterService/BrilliantWMS.TermsConditionMasterService.mTermsConditionsGroup.datasource">
+      <publishTime>09/01/2017 12:59:09</publishTime>
+    </File>
+    <File Include="Service References/ToolbarService/BrilliantWMS.ToolbarService.mUserRolesDetail.datasource">
+      <publishTime>09/01/2017 12:59:14</publishTime>
+    </File>
+    <File Include="Service References/UCApplyTaxService/BrilliantWMS.UCApplyTaxService.SP_CartBeforeUpdateProductLevelTaxDetail_Result.datasource">
+      <publishTime>09/01/2017 12:59:26</publishTime>
+    </File>
+    <File Include="Service References/UCApplyTaxService/BrilliantWMS.UCApplyTaxService.TempCartProductLevelTaxDetail.datasource">
+      <publishTime>09/01/2017 12:59:26</publishTime>
+    </File>
+    <File Include="Service References/UCProductSearchService/BrilliantWMS.UCProductSearchService.GetProductDetail.datasource">
+      <publishTime>09/01/2017 12:59:30</publishTime>
+    </File>
+    <File Include="Service References/UCProductSearchService/BrilliantWMS.UCProductSearchService.mProduct.datasource">
+      <publishTime>09/01/2017 12:59:30</publishTime>
+    </File>
+    <File Include="Service References/UCProductSearchService/BrilliantWMS.UCProductSearchService.VW_GetSKUDetailsWithPack.datasource">
+      <publishTime>09/01/2017 12:59:30</publishTime>
+    </File>
+    <File Include="Service References/UC_ApprovalService/BrilliantWMS.UC_ApprovalService.tApprovalDetail.datasource">
+      <publishTime>09/01/2017 12:59:18</publishTime>
+    </File>
+    <File Include="Service References/UC_StatutoryServices/BrilliantWMS.UC_StatutoryServices.SP_GetStatutoryDetails_Result.datasource">
+      <publishTime>09/01/2017 12:59:22</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.mCompany.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.mDropdownValue.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.mUserProfileHead.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.SP_GetUserRoleDetail_Result.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.SP_GWCGetUserRoleDetail_Result.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.vGetUserProfileByUserID.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.vGetUserProfileList.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.vGWCGetUserList.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/UserCreationService/BrilliantWMS.UserCreationService.vGWCGetUserProfileList.datasource">
+      <publishTime>09/01/2017 12:59:36</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mDropdownValue.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mFloar.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mPathway.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mSection.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mShelf.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mWarehouseBuilding.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.mWarehouseMaster.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.tAddress.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.V_WMS_GetWarehouseDetails.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.V_WMS_GetWareLocationByLocID.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WarehouseService/BrilliantWMS.WarehouseService.V_WMS_WarehouseLocation.datasource">
+      <publishTime>09/01/2017 12:59:41</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.mClient.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.mStatu.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.mVendor.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.mWarehouseMaster.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.tASNHead.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.tLoaderDetail.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.tOrderHead.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.tPurchaseOrderHead.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.tTransferHead.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetails_ForGRN_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetails_ForQC_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetail_ForDispatch_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetail_ForPO_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetail_ForSO_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_GetPartDetail_ForTransfer_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_PickUpList_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_SP_PutInList_Result.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_VW_GetDispatchDetails.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_VW_GetGRNDetails.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_VW_GetLocationDetails.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSInbound/BrilliantWMS.WMSInbound.WMS_VW_GetQCDetails.datasource">
+      <publishTime>09/01/2017 12:59:57</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.mClient.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.mCustomer.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.mStatu.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.mVendor.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.mWarehouseMaster.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.tASNHead.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.tLoaderDetail.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.tOrderHead.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.tPurchaseOrderHead.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.tTransferHead.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetails_ForGRN_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetails_ForQC_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetail_ForDispatch_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetail_ForPO_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetail_ForSO_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_GetPartDetail_ForTransfer_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_PickUpList_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_SP_PutInList_Result.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_VW_GetDispatchDetails.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_VW_GetGRNDetails.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_VW_GetLocationDetails.datasource">
+      <publishTime>09/02/2017 11:01:39</publishTime>
+    </File>
+    <File Include="Service References/WMSOutbound/BrilliantWMS.WMSOutbound.WMS_VW_GetQCDetails.datasource">
+      <publishTime>09/02/2017 11:01:38</publishTime>
+    </File>
+    <File Include="SiteTransfer.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="SiteTransfer.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="SKUDataSet.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="SKUDataSet.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="SKUDataSet1.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="SKUDataSet1.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="Tax/ApplyTax.aspx">
+      <publishTime>07/24/2017 16:41:31</publishTime>
+    </File>
+    <File Include="Tax/StatutoryMaster.aspx">
+      <publishTime>08/22/2017 11:06:03</publishTime>
+    </File>
+    <File Include="Tax/TaxMaster.aspx">
+      <publishTime>08/22/2017 11:06:05</publishTime>
+    </File>
+    <File Include="Tax/UC_StatutoryDetails.ascx">
+      <publishTime>07/07/2017 16:52:19</publishTime>
+    </File>
+    <File Include="Territory/TestTR.aspx">
+      <publishTime>06/27/2017 11:33:38</publishTime>
+    </File>
+    <File Include="Territory/UC_Territory.ascx">
+      <publishTime>06/27/2017 11:33:39</publishTime>
+    </File>
+    <File Include="UserDataSet.xsc">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="UserDataSet.xss">
+      <publishTime>02/17/2017 12:37:26</publishTime>
+    </File>
+    <File Include="UserManagement/Delegation.aspx">
+      <publishTime>06/27/2017 11:33:39</publishTime>
+    </File>
+    <File Include="UserManagement/DepartmentMaster.aspx">
+      <publishTime>08/22/2017 11:06:16</publishTime>
+    </File>
+    <File Include="UserManagement/Designation.aspx">
+      <publishTime>08/22/2017 11:06:37</publishTime>
+    </File>
+    <File Include="UserManagement/DesignationMaster.aspx">
+      <publishTime>08/22/2017 11:06:16</publishTime>
+    </File>
+    <File Include="UserManagement/LocationList.aspx">
+      <publishTime>06/27/2017 11:33:41</publishTime>
+    </File>
+    <File Include="UserManagement/ProfileSetting.aspx">
+      <publishTime>06/27/2017 11:33:41</publishTime>
+    </File>
+    <File Include="UserManagement/RoleMaster.aspx">
+      <publishTime>08/22/2017 11:06:16</publishTime>
+    </File>
+    <File Include="UserManagement/UserCreation.aspx">
+      <publishTime>08/31/2017 11:31:25</publishTime>
+    </File>
+    <File Include="UserManagement/UserList.aspx">
+      <publishTime>06/27/2017 11:33:42</publishTime>
+    </File>
+    <File Include="UserManagement/WarehouseList.aspx">
+      <publishTime>07/17/2017 17:52:03</publishTime>
+    </File>
+    <File Include="Warehouse/CreateGroup.aspx">
+      <publishTime>07/08/2017 10:49:22</publishTime>
+    </File>
+    <File Include="Warehouse/CycleAdjustmentEntry.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/CycleCount.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/CycleCountPlan.aspx">
+      <publishTime>08/22/2017 11:08:07</publishTime>
+    </File>
+    <File Include="Warehouse/CycleLocSearch.aspx">
+      <publishTime>08/22/2017 11:08:07</publishTime>
+    </File>
+    <File Include="Warehouse/CycleSKUSearch.aspx">
+      <publishTime>08/22/2017 11:08:07</publishTime>
+    </File>
+    <File Include="Warehouse/ImportLocation.aspx">
+      <publishTime>08/31/2017 12:46:43</publishTime>
+    </File>
+    <File Include="Warehouse/LocationBySKU.aspx">
+      <publishTime>08/22/2017 11:08:07</publishTime>
+    </File>
+    <File Include="Warehouse/LocationImport.xlsx">
+      <publishTime>08/31/2017 12:42:13</publishTime>
+    </File>
+    <File Include="Warehouse/StoreMaster.aspx">
+      <publishTime>07/18/2017 16:17:31</publishTime>
+    </File>
+    <File Include="Warehouse/UCLocation.ascx">
+      <publishTime>07/08/2017 10:49:22</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseBuilding.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseFloar.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseLocation.aspx">
+      <publishTime>08/31/2017 12:21:38</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseMaster.aspx">
+      <publishTime>08/31/2017 12:43:25</publishTime>
+    </File>
+    <File Include="Warehouse/WarehousePassage.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseSection.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/WarehouseShelf.aspx">
+      <publishTime>08/22/2017 11:07:20</publishTime>
+    </File>
+    <File Include="Warehouse/WSKUSearch.aspx">
+      <publishTime>08/22/2017 11:08:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/03/2017 14:10:01</publishTime>
+    </File>
+    <File Include="WMS/AsnDetail.aspx">
+      <publishTime>08/31/2017 20:19:04</publishTime>
+    </File>
+    <File Include="WMS/AssignTask.aspx">
+      <publishTime>07/31/2017 15:49:29</publishTime>
+    </File>
+    <File Include="WMS/CreditNote.aspx">
+      <publishTime>07/07/2017 18:50:33</publishTime>
+    </File>
+    <File Include="WMS/DebitNote.aspx">
+      <publishTime>07/07/2017 18:50:35</publishTime>
+    </File>
+    <File Include="WMS/Dispatch.aspx">
+      <publishTime>08/11/2017 17:20:15</publishTime>
+    </File>
+    <File Include="WMS/DispatchDetails.aspx">
+      <publishTime>09/01/2017 12:24:11</publishTime>
+    </File>
+    <File Include="WMS/GridGRN.aspx">
+      <publishTime>08/15/2017 11:39:37</publishTime>
+    </File>
+    <File Include="WMS/GRNDetail.aspx">
+      <publishTime>09/01/2017 12:27:29</publishTime>
+    </File>
+    <File Include="WMS/ImportDPO.aspx">
+      <publishTime>07/18/2017 17:33:42</publishTime>
+    </File>
+    <File Include="WMS/ImportDReturn.aspx">
+      <publishTime>07/18/2017 17:33:52</publishTime>
+    </File>
+    <File Include="WMS/ImportDTrsnsfer.aspx">
+      <publishTime>07/18/2017 16:53:02</publishTime>
+    </File>
+    <File Include="WMS/ImportFPO.aspx">
+      <publishTime>07/18/2017 16:27:27</publishTime>
+    </File>
+    <File Include="WMS/ImportFReturn.aspx">
+      <publishTime>07/18/2017 17:28:02</publishTime>
+    </File>
+    <File Include="WMS/ImportFTransfer.aspx">
+      <publishTime>07/18/2017 17:03:45</publishTime>
+    </File>
+    <File Include="WMS/ImportVPO.aspx">
+      <publishTime>07/18/2017 16:19:17</publishTime>
+    </File>
+    <File Include="WMS/ImportVReturn.aspx">
+      <publishTime>07/18/2017 17:22:44</publishTime>
+    </File>
+    <File Include="WMS/ImportVTranfer.aspx">
+      <publishTime>07/18/2017 16:57:50</publishTime>
+    </File>
+    <File Include="WMS/Inbound.aspx">
+      <publishTime>09/01/2017 11:36:17</publishTime>
+    </File>
+    <File Include="WMS/LabelPrinting.aspx">
+      <publishTime>08/04/2017 17:42:04</publishTime>
+    </File>
+    <File Include="WMS/Loader.aspx">
+      <publishTime>09/01/2017 11:29:51</publishTime>
+    </File>
+    <File Include="WMS/LocationSearch.aspx">
+      <publishTime>08/05/2017 16:16:00</publishTime>
+    </File>
+    <File Include="WMS/Outbound.aspx">
+      <publishTime>09/01/2017 12:01:37</publishTime>
+    </File>
+    <File Include="WMS/PickUp.aspx">
+      <publishTime>09/01/2017 12:33:48</publishTime>
+    </File>
+    <File Include="WMS/PickUpList.aspx">
+      <publishTime>09/01/2017 12:12:04</publishTime>
+    </File>
+    <File Include="WMS/PurchaseOrder.aspx">
+      <publishTime>09/01/2017 12:29:40</publishTime>
+    </File>
+    <File Include="WMS/PutIn.aspx">
+      <publishTime>09/01/2017 12:34:41</publishTime>
+    </File>
+    <File Include="WMS/PutInList.aspx">
+      <publishTime>07/15/2017 13:01:12</publishTime>
+    </File>
+    <File Include="WMS/QCDetail.aspx">
+      <publishTime>09/01/2017 12:28:52</publishTime>
+    </File>
+    <File Include="WMS/QualityControl.aspx">
+      <publishTime>08/11/2017 14:38:17</publishTime>
+    </File>
+    <File Include="WMS/Return.aspx">
+      <publishTime>08/11/2017 20:19:59</publishTime>
+    </File>
+    <File Include="WMS/ReturnDetail.aspx">
+      <publishTime>08/11/2017 20:02:23</publishTime>
+    </File>
+    <File Include="WMS/SalesOrder.aspx">
+      <publishTime>09/01/2017 12:29:54</publishTime>
+    </File>
+    <File Include="WMS/Transfer.aspx">
+      <publishTime>08/18/2017 16:56:31</publishTime>
+    </File>
+    <File Include="WMS/WMSReport/ReportViewer.aspx">
+      <publishTime>07/17/2017 12:07:18</publishTime>
+    </File>
+    <File Include="WMS/WToWTransferDetail.aspx">
+      <publishTime>09/01/2017 12:29:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

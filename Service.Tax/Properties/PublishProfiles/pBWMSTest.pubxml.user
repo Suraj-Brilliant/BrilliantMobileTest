@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Domain.Server.dll">
+      <publishTime>08/29/2017 18:10:36</publishTime>
+    </File>
+    <File Include="bin/Domain.Tax.dll">
+      <publishTime>09/01/2017 12:55:06</publishTime>
+    </File>
+    <File Include="bin/Domain.Tempdata.dll">
+      <publishTime>08/31/2017 14:42:50</publishTime>
+    </File>
+    <File Include="bin/Interface.Tax.dll">
+      <publishTime>09/01/2017 12:55:06</publishTime>
+    </File>
+    <File Include="bin/Service.Tax.dll">
+      <publishTime>09/01/2017 12:55:07</publishTime>
+    </File>
+    <File Include="StatutoryService.svc">
+      <publishTime>07/24/2017 12:56:30</publishTime>
+    </File>
+    <File Include="TaxMasterService.svc">
+      <publishTime>07/24/2017 12:56:30</publishTime>
+    </File>
+    <File Include="UCApplyTaxService.svc">
+      <publishTime>07/24/2017 12:56:30</publishTime>
+    </File>
+    <File Include="UC_StatutoryService.svc">
+      <publishTime>07/24/2017 12:56:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/26/2017 12:48:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

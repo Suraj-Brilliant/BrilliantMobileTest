@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.Tax.StatutoryService" CodeBehind="StatutoryService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>

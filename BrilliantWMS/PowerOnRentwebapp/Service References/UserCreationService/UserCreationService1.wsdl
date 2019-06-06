@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserCreationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/BrilliantWMSServices/Service.UserManagement/UserCreationService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iUserCreation_GetUserCreationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCreationList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserCreationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCreationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_InsertUserCreation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserCreation" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_InsertUserCreation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserCreationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateUserProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateUserProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SelectEmployeeDepartmentwise_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectEmployeeDepartmentwise" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SelectEmployeeDepartmentwise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectEmployeeDepartmentwiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_checkDuplicateRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecord" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_checkDuplicateRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_checkDuplicateRecordEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEdit" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_checkDuplicateRecordEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkDuplicateRecordEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_FinalSaveUserRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveUserRoles" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_FinalSaveUserRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveUserRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateRoleIntoSessionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleIntoSessionList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateRoleIntoSessionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleIntoSessionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDataToBindRoleMasterDetailsByRoleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataToBindRoleMasterDetailsByRoleID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDataToBindRoleMasterDetailsByRoleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataToBindRoleMasterDetailsByRoleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserProfileByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserProfileByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SaveUsersLocationDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUsersLocationDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SaveUsersLocationDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUsersLocationDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetLocationListByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationListByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetLocationListByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationListByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetHTMLMenuByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHTMLMenuByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetHTMLMenuByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHTMLMenuByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetHTMLMenuArabicByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHTMLMenuArabicByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetHTMLMenuArabicByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHTMLMenuArabicByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetTerritoryID_FromUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerritoryID_FromUserId" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetTerritoryID_FromUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerritoryID_FromUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetSiteNameFromId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameFromId" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetSiteNameFromId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNameFromIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetCompanyName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyName" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetCompanyName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetGWCUserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCUserList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetGWCUserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGWCUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserType" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_FinalSaveGWCUserRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveGWCUserRoles" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_FinalSaveGWCUserRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveGWCUserRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetRoleDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetRoleDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GWCSearchUserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GWCSearchUserList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GWCSearchUserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GWCSearchUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserDelegationDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDelegationDetail" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserDelegationDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDelegationDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SaveEditUserDelegation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEditUserDelegation" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SaveEditUserDelegation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEditUserDelegationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getUserDelegateDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserDelegateDetail" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getUserDelegateDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserDelegateDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getDelegateToList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDelegateToList" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getDelegateToList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDelegateToListResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateDelegateFrom_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDelegateFrom" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_UpdateDelegateFrom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDelegateFromResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentforUsersave_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentforUsersave" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentforUsersave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentforUsersaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetRollNameById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRollNameById" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetRollNameById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRollNameByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserTypeByRoll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTypeByRoll" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserTypeByRoll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTypeByRollResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_CheckPasswordHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPasswordHistory" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_CheckPasswordHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPasswordHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SavePasswordDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePasswordDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_SavePasswordDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePasswordDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDepartment" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getDelegateToListMultipleDept_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDelegateToListMultipleDept" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_getDelegateToListMultipleDept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDelegateToListMultipleDeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_updatelockunlock_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatelockunlock" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_updatelockunlock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatelockunlockResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetLogoPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogoPath" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetLogoPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogoPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetApprovalDetailsOfUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsOfUser" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetApprovalDetailsOfUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsOfUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetAdditionalDistributationOfUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdditionalDistributationOfUser" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetAdditionalDistributationOfUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdditionalDistributationOfUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentDelegate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentDelegate" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentDelegate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentDelegateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentSSuperAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentSSuperAdmin" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDepartmentSSuperAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentSSuperAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_Deletedelegate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Deletedelegate" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_Deletedelegate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletedelegateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDuplicateDelegate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateDelegate" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDuplicateDelegate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateDelegateResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_CheckOneDayValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOneDayValidation" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_CheckOneDayValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOneDayValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserNameByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByID" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserNameByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetComppanyLogo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComppanyLogo" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetComppanyLogo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComppanyLogoResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserLoginDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoginDetails" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetUserLoginDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoginDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_InsertIntoUserLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoUserLocation" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_InsertIntoUserLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoUserLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDuplicatlocationUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicatlocationUser" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetDuplicatlocationUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicatlocationUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_RemoveUserLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserLoc" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_RemoveUserLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetAllHTMLMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHTMLMenu" />
+  </wsdl:message>
+  <wsdl:message name="iUserCreation_GetAllHTMLMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHTMLMenuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iUserCreation">
+    <wsdl:operation name="GetUserCreationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserCreationList" message="tns:iUserCreation_GetUserCreationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserCreationListResponse" message="tns:iUserCreation_GetUserCreationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserCreation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/InsertUserCreation" message="tns:iUserCreation_InsertUserCreation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/InsertUserCreationResponse" message="tns:iUserCreation_InsertUserCreation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/UpdateUserProfile" message="tns:iUserCreation_UpdateUserProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/UpdateUserProfileResponse" message="tns:iUserCreation_UpdateUserProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserByID" message="tns:iUserCreation_GetUserByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserByIDResponse" message="tns:iUserCreation_GetUserByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectEmployeeDepartmentwise">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/SelectEmployeeDepartmentwise" message="tns:iUserCreation_SelectEmployeeDepartmentwise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/SelectEmployeeDepartmentwiseResponse" message="tns:iUserCreation_SelectEmployeeDepartmentwise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/checkDuplicateRecord" message="tns:iUserCreation_checkDuplicateRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/checkDuplicateRecordResponse" message="tns:iUserCreation_checkDuplicateRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/checkDuplicateRecordEdit" message="tns:iUserCreation_checkDuplicateRecordEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/checkDuplicateRecordEditResponse" message="tns:iUserCreation_checkDuplicateRecordEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveUserRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/FinalSaveUserRoles" message="tns:iUserCreation_FinalSaveUserRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/FinalSaveUserRolesResponse" message="tns:iUserCreation_FinalSaveUserRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleIntoSessionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/UpdateRoleIntoSessionList" message="tns:iUserCreation_UpdateRoleIntoSessionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/UpdateRoleIntoSessionListResponse" message="tns:iUserCreation_UpdateRoleIntoSessionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataToBindRoleMasterDetailsByRoleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDataToBindRoleMasterDetailsByRoleID" message="tns:iUserCreation_GetDataToBindRoleMasterDetailsByRoleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDataToBindRoleMasterDetailsByRoleIDResponse" message="tns:iUserCreation_GetDataToBindRoleMasterDetailsByRoleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserList" message="tns:iUserCreation_GetUserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserListResponse" message="tns:iUserCreation_GetUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserProfileByUserID" message="tns:iUserCreation_GetUserProfileByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserProfileByUserIDResponse" message="tns:iUserCreation_GetUserProfileByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUsersLocationDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/SaveUsersLocationDetails" message="tns:iUserCreation_SaveUsersLocationDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/SaveUsersLocationDetailsResponse" message="tns:iUserCreation_SaveUsersLocationDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationListByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetLocationListByUserID" message="tns:iUserCreation_GetLocationListByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetLocationListByUserIDResponse" message="tns:iUserCreation_GetLocationListByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHTMLMenuByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetHTMLMenuByUserID" message="tns:iUserCreation_GetHTMLMenuByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetHTMLMenuByUserIDResponse" message="tns:iUserCreation_GetHTMLMenuByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHTMLMenuArabicByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetHTMLMenuArabicByUserID" message="tns:iUserCreation_GetHTMLMenuArabicByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetHTMLMenuArabicByUserIDResponse" message="tns:iUserCreation_GetHTMLMenuArabicByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerritoryID_FromUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetTerritoryID_FromUserId" message="tns:iUserCreation_GetTerritoryID_FromUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetTerritoryID_FromUserIdResponse" message="tns:iUserCreation_GetTerritoryID_FromUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameFromId">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetSiteNameFromId" message="tns:iUserCreation_GetSiteNameFromId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetSiteNameFromIdResponse" message="tns:iUserCreation_GetSiteNameFromId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetCompanyName" message="tns:iUserCreation_GetCompanyName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetCompanyNameResponse" message="tns:iUserCreation_GetCompanyName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCUserList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetGWCUserList" message="tns:iUserCreation_GetGWCUserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetGWCUserListResponse" message="tns:iUserCreation_GetGWCUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserType">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserType" message="tns:iUserCreation_GetUserType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserTypeResponse" message="tns:iUserCreation_GetUserType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveGWCUserRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/FinalSaveGWCUserRoles" message="tns:iUserCreation_FinalSaveGWCUserRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/FinalSaveGWCUserRolesResponse" message="tns:iUserCreation_FinalSaveGWCUserRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetRoleDetails" message="tns:iUserCreation_GetRoleDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetRoleDetailsResponse" message="tns:iUserCreation_GetRoleDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GWCSearchUserList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GWCSearchUserList" message="tns:iUserCreation_GWCSearchUserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GWCSearchUserListResponse" message="tns:iUserCreation_GWCSearchUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDelegationDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserDelegationDetail" message="tns:iUserCreation_GetUserDelegationDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserDelegationDetailResponse" message="tns:iUserCreation_GetUserDelegationDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEditUserDelegation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/SaveEditUserDelegation" message="tns:iUserCreation_SaveEditUserDelegation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/SaveEditUserDelegationResponse" message="tns:iUserCreation_SaveEditUserDelegation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDelegateDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/getUserDelegateDetail" message="tns:iUserCreation_getUserDelegateDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/getUserDelegateDetailResponse" message="tns:iUserCreation_getUserDelegateDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDelegateToList">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/getDelegateToList" message="tns:iUserCreation_getDelegateToList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/getDelegateToListResponse" message="tns:iUserCreation_getDelegateToList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDelegateFrom">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/UpdateDelegateFrom" message="tns:iUserCreation_UpdateDelegateFrom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/UpdateDelegateFromResponse" message="tns:iUserCreation_UpdateDelegateFrom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentforUsersave">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentforUsersave" message="tns:iUserCreation_GetDepartmentforUsersave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentforUsersaveResponse" message="tns:iUserCreation_GetDepartmentforUsersave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRollNameById">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetRollNameById" message="tns:iUserCreation_GetRollNameById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetRollNameByIdResponse" message="tns:iUserCreation_GetRollNameById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeByRoll">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserTypeByRoll" message="tns:iUserCreation_GetUserTypeByRoll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserTypeByRollResponse" message="tns:iUserCreation_GetUserTypeByRoll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPasswordHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/CheckPasswordHistory" message="tns:iUserCreation_CheckPasswordHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/CheckPasswordHistoryResponse" message="tns:iUserCreation_CheckPasswordHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePasswordDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/SavePasswordDetails" message="tns:iUserCreation_SavePasswordDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/SavePasswordDetailsResponse" message="tns:iUserCreation_SavePasswordDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserDepartment" message="tns:iUserCreation_GetUserDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserDepartmentResponse" message="tns:iUserCreation_GetUserDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDelegateToListMultipleDept">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/getDelegateToListMultipleDept" message="tns:iUserCreation_getDelegateToListMultipleDept_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/getDelegateToListMultipleDeptResponse" message="tns:iUserCreation_getDelegateToListMultipleDept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatelockunlock">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/updatelockunlock" message="tns:iUserCreation_updatelockunlock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/updatelockunlockResponse" message="tns:iUserCreation_updatelockunlock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogoPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetLogoPath" message="tns:iUserCreation_GetLogoPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetLogoPathResponse" message="tns:iUserCreation_GetLogoPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsOfUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetApprovalDetailsOfUser" message="tns:iUserCreation_GetApprovalDetailsOfUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetApprovalDetailsOfUserResponse" message="tns:iUserCreation_GetApprovalDetailsOfUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdditionalDistributationOfUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetAdditionalDistributationOfUser" message="tns:iUserCreation_GetAdditionalDistributationOfUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetAdditionalDistributationOfUserResponse" message="tns:iUserCreation_GetAdditionalDistributationOfUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentDelegate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentDelegate" message="tns:iUserCreation_GetDepartmentDelegate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentDelegateResponse" message="tns:iUserCreation_GetDepartmentDelegate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentSSuperAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentSSuperAdmin" message="tns:iUserCreation_GetDepartmentSSuperAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDepartmentSSuperAdminResponse" message="tns:iUserCreation_GetDepartmentSSuperAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Deletedelegate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/Deletedelegate" message="tns:iUserCreation_Deletedelegate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/DeletedelegateResponse" message="tns:iUserCreation_Deletedelegate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateDelegate">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDuplicateDelegate" message="tns:iUserCreation_GetDuplicateDelegate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDuplicateDelegateResponse" message="tns:iUserCreation_GetDuplicateDelegate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOneDayValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/CheckOneDayValidation" message="tns:iUserCreation_CheckOneDayValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/CheckOneDayValidationResponse" message="tns:iUserCreation_CheckOneDayValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserNameByID" message="tns:iUserCreation_GetUserNameByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserNameByIDResponse" message="tns:iUserCreation_GetUserNameByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComppanyLogo">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetComppanyLogo" message="tns:iUserCreation_GetComppanyLogo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetComppanyLogoResponse" message="tns:iUserCreation_GetComppanyLogo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoginDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetUserLoginDetails" message="tns:iUserCreation_GetUserLoginDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetUserLoginDetailsResponse" message="tns:iUserCreation_GetUserLoginDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoUserLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/InsertIntoUserLocation" message="tns:iUserCreation_InsertIntoUserLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/InsertIntoUserLocationResponse" message="tns:iUserCreation_InsertIntoUserLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicatlocationUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetDuplicatlocationUser" message="tns:iUserCreation_GetDuplicatlocationUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetDuplicatlocationUserResponse" message="tns:iUserCreation_GetDuplicatlocationUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/RemoveUserLoc" message="tns:iUserCreation_RemoveUserLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/RemoveUserLocResponse" message="tns:iUserCreation_RemoveUserLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHTMLMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/iUserCreation/GetAllHTMLMenu" message="tns:iUserCreation_GetAllHTMLMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iUserCreation/GetAllHTMLMenuResponse" message="tns:iUserCreation_GetAllHTMLMenu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iUserCreation" type="tns:iUserCreation">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserCreationList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserCreationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserCreation">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/InsertUserCreation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfile">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/UpdateUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectEmployeeDepartmentwise">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/SelectEmployeeDepartmentwise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecord">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/checkDuplicateRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkDuplicateRecordEdit">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/checkDuplicateRecordEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveUserRoles">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/FinalSaveUserRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleIntoSessionList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/UpdateRoleIntoSessionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataToBindRoleMasterDetailsByRoleID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDataToBindRoleMasterDetailsByRoleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByUserID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserProfileByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUsersLocationDetails">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/SaveUsersLocationDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationListByUserID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetLocationListByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHTMLMenuByUserID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetHTMLMenuByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHTMLMenuArabicByUserID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetHTMLMenuArabicByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerritoryID_FromUserId">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetTerritoryID_FromUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNameFromId">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetSiteNameFromId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetCompanyName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGWCUserList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetGWCUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserType">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveGWCUserRoles">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/FinalSaveGWCUserRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleDetails">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetRoleDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWCSearchUserList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GWCSearchUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDelegationDetail">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserDelegationDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEditUserDelegation">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/SaveEditUserDelegation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDelegateDetail">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/getUserDelegateDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDelegateToList">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/getDelegateToList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDelegateFrom">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/UpdateDelegateFrom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentforUsersave">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDepartmentforUsersave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRollNameById">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetRollNameById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeByRoll">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserTypeByRoll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPasswordHistory">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/CheckPasswordHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePasswordDetails">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/SavePasswordDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDepartment">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDelegateToListMultipleDept">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/getDelegateToListMultipleDept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatelockunlock">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/updatelockunlock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogoPath">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetLogoPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsOfUser">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetApprovalDetailsOfUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdditionalDistributationOfUser">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetAdditionalDistributationOfUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentDelegate">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDepartmentDelegate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentSSuperAdmin">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDepartmentSSuperAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deletedelegate">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/Deletedelegate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateDelegate">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDuplicateDelegate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOneDayValidation">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/CheckOneDayValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByID">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserNameByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComppanyLogo">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetComppanyLogo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoginDetails">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetUserLoginDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoUserLocation">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/InsertIntoUserLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicatlocationUser">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetDuplicatlocationUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserLoc">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/RemoveUserLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHTMLMenu">
+      <soap:operation soapAction="http://tempuri.org/iUserCreation/GetAllHTMLMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserCreationService">
+    <wsdl:port name="BasicHttpBinding_iUserCreation" binding="tns:BasicHttpBinding_iUserCreation">
+      <soap:address location="http://localhost/BrilliantWMSServices/Service.UserManagement/UserCreationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

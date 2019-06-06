@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9556146d-93c5-4906-86d4-8531b00f0583" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BrilliantWMSServicesTest/Service.Approval/UC_ApprovalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UC_ApprovalService.wsdl" MetadataType="Wsdl" ID="1fa73970-94d8-4fde-a5ec-4f4a580e8d4b" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/UC_ApprovalService.svc?wsdl" />
+    <MetadataFile FileName="UC_ApprovalService.disco" MetadataType="Disco" ID="53ae785b-aeb2-4624-9ef8-b9eda1333887" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/UC_ApprovalService.svc?disco" />
+    <MetadataFile FileName="UC_ApprovalService.xsd" MetadataType="Schema" ID="0bf90a08-e92b-4880-8b4e-e67d37ff2a59" SourceId="1" SourceUrl="http://localhost/BrilliantWMSServicesTest/Service.Approval/UC_ApprovalService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

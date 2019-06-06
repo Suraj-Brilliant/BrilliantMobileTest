@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.Inbox.InboxService" CodeBehind="InboxService.svc.cs" Factory="System.ServiceModel.Activation.ServiceHostFactory" %>
